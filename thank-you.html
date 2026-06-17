@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Alert Sent - Sewer Backup Cleanup | Oakland County Sewer Pros</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        outfit: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        emergency: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                            700: '#b91c1c',
+                            950: '#450a0a',
+                        },
+                        darkbg: {
+                            900: '#0b0f19',
+                            800: '#111827',
+                            700: '#1f2937',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glow-red {
+            box-shadow: 0 0 25px -5px rgba(239, 68, 68, 0.4);
+        }
+        .pulse-btn {
+            animation: pulse-danger 2s infinite;
+        }
+        @keyframes pulse-danger {
+            0% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(239, 68, 68, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(239, 68, 68, 0);
+            }
+        }
+        body {
+            background-color: #0b0f19;
+            background-image: radial-gradient(circle at 50% 50%, #1e1520 0%, #0b0f19 100%);
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-200 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-xl w-full bg-darkbg-800/80 backdrop-blur-xl border border-red-500/20 p-8 rounded-2xl shadow-2xl relative overflow-hidden">
+        <!-- Accent glow -->
+        <div class="absolute -top-10 -left-10 w-40 h-40 bg-red-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-orange-500/10 rounded-full blur-3xl"></div>
+
+        <!-- Success Check Icon -->
+        <div class="flex justify-center mb-6">
+            <div class="p-4 bg-green-500/10 rounded-full border border-green-500/30">
+                <svg class="w-12 h-12 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Heading -->
+        <div class="text-center mb-6">
+            <h1 class="text-3xl font-outfit font-extrabold text-white mb-2 tracking-tight">EMERGENCY REQUEST RECEIVED</h1>
+            <p class="text-green-400 font-semibold text-lg">A certified dispatcher is reviewing your request now.</p>
+            <p class="text-gray-400 mt-2">Expect a call from a local specialist within <span class="text-white font-bold">10-15 minutes</span>.</p>
+        </div>
+
+        <!-- Immediate Actions Call (Fallback Phone) -->
+        <div class="bg-red-950/40 border border-red-500/30 rounded-xl p-5 mb-6">
+            <p class="text-sm text-gray-300 font-medium mb-3 text-center">Is your basement actively flooding with raw sewage right now? Do not wait for a callback.</p>
+            <a href="tel:2485550199" class="flex items-center justify-center gap-3 w-full py-3.5 bg-red-600 hover:bg-red-700 active:bg-red-800 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-[1.02] pulse-btn">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <span>Call Dispatch Now: (248) 555-0199</span>
+            </a>
+        </div>
+
+        <!-- Critical Safety Steps -->
+        <div class="bg-darkbg-700/60 border border-gray-700/50 rounded-xl p-5 mb-6">
+            <h3 class="text-white font-bold text-base mb-3 flex items-center gap-2">
+                <svg class="w-5 h-5 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                Immediate Sewage Safety Actions:
+            </h3>
+            <ul class="space-y-2 text-sm text-gray-300">
+                <li class="flex items-start gap-2">
+                    <span class="text-red-500 font-bold mt-0.5">•</span>
+                    <span><strong>Keep Out:</strong> Raw sewage contains bacteria, viruses, and parasites. Keep children and pets completely away.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-red-500 font-bold mt-0.5">•</span>
+                    <span><strong>Do Not Run Water:</strong> Do not flush toilets or run sinks. This will worsen the sewage backup.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-red-500 font-bold mt-0.5">•</span>
+                    <span><strong>Do Not Touch:</strong> Avoid touching any contaminated water or objects without proper protective gear (PPE).</span>
+                </li>
+                <li class="flex items-start gap-2">
+                    <span class="text-red-500 font-bold mt-0.5">•</span>
+                    <span><strong>Electrical Hazard:</strong> If water level is near outlets or your electrical box, do not enter the basement.</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Return button -->
+        <div class="text-center">
+            <a href="index.html" class="text-sm text-gray-400 hover:text-white transition-colors duration-300 flex items-center justify-center gap-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
+                </svg>
+                Return to Homepage
+            </a>
+        </div>
+    </div>
+</body>
+</html>
