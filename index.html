@@ -123,7 +123,24 @@
             </a>
             <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
                 <a href="#services" class="text-gray-300 hover:text-white transition-colors">Services</a>
-                <a href="#suburbs" class="text-gray-300 hover:text-white transition-colors">Local Suburbs</a>
+                
+                <!-- Suburbs Dropdown -->
+                <div class="relative group py-2">
+                    <button class="text-gray-300 group-hover:text-white transition-colors flex items-center gap-1 focus:outline-none cursor-default">
+                        <span>Local Suburbs</span>
+                        <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="absolute left-0 mt-2 w-48 bg-slate-950 border border-slate-800 rounded-xl py-2 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                        <a href="/royal-oak-sewer-cleanup" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-slate-900 transition-colors">Royal Oak</a>
+                        <a href="/troy-sewer-cleanup" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-slate-900 transition-colors">Troy</a>
+                        <a href="/birmingham-sewer-cleanup" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-slate-900 transition-colors">Birmingham</a>
+                        <a href="/berkley-sewer-cleanup" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-slate-900 transition-colors">Berkley</a>
+                        <a href="/clawson-sewer-cleanup" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-slate-900 transition-colors">Clawson</a>
+                    </div>
+                </div>
+
                 <a href="/contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
             </nav>
             <div>
