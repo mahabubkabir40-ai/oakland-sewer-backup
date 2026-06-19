@@ -1,0 +1,25 @@
+{
+  "name": "oakland-sewer-backup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahabubkabir40-ai/oakland-sewer-backup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/mahabubkabir40-ai/oakland-sewer-backup/issues"
+  },
+  "homepage": "https://github.com/mahabubkabir40-ai/oakland-sewer-backup#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.1",
+    "tailwindcss": "^4.3.1"
+  }
+}
