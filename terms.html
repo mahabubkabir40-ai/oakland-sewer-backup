@@ -1,76 +1,209 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://oaklandsewerpros.com/terms">
     <title>Terms of Service | Oakland Sewer Pros</title>
+    <meta name="description" content="Terms for the Oakland Sewer Pros referral site in Oakland County, MI. We do not guarantee contractor work. Call (248) 825-8312. We do not quote a price.">
     <meta name="robots" content="index, follow">
-    
-    <!-- Favicon -->
+    <link rel="canonical" href="https://oaklandsewerpros.com/terms">
+    <meta property="og:title" content="Terms of Service | Oakland Sewer Pros">
+    <meta property="og:description" content="Terms for the Oakland Sewer Pros referral site in Oakland County, MI. We do not guarantee contractor work. Call (248) 825-8312. We do not quote a price.">
+    <meta property="og:url" content="https://oaklandsewerpros.com/terms">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Oakland Sewer Pros">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Terms of Service | Oakland Sewer Pros">
+    <meta name="twitter:description" content="Terms for the Oakland Sewer Pros referral site in Oakland County, MI. We do not guarantee contractor work. Call (248) 825-8312. We do not quote a price.">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="shortcut icon" href="/favicon.ico">
-    
-    <!-- Tailwind CSS Static -->
+    <link rel="preload" href="/fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="/css/main.css">
+    <style>
+        .pulse-btn { animation: pulse-danger 2.2s infinite; }
+        @keyframes pulse-danger {
+            0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.75); }
+            70% { box-shadow: 0 0 0 15px rgba(220, 38, 38, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+        }
+        details summary::-webkit-details-marker { display: none; }
+        summary { list-style: none; }
+</style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://oaklandsewerpros.com/#organization",
+      "name": "Oakland Sewer Pros",
+      "url": "https://oaklandsewerpros.com/",
+      "telephone": "+12488258312",
+      "description": "Oakland Sewer Pros is a referral service that connects Oakland County, Michigan homeowners with independent local providers for sewer backup cleanup, sewage extraction, flooded basement cleanup, water damage restoration, sump pump repair, and basement sanitization after a flood or sewage backup.",
+      "areaServed": {
+        "@type": "AdministrativeArea",
+        "name": "Oakland County, Michigan"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://oaklandsewerpros.com/#website",
+      "url": "https://oaklandsewerpros.com/",
+      "name": "Oakland Sewer Pros",
+      "publisher": {
+        "@id": "https://oaklandsewerpros.com/#organization"
+      }
+    }
+  ]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://oaklandsewerpros.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Terms"
+    }
+  ]
+}
+</script>
 </head>
-<body class="bg-gray-50 text-gray-900 antialiased font-sans">
-
-    <nav class="bg-slate-900 text-white py-4 px-6 shadow-md">
-        <div class="max-w-4xl mx-auto flex justify-between items-center gap-4">
-            <a href="/" class="font-bold text-base sm:text-lg tracking-tight hover:text-red-400 transition shrink-0">
-                <span class="hidden sm:inline">← Back to Oakland County Emergency Hub</span>
-                <span class="sm:hidden">← Back Home</span>
+<body class="font-sans text-gray-200 bg-slate-900 min-h-screen flex flex-col justify-between pb-16 md:pb-0">
+    <a href="tel:2488258312" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="Call Oakland Sewer Pros 24/7 at (248) 825-8312">
+        <span class="flex items-center justify-center gap-2">Call 24/7: (248) 825-8312</span>
+    </a>
+    <header class="bg-slate-950/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40">
+        <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between gap-3">
+            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="Oakland Sewer Pros home">
+                <div class="p-2 bg-emergency-600 rounded-lg text-white font-bold text-lg font-outfit">OS</div>
+                <div class="leading-tight">
+                    <span class="block text-white font-extrabold text-base sm:text-lg tracking-tight font-outfit">OAKLAND SEWER</span>
+                    <span class="block text-xs font-semibold tracking-wider text-red-500 uppercase">PROS</span>
+                </div>
             </a>
-            <a href="tel:2488258312" class="bg-red-600 hover:bg-red-500 text-white font-bold text-xs px-4 py-2 rounded transition shrink-0">
-                📞 Emergency Dispatch
-            </a>
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium" aria-label="Primary">
+        <div class="relative group py-2">
+            <button type="button" class="text-gray-300 group-hover:text-white transition-colors flex items-center gap-1" aria-haspopup="true">
+                <span>Services</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-64 bg-slate-950 border border-slate-800 rounded-xl py-2 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50" role="menu">
+                <a href="/services" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900" role="menuitem">All services</a><a href="/water-damage-restoration" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900" role="menuitem">Water Damage Restoration</a><a href="/sewer-backup-cleanup" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900" role="menuitem">Sewer Backup Cleanup</a><a href="/sewage-extraction" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900" role="menuitem">Sewage Extraction</a><a href="/flooded-basement-cleanup" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900" role="menuitem">Flooded Basement Cleanup</a><a href="/sump-pump-repair" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900" role="menuitem">Sump Pump Repair</a><a href="/basement-sanitization" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900" role="menuitem">Basement Sanitization</a>
+            </div>
         </div>
+        <div class="relative group py-2">
+            <button type="button" class="text-gray-300 group-hover:text-white transition-colors flex items-center gap-1" aria-haspopup="true">
+                <span>Service Areas</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="absolute left-0 mt-2 w-48 bg-slate-950 border border-slate-800 rounded-xl py-2 shadow-2xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                <a href="/royal-oak" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Royal Oak</a><a href="/troy" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Troy</a><a href="/birmingham" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Birmingham</a><a href="/berkley" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Berkley</a><a href="/clawson" class="block px-4 py-2.5 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Clawson</a>
+            </div>
+        </div>
+        <a href="/about" class="text-gray-300 hover:text-white transition-colors">About</a>
+        <a href="/contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
     </nav>
-
-    <main class="max-w-3xl mx-auto px-6 py-12 my-8 bg-white rounded-lg shadow-sm border border-gray-200">
-        <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight mb-2">Terms of Service & Business Disclosures</h1>
-        <p class="text-xs text-gray-500 mb-8">Last Updated: June 2026</p>
-
-        <div class="space-y-6 text-gray-700 leading-relaxed text-sm">
-            
-            <section class="bg-red-50 border-l-4 border-red-600 p-4 rounded-r">
-                <h2 class="font-bold text-red-950 text-base mb-1">1. Referral Service & Liability Disclaimer</h2>
-                <p class="text-red-900 font-medium">
-                    Disclaimer: Oakland County Sewer Emergency Hub is an independent local marketing asset. We are not a direct plumbing or restoration contractor. All phone calls and form submissions are routed directly to independent, certified local water damage restoration and plumbing businesses operating within the Oakland County, Michigan territory.
-                </p>
-            </section>
-
-            <section>
-                <h2 class="font-bold text-slate-900 text-base mb-2">2. Nature of the Platform</h2>
-                <p>
-                    This website serves exclusively as a consumer convenience platform designed to connect property owners experiencing drainage and plumbing emergencies with third-party local service providers. We do not own, manage, employ, or guarantee the work of any responding service provider.
-                </p>
-            </section>
-
-            <section>
-                <h2 class="font-bold text-slate-900 text-base mb-2">3. Limitation of Liability</h2>
-                <p>
-                    The operator of this website shall not be held liable for any direct, indirect, incidental, consequential, or punitive damages resulting from the service performance, contract terms, pricing, or behavior of the independent contractor assigned to your service call. Property owners are encouraged to verify licensing, certifications, and insurance documentation directly with the technician upon their arrival.
-                </p>
-            </section>
-
-            <section>
-                <h2 class="font-bold text-slate-900 text-base mb-2">4. Emergency Biohazard Warning</h2>
-                <p>
-                    Wastewater backups containing raw sewage are classified as Category 3 biohazards. Users of this platform acknowledge that standing water poses severe viral and bacterial health risks. This platform advises all occupants to avoid direct physical contact with contaminated areas until certified professionals arrive on scene with proper personal protective equipment (PPE).
-                </p>
-            </section>
-
+            <div class="flex items-center gap-2">
+                <details class="md:hidden relative">
+        <summary class="cursor-pointer px-3 py-2 text-sm font-semibold text-white border border-slate-800 rounded-lg">Menu</summary>
+        <div class="absolute right-0 mt-2 w-64 max-h-96 overflow-y-auto bg-slate-950 border border-slate-800 rounded-xl py-2 shadow-2xl z-50">
+            <p class="px-4 pt-2 pb-1 text-xs font-bold uppercase tracking-wider text-gray-400">Services</p>
+            <a href="/services" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">All services</a><a href="/water-damage-restoration" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Water Damage Restoration</a><a href="/sewer-backup-cleanup" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Sewer Backup Cleanup</a><a href="/sewage-extraction" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Sewage Extraction</a><a href="/flooded-basement-cleanup" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Flooded Basement Cleanup</a><a href="/sump-pump-repair" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Sump Pump Repair</a><a href="/basement-sanitization" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Basement Sanitization</a>
+            <p class="px-4 pt-3 pb-1 text-xs font-bold uppercase tracking-wider text-gray-400">Service areas</p>
+            <a href="/royal-oak" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Royal Oak</a><a href="/troy" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Troy</a><a href="/birmingham" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Birmingham</a><a href="/berkley" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Berkley</a><a href="/clawson" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Clawson</a>
+            <a href="/about" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">About</a>
+            <a href="/contact" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Contact</a>
+            <a href="/privacy" class="block px-4 py-2 text-sm text-gray-300 hover:text-white hover:bg-slate-900">Privacy</a>
         </div>
+    </details>
+                <a href="tel:2488258312" aria-label="Call (248) 825-8312" class="flex items-center justify-center gap-2 p-2.5 sm:px-4 sm:py-2 bg-emergency-600 hover:bg-emergency-700 text-white font-extrabold text-sm rounded-lg transition-colors shadow-lg">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    <span class="hidden sm:inline">(248) 825-8312</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow">
+        <div class="max-w-6xl mx-auto px-4 pt-6"><nav aria-label="Breadcrumb" class="mb-6"><ol class="flex flex-wrap items-center gap-2 text-xs text-gray-300"><li><a href="/" class="text-red-400 hover:text-red-300 underline">Home</a></li><li aria-hidden="true" class="text-gray-500">/</li><li aria-current="page" class="text-gray-200">Terms</li></ol></nav></div>
+        <section class="bg-slate-950/40 py-12 md:py-16 px-4 border-b border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-3xl md:text-5xl font-outfit font-extrabold text-white leading-tight">Terms of Service</h1>
+            <div class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed space-y-4"><p>Last updated September 27, 2026.</p></div>
+            <div class="mt-8"><a href="tel:2488258312" class="flex items-center justify-center gap-2 px-6 py-3.5 bg-emergency-600 hover:bg-emergency-700 text-white font-extrabold text-base rounded-xl shadow-xl w-full sm:w-auto pulse-btn ">Call (248) 825-8312</a></div>
+        </div>
+    </section>
+    <section class="py-12 px-4">
+        <div class="max-w-4xl mx-auto space-y-6"><h2 class="text-2xl font-outfit font-extrabold text-white">Referral service</h2>
+<p class="text-sm text-gray-300 leading-relaxed">Oakland Sewer Pros is an independent referral service for homeowners in parts of Oakland County, Michigan. We are not a plumbing contractor and we are not a water damage restoration contractor. Calls to the number on this site may be routed to independent businesses. We do not own, manage, or guarantee their work.</p>
+<h2 class="text-2xl font-outfit font-extrabold text-white">Your responsibility</h2>
+<p class="text-sm text-gray-300 leading-relaxed">You are responsible for verifying that any company you hire holds the license and insurance required for the work. You are responsible for the contract, the price, and any insurance claim. We do not warrant results, arrival times, or prices.</p>
+<h2 class="text-2xl font-outfit font-extrabold text-white">Information on these pages</h2>
+<p class="text-sm text-gray-300 leading-relaxed">City descriptions mention real streets, neighborhoods, and public agencies so you can tell the pages apart. They are not a survey, a soil report, or a statement of what is wrong at your address. Sewer maps and drainage-district boundaries should be confirmed with the city or with the Oakland County Water Resources Commissioner.</p>
+<h2 class="text-2xl font-outfit font-extrabold text-white">Sewage is hazardous</h2>
+<p class="text-sm text-gray-300 leading-relaxed">Water that came from a sewer can carry pathogens. Keep people and pets away from it. This website cannot make a basement safe by being read.</p>
+<p class="text-sm text-gray-300 leading-relaxed">See also <a href="/privacy" class="text-red-400 hover:text-red-300 underline font-medium">privacy</a> and <a href="/about" class="text-red-400 hover:text-red-300 underline font-medium">about</a>.</p></div>
+    </section>
+    <section class="py-12 bg-slate-950 px-4 border-t border-b border-slate-800">
+        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 text-sm"><div class="flex items-start gap-3">
+            <div>
+                <span class="block text-white font-bold">Referral line</span>
+                <span class="text-xs text-gray-300">We connect you with independent local providers. We do not perform the work.</span>
+            </div>
+        </div><div class="flex items-start gap-3">
+            <div>
+                <span class="block text-white font-bold">You check credentials</span>
+                <span class="text-xs text-gray-300">Ask the provider for the license and insurance the job requires.</span>
+            </div>
+        </div><div class="flex items-start gap-3">
+            <div>
+                <span class="block text-white font-bold">No price from this site</span>
+                <span class="text-xs text-gray-300">The provider you hire sets the scope and the price.</span>
+            </div>
+        </div></div>
+    </section>
+    
+    
     </main>
-
-    <footer class="bg-slate-900 text-gray-500 py-6 text-center text-xs border-t border-slate-800">
-        <p>&copy; 2026 Oakland County Sewer Emergency Pros. All rights reserved.</p>
-        <p class="mt-1"><a href="/" class="hover:underline">Return to Homepage</a></p>
+    <footer class="bg-slate-950 text-gray-300 py-10 text-xs border-t border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 text-left">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+                <nav aria-label="Footer services">
+                    <p class="text-white font-bold mb-3">Services</p>
+                    <ul class="space-y-2 text-gray-300"><li><a href="/services" class="hover:text-white transition-colors">All services</a></li><li><a href="/water-damage-restoration" class="hover:text-white transition-colors">Water Damage Restoration</a></li><li><a href="/sewer-backup-cleanup" class="hover:text-white transition-colors">Sewer Backup Cleanup</a></li><li><a href="/sewage-extraction" class="hover:text-white transition-colors">Sewage Extraction</a></li><li><a href="/flooded-basement-cleanup" class="hover:text-white transition-colors">Flooded Basement Cleanup</a></li><li><a href="/sump-pump-repair" class="hover:text-white transition-colors">Sump Pump Repair</a></li><li><a href="/basement-sanitization" class="hover:text-white transition-colors">Basement Sanitization</a></li></ul>
+                </nav>
+                <nav aria-label="Footer service areas">
+                    <p class="text-white font-bold mb-3">Service areas</p>
+                    <ul class="space-y-2 text-gray-300"><li><a href="/royal-oak" class="hover:text-white transition-colors">Royal Oak</a></li><li><a href="/troy" class="hover:text-white transition-colors">Troy</a></li><li><a href="/birmingham" class="hover:text-white transition-colors">Birmingham</a></li><li><a href="/berkley" class="hover:text-white transition-colors">Berkley</a></li><li><a href="/clawson" class="hover:text-white transition-colors">Clawson</a></li></ul>
+                </nav>
+                <nav aria-label="Footer company">
+                    <p class="text-white font-bold mb-3">Company</p>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="/about" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="/contact" class="hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="/privacy" class="hover:text-white transition-colors">Privacy</a></li>
+                        <li><a href="/terms" class="hover:text-white transition-colors">Terms of Service</a></li>
+                        <li><a href="tel:2488258312" class="hover:text-white transition-colors">Call (248) 825-8312</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mt-8 border-t border-slate-800 pt-6 space-y-3 leading-relaxed text-gray-300">
+                <p>Oakland Sewer Pros is a free service to assist homeowners in connecting with local service providers. All contractors/providers are independent and Oakland Sewer Pros does not warrant or guarantee any work performed. It is the responsibility of the homeowner to verify that the hired contractor furnishes the necessary license and insurance required for the work being performed. All persons depicted in a photo or video are actors or models and not contractors listed on Oakland Sewer Pros.</p>
+                <p>Same-day and 24/7 emergency services are subject to provider participation, location, technician availability, and demand. Availability is not guaranteed and may vary by market and appointment capacity.</p>
+                <p>&copy; 2026 Oakland Sewer Pros. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-
 </body>
 </html>
