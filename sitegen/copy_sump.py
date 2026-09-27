@@ -173,7 +173,7 @@ def berkley():
         h2("Sump pump repair in Berkley bungalows"),
         p(
             "Berkley sump pump repair is a tight-space job. The pits are in short basements under 1940s "
-            "and 1950s bungalows, on a flat grid in the Rouge River watershed, off 12 Mile and Coolidge. "
+            "and 1950s bungalows, on a flat grid off 12 Mile and Coolidge. "
             "Rain does not leave these lots quickly. The pump may be the entire drainage plan for the "
             "basement. When it stops, the water is at the furnace before anyone notices, because the "
             "basement is one low room."
@@ -222,8 +222,8 @@ def clawson():
     return "\n".join([
         h2("Sump pump repair on Clawson's small bungalow lots"),
         p(
-            "Clawson sump pump repair has an access problem before it has a parts problem. Brick bungalows "
-            "from the 1930s to the 1950s stand on compact lots near 14 Mile, between Royal Oak and Troy. "
+            "Clawson sump pump repair has an access problem before it has a parts problem. Mid-century brick "
+            "bungalows and ranches stand on compact lots near 14 Mile, between Royal Oak and Troy. "
             "The pit, the furnace, and the water heater share a small basement. A technician's cart and "
             "a homeowner's car share a short driveway. If you do not mention that, the visit starts with "
             "a surprise."

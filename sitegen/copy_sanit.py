@@ -235,7 +235,7 @@ def clawson():
     return "\n".join([
         h2("Sanitizing after a Clawson backup or basement flood"),
         p(
-            "Clawson basement sanitization is cramped. Brick bungalows from the 1930s to the 1950s, on "
+            "Clawson basement sanitization is cramped. Mid-century brick bungalows and ranches, on "
             "small lots along and off 14 Mile, often have a single basement room. The floor drain, the "
             "laundry, and the furnace share it. After a sewer backup, every surface in that room is in "
             "play: the furnace cabinet bottom, the water-heater legs, the washer exterior, and the stair "

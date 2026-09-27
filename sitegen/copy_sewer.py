@@ -18,7 +18,7 @@ WHY = {
         "than it can handle, forcing sewage back up through basement floor drains."
     ),
     "troy": (
-        "Troy's neighborhoods span a wide range of housing ages, from 1950s–60s split-levels near "
+        "Troy's neighborhoods span a wide range of housing ages, from 1960s–70s split-levels near "
         "Big Beaver Road to established subdivisions in areas like Northfield Hills. Many homes from "
         "this era still run on original clay tile or cast-iron sewer laterals — materials that develop "
         "interior scale and brittle joints over decades, giving tree roots an easy entry point. Troy's "
@@ -26,8 +26,8 @@ WHY = {
         "Beaver corridor increase flood risk during spring thaw and heavy summer storms."
     ),
     "birmingham": (
-        "Birmingham's housing stock includes a significant share of homes from the late 19th and early "
-        "20th century, concentrated in historic districts and neighborhoods like Poppleton Park and the "
+        "Birmingham's housing stock includes a significant share of homes from the 1920s through the "
+        "1950s, in neighborhoods like Poppleton Park and the "
         "areas around Quarton Lake. These older homes commonly carry original cast-iron plumbing and sit "
         "on clay sewer laterals installed decades before modern PVC became standard. Birmingham's mature "
         "tree canopy means root intrusion is a frequent contributor to backups, especially in low-lying "
@@ -36,12 +36,12 @@ WHY = {
     "berkley": (
         "Berkley's housing stock is largely bungalow-style construction from the 1940s and 1950s, built "
         "with original clay or cast-iron sewer laterals that are reaching the end of their service life. "
-        "Berkley sits within the Rouge River watershed, and its relatively flat topography means heavy "
+        "Berkley's relatively flat topography means heavy "
         "rain has limited places to drain quickly. Combined with older municipal combined sewer lines, "
         "heavy rain events push extra wastewater volume back up through basement floor drains in older homes."
     ),
     "clawson": (
-        "Clawson's housing stock is predominantly brick bungalows built between the 1930s and 1950s on "
+        "Clawson's housing stock is predominantly mid-century brick bungalows and ranches built between the 1940s and 1960s on "
         "compact city lots. Homes of this era commonly run on original clay or cast-iron sewer laterals, "
         "which after decades of use are prone to root intrusion at pipe joints and internal corrosion "
         "that narrows usable pipe diameter. Heavy regional storm events in southeast Oakland County put "
@@ -72,11 +72,11 @@ TRIGGERS = {
     "berkley": [
         "Backups tied to older sections that still carry storm and sanitary flow together during heavy rain",
         "Root intrusion in clay sewer laterals common to 1940s–50s bungalow construction",
-        "Sump pump overload during downpours in this part of the Rouge River watershed",
+        "Sump pump overload during downpours on Berkley's flat, slow-draining lots",
         "Water reaching original hardwood floors and framing in older homes",
     ],
     "clawson": [
-        "Root intrusion through clay pipe joints common to 1930s–50s bungalow construction",
+        "Root intrusion through clay pipe joints common to mid-century bungalow construction",
         "Internal corrosion in older cast-iron lines reducing the pipe's usable diameter",
         "Backups following heavy regional rain that overwhelms aging sanitary lines",
         "Tight lots where equipment has to be staged from a short driveway or the street",
@@ -169,7 +169,7 @@ SEWAGE_H2 = {
         f"or {a('/berkley-water-damage-restoration', 'water damage restoration in Berkley')}."
     ),
     "clawson": (
-        "Sewage cleanup in Clawson often starts at a floor drain in a 1930s–1950s brick bungalow. Compact lots limit where "
+        "Sewage cleanup in Clawson often starts at a floor drain in a mid-century brick bungalow. Compact lots limit where "
         "hoses and drying gear can sit, so ask how the provider will stage the job before you book. When the loss is broader "
         f"than the drain itself, use {a('/clawson-water-damage-restoration', 'water damage restoration in Clawson')} and "
         f"{a('/clawson-flooded-basement', 'flooded basement water removal in Clawson')}."
@@ -315,7 +315,7 @@ FAQS = {
     "berkley": [
         (
             "Does Berkley still have combined sewer sections?",
-            "Parts of Berkley's older system have been described as carrying storm and sanitary flow together. During hard rain that shared capacity can push water back through basement drains. Confirm the pipe in front of your house with the city. Treat this as a reason to ask, not as a map.",
+            "Berkley's own master plan describes the city's sewers as a combined system that carries storm and sanitary flow together to the regional George W. Kuhn Drain. During hard rain that shared capacity can push water back through basement drains. Confirm the pipe in front of your house with the city. Treat this as a reason to ask, not as a map.",
         ),
         (
             "Who does sewage cleanup in a Berkley bungalow?",
@@ -333,7 +333,7 @@ FAQS = {
     "clawson": [
         (
             "Why do Clawson bungalows see sewer backups?",
-            "A large share of Clawson is 1930s–1950s brick bungalows on small lots, often still on clay or cast-iron laterals. Roots and corrosion narrow those pipes. Heavy rain adds load. Whether your lateral or the city main failed is a fact for the city or a camera inspection, not a guess from this website.",
+            "A large share of Clawson is mid-century brick bungalows and ranches on small lots, often still on clay or cast-iron laterals. Roots and corrosion narrow those pipes. Heavy rain adds load. Whether your lateral or the city main failed is a fact for the city or a camera inspection, not a guess from this website.",
         ),
         (
             "Who shows up for sewer backup cleanup in Clawson?",

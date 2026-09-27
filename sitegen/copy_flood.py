@@ -189,7 +189,7 @@ def berkley():
         h2("Basement water removal in Berkley's flat bungalow grid"),
         p(
             "Berkley does not have a ravine to send storm water downhill. The city is a flat bungalow grid "
-            "in the Rouge River watershed, with 12 Mile Road as the commercial edge and Coolidge as a main "
+            "whose combined sewers drain to the regional George W. Kuhn system, with 12 Mile Road as the commercial edge and Coolidge as a main "
             "north-south road. Basement flooding here is often a window well, a stairwell, or a sump that "
             "lost power, inside a short basement under a 1940s or 1950s house. Basement water removal has "
             "to happen without soaking the hardwood that sits just above that basement on the first floor."
@@ -244,8 +244,8 @@ def clawson():
     return "\n".join([
         h2("Basement water removal in Clawson brick bungalows"),
         p(
-            "Clawson basement flooding shows up in small rooms under brick bungalows built from the 1930s "
-            "to the 1950s. The downtown reference is 14 Mile Road. The houses are on tight lots between "
+            "Clawson basement flooding shows up in small rooms under mid-century brick bungalows and "
+            "ranches, mostly built from the 1940s to the 1960s. The downtown reference is 14 Mile Road. The houses are on tight lots between "
             "Royal Oak and Troy. There is often one basement room with the furnace, the water heater, and "
             "the floor drain together. Basement water removal starts by keeping that equipment from sitting "
             "in the water, which means staying out if the water is already at the burners or the panel."

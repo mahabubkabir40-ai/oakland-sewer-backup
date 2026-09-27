@@ -218,7 +218,7 @@ def city_troy():
         h2("Troy, beyond the Big Beaver commercial strip"),
         p(
             "Troy's landmarks that people name first are Big Beaver Road, Somerset Collection at Coolidge, "
-            "and I-75. The wet basements are in the houses: 1950s and 1960s split-levels near Big Beaver, "
+            "and I-75. The wet basements are in the houses: 1960s and 1970s split-levels near Big Beaver, "
             "and subdivisions such as Northfield Hills. Troy Historic Village sits in the city as a "
             "landmark, not as a service yard. Storm drainage is a Streets and Drains Division topic. A "
             "sanitary backup in a lower level is not the same call."
@@ -238,7 +238,7 @@ def city_birmingham():
     return "\n".join([
         h2("Birmingham's older housing, not a generic suburb page"),
         p(
-            "Birmingham pages on this site talk about late-19th and early-20th-century houses, plaster, "
+            "Birmingham pages on this site talk about early- and mid-20th-century houses, plaster, "
             "and tree-lined laterals. The landmarks used so you know which Birmingham this is: Shain Park "
             "and Old Woodward downtown, Maple Road, Poppleton Park, and Quarton Lake. Low ground near "
             "Quarton behaves differently from a house up by downtown. None of that is a claim that we "
@@ -260,9 +260,9 @@ def city_berkley():
         h2("Berkley's bungalow blocks"),
         p(
             "Berkley is a small city of mostly 1940s and 1950s bungalows. Downtown is along 12 Mile Road. "
-            "Coolidge is a main north-south road. The lots are flat and sit in the Rouge River watershed, "
-            "so heavy rain does not run off quickly. Some older sewer sections have been described as "
-            "combined storm and sanitary. That description needs the city's confirmation for a specific "
+            "Coolidge is a main north-south road. The lots are flat, "
+            "so heavy rain does not run off quickly. The city's master plan describes its sewers as a "
+            "combined storm and sanitary system that drains to the regional George W. Kuhn Drain. Ask the city about a specific "
             "street. Basements are short, and the stair lands close to the first-floor living space."
         ),
         h2("Berkley pages"),
@@ -280,7 +280,7 @@ def city_clawson():
     return "\n".join([
         h2("Clawson bungalows and short driveways"),
         p(
-            "Clawson is largely brick bungalows built between the 1930s and the 1950s on compact lots. "
+            "Clawson is largely mid-century brick bungalows and ranches, mostly built from the 1940s to the 1960s, on compact lots. "
             "14 Mile Road is the downtown street. The city sits between Royal Oak and Troy. Basements "
             "are often a single room that holds the furnace, the water heater, and the floor drain. "
             "Laterals from that era are commonly clay or cast iron. Regional drainage context includes "

@@ -90,7 +90,7 @@ def troy():
         ),
         h2("Sewage extraction in Troy split-levels and subdivision basements"),
         p(
-            "Troy callers rarely describe a downtown storefront. They describe a lower level: a 1950s or 1960s "
+            "Troy callers rarely describe a downtown storefront. They describe a lower level: a 1960s or 1970s "
             "split-level along Big Beaver, a finished room in a subdivision such as Northfield Hills, or a "
             "basement bath that started gurgling while the storm was still on I-75. Sewage extraction there "
             "means getting contaminated water out of carpet, tack strip, and the pad underneath, then deciding "
@@ -167,8 +167,8 @@ def birmingham():
         h2("Sewage extraction in older Birmingham houses"),
         p(
             "Birmingham sewage extraction is often a finish-sensitive job. Houses around Shain Park, along "
-            "Old Woodward's side streets, in Poppleton Park, and near Quarton Lake include late-19th and "
-            "early-20th-century builds with plaster, wood trim, and lower levels that owners actually use. "
+            "Old Woodward's side streets, in Poppleton Park, and near Quarton Lake include early- and "
+            "mid-20th-century builds with plaster, wood trim, and lower levels that owners actually use. "
             "A backup through a laundry drain in that kind of house wicks into plaster and into the end grain "
             "of baseboard. Pumping the floor without a plan for those materials leaves the contamination in the walls."
         ),
@@ -244,7 +244,7 @@ def berkley():
         ),
         p(
             "Laterals of that age are commonly clay or cast iron nearing the end of a long service life. The "
-            "city is relatively flat and sits in the Rouge River watershed, so a hard rain does not run off "
+            "city is relatively flat, so a hard rain does not run off "
             "quickly. Older sections have been described as combined storm and sanitary sewers. If that "
             "description matches your street, a storm can push wastewater up the floor drain even when you "
             "did not run a faucet. Confirm the pipe with Berkley's city offices. This page is not the sewer map."
@@ -323,7 +323,7 @@ def clawson():
         h2("Sewage extraction on Clawson's small lots"),
         p(
             "Clawson extraction jobs are shaped by the lot, not by a big basement rec room. The housing is "
-            "largely brick bungalows from the 1930s through the 1950s, packed onto compact parcels. Downtown "
+            "largely mid-century brick bungalows and ranches, packed onto compact parcels. Downtown "
             "is 14 Mile Road. The houses sit on the blocks north and south of that mile road, between Royal "
             "Oak and Troy. A backup presents as a floor drain or a basement toilet in a small utility room, "
             "with a short driveway and little side yard to lay hose."

@@ -130,7 +130,7 @@ def troy():
         h3("Basement flooding causes in Troy"),
         ul([
             "Sump pumps that lose power in a storm. DTE serves these neighborhoods. The outage and the flood are linked, and the pump may still need service after the lights return.",
-            "Older clay or cast-iron laterals in 1950s and 1960s houses, especially where mature trees line the subdivision streets.",
+            "Older clay or cast-iron laterals in 1960s and 1970s houses, especially where mature trees line the subdivision streets.",
             "Storm drainage along Big Beaver that the city's Streets and Drains Division maintains. Street water and a basement backup are not automatically the same pipe.",
             "High water around lower lots. People describe a high water table near parts of the Big Beaver corridor. Treat that as a local pattern to ask about, not as a survey of your parcel.",
         ]),
@@ -156,7 +156,7 @@ def troy():
         p(
             "Water damage repair is the later half of the same loss: what stays, what comes out, and "
             "what gets rebuilt. In Troy that often means a carpeted family room in a split-level, a "
-            "bedroom in the basement of a 1950s or 1960s house, or a utility corner that shares a wall "
+            "bedroom in the basement of a 1960s or 1970s house, or a utility corner that shares a wall "
             "with living space. Along the I-75 side of the city and near the Troy Historic Village, the "
             "lower level may still be the original unfinished room. Near Big Beaver and the subdivisions "
             "around Somerset Collection it is more often finished. The repair path is not the same. "
@@ -272,8 +272,8 @@ def berkley():
         h2("Water extraction under Berkley bungalows"),
         p(
             "Water damage restoration in Berkley is shaped by a short basement and a first floor of "
-            "original flooring. The city is a 1940s and 1950s bungalow grid, flat, in the Rouge River "
-            "watershed, with shops along 12 Mile and traffic on Coolidge. Extraction has to remove water "
+            "original flooring. The city is a 1940s and 1950s bungalow grid, flat, "
+            "with shops along 12 Mile and traffic on Coolidge. Extraction has to remove water "
             "from the basement without tracking it onto the oak or maple at the top of a steep stair. "
             "Joist bays are close to that floor. Wet insulation in those bays is water damage to the "
             "house you live in, not only to the cellar."
@@ -361,8 +361,8 @@ def clawson():
     return "\n".join([
         h2("Water extraction on Clawson's compact lots"),
         p(
-            "Water damage restoration in Clawson starts with access. Brick bungalows from the 1930s to "
-            "the 1950s sit on small lots along 14 Mile Road and the blocks between Royal Oak and Troy. "
+            "Water damage restoration in Clawson starts with access. Mid-century brick "
+            "bungalows and ranches sit on small lots along 14 Mile Road and the blocks between Royal Oak and Troy. "
             "The basement is often one room. Extraction equipment, wet debris, and the family's cars "
             "are competing for a short driveway. A provider who has not heard that description may show "
             "up with a plan that does not fit. Tell them on the call."
