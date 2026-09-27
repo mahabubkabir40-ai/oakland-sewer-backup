@@ -711,6 +711,10 @@ def apply_clawson():
     print("Updated Clawson page successfully.")
 
 if __name__ == "__main__":
+    raise SystemExit(
+        "apply_city_expansions.py is retired. It rewrites sewer pages with 45-minute "
+        "guarantees and contractor-voice claims. Edit sitegen/ and run python generate_site.py."
+    )
     apply_troy()
     apply_birmingham()
     apply_berkley()
