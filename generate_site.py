@@ -304,6 +304,28 @@ def home_body():
             <h2 class="text-3xl font-outfit font-extrabold text-white text-center mb-4">Oakland County cities</h2>
             <p class="text-sm text-gray-300 text-center max-w-3xl mx-auto mb-10">Every city page is linked here, including sewer backup, sewage extraction, flooded basement cleanup, water damage restoration, sump pump repair, and basement sanitization.</p>
             {city_directory()}
+            <h2 class="text-2xl font-outfit font-extrabold text-white text-center mt-14 mb-4">Pages that match a specific job</h2>
+            <p class="text-sm text-gray-300 text-center max-w-3xl mx-auto mb-6">Each link is one job in one city. Sewage cleanup stays on the sewer backup URLs. Sewage extraction is only the pumping step.</p>
+            <ul class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-300">
+                <li><a class="text-red-400 underline" href="/troy-sewer-cleanup">Sewage cleanup in Troy, MI</a></li>
+                <li><a class="text-red-400 underline" href="/royal-oak-sewer-cleanup">Sewage cleanup in Royal Oak, MI</a></li>
+                <li><a class="text-red-400 underline" href="/birmingham-sewer-cleanup">Sewage cleanup in Birmingham, MI</a></li>
+                <li><a class="text-red-400 underline" href="/berkley-sewer-cleanup">Sewage cleanup in Berkley, MI</a></li>
+                <li><a class="text-red-400 underline" href="/clawson-sewer-cleanup">Sewage cleanup in Clawson, MI</a></li>
+                <li><a class="text-red-400 underline" href="/clawson-flooded-basement">Flooded basement cleanup in Clawson, MI</a></li>
+                <li><a class="text-red-400 underline" href="/berkley-sewage-extraction">Sewage extraction in Berkley, MI</a></li>
+                <li><a class="text-red-400 underline" href="/berkley-basement-sanitization">Basement sanitization in Berkley, MI</a></li>
+                <li><a class="text-red-400 underline" href="/clawson-sewage-extraction">Sewage extraction in Clawson</a></li>
+                <li><a class="text-red-400 underline" href="/clawson-basement-sanitization">Basement sanitization in Clawson</a></li>
+                <li><a class="text-red-400 underline" href="/royal-oak-sewage-extraction">Sewage extraction in Royal Oak</a></li>
+                <li><a class="text-red-400 underline" href="/royal-oak-flooded-basement">Flooded basement cleanup in Royal Oak</a></li>
+                <li><a class="text-red-400 underline" href="/troy-flooded-basement">Flooded basement cleanup in Troy</a></li>
+                <li><a class="text-red-400 underline" href="/troy-basement-sanitization">Basement sanitization in Troy</a></li>
+                <li><a class="text-red-400 underline" href="/birmingham-sewage-extraction">Sewage extraction in Birmingham</a></li>
+                <li><a class="text-red-400 underline" href="/birmingham-basement-sanitization">Basement sanitization in Birmingham</a></li>
+                <li><a class="text-red-400 underline" href="/contact">Contact the referral line</a></li>
+                <li><a class="text-red-400 underline" href="/terms">Terms of service</a></li>
+            </ul>
         </div>
     </section>"""
     form = f"""<section id="contact" class="py-16 bg-slate-900 px-4">
@@ -321,8 +343,8 @@ def home_body():
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-7">
                     <h1 class="text-3xl md:text-5xl font-outfit font-extrabold text-white leading-tight">24/7 Emergency Sewer Backup Cleanup &amp; Sewage Extraction in Oakland County, MI</h1>
-                    <p class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed">Oakland Sewer Pros connects Oakland County homeowners with independent local providers for sewer backups, sewage extraction, flooded basements, and water damage restoration. Arrival depends on the provider. We do not guarantee a response time.</p>
-                    <p class="text-sm text-gray-300 mt-4 leading-relaxed">Start with <a class="text-red-400 underline" href="/royal-oak-sewer-cleanup">sewer backup cleanup in Royal Oak</a>, <a class="text-red-400 underline" href="/troy-sewage-extraction">sewage extraction in Troy</a>, <a class="text-red-400 underline" href="/birmingham-water-damage-restoration">water damage restoration in Birmingham</a>, <a class="text-red-400 underline" href="/berkley-flooded-basement">flooded basement cleanup in Berkley</a>, or <a class="text-red-400 underline" href="/clawson-basement-sanitization">basement sanitization in Clawson</a>.</p>
+                    <p class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed">Oakland Sewer Pros connects Oakland County homeowners with independent local providers for sewer backup, sewage cleanup, basement flood cleanup, and water damage restoration. Arrival depends on the provider. We do not guarantee a response time.</p>
+                    <p class="text-sm text-gray-300 mt-4 leading-relaxed">County pages: <a class="text-red-400 underline" href="/sewer-backup-cleanup">sewage cleanup and sewer backup in Oakland County</a>, <a class="text-red-400 underline" href="/flooded-basement-cleanup">basement flood cleanup in Oakland County</a>, and <a class="text-red-400 underline" href="/water-damage-restoration">water damage restoration</a>. A backup drain in Oakland County belongs on the sewer page, not the flood page.</p>
                     <div class="mt-8">{call_button()}</div>
                 </div>
                 <div class="lg:col-span-5">
@@ -341,8 +363,8 @@ def main():
     home_html, home_faqs = home_body()
     remember(
         "",
-        "Oakland County Sewer Backup Cleanup | Oakland Sewer Pros",
-        fill("Sewer backup and water damage restoration referrals in Oakland County, MI. Call {PHONE_DISPLAY}."),
+        "Sewage Cleanup & Sewer Backup in Oakland County, MI",
+        fill("Sewage cleanup, sewer backup, and basement flood cleanup in Oakland County, MI. Call {PHONE_DISPLAY}."),
         home_html,
         [],
         faqs=home_faqs,
@@ -351,10 +373,10 @@ def main():
 
     # City services
     packs = [
-        ("sewer-cleanup", "Sewer Backup Cleanup {city} MI | Oakland Sewer Pros", "Sewer Backup Cleanup {city} MI", SEWER_HERO, SEWER_DESC, SEWER_FAQS, SEWER_ALT, "0.9", None),
+        ("sewer-cleanup", "Sewer Backup Cleanup {city} MI | Sewage Cleanup", "Sewer Backup Cleanup {city} MI", SEWER_HERO, SEWER_DESC, SEWER_FAQS, SEWER_ALT, "0.9", None),
         ("sewage-extraction", "Sewage Extraction {city} MI | Oakland Sewer Pros", "Sewage Extraction in {city}, MI", SEWAGE_HERO, SEWAGE_DESC, SEWAGE_FAQS, SEWAGE_ALT, "0.8", SEWAGE_ARTICLES),
         ("flooded-basement", "Flooded Basement Water Removal {city} MI | Oakland Sewer Pros", "Flooded Basement Cleanup & Water Removal in {city}, MI", FLOOD_HERO, FLOOD_DESC, FLOOD_FAQS, FLOOD_ALT, "0.8", FLOOD_ARTICLES),
-        ("sump-pump-repair", "Sump Pump Repair {city} MI | Oakland Sewer Pros", "Sump Pump Repair {city} MI", SUMP_HERO, SUMP_DESC, SUMP_FAQS, SUMP_ALT, "0.8", SUMP_ARTICLES),
+        ("sump-pump-repair", "Sump Pump Repair in {city}, Michigan", "Sump Pump Repair in {city}, Michigan", SUMP_HERO, SUMP_DESC, SUMP_FAQS, SUMP_ALT, "0.8", SUMP_ARTICLES),
         ("basement-sanitization", "Basement Sanitization {city} MI | Oakland Sewer Pros", "Basement Sanitization after Sewage or Flood in {city}, MI", SANIT_HERO, SANIT_DESC, SANIT_FAQS, SANIT_ALT, "0.8", SANIT_ARTICLES),
         ("water-damage-restoration", "Water Damage Restoration {city}, MI | Oakland Sewer Pros", "Water Damage Restoration in {city}, MI", WATER_HERO, WATER_DESC, WATER_FAQS, WATER_ALT, "0.9", WATER_ARTICLES),
     ]
@@ -364,11 +386,19 @@ def main():
                 article_html = sewer_article(city_slug, city)
             else:
                 article_html = articles[city_slug]()
+            title = title_t.format(city=city)
+            h1 = h1_t.format(city=city)
+            if city_slug == "clawson" and service_slug == "flooded-basement":
+                title = "Flooded Basement Cleanup Clawson, MI | Water Removal"
+            if city_slug == "berkley" and service_slug == "sewage-extraction":
+                title = "Sewage Extraction in Berkley, MI | Bungalow Basements"
+            if city_slug == "berkley" and service_slug == "basement-sanitization":
+                title = "Basement Sanitization Berkley, MI | After Sewage"
             emit_city_service(
                 city_slug,
                 service_slug,
-                title_t.format(city=city),
-                h1_t.format(city=city),
+                title,
+                h1,
                 descriptions[city_slug],
                 heroes[city_slug],
                 article_html,
@@ -416,10 +446,10 @@ def main():
             ("What does water damage restoration mean here?", "Removing standing water, discarding materials that cannot be saved, and drying what remains. An independent provider does it. Oakland Sewer Pros does not."),
             ("Do you cover every Oakland County city?", "The pages are Royal Oak, Troy, Birmingham, Berkley, and Clawson. A provider may or may not accept a different ZIP. They decide."),
         ]),
-        ("sewer-backup-cleanup", "Sewer Backup Cleanup Oakland County | Oakland Sewer Pros", "Sewer backup cleanup referrals for five Oakland County, MI cities. Independent providers. Call {PHONE_DISPLAY}.", "Sewer backup cleanup in Oakland County, MI", "Use the city page that matches the house. The provider, not this site, does the cleanup.", sewer_hub(), "0.8", None),
+        ("sewer-backup-cleanup", "Sewage Cleanup & Sewer Backup in Oakland County", "Sewage cleanup and sewer backup in Oakland County, MI, including a backup drain. Call {PHONE_DISPLAY}.", "Sewage cleanup and sewer backup in Oakland County, MI", "Use the city page that matches the house. A backup drain belongs here, not on the flood pages. The provider, not this site, does the cleanup.", sewer_hub(), "0.8", None),
         ("sewage-extraction", "Sewage Extraction Oakland County MI | Oakland Sewer Pros", "Sewage extraction referrals in Oakland County, MI. We connect you with independent providers. Call {PHONE_DISPLAY}.", "Sewage extraction in Oakland County, MI", "Contaminated water has to be removed by a company equipped for it. We only make the introduction.", sewage_hub(), "0.8", None),
-        ("flooded-basement-cleanup", "Flooded Basement Cleanup Oakland County | Oakland Sewer Pros", "Flooded basement cleanup and basement water removal referrals in Oakland County, MI. Call {PHONE_DISPLAY}.", "Flooded basement cleanup in Oakland County, MI", "Basement water removal for storms and sump overflows. Drain backups belong on the sewage pages.", flood_hub(), "0.8", None),
-        ("sump-pump-repair", "Sump Pump Repair Oakland County MI | Oakland Sewer Pros", "Sump pump repair referrals in Oakland County, MI. No price list. Independent providers. Call {PHONE_DISPLAY}.", "Sump pump repair in Oakland County, MI", "A stuck or dead pump is a repair. Water on the floor is a separate cleanup. We quote neither.", sump_hub(), "0.8", None),
+        ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup and flooded basement water removal in Oakland County, MI. Call {PHONE_DISPLAY}.", "Basement flood cleanup in Oakland County, MI", "Basement water removal for storms and sump overflows. A drain backup is sewage cleanup, on the sewer pages.", flood_hub(), "0.8", None),
+        ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, Michigan. Birmingham means Michigan, not Alabama. Call {PHONE_DISPLAY}.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump is a repair. Water on the floor is a separate cleanup. We quote neither. Birmingham on this site is in Michigan.", sump_hub(), "0.8", None),
         ("basement-sanitization", "Basement Sanitization Oakland County | Oakland Sewer Pros", "Basement sanitizing after sewage or a flood in Oakland County, MI. Independent providers. Call {PHONE_DISPLAY}.", "Basement sanitization after sewage or flooding", "This is post-backup cleaning, not a maid service. Extraction comes first.", sanit_hub(), "0.8", None),
     ]
     for path, title, description, h1, lead, article, priority, faqs in hub_pages:

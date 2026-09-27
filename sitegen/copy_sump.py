@@ -308,7 +308,7 @@ FAQS = {
 HERO = {
     "royal-oak": "Sump pump repair in Royal Oak is a referral to an independent provider for a pit that is stuck, dead, or overflowing. We do not repair pumps or quote a price. If the floor is wet, say so.",
     "troy": "Troy sump pump repair often protects a finished lower level near Big Beaver and in subdivisions. Call for an independent provider. Oakland Sewer Pros does not install pumps or promise a visit.",
-    "birmingham": "Birmingham sump pump repair is the mechanical half of a wet lower level in an older house. We refer you to an independent provider. We do not sell pumps or guarantee a dry basement.",
+    "birmingham": "Sump pump repair in Birmingham, Michigan is the mechanical half of a wet lower level in an older Oakland County house, not a Birmingham, Alabama job. We refer you to an independent provider. We do not sell pumps or guarantee a dry basement.",
     "berkley": "Berkley sump pump repair happens in a short bungalow basement that may flood fast when the pump stops. This is a referral line, not a repair shop, and it has no price list.",
     "clawson": "Clawson sump pump repair has to fit a small basement and a short driveway. Call to reach an independent provider. We do not do the repair and we do not publish prices.",
 }
@@ -322,9 +322,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Sump pump repair in Royal Oak, MI. We refer independent providers and do not quote prices. Call {PHONE_DISPLAY}.",
-    "troy": "Sump pump repair in Troy, MI for overflowing pits and dead pumps. Independent providers. Call {PHONE_DISPLAY}.",
-    "birmingham": "Sump pump repair in Birmingham, MI. A referral to independent local providers. Call {PHONE_DISPLAY}.",
-    "berkley": "Sump pump repair in Berkley, MI bungalows. Connect with an independent provider. Call {PHONE_DISPLAY}.",
-    "clawson": "Sump pump repair in Clawson, MI. Independent providers, no price list on this site. Call {PHONE_DISPLAY}.",
+    "royal-oak": "Sump pump repair in Royal Oak, Michigan. We refer independent providers and do not quote prices. Call {PHONE_DISPLAY}.",
+    "troy": "Sump pump repair in Troy, Michigan for overflowing pits and dead pumps. Independent providers. Call {PHONE_DISPLAY}.",
+    "birmingham": "Sump pump repair in Birmingham, Michigan, Oakland County. Not Alabama. Independent providers. Call {PHONE_DISPLAY}.",
+    "berkley": "Sump pump repair in Berkley, Michigan bungalows. Connect with an independent provider. Call {PHONE_DISPLAY}.",
+    "clawson": "Sump pump repair in Clawson, Michigan. Independent providers, no price list on this site. Call {PHONE_DISPLAY}.",
 }

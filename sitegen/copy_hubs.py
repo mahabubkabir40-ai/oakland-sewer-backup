@@ -19,6 +19,14 @@ def services_article():
         p(a("/flooded-basement-cleanup", "Flooded basement cleanup") + " is basement water removal when you are dealing with storm water, a window well, or a sump overflow. If a drain was involved, use the sewage pages."),
         p(a("/sump-pump-repair", "Sump pump repair") + " is the mechanical pump. Overflow cleanup, if the floor is wet, is a water-damage job on top of the repair."),
         p(a("/basement-sanitization", "Basement sanitization") + " means cleaning after sewage or a contaminated flood. It is not a housekeeping service."),
+        p(
+            "Company pages, which are part of the site and not a service: "
+            + a("/about", "about this referral line")
+            + ", " + a("/contact", "contact")
+            + ", " + a("/privacy", "privacy")
+            + ", and " + a("/terms", "terms")
+            + "."
+        ),
         h2("Cities"),
         p(
             "Choose a city overview, then the service that matches the water: "
@@ -49,7 +57,11 @@ def water_hub():
         ),
         h3("Basement flooding in these cities"),
         p(
-            "Basement flooding here is local, not one county-wide cause. Royal Oak's older blocks and "
+            "Basement flood cleanup in Oakland County is the county page for storm water and sump overflows: "
+            + a("/flooded-basement-cleanup", "flooded basement cleanup")
+            + ". Sewage cleanup and sewer backup, when a drain was the source, are "
+            + a("/sewer-backup-cleanup", "the sewer backup hub")
+            + ". Basement flooding here is local, not one county-wide cause. Royal Oak's older blocks and "
             "Woodward-side window wells are a different pattern from Troy's finished split-levels near "
             "Big Beaver, Birmingham's plaster houses near Quarton and Poppleton, Berkley's flat bungalow "
             "grid, and Clawson's small brick-bungalow basements on 14 Mile. Each city page below is written "
@@ -76,18 +88,20 @@ def water_hub():
 
 def sewer_hub():
     return "\n".join([
-        h2("Sewer backup cleanup in southern Oakland County"),
+        h2("Sewage cleanup and sewer backup in Oakland County"),
         p(
-            "Sewer backup cleanup is the job after sewage enters a house through a floor drain, a basement "
-            "toilet, or a laundry standpipe. The five city pages are written separately because the houses "
-            "are not the same. This hub only routes you. The work is done by an independent provider you hire."
+            "Sewage cleanup in Oakland County, on this site, means wastewater that came up a floor drain, "
+            "a basement toilet, or a laundry standpipe. A backup drain in Oakland County is the same "
+            "problem worded differently: the line was full and the lowest opening in the house let it "
+            "out. Sewer backup cleanup is that job. The five city pages own the city phrases. This hub "
+            "only routes you. An independent provider you hire does the work."
         ),
         h3("Sewage cleanup, by city"),
-        p("Royal Oak: older houses near Woodward, downtown, Vinsetta, and Northwood, with a city Sewer Division for the public main. " + a("/royal-oak-sewer-cleanup", "Sewer backup cleanup in Royal Oak") + "."),
-        p("Troy: split-levels and subdivision basements near Big Beaver, with storm drainage under the city's Streets and Drains Division. " + a("/troy-sewer-cleanup", "Sewer backup cleanup in Troy") + "."),
-        p("Birmingham: older houses, plaster, and mature trees around Poppleton, Quarton, and downtown. " + a("/birmingham-sewer-cleanup", "Sewer backup cleanup in Birmingham") + "."),
-        p("Berkley: 1940s–1950s bungalows on a flat grid along 12 Mile, where some older sections are described as combined sewers. Confirm that with the city. " + a("/berkley-sewer-cleanup", "Sewer backup cleanup in Berkley") + "."),
-        p("Clawson: brick bungalows on compact lots around 14 Mile. " + a("/clawson-sewer-cleanup", "Sewer backup cleanup in Clawson") + "."),
+        p("Royal Oak: older houses near Woodward, downtown, Vinsetta, and Northwood, with a city Sewer Division for the public main. " + a("/royal-oak-sewer-cleanup", "Sewage cleanup in Royal Oak, MI") + "."),
+        p("Troy: split-levels and subdivision basements near Big Beaver, with storm drainage under the city's Streets and Drains Division. " + a("/troy-sewer-cleanup", "Sewage cleanup in Troy, MI") + "."),
+        p("Birmingham: older houses, plaster, and mature trees around Poppleton, Quarton, and downtown. " + a("/birmingham-sewer-cleanup", "Sewage cleanup in Birmingham, MI") + "."),
+        p("Berkley: 1940s–1950s bungalows on a flat grid along 12 Mile, where some older sections are described as combined sewers. Confirm that with the city. " + a("/berkley-sewer-cleanup", "Sewage cleanup in Berkley, MI") + "."),
+        p("Clawson: brick bungalows on compact lots around 14 Mile. " + a("/clawson-sewer-cleanup", "Sewage cleanup in Clawson, MI") + "."),
         p(
             "If the basement is wet but the drains never moved, start at "
             + a("/flooded-basement-cleanup", "flooded basement cleanup")
@@ -102,54 +116,58 @@ def sewage_hub():
         h2("What sewage extraction is"),
         p(
             "Sewage extraction removes contaminated water that left the sanitary plumbing, plus the "
-            "materials that soaked it up. It is not mopping rain that came through a window. A household "
-            "vac spreads it. An independent company with the right setup does the removal. Oakland Sewer "
-            "Pros does not own that equipment."
+            "materials that soaked it up. It is not the sewage cleanup overview, and it is not mopping "
+            "rain that came through a window. A household vac spreads it. An independent company with "
+            "the right setup does the removal. Oakland Sewer Pros does not own that equipment."
         ),
         h3("City pages"),
-        p(a("/royal-oak-sewage-extraction", "Royal Oak") + " focuses on floor drains in older houses off Woodward and downtown."),
-        p(a("/troy-sewage-extraction", "Troy") + " focuses on split-level lower floors and finished subdivision basements."),
-        p(a("/birmingham-sewage-extraction", "Birmingham") + " focuses on plaster, trim, and older laterals."),
-        p(a("/berkley-sewage-extraction", "Berkley") + " focuses on small bungalow stairs and tight basements."),
-        p(a("/clawson-sewage-extraction", "Clawson") + " focuses on compact lots and one-room basements."),
+        p(a("/royal-oak-sewage-extraction", "Sewage extraction in Royal Oak") + " focuses on floor drains in older houses off Woodward and downtown."),
+        p(a("/troy-sewage-extraction", "Sewage extraction in Troy") + " focuses on split-level lower floors and finished subdivision basements."),
+        p(a("/birmingham-sewage-extraction", "Sewage extraction in Birmingham") + " focuses on plaster, trim, and older laterals."),
+        p(a("/berkley-sewage-extraction", "Sewage extraction in Berkley, MI") + " focuses on small bungalow stairs and tight basements."),
+        p(a("/clawson-sewage-extraction", "Sewage extraction in Clawson") + " focuses on compact lots and one-room basements."),
         p("After extraction, sanitizing is " + a("/basement-sanitization", "its own hub") + ". The backup overview is " + a("/sewer-backup-cleanup", "sewer backup cleanup") + "."),
     ])
 
 
 def flood_hub():
     return "\n".join([
-        h2("Flooded basement cleanup and basement water removal"),
+        h2("Basement flood cleanup in Oakland County"),
         p(
-            "Basement water removal means getting standing water off the floor and out of the materials "
-            "it entered. Flooded basement cleanup is that work plus the mess it left. If a sewer drain "
-            "was the source, do not treat it as a rain flood. Use "
+            "Basement flood cleanup in Oakland County means getting standing water off the floor and out "
+            "of the materials it entered. Flooded basement cleanup is that work plus the mess it left. "
+            "If a sewer drain was the source, do not treat it as a rain flood. Use "
             + a("/sewage-extraction", "sewage extraction")
+            + " or the city's "
+            + a("/sewer-backup-cleanup", "sewage cleanup page")
             + ". If finishes are wet after the pump-out, the longer process is "
             + a("/water-damage-restoration", "water damage restoration") + "."
         ),
         h3("The five city versions"),
-        p(a("/royal-oak-flooded-basement", "Royal Oak") + ": window wells and older basements, versus a true drain backup."),
-        p(a("/troy-flooded-basement", "Troy") + ": finished lower levels and split-levels, where carpet holds the water."),
-        p(a("/birmingham-flooded-basement", "Birmingham") + ": plaster and low ground near Quarton, with downtown and Poppleton as the other housing stock."),
-        p(a("/berkley-flooded-basement", "Berkley") + ": short stairs and first-floor hardwood over a flat lot."),
-        p(a("/clawson-flooded-basement", "Clawson") + ": one-room basements, furnaces in the water, short driveways."),
+        p(a("/royal-oak-flooded-basement", "Flooded basement cleanup in Royal Oak") + ": window wells and older basements, versus a true drain backup."),
+        p(a("/troy-flooded-basement", "Flooded basement cleanup in Troy") + ": finished lower levels and split-levels, where carpet holds the water."),
+        p(a("/birmingham-flooded-basement", "Flooded basement cleanup in Birmingham") + ": plaster and low ground near Quarton, with downtown and Poppleton as the other housing stock."),
+        p(a("/berkley-flooded-basement", "Flooded basement cleanup in Berkley") + ": short stairs and first-floor hardwood over a flat lot."),
+        p(a("/clawson-flooded-basement", "Flooded basement cleanup in Clawson, MI") + ": one-room basements, furnaces in the water, short driveways."),
         p("A failed pump may be why the water is there. That repair is " + a("/sump-pump-repair", "sump pump repair") + ", not a substitute for removing the water."),
     ])
 
 
 def sump_hub():
     return "\n".join([
-        h2("Sump pump repair, without a price list"),
+        h2("Sump pump repair in Oakland County, Michigan"),
         p(
-            "A sump pump lifts groundwater out of a pit. When the float sticks, the check valve fails, "
-            "the discharge line freezes, or the power drops, the pit overflows. Repairing that pump is "
-            "often a plumbing visit. Drying the carpet it ruined is water damage. This site used to show "
-            "dollar ranges. Those ranges are gone, because we do not control what an independent company charges."
+            "These pages are for Oakland County, Michigan. Birmingham on this site is Birmingham, "
+            "Michigan, next to Royal Oak and Troy, not Birmingham, Alabama. A sump pump lifts groundwater "
+            "out of a pit. When the float sticks, the check valve fails, the discharge line freezes, or "
+            "the power drops, the pit overflows. Repairing that pump is often a plumbing visit. Drying "
+            "the carpet it ruined is water damage. This site used to show dollar ranges. Those ranges "
+            "are gone, because we do not control what an independent company charges."
         ),
         h3("Where the pits are"),
         p(a("/royal-oak-sump-pump-repair", "Royal Oak") + ": older crocks in pre-1960s basements."),
         p(a("/troy-sump-pump-repair", "Troy") + ": pits next to finished living space."),
-        p(a("/birmingham-sump-pump-repair", "Birmingham") + ": older houses where the discharge line and the trim both matter."),
+        p(a("/birmingham-sump-pump-repair", "Sump pump repair in Birmingham, Michigan") + ": older houses where the discharge line and the trim both matter."),
         p(a("/berkley-sump-pump-repair", "Berkley") + ": short basements and steep stairs."),
         p(a("/clawson-sump-pump-repair", "Clawson") + ": the pit in the same small room as the furnace."),
         p("If the floor is wet, start the water conversation at " + a("/flooded-basement-cleanup", "flooded basement cleanup") + " as well."),
@@ -165,11 +183,11 @@ def sanit_hub():
             "maid service, and a fogger is not a substitute for throwing away a soaked pad. The company "
             "that extracted the water should say what chemical they will use and why the label fits."
         ),
-        p(a("/royal-oak-basement-sanitization", "Royal Oak") + " is about residue in older basements after a floor-drain backup."),
-        p(a("/troy-basement-sanitization", "Troy") + " is about finished rooms, carpet, and contents."),
-        p(a("/birmingham-basement-sanitization", "Birmingham") + " is about plaster and wood that may not survive a wipe-down."),
-        p(a("/berkley-basement-sanitization", "Berkley") + " is about a small stair that opens into the living room."),
-        p(a("/clawson-basement-sanitization", "Clawson") + " is about one room full of mechanical equipment."),
+        p(a("/royal-oak-basement-sanitization", "Basement sanitization in Royal Oak") + " is about residue in older basements after a floor-drain backup."),
+        p(a("/troy-basement-sanitization", "Basement sanitization in Troy") + " is about finished rooms, carpet, and contents."),
+        p(a("/birmingham-basement-sanitization", "Basement sanitization in Birmingham") + " is about plaster and wood that may not survive a wipe-down."),
+        p(a("/berkley-basement-sanitization", "Basement sanitization in Berkley, MI") + " is about a small stair that opens into the living room."),
+        p(a("/clawson-basement-sanitization", "Basement sanitization in Clawson") + " is about one room full of mechanical equipment."),
         p("Extraction comes first. See " + a("/sewage-extraction", "sewage extraction") + "."),
     ])
 
@@ -186,8 +204,8 @@ def city_royal_oak():
         ),
         h2("Which Royal Oak page to open"),
         p(a("/royal-oak-sewer-cleanup", "Sewer backup cleanup") + " if sewage came through a drain. That page is the long-standing URL for the phrase."),
-        p(a("/royal-oak-sewage-extraction", "Sewage extraction") + " for the removal step itself."),
-        p(a("/royal-oak-flooded-basement", "Flooded basement cleanup and water removal") + " when the water is storm, a window well, or a sump, not a drain."),
+        p(a("/royal-oak-sewage-extraction", "Sewage extraction in Royal Oak") + " for the removal step itself."),
+        p(a("/royal-oak-flooded-basement", "Flooded basement cleanup in Royal Oak") + " when the water is storm, a window well, or a sump, not a drain."),
         p(a("/royal-oak-water-damage-restoration", "Water damage restoration") + " for drying and the broader wet-building scope, including water damage repair decisions."),
         p(a("/royal-oak-sump-pump-repair", "Sump pump repair") + " for the pit, with no prices listed."),
         p(a("/royal-oak-basement-sanitization", "Basement sanitization") + " after sewage or a contaminated flood, not as routine cleaning."),
@@ -206,12 +224,12 @@ def city_troy():
             "sanitary backup in a lower level is not the same call."
         ),
         h2("Troy service pages"),
-        p(a("/troy-sewer-cleanup", "Sewer backup cleanup") + " keeps the original URL and heading for sewage backups."),
-        p(a("/troy-sewage-extraction", "Sewage extraction") + " for contaminated water in a split-level or finished basement."),
-        p(a("/troy-flooded-basement", "Flooded basement cleanup") + " for carpeted lower levels and basement water removal."),
+        p(a("/troy-sewer-cleanup", "Sewage cleanup in Troy, MI") + " keeps the original URL and the sewer backup heading."),
+        p(a("/troy-sewage-extraction", "Sewage extraction in Troy") + " for contaminated water in a split-level or finished basement."),
+        p(a("/troy-flooded-basement", "Flooded basement cleanup in Troy") + " for carpeted lower levels and basement water removal."),
         p(a("/troy-water-damage-restoration", "Water damage restoration") + " for drying after the water is out."),
         p(a("/troy-sump-pump-repair", "Sump pump repair") + " when the pit in a finished room quits."),
-        p(a("/troy-basement-sanitization", "Basement sanitization") + " after sewage has touched contents and pad."),
+        p(a("/troy-basement-sanitization", "Basement sanitization in Troy") + " after sewage has touched contents and pad."),
         p("Other cities: " + a("/birmingham", "Birmingham") + ", " + a("/clawson", "Clawson") + ", " + a("/royal-oak", "Royal Oak") + "."),
     ])
 
@@ -228,11 +246,11 @@ def city_birmingham():
         ),
         h2("Open the matching Birmingham service"),
         p(a("/birmingham-sewer-cleanup", "Sewer backup cleanup") + " for a drain backup in an older house."),
-        p(a("/birmingham-sewage-extraction", "Sewage extraction") + " when contaminated water is already inside."),
+        p(a("/birmingham-sewage-extraction", "Sewage extraction in Birmingham") + " when contaminated water is already inside."),
         p(a("/birmingham-flooded-basement", "Flooded basement cleanup") + " for storm water and basement water removal around those neighborhoods."),
         p(a("/birmingham-water-damage-restoration", "Water damage restoration") + " when plaster, trim, or finishes have to be dried or opened."),
-        p(a("/birmingham-sump-pump-repair", "Sump pump repair") + " for the pit, quoted by the provider, not by us."),
-        p(a("/birmingham-basement-sanitization", "Basement sanitization") + " after sewage, with a warning about plaster and fog-only treatments."),
+        p(a("/birmingham-sump-pump-repair", "Sump pump repair in Birmingham, Michigan") + " for the pit, quoted by the provider, not by us."),
+        p(a("/birmingham-basement-sanitization", "Basement sanitization in Birmingham") + " after sewage, with a warning about plaster and fog-only treatments."),
         p("Adjacent overviews: " + a("/royal-oak", "Royal Oak") + " and " + a("/troy", "Troy") + "."),
     ])
 
@@ -248,12 +266,12 @@ def city_berkley():
             "street. Basements are short, and the stair lands close to the first-floor living space."
         ),
         h2("Berkley pages"),
-        p(a("/berkley-sewer-cleanup", "Sewer backup cleanup") + " for sewage at a bungalow floor drain."),
-        p(a("/berkley-sewage-extraction", "Sewage extraction") + " with the stair and a household vac called out as the wrong tool."),
+        p(a("/berkley-sewer-cleanup", "Sewage cleanup in Berkley, MI") + " for sewage at a bungalow floor drain."),
+        p(a("/berkley-sewage-extraction", "Sewage extraction in Berkley, MI") + " with the stair and a household vac called out as the wrong tool."),
         p(a("/berkley-flooded-basement", "Flooded basement cleanup") + " for window wells, stairwells, and basement water removal."),
         p(a("/berkley-water-damage-restoration", "Water damage restoration") + " including the risk to first-floor hardwood from wet joists."),
         p(a("/berkley-sump-pump-repair", "Sump pump repair") + " in a low basement, with no price table."),
-        p(a("/berkley-basement-sanitization", "Basement sanitization") + " after sewage, sized to a small air volume."),
+        p(a("/berkley-basement-sanitization", "Basement sanitization in Berkley, MI") + " after sewage, sized to a small air volume."),
         p("Neighbors on this site: " + a("/royal-oak", "Royal Oak") + " and " + a("/birmingham", "Birmingham") + "."),
     ])
 
@@ -270,12 +288,12 @@ def city_clawson():
             "anything you need for a city complaint with those agencies. This overview is a referral map."
         ),
         h2("Clawson services"),
-        p(a("/clawson-sewer-cleanup", "Sewer backup cleanup") + " for a bungalow backup."),
-        p(a("/clawson-sewage-extraction", "Sewage extraction") + " when access is limited by the lot."),
-        p(a("/clawson-flooded-basement", "Flooded basement cleanup") + " for water removal when the mechanical room is wet."),
+        p(a("/clawson-sewer-cleanup", "Sewage cleanup in Clawson, MI") + " for a bungalow backup."),
+        p(a("/clawson-sewage-extraction", "Sewage extraction in Clawson") + " when access is limited by the lot."),
+        p(a("/clawson-flooded-basement", "Flooded basement cleanup in Clawson, MI") + " for water removal when the mechanical room is wet."),
         p(a("/clawson-water-damage-restoration", "Water damage restoration") + " for drying after extraction."),
         p(a("/clawson-sump-pump-repair", "Sump pump repair") + " next to the furnace, without a published price."),
-        p(a("/clawson-basement-sanitization", "Basement sanitization") + " so residue does not walk up the only stair."),
+        p(a("/clawson-basement-sanitization", "Basement sanitization in Clawson") + " so residue does not walk up the only stair."),
         p("See also " + a("/royal-oak", "Royal Oak") + " and " + a("/troy", "Troy") + "."),
     ])
 

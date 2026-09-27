@@ -275,6 +275,27 @@ def clawson():
             "Contaminated floods need " + a("/clawson-basement-sanitization", "sanitizing after the Clawson flood") + ", not a mop and bleach from the grocery store as the whole plan.",
             "Ask your insurer what is covered. Sudden discharge and groundwater are often treated differently, and we do not interpret the policy.",
         ]),
+        h2("Flooded basement cleanup in Clawson, from the first hour"),
+        p(
+            "Flooded basement cleanup in Clawson, MI is water removal plus the mess in that one room. "
+            "If the floor drain never moved and there is no sewage odor, treat it as storm water, a "
+            "window, or a dead sump. If the drain did move, stop and use "
+            + a("/clawson-sewage-extraction", "sewage extraction")
+            + " and "
+            + a("/clawson-sewer-cleanup", "sewage cleanup in Clawson")
+            + ". Category 3 water is a health problem in a room that also holds the furnace: do not "
+            "wade in, do not mop it up the stair, and do not restart equipment that was submerged."
+        ),
+        p(
+            "A reasonable sequence, done by the company you hire, is: make the room safe, remove standing "
+            "water, discard porous material that cannot be saved, then dry what remains. Drying is "
+            + a("/clawson-water-damage-restoration", "water damage restoration in Clawson")
+            + ". Insurance for a sudden pipe break, a sewer backup, and groundwater are often different "
+            "parts of a policy. Ask your insurer which one matches what you saw. This site will not "
+            "file a claim or name a deadline. Call "
+            + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
+            + " when you want an independent provider for the water that is already inside."
+        ),
         h2("Causes that fit Clawson's lots"),
         p(
             "Compact lots put the downspout discharge close to the wall. A disconnected downspout dumps "
@@ -339,7 +360,7 @@ HERO = {
     "troy": "Troy flooded basement cleanup is usually water removal from a finished lower level or split-level, then drying what the water soaked. Call to be matched with an independent company. This site does not perform the cleanup.",
     "birmingham": "Basement water removal in Birmingham has to account for plaster, trim, and low areas such as Quarton. We refer you to an independent provider and do not run the job.",
     "berkley": "Berkley basement flooding hits short bungalow basements on flat ground. Flooded basement cleanup here has to protect the stair and the first floor. We connect the call; we do not remove the water.",
-    "clawson": "Clawson flooded basement cleanup happens in small brick-bungalow basements on tight lots. Use this referral line to reach an independent provider for water removal. We have no crew of our own.",
+    "clawson": "Flooded basement cleanup in Clawson, MI is water removal in a small brick-bungalow basement. If a drain caused it, that is a sewage page instead. This line refers you to an independent provider. We have no crew of our own.",
 }
 
 ALT = {
@@ -355,5 +376,5 @@ DESCRIPTIONS = {
     "troy": "Flooded basement cleanup and basement water removal in Troy, MI. Call an independent provider at {PHONE_DISPLAY}.",
     "birmingham": "Basement water removal and flooded basement cleanup in Birmingham, MI. Call {PHONE_DISPLAY} to connect.",
     "berkley": "Flooded basement cleanup and water removal in Berkley, MI. We refer independent providers. Call {PHONE_DISPLAY}.",
-    "clawson": "Flooded basement cleanup and water removal in Clawson, MI. Independent providers. Call {PHONE_DISPLAY} for a connection.",
+    "clawson": "Flooded basement cleanup and water removal in Clawson, MI bungalows. Independent providers. Call {PHONE_DISPLAY}.",
 }

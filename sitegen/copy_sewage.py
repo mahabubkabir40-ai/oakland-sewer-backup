@@ -5,6 +5,13 @@ from sitegen.render import a, callout, h2, h3, nearby_section, p, ul
 
 def royal_oak():
     return "\n".join([
+        p(
+            "Sewage extraction in Royal Oak is the removal step: pumping contaminated water out and taking "
+            "the soaked material with it. Sewage cleanup in Royal Oak, MI, including why older laterals "
+            "back up and what to do in the first minutes, is "
+            + a("/royal-oak-sewer-cleanup", "the sewer backup cleanup page")
+            + ". Stay on this page when the water is already on the floor."
+        ),
         h2("Sewage extraction on Royal Oak's older residential blocks"),
         p(
             "Downtown Royal Oak gets the attention, but the backups we hear about from callers are usually "
@@ -74,6 +81,13 @@ def royal_oak():
 
 def troy():
     return "\n".join([
+        p(
+            "This Troy page is sewage extraction: getting Category 3 water out of a split-level or a "
+            "finished lower level. The broader job people look up as sewage cleanup in Troy, MI is "
+            + a("/troy-sewer-cleanup", "sewer backup cleanup in Troy")
+            + ". Do not treat the two URLs as the same article. Extraction is the pump-out and the "
+            "ruined materials. The other page is the backup itself."
+        ),
         h2("Sewage extraction in Troy split-levels and subdivision basements"),
         p(
             "Troy callers rarely describe a downtown storefront. They describe a lower level: a 1950s or 1960s "
@@ -142,6 +156,14 @@ def troy():
 
 def birmingham():
     return "\n".join([
+        p(
+            "Birmingham sewage extraction means removing wastewater that has already entered an older "
+            "house, often against plaster and trim. Sewage cleanup in Birmingham, MI, the page that "
+            "covers the backup and the first steps, is "
+            + a("/birmingham-sewer-cleanup", "sewer backup cleanup in Birmingham")
+            + ". Open that one if you are still figuring out what happened. Open this one if the lower "
+            "level is wet and the drains were the source."
+        ),
         h2("Sewage extraction in older Birmingham houses"),
         p(
             "Birmingham sewage extraction is often a finish-sensitive job. Houses around Shain Park, along "
@@ -204,6 +226,14 @@ def birmingham():
 
 def berkley():
     return "\n".join([
+        p(
+            "Sewage extraction in Berkley, MI is the pumping job in a short bungalow basement. Sewage "
+            "cleanup in Berkley, MI is a different page, "
+            + a("/berkley-sewer-cleanup", "sewer backup cleanup in Berkley")
+            + ", and that is the one that should rank for the cleanup phrase. This page stays on "
+            "removal: what comes out, what you should not do with a shop vac, and when the stair makes "
+            "the job harder."
+        ),
         h2("Sewage extraction in Berkley bungalows"),
         p(
             "Berkley is a small grid of mostly 1940s and 1950s bungalows. Downtown is the 12 Mile Road row "
@@ -236,6 +266,26 @@ def berkley():
             + a("/berkley-water-damage-restoration", "water damage restoration in Berkley") + ".",
             "Laundry-tub backups often mean the line is full downstream of the house, not that the tub itself failed.",
         ]),
+        h2("How a Berkley extraction is supposed to go"),
+        p(
+            "A company set up for Category 3 water should keep the mess in the basement. That means "
+            "containment at the stair, removal of standing sewage, and bagging of pad, drywall, and "
+            "other porous material that soaked it up. Health-wise, the risk in a Berkley bungalow is "
+            "the short path upstairs: droplets on the treads, a furnace return that was left running, "
+            "and wet shoes carried into the kitchen. Keep people and pets out until that path is clean."
+        ),
+        p(
+            "Insurance is a separate conversation. Many homeowners policies do not cover a sewer backup "
+            "unless an endorsement is on the form. Ask your insurer. Oakland Sewer Pros does not read "
+            "the policy or bill a carrier. Call "
+            + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
+            + " when the water is inside and you want an independent provider. Call the city as well "
+            "if several houses on the block are backing up at once, because that can be the main rather "
+            "than your lateral. If the drains stayed quiet and only a window well filled, this is the "
+            "wrong page. Use "
+            + a("/berkley-flooded-basement", "flooded basement cleanup in Berkley")
+            + "."
+        ),
         h2("After the water is gone"),
         p(
             "Bare concrete that looks dry can still hold odor in the cove joint and in the bottom plate of "
@@ -264,6 +314,12 @@ def berkley():
 
 def clawson():
     return "\n".join([
+        p(
+            "Clawson sewage extraction is the removal step on a compact lot. Sewage cleanup in Clawson, "
+            "MI, the backup overview, is "
+            + a("/clawson-sewer-cleanup", "sewer backup cleanup in Clawson")
+            + ". If you only need the water pumped out of a one-room basement, you are in the right place."
+        ),
         h2("Sewage extraction on Clawson's small lots"),
         p(
             "Clawson extraction jobs are shaped by the lot, not by a big basement rec room. The housing is "
@@ -362,7 +418,7 @@ HERO = {
     "royal-oak": "Sewage extraction in Royal Oak means removing contaminated water that came out of the plumbing in an older house, then deciding what that water ruined. This line connects you with an independent provider. We do not pump the basement ourselves.",
     "troy": "Troy sewage extraction is usually a lower-level or split-level problem off corridors like Big Beaver, not a mall-parking-lot issue. Call to reach an independent company. Oakland Sewer Pros does not run the job.",
     "birmingham": "In Birmingham, sewage extraction has to respect plaster, trim, and finished lower levels in older houses. We connect you with an outside provider. We do not perform the extraction.",
-    "berkley": "Berkley sewage extraction happens in small bungalow basements with steep stairs. Use this page to reach an independent provider. A household vac is a poor substitute.",
+    "berkley": "Sewage extraction in Berkley, MI is pumping contaminated water out of a short bungalow basement. Sewage cleanup is a different page. A household vac is a poor substitute. We connect you with an independent provider.",
     "clawson": "Clawson sewage extraction has to work on compact bungalow lots near 14 Mile. This is a referral to an independent company, not a city crew and not our own crew.",
 }
 
@@ -378,6 +434,6 @@ DESCRIPTIONS = {
     "royal-oak": "Sewage extraction in Royal Oak, MI for basement backups. We connect you with independent providers. Call {PHONE_DISPLAY}.",
     "troy": "Sewage extraction in Troy, MI for lower-level backups. Independent providers via Oakland Sewer Pros. Call {PHONE_DISPLAY}.",
     "birmingham": "Sewage extraction in Birmingham, MI for older homes. A referral to independent providers. Call {PHONE_DISPLAY}.",
-    "berkley": "Sewage extraction in Berkley, MI bungalows. Connect with an independent local provider. Call {PHONE_DISPLAY}.",
+    "berkley": "Sewage extraction in Berkley, MI bungalows. Pumping contaminated water, not the sewage cleanup page. Call {PHONE_DISPLAY}.",
     "clawson": "Sewage extraction in Clawson, MI for bungalow backups. Independent local providers. Call {PHONE_DISPLAY} today.",
 }

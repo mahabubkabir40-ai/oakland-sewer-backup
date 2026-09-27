@@ -178,11 +178,11 @@ def berkley():
         p(
             "Older Berkley sections have been described as combined sewers. A storm can put wastewater "
             "on the floor even in a house that did not have a plumbing break. Confirm that with the city "
-            "for your block. If it happened, the cleanup is a sewage cleanup. Extraction is "
-            + a("/berkley-sewage-extraction", "the Berkley extraction page")
-            + ". The backup overview is "
-            + a("/berkley-sewer-cleanup", "sewer backup cleanup")
-            + ". Oakland Sewer Pros does not clean the house. Call "
+            "for your block. If it happened, treat the water as sewage. Sewage cleanup in Berkley, MI is "
+            + a("/berkley-sewer-cleanup", "sewer backup cleanup in Berkley")
+            + ". Pumping the water out is "
+            + a("/berkley-sewage-extraction", "sewage extraction in Berkley")
+            + ". This page starts after that water is out. Oakland Sewer Pros does not clean the house. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " for a referral to an independent provider."
         ),
@@ -193,6 +193,22 @@ def berkley():
             "Panel doors and hollow closet bases on the first floor can wick if the humidity stayed high. Mention them.",
             "A clean flood still needs drying. That scope is " + a("/berkley-flooded-basement", "flooded basement cleanup") + " and " + a("/berkley-water-damage-restoration", "water damage restoration") + ".",
         ]),
+        h2("What sanitizing covers after a Berkley backup"),
+        p(
+            "Basement sanitization in Berkley, MI is the residue step. It is not sewage extraction and "
+            "it is not the sewage cleanup overview. Those are linked above. A sensible order is: stop "
+            "water use, keep the stair closed, have contaminated water removed, throw out porous items "
+            "that soaked it up, then clean what is left and dry the structure. Spraying a still-wet "
+            "pad does none of those things. Category 3 water can carry bacteria up a short bungalow "
+            "stair, so the living room is part of the safety plan even when the flood stayed downstairs."
+        ),
+        p(
+            "Call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
+            + " when you need an independent provider for that cleaning. Ask what they will remove, "
+            "what they will apply, and how they will keep the first floor from being the next dirty "
+            "surface. Insurance questions go to your insurer. We do not say a policy will pay, and we "
+            "do not quote a cleaning price."
+        ),
         h2("Not a substitute for fixing the drain"),
         p(
             "Sanitizing does not clear a root-filled lateral or a city main. You can have a clean-looking "
@@ -303,7 +319,7 @@ HERO = {
     "royal-oak": "Basement sanitization in Royal Oak means cleaning up after sewage or a contaminated flood, once the water is out. It is not a maid service. We refer you to an independent provider and do not do the cleaning.",
     "troy": "After a Troy lower-level backup, sanitizing means removing what sewage soaked, not spraying over carpet pad. This page connects you with an independent company. We do not perform the work.",
     "birmingham": "Sanitizing a Birmingham basement after sewage has to deal with plaster and wood, not just a concrete floor. Call for a referral. Oakland Sewer Pros does not apply cleaners or guarantee an odor-free date.",
-    "berkley": "Berkley basement sanitization happens in a small bungalow where the stairs open into the living space. Treat it as post-sewage cleanup. We connect the call and do not clean the house.",
+    "berkley": "Basement sanitization in Berkley, MI is cleaning after sewage or a flood in a small bungalow, once the water is out. It is not the sewage cleanup page. We connect the call and do not clean the house.",
     "clawson": "Clawson sanitizing after a backup is a one-room job packed with mechanical equipment. Use this referral to reach an independent provider. We do not send a cleaning crew.",
 }
 
@@ -319,6 +335,6 @@ DESCRIPTIONS = {
     "royal-oak": "Basement sanitization after sewage or flood in Royal Oak, MI. Independent providers. Call {PHONE_DISPLAY}.",
     "troy": "Basement sanitization after a Troy, MI backup or flood. We refer independent providers. Call {PHONE_DISPLAY}.",
     "birmingham": "Sanitize a Birmingham, MI basement after sewage or flood. Independent local help. Call {PHONE_DISPLAY}.",
-    "berkley": "Berkley, MI basement sanitizing after sewage or a flood. Referral to local providers. Call {PHONE_DISPLAY}.",
+    "berkley": "Basement sanitization in Berkley, MI after sewage or a flood. Not the extraction page. Call {PHONE_DISPLAY}.",
     "clawson": "Basement sanitization after a Clawson, MI backup or flood. Independent providers. Call {PHONE_DISPLAY}.",
 }
