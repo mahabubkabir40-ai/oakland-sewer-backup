@@ -264,10 +264,9 @@ def organization_graph():
             "url": f"{DOMAIN}/",
             "telephone": PHONE_E164,
             "description": (
-                f"{BRAND} is a referral service that connects Oakland County, Michigan homeowners "
-                "with independent local providers for sewer backup cleanup, sewage extraction, flooded "
-                "basement cleanup, water damage restoration, sump pump repair, and basement sanitization "
-                "after a flood or sewage backup."
+                f"{BRAND} helps Oakland County, Michigan homeowners reach a local cleanup crew for sewer "
+                "backup cleanup, sewage extraction, flooded basement cleanup, water damage restoration, "
+                "sump pump repair, and basement sanitization after a flood or sewage backup."
             ),
             "areaServed": {
                 "@type": "AdministrativeArea",
@@ -364,9 +363,9 @@ def faq_html(faqs, heading):
 
 def trust_row():
     cells = [
-        ("Referral line", "We connect you with independent local providers. The company you hire does the work."),
-        ("You check credentials", "Ask the provider for the license and insurance the job requires."),
-        ("Price from the company", "The provider you hire sets the scope and the price."),
+        ("Say where the water came from", "A floor drain, a sump, or a storm. That decides whether it is sewage cleanup, water removal, or a pump repair."),
+        ("Get the scope in writing", "Before work starts, ask what will be pumped, what will be removed, and the price."),
+        ("Check license and insurance", "Ask the cleanup company for proof before anyone goes downstairs."),
     ]
     inner = []
     for title, text in cells:
@@ -406,7 +405,7 @@ def nearby_section(service_slug, label, current_city):
     name = city_name(current_city)
     return f"""<div class="border-t border-slate-800/60 pt-6 mt-6">
         <h2 class="text-lg font-outfit font-bold text-white mb-3">{esc(label)} in nearby cities</h2>
-        <p class="text-sm text-gray-300 leading-relaxed">If the house is in a neighboring city, the same phone line covers {nearby_links(service_slug, label, current_city)}. Open the city where the house stands. The details there match that place, not {esc(name)}.</p>
+        <p class="text-sm text-gray-300 leading-relaxed">If the house is in a neighboring city, the same number covers {nearby_links(service_slug, label, current_city)}. Open the city where the house stands. The details there match that place, not {esc(name)}.</p>
     </div>"""
 
 

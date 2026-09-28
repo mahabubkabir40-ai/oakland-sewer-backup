@@ -9,69 +9,70 @@ from sitegen.render import a, callout, h2, h3, nearby_section, note, ol, p, ul
 
 WHY = {
     "royal-oak": (
-        "If the house is pre-1960s, in Vinsetta Park, Northwood, or near downtown along Woodward Avenue, "
-        "the sewer lateral is often clay tile or cast iron. Those pipes take roots, open at the joints, "
-        "and collapse over decades more readily than modern PVC. Royal Oak's older storm and sanitary "
-        "mains can also fill in a heavy spring rain or a fast summer storm and push sewage back up the "
-        "basement floor drain."
+        "Royal Oak's Sewer Division maintains about 300 miles of sanitary and storm sewers, and the city "
+        "is part of the former Twelve Towns program, now the George W. Kuhn basin. In a hard storm those "
+        "mains fill, and sewage can come back up the lowest opening in the house, usually the basement "
+        "floor drain. The George W. Kuhn basin sits under the I-75 overpass at 12 Mile Road in Madison Heights, "
+        "was expanded in 2006, and can hold and treat 150 million gallons. None of that storage can stop a blocked "
+        "private lateral from backing up, and in Royal Oak the lateral is the homeowner's pipe up to and including "
+        "the connection. A camera inspection shows whether yours is the problem. The city is responsible for the main; the lateral up to and including the connection is yours."
     ),
     "troy": (
-        "A 1960s or 1970s split-level near Big Beaver Road, or a house in a subdivision such as "
-        "Northfield Hills, often still has its original clay or cast-iron lateral. Scale builds up "
-        "inside those pipes, the joints get brittle, and tree roots on a mature street find the opening. "
-        "Residents also describe a high water table near the Big Beaver corridor, so spring thaw and a "
-        "hard summer storm both raise the chance that the lower level takes water."
+        "Most Troy houses were built in the 1960s and 1970s, and many have split-levels or finished lower "
+        "levels where carpet, pad, and drywall sit close to the floor drain. Troy discharges wastewater "
+        "through three districts, Evergreen-Farmington, Oakland-Troy, and George W. Kuhn, so the pipe "
+        "behind one street is not the pipe behind the next. Ask the Water Division which district serves your address."
     ),
     "birmingham": (
-        "Houses from the 1920s through the 1950s, in Poppleton Park and around Quarton Lake, commonly "
-        "still have cast-iron plumbing and clay sewer laterals from before PVC. The mature trees that "
-        "make those streets look the way they do also send roots into the joints. Low ground near "
-        "Quarton Lake is where that shows up most often as a backup."
+        "Much of Birmingham was built in the early and middle 1900s. The city's own FAQ says older "
+        "neighborhoods have combined sewer and storm systems, historically designed for about 2 inches of "
+        "rain in one hour, and that the system is all gravity with no city pump or lift stations. A heavier "
+        "storm can push sewage back up a basement floor drain, and plaster, trim, and finished floors soak it up first."
     ),
     "berkley": (
-        "Most Berkley houses are 1940s and 1950s bungalows on original clay or cast-iron laterals that "
-        "are near the end of a long service life. The city is flat, so a hard rain has few places to go. "
-        "Older municipal lines have been described as combined, and in a storm that shared pipe can push "
-        "wastewater back up the basement floor drain. Confirm the pipe on your block with the city."
+        "Berkley's sewer is a single combined pipe for stormwater and sewage, entirely gravity, with no "
+        "pumps or valves. The city designs its streets to hold water so flow enters that pipe more slowly. "
+        "In a hard rain the shared pipe can still push wastewater back up a bungalow's basement floor drain, "
+        "and in a short basement it reaches the furnace and the laundry fast."
     ),
     "clawson": (
-        "Clawson is mostly mid-century brick bungalows and ranches from the 1940s to the 1960s, on "
-        "compact lots. The lateral is often original clay or cast iron. After decades, roots enter at "
-        "the joints and corrosion narrows the pipe. A heavy regional storm then loads those older sanitary "
-        "lines, and sewage can come up inside the house."
+        "Clawson's sewer page points to the George W. Kuhn Retention Treatment Basin and the Oakland County "
+        "Water Resources Commissioner, and links to an explainer on combined sewers, where sanitary flow "
+        "and stormwater share pipes. When a heavy regional storm loads that system, sewage can come up a "
+        "basement floor drain. Compact lots also mean hoses and equipment may have to be staged from a short driveway or the street."
     ),
 }
 
 TRIGGERS = {
     "royal-oak": [
-        "Sudden basement backups following heavy summer thunderstorms",
-        "Slow-draining or gurgling floor drains that precede a full backup by hours or days",
-        "Backups tied to aging sump pump systems that cannot keep pace during storm surges",
-        "Root intrusion in older sewer laterals, especially on tree-lined streets near downtown",
+        "A slow or gurgling floor drain before a storm",
+        "Heavy rain that fills the public sewer faster than it drains",
+        "Roots or a cracked joint in the private lateral",
+        "A sump that stops while the floor drain is also backing up",
     ],
     "troy": [
-        "Backups following spring thaw as frozen ground releases and shifts around aging pipe joints",
-        "Storm surges near the Big Beaver Road corridor overwhelming aging storm drainage",
-        "Root intrusion in older clay laterals throughout established subdivisions",
-        "Sump pump failures during high-water-table conditions on lower-lying lots",
+        "A floor drain that gurgles before sewage appears",
+        "Rain that loads one of Troy's three wastewater districts",
+        "A blockage in the private lateral under the yard",
+        "A sump that quits in the same storm that backs up a drain",
     ],
     "birmingham": [
-        "Backups in older homes tied to original clay or cast-iron laterals",
-        "Root intrusion from mature trees along Birmingham's older residential streets",
-        "Heavy spring and fall rain overwhelming aging storm and sanitary lines",
-        "Basement flooding near Quarton Lake and other low-lying residential sections",
+        "A gurgling floor drain in an older lower level",
+        "Rain heavier than the roughly 2 inches in one hour the city says its older sewers were designed for",
+        "Roots or a cracked joint in the private lateral",
+        "A sump that stops while sewage is also coming up a drain",
     ],
     "berkley": [
-        "Backups tied to older sections that still carry storm and sanitary flow together during heavy rain",
-        "Root intrusion in clay sewer laterals common to 1940s–50s bungalow construction",
-        "Sump pump overload during downpours on Berkley's flat, slow-draining lots",
-        "Water reaching original hardwood floors and framing in older homes",
+        "Ponding at the curb, which the city designs its streets to do",
+        "Heavy rain in the combined pipe that carries stormwater and sewage together",
+        "Roots or a cracked joint in the private lateral",
+        "A sump that stops while the floor drain is also backing up",
     ],
     "clawson": [
-        "Root intrusion through clay pipe joints common to mid-century bungalow construction",
-        "Internal corrosion in older cast-iron lines reducing the pipe's usable diameter",
-        "Backups following heavy regional rain that overwhelms aging sanitary lines",
-        "Tight lots where equipment has to be staged from a short driveway or the street",
+        "A slow or gurgling floor drain before a storm",
+        "Heavy regional rain that loads the public sewer",
+        "Roots or a cracked joint in the private lateral",
+        "A short driveway that changes how hoses and equipment can be staged",
     ],
 }
 
@@ -79,23 +80,19 @@ AREA_LINE = {
     "royal-oak": (
         f"The same phone number covers Royal Oak neighborhoods along the {a('https://en.wikipedia.org/wiki/Woodward_Avenue', 'Woodward Avenue corridor')}, "
         f"near the Royal Oak Music Theatre, and toward the {a('https://en.wikipedia.org/wiki/Detroit_Zoo', 'Detroit Zoo')}. "
-        "Your call is a referral for the house."
     ),
     "troy": (
         "The same phone number covers Troy neighborhoods along Big Beaver Road, near Somerset Collection, "
-        "and out toward Troy Historic Village. Your call is a referral for the house."
+        "and out toward Troy Historic Village."
     ),
     "birmingham": (
-        "The same phone number covers Birmingham homes around downtown, Shain Park, Poppleton Park, and the Quarton area. "
-        "Your call is a referral for the house."
+        "The same phone number covers Birmingham homes around downtown, Shain Park, Poppleton Park, and the Quarton area."
     ),
     "berkley": (
-        "The same phone number covers Berkley bungalow blocks and the 12 Mile Road corridor. "
-        "Your call is a referral for the house."
+        "The same phone number covers Berkley bungalow blocks and the 12 Mile Road corridor."
     ),
     "clawson": (
-        "The same phone number covers Clawson's brick-bungalow blocks and the 14 Mile Road downtown strip. "
-        "Your call is a referral for the house."
+        "The same phone number covers Clawson's brick-bungalow blocks and the 14 Mile Road downtown strip."
     ),
 }
 
@@ -103,42 +100,39 @@ OWNER = {
     "royal-oak": (
         "Once wastewater is on the floor, the pumping step is "
         f"{a('/royal-oak-sewage-extraction', 'sewage extraction in Royal Oak')}. Keep people and pets "
-        "out of that water until it is gone. The company you reach is independent, and this line makes "
-        "the introduction. Ask them for a written scope and for the license and insurance the job requires."
+        "out of that water until it is gone. A local crew does that pumping. "
+        "Ask them for a written scope and for the license and insurance the job requires."
     ),
     "troy": (
         "Pumping the water out of a split-level or a subdivision basement is "
-        f"{a('/troy-sewage-extraction', 'sewage extraction in Troy')}. The price and the crew come from "
-        "that company. Ask them for a written scope before anyone starts."
+        f"{a('/troy-sewage-extraction', 'sewage extraction in Troy')}. Ask for a written scope before anyone starts."
     ),
     "birmingham": (
         "If the lower level is already wet and you only need the water removed, use "
         f"{a('/birmingham-sewage-extraction', 'sewage extraction in Birmingham')}. "
-        "The company you hire sets the methods and does the work. Ask them how they will protect "
-        "plaster and trim before they cut anything."
+        "Ask the crew how they will protect plaster and trim before they cut anything."
     ),
     "berkley": (
         "If the bungalow floor drain already overflowed, pumping the water out is "
-        f"{a('/berkley-sewage-extraction', 'Sewage extraction in Berkley')}. Call to reach an independent "
-        "provider when one is participating. Keep people off the short stair until that water is gone."
+        f"{a('/berkley-sewage-extraction', 'sewage extraction in Berkley')}. A local crew handles the pump-out. "
+        "Keep people off the short stair until that water is gone. Tell the crew whether the laundry tub or the floor drain overflowed first."
     ),
     "clawson": (
         "The pump-out, once sewage is on the floor of a brick bungalow, is "
-        f"{a('/clawson-sewage-extraction', 'sewage extraction in Clawson')}. Hoses and access are part of "
-        "that visit. The crew that comes is independent. This line makes the introduction."
+        f"{a('/clawson-sewage-extraction', 'sewage extraction in Clawson')}. A local crew handles that visit, including where the hoses go."
     ),
 }
 
 SEWAGE_H2 = {
     "royal-oak": (
-        "Sewage cleanup in Royal Oak is the water that came out of a floor drain, "
-        "a laundry standpipe, or a basement toilet. Treat it as heavily soiled. A provider who only pumps the "
+        "Sewage cleanup in Royal Oak starts with the water that came out of a floor drain, "
+        "a laundry standpipe, or a basement toilet. Treat it as heavily soiled. A crew that only pumps the "
         f"visible puddle can leave residue in the pad and the wall base. If the backup also soaked finishes, see {a('/royal-oak-water-damage-restoration', 'water damage restoration in Royal Oak')} "
         f"and {a('/royal-oak-flooded-basement', 'flooded basement cleanup and water removal in Royal Oak')}."
     ),
     "troy": (
-        "Sewage cleanup in Troy is water that left the sanitary line, not a clean rain leak. Split-level "
-        "lower floors near Big Beaver often hold carpet and storage right where a backup surfaces. Ask the company you hire "
+        "Sewage cleanup in Troy deals with water that left the sanitary line, not a clean rain leak. Split-level "
+        "lower floors near Big Beaver often hold carpet and storage right where a backup surfaces. Ask the crew "
         f"how they will separate that water from the rest of the house. Related pages: {a('/troy-water-damage-restoration', 'water damage restoration in Troy')} "
         f"and {a('/troy-flooded-basement', 'flooded basement cleanup in Troy')}."
     ),
@@ -155,8 +149,8 @@ SEWAGE_H2 = {
         f"or {a('/berkley-water-damage-restoration', 'water damage restoration in Berkley')}."
     ),
     "clawson": (
-        "Sewage cleanup in Clawson often starts at a floor drain in a mid-century brick bungalow. Compact lots limit where "
-        "hoses and drying gear can sit, so ask how the provider will stage the job before you book. When the loss is broader "
+        "Sewage cleanup in Clawson often starts at a floor drain in a brick bungalow. Compact lots limit where "
+        "hoses and drying gear can sit, so ask how the crew will stage the job before you book. When the loss is broader "
         f"than the drain itself, use {a('/clawson-water-damage-restoration', 'water damage restoration in Clawson')} and "
         f"{a('/clawson-flooded-basement', 'flooded basement water removal in Clawson')}."
     ),
@@ -171,7 +165,7 @@ def first_ten(city):
             "<strong>Keep people and pets out</strong> of the water. Sewage carries bacteria and other pathogens.",
             "<strong>Do not plunge or snake</strong> the drain. A household snake can push dirty water into the subfloor.",
             "<strong>Leave the basement if water is near outlets,</strong> the panel, or the furnace. Shut power off only from a dry location.",
-            "<strong>Call " + city + " help at the number above</strong> and you are connected with an independent provider, and they'll tell you when they can be there.",
+            "<strong>Call (248) 825-8312.</strong> Say your city and that a floor drain backed up.",
         ]),
     )
 
@@ -196,14 +190,23 @@ CLAIM_LINE = {
         f"form is not a claim. The 45-day notice rule and a documentation list are in the {_GUIDE}; storm prep is on the {_CHECK}."
     ),
     "berkley": (
-        "Berkley's Notice of Claim form goes to the City Manager's Office, and Michigan law gives you 45 days from discovery "
-        f"to send written notice. Details are in the {_GUIDE}. The city's master plan describes Berkley's sewers as combined, so the {_CHECK} "
+        "Berkley asks residents to report basement flooding to Public Works at 248-658-3490 and posts a Sewer Backup Claims Form. "
+        f"Michigan law gives you 45 days from discovery to send written notice. Details are in the {_GUIDE}. Because Berkley's sewer is combined, the {_CHECK} "
         "is worth printing before spring storms."
     ),
     "clawson": (
-        "Clawson's DPW handles sewer calls; we did not find a posted claim form, so ask the city in writing who receives "
-        f"notices. The 45-day written notice rule is explained in the {_GUIDE}, and the {_CHECK} lists what to do during a storm."
+        "The city line on Clawson's sewer page is (248) 435-4500. Ask the city in writing who should receive a claim notice. "
+        f"The 45-day written notice rule is explained in the {_GUIDE}, and the {_CHECK} lists what to do during a storm."
     ),
+}
+
+
+CITY_SEWER_CALL = {
+    "royal-oak": "the city at (248) 246-3300 (weekdays 7:30 a.m. to 4:00 p.m.) or (248) 246-3500 after hours",
+    "troy": "Troy's Water Division at 248-524-3370, or Troy Police at 248-524-3477 after hours",
+    "birmingham": "the city's water event line, (248) 530-1703, so the city has a record of the flooding",
+    "berkley": "Berkley Public Works at 248-658-3490",
+    "clawson": "the city at (248) 435-4500 (public works Monday to Thursday, 7:00 a.m. to 3:30 p.m.), or Troy Police dispatch at 248-524-3477, extension 1, after hours",
 }
 
 
@@ -250,17 +253,16 @@ def article(slug, city):
         p(SEWAGE_H2[slug]),
         p(OWNER[slug]),
         p(
-            f"If the backup looks like the city main, call {city} public works while the water is still coming in "
-            "and ask whether your street has separate storm and sanitary sewers. Use the city's own website "
-            "for that number. The lateral under the yard is usually your pipe. The main in the street is the city's. "
+            f"If the backup looks like the city main, call {CITY_SEWER_CALL[slug]} while the water is still coming in. "
+            "The lateral under the yard is usually your pipe. The main in the street is the city's. "
             "Ask the cleanup company not to guess which one failed."
         ),
         h2(f"Sewer backup cleanup in {city}, MI"),
         p(
             f"Sewage cleanup in {city} usually starts when sewage comes up a basement drain, a laundry "
             "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
-            "and do not run a household vac. The steps below are the first minutes. After you call, an "
-            "independent cleanup company does the work, and they'll tell you when they can be there."
+            "and do not run a household vac. The steps below are the first minutes. Then call, and a local "
+            "cleanup crew takes it from there."
         ),
         h3(f"Why {city} homes are at higher risk"),
         p(WHY[slug]),
@@ -269,6 +271,12 @@ def article(slug, city):
         first_ten(city),
         note(AREA_LINE[slug]),
         p(CLAIM_LINE[slug]),
+        p(
+            "A November 14, 2022 City Council agenda says the Oakland County Water Resources Commissioner "
+            "is responsible for the district facilities Troy discharges into: Evergreen-Farmington, Oakland-Troy, "
+            "and George W. Kuhn. Do not treat one street as the pattern for the whole city, and do not call Troy "
+            "fully combined or fully separated. Ask the Water Division which district serves the house."
+        ) if slug == "troy" else "",
         p(resources[slug]),
         nearby_section("sewer-cleanup", "Sewer backup cleanup", slug),
     ])
@@ -278,11 +286,11 @@ FAQS = {
     "royal-oak": [
         (
             "Who do I call at the City of Royal Oak during a sewer backup?",
-            "For basement water, the city lists (248) 246-3300 on weekdays from 7:30 a.m. to 4:00 p.m. After hours, police non-emergency (248) 246-3500 dispatches sewer personnel. Call (248) 825-8312 when you need an independent cleanup company inside the house. That call connects you when a participating provider is available.",
+            "For basement water, the city lists (248) 246-3300 on weekdays from 7:30 a.m. to 4:00 p.m. After hours, the police non-emergency line (248) 246-3500 dispatches sewer personnel. For sewage cleanup inside the house, call (248) 825-8312.",
         ),
         (
             "Who owns the sewer lateral in Royal Oak?",
-            "The city says it is responsible for the main, and the homeowner for the lateral up to and including the connection. The Sewer Division maintains about 300 miles of sanitary and storm sewers. Ask them about the main. A camera inspection is how a plumber or the city checks a specific lateral.",
+            "The city says it is responsible for the main, and the homeowner for the lateral up to and including the connection. Ask the Sewer Division, (248) 246-3300, about the main. A camera inspection is how a plumber or the city checks a specific lateral.",
         ),
         (
             "How long do I have to send Royal Oak written notice?",
@@ -290,39 +298,36 @@ FAQS = {
         ),
         (
             "Are Royal Oak sewers combined?",
-            "Many older sections were built before separated storm and sanitary sewers were standard. Where pipes are combined or simply old, a heavy summer storm can push sewage toward a basement floor drain. Royal Oak is a member of the former Twelve Towns program, now the George W. Kuhn Retention Treatment Basin, which was expanded in 2006. The Sewer Division can confirm the pipe on your street.",
+            "Royal Oak is in the George W. Kuhn district, where stormwater and sewage share pipes; in wet weather more than 93 percent of that flow is stormwater. The city is a member of the former Twelve Towns program. The Sewer Division can confirm the pipe on your street.",
         ),
         (
-            "What happens when I call (248) 825-8312 about a Royal Oak backup?",
-            "When a participating independent cleanup company is available, the call is connected to them. They do the work in the house. Ask for a written scope and for the license and insurance the job requires. How soon they can come depends on that company. After the water is out, drying often takes several days. Ask them how they will check moisture. A sewer-backup endorsement, if you need one, is a question for your insurer, separate from the city letter.",
+            "Does Royal Oak publish cleanup steps after basement flooding?",
+            "Yes. The city publishes a page called Cleaning Up the Mess After Basement Flooding. Treat sewage as contaminated, keep people and pets out, and photograph the damage before anything is thrown away. For the city main, call the Sewer Division at (248) 246-3300 on weekdays or (248) 246-3500 after hours.",
         ),
     ],
     "troy": [
         (
             "Who does Troy tell residents to call for a sewer backup?",
-            "The Water Division number is 248-524-3370 during business hours. After hours, Troy Police is 248-524-3477. Call (248) 825-8312 to reach an independent cleanup company for the house when one is available. That line is not the Water Division.",
+            "Troy lists the Water Division at 248-524-3370 during business hours and Troy Police at 248-524-3477 after hours. A written claim goes to the City Attorney's Office within 45 days of discovery. For sewage cleanup inside the house, call (248) 825-8312.",
         ),
         (
             "Is Troy on one combined sewer?",
             "No single label fits. A November 14, 2022 City Council agenda item says Troy discharges wastewater through the Evergreen-Farmington, Oakland-Troy, and George W. Kuhn districts. The Oakland County Water Resources Commissioner is responsible for those district facilities. Ask the city which district serves your address before you assume the pipe in the street.",
         ),
-        (
-            "Where does a written Troy sewer claim go?",
-            "Troy directs written claims to the City Attorney's Office. State law sets 45 days from the day you discover the damage. The notice needs your name, address, and phone, the property address, the discovery date, and a brief description. A sewer-backup rider, if you have one, is a separate call to your insurer.",
-        ),
+        ("Where does a written Troy sewer claim go?", "To the City Attorney's Office. State law sets 45 days from discovery. The sewer backup claim guide lists what to include."),
         (
             "Who is responsible for a Troy sewer lateral?",
             "The main in the street is a city question. The lateral under the yard is usually the homeowner's pipe. Confirm the split for your address with the city. A camera answers the private lateral. The cleanup company removes what already entered the lower level.",
         ),
         (
-            "What should I do about a gurgling floor drain near Big Beaver?",
-            "Stop running water. Treat a gurgling basement drain as a warning, especially in a 1960s or 1970s split-level. Do not snake it if you smell sewage. Call the city if you think the main is surcharging, and call (248) 825-8312 to reach an independent cleanup company. The price and the crew come from that company.",
+            "What should I do about a gurgling floor drain in a Troy basement?",
+            "Stop running water. In a 1960s or 1970s Troy house, treat a gurgling basement drain as a warning, and do not snake it if you smell sewage. If you think the main is backing up, call the Water Division (248-524-3370, or Troy Police 248-524-3477 after hours).",
         ),
     ],
     "birmingham": [
         (
             "Who do I call in Birmingham if sewage is in the lower level?",
-            "The water event line, (248) 530-1703, collects flooding data. It is not a claim. Claims questions are 248.530.1808, and the city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. For cleanup inside the house, call (248) 825-8312. You are connected with an independent company when one is available.",
+            "The water event line, (248) 530-1703, collects flooding information. It is not a claim. Claims questions are 248.530.1808, and the city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. For sewage cleanup inside the house, call (248) 825-8312.",
         ),
         (
             "Can a hard rain overload Birmingham's older sewers?",
@@ -334,11 +339,11 @@ FAQS = {
         ),
         (
             "What does Birmingham suggest before the next storm?",
-            "The city FAQ lists a backflow preventer, downspouts disconnected and extended about 6 feet from the foundation, and soil graded away from the house. Those steps do not remove sewage that is already on the floor. The company you hire does that cleanup. Leave plaster and trim in place until they have seen it.",
+            "The city FAQ lists a backflow preventer, downspouts disconnected and extended about 6 feet from the foundation, and soil graded away from the house. Those steps do not remove sewage that is already on the floor. The crew does that cleanup. Leave plaster and trim in place until they have seen it.",
         ),
         (
             "Who owns the pipe under a Birmingham yard?",
-            "The public system is the city's to explain. The private lateral under the yard is a homeowner pipe unless the city tells you otherwise for that address. A camera inspection confirms a lateral. Early- and mid-1900s houses often still have clay or cast iron, and roots at the joints are a common reason for a backup.",
+            "The public system is the city's to explain. The private lateral under the yard is a homeowner pipe unless the city tells you otherwise for that address. A camera inspection confirms a lateral. Roots at a joint are a common reason for a backup.",
         ),
     ],
     "berkley": [
@@ -348,7 +353,7 @@ FAQS = {
         ),
         (
             "Who do I call in Berkley while the basement is wet?",
-            "Public Works is 248-658-3490 for the city system, and the city posts a Sewer Backup Claims Form. Call (248) 825-8312 to reach an independent cleanup company for the bungalow when one is available. Say the stair is short so they know the equipment has to fit.",
+            "Report basement flooding to Berkley Public Works at 248-658-3490, and use the city's Sewer Backup Claims Form if you plan to claim. For sewage cleanup in the house, call (248) 825-8312.",
         ),
         (
             "Where does Berkley's sewage go when it rains hard?",
@@ -366,11 +371,11 @@ FAQS = {
     "clawson": [
         (
             "Who answers a Clawson sewer call?",
-            "The city main line on the sewer page is (248) 435-4500. Public works is open Monday through Thursday, 7:00 a.m. to 3:30 p.m., and closed on Fridays. After hours, Clawson uses Troy Police dispatch at 248-524-3477, extension 1. That dispatch line is the city's path, not a cleanup crew. Call (248) 825-8312 to reach an independent company for the house when one is available.",
+            "The city's main line on the sewer page is (248) 435-4500. Public works is open Monday through Thursday, 7:00 a.m. to 3:30 p.m., and closed on Fridays. After hours, Clawson uses Troy Police dispatch at 248-524-3477, extension 1. For sewage cleanup inside the house, call (248) 825-8312.",
         ),
         (
             "Is every Clawson street a combined sewer?",
-            "The city sewer page lists the George W. Kuhn Retention Treatment Basin and the Oakland County Water Resources Commissioner, and it links a combined-sewer explainer and Public Act 222. Confirm the pipe on your street with the city. Heavy rain can still load older lines and push sewage up a floor drain in a mid-century brick bungalow.",
+            "The city sewer page lists the George W. Kuhn Retention Treatment Basin and the Oakland County Water Resources Commissioner, and it links a combined-sewer explainer and Public Act 222. Confirm the pipe on your street with the city. Heavy rain can still load older lines and push sewage up a basement floor drain.",
         ),
         (
             "How do I give Clawson written notice within 45 days?",
@@ -382,17 +387,17 @@ FAQS = {
         ),
         (
             "What if the cleanup truck cannot fit a Clawson driveway?",
-            "Say so when you call. Brick bungalows on tight lots often have to stage from the street. The provider should tell you whether they can work there before you agree. The crew, the arrival, and the price come from that company.",
+            "Say so when you call. Brick bungalows on tight lots often have to stage from the street. The crew should tell you whether they can work there before you agree.",
         ),
     ],
 }
 
 HERO = {
-    "royal-oak": "Sewage coming up a floor drain in your Royal Oak basement is a health hazard, so keep people and pets out of the water. Call now for sewage cleanup in Royal Oak. We connect you with an independent local company that handles sewer backup cleanup in Royal Oak, and they'll tell you when they can be there.",
-    "troy": "Sewage backed up into your Troy basement or lower level? Don't try to mop it up yourself. One call gets you started on sewage cleanup in Troy. We connect you with an independent local company for sewer backup cleanup in Troy, and they'll tell you when they can be there.",
-    "birmingham": "Sewage in the basement of an older Birmingham home can soak into plaster, trim and finished floors quickly. Call for sewage cleanup in Birmingham and we'll connect you with an independent local company that does sewer backup cleanup in Birmingham. They'll tell you when they can be there.",
-    "berkley": "When the floor drain by the laundry backs up in a Berkley bungalow, the sewage needs to come out before it spreads. Call for sewage cleanup in Berkley. We connect you with an independent local company for sewer backup cleanup in Berkley, and they'll tell you when they can be there.",
-    "clawson": "Sewage in your Clawson basement after a backup? Stay out of the water and call. We connect you with an independent local company for sewage cleanup in Clawson and sewer backup cleanup in Clawson, and they'll tell you when they can be there.",
+    "royal-oak": "Sewage coming up a floor drain in your Royal Oak basement is a health hazard, so keep people and pets out of the water. Call now for sewage cleanup in Royal Oak. A local crew handles sewer backup cleanup in Royal Oak, and they'll tell you when they can be there.",
+    "troy": "Sewage backed up into your Troy basement or lower level? Don't try to mop it up yourself. One call gets you started on sewage cleanup in Troy. A local crew handles sewer backup cleanup in Troy, and they'll tell you when they can be there.",
+    "birmingham": "Sewage in the basement of an older Birmingham home can soak into plaster, trim and finished floors quickly. Call for sewage cleanup in Birmingham. A local crew handles sewer backup cleanup in Birmingham. They'll tell you when they can be there.",
+    "berkley": "When the floor drain by the laundry backs up in a Berkley bungalow, the sewage needs to come out before it spreads. Call for sewage cleanup in Berkley. A local crew handles sewer backup cleanup in Berkley, and they'll tell you when they can be there.",
+    "clawson": "Sewage in your Clawson basement after a backup? Stay out of the water and call. A local crew handles sewage cleanup in Clawson and sewer backup cleanup in Clawson, and they'll tell you when they can be there.",
 }
 
 ALT = {
@@ -404,9 +409,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Sewage cleanup in Royal Oak, MI, and sewer backup cleanup for the same houses. Independent providers. Call {PHONE_DISPLAY}.",
-    "troy": "Sewage cleanup in Troy, MI for lower levels and split-levels, plus sewer backup cleanup. Call {PHONE_DISPLAY}.",
-    "birmingham": "Sewage cleanup in Birmingham, MI for older homes, and sewer backup cleanup. Independent providers. Call {PHONE_DISPLAY}.",
-    "berkley": "Sewage cleanup in Berkley, MI bungalows, and sewer backup cleanup on this page. Call {PHONE_DISPLAY} to connect.",
-    "clawson": "Sewage cleanup in Clawson, MI and sewer backup cleanup for brick bungalows. Independent providers. Call {PHONE_DISPLAY}.",
+    "royal-oak": "Sewer backup cleanup in Royal Oak, MI. Get a local crew for sewage cleanup: pump-out, disinfecting and drying your basement. Call (248) 825-8312 now.",
+    "troy": "Sewer backup cleanup in Troy, MI. A local crew handles sewage cleanup in split-levels and finished lower levels: pump-out and drying. Call (248) 825-8312.",
+    "birmingham": "Sewer backup cleanup in Birmingham, MI. A local crew handles sewage cleanup in older homes with plaster, trim and finished floors. Call (248) 825-8312.",
+    "berkley": "Sewer backup cleanup in Berkley, MI. A local crew handles sewage cleanup in your bungalow basement: pump-out, disinfecting and drying. Call (248) 825-8312.",
+    "clawson": "Sewer backup cleanup in Clawson, MI. A local crew handles sewage cleanup in bungalow basements: pump-out, disinfecting and drying. Call (248) 825-8312.",
 }

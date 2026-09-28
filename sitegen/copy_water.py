@@ -7,27 +7,23 @@ def royal_oak():
     return "\n".join([
         h2("Water extraction in Royal Oak houses"),
         p(
-            "Water damage restoration in Royal Oak begins with where the water entered. On the Woodward "
-            "corridor, in Northwood, in Vinsetta, and in the blocks between downtown Main Street and the "
-            "Detroit Zoo on West Ten Mile, the usual paths are a basement floor drain, a window well, a "
+            "Water damage restoration in Royal Oak begins with where the water entered. In most Royal Oak basements the usual paths are a basement floor drain, a window well, a "
             "failed sump, or a supply line at the laundry. Extraction is the removal of standing water "
             "and the soaked layers you can already see. It is not the whole restoration."
         ),
         p(
-            "A Royal Oak basement from before the 1960s often has a thin slab, a cove that was poured "
-            "against clay-tile or cast-iron plumbing, and storage pushed against the walls. Extraction "
+            "Many Royal Oak basements hold storage pushed against the walls. Extraction "
             "that stops at the open floor leaves the bottom of every box and the lower drywall wet. Ask "
-            "the independent provider, before they start, how far up they will open walls. The company you "
-            "hire does the extraction. Call "
+            "the local crew, before they start, how far up they will open walls. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " to be connected when a participating company can take the call."
+            + " for the extraction."
         ),
         h2("Structural drying after the pump-out"),
         p(
             "Structural drying is the unglamorous middle of water damage repair. Air has to move across "
             "wet masonry and any wood that took on water, and someone has to recheck it on later days. "
             "Royal Oak owners sometimes expect a single afternoon because the floor looks dry by evening. "
-            "The slab edge and the sill can still be wet. The provider should explain how they will "
+            "The slab edge and the sill can still be wet. The crew should explain how they will "
             "measure that. Ask them for a drying plan in writing. The schedule comes from what they find in the walls."
         ),
         p(
@@ -44,33 +40,28 @@ def royal_oak():
             "dried and kept. Royal Oak backups through floor drains fall in that group. A clean supply-line "
             "break does not, unless the water sat long enough to become foul. "
             + a("/royal-oak-basement-sanitization", "Sanitizing after the backup")
-            + " is the residue step, done by the company you hire. Ask that company what training and insurance they carry."
+            + " is the residue step, done by the crew. Ask that company what training and insurance they carry."
         ),
         h3("Basement flooding causes that show up in Royal Oak"),
         ul([
-            "Older laterals under tree-lined streets near downtown, which root up and then surcharge into the basement in a storm.",
-            "Window wells below grade on Woodward-side lots when the well cover is gone and the soil is already saturated.",
+            "Roots in the private lateral, which the homeowner owns up to and including the connection.",
+            "Window wells without a cover when the soil is already saturated.",
             "Sump failure. See " + a("/royal-oak-sump-pump-repair", "sump pump repair in Royal Oak") + ".",
-            "Sections of the city built before storm and sanitary sewers were separated. "
-            + a("https://www.romi.gov/384/Sewer-Division", "Royal Oak's Sewer Division")
-            + " can speak to the public main. Ask them which pipe serves your street.",
+            "A surcharged city main in a hard storm. Royal Oak's Sewer Division, (248) 246-3300, can speak to the public main.",
         ]),
         h2("Insurance questions for your insurer"),
         p(
             "Water damage and sewer backup are often treated differently on a homeowners policy. A sudden "
             "pipe break and a sewer backup are not the same endorsement. Groundwater is frequently limited "
-            "or excluded. Your claim stays with you and your carrier. "
-            "The provider you hire may photograph and record moisture. Ask them whether documentation is "
+            "or excluded. "
+            "The crew may photograph and record moisture. Ask them whether documentation is "
             "included. Ask your insurer what your form actually says. A contractor's guess is not a coverage decision."
         ),
         p(
-            "Parts of Royal Oak lie in the southern Oakland County drainage area associated with the "
-            "Oakland County Water Resources Commissioner and the George W. Kuhn district, formerly the "
-            "Twelve Towns Drain. That is background for how regional storm water is handled. It is not "
-            "a finding about your lateral. Confirm anything you intend to put in a complaint or a claim."
+            "Royal Oak is a member of the former Twelve Towns program, now the George W. Kuhn Retention Treatment Basin. That is background for how regional storm water is handled, not a finding about your lateral."
         ),
         callout(
-            "What to tell the provider on a Royal Oak water-damage call",
+            "What to tell the crew on a Royal Oak water-damage call",
             ul([
                 "Which room, and whether the floor drain or a supply line was the source.",
                 "How high the water got on the wall, from a photo taken on the stairs.",
@@ -96,14 +87,13 @@ def troy():
         ),
         p(
             "Call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " and you are connected with an independent restoration provider when one is available. "
-            "The air movers, the price, and the arrival come from that company. "
-            "How soon they can come depends on the address and how busy they are."
+            + ". A local crew handles the drying. "
+            "The air movers and the price come from that company."
         ),
         h2("Structural drying where the basement is living space"),
         p(
             "Drying a Troy family room in the basement fails if the furniture stays on the wet floor and "
-            "the doors stay closed. The provider should say what has to be moved and whether contents "
+            "the doors stay closed. The crew should say what has to be moved and whether contents "
             "manipulation is in the price. Structural drying also includes the cavity behind the wall if "
             "the water climbed. A palm test on the paint is not a measurement. Ask what instrument they "
             "use and when they will come back."
@@ -128,18 +118,15 @@ def troy():
         h3("Basement flooding causes in Troy"),
         ul([
             "Sump pumps that lose power in a storm. DTE serves these neighborhoods. The outage and the flood are linked, and the pump may still need service after the lights return.",
-            "Older clay or cast-iron laterals in 1960s and 1970s houses, especially where mature trees line the subdivision streets.",
-            "Storm drainage along Big Beaver that the city's Streets and Drains Division maintains. Street water and a basement backup are not automatically the same pipe.",
-            "High water around lower lots. People describe a high water table near parts of the Big Beaver corridor. Treat that as a local pattern to ask about, not as a survey of your parcel.",
+            "Roots or a cracked joint in the private lateral under the yard.",
+            "Street storm drains that overflow in a heavy rain. Street water and a basement backup are not automatically the same pipe.",
+            "Window wells and lower-level doors that let in surface water during a long rain.",
         ]),
         h2("Insurance, without a coverage promise"),
         p(
             "A Troy water loss can be reduced when the policy excludes sewer backup, excludes "
             "groundwater, or requires the water to be sudden. Ask your insurer what your form says. The "
-            "provider can document moisture if you ask them to. Parts of Troy are "
-            "in the regional drainage area of the George W. Kuhn facility and the Oakland County Water "
-            "Resources Commissioner. Cite that only after you confirm it applies to your question, and "
-            "not as the cause of a private lateral failure."
+            "crew can document moisture if you ask them to. Troy discharges through three districts, and George W. Kuhn is one of them. Ask the Water Division, 248-524-3370, which one serves the house. A regional district does not explain a private lateral failure."
         ),
         callout(
             "Troy call details that change the scope",
@@ -161,9 +148,8 @@ def troy():
             "Unfinished concrete can be cleaned and dried. Carpet pad that sat in water usually cannot."
         ),
         p(
-            "Ask the independent provider to separate extraction, drying, and any rebuild in writing. "
-            "The company you hire schedules the rebuild and chooses materials. Somerset and Northfield Hills "
-            "are place names so you can describe the house. The company's written scope is what you hire. If the "
+            "Ask the local crew to separate extraction, drying, and any rebuild in writing. "
+            "The crew schedules the rebuild and chooses materials. Ask for that written scope before work starts. If the "
             "drains never backed up and the water came from a window well or a supply line, say so. "
             "Calling it a sewer backup when it was a burst hose changes both the cleanup and the "
             "conversation with your insurer. Start at "
@@ -186,14 +172,14 @@ def birmingham():
             "built with replaceable drywall."
         ),
         p(
-            "The referral line is " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". Your call connects you with an independent local company for the house, and they'll tell you when they can be there. "
+            "The number is " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
+            + ". "
             "Ask them for license, insurance, and a written scope before they start."
         ),
         h2("Structural drying of plaster and masonry"),
         p(
             "Plaster releases water slowly and stains when it stays damp. Structural drying in these "
-            "houses is as much about time and rechecks as about the number of fans. A provider who wants "
+            "houses is as much about time and rechecks as about the number of fans. A crew that wants "
             "to demolish every soft spot on hour one may be right, or they may be skipping a drying "
             "attempt you would rather try on intact trim. Ask them to mark what is definitely coming out "
             "and what they will test again. Water damage repair, in the sense of putting finishes back, "
@@ -211,25 +197,22 @@ def birmingham():
             "Sewage in a guest room or a lower-level office is heavily contaminated. Upholstery, rugs, and "
             "the back of built-in shelving that wicked it up are not a cleaning problem. "
             + a("/birmingham-basement-sanitization", "Sanitization")
-            + " after removal is part of the same hire, not a separate maid appointment. Low ground near "
-            "Quarton can also push clear water in through the foundation. If you did not see a drain "
+            + " after removal is part of the same hire, not a separate maid appointment. A long rain can also push clear water in through the foundation. If you did not see a drain "
             "overflow and there is no sewage odor, say that. Mislabeling a seepage flood as sewage, or "
             "the reverse, sends the job down the wrong path."
         ),
         h3("Basement flooding causes in Birmingham"),
         ul([
-            "Clay and cast-iron laterals under mature trees in the older sections.",
+            "Roots or a cracked joint in the private lateral.",
             "Window wells and stairwells on houses that sit slightly below the sidewalk grade.",
-            "Yard drainage toward Quarton-area low spots during a multi-day rain.",
+            "Downspouts that discharge at the foundation instead of about 6 feet out, as the city FAQ advises.",
             "Failed sumps during outages. The electric utility is DTE. Restoring power does not repair a burned pump.",
         ]),
         h2("What to ask about your insurance"),
         p(
             "Coverage for Birmingham water damage is a question for your insurer. Many policies handle a sudden "
             "plumbing discharge differently from sewer backup and from groundwater seepage. "
-            "Ask the provider whether their documentation is itemized. Your claim stays with you and your carrier. Portions of Birmingham are discussed in connection with "
-            "southern Oakland County drainage and the George W. Kuhn district. Verify that with the "
-            "Oakland County Water Resources Commissioner before you treat it as true for your street."
+            "Ask the crew whether their documentation is itemized."
         ),
         callout(
             "Birmingham details to have ready",
@@ -247,13 +230,13 @@ def birmingham():
             "used as a study or a guest room near Shain Park holds books, upholstered chairs, and built-in "
             "shelving that a bare cellar does not. Extraction gets the water out. Repair is the decision "
             "about which of those pieces can be saved after they have been wet, and that decision belongs "
-            "to you and the company you hire, on site."
+            "to you and the crew, on site."
         ),
         p(
             "A newer finished room in the same city, with standard drywall and replaceable carpet, can "
-            "follow a faster demolition plan. Do not let a provider use one plan for both houses. "
+            "follow a faster demolition plan. Do not let a crew use one plan for both houses. "
             "Photograph the water line before anything is moved, especially on plaster, because the stain "
-            "line is the record. The company on site makes that call. The city index is "
+            "line is the record. The city index is "
             + a("/birmingham", "Birmingham services")
             + "."
         ),
@@ -266,23 +249,21 @@ def berkley():
         h2("Water extraction under Berkley bungalows"),
         p(
             "Water damage restoration in Berkley is shaped by a short basement and a first floor of "
-            "original flooring. The city is a 1940s and 1950s bungalow grid, flat, "
-            "with shops along 12 Mile and traffic on Coolidge. Extraction has to remove water "
+            "original flooring. Berkley is a city of bungalows, with shops along 12 Mile and traffic on Coolidge. Extraction has to remove water "
             "from the basement without tracking it onto the oak or maple at the top of a steep stair. "
             "Joist bays are close to that floor. Wet insulation in those bays is water damage to the "
             "house you live in, not only to the cellar."
         ),
         p(
-            "Use " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " and you are connected with an independent provider when one is available. "
-            "If nobody is free, the line cannot invent a crew."
+            "Call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
+            + " and say the stair is short and the first floor is original wood."
         ),
         h2("Structural drying in a low basement"),
         p(
             "There is little headroom for equipment, and the stair limits what can be carried down. "
             "Structural drying still requires air at the wet surfaces and a later moisture check. A "
             "single dehumidifier in the middle of a cluttered bungalow basement dries the air and not "
-            "the sill. Ask the provider what they will move. Water damage repair of the first-floor "
+            "the sill. Ask the crew what they will move. Water damage repair of the first-floor "
             "hardwood, if the subfloor swelled, is a different carpenter once the water is actually gone. "
             "Do not sand the floor while the basement is still wet."
         ),
@@ -301,21 +282,20 @@ def berkley():
             "any return-air opening connect the rooms. Porous material comes out. Then someone sanitizes "
             "what remains. That sequence is "
             + a("/berkley-basement-sanitization", "basement sanitization after the backup")
-            + ". Older sections of Berkley have been described as combined storm and sanitary sewers, "
-            "which can put sewage in the basement during rain. The city can confirm your street. Until "
+            + ". Berkley's sewer is one combined pipe for stormwater and sewage, which can put sewage in the basement during rain. Until "
             "you know, do not treat a storm flood that smells like a drain as clean rainwater."
         ),
         h3("Basement flooding causes in Berkley"),
         ul([
-            "Window wells and side-door stairwells on a flat lot with nowhere for rain to sheet away.",
+            "Window wells and side-door stairwells that fill during a hard rain.",
             "Sump overload or a dead pump when the power drops.",
-            "Clay laterals from the original build, rooted at the joints.",
+            "Roots or a cracked joint in the private lateral.",
             "Downspouts that discharge at the foundation because the side yard is only a few feet wide.",
         ]),
         h2("Insurance on a Berkley policy"),
         p(
             "Whether a Berkley bungalow's policy includes sewer backup, sudden discharge, "
-            "or groundwater is a question for your insurer. A provider's photos help that conversation. They are not the "
+            "or groundwater is a question for your insurer. A crew's photos help that conversation. They are not the "
             "claim. The George W. Kuhn drainage district and the Oakland County Water Resources "
             "Commissioner are part of the regional system for this part of the county. They are not a "
             "substitute for reading your declaration page."
@@ -335,15 +315,13 @@ def berkley():
             "12 Mile Road and Coolidge, a bungalow's oak or maple floor sits on joists that can take on "
             "moisture from below even when the first floor never had standing water. Water damage repair "
             "here sometimes starts with cupped flooring days after the basement looks dry. Mention the "
-            "first-floor material when you call. A provider who only plans for the cellar will miss it."
+            "first-floor material when you call. A crew that only plans for the cellar will miss it."
         ),
         p(
             "Laundry hookups in these original basements are a common clean-water source: a hose, a "
             "washer pan that was never there, a supply line at the back wall. That loss is still water "
             "damage, and it is not a sewer backup. Keep the two descriptions separate so the extraction "
-            "and the insurer conversation match the house. The flat lots do not shed a heavy rain the "
-            "way a sloped yard would, which is why window wells and side stairs show up in the same "
-            "storm as a laundry leak. Every Berkley link is on "
+            "and the insurer conversation match the house. Window wells and side stairs can fill in the same storm as a laundry leak. Every Berkley link is on "
             + a("/berkley", "the city overview")
             + "."
         ),
@@ -355,22 +333,21 @@ def clawson():
     return "\n".join([
         h2("Water extraction on Clawson's compact lots"),
         p(
-            "Water damage restoration in Clawson starts with access. Mid-century brick "
+            "Water damage restoration in Clawson starts with access. Brick "
             "bungalows and ranches sit on small lots along 14 Mile Road and the blocks between Royal Oak and Troy. "
             "The basement is often one room. Extraction equipment, wet debris, and the family's cars "
-            "are competing for a short driveway. A provider who has not heard that description may show "
+            "are competing for a short driveway. A crew that has not heard that description may show "
             "up with a plan that does not fit. Tell them on the call."
         ),
         p(
             "Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " and you are connected with an independent provider when one is participating. "
-            "The extraction, the drying, and the price come from that company."
+            + " for extraction and drying. Get the price in writing first."
         ),
         h2("Structural drying next to the furnace"),
         p(
             "In a one-room basement the furnace and water heater are in the drying zone. Structural "
-            "drying cannot ignore them. If water reached the burners or the controls, the provider and "
+            "drying cannot ignore them. If water reached the burners or the controls, the crew and "
             "a heating contractor decide whether the unit runs. Water damage repair "
             "of finishes comes after the structure is actually dry. Painting a stained brick-bungalow "
             "stair while the stringer is wet just seals the damage in."
@@ -396,16 +373,16 @@ def clawson():
         h3("Basement flooding causes in Clawson"),
         ul([
             "Downspouts discharging against the foundation on a lot with almost no side yard.",
-            "Original clay or cast-iron laterals narrowed by roots and corrosion.",
+            "Roots or a cracked joint in the private lateral.",
             "Sump or power failure during a storm, with the pit in the same room as the furnace.",
-            "Load on older sanitary lines in heavy regional rain. The city can discuss the main. The George W. Kuhn district is the regional drainage context for Clawson; confirm details with Oakland County before you rely on them.",
+            "Load on older sanitary lines in heavy regional rain. The city can discuss the main. Clawson's sewer page lists the George W. Kuhn basin for the regional system.",
         ]),
         h2("Coverage questions for your insurer"),
         p(
             "Ask your insurer whether sewer backup, sudden discharge, or groundwater is on your Clawson "
             "policy. The payment decision is theirs. A written scope "
-            "from the provider is what you compare to that conversation. License and insurance for the "
-            "work come from the provider you hire."
+            "from the crew is what you compare to that conversation. License and insurance for the "
+            "work come from the crew."
         ),
         callout(
             "Say this when you call about Clawson water damage",
@@ -423,7 +400,7 @@ def clawson():
             "boxes, and sometimes the only sump all sharing the floor. Water damage repair means deciding "
             "what among those contents is porous and done, and whether the mechanical equipment can be "
             "put back in service. That decision belongs to the heating contractor and the restoration "
-            "provider on site."
+            "crew on site."
         ),
         p(
             "Staging is the other Clawson constraint. Downtown 14 Mile is a short commercial strip; the "
@@ -448,48 +425,48 @@ ARTICLES = {
 
 FAQS = {
     "royal-oak": [
-        ("What does water damage restoration include in Royal Oak?", "Extraction of standing water, removal of materials that cannot be saved, drying of what remains, and, if the water was sewage, sanitizing. The provider writes the actual scope. This site does not."),
-        ("Is water damage repair the same phrase?", "People use water damage repair for the same loss, especially once finishes have to be replaced. Drying comes before rebuild. We do not perform either one."),
-        ("Does Royal Oak water damage restoration cover sewage backups?", "The referral line can connect you with a provider for sewage water damage as well as cleaner floods. Say which one you have. Sewage is a stricter cleanup. Call (248) 825-8312. You are connected when a participating company is available."),
+        ("What does water damage restoration include in Royal Oak?", "Extraction of standing water, removal of materials that cannot be saved, drying of what remains, and, if the water was sewage, sanitizing. Get that scope in writing."),
+        ("Is water damage repair the same as restoration?", "Close. Restoration is getting the water out and drying. Repair usually means replacing finishes after that. Drying comes first."),
+        ("Does Royal Oak water damage restoration cover sewage backups?", "Yes. Say which water you have. Sewage is a stricter cleanup: carpet pad and the bottom of the drywall usually come out. Call (248) 825-8312."),
         ("If the Royal Oak loss started at a floor drain, who owns the pipe?", "The city is responsible for the main. You are responsible for the lateral up to and including the connection. Weekday basement-water calls are (248) 246-3300. After hours, (248) 246-3500 dispatches sewer personnel. Drying the basement does not decide which pipe failed."),
         ("Does drying the house replace the 45-day Royal Oak notice?", "No. If you believe a sewage disposal event caused the damage, written notice is due within 45 days of discovery. Ask your insurer whether a sewer-backup endorsement is on the policy. Photograph the water line before walls are opened."),
     ],
     "troy": [
         ("Why is Troy water damage restoration often a finished-basement job?", "Many Troy lower levels are carpeted living space in split-levels and subdivisions. The pad and drywall hold more water than an empty utility cellar."),
-        ("Will you send a dryer to a house near Somerset or Northfield Hills?", "No. We do not send equipment. An independent provider may be available. Neighborhood names do not create a guaranteed response."),
-        ("How is basement flooding different from water damage in Troy?", "Flooding is water in the room. Water damage is the lasting effect on carpet, pad, and drywall in a finished lower level. Call (248) 825-8312 to reach an independent company for that drying when one is available."),
+        ("How is drying a finished Troy lower level different from a bare basement?", "Carpet, pad, and drywall hold water that bare concrete does not. In a 1960s or 1970s finished lower level, expect moisture checks on the pad and the bottom of the drywall, and removal if the water was sewage."),
+        ("How is basement flooding different from water damage in Troy?", "Flooding is water in the room. Water damage is what it leaves in carpet, pad, and drywall in a finished lower level. Call (248) 825-8312 for drying."),
         ("Does Troy's three-district sewer map change a water-damage scope?", "It tells you to ask the city which district serves the address: Evergreen-Farmington, Oakland-Troy, or George W. Kuhn. It does not dry the basement. If a drain overflowed, also call the Water Division at 248-524-3370, or Troy Police at 248-524-3477 after hours."),
         ("Does drying a Troy lower level replace the written claim?", "Drying carpet and drywall is the cleanup. If you believe a sewage disposal event caused the loss, written notice to the City Attorney's Office is still due within 45 days of discovery. Ask your insurer whether a sewer-backup endorsement is on the policy. Photograph the water line before the pad is pulled."),
     ],
     "birmingham": [
-        ("Can water damage restoration save Birmingham plaster?", "Sometimes, if the wetting is shallow and someone monitors drying. Deeply soaked plaster and sewage-soaked trim often have to come out. The provider decides on site."),
-        ("Do you restore the finishes yourselves?", "No. Oakland Sewer Pros is a referral service. Rebuild work, if you want it, is a separate agreement with a company you hire."),
-        ("Are Quarton floods part of Birmingham water damage help?", "Yes. Low ground near Quarton and older plaster houses are both Birmingham. Call (248) 825-8312 and you are connected with an independent company when one is available. Describe plaster versus drywall, and whether a drain gurgled."),
+        ("Can water damage restoration save Birmingham plaster?", "Sometimes, if the wetting is shallow and someone monitors drying. Deeply soaked plaster and sewage-soaked trim often have to come out. The crew decides on site."),
+        ("Does drying Birmingham plaster include rebuilding the trim?", "Not automatically. Drying comes before any rebuild, and plaster or trim soaked with sewage often has to come out. Ask for that scope in writing."),
+        ("Did Birmingham build relief sewers?", "In part of the city. Birmingham's FAQ says a late-1990s bond financed relief sewers, and that older neighborhoods have combined sewer and storm systems. Drying a wet lower level is still a separate job at the house."),
         ("What rain were Birmingham's older sewers designed around?", "The city says combined and storm sewers were historically designed for about 2 inches in one hour. The system is gravity, with no city pump stations. A backflow preventer and downspouts extended about 6 feet are prevention. Water already in the plaster is a drying and removal job. Claims questions are 248.530.1808, not the water-event line (248) 530-1703."),
         ("Does drying Birmingham plaster replace the 45-day notice?", "Drying is the restoration work. Written notice is still due within 45 days of discovery if you believe a sewage disposal event caused the damage. Use the sewer backup claim form. The water-event line collects flooding data and is not the claim. A late-1990s bond financed relief sewers in part of the city, not on every street."),
     ],
     "berkley": [
         ("Can basement water reach Berkley hardwood floors?", "Yes, through a short stair and through wet joists under the subfloor. Mention original floors when you call so protection and joist checks are in the scope."),
         ("Is water damage restoration appropriate for a sewage backup?", "Yes, as the overall process, with extraction and sanitizing included because sewage is heavily contaminated water. Do not hire a dry-only visit for a backup."),
-        ("Who dries a Berkley bungalow?", "The independent company you hire. Call (248) 825-8312 to reach one when a provider is available. Mention the short stair and any original hardwood above the joists."),
+        ("Who dries a Berkley bungalow?", "A local water damage crew. Call (248) 825-8312 and mention the short stair and any original hardwood above the joists."),
         ("Can Berkley's combined sewer turn a rain flood into a sewage drying job?", "Yes, if wastewater came up the floor drain. The city describes one gravity pipe with no pumps or valves, and flow toward the Clinton through the George W. Kuhn district. Confirm the block with Public Works at 248-658-3490. Written notice for a sewage event is due within 45 days of discovery."),
-        ("Does Berkley's lining budget dry the bungalow?", "The city describes up to 800,000 dollars a year on structural lining of the public pipe, with about 35 percent of the system lined over more than 20 years. That is not fans in the basement. The company you hire dries what remains after sewage or floodwater. Flow still leaves toward the Clinton through the George W. Kuhn district, not the Rouge."),
+        ("Does Berkley's lining budget dry the bungalow?", "The city describes up to 800,000 dollars a year on structural lining of the public pipe, with about 35 percent of the system lined over more than 20 years. That is not fans in the basement. The crew dries what remains after sewage or floodwater. Flow still leaves toward the Clinton through the George W. Kuhn district, not the Rouge."),
     ],
     "clawson": [
-        ("What should a Clawson water damage company know about the lot?", "That driveways are short and the basement may be a single room containing the furnace. Access changes how they stage the job."),
+        ("Can the furnace run while a Clawson basement dries?", "Not if water reached the burners or the controls. The heating contractor and the restoration crew decide whether the unit runs. Drying equipment still has to reach the walls around it."),
         ("Does restoration include the sewer repair?", "No. Removing and drying water does not dig up a lateral or repair a city main. Those are separate."),
-        ("Who quotes water damage repair in a Clawson bungalow?", "The provider you hire, in writing, before you agree. Call (248) 825-8312 to reach an independent company when one is available. Tell them the basement is one room and the driveway is short."),
-        ("Who is the Clawson city contact if the water came from a drain?", "The sewer line is (248) 435-4500, Monday through Thursday, 7:00 a.m. to 3:30 p.m. Fridays the department is closed. After hours, dispatch is 248-524-3477, extension 1. The city page lists the George W. Kuhn basin. Drying the room does not identify the lateral. A camera does. The 45-day written notice is separate from the drying invoice."),
-        ("Will insurance pay the drying bill on a Clawson bungalow?", "Not automatically. Sewer backup is often an added endorsement. Ask your insurer, and photograph damaged items before they leave the one-room basement. The 45-day letter to the city is a separate track. The company you hire sets the drying price."),
+        ("Who quotes water damage repair in a Clawson bungalow?", "The cleanup company, in writing, before you agree. Tell them the basement is one room and the driveway is short."),
+        ("Who is the Clawson city contact if the water came from a drain?", "The city line on the sewer page is (248) 435-4500; public works is open Monday through Thursday, 7:00 a.m. to 3:30 p.m. Fridays the department is closed. After hours, dispatch is 248-524-3477, extension 1. The city page lists the George W. Kuhn basin. Drying the room does not identify the lateral. A camera does. The 45-day written notice is separate from the drying invoice."),
+        ("Will insurance pay the drying bill on a Clawson bungalow?", "Not automatically. Sewer backup is often an added endorsement. Ask your insurer, and photograph damaged items before they leave the one-room basement. The 45-day letter to the city is a separate track. The crew sets the drying price."),
     ],
 }
 
 HERO = {
-    "royal-oak": "The basement in your Royal Oak house is wet, and sewage makes the cleanup stricter than a clean leak. Your call connects you with an independent local cleanup company for water damage restoration in Royal Oak, and they'll tell you when they can be there.",
-    "troy": "A finished Troy lower level is wet through the carpet, the pad, and the drywall. Call and you are connected with an independent local cleanup company for water damage restoration in Troy, and they'll tell you when they can be there.",
-    "birmingham": "Water has reached the plaster and older trim in a Birmingham lower level. When you call, you reach an independent local cleanup company for water damage restoration in Birmingham, and they'll tell you when they can be there.",
-    "berkley": "Water in a Berkley bungalow basement is close to the first floor and a short stair. Your call puts you through to an independent local cleanup company for water damage restoration in Berkley, and they'll tell you when they can be there.",
-    "clawson": "Water is in a small Clawson basement on a tight lot, and the finishes are soaked. Calling connects you with an independent local cleanup company for water damage restoration in Clawson, and they'll tell you when they can be there.",
+    "royal-oak": "The basement in your Royal Oak house is wet, and sewage makes the cleanup stricter than a clean leak. A local cleanup crew does the water damage restoration in Royal Oak, and they'll tell you when they can be there.",
+    "troy": "A finished Troy lower level is wet through the carpet, the pad, and the drywall. Call, and a local cleanup crew does the water damage restoration in Troy. They'll tell you when they can be there.",
+    "birmingham": "Water has reached the plaster and older trim in a Birmingham lower level. When you call, you reach a local cleanup crew for water damage restoration in Birmingham, and they'll tell you when they can be there.",
+    "berkley": "Water in a Berkley bungalow basement is close to the first floor and a short stair. Your call puts you through to a local cleanup crew for water damage restoration in Berkley, and they'll tell you when they can be there.",
+    "clawson": "Water is in a small Clawson basement on a tight lot, and the finishes are soaked. Call, and a local cleanup crew handles water damage restoration in Clawson. They'll tell you when they can be there.",
 }
 
 ALT = {
@@ -501,9 +478,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Water damage restoration in Royal Oak, MI. We connect you with independent local providers. Call {PHONE_DISPLAY}.",
-    "troy": "Water damage restoration in Troy, MI for basement floods and backups. Independent providers. Call {PHONE_DISPLAY}.",
-    "birmingham": "Water damage restoration in Birmingham, MI. A referral to independent local providers. Call {PHONE_DISPLAY}.",
-    "berkley": "Water damage restoration in Berkley, MI bungalows. Connect with independent providers. Call {PHONE_DISPLAY}.",
-    "clawson": "Water damage restoration in Clawson, MI. Independent local providers through this line. Call {PHONE_DISPLAY}.",
+    "royal-oak": "Water damage restoration in Royal Oak, MI. A local crew extracts water, dries walls and floors, and handles sewage safely. Call (248) 825-8312.",
+    "troy": "Water damage restoration in Troy, MI. A local crew dries carpet, pad and drywall in finished lower levels and checks moisture. Call (248) 825-8312.",
+    "birmingham": "Water damage restoration in Birmingham, MI. A local crew dries plaster, trim and older lower levels, then rechecks moisture. Call (248) 825-8312.",
+    "berkley": "Water damage restoration in Berkley, MI. A local crew removes the water, dries the joists and checks the hardwood above. Call (248) 825-8312.",
+    "clawson": "Water damage restoration in Clawson, MI. A local crew removes the water, dries the basement and sorts what can be saved. Call (248) 825-8312 now.",
 }
