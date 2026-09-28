@@ -264,10 +264,9 @@ def organization_graph():
             "url": f"{DOMAIN}/",
             "telephone": PHONE_E164,
             "description": (
-                f"{BRAND} is a referral service that connects Oakland County, Michigan homeowners "
-                "with independent local providers for sewer backup cleanup, sewage extraction, flooded "
-                "basement cleanup, water damage restoration, sump pump repair, and basement sanitization "
-                "after a flood or sewage backup."
+                f"{BRAND} helps Oakland County, Michigan homeowners reach a local cleanup crew for sewer "
+                "backup cleanup, sewage extraction, flooded basement cleanup, water damage restoration, "
+                "sump pump repair, and basement sanitization after a flood or sewage backup."
             ),
             "areaServed": {
                 "@type": "AdministrativeArea",
@@ -364,7 +363,7 @@ def faq_html(faqs, heading):
 
 def trust_row():
     cells = [
-        ("Referral line", "We connect you with independent local providers. The company you hire does the work."),
+        ("Call for a crew", "A local cleanup crew handles the visit. They will tell you when they can be there."),
         ("You check credentials", "Ask the provider for the license and insurance the job requires."),
         ("Price from the company", "The provider you hire sets the scope and the price."),
     ]

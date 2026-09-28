@@ -5,19 +5,17 @@ from sitegen.render import a, h2, h3, p
 
 def about_article():
     return "\n".join([
-        h2("A referral line, not a restoration company"),
+        h2("Who handles the cleanup"),
         p(
-            f"{BRAND} helps homeowners in Royal Oak, Troy, Birmingham, Berkley, and Clawson reach "
-            "independent local companies for sewer backup cleanup, sewage extraction, flooded basement "
-            "cleanup, water damage restoration, sump pump repair, and sanitizing after a flood or sewage "
-            "backup. The company you reach is independent. They bring their own crew and their own trucks, "
-            "and the work is theirs."
+            f"{BRAND} is a referral line: we connect you with an independent local company, and that crew does the cleanup. "
+            "Homeowners in Royal Oak, Troy, Birmingham, Berkley, and Clawson call for sewer backup cleanup, sewage extraction, "
+            "flooded basement cleanup, water damage restoration, sump pump repair, and sanitizing after a flood or sewage "
+            "backup. The crew brings the truck, and they'll tell you when they can be there."
         ),
         h2("What happens when you call"),
         p(
-            f"You dial {PHONE_DISPLAY}. When a participating provider is available for your type of job "
-            "and your location, the call is connected to them. How soon they can come depends on that "
-            "company, the address, and who is free. If nobody is available, the line cannot invent a crew."
+            f"You dial {PHONE_DISPLAY}. A local crew handles the visit, and they'll tell you when they can be there. "
+            "How soon they can come depends on the address and who is free."
         ),
         h2("What you still have to verify"),
         p(
@@ -28,7 +26,7 @@ def about_article():
         h2("No public office"),
         p(
             f"{BRAND} has no public office and no dispatch hub in Oakland County, so there is no street "
-            "address to publish. Photos on the site show wet basements, not a crew we employ. "
+            "address to publish. Photos on the site show wet basements and cleanup work. "
             "The cities described here are the five listed above. Start at "
             + a("/services", "services")
             + " or a city overview such as "
@@ -44,7 +42,7 @@ def privacy_article():
         h2("What this website collects"),
         p(
             f"{BRAND} is a static website. The pages do not run an account system. The phone number is "
-            "how you reach a live referral. A call is handled by the telephone routing attached to that "
+            "how you reach a local cleanup crew. A call is handled by the telephone routing attached to that "
             "number, which the site owner may later replace with a tracking number. This privacy page "
             "does not control that telephone network."
         ),
@@ -66,21 +64,18 @@ def privacy_article():
         h2("Who we share with"),
         p(
             "Because the forms are not stored, there is no form lead to sell or share. If you call, the "
-            "call can be connected to an independent provider. That provider is not our employee. They'll "
-            "tell you when they can be there. Their handling of your phone number is their responsibility once the call is connected."
+            "call can reach a local crew. They'll tell you when they can be there. Their handling of your phone number is their responsibility once you are talking with that crew."
         ),
-        p("The referral disclaimer also appears in the footer of every page and on " + a("/terms", "the terms page") + "."),
+        p("The footer note appears on every page. The legal summary is on " + a("/terms", "the terms page") + "."),
     ])
 
 
 def terms_article():
     return "\n".join([
-        h2("Referral service"),
+        h2("How a call works"),
         p(
-            f"{BRAND} is an independent referral service for homeowners in parts of Oakland County, "
-            "Michigan. We are not a plumbing contractor and we are not a water damage restoration "
-            "contractor. Calls to the number on this site may be routed to independent businesses. "
-            "Those businesses own the work. They'll tell you when they can be there. The contract and the result are between you and the company you hire."
+            f"A local crew handles sewer and water damage work for homeowners in parts of Oakland County, Michigan. "
+            f"They'll tell you when they can be there. The contract, the price, and the result are between you and that crew. Call {PHONE_DISPLAY}."
         ),
         h2("Your responsibility"),
         p(
@@ -109,13 +104,12 @@ def contact_article():
         p(
             f"The working contact is {a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)}. Use it for sewer backup cleanup, "
             "sewage extraction, flooded basement water removal, water damage restoration, sump pump "
-            "problems, and sanitizing after a backup. A live connection happens when a participating "
-            "provider is available. How soon anyone can come is up to that company."
+            "problems, and sanitizing after a backup. A local crew handles the visit, and they'll tell you when they can be there."
         ),
         h3("Cities"),
         p(
             "Royal Oak, Troy, Birmingham, Berkley, and Clawson are the pages we maintain. Other Oakland "
-            "County addresses may or may not be accepted by a provider. The provider decides."
+            "County addresses may or may not be a fit. The crew decides."
         ),
         p(
             "The form on this page only opens a confirmation screen. It does not store your name, phone, or email. "
@@ -145,12 +139,12 @@ NOT_FOUND_LINKS_INTRO = (
 
 ABOUT_FAQS = [
     (
-        "Is Oakland Sewer Pros a restoration company?",
-        "It is a referral line for homeowners in Royal Oak, Troy, Birmingham, Berkley, and Clawson. Independent local companies do the cleanup. Ask the company you hire for the license and insurance the job requires, a written scope, and the price.",
+        "What should I do in the first minutes of a backup?",
+        "Stop using water. Keep people and pets out of the water. Do not plunge or snake the drain, and leave the basement if water is near outlets, the panel, or the furnace. A local crew handles the cleanup, and they'll tell you when they can be there.",
     ),
     (
-        "What happens when I call (248) 825-8312?",
-        "When a participating provider is available for your type of job and your city, the call is connected to that company. They bring their own crew. How soon they can come depends on that company, the address, and who is free.",
+        "What is the George W. Kuhn district?",
+        "It is the regional drainage district, formerly Twelve Towns, upstream of the Red Run Drain. It serves all or part of 14 communities, including Royal Oak, Troy, Birmingham, Berkley, and Clawson. Wet-weather flow is typically more than 93 percent stormwater. It does not name the pipe in front of one house.",
     ),
     (
         "Which Oakland County cities are on this site?",
@@ -170,7 +164,7 @@ ABOUT_FAQS = [
 CONTACT_FAQS = [
     (
         "What is the working contact if sewage is in the house?",
-        "Call (248) 825-8312. That is how you reach a live referral for sewer backup, sewage extraction, flooded basement cleanup, water damage, sump pump trouble, or sanitizing after a backup in Oakland County.",
+        "Call (248) 825-8312. A local crew handles sewer backup, sewage extraction, flooded basement cleanup, water damage, sump pump trouble, or sanitizing after a backup in Oakland County, and they'll tell you when they can be there.",
     ),
     (
         "Does the form on this page create a work order?",
@@ -182,11 +176,11 @@ CONTACT_FAQS = [
     ),
     (
         "What happens on the call?",
-        "When a participating independent company is available for the job and the city, you are connected to them. How soon they can come is up to that company. Ask them for a written scope, the price, and proof of license and insurance.",
+        "Say the city and whether the water came from a drain, a sump, or a storm. A local crew handles the visit, and they'll tell you when they can be there. Ask for a written scope, the price, and proof of license and insurance.",
     ),
     (
         "Can this phone line file my 45-day city notice?",
-        "The phone line is for a cleanup referral. The 45-day written notice goes to the city or other responsible agency, with your name, address, and phone, the property address, the discovery date, and a brief description. Royal Oak, Troy, Birmingham, Berkley, and Clawson each list their own contact on the claim guide.",
+        "The phone line is for a cleanup call. The 45-day written notice goes to the city or other responsible agency, with your name, address, and phone, the property address, the discovery date, and a brief description. Royal Oak, Troy, Birmingham, Berkley, and Clawson each list their own contact on the claim guide.",
     ),
 ]
 
@@ -198,7 +192,7 @@ PRIVACY_FAQS = [
     ),
     (
         "If I call, who receives my number?",
-        "A call can be connected to an independent provider serving Royal Oak, Troy, Birmingham, Berkley, or Clawson when one is participating. That company is not an employee of this site. Once the call is connected, they handle the number.",
+        "A local crew serving Royal Oak, Troy, Birmingham, Berkley, or Clawson may receive the number you call from. They'll tell you when they can be there. Once you are talking with that crew, they handle the number.",
     ),
     (
         "Does this website set advertising cookies?",
@@ -210,15 +204,15 @@ PRIVACY_FAQS = [
     ),
     (
         "Is (248) 825-8312 a city dispatch line?",
-        "It is the referral line on this site. City sewer calls are separate: Royal Oak (248) 246-3300, Troy 248-524-3370, Birmingham claims questions 248.530.1808, Berkley 248-658-3490, and Clawson (248) 435-4500 on the city sewer page. After-hours numbers are on each city page.",
+        "It is the phone line on this site. City sewer calls are separate: Royal Oak (248) 246-3300, Troy 248-524-3370, Birmingham claims questions 248.530.1808, Berkley 248-658-3490, and Clawson (248) 435-4500 on the city sewer page. After-hours numbers are on each city page.",
     ),
 ]
 
 
 TERMS_FAQS = [
     (
-        "Is this site a plumbing contractor in Oakland County?",
-        "Oakland Sewer Pros is a referral service for homeowners in Royal Oak, Troy, Birmingham, Berkley, and Clawson. Calls may be routed to independent businesses. The contract and the result are between you and the company you hire.",
+        "Who should confirm the sewer map for my street?",
+        "Confirm sewer maps and drainage-district boundaries with the city or the Oakland County Water Resources Commissioner. The pages here describe real public systems so the five cities can be told apart. They are not a survey of the pipe at your address.",
     ),
     (
         "Who checks the license and insurance?",
@@ -230,10 +224,10 @@ TERMS_FAQS = [
     ),
     (
         "Does a call file the 45-day notice?",
-        "A call is a cleanup referral. Written notice of a sewage disposal event is due within 45 days of discovering the damage, sent to the agency that city or county designates. That letter is separate from any insurance claim.",
+        "A call is a cleanup call. Written notice of a sewage disposal event is due within 45 days of discovering the damage, sent to the agency that city or county designates. That letter is separate from any insurance claim.",
     ),
     (
         "Is sewage in a basement safe to mop?",
-        "Water from a sewer can carry pathogens. Keep people and pets away from it. This website is not a substitute for staying out of the water. An independent cleanup company handles removal when you are connected and you hire them.",
+        "Water from a sewer can carry pathogens. Keep people and pets away from it. This website is not a substitute for staying out of the water. A local cleanup crew handles removal, and they'll tell you when they can be there.",
     ),
 ]

@@ -69,7 +69,7 @@ def sources_block(items):
 
 
 NOT_LEGAL_ADVICE = (
-    "This page is general information, not legal advice. Oakland Sewer Pros is a referral service for "
+    "This page is general information, not legal advice. Oakland Sewer Pros is a phone line for "
     "cleanup providers. We are not a law firm, we do not file claims for anyone, and we cannot tell you whether "
     "a claim will succeed. Read the statute yourself and, if the amount at stake matters to you, talk to a Michigan "
     "attorney. Deadlines and city procedures can change; confirm them with the agency."
@@ -215,7 +215,7 @@ def claim_article():
             "that the city's system discharges into (" + ext("bham_risk", "City of Birmingham Risk Management") + "). Because the law "
             "defines the responsible agency to include one that \"directly or indirectly discharged into\" the part of the system that "
             "caused the damage (" + ext("mcl1416", "MCL 691.1416(b)") + "), whether more than one agency should get a notice is a "
-            "question for an attorney, not for a referral line. Background on the regional system is in our "
+            "question for an attorney, not for a phone line. Background on the regional system is in our "
             + a("/george-w-kuhn-drainage-district", "George W. Kuhn Drainage District explainer") + "."
         ),
         h2("City-by-city contacts"),
@@ -270,8 +270,7 @@ def claim_article():
         ),
         h2("Where this site fits"),
         p(
-            f"{esc(BRAND)} connects Oakland County homeowners with independent cleanup providers. If sewage is in the basement now, "
-            f"call {phone_link()} to be connected when a participating provider is available. They'll tell you when they can be there. The provider sets the scope and price. "
+            f"If sewage is in the basement now, call {phone_link()}. A local cleanup crew handles the visit, and they'll tell you when they can be there. The crew sets the scope and price. "
             "For the steps before, during and after a storm, use the printable "
             + a("/basement-flood-checklist", "basement flood checklist") + ". City cleanup pages: "
             + a("/royal-oak-sewer-cleanup", "Royal Oak") + ", " + a("/troy-sewer-cleanup", "Troy") + ", "
@@ -412,7 +411,7 @@ def gwk_article():
             + a("/sewer-backup-claim-guide", "sewer backup claim guide") + ", and the "
             + a("/basement-flood-checklist", "printable basement flood checklist") + " covers before, during and after. For "
             "contaminated water that has to be removed, see " + a("/sewer-backup-cleanup", "sewer backup cleanup in Oakland County")
-            + " or call " + phone_link() + " to be connected with an independent provider when one is available. They'll tell you when they can be there."
+            + " or call " + phone_link() + " to be a local crew handles it when one is available. They'll tell you when they can be there."
         ),
         p(
             "City overviews on this site: " + a("/royal-oak", "Royal Oak") + ", " + a("/berkley", "Berkley") + ", "
@@ -486,7 +485,7 @@ def print_button():
     return (
         '<p class="no-print"><button type="button" class="print-btn" onclick="window.print()">'
         "Print this checklist</button></p>"
-        f'<p class="print-only text-xs">Printed from oaklandsewerpros.com/basement-flood-checklist. Referral line: {esc(PHONE_DISPLAY)}. Verified {VERIFIED}.</p>'
+        f'<p class="print-only text-xs">Printed from oaklandsewerpros.com/basement-flood-checklist. Phone line: {esc(PHONE_DISPLAY)}. Verified {VERIFIED}.</p>'
     )
 
 
@@ -507,7 +506,7 @@ def checklist_article():
         ),
         p(
             "Also write down your insurance agent's number, your policy number, and the name of a licensed plumber. "
-            f"{esc(BRAND)}'s referral line for cleanup providers is {phone_link()}."
+            f"{esc(BRAND)}'s phone line for cleanup providers is {phone_link()}."
         ),
         h2("Before a storm"),
         checks([
@@ -551,7 +550,7 @@ def checklist_article():
         ]),
         h2("Getting sewage or floodwater removed"),
         p(
-            f"{esc(BRAND)} is a referral line. Call {phone_link()} to be connected with an independent provider when one is available "
+            f"{esc(BRAND)} is a phone line. Call {phone_link()} to be a local crew handles it when one is available "
             "for your address. How soon they can come, and what they charge, come from that company. Related pages: "
             + a("/flooded-basement-cleanup", "flooded basement cleanup") + ", "
             + a("/sewer-backup-cleanup", "sewer backup cleanup") + ", "
@@ -605,7 +604,7 @@ RESOURCE_FAQS = {
         ),
         (
             "Does calling (248) 825-8312 file the 45-day notice?",
-            "The call connects you with an independent cleanup company when one is participating for your address. The written notice is still a letter you send to the city or other responsible agency. The company sets the cleanup scope and the price. This page is general information, not legal advice.",
+            "The call a local cleanup crew handles the visit when one is participating for your address. The written notice is still a letter you send to the city or other responsible agency. The company sets the cleanup scope and the price. This page is general information, not legal advice.",
         ),
         (
             "What if the city has not told me who receives the letter?",
@@ -631,7 +630,7 @@ RESOURCE_FAQS = {
         ),
         (
             "What should I do if the basement floods anyway?",
-            "Call your city's sewer line while it is happening, photograph the damage, and send written notice within 45 days if you believe a public sewage system caused the loss. A backflow preventer, downspouts extended about 6 feet, and a sewer-backup endorsement are prevention steps. They do not remove water already on the floor. Call (248) 825-8312 to be connected with an independent cleanup company when one is available.",
+            "Call your city's sewer line while it is happening, photograph the damage, and send written notice within 45 days if you believe a public sewage system caused the loss. A backflow preventer, downspouts extended about 6 feet, and a sewer-backup endorsement are prevention steps. They do not remove water already on the floor. Call (248) 825-8312 to be a local cleanup crew handles it when one is available.",
         ),
     ],
     "basement-flood-checklist": [
@@ -653,7 +652,7 @@ RESOURCE_FAQS = {
         ),
         (
             "When should I call (248) 825-8312?",
-            "Call when sewage or floodwater in the house needs to be removed. The line connects you with an independent provider when one is available for your address. How soon they can come, and what they charge, come from that company. Ask for a written scope and for proof of license and insurance before work starts.",
+            "Call when sewage or floodwater in the house needs to be removed. A local crew handles the visit, and they'll tell you when they can be there. How soon they can come, and what they charge, come from that crew. Ask for a written scope and for proof of license and insurance before work starts.",
         ),
     ],
 }

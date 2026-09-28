@@ -79,23 +79,23 @@ AREA_LINE = {
     "royal-oak": (
         f"The same phone number covers Royal Oak neighborhoods along the {a('https://en.wikipedia.org/wiki/Woodward_Avenue', 'Woodward Avenue corridor')}, "
         f"near the Royal Oak Music Theatre, and toward the {a('https://en.wikipedia.org/wiki/Detroit_Zoo', 'Detroit Zoo')}. "
-        "Your call is a referral for the house."
+        "A local crew can start on the house."
     ),
     "troy": (
         "The same phone number covers Troy neighborhoods along Big Beaver Road, near Somerset Collection, "
-        "and out toward Troy Historic Village. Your call is a referral for the house."
+        "and out toward Troy Historic Village. A local crew can start on the house."
     ),
     "birmingham": (
         "The same phone number covers Birmingham homes around downtown, Shain Park, Poppleton Park, and the Quarton area. "
-        "Your call is a referral for the house."
+        "A local crew can start on the house."
     ),
     "berkley": (
         "The same phone number covers Berkley bungalow blocks and the 12 Mile Road corridor. "
-        "Your call is a referral for the house."
+        "A local crew can start on the house."
     ),
     "clawson": (
         "The same phone number covers Clawson's brick-bungalow blocks and the 14 Mile Road downtown strip. "
-        "Your call is a referral for the house."
+        "A local crew can start on the house."
     ),
 }
 
@@ -103,8 +103,8 @@ OWNER = {
     "royal-oak": (
         "Once wastewater is on the floor, the pumping step is "
         f"{a('/royal-oak-sewage-extraction', 'sewage extraction in Royal Oak')}. Keep people and pets "
-        "out of that water until it is gone. The company you reach is independent, and this line makes "
-        "the introduction. Ask them for a written scope and for the license and insurance the job requires."
+        "out of that water until it is gone. A local crew does that pumping, and they'll tell you when they can be there. "
+        "Ask them for a written scope and for the license and insurance the job requires."
     ),
     "troy": (
         "Pumping the water out of a split-level or a subdivision basement is "
@@ -119,13 +119,13 @@ OWNER = {
     ),
     "berkley": (
         "If the bungalow floor drain already overflowed, pumping the water out is "
-        f"{a('/berkley-sewage-extraction', 'Sewage extraction in Berkley')}. Call to reach an independent "
-        "provider when one is participating. Keep people off the short stair until that water is gone."
+        f"{a('/berkley-sewage-extraction', 'Sewage extraction in Berkley')}. A local crew handles the pump-out, "
+        "and they'll tell you when they can be there. Keep people off the short stair until that water is gone."
     ),
     "clawson": (
         "The pump-out, once sewage is on the floor of a brick bungalow, is "
         f"{a('/clawson-sewage-extraction', 'sewage extraction in Clawson')}. Hoses and access are part of "
-        "that visit. The crew that comes is independent. This line makes the introduction."
+        "that visit. A local crew handles that visit, and they'll tell you when they can be there."
     ),
 }
 
@@ -171,7 +171,7 @@ def first_ten(city):
             "<strong>Keep people and pets out</strong> of the water. Sewage carries bacteria and other pathogens.",
             "<strong>Do not plunge or snake</strong> the drain. A household snake can push dirty water into the subfloor.",
             "<strong>Leave the basement if water is near outlets,</strong> the panel, or the furnace. Shut power off only from a dry location.",
-            "<strong>Call " + city + " help at the number above</strong> and you are connected with an independent provider, and they'll tell you when they can be there.",
+            "<strong>Call " + city + " help at the number above</strong> A local crew handles the visit, and they'll tell you when they can be there.",
         ]),
     )
 
@@ -260,7 +260,7 @@ def article(slug, city):
             f"Sewage cleanup in {city} usually starts when sewage comes up a basement drain, a laundry "
             "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
             "and do not run a household vac. The steps below are the first minutes. After you call, an "
-            "independent cleanup company does the work, and they'll tell you when they can be there."
+            "local cleanup crew does the work, and they'll tell you when they can be there."
         ),
         h3(f"Why {city} homes are at higher risk"),
         p(WHY[slug]),
@@ -278,7 +278,7 @@ FAQS = {
     "royal-oak": [
         (
             "Who do I call at the City of Royal Oak during a sewer backup?",
-            "For basement water, the city lists (248) 246-3300 on weekdays from 7:30 a.m. to 4:00 p.m. After hours, police non-emergency (248) 246-3500 dispatches sewer personnel. Call (248) 825-8312 when you need an independent cleanup company inside the house. That call connects you when a participating provider is available.",
+            "For basement water, the city lists (248) 246-3300 on weekdays from 7:30 a.m. to 4:00 p.m. After hours, police non-emergency (248) 246-3500 dispatches sewer personnel. Call (248) 825-8312 for a local cleanup crew inside the house. They'll tell you when they can be there.",
         ),
         (
             "Who owns the sewer lateral in Royal Oak?",
@@ -293,14 +293,14 @@ FAQS = {
             "Many older sections were built before separated storm and sanitary sewers were standard. Where pipes are combined or simply old, a heavy summer storm can push sewage toward a basement floor drain. Royal Oak is a member of the former Twelve Towns program, now the George W. Kuhn Retention Treatment Basin, which was expanded in 2006. The Sewer Division can confirm the pipe on your street.",
         ),
         (
-            "What happens when I call (248) 825-8312 about a Royal Oak backup?",
-            "When a participating independent cleanup company is available, the call is connected to them. They do the work in the house. Ask for a written scope and for the license and insurance the job requires. How soon they can come depends on that company. After the water is out, drying often takes several days. Ask them how they will check moisture. A sewer-backup endorsement, if you need one, is a question for your insurer, separate from the city letter.",
+            "Which Royal Oak neighborhoods have older sewer laterals?",
+            "If the house is pre-1960s, in Vinsetta Park, Northwood, or near downtown along Woodward Avenue, the sewer lateral is often clay tile or cast iron. Those pipes take roots, open at the joints, and collapse over decades more readily than modern PVC. Royal Oak's older storm and sanitary mains can also fill in a heavy spring rain or a fast summer storm and push sewage back up the basement floor drain. The Sewer Division can confirm the pipe on your street.",
         ),
     ],
     "troy": [
         (
             "Who does Troy tell residents to call for a sewer backup?",
-            "The Water Division number is 248-524-3370 during business hours. After hours, Troy Police is 248-524-3477. Call (248) 825-8312 to reach an independent cleanup company for the house when one is available. That line is not the Water Division.",
+            "The Water Division number is 248-524-3370 during business hours. After hours, Troy Police is 248-524-3477. Call (248) 825-8312 to reach a local cleanup crew for the house when one is available. That line is not the Water Division.",
         ),
         (
             "Is Troy on one combined sewer?",
@@ -316,13 +316,13 @@ FAQS = {
         ),
         (
             "What should I do about a gurgling floor drain near Big Beaver?",
-            "Stop running water. Treat a gurgling basement drain as a warning, especially in a 1960s or 1970s split-level. Do not snake it if you smell sewage. Call the city if you think the main is surcharging, and call (248) 825-8312 to reach an independent cleanup company. The price and the crew come from that company.",
+            "Stop running water. Treat a gurgling basement drain as a warning, especially in a 1960s or 1970s split-level. Do not snake it if you smell sewage. Call the city if you think the main is surcharging, and call (248) 825-8312 to reach a local cleanup crew. The price and the crew come from that company.",
         ),
     ],
     "birmingham": [
         (
             "Who do I call in Birmingham if sewage is in the lower level?",
-            "The water event line, (248) 530-1703, collects flooding data. It is not a claim. Claims questions are 248.530.1808, and the city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. For cleanup inside the house, call (248) 825-8312. You are connected with an independent company when one is available.",
+            "The water event line, (248) 530-1703, collects flooding data. It is not a claim. Claims questions are 248.530.1808, and the city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. For cleanup inside the house, call (248) 825-8312. A local crew handles the visit when one is available.",
         ),
         (
             "Can a hard rain overload Birmingham's older sewers?",
@@ -348,7 +348,7 @@ FAQS = {
         ),
         (
             "Who do I call in Berkley while the basement is wet?",
-            "Public Works is 248-658-3490 for the city system, and the city posts a Sewer Backup Claims Form. Call (248) 825-8312 to reach an independent cleanup company for the bungalow when one is available. Say the stair is short so they know the equipment has to fit.",
+            "Public Works is 248-658-3490 for the city system, and the city posts a Sewer Backup Claims Form. Call (248) 825-8312 to reach a local cleanup crew for the bungalow when one is available. Say the stair is short so they know the equipment has to fit.",
         ),
         (
             "Where does Berkley's sewage go when it rains hard?",
@@ -366,7 +366,7 @@ FAQS = {
     "clawson": [
         (
             "Who answers a Clawson sewer call?",
-            "The city main line on the sewer page is (248) 435-4500. Public works is open Monday through Thursday, 7:00 a.m. to 3:30 p.m., and closed on Fridays. After hours, Clawson uses Troy Police dispatch at 248-524-3477, extension 1. That dispatch line is the city's path, not a cleanup crew. Call (248) 825-8312 to reach an independent company for the house when one is available.",
+            "The city main line on the sewer page is (248) 435-4500. Public works is open Monday through Thursday, 7:00 a.m. to 3:30 p.m., and closed on Fridays. After hours, Clawson uses Troy Police dispatch at 248-524-3477, extension 1. That dispatch line is the city's path, not a cleanup crew. Call (248) 825-8312 to reach a local crew for the house when one is available.",
         ),
         (
             "Is every Clawson street a combined sewer?",
@@ -388,11 +388,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "Sewage coming up a floor drain in your Royal Oak basement is a health hazard, so keep people and pets out of the water. Call now for sewage cleanup in Royal Oak. We connect you with an independent local company that handles sewer backup cleanup in Royal Oak, and they'll tell you when they can be there.",
-    "troy": "Sewage backed up into your Troy basement or lower level? Don't try to mop it up yourself. One call gets you started on sewage cleanup in Troy. We connect you with an independent local company for sewer backup cleanup in Troy, and they'll tell you when they can be there.",
-    "birmingham": "Sewage in the basement of an older Birmingham home can soak into plaster, trim and finished floors quickly. Call for sewage cleanup in Birmingham and we'll connect you with an independent local company that does sewer backup cleanup in Birmingham. They'll tell you when they can be there.",
-    "berkley": "When the floor drain by the laundry backs up in a Berkley bungalow, the sewage needs to come out before it spreads. Call for sewage cleanup in Berkley. We connect you with an independent local company for sewer backup cleanup in Berkley, and they'll tell you when they can be there.",
-    "clawson": "Sewage in your Clawson basement after a backup? Stay out of the water and call. We connect you with an independent local company for sewage cleanup in Clawson and sewer backup cleanup in Clawson, and they'll tell you when they can be there.",
+    "royal-oak": "Sewage coming up a floor drain in your Royal Oak basement is a health hazard, so keep people and pets out of the water. Call now for sewage cleanup in Royal Oak. A local crew handles sewer backup cleanup in Royal Oak, and they'll tell you when they can be there.",
+    "troy": "Sewage backed up into your Troy basement or lower level? Don't try to mop it up yourself. One call gets you started on sewage cleanup in Troy. A local crew handles sewer backup cleanup in Troy, and they'll tell you when they can be there.",
+    "birmingham": "Sewage in the basement of an older Birmingham home can soak into plaster, trim and finished floors quickly. Call for sewage cleanup in Birmingham. A local crew handles sewer backup cleanup in Birmingham. They'll tell you when they can be there.",
+    "berkley": "When the floor drain by the laundry backs up in a Berkley bungalow, the sewage needs to come out before it spreads. Call for sewage cleanup in Berkley. A local crew handles sewer backup cleanup in Berkley, and they'll tell you when they can be there.",
+    "clawson": "Sewage in your Clawson basement after a backup? Stay out of the water and call. A local crew handles sewage cleanup in Clawson and sewer backup cleanup in Clawson, and they'll tell you when they can be there.",
 }
 
 ALT = {
@@ -404,9 +404,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Sewage cleanup in Royal Oak, MI, and sewer backup cleanup for the same houses. Independent providers. Call {PHONE_DISPLAY}.",
+    "royal-oak": "Sewage cleanup in Royal Oak, MI, and sewer backup cleanup for the same houses. Local crews. Call {PHONE_DISPLAY}.",
     "troy": "Sewage cleanup in Troy, MI for lower levels and split-levels, plus sewer backup cleanup. Call {PHONE_DISPLAY}.",
-    "birmingham": "Sewage cleanup in Birmingham, MI for older homes, and sewer backup cleanup. Independent providers. Call {PHONE_DISPLAY}.",
-    "berkley": "Sewage cleanup in Berkley, MI bungalows, and sewer backup cleanup on this page. Call {PHONE_DISPLAY} to connect.",
-    "clawson": "Sewage cleanup in Clawson, MI and sewer backup cleanup for brick bungalows. Independent providers. Call {PHONE_DISPLAY}.",
+    "birmingham": "Sewage cleanup in Birmingham, MI for older homes, and sewer backup cleanup. Local crews. Call {PHONE_DISPLAY}.",
+    "berkley": "Sewage cleanup in Berkley, MI bungalows, and sewer backup cleanup on this page. Call {PHONE_DISPLAY} for a crew.",
+    "clawson": "Sewage cleanup in Clawson, MI and sewer backup cleanup for brick bungalows. Local crews. Call {PHONE_DISPLAY}.",
 }
