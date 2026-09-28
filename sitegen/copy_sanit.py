@@ -316,11 +316,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "Basement sanitization in Royal Oak means cleaning up after sewage or a contaminated flood, once the water is out. It is not a maid service. We refer you to an independent provider and do not do the cleaning.",
-    "troy": "After a Troy lower-level backup, sanitizing means removing what sewage soaked, not spraying over carpet pad. Call and we will connect you with an independent company. We do not perform the work.",
-    "birmingham": "Sanitizing a Birmingham basement after sewage has to deal with plaster and wood, not just a concrete floor. Call for a referral. Oakland Sewer Pros does not apply cleaners or guarantee an odor-free date.",
-    "berkley": "Basement sanitization in Berkley, MI is cleaning after sewage or a flood in a small bungalow, once the water is out. Call and we will connect you with an independent provider. We do not clean the house.",
-    "clawson": "Clawson sanitizing after a backup is a one-room job packed with mechanical equipment. Use this referral to reach an independent provider. We do not send a cleaning crew.",
+    "royal-oak": "The standing sewage is gone from your Royal Oak basement, and the film it left is still on the floor. Your call connects you with an independent local cleanup company that can come out for basement sanitization in Royal Oak.",
+    "troy": "A Troy lower level had sewage in the carpet and pad, and a spray over the top will not clean it. Call and you are connected with an independent local cleanup company that can come out for basement sanitization in Troy.",
+    "birmingham": "Sewage wicked into the plaster and wood in a Birmingham basement, past what a wipe can reach. When you call, you reach an independent local cleanup company that can come out for basement sanitization in Birmingham.",
+    "berkley": "The water is out of a small Berkley bungalow, and the residue is still in that tight basement. Your call puts you through to an independent local cleanup company that can come out for basement sanitization in Berkley.",
+    "clawson": "A one-room Clawson basement still holds the furnace, the washer, and whatever the backup left on them. Calling connects you with an independent local cleanup company that can come out for basement sanitization in Clawson.",
 }
 
 ALT = {

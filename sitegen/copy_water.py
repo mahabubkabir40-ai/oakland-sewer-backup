@@ -481,11 +481,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "Water damage restoration in Royal Oak covers extraction, drying, and, when the water is sewage, a stricter cleanup. This is a referral to independent providers. We do not restore the house ourselves.",
-    "troy": "Troy water damage restoration usually means a finished lower level: extract the water, remove what cannot be saved, and dry the rest. Call to reach an independent provider. Oakland Sewer Pros does not do the work.",
-    "birmingham": "Water damage restoration in Birmingham has to respect plaster and older trim as well as the water itself. We connect you with an independent provider and do not run the drying.",
-    "berkley": "Berkley water damage restoration has to protect a short stair and the first floor above a bungalow basement. Call for a referral to an independent provider. We do not extract or dry the house.",
-    "clawson": "Water damage restoration in Clawson is a small-basement, small-lot job. This line refers you to an independent provider for extraction and drying. We do not quote or perform the repair.",
+    "royal-oak": "The basement in your Royal Oak house is wet, and sewage makes the cleanup stricter than a clean leak. Your call connects you with an independent local cleanup company that can come out for water damage restoration in Royal Oak.",
+    "troy": "A finished Troy lower level is wet through the carpet, the pad, and the drywall. Call and you are connected with an independent local cleanup company that can come out for water damage restoration in Troy.",
+    "birmingham": "Water has reached the plaster and older trim in a Birmingham lower level. When you call, you reach an independent local cleanup company that can come out for water damage restoration in Birmingham.",
+    "berkley": "Water in a Berkley bungalow basement is close to the first floor and a short stair. Your call puts you through to an independent local cleanup company that can come out for water damage restoration in Berkley.",
+    "clawson": "Water is in a small Clawson basement on a tight lot, and the finishes are soaked. Calling connects you with an independent local cleanup company that can come out for water damage restoration in Clawson.",
 }
 
 ALT = {

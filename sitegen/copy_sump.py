@@ -306,11 +306,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "Sump pump repair in Royal Oak is a referral to an independent provider for a pit that is stuck, dead, or overflowing. We do not repair pumps or quote a price. If the floor is wet, say so.",
-    "troy": "Troy sump pump repair often protects a finished lower level near Big Beaver and in subdivisions. Call for an independent provider. Oakland Sewer Pros does not install pumps or promise a visit.",
-    "birmingham": "Sump pump repair in Birmingham, Michigan is the mechanical half of a wet lower level in an older Oakland County house, not a Birmingham, Alabama job. We refer you to an independent provider. We do not sell pumps or guarantee a dry basement.",
-    "berkley": "Berkley sump pump repair happens in a short bungalow basement that may flood fast when the pump stops. This is a referral line, not a repair shop, and it has no price list.",
-    "clawson": "Clawson sump pump repair has to fit a small basement and a short driveway. Call to reach an independent provider. We do not do the repair and we do not publish prices.",
+    "royal-oak": "The sump in your Royal Oak basement is stuck, dead, or overflowing. Your call connects you with an independent local company that can come out for sump pump repair in Royal Oak. If the floor is wet, say so.",
+    "troy": "The sump quit under a finished Troy lower level near Big Beaver, and the carpet is next. Call and you are connected with an independent local company that can come out for sump pump repair in Troy.",
+    "birmingham": "The sump failed in an older Birmingham, Michigan house and the lower level is getting wet. When you call, you reach an independent local company that can come out for sump pump repair in Birmingham. This is Michigan, not Alabama.",
+    "berkley": "The pump stopped in a short Berkley bungalow basement, and the water can rise fast. Your call puts you through to an independent local company that can come out for sump pump repair in Berkley.",
+    "clawson": "The pump stopped in a small Clawson basement with a short driveway. Calling connects you with an independent local company that can come out for sump pump repair in Clawson.",
 }
 
 ALT = {

@@ -356,11 +356,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "Flooded basement cleanup and basement water removal in Royal Oak depend on whether you are dealing with storm water, a failed sump, or a sewer. Call and we will connect you with an independent provider. We do not pump the water.",
-    "troy": "Troy flooded basement cleanup is usually water removal from a finished lower level or split-level, then drying what the water soaked. Call to be matched with an independent company. This site does not perform the cleanup.",
-    "birmingham": "Basement water removal in Birmingham has to account for plaster, trim, and low areas such as Quarton. We refer you to an independent provider and do not run the job.",
-    "berkley": "Berkley basement flooding hits short bungalow basements on flat ground. Flooded basement cleanup here has to protect the stair and the first floor. We connect the call; we do not remove the water.",
-    "clawson": "Flooded basement cleanup in Clawson, MI is water removal in a small brick-bungalow basement. If a drain caused it, treat the water as sewage. This line refers you to an independent provider. We have no crew of our own.",
+    "royal-oak": "The basement in your Royal Oak house is full of water, from a storm, a sump, or a drain. Your call connects you with an independent local cleanup company that can come out for flooded basement cleanup in Royal Oak.",
+    "troy": "A finished Troy lower level or split-level is under water and the carpet is holding it. Call and you are connected with an independent local cleanup company that can come out for flooded basement cleanup in Troy.",
+    "birmingham": "Water is in an older Birmingham lower level, around the plaster and trim. When you call, you reach an independent local cleanup company that can come out for basement water removal in Birmingham.",
+    "berkley": "Water is in a short Berkley bungalow basement, and the stair runs straight up to the first floor. Your call puts you through to an independent local cleanup company that can come out for flooded basement cleanup in Berkley.",
+    "clawson": "Water is in a small Clawson bungalow basement, close to the furnace, and you need flooded basement cleanup in Clawson. Calling connects you with an independent local cleanup company that can come out. If a drain caused it, say so.",
 }
 
 ALT = {
