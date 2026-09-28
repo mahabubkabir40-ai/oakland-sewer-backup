@@ -43,6 +43,13 @@ SERVICE_HUBS = [
     ("/basement-sanitization", "Basement Sanitization"),
 ]
 
+# Homeowner resource pages (informational, Article schema). Linked from the home page, footer and hubs.
+RESOURCE_LINKS = [
+    ("/sewer-backup-claim-guide", "Sewer backup claim guide (45-day notice)"),
+    ("/george-w-kuhn-drainage-district", "George W. Kuhn Drainage District"),
+    ("/basement-flood-checklist", "Printable basement flood checklist"),
+]
+
 PULSE_CSS = """
         .pulse-btn { animation: pulse-danger 2.2s infinite; }
         @keyframes pulse-danger {
@@ -255,6 +262,22 @@ def service_schema(name, description, url_path, area_name):
     }
 
 
+def article_schema(headline, description, url_path, date_published, date_modified):
+    return {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": headline,
+        "description": description,
+        "url": f"{DOMAIN}{url_path}",
+        "mainEntityOfPage": {"@type": "WebPage", "@id": f"{DOMAIN}{url_path}"},
+        "datePublished": date_published,
+        "dateModified": date_modified,
+        "inLanguage": "en-US",
+        "author": {"@type": "Organization", "@id": f"{DOMAIN}/#organization", "name": BRAND, "url": f"{DOMAIN}/"},
+        "publisher": {"@type": "Organization", "@id": f"{DOMAIN}/#organization", "name": BRAND, "url": f"{DOMAIN}/"},
+    }
+
+
 def faq_html(faqs, heading):
     blocks = []
     for question, answer in faqs:
@@ -412,6 +435,10 @@ def footer():
         f'<li><a href="/{slug}" class="hover:text-white transition-colors">{esc(name)}</a></li>'
         for slug, name in CITIES
     )
+    resources = "".join(
+        f'<li><a href="{href}" class="hover:text-white transition-colors">{esc(label)}</a></li>'
+        for href, label in RESOURCE_LINKS
+    )
     return f"""<footer class="bg-slate-950 text-gray-300 py-10 text-xs border-t border-slate-800">
         <div class="max-w-6xl mx-auto px-4 text-left">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
@@ -423,6 +450,11 @@ def footer():
                     <p class="text-white font-bold mb-3">Service areas</p>
                     <ul class="space-y-2 text-gray-300">{cities}</ul>
                 </nav>
+                <div>
+                <nav aria-label="Footer homeowner resources" class="mb-6">
+                    <p class="text-white font-bold mb-3">Homeowner resources</p>
+                    <ul class="space-y-2 text-gray-300">{resources}</ul>
+                </nav>
                 <nav aria-label="Footer company">
                     <p class="text-white font-bold mb-3">Company</p>
                     <ul class="space-y-2 text-gray-300">
@@ -433,6 +465,7 @@ def footer():
                         <li><a href="tel:{PHONE_TEL}" class="hover:text-white transition-colors">Call {PHONE_DISPLAY}</a></li>
                     </ul>
                 </nav>
+                </div>
             </div>
             <div class="mt-8 border-t border-slate-800 pt-6 space-y-3 leading-relaxed text-gray-300">
                 <p>{esc(DISCLAIMER)}</p>
@@ -498,7 +531,7 @@ def form_fields(include_email=False, include_priority=False, id_prefix="lead"):
     </form>"""
 
 
-def render_document(path, title, description, body, crumbs, faqs=None, service=None, robots="index, follow"):
+def render_document(path, title, description, body, crumbs, faqs=None, service=None, robots="index, follow", article=None, extra_css=""):
     canonical = f"{DOMAIN}/" if path in ("", "/") else f"{DOMAIN}/{path.strip('/')}"
     url_path = "/" if path in ("", "/") else f"/{path.strip('/')}"
     crumb_html, crumb_schema = breadcrumbs(crumbs)
@@ -516,6 +549,15 @@ def render_document(path, title, description, body, crumbs, faqs=None, service=N
             url_path,
             service["area"],
         )))
+    if article:
+        scripts.append(json_ld(article_schema(
+            article["headline"],
+            description,
+            url_path,
+            article["published"],
+            article["modified"],
+        )))
+    og_type = "article" if article else "website"
     robots_tag = f'<meta name="robots" content="{esc(robots)}">'
     return f"""<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
@@ -529,7 +571,7 @@ def render_document(path, title, description, body, crumbs, faqs=None, service=N
     <meta property="og:title" content="{esc(title)}">
     <meta property="og:description" content="{esc(description)}">
     <meta property="og:url" content="{esc(canonical)}">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="{og_type}">
     <meta property="og:site_name" content="{esc(BRAND)}">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{esc(title)}">
@@ -542,7 +584,7 @@ def render_document(path, title, description, body, crumbs, faqs=None, service=N
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/fonts.css">
     <link rel="stylesheet" href="/css/main.css">
-    <style>{PULSE_CSS}</style>
+    <style>{PULSE_CSS}{extra_css}</style>
     {''.join(scripts)}
 </head>
 <body class="font-sans text-gray-200 bg-slate-900 min-h-screen flex flex-col justify-between pb-16 md:pb-0">

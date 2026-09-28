@@ -190,6 +190,37 @@ def first_ten(city):
     )
 
 
+_GUIDE = '<a href="/sewer-backup-claim-guide" class="text-red-400 hover:text-red-300 underline font-medium">sewer backup claim guide</a>'
+_CHECK = '<a href="/basement-flood-checklist" class="text-red-400 hover:text-red-300 underline font-medium">printable basement flood checklist</a>'
+
+# One claim sentence per city, drawn from each city's own published process (checked 28 Sep 2026).
+CLAIM_LINE = {
+    "royal-oak": (
+        "Royal Oak asks residents to call the Department of Public Service while the water is coming in, so the city can "
+        "check the main during the event. A claim against the city needs written notice within 45 days of discovery; "
+        f"the {_GUIDE} explains the content and timeline. Keep the {_CHECK} for the next storm."
+    ),
+    "troy": (
+        "Troy takes written sewer backup claims through the City Attorney's Office, and state law sets a 45-day deadline "
+        f"from discovery. The form, the contact, and what to photograph are in the {_GUIDE}. The {_CHECK} "
+        "covers the steps before and during a storm."
+    ),
+    "birmingham": (
+        "Birmingham posts a Sewer Backup Claim form on its Risk Management page and notes that its water event tracking "
+        f"form is not a claim. The 45-day notice rule and a documentation list are in the {_GUIDE}; storm prep is on the {_CHECK}."
+    ),
+    "berkley": (
+        "Berkley's Notice of Claim form goes to the City Manager's Office, and Michigan law gives you 45 days from discovery "
+        f"to send written notice. Details are in the {_GUIDE}. The city's master plan describes Berkley's sewers as combined, so the {_CHECK} "
+        "is worth printing before spring storms."
+    ),
+    "clawson": (
+        "Clawson's DPW handles sewer calls; we did not find a posted claim form, so ask the city in writing who receives "
+        f"notices. The 45-day written notice rule is explained in the {_GUIDE}, and the {_CHECK} lists what to do during a storm."
+    ),
+}
+
+
 def article(slug, city):
     resources = {
         "royal-oak": (
@@ -252,6 +283,7 @@ def article(slug, city):
         ul(TRIGGERS[slug]),
         first_ten(city),
         note(AREA_LINE[slug]),
+        p(CLAIM_LINE[slug]),
         p(resources[slug]),
         nearby_section("sewer-cleanup", "Sewer backup cleanup", slug),
     ])

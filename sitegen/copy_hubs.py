@@ -83,6 +83,10 @@ def water_hub():
             + ", " + a("/sewer-backup-cleanup", "sewer backup cleanup")
             + ", and " + a("/basement-sanitization", "sanitizing after sewage") + "."
         ),
+        p(
+            "Homeowner resources: the " + a("/basement-flood-checklist", "printable basement flood checklist")
+            + " and the " + a("/sewer-backup-claim-guide", "sewer backup claim guide") + " for the 45-day notice rule."
+        ),
     ])
 
 
@@ -107,6 +111,14 @@ def sewer_hub():
             + a("/flooded-basement-cleanup", "flooded basement cleanup")
             + " or " + a("/water-damage-restoration", "water damage restoration")
             + " instead. Extraction detail is on " + a("/sewage-extraction", "the sewage extraction hub") + "."
+        ),
+        h3("If you think the public sewer caused it"),
+        p(
+            "Michigan law requires written notice to the responsible agency within 45 days of discovering the damage before "
+            "compensation for a sewer backup is possible. The steps and each city's claim contact are in the "
+            + a("/sewer-backup-claim-guide", "sewer backup claim guide")
+            + ". Why combined sewers in this part of the county back up in heavy rain is explained on the "
+            + a("/george-w-kuhn-drainage-district", "George W. Kuhn Drainage District page") + "."
         ),
     ])
 
@@ -150,6 +162,7 @@ def flood_hub():
         p(a("/berkley-flooded-basement", "Flooded basement cleanup in Berkley") + ": short stairs and first-floor hardwood over a flat lot."),
         p(a("/clawson-flooded-basement", "Flooded basement cleanup in Clawson, MI") + ": one-room basements, furnaces in the water, short driveways."),
         p("A failed pump may be why the water is there. That repair is " + a("/sump-pump-repair", "sump pump repair") + ", not a substitute for removing the water."),
+        p("Before the next storm, print the " + a("/basement-flood-checklist", "basement flood checklist for Oakland County") + ". It lists city sewer numbers, DTE outage reporting, and the 45-day claim notice step."),
     ])
 
 
@@ -209,6 +222,7 @@ def city_royal_oak():
         p(a("/royal-oak-water-damage-restoration", "Water damage restoration") + " for drying and the broader wet-building scope, including water damage repair decisions."),
         p(a("/royal-oak-sump-pump-repair", "Sump pump repair") + " for the pit, with no prices listed."),
         p(a("/royal-oak-basement-sanitization", "Basement sanitization") + " after sewage or a contaminated flood, not as routine cleaning."),
+        p("Royal Oak is part of the regional " + a("/george-w-kuhn-drainage-district", "George W. Kuhn Drainage District") + ". If a backup damages your basement, the city's contacts and the 45-day notice rule are in the " + a("/sewer-backup-claim-guide", "sewer backup claim guide") + "."),
         p("Nearby city overviews: " + a("/berkley", "Berkley") + ", " + a("/clawson", "Clawson") + ", " + a("/birmingham", "Birmingham") + ", and " + a("/troy", "Troy") + "."),
     ])
 
@@ -230,6 +244,7 @@ def city_troy():
         p(a("/troy-water-damage-restoration", "Water damage restoration") + " for drying after the water is out."),
         p(a("/troy-sump-pump-repair", "Sump pump repair") + " when the pit in a finished room quits."),
         p(a("/troy-basement-sanitization", "Basement sanitization in Troy") + " after sewage has touched contents and pad."),
+        p("Troy takes written sewer backup claims through the City Attorney's Office. The details, and the 45-day deadline, are in the " + a("/sewer-backup-claim-guide", "sewer backup claim guide") + "."),
         p("Other cities: " + a("/birmingham", "Birmingham") + ", " + a("/clawson", "Clawson") + ", " + a("/royal-oak", "Royal Oak") + "."),
     ])
 
@@ -251,6 +266,7 @@ def city_birmingham():
         p(a("/birmingham-water-damage-restoration", "Water damage restoration") + " when plaster, trim, or finishes have to be dried or opened."),
         p(a("/birmingham-sump-pump-repair", "Sump pump repair in Birmingham, Michigan") + " for the pit, quoted by the provider, not by us."),
         p(a("/birmingham-basement-sanitization", "Basement sanitization in Birmingham") + " after sewage, with a warning about plaster and fog-only treatments."),
+        p("Birmingham's water event tracking form is not a sewer backup claim. The claim form, the 45-day rule, and what to document are in the " + a("/sewer-backup-claim-guide", "sewer backup claim guide") + "."),
         p("Adjacent overviews: " + a("/royal-oak", "Royal Oak") + " and " + a("/troy", "Troy") + "."),
     ])
 
@@ -262,7 +278,9 @@ def city_berkley():
             "Berkley is a small city of mostly 1940s and 1950s bungalows. Downtown is along 12 Mile Road. "
             "Coolidge is a main north-south road. The lots are flat, "
             "so heavy rain does not run off quickly. The city's master plan describes its sewers as a "
-            "combined storm and sanitary system that drains to the regional George W. Kuhn Drain. Ask the city about a specific "
+            "combined storm and sanitary system that drains to the regional George W. Kuhn Drain (see the "
+            + a("/george-w-kuhn-drainage-district", "George W. Kuhn Drainage District explainer")
+            + "). Ask the city about a specific "
             "street. Basements are short, and the stair lands close to the first-floor living space."
         ),
         h2("Berkley pages"),
@@ -272,6 +290,7 @@ def city_berkley():
         p(a("/berkley-water-damage-restoration", "Water damage restoration") + " including the risk to first-floor hardwood from wet joists."),
         p(a("/berkley-sump-pump-repair", "Sump pump repair") + " in a low basement, with no price table."),
         p(a("/berkley-basement-sanitization", "Basement sanitization in Berkley, MI") + " after sewage, sized to a small air volume."),
+        p("Filing a claim with the city after a backup: " + a("/sewer-backup-claim-guide", "sewer backup claim guide") + ". Getting ready for the next storm: " + a("/basement-flood-checklist", "basement flood checklist") + "."),
         p("Neighbors on this site: " + a("/royal-oak", "Royal Oak") + " and " + a("/birmingham", "Birmingham") + "."),
     ])
 
@@ -284,7 +303,7 @@ def city_clawson():
             "14 Mile Road is the downtown street. The city sits between Royal Oak and Troy. Basements "
             "are often a single room that holds the furnace, the water heater, and the floor drain. "
             "Laterals from that era are commonly clay or cast iron. Regional drainage context includes "
-            "the George W. Kuhn district and the Oakland County Water Resources Commissioner. Confirm "
+            "the " + a("/george-w-kuhn-drainage-district", "George W. Kuhn Drainage District") + " and the Oakland County Water Resources Commissioner. Confirm "
             "anything you need for a city complaint with those agencies. This overview is a referral map."
         ),
         h2("Clawson services"),
@@ -294,6 +313,7 @@ def city_clawson():
         p(a("/clawson-water-damage-restoration", "Water damage restoration") + " for drying after extraction."),
         p(a("/clawson-sump-pump-repair", "Sump pump repair") + " next to the furnace, without a published price."),
         p(a("/clawson-basement-sanitization", "Basement sanitization in Clawson") + " so residue does not walk up the only stair."),
+        p("After a backup, the 45-day written notice rule and Clawson's contacts are in the " + a("/sewer-backup-claim-guide", "sewer backup claim guide") + "."),
         p("See also " + a("/royal-oak", "Royal Oak") + " and " + a("/troy", "Troy") + "."),
     ])
 

@@ -31,6 +31,7 @@ from sitegen.copy_hubs import (
     sump_hub,
     water_hub,
 )
+from sitegen.copy_resources import RESOURCE_PAGES
 from sitegen.copy_sanit import ALT as SANIT_ALT
 from sitegen.copy_sanit import ARTICLES as SANIT_ARTICLES
 from sitegen.copy_sanit import DESCRIPTIONS as SANIT_DESC
@@ -59,6 +60,7 @@ from sitegen.copy_water import HERO as WATER_HERO
 from sitegen.render import (
     CITIES,
     CITY_SERVICES,
+    RESOURCE_LINKS,
     SERVICE_HUBS,
     call_button,
     city_name,
@@ -128,7 +130,7 @@ def fit_meta(text):
     return hits[0]
 
 
-def remember(path, title, description, body, crumbs, faqs=None, service=None, robots="index, follow", priority="0.8", index=True):
+def remember(path, title, description, body, crumbs, faqs=None, service=None, robots="index, follow", priority="0.8", index=True, article=None, extra_css=""):
     description = fit_meta(description) if "{PHONE_DISPLAY}" in description or len(description) < 140 or len(description) > 155 else description
     length = len(description)
     if length < 140 or length > 155 or "...." in description:
@@ -142,6 +144,8 @@ def remember(path, title, description, body, crumbs, faqs=None, service=None, ro
         faqs=faqs,
         service=service,
         robots=robots,
+        article=article,
+        extra_css=extra_css,
     )
     filename = "index.html" if path in ("", "/") else f"{path}.html"
     (ROOT / filename).write_text(html_out, encoding="utf-8")
@@ -328,6 +332,26 @@ def home_body():
             </ul>
         </div>
     </section>"""
+    resources = """<section id="resources" class="py-16 bg-gray-50 text-slate-900 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl font-outfit font-extrabold text-center mb-4">Homeowner resources</h2>
+            <p class="text-sm text-gray-700 text-center max-w-3xl mx-auto mb-10">Plain-language guides with links to the official city, county and state sources. Information only, not legal advice.</p>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <a href="/sewer-backup-claim-guide" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
+                    <h3 class="text-lg font-outfit font-extrabold mb-3">Sewer backup claim guide</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">Michigan's 45-day written notice rule, what to document, and the claim contact for Royal Oak, Troy, Birmingham, Berkley and Clawson.</p>
+                </a>
+                <a href="/george-w-kuhn-drainage-district" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
+                    <h3 class="text-lg font-outfit font-extrabold mb-3">George W. Kuhn Drainage District</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">The regional combined sewer district behind many southeast Oakland County basements, and why heavy rain backs it up.</p>
+                </a>
+                <a href="/basement-flood-checklist" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
+                    <h3 class="text-lg font-outfit font-extrabold mb-3">Printable basement flood checklist</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">Before, during and after a storm, with city sewer numbers, DTE outage reporting and the claim notice step.</p>
+                </a>
+            </div>
+        </div>
+    </section>"""
     form = f"""<section id="contact" class="py-16 bg-slate-900 px-4">
         <div class="max-w-xl mx-auto bg-slate-950 border border-slate-800 p-8 rounded-2xl">
             <h2 class="text-2xl font-outfit font-bold text-white mb-2">Call first</h2>
@@ -353,7 +377,7 @@ def home_body():
             </div>
         </div>
     </section>"""
-    return intro + services + steps + cities + form + faq_html(home_faqs, "Questions about this referral line"), home_faqs
+    return intro + services + steps + resources + cities + form + faq_html(home_faqs, "Questions about this referral line"), home_faqs
 
 
 def main():
@@ -465,6 +489,19 @@ def main():
         crumbs = [("Home", "/"), ("Services", "/services"), (h1, None)] if path != "services" else [("Home", "/"), ("Services", None)]
         remember(path, title, fill(description), body, crumbs, faqs=faqs, service=service, priority=priority)
 
+    for slug, title, h1, description, lead, article_fn, css, label in RESOURCE_PAGES:
+        body = prose_body(esc(h1), lead, article_fn())
+        remember(
+            slug,
+            title,
+            fill(description),
+            body,
+            [("Home", "/"), (label, None)],
+            priority="0.7",
+            article={"headline": h1, "published": "2026-09-28", "modified": LASTMOD},
+            extra_css=css,
+        )
+
     about_faqs = [
         (
             "Are you a contractor?",
@@ -526,6 +563,7 @@ def main():
 
     missing_links = ul(
         [f'<a class="text-red-400 underline" href="{href}">{esc(label)}</a>' for href, label in SERVICE_HUBS]
+        + [f'<a class="text-red-400 underline" href="{href}">{esc(label)}</a>' for href, label in RESOURCE_LINKS]
         + [f'<a class="text-red-400 underline" href="/{slug}">{esc(name)}</a>' for slug, name in CITIES]
     )
     remember(
