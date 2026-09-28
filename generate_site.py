@@ -231,7 +231,8 @@ def prose_body(h1, lead, article, faqs=None, faq_heading="Questions", images=Non
     near = ""
     if images:
         article, near_fig = spread_article(article, images)
-        near = f'<div class="max-w-3xl mx-auto px-4 pt-4">{near_fig}</div>'
+        if near_fig:
+            near = f'<div class="max-w-3xl mx-auto px-4 pt-4">{near_fig}</div>'
     faq = faq_html(faqs, faq_heading) if faqs else ""
     return f"""<section class="bg-slate-950/40 py-12 md:py-16 px-4 border-b border-slate-800">
         <div class="max-w-4xl mx-auto">
@@ -415,8 +416,12 @@ def home_body():
             </div>
         </div>
     </section>"""
-    mid = f'<div class="bg-slate-900 px-4 pb-8"><div class="max-w-3xl mx-auto">{content_figure(photos[1])}</div></div>'
-    near_faq = f'<div class="max-w-3xl mx-auto px-4 pt-12">{content_figure(photos[2])}</div>'
+    mid = ""
+    if len(photos) > 1:
+        mid = f'<div class="bg-slate-900 px-4 pb-8"><div class="max-w-3xl mx-auto">{content_figure(photos[1])}</div></div>'
+    near_faq = ""
+    if len(photos) > 2:
+        near_faq = f'<div class="max-w-3xl mx-auto px-4 pt-12">{content_figure(photos[2])}</div>'
     return intro + services + steps + mid + resources + cities + form + near_faq + faq_html(home_faqs, "Questions about this referral line"), home_faqs
 
 
@@ -628,7 +633,7 @@ def main():
     for path, _priority in SITEMAP:
         filename = "index.html" if path in ("", "/") else f"{path}.html"
         count = (ROOT / filename).read_text(encoding="utf-8").count("<img ")
-        if count != 3:
+        if count not in (2, 3):
             image_errors.append(f"{filename}: {count} img tags")
     for filename in ("thank-you.html", "404.html"):
         count = (ROOT / filename).read_text(encoding="utf-8").count("<img ")
