@@ -40,8 +40,8 @@
     ],
     "royal-oak-sewer-cleanup": [
       {
-        "file": "worker-disinfecting-floor-in-protective-suit.webp",
-        "alt": "Worker in a white protective suit disinfecting a floor.",
+        "file": "worker-in-protective-gear-disinfecting-appliance.webp",
+        "alt": "Worker in protective gear disinfecting a refrigerator.",
         "width": 1200,
         "height": 801,
         "eager": false,
@@ -58,7 +58,7 @@
         "height": 1458,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/",
-        "photographer": "João Vítor Heinrichs",
+        "photographer": "Jo\u00e3o V\u00edtor Heinrichs",
         "license": "Pexels License",
         "pexels_id": "7807058",
         "title": "A Close-Up Shot of a Storm Drain"
@@ -128,16 +128,16 @@
         "title": "Person in White PPE Cleaning the Table"
       },
       {
-        "file": "manhole-covers-in-asphalt.webp",
-        "alt": "Round manhole covers in an asphalt street.",
-        "width": 874,
-        "height": 1311,
+        "file": "close-up-of-storm-drain-grate.webp",
+        "alt": "Close-up of a metal storm drain grate.",
+        "width": 972,
+        "height": 1458,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/manholes-in-street-17592363/",
-        "photographer": "Wallace Chuck",
+        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/",
+        "photographer": "Jo\u00e3o V\u00edtor Heinrichs",
         "license": "Pexels License",
-        "pexels_id": "17592363",
-        "title": "Manholes in Street"
+        "pexels_id": "7807058",
+        "title": "A Close-Up Shot of a Storm Drain"
       },
       {
         "file": "floodwater-on-concrete-floor-by-stairs.webp",
@@ -166,16 +166,16 @@
         "title": "Cleaner in Protection Suit Wiping Cabinet in Kitchen"
       },
       {
-        "file": "white-downspout-on-concrete-wall.webp",
-        "alt": "White downspout running down a concrete wall.",
-        "width": 1080,
-        "height": 1616,
+        "file": "white-downspout-on-exterior-wall.webp",
+        "alt": "White downspout on an exterior wall.",
+        "width": 1200,
+        "height": 1800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/house-drain-pipe-on-concrete-wall-3964564/",
-        "photographer": "ready made",
+        "source_url": "https://www.pexels.com/photo/white-downspout-on-concrete-wall-9809765/",
+        "photographer": "Plato Terentev",
         "license": "Pexels License",
-        "pexels_id": "3964564",
-        "title": "House Drain Pipe on Concrete Wall"
+        "pexels_id": "9809765",
+        "title": "White Downspout on Concrete Wall"
       },
       {
         "file": "empty-unfinished-basement.webp",
@@ -289,7 +289,7 @@
         "photographer": "Vika Kirillova",
         "license": "Pexels License",
         "pexels_id": "11046405",
-        "title": "A Couch and a Fan Standing on the Floor in a Living Room "
+        "title": "A Couch and a Fan Standing on the Floor in a Living Room\u00a0"
       },
       {
         "file": "finished-basement-with-couch.webp",
@@ -318,8 +318,8 @@
         "title": "Home gym with equipment in basement"
       },
       {
-        "file": "floor-fan-on-concrete.webp",
-        "alt": "Large floor fan on a concrete floor.",
+        "file": "floor-fan-on-wood-floor.webp",
+        "alt": "Floor fan on a wood floor.",
         "width": 1200,
         "height": 800,
         "eager": false,
@@ -426,7 +426,7 @@
         "height": 2133,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
-        "photographer": "Bulat843 🌙",
+        "photographer": "Bulat843 \ud83c\udf19",
         "license": "Pexels License",
         "pexels_id": "35290675",
         "title": "Focused Technician Working with Water Pump"
@@ -438,7 +438,7 @@
         "height": 1920,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
-        "photographer": "Bulat843 🌙",
+        "photographer": "Bulat843 \ud83c\udf19",
         "license": "Pexels License",
         "pexels_id": "32588548",
         "title": "Plumber Repairing Pipe with Wrench Indoors"
@@ -464,7 +464,7 @@
         "height": 1800,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
-        "photographer": "Adam Šumník",
+        "photographer": "Adam \u0160umn\u00edk",
         "license": "Pexels License",
         "pexels_id": "32489252",
         "title": "Industrial Pump and Hose Equipment Outdoor View"
@@ -482,16 +482,16 @@
         "title": "Professional Plumber Installing a Radiator Pipe"
       },
       {
-        "file": "person-pulling-on-protective-coveralls.webp",
-        "alt": "Person pulling on white protective coveralls.",
+        "file": "worker-pulling-on-gloves-in-protective-suit.webp",
+        "alt": "Worker in a protective suit pulling on blue gloves.",
         "width": 1200,
-        "height": 800,
+        "height": 1798,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/man-putting-on-coveralls-3951417/",
-        "photographer": "cottonbro studio",
+        "source_url": "https://www.pexels.com/photo/a-woman-in-a-protective-suit-putting-on-gloves-4176039/",
+        "photographer": "Michelangelo Buonarroti",
         "license": "Pexels License",
-        "pexels_id": "3951417",
-        "title": "Man Putting on Coveralls"
+        "pexels_id": "4176039",
+        "title": "A Woman in a Protective Suit Putting On Gloves "
       }
     ],
     "birmingham-sewage-extraction": [
@@ -578,7 +578,7 @@
         "height": 1600,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/plastic-pipes-on-wall-12142829/",
-        "photographer": "Bùi Hoàng Long",
+        "photographer": "B\u00f9i Ho\u00e0ng Long",
         "license": "Pexels License",
         "pexels_id": "12142829",
         "title": "Plastic Pipes on Wall"
@@ -590,7 +590,7 @@
         "height": 2133,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
-        "photographer": "Bulat843 🌙",
+        "photographer": "Bulat843 \ud83c\udf19",
         "license": "Pexels License",
         "pexels_id": "35290675",
         "title": "Focused Technician Working with Water Pump"
@@ -616,7 +616,7 @@
         "height": 1920,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
-        "photographer": "Bulat843 🌙",
+        "photographer": "Bulat843 \ud83c\udf19",
         "license": "Pexels License",
         "pexels_id": "32588548",
         "title": "Plumber Repairing Pipe with Wrench Indoors"
@@ -640,7 +640,7 @@
         "height": 1800,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
-        "photographer": "Adam Šumník",
+        "photographer": "Adam \u0160umn\u00edk",
         "license": "Pexels License",
         "pexels_id": "32489252",
         "title": "Industrial Pump and Hose Equipment Outdoor View"
@@ -754,7 +754,7 @@
         "height": 1600,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/plastic-pipes-on-wall-12142829/",
-        "photographer": "Bùi Hoàng Long",
+        "photographer": "B\u00f9i Ho\u00e0ng Long",
         "license": "Pexels License",
         "pexels_id": "12142829",
         "title": "Plastic Pipes on Wall"
@@ -768,7 +768,7 @@
         "height": 2133,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
-        "photographer": "Bulat843 🌙",
+        "photographer": "Bulat843 \ud83c\udf19",
         "license": "Pexels License",
         "pexels_id": "35290675",
         "title": "Focused Technician Working with Water Pump"
@@ -792,7 +792,7 @@
         "height": 1920,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
-        "photographer": "Bulat843 🌙",
+        "photographer": "Bulat843 \ud83c\udf19",
         "license": "Pexels License",
         "pexels_id": "32588548",
         "title": "Plumber Repairing Pipe with Wrench Indoors"
@@ -800,8 +800,8 @@
     ],
     "royal-oak-basement-sanitization": [
       {
-        "file": "worker-disinfecting-floor-in-protective-suit.webp",
-        "alt": "Worker in a white protective suit disinfecting a floor.",
+        "file": "worker-in-protective-gear-disinfecting-appliance.webp",
+        "alt": "Worker in protective gear disinfecting a refrigerator.",
         "width": 1200,
         "height": 801,
         "eager": false,
@@ -914,16 +914,16 @@
     ],
     "berkley-basement-sanitization": [
       {
-        "file": "person-pulling-on-protective-coveralls.webp",
-        "alt": "Person pulling on white protective coveralls.",
+        "file": "person-in-protective-suit-mask-and-goggles.webp",
+        "alt": "Person indoors wearing a white protective suit, mask, and goggles.",
         "width": 1200,
-        "height": 800,
+        "height": 1800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/man-putting-on-coveralls-3951417/",
-        "photographer": "cottonbro studio",
+        "source_url": "https://www.pexels.com/photo/a-person-wearing-personal-protective-equipment-9894222/",
+        "photographer": "Ron Lach",
         "license": "Pexels License",
-        "pexels_id": "3951417",
-        "title": "Man Putting on Coveralls"
+        "pexels_id": "9894222",
+        "title": "A Person Wearing Personal Protective Equipment"
       },
       {
         "file": "yellow-mop-bucket-with-dirty-water.webp",
@@ -996,7 +996,7 @@
         "height": 675,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/",
-        "photographer": "Diana ✨",
+        "photographer": "Diana \u2728",
         "license": "Pexels License",
         "pexels_id": "9617552",
         "title": "Hole Left after Fallen Plaster on Painted Wall"
@@ -1028,8 +1028,8 @@
     ],
     "troy-water-damage-restoration": [
       {
-        "file": "crack-in-painted-wall.webp",
-        "alt": "Close-up of a crack in a painted wall.",
+        "file": "crumbling-plaster-over-brick.webp",
+        "alt": "Crumbling plaster over exposed brick.",
         "width": 707,
         "height": 943,
         "eager": false,
@@ -1049,7 +1049,7 @@
         "photographer": "Vika Kirillova",
         "license": "Pexels License",
         "pexels_id": "11046405",
-        "title": "A Couch and a Fan Standing on the Floor in a Living Room "
+        "title": "A Couch and a Fan Standing on the Floor in a Living Room\u00a0"
       },
       {
         "file": "home-gym-in-finished-basement.webp",
@@ -1072,14 +1072,14 @@
         "height": 648,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/",
-        "photographer": "Kássia Melo",
+        "photographer": "K\u00e1ssia Melo",
         "license": "Pexels License",
         "pexels_id": "20537493",
         "title": "Close-up of a Damaged Wall Surface"
       },
       {
-        "file": "floor-fan-on-concrete.webp",
-        "alt": "Large floor fan on a concrete floor.",
+        "file": "floor-fan-on-wood-floor.webp",
+        "alt": "Floor fan on a wood floor.",
         "width": 1200,
         "height": 800,
         "eager": false,
@@ -1110,7 +1110,7 @@
         "height": 675,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/",
-        "photographer": "Diana ✨",
+        "photographer": "Diana \u2728",
         "license": "Pexels License",
         "pexels_id": "9617552",
         "title": "Hole Left after Fallen Plaster on Painted Wall"
@@ -1142,8 +1142,8 @@
     ],
     "clawson-water-damage-restoration": [
       {
-        "file": "crack-in-painted-wall.webp",
-        "alt": "Close-up of a crack in a painted wall.",
+        "file": "crumbling-plaster-over-brick.webp",
+        "alt": "Crumbling plaster over exposed brick.",
         "width": 707,
         "height": 943,
         "eager": false,
@@ -1251,7 +1251,7 @@
         "photographer": "Vika Kirillova",
         "license": "Pexels License",
         "pexels_id": "11046405",
-        "title": "A Couch and a Fan Standing on the Floor in a Living Room "
+        "title": "A Couch and a Fan Standing on the Floor in a Living Room\u00a0"
       }
     ],
     "birmingham": [
@@ -1268,8 +1268,8 @@
         "title": "Cozy Basement Room with Modern Decor and Couch"
       },
       {
-        "file": "metal-pipe-along-concrete-wall.webp",
-        "alt": "Metal pipe running along a concrete wall.",
+        "file": "metal-downspout-on-exterior-wall.webp",
+        "alt": "Metal downspout on an exterior wall.",
         "width": 1200,
         "height": 800,
         "eager": false,
@@ -1280,8 +1280,8 @@
         "title": "A Silver Metal Pipe on Brown Concrete Wall"
       },
       {
-        "file": "floor-fan-on-concrete.webp",
-        "alt": "Large floor fan on a concrete floor.",
+        "file": "floor-fan-on-wood-floor.webp",
+        "alt": "Floor fan on a wood floor.",
         "width": 1200,
         "height": 800,
         "eager": false,
@@ -1312,7 +1312,7 @@
         "height": 1458,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/",
-        "photographer": "João Vítor Heinrichs",
+        "photographer": "Jo\u00e3o V\u00edtor Heinrichs",
         "license": "Pexels License",
         "pexels_id": "7807058",
         "title": "A Close-Up Shot of a Storm Drain"
@@ -1370,20 +1370,20 @@
     ],
     "sewer-backup-cleanup": [
       {
-        "file": "manhole-covers-in-asphalt.webp",
-        "alt": "Round manhole covers in an asphalt street.",
-        "width": 874,
-        "height": 1311,
+        "file": "rusty-street-drain.webp",
+        "alt": "Rusty metal street drain set in pavement.",
+        "width": 1080,
+        "height": 720,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/manholes-in-street-17592363/",
-        "photographer": "Wallace Chuck",
+        "source_url": "https://www.pexels.com/photo/a-rusty-metal-street-drainage-6573773/",
+        "photographer": "Malcolm Garret",
         "license": "Pexels License",
-        "pexels_id": "17592363",
-        "title": "Manholes in Street"
+        "pexels_id": "6573773",
+        "title": "A Rusty Metal Street Drainage"
       },
       {
-        "file": "worker-disinfecting-floor-in-protective-suit.webp",
-        "alt": "Worker in a white protective suit disinfecting a floor.",
+        "file": "worker-in-protective-gear-disinfecting-appliance.webp",
+        "alt": "Worker in protective gear disinfecting a refrigerator.",
         "width": 1200,
         "height": 801,
         "eager": false,
@@ -1438,7 +1438,7 @@
         "height": 648,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/",
-        "photographer": "Kássia Melo",
+        "photographer": "K\u00e1ssia Melo",
         "license": "Pexels License",
         "pexels_id": "20537493",
         "title": "Close-up of a Damaged Wall Surface"
@@ -1452,7 +1452,7 @@
         "height": 1800,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
-        "photographer": "Adam Šumník",
+        "photographer": "Adam \u0160umn\u00edk",
         "license": "Pexels License",
         "pexels_id": "32489252",
         "title": "Industrial Pump and Hose Equipment Outdoor View"
@@ -1566,7 +1566,7 @@
         "height": 675,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/",
-        "photographer": "Diana ✨",
+        "photographer": "Diana \u2728",
         "license": "Pexels License",
         "pexels_id": "9617552",
         "title": "Hole Left after Fallen Plaster on Painted Wall"
@@ -1581,7 +1581,7 @@
         "photographer": "Vika Kirillova",
         "license": "Pexels License",
         "pexels_id": "11046405",
-        "title": "A Couch and a Fan Standing on the Floor in a Living Room "
+        "title": "A Couch and a Fan Standing on the Floor in a Living Room\u00a0"
       },
       {
         "file": "finished-basement-with-couch.webp",
@@ -1610,8 +1610,8 @@
         "title": "Cleaner in Protection Suit Wiping Cabinet in Kitchen"
       },
       {
-        "file": "floor-fan-on-concrete.webp",
-        "alt": "Large floor fan on a concrete floor.",
+        "file": "floor-fan-on-wood-floor.webp",
+        "alt": "Floor fan on a wood floor.",
         "width": 1200,
         "height": 800,
         "eager": false,
@@ -1622,16 +1622,16 @@
         "title": "blow fan"
       },
       {
-        "file": "white-downspout-on-concrete-wall.webp",
-        "alt": "White downspout running down a concrete wall.",
+        "file": "close-up-of-metal-downspout.webp",
+        "alt": "Close-up of a metal downspout.",
         "width": 1080,
-        "height": 1616,
+        "height": 1620,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/house-drain-pipe-on-concrete-wall-3964564/",
-        "photographer": "ready made",
+        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-downspout-5940870/",
+        "photographer": "Eva Bronzini",
         "license": "Pexels License",
-        "pexels_id": "3964564",
-        "title": "House Drain Pipe on Concrete Wall"
+        "pexels_id": "5940870",
+        "title": "A Close-Up Shot of a Downspout"
       }
     ],
     "george-w-kuhn-drainage-district": [
@@ -1698,8 +1698,8 @@
         "title": "Person Dialing the Telephone"
       },
       {
-        "file": "crack-in-painted-wall.webp",
-        "alt": "Close-up of a crack in a painted wall.",
+        "file": "crumbling-plaster-over-brick.webp",
+        "alt": "Crumbling plaster over exposed brick.",
         "width": 707,
         "height": 943,
         "eager": false,
