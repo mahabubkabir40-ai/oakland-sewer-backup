@@ -382,22 +382,27 @@ def trust_row():
 
 def sidebar(city_slug, active_slug):
     name = city_name(city_slug)
+    # Only the Troy sewer page drops repeated "in Troy" labels. Other pages stay as they are.
+    shorten = city_slug == "troy" and active_slug == "sewer-cleanup"
     links = []
     for slug, label, _stem, _w, _h in CITY_SERVICES:
         href = city_service_href(city_slug, slug)
         current = slug == active_slug
+        text = f"{esc(label)} in {esc(name)}" if not shorten or slug == "sewer-cleanup" else esc(label)
         if current:
             links.append(
-                f'<a href="{href}" aria-current="page" class="px-4 py-2.5 rounded-lg border text-sm text-left font-semibold bg-emergency-600/10 border-emergency-600/30 text-red-400">{esc(label)} in {esc(name)}</a>'
+                f'<a href="{href}" aria-current="page" class="px-4 py-2.5 rounded-lg border text-sm text-left font-semibold bg-emergency-600/10 border-emergency-600/30 text-red-400">{text}</a>'
             )
         else:
             links.append(
-                f'<a href="{href}" class="px-4 py-2.5 rounded-lg border text-sm text-left font-semibold bg-slate-900 border-slate-800 text-gray-300 hover:border-red-500/30 hover:text-white">{esc(label)} in {esc(name)}</a>'
+                f'<a href="{href}" class="px-4 py-2.5 rounded-lg border text-sm text-left font-semibold bg-slate-900 border-slate-800 text-gray-300 hover:border-red-500/30 hover:text-white">{text}</a>'
             )
-    return f"""<nav aria-label="Services in {esc(name)}" class="lg:col-span-4 bg-slate-950/80 border border-slate-800 p-6 rounded-2xl space-y-4">
-        <p class="text-lg font-outfit font-extrabold text-white border-b border-slate-800 pb-3">Services in {esc(name)}</p>
+    heading = "Related services" if shorten else f"Services in {esc(name)}"
+    area = "City overview" if shorten else f"{esc(name)} service area"
+    return f"""<nav aria-label="{heading}" class="lg:col-span-4 bg-slate-950/80 border border-slate-800 p-6 rounded-2xl space-y-4">
+        <p class="text-lg font-outfit font-extrabold text-white border-b border-slate-800 pb-3">{heading}</p>
         <div class="flex flex-col gap-2">{''.join(links)}</div>
-        <a href="/{city_slug}" class="block text-sm text-red-400 hover:text-red-300 underline">{esc(name)} service area</a>
+        <a href="/{city_slug}" class="block text-sm text-red-400 hover:text-red-300 underline">{area}</a>
     </nav>"""
 
 

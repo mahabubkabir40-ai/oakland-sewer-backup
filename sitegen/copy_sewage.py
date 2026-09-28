@@ -212,7 +212,7 @@ def berkley():
             "Sewage extraction in Berkley, MI is the pumping job in a short bungalow basement: what comes "
             "out, what you should not do with a shop vac, and when the stair makes the job harder. The "
             "first steps after a backup are on "
-            + a("/berkley-sewer-cleanup", "sewer backup cleanup in Berkley")
+            + a("/berkley-sewer-cleanup", "sewage cleanup in Berkley")
             + "."
         ),
         h2("Sewage extraction in Berkley bungalows"),

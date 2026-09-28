@@ -413,6 +413,31 @@ def gwk_article():
             + " or call " + phone_link() + " for a local cleanup crew."
         ),
         p(
+            "Each city has its own sewer contacts, so the first steps for a backup inside the house depend "
+            "on the address. In Royal Oak, the homeowner owns the lateral up to and including the connection; start with "
+            + a("/royal-oak-sewer-cleanup", "sewage cleanup in Royal Oak")
+            + ". Troy discharges through three districts, George W. Kuhn among them, and "
+            + a("/troy-sewer-cleanup", "sewage cleanup in Troy")
+            + " lists the city's Water Division and after-hours numbers."
+        ),
+        p(
+            "Birmingham's older neighborhoods have combined sewers, so a storm can bring sewage up a floor drain; "
+            + a("/birmingham-sewer-cleanup", "sewage cleanup in Birmingham")
+            + " covers what to do first. Berkley's single combined pipe flows toward the Clinton through this district, "
+            "and for a backup in a Berkley basement, see "
+            + a("/berkley-sewer-cleanup", "sewage cleanup in Berkley")
+            + ". Clawson's sewer page points to the George W. Kuhn basin; for a backup there, go to "
+            + a("/clawson-sewer-cleanup", "sewage cleanup in Clawson")
+            + "."
+        ),
+        p(
+            "If the water is storm flooding rather than a drain backup, the steps are different; see "
+            + a("/clawson-flooded-basement", "flooded basement cleanup in Clawson")
+            + " or "
+            + a("/berkley-flooded-basement", "flooded basement cleanup in Berkley")
+            + "."
+        ),
+        p(
             "City overviews: " + a("/royal-oak", "Royal Oak") + ", " + a("/berkley", "Berkley") + ", "
             + a("/clawson", "Clawson") + ", " + a("/birmingham", "Birmingham") + " and " + a("/troy", "Troy") + "."
         ),
@@ -553,6 +578,21 @@ def checklist_article():
             + a("/sewer-backup-cleanup", "sewer backup cleanup") + ", "
             + a("/water-damage-restoration", "water damage restoration") + ", and the "
             + a("/george-w-kuhn-drainage-district", "George W. Kuhn Drainage District explainer") + "."
+        ),
+        p("After a drain backup, open the page for your city. Each one has the city's sewer number and the 45-day notice steps:"),
+        ul([
+            a("/royal-oak-sewer-cleanup", "sewage cleanup in Royal Oak"),
+            a("/troy-sewer-cleanup", "sewage cleanup in Troy"),
+            a("/birmingham-sewer-cleanup", "sewage cleanup in Birmingham"),
+            a("/berkley-sewer-cleanup", "sewage cleanup in Berkley"),
+            a("/clawson-sewer-cleanup", "sewage cleanup in Clawson"),
+        ]),
+        p(
+            "If the drains stayed quiet and the water is storm flooding, see "
+            + a("/clawson-flooded-basement", "flooded basement cleanup in Clawson")
+            + " or "
+            + a("/berkley-flooded-basement", "flooded basement cleanup in Berkley")
+            + " instead."
         ),
         note("This checklist is general safety and preparation information, not legal, electrical or plumbing advice. Last verified " + VERIFIED + "."),
         sources_block([
