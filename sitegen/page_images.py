@@ -7,7 +7,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "images" / "manifest.json"
 
-# City-center coordinates written into each WebP. County pages use Oakland County.
+# City centers used only when a generic indoor or equipment photo is tagged.
+# Outdoor photos and anything with an identifiable place are left without GPS.
 GPS = {
     "royal-oak": (42.4895, -83.1446),
     "troy": (42.6064, -83.1498),
