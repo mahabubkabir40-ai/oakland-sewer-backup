@@ -90,8 +90,7 @@ RESOURCE_CSS = """
 CLAIM_TITLE = "Sewer Backup Claim Guide: Michigan's 45-Day Notice Rule"
 CLAIM_H1 = "Sewer backup claims in Royal Oak, Troy, Birmingham, Berkley and Clawson: the 45-day notice"
 CLAIM_DESC = (
-    "Michigan's 45-day written notice rule for sewer backup claims, explained for Royal Oak, Troy, "
-    "Birmingham, Berkley and Clawson, with each city's contact."
+    "Sewer backup claim guide for Michigan's 45-day notice rule: what to send, what to document, and contacts for Royal Oak, Troy, Birmingham, Berkley, Clawson."
 )
 CLAIM_LEAD = (
     "<p>If sewage came up into your basement and you believe a public sewer caused it, Michigan law gives you "
@@ -250,7 +249,7 @@ def claim_article():
             "Department of Public Works, 635 W. Elmwood, Clawson, MI 48017, (248) 288-3222, Monday to Thursday, 7:00 a.m. to 3:30 p.m. (" + ext("claw_dpw", "Clawson DPW &amp; Engineering") + ").",
             "After hours: (248) 524-3477. The DPW page lists it for after-hours DPW emergencies (" + ext("claw_dpw", "Clawson DPW") + "). It is the same number as Troy Police because Clawson contracts with the Troy Police Department for 24-hour dispatch; Clawson's police page lists it, extension 1, as the non-emergency line (" + ext("claw_dispatch", "Clawson Police: Dispatch Services") + "). Call 911 for emergencies.",
             "The city's Sanitary &amp; Storm Sewer page links to George W. Kuhn and WRC information and to a \"Public Act 222\" document. When we checked on " + VERIFIED + ", that document link returned an error (" + ext("claw_sewer", "Clawson Sanitary &amp; Storm Sewer System") + ").",
-            "Written notice: The city line on Clawson's sewer page is (248) 435-4500. Ask the city in writing who should receive a claim notice. The city must provide that name in writing if you contacted it first (" + ext("mcl1419", "MCL 691.1419(2)") + ").",
+            "Written notice: ask the city in writing who should receive a claim notice. The city line on Clawson's sewer page is (248) 435-4500. The city must provide that name in writing if you contacted it first (" + ext("mcl1419", "MCL 691.1419(2)") + ").",
         ]),
         h2("What to document"),
         p("Start before anything is thrown out. The statute requires reasonable proof of ownership and value for personal property (" + ext("mcl1417", "MCL 691.1417(4)(a)") + "), and the WRC claim form asks for supporting items (" + ext("wrc_form", "WRC claim form checklist") + ")."),
@@ -271,7 +270,7 @@ def claim_article():
         ),
         h2("Where a cleanup call fits"),
         p(
-            f"If sewage is in the basement now, call {phone_link()}. A local cleanup crew handles the visit. The crew sets the scope and price. "
+            f"If sewage is in the basement now, call {phone_link()} for a local cleanup crew. The crew sets the scope and price. "
             "For the steps before, during and after a storm, use the printable "
             + a("/basement-flood-checklist", "basement flood checklist") + ". City cleanup pages: "
             + a("/royal-oak-sewer-cleanup", "Royal Oak") + ", " + a("/troy-sewer-cleanup", "Troy") + ", "
@@ -308,8 +307,7 @@ def claim_article():
 GWK_TITLE = "George W. Kuhn Drainage District: A Homeowner's Guide"
 GWK_H1 = "The George W. Kuhn Drainage District, explained for homeowners"
 GWK_DESC = (
-    "What the George W. Kuhn Drainage District is, the 14 Oakland County communities it serves, why combined "
-    "sewers back up in heavy rain, and prevention steps."
+    "George W. Kuhn Drainage District explained for Oakland County, MI homeowners: the 14 communities it serves, why its sewers back up, and how to prepare."
 )
 GWK_LEAD = (
     "<p>If you live in Royal Oak, Berkley, Clawson, Birmingham or Troy, your house may drain to a regional combined "
@@ -442,8 +440,7 @@ def gwk_article():
 CHECK_TITLE = "Basement Flood Checklist for Oakland County (Printable)"
 CHECK_H1 = "Basement flood checklist for Oakland County homes: before, during and after"
 CHECK_DESC = (
-    "A printable basement flood checklist for Oakland County homes: storm prep, DTE outage reporting, "
-    "city sewer contacts, and the 45-day claim notice step."
+    "Printable basement flood checklist for Oakland County, MI homes: what to do before, during and after a storm, city sewer numbers and the 45-day notice."
 )
 CHECK_LEAD = (
     "<p>Print this checklist and keep it near the basement stairs. It lists what to do before a storm, while water is "

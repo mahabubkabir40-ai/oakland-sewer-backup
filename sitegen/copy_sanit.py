@@ -153,7 +153,7 @@ def birmingham():
                 "Odor treatments that do not remove the wet material only cover the smell until the next humid day.",
                 "Keep children out of a lower level that had sewage, even after it looks dry, until the company says the demolition is done.",
                 "Do not mix random household chemicals in the same bucket.",
-                "Photograph discarded materials if you plan to talk to your insurer. The claim stays with you and your carrier.",
+                "Photograph discarded materials if you plan to talk to your insurer.",
             ]),
         ),
         p("See " + a("/birmingham", "Birmingham's overview") + " for the full local list."),
@@ -166,7 +166,7 @@ def berkley():
         h2("Sanitizing a Berkley bungalow after sewage or floodwater"),
         p(
             "Berkley sanitization happens in a small volume of air. The basement is short, the stair is "
-            "steep, and the door at the top often opens near the living room of a 1940s or 1950s bungalow "
+            "steep, and the door at the top often opens near the living room of a bungalow "
             "off 12 Mile or Coolidge. Anything volatile you apply downstairs is in the main floor in "
             "minutes. That is why the product and the ventilation plan matter more here than they do in "
             "a wide commercial basement. It is also why sewage residue should be removed, not perfumed."
@@ -292,7 +292,7 @@ FAQS = {
         ("Should a Troy playroom that had sewage be sprayed and kept?", "Soft contents that soaked up sewage are generally thrown away. Spraying the room without removing the pad and the ruined furnishings does not sanitize the lower level."),
         ("What has to come out before a Troy lower level is sanitized?", "Porous material that soaked up sewage, such as carpet, pad, and the bottom of the drywall in a finished lower level. Ask what will be thrown away before anyone sprays."),
         ("Does sanitizing include drying the Troy basement?", "No. Drying is a different part of water damage restoration. Ask for both scopes if the materials are still wet. In a finished lower level near Big Beaver, the pad and the sofa bottom usually have to come out before a cleaner has a surface it can treat."),
-        ("Which Troy number is for the city, if the backup is still the question?", "Water Division 248-524-3370 in business hours, and Troy Police 248-524-3477 after hours. Troy's wastewater leaves through three districts. Ask which one serves the house. Call (248) 825-8312 for the cleaning company inside the lower level."),
+        ("Should the lower-level HVAC run during Troy sanitizing?", "Ask the crew first. A return in the lower level can pull odor and residue upstairs, so it usually stays off until the ruined material is out."),
         ("Does sanitizing a Troy playroom send the 45-day notice?", "Cleaning the room leaves the letter unsent. Written notice goes to the City Attorney's Office within 45 days of discovering the damage. Troy discharges through Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. Ask the city which district serves the house."),
     ],
     "birmingham": [
@@ -304,9 +304,9 @@ FAQS = {
     ],
     "berkley": [
         ("Why is sanitizing riskier in a Berkley bungalow?", "The basement air volume is small and the stair opens near living space, so residue and strong cleaners move upstairs quickly. Removal of ruined material matters more than a heavy spray."),
-        ("Does a combined sewer change the cleaning?", "If the city confirms your block can surcharge sewage in a storm, treat the floodwater as sewage. Confirm the block. Do not skip extraction."),
+        ("Does a combined sewer change the cleaning?", "Yes. Berkley's sewer carries stormwater and sewage in one pipe, so floodwater that came up a floor drain is sewage, not rainwater. Remove it first; do not skip extraction."),
         ("Who names the product for a Berkley bungalow?", "The company doing the work. The label has to fit sewage residue, and the stair opens near living space, so ventilation matters. Call (248) 658-3490 if you still need Public Works, and (248) 825-8312 to reach a cleanup company."),
-        ("If Berkley's combined sewer caused the flood, does sanitizing change the claim?", "No. Treat the water as sewage if the city confirms your block can surcharge, but the written notice is still due within 45 days of discovery. Cleaning the basement does not pause that clock. Flow from Berkley goes toward the Clinton through the George W. Kuhn district, not to the Rouge."),
+        ("If Berkley's combined sewer caused the flood, does sanitizing change the claim?", "No. Treat the water as sewage; the written notice is still due within 45 days of discovery. Cleaning the basement does not pause that clock. Flow from Berkley goes toward the Clinton through the George W. Kuhn district, not to the Rouge."),
         ("What should I tell a crew sanitizing a Berkley bungalow basement?", "That the stair is short and opens near living space, and whether the water came up the floor drain. Ask what they will remove before anyone sprays."),
     ],
     "clawson": [
@@ -319,8 +319,8 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "The standing sewage is gone from your Royal Oak basement, and the film it left is still on the floor. A local cleanup crew handles the visit for basement sanitization in Royal Oak, and they'll tell you when they can be there.",
-    "troy": "A Troy lower level had sewage in the carpet and pad, and a spray over the top will not clean it. Call and a local cleanup crew handles the visit for basement sanitization in Troy, and they'll tell you when they can be there.",
+    "royal-oak": "The standing sewage is gone from your Royal Oak basement, and the film it left is still on the floor. A local cleanup crew does the basement sanitization in Royal Oak, and they'll tell you when they can be there.",
+    "troy": "A Troy lower level had sewage in the carpet and pad, and a spray over the top will not clean it. Call, and a local cleanup crew does the basement sanitization in Troy. They'll tell you when they can be there.",
     "birmingham": "Sewage wicked into the plaster and wood in a Birmingham basement, past what a wipe can reach. When you call, you reach a local cleanup crew for basement sanitization in Birmingham, and they'll tell you when they can be there.",
     "berkley": "The water is out of a small Berkley bungalow, and the residue is still in that tight basement. Your call puts you through to a local cleanup crew for basement sanitization in Berkley, and they'll tell you when they can be there.",
     "clawson": "A one-room Clawson basement still holds the furnace, the washer, and whatever the backup left on them. Call, and a local cleanup crew handles basement sanitization in Clawson. They'll tell you when they can be there.",
@@ -335,9 +335,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Basement sanitization after sewage or flood in Royal Oak, MI. Local crews. Call {PHONE_DISPLAY}.",
-    "troy": "Basement sanitization after a Troy, MI backup or flood. A local crew handles it. Call {PHONE_DISPLAY}.",
-    "birmingham": "Sanitize a Birmingham, MI basement after sewage or flood. A local crew does it. Call {PHONE_DISPLAY}.",
-    "berkley": "Basement sanitization in Berkley, MI after sewage or a flood. Not the extraction page. Call {PHONE_DISPLAY}.",
-    "clawson": "Basement sanitization after a Clawson, MI backup or flood. Local crews. Call {PHONE_DISPLAY}.",
+    "royal-oak": "Basement sanitization in Royal Oak, MI after sewage or a flood. A local crew removes ruined materials and disinfects your basement. Call (248) 825-8312.",
+    "troy": "Basement sanitization in Troy, MI after sewage or a flood. A local crew removes soaked carpet and pad and disinfects your lower level. Call (248) 825-8312.",
+    "birmingham": "Basement sanitization in Birmingham, MI after sewage or a flood. A local crew removes soaked plaster and trim and disinfects the rest. Call (248) 825-8312.",
+    "berkley": "Basement sanitization in Berkley, MI after a sewer backup or flood. A local crew cleans and disinfects your bungalow basement. Call (248) 825-8312.",
+    "clawson": "Basement sanitization in Clawson, MI after a backup or flood. A local crew cleans the floor, furnace area and appliances. Call (248) 825-8312.",
 }

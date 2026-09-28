@@ -12,7 +12,10 @@ WHY = {
         "Royal Oak's Sewer Division maintains about 300 miles of sanitary and storm sewers, and the city "
         "is part of the former Twelve Towns program, now the George W. Kuhn basin. In a hard storm those "
         "mains fill, and sewage can come back up the lowest opening in the house, usually the basement "
-        "floor drain. The city is responsible for the main; the lateral up to and including the connection is yours."
+        "floor drain. The George W. Kuhn basin sits under the I-75 overpass at 12 Mile Road in Madison Heights, "
+        "was expanded in 2006, and can hold and treat 150 million gallons. None of that storage can stop a blocked "
+        "private lateral from backing up, and in Royal Oak the lateral is the homeowner's pipe up to and including "
+        "the connection. A camera inspection shows whether yours is the problem. The city is responsible for the main; the lateral up to and including the connection is yours."
     ),
     "troy": (
         "Most Troy houses were built in the 1960s and 1970s, and many have split-levels or finished lower "
@@ -146,7 +149,7 @@ SEWAGE_H2 = {
         f"or {a('/berkley-water-damage-restoration', 'water damage restoration in Berkley')}."
     ),
     "clawson": (
-        "Sewage cleanup in Clawson often starts at a floor drain in a mid-century brick bungalow. Compact lots limit where "
+        "Sewage cleanup in Clawson often starts at a floor drain in a brick bungalow. Compact lots limit where "
         "hoses and drying gear can sit, so ask how the crew will stage the job before you book. When the loss is broader "
         f"than the drain itself, use {a('/clawson-water-damage-restoration', 'water damage restoration in Clawson')} and "
         f"{a('/clawson-flooded-basement', 'flooded basement water removal in Clawson')}."
@@ -287,7 +290,7 @@ FAQS = {
         ),
         (
             "Who owns the sewer lateral in Royal Oak?",
-            "The city says it is responsible for the main, and the homeowner for the lateral up to and including the connection. The Sewer Division maintains about 300 miles of sanitary and storm sewers. Ask them about the main. A camera inspection is how a plumber or the city checks a specific lateral.",
+            "The city says it is responsible for the main, and the homeowner for the lateral up to and including the connection. Ask the Sewer Division, (248) 246-3300, about the main. A camera inspection is how a plumber or the city checks a specific lateral.",
         ),
         (
             "How long do I have to send Royal Oak written notice?",
@@ -295,11 +298,11 @@ FAQS = {
         ),
         (
             "Are Royal Oak sewers combined?",
-            "Royal Oak's Sewer Division maintains about 300 miles of sanitary and storm sewers. Where pipes are combined or simply old, a heavy summer storm can push sewage toward a basement floor drain. Royal Oak is a member of the former Twelve Towns program, now the George W. Kuhn Retention Treatment Basin, which was expanded in 2006. The Sewer Division can confirm the pipe on your street.",
+            "Royal Oak is in the George W. Kuhn district, where stormwater and sewage share pipes; in wet weather more than 93 percent of that flow is stormwater. The city is a member of the former Twelve Towns program. The Sewer Division can confirm the pipe on your street.",
         ),
         (
-            "Who owns the sewer pipe under my Royal Oak yard?",
-            "You do. Royal Oak says the city is responsible for the main, and the homeowner is responsible for the lateral up to and including the connection to that main. If water is still coming in, call the city so it can check the main during the event.",
+            "Does Royal Oak publish cleanup steps after basement flooding?",
+            "Yes. The city publishes a page called Cleaning Up the Mess After Basement Flooding. Treat sewage as contaminated, keep people and pets out, and photograph the damage before anything is thrown away. For the city main, call the Sewer Division at (248) 246-3300 on weekdays or (248) 246-3500 after hours.",
         ),
     ],
     "troy": [
@@ -372,7 +375,7 @@ FAQS = {
         ),
         (
             "Is every Clawson street a combined sewer?",
-            "The city sewer page lists the George W. Kuhn Retention Treatment Basin and the Oakland County Water Resources Commissioner, and it links a combined-sewer explainer and Public Act 222. Confirm the pipe on your street with the city. Heavy rain can still load older lines and push sewage up a floor drain in a mid-century brick bungalow.",
+            "The city sewer page lists the George W. Kuhn Retention Treatment Basin and the Oakland County Water Resources Commissioner, and it links a combined-sewer explainer and Public Act 222. Confirm the pipe on your street with the city. Heavy rain can still load older lines and push sewage up a basement floor drain.",
         ),
         (
             "How do I give Clawson written notice within 45 days?",
@@ -406,9 +409,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Sewage cleanup in Royal Oak, MI, and sewer backup cleanup for the same houses. Call {PHONE_DISPLAY} and keep people and pets out of the water.",
-    "troy": "Sewage cleanup in Troy, MI for lower levels and split-levels, plus sewer backup cleanup. Call {PHONE_DISPLAY}.",
-    "birmingham": "Sewage cleanup in Birmingham, MI for older homes, and sewer backup cleanup. Local crews. Call {PHONE_DISPLAY}.",
-    "berkley": "Sewage cleanup in Berkley, MI bungalows, and sewer backup cleanup for the same houses. Call {PHONE_DISPLAY}. Keep people and pets out of the water.",
-    "clawson": "Sewage cleanup in Clawson, MI and sewer backup cleanup for brick bungalows. Local crews. Call {PHONE_DISPLAY}.",
+    "royal-oak": "Sewer backup cleanup in Royal Oak, MI. Get a local crew for sewage cleanup: pump-out, disinfecting and drying your basement. Call (248) 825-8312 now.",
+    "troy": "Sewer backup cleanup in Troy, MI. A local crew handles sewage cleanup in split-levels and finished lower levels: pump-out and drying. Call (248) 825-8312.",
+    "birmingham": "Sewer backup cleanup in Birmingham, MI. A local crew handles sewage cleanup in older homes with plaster, trim and finished floors. Call (248) 825-8312.",
+    "berkley": "Sewer backup cleanup in Berkley, MI. A local crew handles sewage cleanup in your bungalow basement: pump-out, disinfecting and drying. Call (248) 825-8312.",
+    "clawson": "Sewer backup cleanup in Clawson, MI. A local crew handles sewage cleanup in bungalow basements: pump-out, disinfecting and drying. Call (248) 825-8312.",
 }

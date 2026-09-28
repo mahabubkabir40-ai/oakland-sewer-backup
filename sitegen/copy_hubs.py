@@ -155,13 +155,13 @@ def water_hub():
         ),
         h2("These five cities are not one basement"),
         p(
-            "Basement flooding here is local, not one county-wide cause. Several of the cities discharge into "
-            "the " + _GWK + ", the regional district upstream of the Red Run Drain. That page explains the district. "
-            "It does not tell you which pipe is in front of a particular house."
+            "Basement flooding here is local, not one county-wide cause. All five cities drain, in whole or in part, to "
+            "the " + _GWK + ", the regional district upstream of the Red Run Drain. "
+            "The district does not tell you which pipe is in front of a particular house."
         ),
         p(
             "Royal Oak's older blocks and Woodward-side window wells are a different pattern from Troy's finished "
-            "split-levels near Big Beaver, Birmingham's plaster houses, Berkley's flat bungalow grid, and Clawson's "
+            "split-levels near Big Beaver, Birmingham's plaster houses, Berkley's bungalows on a combined sewer, and Clawson's "
             "small brick-bungalow basements along 14 Mile. Open the city page that matches the house:"
         ),
         ul([
@@ -172,7 +172,7 @@ def water_hub():
             a("/clawson-water-damage-restoration", "Water damage restoration in Clawson"),
         ]),
         p(
-            "City overviews, if you need the sewer phone tree before the drying page: "
+            "Each city overview lists its sewer numbers: "
             + a("/royal-oak", "Royal Oak") + ", "
             + a("/troy", "Troy") + ", "
             + a("/birmingham", "Birmingham") + ", "
@@ -236,29 +236,34 @@ def sewer_hub():
         p(
             "Royal Oak: the Sewer Division maintains about 300 miles of sanitary and storm sewers, and basement-water "
             "calls have a published weekday line plus after-hours police dispatch. "
-            + a("/royal-oak-sewer-cleanup", "Sewage cleanup in Royal Oak, MI")
-            + ". The city overview is " + a("/royal-oak", "Royal Oak") + "."
+            + "Start with "
+            + a("/royal-oak-sewer-cleanup", "sewage cleanup in Royal Oak, MI")
+            + ", or the " + a("/royal-oak", "Royal Oak overview") + "."
         ),
         p(
             "Troy: wastewater leaves through three districts, Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. "
             "Do not describe Troy as fully combined or fully separated. "
-            + a("/troy-sewer-cleanup", "Sewage cleanup in Troy, MI")
-            + ". Overview: " + a("/troy", "Troy") + "."
+            + "Start with "
+            + a("/troy-sewer-cleanup", "sewage cleanup in Troy, MI")
+            + ", or the " + a("/troy", "Troy overview") + "."
         ),
         p(
             "Birmingham: older areas have combined sewers, the system is gravity, and the city owns no pump or lift stations. "
-            + a("/birmingham-sewer-cleanup", "Sewage cleanup in Birmingham, MI")
-            + ". Overview: " + a("/birmingham", "Birmingham") + "."
+            + "Start with "
+            + a("/birmingham-sewer-cleanup", "sewage cleanup in Birmingham, MI")
+            + ", or the " + a("/birmingham", "Birmingham overview") + "."
         ),
         p(
             "Berkley: one combined pipe, gravity, no pumps or valves, with flow toward the Clinton River side rather than the Rouge. "
-            + a("/berkley-sewer-cleanup", "Sewage cleanup in Berkley, MI")
-            + ". Overview: " + a("/berkley", "Berkley") + "."
+            + "Start with "
+            + a("/berkley-sewer-cleanup", "sewage cleanup in Berkley, MI")
+            + ", or the " + a("/berkley", "Berkley overview") + "."
         ),
         p(
             "Clawson: the city sewer page points to the George W. Kuhn basin and the Oakland County Water Resources Commissioner. "
-            + a("/clawson-sewer-cleanup", "Sewage cleanup in Clawson, MI")
-            + ". Overview: " + a("/clawson", "Clawson") + "."
+            + "Start with "
+            + a("/clawson-sewer-cleanup", "sewage cleanup in Clawson, MI")
+            + ", or the " + a("/clawson", "Clawson overview") + "."
         ),
         sources([
             (GWK_PDF, "Oakland County WRC letter in the Birmingham City Manager report (GWK district, December 2022)"),
@@ -321,27 +326,27 @@ def sewage_hub():
         h2("Pumping help in each city"),
         p(
             a("/royal-oak-sewage-extraction", "Sewage extraction in Royal Oak")
-            + " usually means a floor drain in an older house. The city Sewer Division is the public-main contact. "
-            "Overview: " + a("/royal-oak", "Royal Oak") + "."
+            + " usually starts at a basement floor drain. The city's Sewer Division is the contact for the public main. "
+            "See the " + a("/royal-oak", "Royal Oak overview") + "."
         ),
         p(
             a("/troy-sewage-extraction", "Sewage extraction in Troy")
-            + " usually means a split-level lower floor. Troy's wastewater leaves through three districts, so do not "
-            "assume one pipe type. Overview: " + a("/troy", "Troy") + "."
+            + " often means a finished lower floor. Troy's wastewater leaves through three districts, so do not "
+            "assume one pipe type. See the " + a("/troy", "Troy overview") + "."
         ),
         p(
             a("/birmingham-sewage-extraction", "Sewage extraction in Birmingham")
-            + " has to work around plaster and trim in early- and mid-1900s houses. The city system is gravity "
-            "and has no municipal pump stations. Overview: " + a("/birmingham", "Birmingham") + "."
+            + " has to work around plaster and trim in early- and mid-1900s houses. The city system is gravity, "
+            "with no municipal pump stations. See the " + a("/birmingham", "Birmingham overview") + "."
         ),
         p(
             a("/berkley-sewage-extraction", "Sewage extraction in Berkley, MI")
-            + " is a short stair in a bungalow on a combined, gravity sewer. Overview: "
-            + a("/berkley", "Berkley") + "."
+            + " means working down a short bungalow stair, on a combined, gravity sewer. See the "
+            + a("/berkley", "Berkley overview") + "."
         ),
         p(
             a("/clawson-sewage-extraction", "Sewage extraction in Clawson")
-            + " is a compact lot and often a one-room basement. Overview: " + a("/clawson", "Clawson") + "."
+            + " often means a compact lot and a one-room basement. See the " + a("/clawson", "Clawson overview") + "."
         ),
     ])
 
@@ -400,29 +405,29 @@ def flood_hub():
         h3("The five city versions"),
         p(
             a("/royal-oak-flooded-basement", "Flooded basement cleanup in Royal Oak")
-            + " separates window wells and older basements from a true drain backup. Overview: "
-            + a("/royal-oak", "Royal Oak") + "."
+            + " starts by telling a window-well flood apart from a true drain backup. See the "
+            + a("/royal-oak", "Royal Oak overview") + "."
         ),
         p(
             a("/troy-flooded-basement", "Flooded basement cleanup in Troy")
-            + " is finished lower levels and split-levels, where carpet holds the water. Troy's sewers are "
-            "three districts, not one label. Overview: " + a("/troy", "Troy") + "."
+            + " often means a finished lower level or split-level where carpet holds the water. Troy discharges "
+            "through three wastewater districts. See the " + a("/troy", "Troy overview") + "."
         ),
         p(
             a("/birmingham-flooded-basement", "Flooded basement cleanup in Birmingham")
-            + " is plaster and older houses. Birmingham's sewers are gravity, with no city pump stations, "
-            "and the city has said older combined pipes were designed for about 2 inches of rain in an hour. "
-            "Overview: " + a("/birmingham", "Birmingham") + "."
+            + " works around plaster in older houses. The city's sewers are gravity, with no city pump stations, "
+            "and the city has said its older combined pipes were designed for about 2 inches of rain in an hour. "
+            "See the " + a("/birmingham", "Birmingham overview") + "."
         ),
         p(
             a("/berkley-flooded-basement", "Flooded basement cleanup in Berkley")
-            + " is a short stair on a flat lot. Berkley's combined sewer is built so streets hold water on "
-            "purpose. Overview: " + a("/berkley", "Berkley") + "."
+            + " happens at the bottom of a short bungalow stair. Berkley's combined sewer is designed so streets hold water on "
+            "purpose. See the " + a("/berkley", "Berkley overview") + "."
         ),
         p(
             a("/clawson-flooded-basement", "Flooded basement cleanup in Clawson, MI")
-            + " is a one-room basement with the furnace in the water. Overview: "
-            + a("/clawson", "Clawson") + "."
+            + " often means a one-room basement with the furnace close to the water. See the "
+            + a("/clawson", "Clawson overview") + "."
         ),
         sources([
             (FEMA_2014, "Federal Register: FEMA-4195-DR, Michigan major disaster (September 25, 2014)"),
@@ -470,29 +475,29 @@ def sump_hub():
         ),
         h2("Where the pits are"),
         p(
-            a("/royal-oak-sump-pump-repair", "Royal Oak")
-            + " pits are often in older basements. The city's Sewer Division is a "
-            "different phone call from a pump repair. Overview: " + a("/royal-oak", "Royal Oak") + "."
+            "In " + a("/royal-oak-sump-pump-repair", "Royal Oak")
+            + ", the city's Sewer Division is a "
+            "different call from a pump repair. See the " + a("/royal-oak", "Royal Oak overview") + "."
         ),
         p(
-            a("/troy-sump-pump-repair", "Troy")
-            + " is pits next to finished living space in houses largely from the 1960s and 1970s. "
-            "Overview: " + a("/troy", "Troy") + "."
+            "In " + a("/troy-sump-pump-repair", "Troy")
+            + ", pits often sit next to finished living space in houses largely from the 1960s and 1970s. "
+            "See the " + a("/troy", "Troy overview") + "."
         ),
         p(
             a("/birmingham-sump-pump-repair", "Sump pump repair in Birmingham, Michigan")
-            + " is early- and mid-1900s housing. The city owns no sewage pump or lift stations; a sump "
-            "in a house is the homeowner's pump, not a city station. Overview: "
-            + a("/birmingham", "Birmingham") + "."
+            + " often means an older pit in an early- or mid-1900s house. The city owns no sewage pump or lift stations, so the sump "
+            "is the homeowner's pump. See the "
+            + a("/birmingham", "Birmingham overview") + "."
         ),
         p(
-            a("/berkley-sump-pump-repair", "Berkley")
-            + " is a short basement. Berkley's municipal sewer is gravity and has no city pumps or valves. "
-            "A household sump is still a separate machine. Overview: " + a("/berkley", "Berkley") + "."
+            "In " + a("/berkley-sump-pump-repair", "Berkley")
+            + ", the pit sits in a short basement. The city's sewer is gravity, with no pumps or valves, "
+            "so a household sump is a separate machine. See the " + a("/berkley", "Berkley overview") + "."
         ),
         p(
-            a("/clawson-sump-pump-repair", "Clawson")
-            + " is the pit in the same small room as the furnace. Overview: " + a("/clawson", "Clawson") + "."
+            "In " + a("/clawson-sump-pump-repair", "Clawson")
+            + ", the pit often shares a small room with the furnace. See the " + a("/clawson", "Clawson overview") + "."
         ),
     ])
 
@@ -545,28 +550,28 @@ def sanit_hub():
         h2("Leftover problems, city by city"),
         p(
             a("/royal-oak-basement-sanitization", "Basement sanitization in Royal Oak")
-            + " is residue in older basements after a floor-drain backup. Royal Oak's Sewer Division "
-            "answers for the public main. Overview: " + a("/royal-oak", "Royal Oak") + "."
+            + " usually follows a floor-drain backup, and Royal Oak's Sewer Division "
+            "answers for the public main. See the " + a("/royal-oak", "Royal Oak overview") + "."
         ),
         p(
             a("/troy-basement-sanitization", "Basement sanitization in Troy")
-            + " is finished rooms, carpet, and contents in 1960s and 1970s houses. Overview: "
-            + a("/troy", "Troy") + "."
+            + " often means carpet, pad, and contents in finished rooms of 1960s and 1970s houses. See the "
+            + a("/troy", "Troy overview") + "."
         ),
         p(
             a("/birmingham-basement-sanitization", "Basement sanitization in Birmingham")
-            + " is plaster and wood that may not survive a wipe-down in early- and mid-1900s houses. "
-            "Overview: " + a("/birmingham", "Birmingham") + "."
+            + " has to deal with plaster and wood trim in early- and mid-1900s houses, and some of it will not survive a wipe-down. "
+            "See the " + a("/birmingham", "Birmingham overview") + "."
         ),
         p(
             a("/berkley-basement-sanitization", "Basement sanitization in Berkley, MI")
-            + " is a small stair that opens into the living room of a bungalow on a combined sewer. "
-            "Overview: " + a("/berkley", "Berkley") + "."
+            + " happens in a short bungalow basement on a combined sewer, often with the stair opening near the living room. "
+            "See the " + a("/berkley", "Berkley overview") + "."
         ),
         p(
             a("/clawson-basement-sanitization", "Basement sanitization in Clawson")
-            + " is one room that also holds the furnace and the water heater. Overview: "
-            + a("/clawson", "Clawson") + "."
+            + " often covers a single room that also holds the furnace and the water heater. See the "
+            + a("/clawson", "Clawson overview") + "."
         ),
     ])
 
@@ -734,7 +739,7 @@ def city_birmingham():
             "up, it is not because a municipal lift station lost power. There isn't one."
         ),
         p(
-            "Birmingham housing is largely early- to mid-1900s: plaster, trim, and tree-lined laterals around Shain Park and "
+            "Birmingham housing is largely early- to mid-1900s: plaster, trim, and older laterals around Shain Park and "
             "Old Woodward, Maple Road, Poppleton Park, and Quarton Lake."
         ),
         h2("What the city tells homeowners to change at the house"),
@@ -781,14 +786,14 @@ def city_birmingham():
             + _CHECK + " is the printable list for the next storm, including (248) 530-1703 so it is not confused "
             "with the claims number."
         ),
-        h2("Adjacent cities are not on this gravity system"),
+        h2("Nearby cities have their own sewer contacts"),
         p(
-            "Royal Oak publishes a Sewer Division, about 300 miles of mains, and a homeowner lateral that includes "
-            "the connection. Troy's wastewater leaves through three named districts, and Troy does have a different "
-            "backup phone. Berkley's pipe is combined and gravity too, but Berkley also describes street storage and "
-            "a lining program Birmingham's FAQ does not. Use "
-            + a("/royal-oak", "Royal Oak") + ", " + a("/troy", "Troy") + ", and "
-            + a("/berkley", "Berkley") + " for those houses. Clawson has its own page."
+            "Royal Oak has its own Sewer Division, and there the homeowner owns the lateral up to and including "
+            "the connection. Troy's wastewater leaves through three districts, and Troy has its own backup numbers. "
+            "Berkley's sewer is also combined and gravity, and Berkley publishes a lining program and street storage "
+            "that Birmingham's FAQ does not describe. If the house is in "
+            + a("/royal-oak", "Royal Oak") + ", " + a("/troy", "Troy") + ", "
+            + a("/berkley", "Berkley") + ", or " + a("/clawson", "Clawson") + ", open that city's page."
         ),
         sources([
             ("https://www.bhamgov.org/about_birmingham/city_departments/city_manager/risk_management.php", "Birmingham Risk Management: sewer FAQ, phones, and the August 24, 2023 presentation"),
@@ -828,8 +833,8 @@ def city_berkley():
         ),
         h2("Bungalow basements, and the help that fits"),
         p(
-            "Berkley is a small city of mostly 1940s and 1950s bungalows. Downtown runs along 12 Mile Road. Coolidge "
-            "is the main north-south road. Lots are flat, so heavy rain does not run off quickly. Basements are short, "
+            "Berkley is a small city of bungalows. Downtown runs along 12 Mile Road. Coolidge "
+            "is the main north-south road. The city designs its streets to hold water during a hard rain. Basements are short, "
             "and the stair lands close to first-floor living space. A household vac on sewage water on that stair is "
             "how contamination reaches the room upstairs. Wait for a company equipped for it."
         ),
@@ -895,7 +900,7 @@ def city_clawson():
         ),
         h2("Small lots, one-room basements, and the matching help"),
         p(
-            "Clawson is largely mid-century brick bungalows and ranches, mostly from the 1940s to the 1960s, on compact "
+            "Clawson is largely brick bungalows and ranches on compact "
             "lots. 14 Mile Road is the downtown street. The city sits between Royal Oak and Troy. Basements are often a "
             "single room that holds the furnace, the water heater, and the floor drain. A backup in that room is also an "
             "electrical and heating problem. Stay out if water is near the furnace or the panel."
@@ -964,11 +969,11 @@ CITY_HERO = {
 }
 
 CITY_DESC = {
-    "royal-oak": "Royal Oak, MI sewer backup, water damage, and flooded basement help. Call {PHONE_DISPLAY}. Keep people and pets out of the water.",
-    "troy": "Troy, MI sewer backup, sump pump, and water damage help. Local crews. Call {PHONE_DISPLAY}.",
-    "birmingham": "Birmingham, MI sewer and water damage help for older homes. Local crews. Call {PHONE_DISPLAY}.",
-    "berkley": "Berkley, MI sewer backup and flooded basement help for bungalows. Call {PHONE_DISPLAY}.",
-    "clawson": "Clawson, MI sewer, water damage, and sump help for bungalows. Call {PHONE_DISPLAY} today.",
+    "royal-oak": "Royal Oak, MI sewer backup and flooded basement help: city sewer numbers, who owns the lateral, and a local cleanup crew. Call (248) 825-8312.",
+    "troy": "Troy, MI sewer backup and flooded basement help: city numbers, the three wastewater districts, and a local cleanup crew. Call (248) 825-8312.",
+    "birmingham": "Birmingham, MI sewer backup and flooded basement help for older homes. The city numbers to call, plus a local cleanup crew at (248) 825-8312.",
+    "berkley": "Berkley, MI sewer backup and flooded basement help. The city's combined sewer can back up in hard rain. Reach a local cleanup crew: (248) 825-8312.",
+    "clawson": "Clawson, MI sewer backup and flooded basement help: city sewer numbers, after-hours dispatch, and a local cleanup crew. Call (248) 825-8312.",
 }
 
 CITY_FAQS = {
@@ -983,20 +988,20 @@ CITY_FAQS = {
             "Yes. FEMA-4195-DR was declared September 25, 2014, for Macomb, Oakland, and Wayne counties. A next-day report said Royal Oak's DPS gauge recorded 4.98 inches on August 11, with 1.12 inches in 30 minutes. The reports do not give a count of damaged homes.",
         ),
         (
-            "Which Royal Oak page should I open if the floor drain never moved?",
+            "What cleanup do I need if the Royal Oak floor drain never moved?",
             "Open flooded basement cleanup when the water is from a storm, a window well, or a sump. Open water damage restoration if finishes are already soaked. Open sewer backup cleanup only when sewage came up through a drain, a basement toilet, or a laundry standpipe.",
         ),
         ("Does the George W. Kuhn basin keep my Royal Oak basement dry?", "Not by itself. Royal Oak's flood-response page says the city is in the former Twelve Towns program, now the George W. Kuhn Retention Treatment Basin, expanded in 2006. That does not tell you whether your lateral or the street main failed. If you believe the city is involved, send written notice within 45 days of discovery."),
     ],
     "troy": [
         (
-            "Is Troy on one combined sewer?",
-            "No single label fits. A November 14, 2022 City Council agenda item says Troy discharges wastewater through the Evergreen-Farmington, Oakland-Troy, and George W. Kuhn districts, with the Oakland County Water Resources Commissioner responsible for those facilities. Do not describe the city as fully combined or fully separated.",
+            "Is Troy in the George W. Kuhn district?",
+            "Partly. George W. Kuhn is one of three districts Troy discharges wastewater through, along with Evergreen-Farmington and Oakland-Troy, and the Oakland County Water Resources Commissioner is responsible for those facilities. Ask the Water Division, 248-524-3370, which one serves your address.",
         ),
         ("What number does Troy publish for a sewer backup?", "The Water Division, 248-524-3370, during business hours. After hours, Troy Police at 248-524-3477."),
         ("How do I send Troy's written sewer claim?", "To the City Attorney's Office by email, mail, fax (248-524-3259), or drop-off, within 45 days of discovery. The city's page links a Notice of Sewer Backup Claim form."),
         (
-            "Which page fits a wet Troy lower level if the drains stayed quiet?",
+            "What help fits a wet Troy lower level if the drains stayed quiet?",
             "Flooded basement cleanup for the water removal, water damage restoration if carpet and finishes have to be dried, and sump pump repair if the pit is what failed. Sewer backup cleanup is for sewage that came out of a drain.",
         ),
         ("Why does Clawson use the same after-hours number as Troy?", "Clawson contracts Troy Police for dispatch. Troy residents call Troy Police at 248-524-3477 after hours for a backup; Clawson residents use the same number with extension 1. Troy's Water Division, 248-524-3370, is the business-hours line."),
@@ -1016,8 +1021,8 @@ CITY_FAQS = {
         ),
         ("What does the city suggest homeowners do at the house?", "The FAQ lists a backflow preventer, downspouts disconnected and extended about 6 feet, and grading away from the foundation. Those prevent water; they do not remove water already inside. For that, call (248) 825-8312."),
         (
-            "Do early Birmingham houses show up in backups more often?",
-            "Birmingham housing is largely early- to mid-1900s, with plaster, trim, and older laterals around Shain Park, Old Woodward, Maple, Poppleton Park, and Quarton. A camera, not a guess, confirms a lateral. Written notice for a sewage event is still due within 45 days of discovery, separate from any sewer-backup endorsement on your policy.",
+            "Where do Birmingham sewer claims get decided?",
+            "The city says claims go to Meadowbrook Claims Service, the administrator for the Michigan Municipal League Liability and Property Pool, for a liability decision. Download the Sewer Backup Claim form from the city's Risk Management page; questions go to 248.530.1808. Written notice is due within 45 days of discovery.",
         ),
     ],
     "berkley": [
@@ -1050,7 +1055,7 @@ CITY_FAQS = {
             "The page links a combined-sewer explainer and lists the George W. Kuhn basin and the Oakland County Water Resources Commissioner. Ask the city which pipe serves a specific street.",
         ),
         (
-            "Which Clawson page should a one-room basement open first?",
+            "What help does a wet one-room Clawson basement need first?",
             "If sewage came up the floor drain, open sewer backup cleanup. If the furnace room is wet from a storm or a sump and the drain stayed quiet, open flooded basement cleanup. If you only need the pump looked at, open sump pump repair, and add water damage restoration if finishes are soaked.",
         ),
         ("Where does Clawson's sewer flow in a heavy storm?", "Clawson's sewer page points to the George W. Kuhn Retention Treatment Basin and the Oakland County Water Resources Commissioner. The basin, under I-75 at 12 Mile in Madison Heights, can hold and treat 150 million gallons and sends treated flow to the Red Run Drain."),
@@ -1061,7 +1066,7 @@ HUB_FAQS = {
     "services": [
         ("Which job should I describe when I call?", "Whether the water came from a floor drain, a sump, or a storm, and your city. Ask the crew for proof of license and insurance and a written scope."),
         (
-            "Which page should I open first?",
+            "What kind of cleanup do I need?",
             "If sewage came up a drain, open sewer backup cleanup. If the water is storm or sump water and the drains stayed quiet, open flooded basement cleanup. If materials are already soaked, open water damage restoration. Then open the city page for the house.",
         ),
         (
@@ -1092,7 +1097,7 @@ HUB_FAQS = {
     ],
     "sewer-backup-cleanup": [
         (
-            "What counts as a sewer backup here?",
+            "What counts as a sewer backup?",
             "Wastewater that came up a floor drain, a basement toilet, or a laundry standpipe because the line was full. Storm water that never touched a drain is flooded basement cleanup.",
         ),
         (
@@ -1104,7 +1109,7 @@ HUB_FAQS = {
             "Michigan law requires written notice within 45 days of discovering the damage before compensation for a sewage disposal event is possible. Include your name, address, and phone, the property address, the discovery date, and a brief description. You send that letter. The claim guide lists each city's contact.",
         ),
         (
-            "Why does heavy rain show up in these Oakland County basements?",
+            "Why does heavy rain show up in Oakland County basements?",
             "In a combined system, sanitary sewage and stormwater share pipes. The George W. Kuhn district's wet-weather flow is typically more than 93 percent stormwater. The retention basin under the I-75 overpass at 12 Mile Road in Madison Heights can hold and treat 150 million gallons. Those figures describe the district, not a single house.",
         ),
         ("Is a sewer backup my pipe or the city's?", "It depends where the blockage is. The city generally handles the main in the street and the homeowner the lateral in the yard; Royal Oak says the homeowner's part runs up to and including the connection. If water is still coming in, call your city's sewer number so it can check the main."),
@@ -1154,8 +1159,8 @@ HUB_FAQS = {
             "No. Birmingham says its sewer system is gravity and that the city owns no pump or lift stations. A sump in a Birmingham basement is the homeowner's equipment.",
         ),
         (
-            "The pump ran but the floor is still wet. Which page is that?",
-            "Sump pump repair for the machine, and flooded basement cleanup or water damage restoration for the water and the finishes. If a drain produced sewage, use the sewer backup page instead.",
+            "The pump ran but the floor is still wet. What help do I need?",
+            "Two jobs: sump pump repair for the machine, and flooded basement cleanup or water damage restoration for the water and the finishes. If a drain produced sewage, treat it as a sewer backup instead.",
         ),
         (
             "Does Berkley's city sewer include my sump pump?",

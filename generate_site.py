@@ -335,77 +335,7 @@ def _pair_score(item, source):
 
 
 def fit_meta(text):
-    source = _clean_meta_base(fill(text).strip())
-    source_had_phone = "825-8312" in source
-    parts = _meta_sentences(source)
-    if _valid_pair(source, source_had_phone):
-        USED_METAS.add(source)
-        return source
-    if (
-        not source_had_phone
-        and 140 <= len(source) <= 155
-        and len(parts) == 1
-        and "we refer" not in source.lower()
-        and "connect with" not in source.lower()
-    ):
-        USED_METAS.add(source)
-        return source
-    if not parts:
-        return source
-    candidates = []
-    if len(parts) == 1 and source_had_phone:
-        opening = " ".join(_michigan(parts[0]).split()).rstrip(".")
-        for tail in _META_TAILS:
-            if not _pair_ok(opening, tail) or _tail_already_in(tail, opening):
-                continue
-            item = f"{opening}.{tail}"
-            if _valid_pair(item, source_had_phone):
-                candidates.append(item)
-    phone_parts = [part for part in parts[1:] if "825-8312" in part]
-    if phone_parts and len(phone_parts[0].split()) > 5:
-        for opening in _openings(parts):
-            opening = " ".join(opening.split())
-            for second in _extend_phone_sentence(phone_parts[0]):
-                if second.count(",") > 0:
-                    continue
-                item = f"{opening}. {second}"
-                if _valid_pair(item, source_had_phone):
-                    candidates.append(item)
-    for opening in _openings(parts):
-        opening = " ".join(opening.split())
-        if "825-8312" in opening:
-            continue
-        singles, _paired = _call_sentences(opening, doubles=False)
-        for second in singles:
-            item = f"{opening}. {second}"
-            if _valid_pair(item, source_had_phone):
-                candidates.append(item)
-    if not candidates and phone_parts and len(phone_parts[0].split()) > 5:
-        for opening in _topic_variants(parts):
-            opening = " ".join(opening.split())
-            for second in _extend_phone_sentence(phone_parts[0]):
-                if second.count(",") == 0:
-                    continue
-                item = f"{opening}. {second}"
-                if _valid_pair(item, source_had_phone):
-                    candidates.append(item)
-    if not candidates:
-        for opening in _topic_variants(parts):
-            opening = " ".join(opening.split())
-            if "825-8312" in opening:
-                continue
-            _singles, paired = _call_sentences(opening, doubles=True)
-            for second in paired:
-                item = f"{opening}. {second}"
-                if _valid_pair(item, source_had_phone):
-                    candidates.append(item)
-    if not candidates:
-        return source
-    candidates.sort(key=lambda item: _pair_score(item, source))
-    chosen = candidates[0]
-    USED_METAS.add(chosen)
-    return chosen
-
+    return fill(text).strip()
 
 def remember(path, title, description, body, crumbs, faqs=None, service=None, robots="index, follow", priority="0.8", index=True, article=None, extra_css=""):
     description = fit_meta(description)
@@ -579,8 +509,8 @@ def home_body():
             <h2 class="text-3xl font-outfit font-extrabold text-white text-center mb-4">Oakland County cities</h2>
             <p class="text-sm text-gray-300 text-center max-w-3xl mx-auto mb-10">Royal Oak, Troy, Birmingham, Berkley, and Clawson each have pages for sewer backup, sewage extraction, flooded basement cleanup, water damage restoration, sump pump repair, and basement sanitization.</p>
             {city_directory()}
-            <h2 class="text-2xl font-outfit font-extrabold text-white text-center mt-14 mb-4">Pages that match a specific job</h2>
-            <p class="text-sm text-gray-300 text-center max-w-3xl mx-auto mb-6">Each link is one job in one city. If sewage came up a drain, use that city's sewer backup link. Extraction is only the pumping step.</p>
+            <h2 class="text-2xl font-outfit font-extrabold text-white text-center mt-14 mb-4">Find your city and the job</h2>
+            <p class="text-sm text-gray-300 text-center max-w-3xl mx-auto mb-6">If sewage came up a drain, use that city's sewer backup link. Extraction is only the pumping step.</p>
             <ul class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-300">
                 <li><a class="text-red-400 underline" href="/troy-sewer-cleanup">Sewage cleanup in Troy, MI</a></li>
                 <li><a class="text-red-400 underline" href="/royal-oak-sewer-cleanup">Sewage cleanup in Royal Oak, MI</a></li>
@@ -666,7 +596,7 @@ def main():
     remember(
         "",
         "Sewage Cleanup & Sewer Backup in Oakland County, MI",
-        fill("Sewage cleanup, sewer backup, and basement flood cleanup in Oakland County, MI. Call {PHONE_DISPLAY}."),
+        "Sewage cleanup, sewer backup and basement flood cleanup in Oakland County, MI. A local crew pumps, cleans and dries your basement. Call (248) 825-8312 now.",
         home_html,
         [],
         faqs=home_faqs,
@@ -741,13 +671,13 @@ def main():
         )
 
     hub_pages = [
-        ("services", "Oakland County Sewer & Water Services | Oakland Sewer Pros", "Service pages for sewer backups, water damage, flooded basements, and sump pumps in Oakland County, MI. Call {PHONE_DISPLAY}.", "Services for Oakland County homeowners", "If sewage or floodwater is in the basement, match the job to the water, then open your city. A local cleanup crew handles the visit, and they'll tell you when they can be there.", services_article(), "0.8"),
-        ("water-damage-restoration", "Water Damage Restoration Oakland County | Oakland Sewer Pros", "Water damage restoration help in Oakland County, MI, including five city pages. Call {PHONE_DISPLAY} for a crew.", "Water damage restoration in Oakland County, MI", "The basement is wet, and sewage makes water damage restoration in Oakland County a stricter cleanup than a clean leak. A local cleanup crew handles the visit, and they'll tell you when they can be there.", water_hub(), "0.9"),
-        ("sewer-backup-cleanup", "Sewage Cleanup & Sewer Backup in Oakland County", "Sewage cleanup and sewer backup in Oakland County, MI, including a backup drain. Call {PHONE_DISPLAY}.", "Sewage cleanup and sewer backup in Oakland County, MI", "Sewage is in the basement and it needs to come out. A local cleanup crew handles the visit, and they'll tell you when they can be there. Open your city's page for the local steps.", sewer_hub(), "0.8"),
-        ("sewage-extraction", "Sewage Extraction Oakland County MI | Oakland Sewer Pros", "Sewage extraction help in Oakland County, MI. A local crew handles the work. Call {PHONE_DISPLAY}.", "Sewage extraction in Oakland County, MI", "Contaminated water is in the basement and it has to be pumped out. A local cleanup crew handles the visit, and they'll tell you when they can be there.", sewage_hub(), "0.8"),
-        ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup and flooded basement water removal in Oakland County, MI. Call {PHONE_DISPLAY}.", "Basement flood cleanup in Oakland County, MI", "Standing water from a storm or a sump is in the basement. A local cleanup crew handles the visit, and they'll tell you when they can be there. If a drain backed up, tell them it is sewage.", flood_hub(), "0.8"),
-        ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, Michigan. Birmingham means Michigan, not Alabama. Call {PHONE_DISPLAY}.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump has left the basement wet. A local crew handles the visit, and they'll tell you when they can be there. Birmingham here means Birmingham, Michigan.", sump_hub(), "0.8"),
-        ("basement-sanitization", "Basement Sanitization Oakland County | Oakland Sewer Pros", "Basement sanitizing after sewage or a flood in Oakland County, MI. Local crews. Call {PHONE_DISPLAY}.", "Basement sanitization after sewage or flooding", "The water is out and the basement still needs cleaning after sewage or a flood. A local cleanup crew handles the visit, and they'll tell you when they can be there. Extraction comes first if the water is still there.", sanit_hub(), "0.8"),
+        ("services", "Oakland County Sewer & Water Services | Oakland Sewer Pros", "Sewer backup, sewage extraction, flooded basement, water damage and sump pump services in Oakland County, MI. Find your city or call (248) 825-8312.", "Services for Oakland County homeowners", "If sewage or floodwater is in the basement, match the job to the water, then open your city. A local cleanup crew handles the visit, and they'll tell you when they can be there.", services_article(), "0.8"),
+        ("water-damage-restoration", "Water Damage Restoration Oakland County | Oakland Sewer Pros", "Water damage restoration in Oakland County, MI. A local crew removes water, dries your basement and handles sewage-soaked materials. Call (248) 825-8312.", "Water damage restoration in Oakland County, MI", "The basement is wet, and sewage makes water damage restoration in Oakland County a stricter cleanup than a clean leak. A local cleanup crew handles the visit, and they'll tell you when they can be there.", water_hub(), "0.9"),
+        ("sewer-backup-cleanup", "Sewage Cleanup & Sewer Backup in Oakland County", "Sewer backup cleanup in Oakland County, MI. A local crew pumps out sewage, removes ruined materials and disinfects your basement. Call (248) 825-8312.", "Sewage cleanup and sewer backup in Oakland County, MI", "Sewage is in the basement and it needs to come out. A local cleanup crew handles the visit, and they'll tell you when they can be there. Open your city's page for the local steps.", sewer_hub(), "0.8"),
+        ("sewage-extraction", "Sewage Extraction Oakland County MI | Oakland Sewer Pros", "Sewage extraction in Oakland County, MI. A local crew pumps sewage out of your basement and hauls away soaked materials safely. Call (248) 825-8312.", "Sewage extraction in Oakland County, MI", "Contaminated water is in the basement and it has to be pumped out. A local cleanup crew handles the visit, and they'll tell you when they can be there.", sewage_hub(), "0.8"),
+        ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup in Oakland County, MI. A local crew pumps out storm or sump water and dries the walls and floors. Call (248) 825-8312 now.", "Basement flood cleanup in Oakland County, MI", "Standing water from a storm or a sump is in the basement. A local cleanup crew handles the visit, and they'll tell you when they can be there. If a drain backed up, tell them it is sewage.", flood_hub(), "0.8"),
+        ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, MI. A local crew fixes stuck, dead or overflowing pumps and removes the water if the floor is wet. Call (248) 825-8312.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump has left the basement wet. A local crew handles the visit, and they'll tell you when they can be there. Birmingham here means Birmingham, Michigan.", sump_hub(), "0.8"),
+        ("basement-sanitization", "Basement Sanitization Oakland County | Oakland Sewer Pros", "Basement sanitization in Oakland County, MI after sewage or a flood. A local crew removes ruined materials and disinfects the rest. Call (248) 825-8312.", "Basement sanitization after sewage or flooding", "The water is out and the basement still needs cleaning after sewage or a flood. A local cleanup crew handles the visit, and they'll tell you when they can be there. Extraction comes first if the water is still there.", sanit_hub(), "0.8"),
     ]
     for path, title, description, h1, lead, article, priority in hub_pages:
         faqs = HUB_FAQS[path]
@@ -781,7 +711,7 @@ def main():
     remember(
         "about",
         "About Oakland Sewer Pros | Oakland County Sewage Cleanup",
-        fill("Oakland Sewer Pros helps Oakland County, MI homeowners reach a local cleanup crew. Call {PHONE_DISPLAY}."),
+        "About Oakland Sewer Pros: one number for sewage and flooded basement cleanup in Oakland County, MI, handled by a local crew. Call (248) 825-8312.",
         prose_body("About Oakland Sewer Pros", f"<p>Who handles the cleanup when you call {esc(PHONE_DISPLAY)}, and what to check first.</p>", about_article(), faqs=ABOUT_FAQS, images=images_for("about")),
         [("Home", "/"), ("About", None)],
         faqs=ABOUT_FAQS,
@@ -790,7 +720,7 @@ def main():
     remember(
         "contact",
         "Contact Oakland Sewer Pros | Oakland County MI",
-        fill("Call Oakland Sewer Pros at {PHONE_DISPLAY} for sewer or water damage help in Oakland County, MI."),
+        "Contact Oakland Sewer Pros for sewage and flooded basement cleanup in Oakland County, MI. Call (248) 825-8312 to reach a local crew; the form is not saved.",
         prose_body(
             "Contact Oakland Sewer Pros",
             f"<p>Phone is the real contact. The form does not save what you type.</p>",
@@ -805,7 +735,7 @@ def main():
     remember(
         "privacy",
         "Privacy Policy | Oakland Sewer Pros",
-        fill("How Oakland Sewer Pros handles calls and website forms. Form entries are not stored or put in the URL. Call {PHONE_DISPLAY}."),
+        "Privacy policy for Oakland Sewer Pros in Oakland County, MI. Website forms do not store your details. For sewage cleanup help, call (248) 825-8312.",
         prose_body("Privacy", "<p>What this static site does with the details you might type or the number you call.</p>", privacy_article(), faqs=PRIVACY_FAQS, images=images_for("privacy")),
         [("Home", "/"), ("Privacy", None)],
         faqs=PRIVACY_FAQS,
@@ -814,7 +744,7 @@ def main():
     remember(
         "terms",
         "Terms of Service | Oakland Sewer Pros",
-        fill("Terms for Oakland Sewer Pros in Oakland County, MI. Ask the crew for license and insurance. Call {PHONE_DISPLAY}."),
+        "Terms of service for Oakland Sewer Pros in Oakland County, MI. Check the crew's license and insurance and get the scope in writing. Call (248) 825-8312.",
         prose_body("Terms of Service", "<p>Last updated September 27, 2026.</p>", terms_article(), faqs=TERMS_FAQS, images=images_for("terms")),
         [("Home", "/"), ("Terms", None)],
         faqs=TERMS_FAQS,
@@ -829,7 +759,7 @@ def main():
     remember(
         "thank-you",
         "Call for help | Oakland Sewer Pros",
-        fill("The form was not saved. If you have a sewer backup or flood in Oakland County, MI, call {PHONE_DISPLAY}."),
+        "Your form was not saved. For a sewer backup or flooded basement in Oakland County, MI, call (248) 825-8312 now to reach a local cleanup crew.",
         thank_body,
         [("Home", "/"), ("Confirmation", None)],
         robots="noindex, nofollow",
@@ -844,7 +774,7 @@ def main():
     remember(
         "404",
         "Page not found | Oakland Sewer Pros",
-        fill("That page is not on Oakland Sewer Pros. Find a city or service, or call {PHONE_DISPLAY}."),
+        "Page not found. Find sewage cleanup and flooded basement help for your Oakland County, MI city, or call (248) 825-8312 to reach a local crew.",
         prose_body(
             "Page not found",
             f"<p>{esc(NOT_FOUND_LINKS_INTRO)}</p>",
