@@ -35,6 +35,7 @@ SRC = {
     "berk_tips": "https://www.berkleymi.gov/public-works/flood-tips-for-residents",
     "berk_valve": "https://www.berkleymi.gov/Community%20Development/Backwater%20Reimbursement%20Request.pdf",
     "claw_dpw": "https://www.cityofclawson.com/your_government/dpw_and_engineering/index.php",
+    "claw_dispatch": "https://www.cityofclawson.com/your_government/police_department/dispatch_services.php",
     "claw_sewer": "https://www.cityofclawson.com/your_government/dpw_and_engineering/sewer.php",
     "dte_report": "https://outage.dteenergy.com/Report-Outage",
     "dte_faq": "https://www.dteenergy.com/us/en/residential/emergency-and-safety/safety/outage-faqs.html",
@@ -245,7 +246,8 @@ def claim_article():
         ]),
         h3("Clawson"),
         ul([
-            "Department of Public Works, 635 W. Elmwood, Clawson, MI 48017, (248) 288-3222, Monday to Thursday, 7:00 a.m. to 3:30 p.m. After-hours DPW emergencies: (248) 524-3477, as listed by the city (" + ext("claw_dpw", "Clawson DPW &amp; Engineering") + ").",
+            "Department of Public Works, 635 W. Elmwood, Clawson, MI 48017, (248) 288-3222, Monday to Thursday, 7:00 a.m. to 3:30 p.m. (" + ext("claw_dpw", "Clawson DPW &amp; Engineering") + ").",
+            "After hours: (248) 524-3477. The DPW page lists it for after-hours DPW emergencies (" + ext("claw_dpw", "Clawson DPW") + "). It is the same number as Troy Police because Clawson contracts with the Troy Police Department for 24-hour dispatch; Clawson's police page lists it, extension 1, as the non-emergency line (" + ext("claw_dispatch", "Clawson Police: Dispatch Services") + "). Call 911 for emergencies.",
             "The city's Sanitary &amp; Storm Sewer page links to George W. Kuhn and WRC information and to a \"Public Act 222\" document. When we checked on " + VERIFIED + ", that document link returned an error (" + ext("claw_sewer", "Clawson Sanitary &amp; Storm Sewer System") + ").",
             "Written notice: we did not find a posted claim form. Call the DPW, then ask in writing for the name and address of the person who receives sewer backup notices. The city must provide it in writing if you contacted it first (" + ext("mcl1419", "MCL 691.1419(2)") + ").",
         ]),
@@ -294,6 +296,7 @@ def claim_article():
             ("berk_tips", "City of Berkley: Flood Tips for Residents"),
             ("claw_dpw", "City of Clawson: DPW &amp; Engineering"),
             ("claw_sewer", "City of Clawson: Sanitary &amp; Storm Sewer System"),
+            ("claw_dispatch", "City of Clawson Police: Dispatch Services (Troy dispatch contract, non-emergency line)"),
         ]),
     ])
 
@@ -498,7 +501,7 @@ def checklist_article():
                 ["Troy", "Water Division 248.524.3370, business hours", "Troy Police 248.524.3477 (" + ext("troy_claims", "source") + ")"],
                 ["Birmingham", "Water event line (248) 530-1703 (data tracking, not a claim); claims questions 248.530.1808", "Not listed on the page we checked (" + ext("bham_risk", "source") + ")"],
                 ["Berkley", "Public Works 248-658-3490", "Not listed on the page we checked (" + ext("berk_tips", "source") + ")"],
-                ["Clawson", "DPW (248) 288-3222, Mon to Thu 7:00 a.m. to 3:30 p.m.", "(248) 524-3477 (" + ext("claw_dpw", "source") + ")"],
+                ["Clawson", "DPW (248) 288-3222, Mon to Thu 7:00 a.m. to 3:30 p.m. (" + ext("claw_dpw", "source") + ")", "(248) 524-3477, ext. 1: Troy Dispatch, which Clawson contracts for 24-hour dispatch (" + ext("claw_dispatch", "source") + ")"],
                 ["Power outage (DTE)", ext("dte_report", "outage.dteenergy.com/Report-Outage"), "(800) 477-4747 automated line (" + ext("dte_faq", "source") + ")"],
             ],
         ),
@@ -573,6 +576,7 @@ def checklist_article():
             ("berk_tips", "City of Berkley: Flood Tips for Residents"),
             ("berk_valve", "City of Berkley: Backwater Valve Permit Fee Reimbursement (PDF)"),
             ("claw_dpw", "City of Clawson: DPW &amp; Engineering"),
+            ("claw_dispatch", "City of Clawson Police: Dispatch Services"),
         ]),
     ])
 
