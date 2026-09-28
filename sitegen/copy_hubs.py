@@ -38,11 +38,11 @@ NWS_2014 = "https://www.weather.gov/media/grr/GLOM2015/Abstracts/CMU-Saunders-DT
 
 def services_article():
     return "\n".join([
-        h2("What this phone line does in Oakland County"),
+        h2("Sewer backup and basement water help in Oakland County"),
         p(
-            f"{_HOME} is a phone line for homeowners in Royal Oak, Troy, Birmingham, "
-            "Berkley, and Clawson. A local crew handles the visit, and they'll tell you when they can be there. "
-            f"You confirm the license and insurance that the job requires. The number is {phone_link()}."
+            "Call " + phone_link() + " for sewer backup cleanup, sewage extraction, flooded basement cleanup, "
+            "water damage restoration, sump pump repair, or basement sanitization in Royal Oak, Troy, Birmingham, "
+            "Berkley, or Clawson. Ask the crew for proof of license and insurance before work starts."
         ),
         h2("Match the water to the right help"),
         p(
@@ -67,7 +67,7 @@ def services_article():
         ),
         p(
             a("/sump-pump-repair", "Sump pump repair")
-            + " is the mechanical pump. Overflow cleanup, if the floor is wet, is a water-damage job on top of the repair. Sump pump work is not the call this line is built around. A dead pump still needs an explanation so it is not ignored."
+            + " is the mechanical pump. Overflow cleanup, if the floor is wet, is a water-damage job on top of the repair. A dead pump with a wet floor needs both the repair and the water removal."
         ),
         p(
             a("/basement-sanitization", "Basement sanitization")
@@ -76,7 +76,7 @@ def services_article():
         h2("How a call is different from a city sewer report"),
         p(
             "City public works can look at the main in the street. A local cleanup crew can pump and dry the basement. "
-            "Call " + phone_link() + " for that crew. They'll tell you when they can be there. If you think the municipal main caused the backup, you still have "
+            "Call " + phone_link() + " for that crew. If you think the municipal main caused the backup, you still have "
             "a separate written-notice deadline under Michigan law. The steps are in the "
             + _GUIDE
             + ". Storm prep, including the city numbers to keep by the phone, is on the "
@@ -98,7 +98,7 @@ def services_article():
         ),
         p(
             "Company pages, which are part of the site and not a service: "
-            + a("/about", "about this phone line")
+            + a("/about", "about")
             + ", " + a("/contact", "contact")
             + ", " + a("/privacy", "privacy")
             + ", and " + a("/terms", "terms")
@@ -111,28 +111,26 @@ def water_hub():
     return "\n".join([
         h2("What water damage restoration includes"),
         p(
-            "Water damage restoration, for the five cities on this site, means getting water out of a "
-            "house, deciding what materials cannot be saved, and drying what remains. Water damage repair "
-            "is the phrase people use when finishes also have to be replaced. "
-            + _HOME
-            + ". A local crew handles that work, and they'll tell you when they can be there. The number is "
+            "Water damage restoration in Oakland County means getting water out of a house, deciding what "
+            "materials cannot be saved, and drying what remains. Water damage repair is the phrase people "
+            "use when finishes also have to be replaced. For either, call "
             + phone_link() + "."
         ),
-        h3("Scope the provider should put in writing"),
+        h3("Scope the crew should put in writing"),
         p(
             "Ask for three lines in the scope: what will be pumped, what porous material will be removed, "
             "and how moisture will be rechecked after the fans have run. Extraction is the standing water "
             "and the soaked layers. Structural drying is the days afterward. A clean supply-line break is a "
             "different scope from a basement full of sewage. If the water came from a sewer drain, restorers "
             "treat it as heavily contaminated water, and carpet pad, insulation, and swollen drywall usually come out. "
-            "Say which water you have when you call. The price for each step comes from the company you hire."
+            "Say which water you have when you call. Get the price for each step in writing."
         ),
         h2("Safety before anyone arrives"),
         p(
             "Keep people and pets out of the water. If it has reached outlets, the furnace, or the panel, "
             "leave the basement and shut power off only from a dry location. Stop running faucets, the washer, "
             "and the dishwasher so more water does not arrive while you are on the phone. Do not shop-vac sewage "
-            "through the living room. Do not mix household cleaners in a closed basement. The company you hire "
+            "through the living room. Do not mix household cleaners in a closed basement. The crew "
             "chooses the product after they see the water. A household mop does not turn a sewage loss into a clean-water loss."
         ),
         h2("Insurance and the paperwork that is easy to skip"),
@@ -140,7 +138,7 @@ def water_hub():
             "Homeowners policies often exclude sewer backup unless an endorsement is on the form, and groundwater "
             "is often limited. A sudden supply-line break is a different coverage question from sewage at a floor drain. "
             "Ask your insurer. Photograph rooms before anything is torn out, list what you throw away, and keep the "
-            "provider's written scope. " + _HOME + " leaves the insurance claim with you and your carrier. "
+            "crew's written scope. " + _HOME + " leaves the insurance claim with you and your carrier. "
             "A claim against a city, if you believe the public main caused the backup, is a separate 45-day written "
             "notice. That clock and each city's contact are in the " + _GUIDE + "."
         ),
@@ -190,7 +188,7 @@ def sewer_hub():
         p(
             "Sewage cleanup in Oakland County means wastewater that came up a floor drain, "
             "a basement toilet, or a laundry standpipe. The line was full, and the lowest opening in the house let it "
-            "out. That is sewer backup cleanup. Open your city for the local steps. A local crew does the work, and they'll tell you when they can be there."
+            "out. That is sewer backup cleanup. Open your city for the local steps and the city's sewer number."
         ),
         h3("What the cleanup has to cover"),
         p(
@@ -209,10 +207,10 @@ def sewer_hub():
             "In these cities the municipality is generally responsible for the main in the street, and the "
             "homeowner is responsible for the private lateral in the yard. Royal Oak states that split directly: "
             "the city main is the city's, and the lateral up to and including the connection is the homeowner's. "
-            "Other cities draw the line in their own documents. The company you hire should not guess which pipe failed. "
+            "Other cities draw the line in their own documents. The crew should not guess which pipe failed. "
             "Call the city number published for that city if the backup looks like it is coming from the main, and call "
             + phone_link()
-            + " if you need a cleanup company inside the house. How soon they can come depends on who is available."
+            + " if you need a cleanup company inside the house."
         ),
         h2("Written notice, separate from the insurance call"),
         p(
@@ -282,7 +280,7 @@ def sewage_hub():
             "materials that soaked it up. It is not the sewage cleanup overview, and it is not mopping "
             "rain that came through a window. A household vac spreads it. A local crew with "
             "the right setup does the removal. The equipment belongs to that crew. Call "
-            + phone_link() + ". They'll tell you when they can be there."
+            + phone_link() + "."
         ),
         h2("How removal should be sequenced"),
         p(
@@ -307,8 +305,8 @@ def sewage_hub():
             "and whether a floor drain, a toilet, or a standpipe was the source. That timeline matters if you "
             "later send the 45-day written notice described in the " + _GUIDE
             + ". Your insurer will ask a different set of questions. Sewer backup is often excluded unless the "
-            "policy has an endorsement. Ask the carrier. Ask the provider for a written scope and for proof of "
-            "license and insurance. " + _HOME + " leaves the price and the insurance paperwork with you and the company you hire."
+            "policy has an endorsement. Ask the carrier. Ask the crew for a written scope and for proof of "
+            "license and insurance. " + _HOME + " leaves the price and the insurance paperwork with you and the crew."
         ),
         h2("When extraction is the wrong job"),
         p(
@@ -360,13 +358,13 @@ def flood_hub():
             + " or " + a("/sewer-backup-cleanup", "sewage cleanup")
             + ". If finishes are still wet after the pump-out, the longer process is "
             + a("/water-damage-restoration", "water damage restoration")
-            + ". A local crew pumps the basement, and they'll tell you when they can be there. Call " + phone_link() + "."
+            + ". A local crew pumps the basement. Call " + phone_link() + "."
         ),
         h2("What the water-removal visit is for"),
         p(
             "The useful scope is simple: where the water entered, how deep it got, what it touched, and "
             "whether the sump is still running. Window-well water and a failed pump are not the same job as "
-            "sewage at a laundry standpipe. Tell the provider which one you see. Carpet that held clean storm "
+            "sewage at a laundry standpipe. Tell the crew which one you see. Carpet that held clean storm "
             "water may be a drying question. Carpet that held sewage is a removal question. If you are not "
             "sure the water is clean, treat it as contaminated until someone who does this work says otherwise. "
             "Do not run a household vac through the stairwell."
@@ -437,12 +435,11 @@ def sump_hub():
     return "\n".join([
         h2("Sump pump repair in Oakland County, Michigan"),
         p(
-            "These pages are for Oakland County, Michigan. Birmingham on this site is Birmingham, "
+            "These pages are for Oakland County, Michigan. Birmingham here is Birmingham, "
             "Michigan, next to Royal Oak and Troy, not Birmingham, Alabama. A sump pump lifts groundwater "
             "out of a pit. When the float sticks, the check valve fails, the discharge line freezes, or "
             "the power drops, the pit overflows. Repairing that pump is a mechanical visit. Drying "
-            "the carpet it ruined is water damage. " + _HOME
-            + " used to show dollar ranges. Those ranges are gone. The company you hire sets the price. "
+            "the carpet it ruined is water damage. The crew sets the price. "
             "A dead pump is not the same problem as a sewer backup. Say which one you have so the right company comes."
         ),
         h2("What a pump visit can and cannot fix"),
@@ -454,7 +451,7 @@ def sump_hub():
             + " as well. If the water smells like sewage or a basement toilet burped, the pump is the wrong "
             "first call. Start with " + a("/sewer-backup-cleanup", "sewer backup cleanup") + ". "
             "Call " + phone_link() + " and say whether the crock overflowed or a drain did. "
-            "A local crew handles the visit, and they'll tell you when they can be there."
+            "A local crew handles the visit."
         ),
         h3("Power and discharge, without a parts list"),
         p(
@@ -462,14 +459,14 @@ def sump_hub():
             "the house lost power, deal with the utility outage first. The " + _CHECK
             + " includes DTE's outage line next to city sewer numbers. A discharge line that freezes or "
             "disconnects at the wall will send water back into the basement even when the motor runs. "
-            "The provider should look at that line. The parts price and the labor rate come from that company."
+            "The crew should look at that line. The parts price and the labor rate come from that company."
         ),
         h2("Insurance and what to record"),
         p(
             "Overflow from groundwater is often treated differently from a sewer backup endorsement. "
             "Ask your insurer which one your form covers before you assume the visit is reimbursed. "
             "Photograph the pit, the water line on the wall, and any finished materials that got wet. "
-            "Ask the company you hire for license and insurance. The warranty on the pump comes from that company. A local crew handles the visit, and they'll tell you when they can be there. If you also believe a city main contributed "
+            "Ask the crew for license and insurance. The warranty on the pump comes from that company. A local crew handles the visit. If you also believe a city main contributed "
             "sewage, the 45-day notice in the " + _GUIDE + " is a separate letter. Regional drainage "
             "context, if you want it, is the " + _GWK + " page, not a sump manual."
         ),
@@ -510,7 +507,7 @@ def sanit_hub():
             "been removed and the ruined porous materials have been taken out. It is not a recurring "
             "maid service, and a fogger is not a substitute for throwing away a soaked pad. The company "
             "that extracted the water should say what product they will use and why the label fits that "
-            "surface. A local crew does that cleaning, and they'll tell you when they can be there. Call " + phone_link() + "."
+            "surface. A local crew does that cleaning. Call " + phone_link() + "."
         ),
         h2("What has to happen before a cleaner does any good"),
         p(
@@ -526,7 +523,7 @@ def sanit_hub():
         p(
             "Do not mix household bleach with ammonia or with any acid cleaner. Do not run a fogger in a "
             "room you cannot ventilate, and do not ask children or pets to wait inside while it runs. "
-            "The provider should name the product and the surfaces. If you want a second opinion on the "
+            "The crew should name the product and the surfaces. If you want a second opinion on the "
             "scope, ask for it in writing before work starts. The company on site names the product and the price."
         ),
         p(
@@ -578,27 +575,26 @@ def sanit_hub():
 
 def city_royal_oak():
     return "\n".join([
-        h2("Royal Oak's sewer main is a city system, not this phone line"),
+        h2("Royal Oak's sewer main: which pipe is the city's"),
         p(
             "The City of Royal Oak Sewer Division says it maintains about 300 miles of sanitary and storm sewers. "
             "For basement water, the city lists (248) 246-3300 on weekdays from 7:30 a.m. to 4:00 p.m. After hours, "
             "the police non-emergency number (248) 246-3500 dispatches sewer personnel. The city is responsible for "
-            "the main. The homeowner is responsible for the lateral up to and including the connection to that main. "
-            "Those are city rules from the city's own pages."
+            "the main. The homeowner is responsible for the lateral up to and including the connection to that main."
         ),
         p(
             "Call (248) 246-3300 when the city should look at the main, especially while water is still coming in. "
             "Call " + phone_link()
             + " for a local crew to pump or dry the house. While you wait, stop using water, keep people "
             "and pets out, and leave the basement if water is near the furnace. "
-            + "A local crew handles the visit, and they'll tell you when they can be there."
+            + "A local crew handles the visit."
         ),
         h2("Twelve Towns, then the George W. Kuhn basin"),
         p(
             "Royal Oak's flood-response page says the city is a member of the former Twelve Towns program, now the "
-            "George W. Kuhn Retention Treatment Basin, and that the basin was expanded in 2006. Acreage, the share of "
-            "wet-weather flow that is stormwater, and the basin volume are district facts, written up on the "
-            + _GWK + " page rather than repeated here. Membership does not tell you whether the street main or your "
+            "George W. Kuhn Retention Treatment Basin, and that the basin was expanded in 2006. The basin's size "
+            "and how much of its wet-weather flow is stormwater are on the "
+            + _GWK + " page. Membership does not tell you whether the street main or your "
             "lateral failed today."
         ),
         h2("August 11, 2014, using the city's gauge and the federal declaration"),
@@ -631,7 +627,7 @@ def city_royal_oak():
         h2("Insurance paperwork and the 45-day letter"),
         p(
             "Photograph the drain before anything is thrown away. Ask your insurer about a sewer-backup endorsement. "
-            "The provider sets the scope and the price, and you confirm that company's license and insurance. A claim "
+            "The crew sets the scope and the price, and you confirm that company's license and insurance. A claim "
             "against the city is not the same call as " + PHONE_DISPLAY
             + ". The 45-day written notice is in the " + _GUIDE + ". The " + _CHECK
             + " already lists (248) 246-3300 for the next storm."
@@ -663,8 +659,7 @@ def city_troy():
             "A Troy City Council agenda item from November 14, 2022, states that Troy discharges wastewater through "
             "three districts: Evergreen-Farmington, Oakland-Troy, and the George W. Kuhn Drainage District, and that "
             "the Oakland County Water Resources Commissioner is responsible for those district facilities. "
-            "That is the verified description. It is not a finding that Troy is fully combined, and it is not a finding "
-            "that Troy is fully separated. One subdivision can sit in a different district from the next. Ask the city "
+            "So Troy is neither fully combined nor fully separated. One subdivision can sit in a different district from the next. Ask the city "
             "which district serves the address before anyone theorizes about the pipe in the street."
         ),
         p(
@@ -678,12 +673,11 @@ def city_troy():
             "Troy tells residents to report an overflow or backup to the Water Division at 248-524-3370 during business "
             "hours. After hours, the city lists Troy Police at 248-524-3477. A written claim goes to the City Attorney's "
             "Office, and state law sets 45 days from discovery. The form, the photos, and the deadline are in the "
-            + _GUIDE + ". The claim goes to the city. A local cleanup crew handles the basement, and they'll tell you when they can be there."
+            + _GUIDE + ". The claim goes to the city. A local cleanup crew handles the basement."
         ),
         p(
-            "Use " + phone_link()
-            + " for a local cleanup or pump crew. They'll tell you when they can be there. "
-            "If no provider is available, there is no visit that day. The price and the arrival come from the company you hire."
+            "For pumping, drying, or cleanup inside the house, call " + phone_link()
+            + " and describe the room: finished lower level, carpet, and whether a drain backed up."
         ),
         h2("Houses from the 1960s and 1970s"),
         p(
@@ -710,8 +704,8 @@ def city_troy():
         p(
             "Stop running water. Keep people and pets off the lower level. Do not snake a drain that is producing sewage. "
             "Leave the room if water is near outlets. Photograph the water before carpet is pulled. Ask the insurer whether "
-            "sewer backup is endorsed and whether groundwater is covered. Those are different questions. The company you "
-            "hire should give you a written scope. You check their license and insurance yourself. The "
+            "sewer backup is endorsed and whether groundwater is covered. Those are different questions. The crew "
+            "should give you a written scope. You check their license and insurance yourself. The "
             + _CHECK + " is the sheet to print before the next storm, with Troy's numbers already on it."
         ),
         h2("If the house is not actually in Troy"),
@@ -747,7 +741,7 @@ def city_birmingham():
         p(
             "Housing on these pages is early- to mid-1900s: plaster, trim, and tree-lined laterals around Shain Park and "
             "Old Woodward, Maple Road, Poppleton Park, and Quarton Lake. Low ground near Quarton is not the same lot as a "
-            "house up by downtown. A local cleanup crew handles the visit, and they'll tell you when they can be there."
+            "house up by downtown. A local cleanup crew handles the visit."
         ),
         h2("What the city tells homeowners to change at the house"),
         p(
@@ -763,7 +757,7 @@ def city_birmingham():
             "through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. State law "
             "still requires written notice within 45 days of discovery. The city's claim form lives on the city's site. The "
             + _GUIDE + " explains the deadline and what to document. "
-            "Call " + phone_link() + " for a local cleanup crew. They'll tell you when they can be there."
+            "Call " + phone_link() + " for a local cleanup crew."
         ),
         h3("August 24, 2023"),
         p(
@@ -787,10 +781,10 @@ def city_birmingham():
         ),
         h2("Records to keep, and the hazard in the stair"),
         p(
-            "Keep people out. Do not cut out wet plaster or drywall before the company you hire has seen it. "
+            "Keep people out. Do not cut out wet plaster or drywall before the crew has seen it. "
             "Sewage-soaked material is contaminated, and opening walls can spread it. Photograph rooms first. "
-            "Ask the insurer about a sewer-backup endorsement. Ask the provider for a written scope, the price, "
-            "and proof of license and insurance. A local crew does the work, and they'll tell you when they can be there. The "
+            "Ask the insurer about a sewer-backup endorsement. Ask the crew for a written scope, the price, "
+            "and proof of license and insurance. A local crew does the work. The "
             + _CHECK + " is the printable list for the next storm, including (248) 530-1703 so it is not confused "
             "with the claims number."
         ),
@@ -818,13 +812,11 @@ def city_berkley():
             "Berkley's flood-tips page describes a combined sewer system: a single pipe for stormwater and sewage, "
             "entirely gravity-based, with no pumps and no valves. Streets are designed to hold water so that flow "
             "enters the pipe more slowly. Restrictor covers in catch basins are part of that design. Ponding at the "
-            "curb during a hard rain is something the city describes on purpose. It is not, by itself, proof that a "
-            "crew forgot a pump. There is no city pump to forget."
+            "curb during a hard rain is something the city describes on purpose. It is not, by itself, a sign that something in the system failed."
         ),
         p(
             "The city says it spends up to 800,000 dollars a year on structural lining, and that about 35 percent of "
-            "the system has been lined over more than 20 years. That is a maintenance fact from the city page, not a "
-            "price for cleaning a basement and not a promise about any particular street. Lining stays with the city. A local cleanup crew handles the basement, and they'll tell you when they can be there."
+            "the system has been lined over more than 20 years. Lining is city work on the city's pipe; it does not clean a basement that has already taken water."
         ),
         h2("Flow leaves toward the Clinton, not the Rouge"),
         p(
@@ -839,7 +831,7 @@ def city_berkley():
             "Berkley says to report basement flooding to Public Works at 248-658-3490, and it posts a Sewer Backup "
             "Claims Form. Written notice under state law is due within 45 days of discovery. The " + _GUIDE
             + " walks through that letter. It is not the same step as hiring a cleanup company. For the company, call "
-            + phone_link() + ". A local crew handles the visit, and they'll tell you when they can be there."
+            + phone_link() + ". A local crew handles the visit."
         ),
         h2("Bungalow basements, and the help that fits"),
         p(
@@ -864,7 +856,7 @@ def city_berkley():
         p(
             "Ask your insurer whether sewer backup is endorsed. A combined system that surcharges in the rain is the "
             "situation those endorsements are written for, but the endorsement still has to be on your form. Photograph "
-            "the drain, the stair, and the water line. Keep a list of what is discarded. The provider's written scope "
+            "the drain, the stair, and the water line. Keep a list of what is discarded. The crew's written scope "
             "is the document that should match that list. Ask the company for license and insurance. Print the " + _CHECK + " before spring storms. It already includes 248-658-3490."
         ),
         h2("The next city over uses a different sewer"),
@@ -908,7 +900,7 @@ def city_clawson():
         ),
         p(
             "For cleanup inside the house, call " + phone_link()
-            + ". A local crew handles the visit, and they'll tell you when they can be there. The price comes from that company."
+            + ". A local crew handles the visit. The price comes from that company."
         ),
         h2("Small lots, one-room basements, and the matching help"),
         p(
@@ -935,7 +927,7 @@ def city_clawson():
             "damage if you want a government claim to remain possible. How to write it, and what Clawson has posted, is "
             "in the " + _GUIDE + ". Your homeowners policy is a second conversation: sewer backup is often excluded "
             "without an endorsement. Ask the insurer. Photograph the room before the furnace is moved or the pad is "
-            "thrown out. The provider's license and insurance are yours to verify. The " + _CHECK
+            "thrown out. The crew's license and insurance are yours to verify. The " + _CHECK
             + " is worth printing because Friday closures and the dispatch extension are easy to forget during a storm."
         ),
         h2("Royal Oak and Troy are the neighbors, not the same phone tree"),
@@ -973,7 +965,7 @@ CITY_H1 = {
 }
 
 CITY_HERO = {
-    "royal-oak": "Royal Oak's Sewer Division maintains about 300 miles of public sewer and publishes the basement-water phone line. For the cleanup inside the house, a local cleanup crew handles the visit, and they'll tell you when they can be there.",
+    "royal-oak": "Royal Oak's Sewer Division maintains about 300 miles of public sewer and publishes the basement-water number. For the cleanup inside the house, a local cleanup crew handles the visit, and they'll tell you when they can be there.",
     "troy": "Troy discharges wastewater through three districts, not one system you can label combined or separated. For basement water in a 1960s or 1970s house, a local cleanup crew handles the visit, and they'll tell you when they can be there. Troy's Water Division is a different number, listed below.",
     "birmingham": "Birmingham's sewers are gravity, and the city owns no pump or lift stations. Older areas are combined. If the lower level is wet, a local cleanup crew handles the visit, and they'll tell you when they can be there.",
     "berkley": "Berkley's sewer is a single combined pipe, entirely gravity, with no city pumps or valves. If the bungalow basement is wet, a local cleanup crew handles the visit, and they'll tell you when they can be there.",
@@ -981,7 +973,7 @@ CITY_HERO = {
 }
 
 CITY_DESC = {
-    "royal-oak": "Royal Oak, MI sewer backup, water damage, and flooded basement help. A phone line. Call {PHONE_DISPLAY}.",
+    "royal-oak": "Royal Oak, MI sewer backup, water damage, and flooded basement help. A number. Call {PHONE_DISPLAY}.",
     "troy": "Troy, MI sewer backup, sump pump, and water damage help. Local crews. Call {PHONE_DISPLAY}.",
     "birmingham": "Birmingham, MI sewer and water damage help for older homes. Local crews. Call {PHONE_DISPLAY}.",
     "berkley": "Berkley, MI sewer backup and flooded basement help for bungalows. Call {PHONE_DISPLAY}.",
@@ -990,48 +982,33 @@ CITY_DESC = {
 
 CITY_FAQS = {
     "royal-oak": [
-        (
-            "Which Royal Oak number is the city, and which is this phone line?",
-            "City basement-water calls use (248) 246-3300 on weekdays, 7:30 a.m. to 4:00 p.m. After hours, Royal Oak police non-emergency (248) 246-3500 dispatches sewer personnel. (248) 825-8312 reaches a local cleanup crew for the house. It does not dispatch the Sewer Division. They'll tell you when they can be there.",
-        ),
+        ("Which number does Royal Oak use for the city sewer?", "(248) 246-3300 on weekdays, 7:30 a.m. to 4:00 p.m. After hours, the police non-emergency line (248) 246-3500 dispatches sewer personnel. The city checks the main in the street."),
         (
             "Who owns the sewer lateral in Royal Oak?",
-            "The city says it is responsible for the main, and the homeowner for the lateral up to and including the connection. A cleanup company should not guess which failed. A camera inspection is arranged with a plumber or the city, not with this website.",
+            "The city says it is responsible for the main, and the homeowner for the lateral up to and including the connection. A cleanup company should not guess which failed. A camera inspection is arranged with a plumber or the city, not with these pages.",
         ),
         (
             "Did the August 2014 federal disaster declaration include Oakland County?",
-            "Yes. FEMA-4195-DR was declared September 25, 2014, for Macomb, Oakland, and Wayne counties. A next-day report said Royal Oak's DPS gauge recorded 4.98 inches on August 11, with 1.12 inches in 30 minutes. This page does not state how many homes were damaged.",
+            "Yes. FEMA-4195-DR was declared September 25, 2014, for Macomb, Oakland, and Wayne counties. A next-day report said Royal Oak's DPS gauge recorded 4.98 inches on August 11, with 1.12 inches in 30 minutes. The reports do not give a count of damaged homes.",
         ),
         (
             "Which Royal Oak page should I open if the floor drain never moved?",
             "Open flooded basement cleanup when the water is from a storm, a window well, or a sump. Open water damage restoration if finishes are already soaked. Open sewer backup cleanup only when sewage came up through a drain, a basement toilet, or a laundry standpipe.",
         ),
-        (
-            "What happens when a Royal Oak homeowner calls (248) 825-8312?",
-            "The call a local cleanup crew handles the visit when one is participating. They work inside the house. The Sewer Division is a different call. Ask the company for a written scope and for license and insurance. If you are notifying the city about a sewage event, written notice is due within 45 days of discovery.",
-        ),
+        ("Does the George W. Kuhn basin keep my Royal Oak basement dry?", "Not by itself. Royal Oak's flood-response page says the city is in the former Twelve Towns program, now the George W. Kuhn Retention Treatment Basin, expanded in 2006. That does not tell you whether your lateral or the street main failed. If you believe the city is involved, send written notice within 45 days of discovery."),
     ],
     "troy": [
         (
             "Is Troy on one combined sewer?",
             "No single label fits. A November 14, 2022 City Council agenda item says Troy discharges wastewater through the Evergreen-Farmington, Oakland-Troy, and George W. Kuhn districts, with the Oakland County Water Resources Commissioner responsible for those facilities. Do not describe the city as fully combined or fully separated.",
         ),
-        (
-            "What number does Troy publish for a sewer backup?",
-            "The Water Division, 248-524-3370, during business hours. After hours, Troy Police at 248-524-3477. The number on this website, (248) 825-8312, is not that desk. It is a phone line to local crews.",
-        ),
-        (
-            "Where does a written Troy sewer claim go?",
-            "Troy directs written claims to the City Attorney's Office. State law sets 45 days from discovery. The claim guide on this site outlines the notice. A local crew does not write or file that letter.",
-        ),
+        ("What number does Troy publish for a sewer backup?", "The Water Division, 248-524-3370, during business hours. After hours, Troy Police at 248-524-3477."),
+        ("Where does a written Troy sewer claim go?", "To the City Attorney's Office. State law sets 45 days from discovery. The sewer backup claim guide lists what to include."),
         (
             "Which page fits a wet Troy lower level if the drains stayed quiet?",
             "Flooded basement cleanup for the water removal, water damage restoration if carpet and finishes have to be dried, and sump pump repair if the pit is what failed. Sewer backup cleanup is for sewage that came out of a drain.",
         ),
-        (
-            "What happens when I call (248) 825-8312 from a Troy house?",
-            "A local cleanup or pump crew handles the house, and they'll tell you when they can be there. The price comes from that crew. The number is not the Water Division and it is not the City Attorney's Office. Most of the wet basements are in 1960s and 1970s houses, including split-levels near Big Beaver, not the stores at Somerset.",
-        ),
+        ("Is Troy a combined sewer city?", "Not as a whole. A November 14, 2022 Troy City Council agenda item says Troy discharges wastewater through three districts: Evergreen-Farmington, Oakland-Troy, and the George W. Kuhn Drainage District. Ask the Water Division which one serves your address."),
     ],
     "birmingham": [
         (
@@ -1046,10 +1023,7 @@ CITY_FAQS = {
             "What rainfall were the older Birmingham sewers designed for?",
             "The city says combined and storm sewers were historically designed for about 2 inches of rain in one hour, which it calls a 10-year storm. A late-1990s bond financed relief sewers in part of the city. That is not a statement that every street was rebuilt.",
         ),
-        (
-            "What does the city suggest homeowners do at the house?",
-            "The FAQ lists a backflow preventer, downspouts disconnected and extended about 6 feet, and grading away from the foundation. Those are prevention steps. They are not a cleanup of water that is already inside. Call (248) 825-8312 to reach a local cleanup crew for the house when one is available.",
-        ),
+        ("What does the city suggest homeowners do at the house?", "The FAQ lists a backflow preventer, downspouts disconnected and extended about 6 feet, and grading away from the foundation. Those prevent water; they do not remove water already inside. For that, call (248) 825-8312."),
         (
             "Do early Birmingham houses show up in backups more often?",
             "The housing on these pages is early- to mid-1900s, with plaster, trim, and older laterals around Shain Park, Old Woodward, Maple, Poppleton Park, and Quarton. A camera, not a guess, confirms a lateral. Written notice for a sewage event is still due within 45 days of discovery, separate from any sewer-backup endorsement on your policy.",
@@ -1064,23 +1038,17 @@ CITY_FAQS = {
             "Does Berkley's flow go to the Rouge River?",
             "No. Flow from this system goes toward the Clinton River side, through the George W. Kuhn district and the Red Run Drain. Berkley is one of the communities that district serves.",
         ),
-        (
-            "What number does Berkley give for basement flooding?",
-            "Public Works, 248-658-3490. The city also posts a Sewer Backup Claims Form. The call number (248) 825-8312 is for a local cleanup crew, not for Public Works.",
-        ),
+        ("What number does Berkley give for basement flooding?", "Public Works, 248-658-3490. The city also posts a Sewer Backup Claims Form. For cleanup inside the house, call (248) 825-8312."),
         (
             "How much of Berkley's sewer has been lined?",
             "The city says about 35 percent of the system has been lined over more than 20 years, and that it spends up to 800,000 dollars a year on structural lining. That figure is the city's maintenance spending, not a cleanup price.",
         ),
-        (
-            "What happens when I call (248) 825-8312 from a Berkley bungalow?",
-            "A local cleanup crew handles the visit when one is available. Tell them the basement is short. The city's claims form and the 45-day written notice stay with you. A sewer-backup endorsement, if you have one, is a question for your insurer, not for Public Works.",
-        ),
+        ("Does Berkley's sewer lining program protect my basement?", "Not directly. Berkley says it spends up to 800,000 dollars a year on structural lining and has lined about 35 percent of the system over more than 20 years. That is work on the city's pipe. Water already in your basement is a separate cleanup."),
     ],
     "clawson": [
         (
             "What are Clawson DPW days for sewer questions?",
-            "Monday through Thursday, 7:00 a.m. to 3:30 p.m. The department is closed on Fridays. The city main line listed on the sewer page is (248) 435-4500. This website does not publish a street address for city hall.",
+            "Monday through Thursday, 7:00 a.m. to 3:30 p.m. The department is closed on Fridays. The city main line listed on the sewer page is (248) 435-4500. These pages do not publish a street address for city hall.",
         ),
         (
             "Who answers Clawson's after-hours line?",
@@ -1094,19 +1062,13 @@ CITY_FAQS = {
             "Which Clawson page should a one-room basement open first?",
             "If sewage came up the floor drain, open sewer backup cleanup. If the furnace room is wet from a storm or a sump and the drain stayed quiet, open flooded basement cleanup. If you only need the pump looked at, open sump pump repair, and add water damage restoration if finishes are soaked.",
         ),
-        (
-            "What happens when a Clawson homeowner calls (248) 825-8312?",
-            "A local cleanup crew handles the visit when one is participating. Describe the tight lot. Written notice, if you believe the public sewer caused the damage, is due within 45 days of discovery. Ask the city in writing who receives that notice. Your insurance rider is a separate call.",
-        ),
+        ("Where does Clawson's sewer flow in a heavy storm?", "Clawson's sewer page points to the George W. Kuhn Retention Treatment Basin and the Oakland County Water Resources Commissioner. The basin, under I-75 at 12 Mile in Madison Heights, can hold and treat 150 million gallons and sends treated flow to the Red Run Drain."),
     ],
 }
 
 HUB_FAQS = {
     "services": [
-        (
-            "Which job should I describe when I call?",
-            "Say whether the water came from a floor drain, a sump, or a storm, and name the city. A local cleanup crew handles that visit, and they'll tell you when they can be there. Ask the crew for the license and insurance the job requires, and for a written scope.",
-        ),
+        ("Which job should I describe when I call?", "Whether the water came from a floor drain, a sump, or a storm, and your city. Ask the crew for proof of license and insurance and a written scope."),
         (
             "Which page should I open first?",
             "If sewage came up a drain, open sewer backup cleanup. If the water is storm or sump water and the drains stayed quiet, open flooded basement cleanup. If materials are already soaked, open water damage restoration. Then open the city page for the house.",
@@ -1115,20 +1077,14 @@ HUB_FAQS = {
             "Which Oakland County cities does this line cover?",
             "Royal Oak, Troy, Birmingham, Berkley, and Clawson. Each has its own sewer description. Berkley's pipe is combined and gravity. Troy discharges through three districts. Birmingham's system is gravity with no city pump stations. Use the city where the house stands.",
         ),
-        (
-            "What happens when I call (248) 825-8312?",
-            "Say the city and whether the water came from a drain, a sump, or a storm. A local crew handles the visit, and they'll tell you when they can be there. Ask for a written scope, the price, and proof of license and insurance.",
-        ),
+        ("Is sewage extraction the same as sanitizing?", "No. Extraction pumps out the contaminated water and removes soaked material. Sanitizing cleans and disinfects what remains after the water is gone. After a sewer backup you usually need both, in that order."),
         (
             "Is the George W. Kuhn district the same as my city's sewer?",
             "It is the regional district upstream of the Red Run Drain. It serves all or part of 14 communities, including Berkley, Birmingham, Clawson, Royal Oak, and Troy, about 24,500 acres. It does not tell you whether the street main or your lateral failed today. Ask your city.",
         ),
     ],
     "water-damage-restoration": [
-        (
-            "What does water damage restoration mean on this site?",
-            "Removing standing water, discarding porous materials that cannot be saved, and drying what remains. A local crew does it. A local crew does that work. This site does not quote a price.",
-        ),
+        ("What does water damage restoration include?", "Removing standing water, discarding porous materials that cannot be saved, and drying what remains. If the water came from a sewer drain, the cleanup is stricter: carpet pad, insulation, and swollen drywall usually come out."),
         (
             "Is sewage handled the same way as a supply-line leak?",
             "No. Sewage is heavily contaminated water. Carpet pad and wet drywall usually come out. A clean supply-line break can be a smaller scope. Say which water you have when you call.",
@@ -1141,10 +1097,7 @@ HUB_FAQS = {
             "Which Oakland County storm is the documented regional example?",
             "FEMA-4195-DR was declared September 25, 2014, for Macomb, Oakland, and Wayne counties, after storms on August 11 through 13. A National Weather Service paper describes about 4 to 6.5 inches in parts of those counties, mostly in about four hours. That is a county storm record, not a count of damaged houses.",
         ),
-        (
-            "What happens when I call about water damage in Oakland County?",
-            "Call (248) 825-8312 and say the city and whether the water came from a drain, a sump, or a storm. A local crew handles the visit when one is participating. They set the drying plan and the price.",
-        ),
+        ("What should I tell the crew about water damage?", "The city and whether the water came from a drain, a sump, or a storm. Ask for the drying plan and the price in writing before work starts."),
     ],
     "sewer-backup-cleanup": [
         (
@@ -1163,27 +1116,21 @@ HUB_FAQS = {
             "Why does heavy rain show up in these Oakland County basements?",
             "In a combined system, sanitary sewage and stormwater share pipes. The George W. Kuhn district's wet-weather flow is typically more than 93 percent stormwater. The retention basin under the I-75 overpass at 12 Mile Road in Madison Heights can hold and treat 150 million gallons. Those figures describe the district, not a single house.",
         ),
-        (
-            "What happens when I call (248) 825-8312 for a sewer backup?",
-            "A local cleanup crew handles the visit when one is available. Keep people and pets out of the water while you wait. Also call the city number for your city if the backup may be the main in the street.",
-        ),
+        ("Is a sewer backup my pipe or the city's?", "It depends where the blockage is. The city generally handles the main in the street and the homeowner the lateral in the yard; Royal Oak says the homeowner's part runs up to and including the connection. If water is still coming in, call your city's sewer number so it can check the main."),
     ],
     "sewage-extraction": [
-        (
-            "Can I shop-vac sewage myself?",
-            "No. A household vac sprays contaminated water onto stairs, joists, and anyone standing nearby. Extraction on these pages means a local crew equipped for wastewater.",
-        ),
+        ("Can I shop-vac sewage myself?", "No. A household vac sprays contaminated water onto stairs, joists, and anyone standing nearby. Sewage needs pumps built for wastewater."),
         (
             "Does extraction include sanitizing?",
             "Pumping and removing soaked porous materials come first. Cleaning what remains is the basement sanitization page. A fogger is not a substitute for throwing away a soaked pad.",
         ),
         (
             "Where should the wastewater go?",
-            "The company you hire should say where they will take it. Do not pump sewage into a street gutter or a storm drain yourself.",
+            "The crew should say where they will take it. Do not pump sewage into a street gutter or a storm drain yourself.",
         ),
         (
             "Should I call the city and an extraction company?",
-            "Yes, if you suspect the public main. Royal Oak, for example, takes basement-water calls at (248) 246-3300 on weekdays. The extraction company removes water from the house. Call (248) 825-8312 to reach that company when one is available. They are not substitutes for each other.",
+            "Yes, if you suspect the public main. Royal Oak, for example, takes basement-water calls at (248) 246-3300 on weekdays. The extraction company removes water from the house. Call (248) 825-8312 to reach that company. They are not substitutes for each other.",
         ),
         (
             "Does pumping the basement file the 45-day notice?",
@@ -1193,16 +1140,13 @@ HUB_FAQS = {
     "flooded-basement-cleanup": [
         (
             "When is this the wrong page?",
-            "When sewage came up a drain. That is sewer backup cleanup and sewage extraction. This page is storm water, window wells, surface water, and sump overflows.",
+            "When sewage came up a drain. That is sewer backup cleanup and sewage extraction. The job is storm water, window wells, surface water, and sump overflows.",
         ),
         (
             "Did FEMA declare a disaster for the August 2014 storms?",
-            "Yes. FEMA-4195-DR was declared September 25, 2014, for Macomb, Oakland, and Wayne counties. A National Weather Service paper describes about 4 to 6.5 inches in parts of those counties, mostly in about four hours. This site does not publish a house-by-house damage count.",
+            "Yes. FEMA-4195-DR was declared September 25, 2014, for Macomb, Oakland, and Wayne counties. A National Weather Service paper describes about 4 to 6.5 inches in parts of those counties, mostly in about four hours. Those reports do not give a house-by-house damage count.",
         ),
-        (
-            "Who removes the water?",
-            "A local crew, when one is available. Call (248) 825-8312 and say your city. How soon they can come depends on that company. They bring the pumps.",
-        ),
+        ("Who removes the water?", "A local cleanup crew with pumps and drying equipment. Call (248) 825-8312 and say your city and whether a drain was involved."),
         (
             "Does a flooded Oakland County basement always mean the George W. Kuhn district?",
             "No. The district serves all or part of Berkley, Birmingham, Clawson, Royal Oak, and Troy, among 14 communities, upstream of the Red Run Drain. A window well or a dead sump can flood a basement on a street that never surcharged. Describe what you saw.",
@@ -1213,10 +1157,7 @@ HUB_FAQS = {
         ),
     ],
     "sump-pump-repair": [
-        (
-            "Is sump pump repair the main service on this line?",
-            "No. The phone line is built around sewer backup and water damage. This page explains a failed pump so it is not confused with a sewer backup, and so a wet floor is not ignored.",
-        ),
+        ("Can a failed sump pump cause a sewer backup?", "Not by itself. A sump lifts groundwater out of a pit; a sewer backup comes up a floor drain or fixture. In a storm both can happen at once. If the water smells like sewage, treat all of it as sewage."),
         (
             "Does Birmingham, Michigan, operate city sewage pump stations?",
             "No. Birmingham says its sewer system is gravity and that the city owns no pump or lift stations. A sump in a Birmingham basement is the homeowner's equipment.",
@@ -1229,10 +1170,7 @@ HUB_FAQS = {
             "Does Berkley's city sewer include my sump pump?",
             "No. Berkley describes its municipal sewer as gravity, with no pumps and no valves. A household sump is a private machine in the basement. If the floor drain also backed up, that combined pipe is a city call to Public Works at 248-658-3490.",
         ),
-        (
-            "What happens when I call (248) 825-8312 about a dead pump?",
-            "A local crew handles the visit when one is available. Say whether the floor is already wet and whether the water is clear. The price for the pump comes from that company.",
-        ),
+        ("What should I do when the sump pump stops?", "Do not step into water near outlets or the panel. From a dry step, check whether the pit is overflowing and whether the floor drain is involved. Clear overflow needs the pump fixed and the water removed; drain water is sewage. Call (248) 825-8312."),
     ],
     "basement-sanitization": [
         (
@@ -1251,9 +1189,6 @@ HUB_FAQS = {
             "Should sewage residue in a combined-sewer city be cleaned like rainwater?",
             "No. Berkley, for example, describes a single pipe for stormwater and sewage. If that pipe pushed wastewater into the basement, treat the residue as sewage. Birmingham's older areas are also described as combined. Confirm the street with the city.",
         ),
-        (
-            "What happens when I call (248) 825-8312 for basement sanitizing?",
-            "A local crew handles the visit when one is available. Ask what they will throw away and what product they will use. If standing sewage is still on the floor, extraction comes first.",
-        ),
+        ("What should I ask before a basement is sanitized?", "Ask what they will throw away, what product they will use, and which surfaces they will treat. If standing sewage is still on the floor, extraction comes first."),
     ],
 }

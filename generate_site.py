@@ -131,22 +131,21 @@ def git_lastmod(path):
 
 # Extra clauses used only to land unique descriptions in the 140–155 character window.
 _META_TAILS = [
-    " You confirm the provider's license and insurance.",
-    " Ask the company for license and insurance.",
+    " Ask the crew for license and insurance.",
+    " Ask the cleanup company for license and insurance.",
     " Verify license and insurance before hiring.",
     " You check license and insurance yourself.",
-    " The provider sets the price, not this site.",
+    " The crew sets the price.",
     " A local crew does the cleanup.",
-    " Availability depends on the provider.",
     " No arrival time is promised.",
-    " We do not quote a price.",
+    " The crew quotes the price.",
     " Call to reach a local crew.",
-    " The form on this site is not stored.",
+    " The form is not stored.",
     " A local crew does the work.",
     " The crew handles the restoration work.",
-    " You hire the provider directly.",
-    " Scope and price come from the provider.",
-    " No office address is listed, on purpose.",
+    " The crew sets the scope and the price.",
+    " Scope and price come from the crew.",
+    " No office address is listed.",
 ]
 
 
@@ -217,10 +216,7 @@ def emit_city_service(city_slug, service_slug, title, h1, description, hero, art
         faqs=faqs,
         service={
             "name": f"{label} in {city}, Michigan",
-            "description": (
-                f"A local crew handles {label.lower()} in {city}, Michigan. "
-                f"They will tell you when they can be there."
-            ),
+            "description": f"A local crew handles {label.lower()} in {city}, Michigan.",
             "area": city,
         },
         priority=priority,
@@ -272,7 +268,7 @@ def home_body():
     home_faqs = [
         (
             "What should I do before a crew arrives?",
-            "Stop using water. Keep people and pets out of the flooded area. Do not snake a sewage backup with a household tool, and do not wade in if the water has reached outlets, the panel, or the furnace. A local cleanup crew handles the visit, and they'll tell you when they can be there. Ask for a written scope, the price, and proof of license and insurance.",
+            "Stop using water. Keep people and pets out of the flooded area. Do not snake a sewage backup with a household tool, and do not wade in if the water has reached outlets, the panel, or the furnace. Then call (248) 825-8312 and say your city and whether a drain backed up.",
         ),
         (
             "Which Oakland County cities have their own sewer pages?",
@@ -291,14 +287,13 @@ def home_body():
             "Not automatically. Sewer backup is often excluded unless the policy has an endorsement, and groundwater is often limited. Ask your insurer. Photograph the water before anything is thrown away.",
         ),
     ]
-    lead = f"""<p>If sewage or floodwater is in your basement in Oakland County, it needs to be handled now. Call {esc(PHONE_DISPLAY)}. A local cleanup crew handles the visit, and they'll tell you when they can be there.</p>"""
     services = f"""<section id="services" class="py-16 bg-gray-50 text-slate-900 px-4">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-outfit font-extrabold text-center mb-10">Cleanup help you can call for</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <a href="/water-damage-restoration" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Water damage restoration</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">Extraction, drying, and water damage repair decisions after a flood or backup. The provider you hire sets the scope.</p>
+                    <p class="text-sm text-gray-700 leading-relaxed">Extraction, drying, and water damage repair decisions after a flood or backup. Get the scope in writing before work starts.</p>
                 </a>
                 <a href="/sewer-backup-cleanup" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Sewer backup cleanup</h3>
@@ -306,7 +301,7 @@ def home_body():
                 </a>
                 <a href="/sewage-extraction" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Sewage extraction</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">Removing contaminated water. A household vac spreads it. An outside company should do this work.</p>
+                    <p class="text-sm text-gray-700 leading-relaxed">Removing contaminated water with pumps and protective gear built for sewage. A household vac only spreads it.</p>
                 </a>
                 <a href="/flooded-basement-cleanup" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Flooded basement cleanup</h3>
@@ -314,7 +309,7 @@ def home_body():
                 </a>
                 <a href="/sump-pump-repair" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Sump pump repair</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">A stuck, dead, or overflowing pump. The company you hire quotes the parts and the labor.</p>
+                    <p class="text-sm text-gray-700 leading-relaxed">A stuck, dead, or overflowing pump. If the floor is already wet, you need the water removed as well as the repair.</p>
                 </a>
                 <a href="/basement-sanitization" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Basement sanitization</h3>
@@ -332,12 +327,12 @@ def home_body():
                     <p class="text-sm text-gray-300 leading-relaxed">Call the number above and say your city and whether the water came from a drain, a sump, or a storm.</p>
                 </div>
                 <div class="bg-slate-950 border border-slate-800 p-6 rounded-2xl">
-                    <h3 class="text-white font-bold font-outfit mb-2">2. A crew answers</h3>
-                    <p class="text-sm text-gray-300 leading-relaxed">A local crew handles the visit, and they'll tell you when they can be there.</p>
+                    <h3 class="text-white font-bold font-outfit mb-2">2. A local crew takes the job</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">They look at the water, tell you what has to come out, and say when they can be there.</p>
                 </div>
                 <div class="bg-slate-950 border border-slate-800 p-6 rounded-2xl">
-                    <h3 class="text-white font-outfit font-bold mb-2">3. You hire the company</h3>
-                    <p class="text-sm text-gray-300 leading-relaxed">Ask for a written scope, the price, and proof of license and insurance. The company you hire does the work.</p>
+                    <h3 class="text-white font-outfit font-bold mb-2">3. Get it in writing</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">Before anyone starts, ask for a written scope, the price, and proof of license and insurance.</p>
                 </div>
             </div>
         </div>
@@ -394,7 +389,7 @@ def home_body():
     form = f"""<section id="contact" class="py-16 bg-slate-900 px-4">
         <div class="max-w-xl mx-auto bg-slate-950 border border-slate-800 p-8 rounded-2xl">
             <h2 class="text-2xl font-outfit font-bold text-white mb-2">Call first</h2>
-            <p class="text-sm text-gray-300 mb-6">Calling {esc(PHONE_DISPLAY)} is how you reach a provider. This form only opens a confirmation screen.</p>
+            <p class="text-sm text-gray-300 mb-6">Calling {esc(PHONE_DISPLAY)} is how you reach a crew. This form only opens a confirmation screen.</p>
             {form_fields(id_prefix="home")}
         </div>
     </section>"""
@@ -406,7 +401,7 @@ def home_body():
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-7">
                     <h1 class="text-3xl md:text-5xl font-outfit font-extrabold text-white leading-tight">24/7 Emergency Sewer Backup Cleanup &amp; Sewage Extraction in Oakland County, MI</h1>
-                    <p class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed">Sewage or floodwater in an Oakland County basement needs a cleanup company now. A local crew handles the cleanup for sewer backup, sewage cleanup, basement flood cleanup, and water damage restoration, and they'll tell you when they can be there.</p>
+                    <p class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed">Sewage or floodwater in an Oakland County basement needs a cleanup company now. A local crew handles the cleanup for sewer backup, sewage cleanup, basement flood cleanup, and water damage restoration. They'll tell you when they can be there.</p>
                     <p class="text-sm text-gray-300 mt-4 leading-relaxed">County pages: <a class="text-red-400 underline" href="/sewer-backup-cleanup">sewage cleanup and sewer backup in Oakland County</a>, <a class="text-red-400 underline" href="/flooded-basement-cleanup">basement flood cleanup in Oakland County</a>, and <a class="text-red-400 underline" href="/water-damage-restoration">water damage restoration</a>. If a drain backed up, that is sewage, not a rain flood.</p>
                     <div class="mt-8">{call_button()}</div>
                 </div>
@@ -501,7 +496,7 @@ def main():
             faqs=faqs,
             service={
                 "name": f"Sewer and water help in {city}, Michigan",
-                "description": f"A local crew handles sewer and water damage in {city}. They will tell you when they can be there.",
+                "description": f"A local crew handles sewer and water damage in {city}.",
                 "area": city,
             },
             priority="0.8",
@@ -513,7 +508,7 @@ def main():
         ("sewer-backup-cleanup", "Sewage Cleanup & Sewer Backup in Oakland County", "Sewage cleanup and sewer backup in Oakland County, MI, including a backup drain. Call {PHONE_DISPLAY}.", "Sewage cleanup and sewer backup in Oakland County, MI", "Sewage is in the basement and it needs to come out. A local cleanup crew handles the visit, and they'll tell you when they can be there. Open your city's page for the local steps.", sewer_hub(), "0.8"),
         ("sewage-extraction", "Sewage Extraction Oakland County MI | Oakland Sewer Pros", "Sewage extraction help in Oakland County, MI. A local crew handles the work. Call {PHONE_DISPLAY}.", "Sewage extraction in Oakland County, MI", "Contaminated water is in the basement and it has to be pumped out. A local cleanup crew handles the visit, and they'll tell you when they can be there.", sewage_hub(), "0.8"),
         ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup and flooded basement water removal in Oakland County, MI. Call {PHONE_DISPLAY}.", "Basement flood cleanup in Oakland County, MI", "Standing water from a storm or a sump is in the basement. A local cleanup crew handles the visit, and they'll tell you when they can be there. If a drain backed up, tell them it is sewage.", flood_hub(), "0.8"),
-        ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, Michigan. Birmingham means Michigan, not Alabama. Call {PHONE_DISPLAY}.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump has left the basement wet. A local crew handles the visit, and they'll tell you when they can be there. Birmingham on this site is in Michigan.", sump_hub(), "0.8"),
+        ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, Michigan. Birmingham means Michigan, not Alabama. Call {PHONE_DISPLAY}.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump has left the basement wet. A local crew handles the visit, and they'll tell you when they can be there. Birmingham on these pages is in Michigan.", sump_hub(), "0.8"),
         ("basement-sanitization", "Basement Sanitization Oakland County | Oakland Sewer Pros", "Basement sanitizing after sewage or a flood in Oakland County, MI. Local crews. Call {PHONE_DISPLAY}.", "Basement sanitization after sewage or flooding", "The water is out and the basement still needs cleaning after sewage or a flood. A local cleanup crew handles the visit, and they'll tell you when they can be there. Extraction comes first if the water is still there.", sanit_hub(), "0.8"),
     ]
     for path, title, description, h1, lead, article, priority in hub_pages:
@@ -524,7 +519,7 @@ def main():
         if path != "services":
             service = {
                 "name": h1,
-                "description": f"A local crew handles this work in Oakland County. They will tell you when they can be there.",
+                "description": f"A local crew handles this work in Oakland County.",
                 "area": "Oakland County, Michigan",
             }
         crumbs = [("Home", "/"), ("Services", "/services"), (h1, None)] if path != "services" else [("Home", "/"), ("Services", None)]
@@ -547,7 +542,7 @@ def main():
 
     remember(
         "about",
-        "About Oakland Sewer Pros | Referral Service",
+        "About Oakland Sewer Pros | Oakland County Sewage Cleanup",
         fill("Oakland Sewer Pros helps Oakland County, MI homeowners reach a local cleanup crew. Call {PHONE_DISPLAY}."),
         prose_body("About Oakland Sewer Pros", f"<p>Honest description of what {esc(BRAND)} is, and what it is not.</p>", about_article(), faqs=ABOUT_FAQS, images=images_for("about")),
         [("Home", "/"), ("About", None)],
@@ -581,7 +576,7 @@ def main():
     remember(
         "terms",
         "Terms of Service | Oakland Sewer Pros",
-        fill("Terms for the Oakland Sewer Pros website in Oakland County, MI. We do not guarantee contractor work. Call {PHONE_DISPLAY}."),
+        fill("Terms for Oakland Sewer Pros in Oakland County, MI. Ask the crew for license and insurance. Call {PHONE_DISPLAY}."),
         prose_body("Terms of Service", "<p>Last updated September 27, 2026.</p>", terms_article(), faqs=TERMS_FAQS, images=images_for("terms")),
         [("Home", "/"), ("Terms", None)],
         faqs=TERMS_FAQS,

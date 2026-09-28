@@ -19,7 +19,7 @@ def royal_oak():
             + a("/royal-oak-sewage-extraction", "sewage extraction")
             + " should be the one that sanitizes, because they already know what got wet. The product and the technician come from that company. "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". A local crew handles the visit, and they'll tell you when they can be there. Ask what product they "
+            + ". A local crew handles the visit. Ask what product they "
             "will use and whether the label allows it on sewage residue. You should not have to take "
             "their word that a bottle is appropriate."
         ),
@@ -51,9 +51,9 @@ def royal_oak():
             "Royal Oak: keep the dirty zone downstairs",
             ul([
                 "Do not carry a mop bucket up to the kitchen sink.",
-                "Clothes that got splashed go in bags. Do not wash them in the family machine with other laundry until you have asked the provider.",
+                "Clothes that got splashed go in bags. Do not wash them in the family machine with other laundry until you have asked the crew.",
                 "Run no fan across a still-contaminated floor.",
-                "Ask the provider what you must throw away before you pay for a 'sanitize in place' visit that cannot work.",
+                "Ask the crew what you must throw away before you pay for a 'sanitize in place' visit that cannot work.",
             ]),
         ),
         p("More context is on " + a("/royal-oak", "the Royal Oak overview") + " and " + a("/royal-oak-sewer-cleanup", "sewer backup cleanup") + "."),
@@ -72,17 +72,17 @@ def troy():
             "has to remove the ruined layers before any disinfectant has a surface it can actually treat."
         ),
         p(
-            "Ask the company you hire what training and insurance they "
+            "Ask the crew what training and insurance they "
             "carry for sewage cleanup. The phone "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". A local crew handles the cleaning, and they'll tell you when they can be there. If the event was a clean sump overflow with no drain backup, "
+            + ". A local crew handles the cleaning. If the event was a clean sump overflow with no drain backup, "
             "say that. The scope is smaller than a sewage loss and may be handled under "
             + a("/troy-flooded-basement", "flooded basement cleanup")
             + " and " + a("/troy-water-damage-restoration", "water damage restoration") + "."
         ),
         h3("Contents versus structure in a Troy lower level"),
         ul([
-            "Structure: studs, sill, drywall, and the slab. The provider decides what is cut out.",
+            "Structure: studs, sill, drywall, and the slab. The crew decides what is cut out.",
             "Contents: toys, bins, and upholstered furniture. Soft items that soaked up sewage are generally discarded, not cleaned.",
             "The bathroom vanity and the hollow base of a built-in can hold water after the floor is dry.",
             "HVAC returns in the lower level can pull odor upstairs. Ask whether the system should stay off.",
@@ -95,7 +95,7 @@ def troy():
             + a("/troy-sewer-cleanup", "Sewer backup cleanup")
             + " is the overview of the backup itself. A failed pump that started the overflow is "
             + a("/troy-sump-pump-repair", "sump pump repair")
-            + ". The provider quotes the work. Ask for that number in writing."
+            + ". The crew quotes the work. Ask for that number in writing."
         ),
         callout(
             "Troy questions worth asking",
@@ -119,7 +119,7 @@ def birmingham():
             "built-ins in houses around Poppleton Park, Quarton, and the streets off Old Woodward and "
             "Maple do not behave like modern painted drywall. Sewage that wicked into the bottom of "
             "plaster is inside the material. A surface wipe of the paint film leaves the contamination "
-            "in place and can trap odor. The provider has to say whether that plaster comes off."
+            "in place and can trap odor. The crew has to say whether that plaster comes off."
         ),
         p(
             "This is not a housekeeping visit and not a 'make the lower level smell better' product "
@@ -131,7 +131,7 @@ def birmingham():
             + " and " + a("/birmingham-flooded-basement", "basement water removal")
             + ". Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " and a local crew handles the visit that does the cleaning, when one is available."
+            + "."
         ),
         h3("Wood trim and what sanitizing cannot promise"),
         ul([
@@ -144,7 +144,7 @@ def birmingham():
         p(
             "Hire a restoration company that will put the scope in writing, including what is discarded. "
             "A janitorial service with a mop is the wrong trade once sewage is involved. Verify license "
-            "and insurance for the work. Those documents come from the company you hire. If a sump pit was part of the contamination, include "
+            "and insurance for the work. Those documents come from the crew. If a sump pit was part of the contamination, include "
             + a("/birmingham-sump-pump-repair", "the pump")
             + " in the discussion so the crock is not the piece left dirty."
         ),
@@ -179,14 +179,14 @@ def berkley():
             + a("/berkley-sewer-cleanup", "sewer backup cleanup in Berkley")
             + ". Pumping the water out is "
             + a("/berkley-sewage-extraction", "sewage extraction in Berkley")
-            + ". Sanitizing starts after that water is out. The company you hire does the cleaning. Call "
+            + ". Sanitizing starts after that water is out. The crew does the cleaning. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " for a call to a local crew."
         ),
         h3("The stair and the first floor"),
         ul([
             "Dirty water on the treads will be walked into the room at the top. Clean the path only after the basement source is controlled, and bag the rags downstairs.",
-            "A furnace return in a bungalow basement will distribute odor. Leave the system off until the provider advises.",
+            "A furnace return in a bungalow basement will distribute odor. Leave the system off until the crew advises.",
             "Panel doors and hollow closet bases on the first floor can wick if the humidity stayed high. Mention them.",
             "A clean flood still needs drying. That scope is " + a("/berkley-flooded-basement", "flooded basement cleanup") + " and " + a("/berkley-water-damage-restoration", "water damage restoration") + ".",
         ]),
@@ -203,7 +203,7 @@ def berkley():
             "Call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " when you need a local crew for that cleaning. Ask what they will remove, "
             "what they will apply, and how they will keep the first floor from being the next dirty "
-            "surface. Insurance questions go to your insurer. The cleaning price comes from the company you hire."
+            "surface. Insurance questions go to your insurer. The cleaning price comes from the crew."
         ),
         h2("Not a substitute for fixing the drain"),
         p(
@@ -218,7 +218,7 @@ def berkley():
             ul([
                 "Do not pour bleach into a basement drain that just backed up. You can splash yourself and you have not cleaned the room.",
                 "Do not run the clothes dryer if the laundry sink overflowed into the machine area.",
-                "Ask the provider whether belongings on shelves above the water line were splashed. Height matters in a low basement.",
+                "Ask the crew whether belongings on shelves above the water line were splashed. Height matters in a low basement.",
                 "Ask the person doing the work which product they are using and why. The label has to fit sewage residue.",
             ]),
         ),
@@ -240,9 +240,9 @@ def clawson():
         p(
             "Cross-contamination is the bungalow problem. There is no long hallway to isolate. The "
             "basement door opens into the house you live in. Bags, boots, and hoses have to be planned "
-            "so sewage does not move upstairs. The company you hire should describe that plan and follow it. Reach a provider through "
+            "so sewage does not move upstairs. Ask the crew to describe that plan before they start. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " when someone is participating. The work is theirs."
+            + "."
         ),
         h3("Sequence that fits a small Clawson basement"),
         ul([
@@ -254,7 +254,7 @@ def clawson():
         h2("Appliances and the pit"),
         p(
             "A washer that filled from a backed-up standpipe is not sanitized by running a cycle. Ask "
-            "the provider whether the machine is a loss. A sump crock that received sewage needs to be "
+            "the crew whether the machine is a loss. A sump crock that received sewage needs to be "
             "emptied and cleaned as part of the job, and the pump may need repair under "
             + a("/clawson-sump-pump-repair", "Clawson sump pump repair")
             + ". Those are restoration and plumbing questions for the companies involved. Tight driveways "
@@ -284,23 +284,23 @@ ARTICLES = {
 
 FAQS = {
     "royal-oak": [
-        ("Is Royal Oak basement sanitization a regular cleaning service?", "No. This page is about cleaning after sewage or a contaminated flood. A dry basement that just needs dusting is not the job."),
+        ("Is Royal Oak basement sanitization a regular cleaning service?", "No. The work is cleaning after sewage or a contaminated flood. A dry basement that just needs dusting is not the job."),
         ("Can I sanitize sewage residue myself with bleach?", "A household mop does not reach contamination inside drywall and pad, and mixing cleaners is unsafe. Have a restoration company remove ruined material and tell you what they are applying to what remains."),
-        ("Why does a Royal Oak basement still smell after it looks clean?", "Odor usually means a porous material was left behind, often the pad, the bottom of the drywall, or the pit. The company on site has to find it. Call (248) 825-8312 to reach a local crew when one is available."),
+        ("Why does a Royal Oak basement still smell after it looks clean?", "Odor usually means a porous material was left behind, often the pad, the bottom of the drywall, or the pit. Ask the crew to find it before they call the job done."),
         ("Does sanitizing a Royal Oak basement replace calling the Sewer Division?", "No. Cleaning the slab does not check the main. Weekday basement-water calls are (248) 246-3300, and after hours (248) 246-3500 dispatches sewer personnel. The city owns the main. You own the lateral through the connection. Written notice, if you are pursuing a sewage event, is due within 45 days of discovery."),
-        ("Does the George W. Kuhn basin clean a Royal Oak basement?", "The basin, formerly Twelve Towns, stores and treats regional combined flow. Royal Oak is a member, and the basin was expanded in 2006. It does not wipe the slab. Sanitizing is the company you hire after the water is out. The Sewer Division can confirm whether your street is an older section built before separated sewers were standard."),
+        ("Does the George W. Kuhn basin clean a Royal Oak basement?", "The basin, formerly Twelve Towns, stores and treats regional combined flow. Royal Oak is a member, and the basin was expanded in 2006. It does not wipe the slab. Sanitizing is the crew after the water is out. The Sewer Division can confirm whether your street is an older section built before separated sewers were standard."),
     ],
     "troy": [
         ("Should a Troy playroom that had sewage be sprayed and kept?", "Soft contents that soaked up sewage are generally thrown away. Spraying the room without removing the pad and the ruined furnishings does not sanitize the lower level."),
-        ("Who sanitizes the basement?", "A local crew does that cleaning, and they'll tell you when they can be there. Ask what they will throw away before anyone sprays the room."),
+        ("What has to come out before a Troy lower level is sanitized?", "Porous material that soaked up sewage, such as carpet, pad, and the bottom of the drywall in a finished lower level. Ask what will be thrown away before anyone sprays."),
         ("Does sanitizing include drying the Troy basement?", "No. Drying is a different part of water damage restoration. Ask for both scopes if the materials are still wet. In a finished lower level near Big Beaver, the pad and the sofa bottom usually have to come out before a cleaner has a surface it can treat."),
         ("Which Troy number is for the city, if the backup is still the question?", "Water Division 248-524-3370 in business hours, and Troy Police 248-524-3477 after hours. Troy's wastewater leaves through three districts. Ask which one serves the house. Call (248) 825-8312 for the cleaning company inside the lower level."),
         ("Does sanitizing a Troy playroom send the 45-day notice?", "Cleaning the room leaves the letter unsent. Written notice goes to the City Attorney's Office within 45 days of discovering the damage. Troy discharges through Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. Ask the city which district serves the house. That map does not choose which pad comes out."),
     ],
     "birmingham": [
-        ("Can original Birmingham plaster be sanitized in place?", "Only if sewage did not soak through it. Soft or deeply stained plaster usually has to be removed. The provider should decide after looking, not from this page."),
+        ("Can original Birmingham plaster be sanitized in place?", "Only if sewage did not soak through it. Soft or deeply stained plaster usually has to be removed. The crew should decide after looking, after a look at the room."),
         ("Is a deodorant fog enough after a Birmingham backup?", "No. Fog does not replace removing the contaminated material. The smell returns when humidity rises."),
-        ("How do I check the company that will clean a Birmingham basement?", "Ask that company for the license and insurance the job requires, and for a written list of what they will discard. Call (248) 825-8312 to reach a local crew when one is available."),
+        ("How do I check the company that will clean a Birmingham basement?", "Ask for the license and insurance the job requires, and for a written list of what they will discard, before anyone starts."),
         ("Will Birmingham's backflow advice clean sewage that is already in the plaster?", "No. A backflow preventer, downspouts extended about 6 feet, and grading away from the foundation are prevention steps from the city FAQ. Soft plaster that soaked up sewage usually has to come out. The water-event line (248) 530-1703 is not the cleaning crew."),
         ("Does cleaning Birmingham plaster file the sewer backup claim?", "Removing soft plaster does not send the letter. Written notice is due within 45 days of discovery, on the city's sewer backup claim form. The water-event form is not that claim. Claims questions are 248.530.1808. The city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service."),
     ],
@@ -309,13 +309,13 @@ FAQS = {
         ("Does a combined sewer change the cleaning?", "If the city confirms your block can surcharge sewage in a storm, treat the floodwater as sewage. Confirm the block. Do not skip extraction."),
         ("Who names the product for a Berkley bungalow?", "The company doing the work. The label has to fit sewage residue, and the stair opens near living space, so ventilation matters. Call (248) 658-3490 if you still need Public Works, and (248) 825-8312 to reach a cleanup company."),
         ("If Berkley's combined sewer caused the flood, does sanitizing change the claim?", "No. Treat the water as sewage if the city confirms your block can surcharge, but the written notice is still due within 45 days of discovery. Cleaning the basement does not pause that clock. Flow from Berkley goes toward the Clinton through the George W. Kuhn district, not to the Rouge."),
-        ("What happens when I call (248) 825-8312 to clean a Berkley bungalow?", "A local crew handles the visit when one is available. Tell them the stair is short and opens near living space. The city's lining work, about 35 percent of the system over more than 20 years, does not clean the basement. Ask the company what they will remove before they spray."),
+        ("What should I tell a crew sanitizing a Berkley bungalow basement?", "That the stair is short and opens near living space, and whether the water came up the floor drain. Ask what they will remove before anyone sprays."),
     ],
     "clawson": [
         ("What gets missed in a one-room Clawson basement?", "The backs and bottoms of the furnace, water heater, and washer, plus the stair stringer. A floor-only mop leaves those."),
-        ("Can I run the washer to clean it after a standpipe backup?", "Do not assume a cycle cleans a machine that filled with sewage. Ask the provider whether it should be discarded."),
+        ("Can I run the washer to clean it after a standpipe backup?", "Do not assume a cycle cleans a machine that filled with sewage. Ask the crew whether it should be discarded."),
         ("Does sanitizing fix the Clawson lateral?", "No. Cleaning the one-room basement does not open the pipe. The main is a city question at (248) 435-4500, Monday through Thursday. On Friday the department is closed, and after-hours dispatch is 248-524-3477, extension 1."),
-        ("What happens when I call (248) 825-8312 to sanitize a Clawson backup?", "A local crew handles the visit when one is available. Tell them the furnace, the washer, and the floor drain share one room. If you believe the public system was involved, written notice is still due within 45 days of discovery. The city sewer page points to the George W. Kuhn basin for the regional system."),
+        ("What should I tell a crew sanitizing a Clawson basement?", "That the furnace, the washer, and the floor drain share one room. If you believe the public sewer was involved, written notice is due within 45 days of discovery. Clawson's sewer page points to the George W. Kuhn basin for the regional system."),
         ("Should I assume every Clawson street is a combined sewer when I clean?", "The city sewer page lists the George W. Kuhn basin and links a combined-sewer explainer. Confirm the pipe on your street with the city. If a floor drain discharged, treat the film as sewage. Cleaning the one-room basement does not open the city main."),
     ],
 }
@@ -325,7 +325,7 @@ HERO = {
     "troy": "A Troy lower level had sewage in the carpet and pad, and a spray over the top will not clean it. Call and a local cleanup crew handles the visit for basement sanitization in Troy, and they'll tell you when they can be there.",
     "birmingham": "Sewage wicked into the plaster and wood in a Birmingham basement, past what a wipe can reach. When you call, you reach a local cleanup crew for basement sanitization in Birmingham, and they'll tell you when they can be there.",
     "berkley": "The water is out of a small Berkley bungalow, and the residue is still in that tight basement. Your call puts you through to a local cleanup crew for basement sanitization in Berkley, and they'll tell you when they can be there.",
-    "clawson": "A one-room Clawson basement still holds the furnace, the washer, and whatever the backup left on them. Calling a local cleanup crew handles the visit for basement sanitization in Clawson, and they'll tell you when they can be there.",
+    "clawson": "A one-room Clawson basement still holds the furnace, the washer, and whatever the backup left on them. Call, and a local cleanup crew handles basement sanitization in Clawson. They'll tell you when they can be there.",
 }
 
 ALT = {
