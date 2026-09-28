@@ -125,7 +125,7 @@ def birmingham():
             "The water left behind is a separate restoration problem."
         ),
         p(
-            "This page does not sell a particular pump brand and does not claim a technician is standing by in "
+            "We do not sell a particular pump brand and do not claim a technician is standing by in "
             "downtown Birmingham near Shain Park. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " to reach an independent provider if one is available. Oakland Sewer Pros does not turn "

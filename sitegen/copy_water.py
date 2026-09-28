@@ -33,7 +33,7 @@ def royal_oak():
         p(
             "If the loss is mostly a flooded basement from storm water or a sump, read "
             + a("/royal-oak-flooded-basement", "flooded basement cleanup and water removal in Royal Oak")
-            + " beside this page. If a drain discharged sewage, drying alone is the wrong first step. "
+            + ". If a drain discharged sewage, drying alone is the wrong first step. "
             "Use " + a("/royal-oak-sewage-extraction", "sewage extraction")
             + " and " + a("/royal-oak-sewer-cleanup", "sewer backup cleanup") + "."
         ),
@@ -63,7 +63,7 @@ def royal_oak():
             "or excluded. Oakland Sewer Pros does not read your policy, file a claim, or bill an insurer. "
             "The provider you hire may photograph and record moisture. Ask them whether documentation is "
             "included. Ask your insurer what your form actually says. Do not rely on a contractor, or on "
-            "this page, for a coverage opinion."
+            "a website, for a coverage opinion."
         ),
         p(
             "Parts of Royal Oak lie in the southern Oakland County drainage area associated with the "
@@ -111,7 +111,7 @@ def troy():
             "use and when they will come back."
         ),
         p(
-            "Pair this page with "
+            "If the loss is a flooded basement, read "
             + a("/troy-flooded-basement", "flooded basement cleanup and basement water removal in Troy")
             + ". A sanitary backup is "
             + a("/troy-sewer-cleanup", "sewer backup cleanup")
@@ -201,7 +201,7 @@ def birmingham():
             "to demolish every soft spot on hour one may be right, or they may be skipping a drying "
             "attempt you would rather try on intact trim. Ask them to mark what is definitely coming out "
             "and what they will test again. Water damage repair, in the sense of putting finishes back, "
-            "is a later trade. This page is about the water and the damaged materials, not a remodeling bid."
+            "is a later trade. The work to arrange now is the water and the damaged materials, not a remodeling bid."
         ),
         p(
             "Storm flooding and sump overflow sit on "
@@ -484,7 +484,7 @@ HERO = {
     "royal-oak": "Water damage restoration in Royal Oak covers extraction, drying, and, when the water is sewage, a stricter cleanup. This is a referral to independent providers. We do not restore the house ourselves.",
     "troy": "Troy water damage restoration usually means a finished lower level: extract the water, remove what cannot be saved, and dry the rest. Call to reach an independent provider. Oakland Sewer Pros does not do the work.",
     "birmingham": "Water damage restoration in Birmingham has to respect plaster and older trim as well as the water itself. We connect you with an independent provider and do not run the drying.",
-    "berkley": "Berkley water damage restoration has to protect a short stair and the first floor above a bungalow basement. Use this page for a referral. We do not extract or dry the house.",
+    "berkley": "Berkley water damage restoration has to protect a short stair and the first floor above a bungalow basement. Call for a referral to an independent provider. We do not extract or dry the house.",
     "clawson": "Water damage restoration in Clawson is a small-basement, small-lot job. This line refers you to an independent provider for extraction and drying. We do not quote or perform the repair.",
 }
 

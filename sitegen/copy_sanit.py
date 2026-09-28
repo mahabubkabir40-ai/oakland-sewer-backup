@@ -39,7 +39,7 @@ def royal_oak():
             + a("/royal-oak-flooded-basement", "basement water removal")
             + ". A clean rain flood may need detergent and drying without a sewage protocol. A backup "
             "needs the stricter cleanup. If you are unsure which event you had, say so. Guessing wrong "
-            "and using a light cleaner on sewage is the mistake this page is here to prevent."
+            "and using a light cleaner on sewage spreads the contamination instead of stopping it."
         ),
         p(
             "Odor that remains after the floor looks clean usually means something porous was left in "
@@ -182,7 +182,7 @@ def berkley():
             + a("/berkley-sewer-cleanup", "sewer backup cleanup in Berkley")
             + ". Pumping the water out is "
             + a("/berkley-sewage-extraction", "sewage extraction in Berkley")
-            + ". This page starts after that water is out. Oakland Sewer Pros does not clean the house. Call "
+            + ". Sanitizing starts after that water is out. Oakland Sewer Pros does not clean the house. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " for a referral to an independent provider."
         ),
@@ -195,8 +195,8 @@ def berkley():
         ]),
         h2("What sanitizing covers after a Berkley backup"),
         p(
-            "Basement sanitization in Berkley, MI is the residue step. It is not sewage extraction and "
-            "it is not the sewage cleanup overview. Those are linked above. A sensible order is: stop "
+            "Basement sanitization in Berkley, MI is the residue step, after the water is gone. "
+            "A sensible order is: stop "
             "water use, keep the stair closed, have contaminated water removed, throw out porous items "
             "that soaked it up, then clean what is left and dry the structure. Spraying a still-wet "
             "pad does none of those things. Category 3 water can carry bacteria up a short bungalow "
@@ -214,7 +214,7 @@ def berkley():
             "Sanitizing does not clear a root-filled lateral or a city main. You can have a clean-looking "
             "slab and back up again on the next rain. The pit and the pump, if they were involved, are "
             + a("/berkley-sump-pump-repair", "a sump conversation")
-            + ". The lateral is a plumber or a city inspection. This page is only the residue left inside "
+            + ". The lateral is a plumber or a city inspection. What remains is the residue left inside "
             "the bungalow after the water left."
         ),
         callout(
@@ -317,9 +317,9 @@ FAQS = {
 
 HERO = {
     "royal-oak": "Basement sanitization in Royal Oak means cleaning up after sewage or a contaminated flood, once the water is out. It is not a maid service. We refer you to an independent provider and do not do the cleaning.",
-    "troy": "After a Troy lower-level backup, sanitizing means removing what sewage soaked, not spraying over carpet pad. This page connects you with an independent company. We do not perform the work.",
+    "troy": "After a Troy lower-level backup, sanitizing means removing what sewage soaked, not spraying over carpet pad. Call and we will connect you with an independent company. We do not perform the work.",
     "birmingham": "Sanitizing a Birmingham basement after sewage has to deal with plaster and wood, not just a concrete floor. Call for a referral. Oakland Sewer Pros does not apply cleaners or guarantee an odor-free date.",
-    "berkley": "Basement sanitization in Berkley, MI is cleaning after sewage or a flood in a small bungalow, once the water is out. It is not the sewage cleanup page. We connect the call and do not clean the house.",
+    "berkley": "Basement sanitization in Berkley, MI is cleaning after sewage or a flood in a small bungalow, once the water is out. Call and we will connect you with an independent provider. We do not clean the house.",
     "clawson": "Clawson sanitizing after a backup is a one-room job packed with mechanical equipment. Use this referral to reach an independent provider. We do not send a cleaning crew.",
 }
 

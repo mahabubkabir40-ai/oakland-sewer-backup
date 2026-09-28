@@ -297,7 +297,7 @@ def home_body():
                 </a>
                 <a href="/sewer-backup-cleanup" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Sewer backup cleanup</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">Sewage that came up through a floor drain or basement fixture. City pages keep their existing addresses.</p>
+                    <p class="text-sm text-gray-700 leading-relaxed">Sewage that came up through a floor drain or basement fixture. Open your city for the local steps, then call.</p>
                 </a>
                 <a href="/sewage-extraction" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Sewage extraction</h3>
@@ -305,7 +305,7 @@ def home_body():
                 </a>
                 <a href="/flooded-basement-cleanup" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Flooded basement cleanup</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">Basement water removal after storms, window wells, or a sump overflow. Drain backups are a different page.</p>
+                    <p class="text-sm text-gray-700 leading-relaxed">Basement water removal after storms, window wells, or a sump overflow. If a drain backed up, treat the water as sewage.</p>
                 </a>
                 <a href="/sump-pump-repair" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Sump pump repair</h3>
@@ -324,7 +324,7 @@ def home_body():
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="bg-slate-950 border border-slate-800 p-6 rounded-2xl">
                     <h3 class="text-white font-outfit font-bold mb-2">1. You call</h3>
-                    <p class="text-sm text-gray-300 leading-relaxed">Use the number on this page and say your city and whether the water came from a drain, a sump, or a storm.</p>
+                    <p class="text-sm text-gray-300 leading-relaxed">Call the number above and say your city and whether the water came from a drain, a sump, or a storm.</p>
                 </div>
                 <div class="bg-slate-950 border border-slate-800 p-6 rounded-2xl">
                     <h3 class="text-white font-bold font-outfit mb-2">2. A provider may take it</h3>
@@ -343,7 +343,7 @@ def home_body():
             <p class="text-sm text-gray-300 text-center max-w-3xl mx-auto mb-10">Every city page is linked here, including sewer backup, sewage extraction, flooded basement cleanup, water damage restoration, sump pump repair, and basement sanitization.</p>
             {city_directory()}
             <h2 class="text-2xl font-outfit font-extrabold text-white text-center mt-14 mb-4">Pages that match a specific job</h2>
-            <p class="text-sm text-gray-300 text-center max-w-3xl mx-auto mb-6">Each link is one job in one city. Sewage cleanup stays on the sewer backup URLs. Sewage extraction is only the pumping step.</p>
+            <p class="text-sm text-gray-300 text-center max-w-3xl mx-auto mb-6">Each link is one job in one city. If sewage came up a drain, use that city's sewer backup link. Extraction is only the pumping step.</p>
             <ul class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-2 text-sm text-gray-300">
                 <li><a class="text-red-400 underline" href="/troy-sewer-cleanup">Sewage cleanup in Troy, MI</a></li>
                 <li><a class="text-red-400 underline" href="/royal-oak-sewer-cleanup">Sewage cleanup in Royal Oak, MI</a></li>
@@ -402,7 +402,7 @@ def home_body():
                 <div class="lg:col-span-7">
                     <h1 class="text-3xl md:text-5xl font-outfit font-extrabold text-white leading-tight">24/7 Emergency Sewer Backup Cleanup &amp; Sewage Extraction in Oakland County, MI</h1>
                     <p class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed">Oakland Sewer Pros connects Oakland County homeowners with independent local providers for sewer backup, sewage cleanup, basement flood cleanup, and water damage restoration. Arrival depends on the provider. We do not guarantee a response time.</p>
-                    <p class="text-sm text-gray-300 mt-4 leading-relaxed">County pages: <a class="text-red-400 underline" href="/sewer-backup-cleanup">sewage cleanup and sewer backup in Oakland County</a>, <a class="text-red-400 underline" href="/flooded-basement-cleanup">basement flood cleanup in Oakland County</a>, and <a class="text-red-400 underline" href="/water-damage-restoration">water damage restoration</a>. A backup drain in Oakland County belongs on the sewer page, not the flood page.</p>
+                    <p class="text-sm text-gray-300 mt-4 leading-relaxed">County pages: <a class="text-red-400 underline" href="/sewer-backup-cleanup">sewage cleanup and sewer backup in Oakland County</a>, <a class="text-red-400 underline" href="/flooded-basement-cleanup">basement flood cleanup in Oakland County</a>, and <a class="text-red-400 underline" href="/water-damage-restoration">water damage restoration</a>. If a drain backed up, that is sewage, not a rain flood.</p>
                     <div class="mt-8">{call_button()}</div>
                 </div>
                 <div class="lg:col-span-5">
@@ -497,10 +497,10 @@ def main():
 
     hub_pages = [
         ("services", "Oakland County Sewer & Water Services | Oakland Sewer Pros", "Service referrals for sewer backups, water damage, flooded basements, and sump pumps in Oakland County, MI. Call {PHONE_DISPLAY}.", "Services for Oakland County homeowners", "Pick the job that matches the water, then the city. Calling is how you reach an independent provider.", services_article(), "0.8"),
-        ("water-damage-restoration", "Water Damage Restoration Oakland County | Oakland Sewer Pros", "Water damage restoration referrals in Oakland County, MI, including five city pages. Call {PHONE_DISPLAY} to connect.", "Water damage restoration in Oakland County, MI", "County page for extraction, drying, and sewage water damage. Each city page is separate.", water_hub(), "0.9"),
-        ("sewer-backup-cleanup", "Sewage Cleanup & Sewer Backup in Oakland County", "Sewage cleanup and sewer backup in Oakland County, MI, including a backup drain. Call {PHONE_DISPLAY}.", "Sewage cleanup and sewer backup in Oakland County, MI", "Use the city page that matches the house. A backup drain belongs here, not on the flood pages. The provider, not this site, does the cleanup.", sewer_hub(), "0.8"),
+        ("water-damage-restoration", "Water Damage Restoration Oakland County | Oakland Sewer Pros", "Water damage restoration referrals in Oakland County, MI, including five city pages. Call {PHONE_DISPLAY} to connect.", "Water damage restoration in Oakland County, MI", "Water damage restoration in Oakland County means getting water out, drying what can be saved, and treating sewage as a stricter cleanup. Each city is written up on its own. We connect you with an independent provider and do not do the work.", water_hub(), "0.9"),
+        ("sewer-backup-cleanup", "Sewage Cleanup & Sewer Backup in Oakland County", "Sewage cleanup and sewer backup in Oakland County, MI, including a backup drain. Call {PHONE_DISPLAY}.", "Sewage cleanup and sewer backup in Oakland County, MI", "Open the write-up for your city. If a drain backed up, that is sewage, not a rain flood. The provider, not this site, does the cleanup.", sewer_hub(), "0.8"),
         ("sewage-extraction", "Sewage Extraction Oakland County MI | Oakland Sewer Pros", "Sewage extraction referrals in Oakland County, MI. We connect you with independent providers. Call {PHONE_DISPLAY}.", "Sewage extraction in Oakland County, MI", "Contaminated water has to be removed by a company equipped for it. We only make the introduction.", sewage_hub(), "0.8"),
-        ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup and flooded basement water removal in Oakland County, MI. Call {PHONE_DISPLAY}.", "Basement flood cleanup in Oakland County, MI", "Basement water removal for storms and sump overflows. A drain backup is sewage cleanup, on the sewer pages.", flood_hub(), "0.8"),
+        ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup and flooded basement water removal in Oakland County, MI. Call {PHONE_DISPLAY}.", "Basement flood cleanup in Oakland County, MI", "Basement water removal for storms and sump overflows. If a drain backed up, that is sewage, not storm water.", flood_hub(), "0.8"),
         ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, Michigan. Birmingham means Michigan, not Alabama. Call {PHONE_DISPLAY}.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump is a repair. Water on the floor is a separate cleanup. We quote neither. Birmingham on this site is in Michigan.", sump_hub(), "0.8"),
         ("basement-sanitization", "Basement Sanitization Oakland County | Oakland Sewer Pros", "Basement sanitizing after sewage or a flood in Oakland County, MI. Independent providers. Call {PHONE_DISPLAY}.", "Basement sanitization after sewage or flooding", "This is post-backup cleaning, not a maid service. Extraction comes first.", sanit_hub(), "0.8"),
     ]

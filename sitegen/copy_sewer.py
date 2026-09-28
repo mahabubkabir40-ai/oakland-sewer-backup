@@ -109,37 +109,32 @@ AREA_LINE = {
 
 OWNER = {
     "royal-oak": (
-        "This URL is sewage cleanup in Royal Oak, MI and the sewer backup cleanup page for the same older "
-        "houses. The pumping step, once wastewater is on the floor, is a different page so the two do not "
-        f"compete: {a('/royal-oak-sewage-extraction', 'sewage extraction in Royal Oak')}. Oakland Sewer Pros "
+        "Once wastewater is on the floor, the pumping step is "
+        f"{a('/royal-oak-sewage-extraction', 'sewage extraction in Royal Oak')}. Keep people and pets "
+        "out of that water until it is gone. Oakland Sewer Pros "
         "does not send a truck. Ask the company you reach for a written scope and for the license and "
         "insurance the job requires."
     ),
     "troy": (
-        "People looking up sewage cleanup in Troy, MI should stay on this page. It is also the sewer backup "
-        "cleanup page for split-levels and subdivision basements. Pumping the water out is "
-        f"{a('/troy-sewage-extraction', 'sewage extraction in Troy')}, written separately so the extraction "
-        "page does not try to rank for the cleanup phrase. We do not quote a Troy price or promise a crew."
+        "Pumping the water out of a split-level or a subdivision basement is "
+        f"{a('/troy-sewage-extraction', 'sewage extraction in Troy')}. We do not quote a Troy price or "
+        "promise a crew. Ask that company for a written scope before anyone starts."
     ),
     "birmingham": (
-        "Sewage cleanup in Birmingham, MI and sewer backup cleanup are the same visit for these older houses, "
-        "and this is the page for both. If you already know the lower level is wet and you only need the "
-        f"water removed, use {a('/birmingham-sewage-extraction', 'sewage extraction in Birmingham')} instead. "
-        "The company you hire sets the methods. This site does not."
+        "If the lower level is already wet and you only need the water removed, use "
+        f"{a('/birmingham-sewage-extraction', 'sewage extraction in Birmingham')}. "
+        "The company you hire sets the methods. This site does not. Ask them how they will protect "
+        "plaster and trim before they cut anything."
     ),
     "berkley": (
-        "Sewage cleanup in Berkley, MI belongs here, with the bungalow floor-drain backups. Sewer backup "
-        "cleanup is the same topic on this URL. "
-        f"{a('/berkley-sewage-extraction', 'Sewage extraction in Berkley')} is only the removal step, and "
-        "that page should not be used as a second copy of this one. Call to reach an independent provider "
-        "when one is participating."
+        "If the bungalow floor drain already overflowed, pumping the water out is "
+        f"{a('/berkley-sewage-extraction', 'Sewage extraction in Berkley')}. Call to reach an independent "
+        "provider when one is participating. Keep people off the short stair until that water is gone."
     ),
     "clawson": (
-        "Sewage cleanup in Clawson, MI is this page, including sewer backup cleanup in the brick bungalows "
-        "on short lots. The extraction URL is "
-        f"{a('/clawson-sewage-extraction', 'sewage extraction in Clawson')}, for the pump-out itself. "
-        "Keep the two straight: cleanup and causes here, hoses and access there. We do not stage equipment "
-        "on 14 Mile."
+        "The pump-out, once sewage is on the floor of a brick bungalow, is "
+        f"{a('/clawson-sewage-extraction', 'sewage extraction in Clawson')}. Hoses and access are part of "
+        "that visit. We do not stage equipment on 14 Mile."
     ),
 }
 
@@ -272,7 +267,7 @@ def article(slug, city):
         ),
         h2(f"Sewer backup cleanup in {city}, MI"),
         p(
-            f"{city} homeowners use this page after sewage comes up through a basement drain, a laundry "
+            f"{city} homeowners call after sewage comes up through a basement drain, a laundry "
             "standpipe, or a basement toilet. Treat that water as Category 3: keep people and pets out, "
             "do not mop it through the house, and do not run a household vac. The steps below are the "
             "first minutes. The cleanup itself is the independent provider's work."
@@ -383,11 +378,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "Sewage cleanup in Royal Oak, MI is for wastewater that came up a floor drain in an older house. This same page is the sewer backup cleanup page. We connect you with an independent provider and do not send a truck.",
-    "troy": "Sewage cleanup in Troy, MI usually means a lower level or split-level near Big Beaver, not a store at Somerset. This page also covers sewer backup cleanup. Oakland Sewer Pros does not run the crew or promise how quickly anyone rolls.",
-    "birmingham": "Sewage cleanup in Birmingham, MI has to deal with plaster, trim, and finished lower levels in older houses. Sewer backup cleanup is the same job on this page. This site does not do the work.",
-    "berkley": "Sewage cleanup in Berkley, MI is a bungalow-basement job: short stairs, older laterals, and a floor drain by the laundry. Sewer backup cleanup lives on this page too. We do not send our own technicians.",
-    "clawson": "Sewage cleanup in Clawson, MI starts in brick bungalows on tight lots with older laterals. This page is also sewer backup cleanup for those houses. The line connects you with an independent provider when one is participating.",
+    "royal-oak": "If wastewater came up a floor drain in an older Royal Oak house, you need sewer backup cleanup in Royal Oak before it soaks the walls. We connect you with an independent local provider. We do not employ technicians or send a truck.",
+    "troy": "A lower level or split-level near Big Beaver, not a store at Somerset, is where Troy homeowners need sewer backup cleanup in Troy. Call and we will connect you with an independent provider. Oakland Sewer Pros does not run the crew or promise how quickly anyone rolls.",
+    "birmingham": "Plaster, wood trim, and a finished lower level in an older Birmingham house are why sewer backup cleanup in Birmingham cannot stop at a mop. We connect you with an independent provider. We do not employ technicians or do the work.",
+    "berkley": "A short stair, an older lateral, and a floor drain by the laundry are the usual Berkley bungalow backup. Call for sewer backup cleanup in Berkley and we will connect you with an independent provider. We do not employ technicians or send a truck.",
+    "clawson": "Brick bungalows on tight lots, with older laterals, are where Clawson homeowners need sewer backup cleanup in Clawson. The line connects you with an independent provider when one is participating. We do not employ technicians or send a truck.",
 }
 
 ALT = {

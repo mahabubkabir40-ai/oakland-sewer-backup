@@ -215,7 +215,7 @@ def claim_article():
             "that the city's system discharges into (" + ext("bham_risk", "City of Birmingham Risk Management") + "). Because the law "
             "defines the responsible agency to include one that \"directly or indirectly discharged into\" the part of the system that "
             "caused the damage (" + ext("mcl1416", "MCL 691.1416(b)") + "), whether more than one agency should get a notice is a "
-            "question for an attorney, not for this page. Background on the regional system is in our "
+            "question for an attorney, not for a referral line. Background on the regional system is in our "
             + a("/george-w-kuhn-drainage-district", "George W. Kuhn Drainage District explainer") + "."
         ),
         h2("City-by-city contacts"),
@@ -278,7 +278,7 @@ def claim_article():
             + a("/birmingham-sewer-cleanup", "Birmingham") + ", " + a("/berkley-sewer-cleanup", "Berkley") + " and "
             + a("/clawson-sewer-cleanup", "Clawson") + "."
         ),
-        note(f"Last verified {VERIFIED}. If a city contact on this page is out of date, the city's own website is the authority."),
+        note(f"Last verified {VERIFIED}. If a city contact listed here is out of date, the city's own website is the authority."),
         sources_block([
             ("mcl1416", "Michigan Legislature: MCL 691.1416, definitions"),
             ("mcl1417", "Michigan Legislature: MCL 691.1417, what a claimant must show"),
@@ -313,8 +313,8 @@ GWK_DESC = (
 )
 GWK_LEAD = (
     "<p>If you live in Royal Oak, Berkley, Clawson, Birmingham or Troy, your house may drain to a regional combined "
-    "sewer system whose name never appears on your bill. This page explains what the "
-    "George W. Kuhn (GWK) Drainage District is, which communities it serves, why its combined sewers can back up into "
+    "sewer system whose name never appears on your bill. The George W. Kuhn (GWK) Drainage District is that system: "
+    "which communities it serves, why its combined sewers can back up into "
     "basements during heavy rain, and what homeowners can do about it. Facts come from the Oakland County Water "
     "Resources Commissioner (WRC) and the cities.</p>"
 )
@@ -446,7 +446,7 @@ CHECK_DESC = (
     "city sewer contacts, and the 45-day claim notice step."
 )
 CHECK_LEAD = (
-    "<p>Print this page and keep it near the basement stairs. It covers what to do before a storm, while water is "
+    "<p>Print this checklist and keep it near the basement stairs. It lists what to do before a storm, while water is "
     "coming in, and in the days after, with the phone numbers and deadlines that apply in Royal Oak, Troy, Birmingham, "
     "Berkley and Clawson.</p>"
 )

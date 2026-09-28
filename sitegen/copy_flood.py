@@ -267,7 +267,7 @@ def clawson():
             "boxes, tools, and the bottom of the furnace cabinet. Flooded basement cleanup includes sorting "
             "what is porous and wet from what is metal and can be wiped. Drying the structure is "
             + a("/clawson-water-damage-restoration", "water damage restoration in Clawson")
-            + ". A provider should explain whether the furnace can run. That is their judgment on site, not a line on this page."
+            + ". A provider should explain whether the furnace can run. That is their judgment on site, not a decision a website can make for you."
         ),
         ul([
             "Short driveways mean the pump discharge should be planned so it does not ice the sidewalk or run to a neighbor's window well.",
@@ -356,11 +356,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "Flooded basement cleanup and basement water removal in Royal Oak depend on whether you are dealing with storm water, a failed sump, or a sewer. This page helps you reach an independent provider. We do not pump the water.",
+    "royal-oak": "Flooded basement cleanup and basement water removal in Royal Oak depend on whether you are dealing with storm water, a failed sump, or a sewer. Call and we will connect you with an independent provider. We do not pump the water.",
     "troy": "Troy flooded basement cleanup is usually water removal from a finished lower level or split-level, then drying what the water soaked. Call to be matched with an independent company. This site does not perform the cleanup.",
     "birmingham": "Basement water removal in Birmingham has to account for plaster, trim, and low areas such as Quarton. We refer you to an independent provider and do not run the job.",
     "berkley": "Berkley basement flooding hits short bungalow basements on flat ground. Flooded basement cleanup here has to protect the stair and the first floor. We connect the call; we do not remove the water.",
-    "clawson": "Flooded basement cleanup in Clawson, MI is water removal in a small brick-bungalow basement. If a drain caused it, that is a sewage page instead. This line refers you to an independent provider. We have no crew of our own.",
+    "clawson": "Flooded basement cleanup in Clawson, MI is water removal in a small brick-bungalow basement. If a drain caused it, treat the water as sewage. This line refers you to an independent provider. We have no crew of our own.",
 }
 
 ALT = {

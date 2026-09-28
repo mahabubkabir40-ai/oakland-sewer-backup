@@ -47,17 +47,16 @@ def services_article():
         ),
         h2("Pick the page that matches the water"),
         p(
-            "The county page is the overview. The city page is the one that names the house. "
-            "Open the county page first if you are not sure which phrase fits, then the city page "
-            "before you call, so you can say whether a drain, a sump, or a storm was the source."
+            "If you are not sure whether a drain, a sump, or a storm caused the water, read the county "
+            "overview first, then your city, so you can describe the source when you call."
         ),
         p(
             a("/water-damage-restoration", "Water damage restoration")
-            + " is the county page for extraction, drying, and sewage water damage. It is the broadest match for a wet basement."
+            + " means getting water out, drying what remains, and handling sewage water damage. It is the broadest match for a wet basement."
         ),
         p(
             a("/sewer-backup-cleanup", "Sewer backup cleanup")
-            + " is for sewage that came up through a drain. The five city pages under it are the ones that already focus on that phrase."
+            + " means sewage that came up through a drain. The five city write-ups describe that backup in the house where it happened."
         ),
         p(
             a("/sewage-extraction", "Sewage extraction")
@@ -69,7 +68,7 @@ def services_article():
         ),
         p(
             a("/sump-pump-repair", "Sump pump repair")
-            + " is the mechanical pump. Overflow cleanup, if the floor is wet, is a water-damage job on top of the repair. Sump pump work is not the referral this line is built around; the page is here so a dead pump is not left unexplained."
+            + " is the mechanical pump. Overflow cleanup, if the floor is wet, is a water-damage job on top of the repair. Sump pump work is not the referral this line is built around. A dead pump still needs an explanation so it is not ignored."
         ),
         p(
             a("/basement-sanitization", "Basement sanitization")
@@ -191,11 +190,9 @@ def sewer_hub():
     return "\n".join([
         h2("Sewage cleanup and sewer backup in Oakland County"),
         p(
-            "Sewage cleanup in Oakland County, on this site, means wastewater that came up a floor drain, "
-            "a basement toilet, or a laundry standpipe. A backup drain in Oakland County is the same "
-            "problem worded differently: the line was full and the lowest opening in the house let it "
-            "out. Sewer backup cleanup is that job. The five city pages own the city phrases. This hub "
-            "only routes you. An independent provider you hire does the work. " + _HOME + " does not employ technicians."
+            "Sewage cleanup in Oakland County means wastewater that came up a floor drain, "
+            "a basement toilet, or a laundry standpipe. The line was full, and the lowest opening in the house let it "
+            "out. That is sewer backup cleanup. Open your city for the local steps. An independent provider you hire does the work. " + _HOME + " does not employ technicians."
         ),
         h3("What the cleanup has to cover"),
         p(
@@ -328,12 +325,12 @@ def sewage_hub():
         h2("City pages for the pumping step"),
         p(
             a("/royal-oak-sewage-extraction", "Sewage extraction in Royal Oak")
-            + " is for floor drains in older houses, with the city Sewer Division as the public-main contact. "
+            + " usually means a floor drain in an older house. The city Sewer Division is the public-main contact. "
             "Overview: " + a("/royal-oak", "Royal Oak") + "."
         ),
         p(
             a("/troy-sewage-extraction", "Sewage extraction in Troy")
-            + " is for split-level lower floors. Troy's wastewater leaves through three districts, so do not "
+            + " usually means a split-level lower floor. Troy's wastewater leaves through three districts, so do not "
             "assume one pipe type. Overview: " + a("/troy", "Troy") + "."
         ),
         p(
@@ -400,7 +397,7 @@ def flood_hub():
             "major disaster, FEMA-4195-DR, was declared on September 25, 2014, for Macomb, Oakland, and Wayne "
             "counties, for individual and public assistance. A National Weather Service conference paper "
             "describes about 4 to 6.5 inches in parts of those three counties, most of it in roughly four hours. "
-            "This page does not turn that rainfall into a count of damaged houses in Royal Oak, Troy, Birmingham, "
+            "Those rainfall figures are not a count of damaged houses in Royal Oak, Troy, Birmingham, "
             "Berkley, or Clawson. Royal Oak's own gauge reading from that day is on the "
             + a("/royal-oak", "Royal Oak overview")
             + ", attributed to the report that quoted the city gauge. The regional pipes those storms loaded are "
@@ -451,7 +448,7 @@ def sump_hub():
             "the carpet it ruined is water damage. " + _HOME
             + " used to show dollar ranges. Those ranges are gone, because we do not control what an "
             "independent company charges. Sump pump repair is also not the job this referral line is "
-            "built to sell. The page is here so a dead pump is not confused with a sewer backup."
+            "built to sell. A dead pump is not the same problem as a sewer backup, and mixing them up sends the wrong help."
         ),
         h2("What a pump visit can and cannot fix"),
         p(
@@ -460,7 +457,7 @@ def sump_hub():
             "not dry a finished room. If the floor is already wet from the pit, open "
             + a("/flooded-basement-cleanup", "flooded basement cleanup")
             + " as well. If the water smells like sewage or a basement toilet burped, the pump is the wrong "
-            "first page. Use " + a("/sewer-backup-cleanup", "sewer backup cleanup") + ". "
+            "first call. Start with " + a("/sewer-backup-cleanup", "sewer backup cleanup") + ". "
             "Call " + phone_link() + " and say whether the crock overflowed or a drain did. "
             "We do not promise that a provider will take the call."
         ),
@@ -528,7 +525,7 @@ def sanit_hub():
             "not sprayed and left. What remains should be hard surfaces, framing that can be cleaned, and "
             "belongings you are willing to discard or that a restorer says can be kept. Fogging a room that "
             "still has a wet pad does not finish the job. If the loss never involved contaminated water, "
-            "you may not need this page at all. Storm-water drying is "
+            "you may not need a sanitizing visit at all. Storm-water drying is "
             + a("/water-damage-restoration", "water damage restoration") + "."
         ),
         h3("Safety with products"),
@@ -617,12 +614,12 @@ def city_royal_oak():
             "public assistance. A National Weather Service paper describes about 4 to 6.5 inches in parts of those "
             "counties, most of it in about four hours on August 11. A report the next day said Royal Oak's DPS rain "
             "gauge recorded 4.98 inches that day, 1.12 inches of it in 30 minutes. That figure is the city's gauge, "
-            "as reported then. This page does not give a count of damaged houses."
+            "as reported then. No count of damaged houses is stated here."
         ),
         h2("Older blocks, and which page to open"),
         p(
             "These pages are about the older residential blocks off Main and Washington, along Woodward, and toward "
-            "West Ten Mile. Many of those houses predate the 1960s. The city page, not this site, is how you confirm "
+            "West Ten Mile. Many of those houses predate the 1960s. The city, not this website, is how you confirm "
             "which pipe is in a specific street."
         ),
         p(
@@ -778,8 +775,7 @@ def city_birmingham():
         ),
         h3("August 24, 2023"),
         p(
-            "The city posted an engineer presentation about the August 24, 2023 rain. This page does not restate a "
-            "rainfall total or a damage count from that presentation. If you need the city's numbers, read the presentation "
+            "The city posted an engineer presentation about the August 24, 2023 rain. A rainfall total or a damage count from that presentation is not restated here. If you need the city's numbers, read the presentation "
             "on the city's site. Regional context for the combined district Birmingham belongs to is the " + _GWK + " page."
         ),
         h2("Which Birmingham service matches the basement"),
@@ -991,7 +987,7 @@ CITY_H1 = {
 }
 
 CITY_HERO = {
-    "royal-oak": "Royal Oak's Sewer Division maintains about 300 miles of public sewer and publishes the basement-water phone line. This page is only a referral menu for the cleanup inside the house. Oakland Sewer Pros does not operate a Royal Oak office or send a city crew.",
+    "royal-oak": "Royal Oak's Sewer Division maintains about 300 miles of public sewer and publishes the basement-water phone line. For the cleanup inside the house, we only connect you with an independent provider. Oakland Sewer Pros does not operate a Royal Oak office or send a city crew.",
     "troy": "Troy discharges wastewater through three districts, not one system you can label combined or separated. These pages refer independent providers for basement water in 1960s and 1970s houses. Calling does not reach Troy's Water Division.",
     "birmingham": "Birmingham's sewers are gravity, and the city owns no pump or lift stations. Older areas are combined. This referral line does not employ a Birmingham crew and does not have a local office.",
     "berkley": "Berkley's sewer is a single combined pipe, entirely gravity, with no city pumps or valves. These pages refer independent providers for bungalow basements. The website does not do the cleanup.",
