@@ -148,11 +148,14 @@ def spread_article(article_html, images):
     heading. A third, when present, is returned for the area above the FAQ.
     Article text is not rewritten.
     """
-    if len(images) not in (2, 3):
-        raise ValueError(f"expected 2 or 3 images, got {len(images)}")
+    if len(images) > 3:
+        raise ValueError(f"expected at most 3 images, got {len(images)}")
+    if not images:
+        return article_html, ""
     figures = [content_figure(image) for image in images]
-    first, second = figures[0], figures[1]
-    third = figures[2] if len(figures) == 3 else ""
+    first = figures[0]
+    second = figures[1] if len(figures) > 1 else ""
+    third = figures[2] if len(figures) > 2 else ""
     first_p = article_html.find("</p>")
     if first_p == -1:
         insert_at = 0

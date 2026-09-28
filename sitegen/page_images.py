@@ -33,8 +33,8 @@ def images_for(page):
     if page not in pages:
         raise SystemExit(f"Image manifest has no entry for {page!r}")
     rows = pages[page]
-    if len(rows) not in (2, 3):
-        raise SystemExit(f"{page} has {len(rows)} images; expected 2 or 3")
+    if len(rows) > 3:
+        raise SystemExit(f"{page} has {len(rows)} images; expected at most 3")
     images = []
     for row in rows:
         images.append({

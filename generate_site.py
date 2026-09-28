@@ -633,7 +633,7 @@ def main():
     for path, _priority in SITEMAP:
         filename = "index.html" if path in ("", "/") else f"{path}.html"
         count = (ROOT / filename).read_text(encoding="utf-8").count("<img ")
-        if count not in (2, 3):
+        if count > 3:
             image_errors.append(f"{filename}: {count} img tags")
     for filename in ("thank-you.html", "404.html"):
         count = (ROOT / filename).read_text(encoding="utf-8").count("<img ")
