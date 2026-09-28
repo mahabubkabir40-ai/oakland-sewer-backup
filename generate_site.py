@@ -3,6 +3,7 @@
 Run this, or run build.py, after changing the phone number in site_config.py.
 """
 
+import subprocess
 from pathlib import Path
 
 from site_config import BRAND, LASTMOD, PHONE_DISPLAY, PHONE_TEL
@@ -22,7 +23,10 @@ from sitegen.copy_flood import HERO as FLOOD_HERO
 from sitegen.copy_hubs import (
     CITY_ARTICLES,
     CITY_DESC,
+    CITY_FAQS,
+    CITY_H1,
     CITY_HERO,
+    HUB_FAQS,
     flood_hub,
     sanit_hub,
     services_article,
@@ -86,6 +90,36 @@ SITEMAP = []
 
 def fill(text):
     return text.format(PHONE_DISPLAY=PHONE_DISPLAY)
+
+
+def git_lastmod(path):
+    """Date the built HTML last changed in git, or LASTMOD when this build rewrote it.
+
+    Unchanged pages keep the commit date of their HTML file instead of the build date.
+    Every current page was last committed on 2026-09-28, so a no-op rebuild stays on that day.
+    """
+    filename = "index.html" if path in ("", "/") else f"{path}.html"
+    current = (ROOT / filename).read_bytes()
+    try:
+        head = subprocess.check_output(
+            ["git", "show", f"HEAD:{filename}"],
+            cwd=ROOT,
+            stderr=subprocess.DEVNULL,
+        )
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return LASTMOD
+    if current != head:
+        return LASTMOD
+    try:
+        logged = subprocess.check_output(
+            ["git", "log", "-1", "--format=%cs", "--", filename],
+            cwd=ROOT,
+            text=True,
+            stderr=subprocess.DEVNULL,
+        ).strip()
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return LASTMOD
+    return logged or LASTMOD
 
 
 # Extra clauses used only to land unique descriptions in the 140–155 character window.
@@ -414,6 +448,12 @@ def main():
             h1 = h1_t.format(city=city)
             if city_slug == "clawson" and service_slug == "flooded-basement":
                 title = "Flooded Basement Cleanup Clawson, MI | Water Removal"
+            if city_slug == "royal-oak" and service_slug == "flooded-basement":
+                title = "Royal Oak Flooded Basement Cleanup | Oakland Sewer Pros"
+            if city_slug == "birmingham" and service_slug == "flooded-basement":
+                title = "Birmingham Flooded Basement Cleanup | Oakland Sewer Pros"
+            if city_slug == "berkley" and service_slug == "flooded-basement":
+                title = "Berkley Flooded Basement Cleanup | Oakland Sewer Pros"
             if city_slug == "berkley" and service_slug == "sewage-extraction":
                 title = "Sewage Extraction in Berkley, MI | Bungalow Basements"
             if city_slug == "berkley" and service_slug == "basement-sanitization":
@@ -432,18 +472,9 @@ def main():
             )
 
     for city_slug, city in CITIES:
-        faqs = [
-            (
-                f"Does {BRAND} have an office in {city}?",
-                f"No. There is no {city} office, dispatch hub, or crew stationed in the city. The phone line refers you to independent providers when one is available.",
-            ),
-            (
-                f"Which {city} page should I open first?",
-                "If sewage came from a drain, open sewer backup cleanup. If the basement is wet from a storm or a sump and the drains stayed quiet, open flooded basement cleanup. If materials are already soaked, open water damage restoration.",
-            ),
-        ]
+        faqs = CITY_FAQS[city_slug]
         body = prose_body(
-            esc(f"{city}, MI sewer and water damage referrals"),
+            esc(CITY_H1[city_slug]),
             f"<p>{esc(CITY_HERO[city_slug])}</p>",
             CITY_ARTICLES[city_slug](),
             faqs=faqs,
@@ -465,18 +496,16 @@ def main():
         )
 
     hub_pages = [
-        ("services", "Sewer & Water Damage Services | Oakland Sewer Pros", "Service referrals for sewer backups, water damage, flooded basements, and sump pumps in Oakland County, MI. Call {PHONE_DISPLAY}.", "Services for Oakland County homeowners", "Pick the job that matches the water, then the city. Calling is how you reach an independent provider.", services_article(), "0.8", None),
-        ("water-damage-restoration", "Water Damage Restoration Oakland County | Oakland Sewer Pros", "Water damage restoration referrals in Oakland County, MI, including five city pages. Call {PHONE_DISPLAY} to connect.", "Water damage restoration in Oakland County, MI", "County page for extraction, drying, and sewage water damage. Each city page is separate.", water_hub(), "0.9", [
-            ("What does water damage restoration mean here?", "Removing standing water, discarding materials that cannot be saved, and drying what remains. An independent provider does it. Oakland Sewer Pros does not."),
-            ("Do you cover every Oakland County city?", "The pages are Royal Oak, Troy, Birmingham, Berkley, and Clawson. A provider may or may not accept a different ZIP. They decide."),
-        ]),
-        ("sewer-backup-cleanup", "Sewage Cleanup & Sewer Backup in Oakland County", "Sewage cleanup and sewer backup in Oakland County, MI, including a backup drain. Call {PHONE_DISPLAY}.", "Sewage cleanup and sewer backup in Oakland County, MI", "Use the city page that matches the house. A backup drain belongs here, not on the flood pages. The provider, not this site, does the cleanup.", sewer_hub(), "0.8", None),
-        ("sewage-extraction", "Sewage Extraction Oakland County MI | Oakland Sewer Pros", "Sewage extraction referrals in Oakland County, MI. We connect you with independent providers. Call {PHONE_DISPLAY}.", "Sewage extraction in Oakland County, MI", "Contaminated water has to be removed by a company equipped for it. We only make the introduction.", sewage_hub(), "0.8", None),
-        ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup and flooded basement water removal in Oakland County, MI. Call {PHONE_DISPLAY}.", "Basement flood cleanup in Oakland County, MI", "Basement water removal for storms and sump overflows. A drain backup is sewage cleanup, on the sewer pages.", flood_hub(), "0.8", None),
-        ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, Michigan. Birmingham means Michigan, not Alabama. Call {PHONE_DISPLAY}.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump is a repair. Water on the floor is a separate cleanup. We quote neither. Birmingham on this site is in Michigan.", sump_hub(), "0.8", None),
-        ("basement-sanitization", "Basement Sanitization Oakland County | Oakland Sewer Pros", "Basement sanitizing after sewage or a flood in Oakland County, MI. Independent providers. Call {PHONE_DISPLAY}.", "Basement sanitization after sewage or flooding", "This is post-backup cleaning, not a maid service. Extraction comes first.", sanit_hub(), "0.8", None),
+        ("services", "Oakland County Sewer & Water Services | Oakland Sewer Pros", "Service referrals for sewer backups, water damage, flooded basements, and sump pumps in Oakland County, MI. Call {PHONE_DISPLAY}.", "Services for Oakland County homeowners", "Pick the job that matches the water, then the city. Calling is how you reach an independent provider.", services_article(), "0.8"),
+        ("water-damage-restoration", "Water Damage Restoration Oakland County | Oakland Sewer Pros", "Water damage restoration referrals in Oakland County, MI, including five city pages. Call {PHONE_DISPLAY} to connect.", "Water damage restoration in Oakland County, MI", "County page for extraction, drying, and sewage water damage. Each city page is separate.", water_hub(), "0.9"),
+        ("sewer-backup-cleanup", "Sewage Cleanup & Sewer Backup in Oakland County", "Sewage cleanup and sewer backup in Oakland County, MI, including a backup drain. Call {PHONE_DISPLAY}.", "Sewage cleanup and sewer backup in Oakland County, MI", "Use the city page that matches the house. A backup drain belongs here, not on the flood pages. The provider, not this site, does the cleanup.", sewer_hub(), "0.8"),
+        ("sewage-extraction", "Sewage Extraction Oakland County MI | Oakland Sewer Pros", "Sewage extraction referrals in Oakland County, MI. We connect you with independent providers. Call {PHONE_DISPLAY}.", "Sewage extraction in Oakland County, MI", "Contaminated water has to be removed by a company equipped for it. We only make the introduction.", sewage_hub(), "0.8"),
+        ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup and flooded basement water removal in Oakland County, MI. Call {PHONE_DISPLAY}.", "Basement flood cleanup in Oakland County, MI", "Basement water removal for storms and sump overflows. A drain backup is sewage cleanup, on the sewer pages.", flood_hub(), "0.8"),
+        ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, Michigan. Birmingham means Michigan, not Alabama. Call {PHONE_DISPLAY}.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump is a repair. Water on the floor is a separate cleanup. We quote neither. Birmingham on this site is in Michigan.", sump_hub(), "0.8"),
+        ("basement-sanitization", "Basement Sanitization Oakland County | Oakland Sewer Pros", "Basement sanitizing after sewage or a flood in Oakland County, MI. Independent providers. Call {PHONE_DISPLAY}.", "Basement sanitization after sewage or flooding", "This is post-backup cleaning, not a maid service. Extraction comes first.", sanit_hub(), "0.8"),
     ]
-    for path, title, description, h1, lead, article, priority, faqs in hub_pages:
+    for path, title, description, h1, lead, article, priority in hub_pages:
+        faqs = HUB_FAQS[path]
         article_html = article() if callable(article) else article
         body = prose_body(esc(h1), f"<p>{esc(lead)}</p>", article_html, faqs=faqs, faq_heading="Questions")
         service = None
@@ -580,7 +609,8 @@ def main():
         index=False,
     )
 
-    (ROOT / "sitemap.xml").write_text(write_sitemap(SITEMAP), encoding="utf-8")
+    lastmods = {path: git_lastmod(path) for path, _priority in SITEMAP}
+    (ROOT / "sitemap.xml").write_text(write_sitemap(SITEMAP, lastmods), encoding="utf-8")
     if META_ERRORS:
         print("META LENGTH ERRORS:")
         for path, length, text in META_ERRORS:

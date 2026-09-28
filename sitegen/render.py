@@ -624,15 +624,19 @@ def service_body(city_slug, service_slug, h1, hero_lead, article_html, image_src
     """
 
 
-def write_sitemap(paths_with_priority):
-    """paths_with_priority: list of (path, priority) where path is '' for home."""
+def write_sitemap(paths_with_priority, lastmods=None):
+    """paths_with_priority: list of (path, priority) where path is '' for home.
+
+    lastmods maps path -> YYYY-MM-DD. Missing keys fall back to the build date.
+    """
     urls = []
     for path, priority in paths_with_priority:
         loc = f"{DOMAIN}/" if path in ("", "/") else f"{DOMAIN}/{path}"
+        lastmod = LASTMOD if not lastmods else lastmods.get(path, LASTMOD)
         urls.append(
             "  <url>\n"
             f"    <loc>{xml_escape(loc)}</loc>\n"
-            f"    <lastmod>{LASTMOD}</lastmod>\n"
+            f"    <lastmod>{lastmod}</lastmod>\n"
             f"    <priority>{priority}</priority>\n"
             "  </url>"
         )
