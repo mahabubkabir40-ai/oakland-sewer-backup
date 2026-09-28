@@ -39,8 +39,8 @@ def royal_oak():
         ),
         h2("Sewage and other heavily contaminated water"),
         p(
-            "The restoration trade calls sewage, and water that has mixed with it, Category 3 or black "
-            "water. The label matters because porous materials that absorbed it are usually removed, not "
+            "Sewage, and water that has mixed with it, is heavily contaminated. Porous materials that absorbed it "
+            "are usually removed, not "
             "dried and kept. Royal Oak backups through floor drains fall in that group. A clean supply-line "
             "break does not, unless the water sat long enough to become foul. "
             + a("/royal-oak-basement-sanitization", "Sanitizing after the backup")
@@ -118,8 +118,8 @@ def troy():
         ),
         h2("When Troy water is sewage"),
         p(
-            "If a basement bath or floor drain overflowed, treat the loss as sewage, which restorers call "
-            "Category 3 water. Carpet and pad in a finished Troy basement that sat in that water are "
+            "If a basement bath or floor drain overflowed, treat the loss as sewage. It is heavily contaminated. "
+            "Carpet and pad in a finished Troy basement that sat in that water are "
             "typically discarded. Kids' furniture and cloth bins in the same room usually are too. "
             + a("/troy-basement-sanitization", "Sanitizing")
             + " comes after removal, not before. A clear sump overflow with no drain involvement is a "

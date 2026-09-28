@@ -263,7 +263,7 @@ def berkley():
         ]),
         h2("How a Berkley extraction is supposed to go"),
         p(
-            "A company set up for Category 3 water should keep the mess in the basement. That means "
+            "A company set up for sewage should keep the mess in the basement. That means "
             "containment at the stair, removal of standing sewage, and bagging of pad, drywall, and "
             "other porous material that soaked it up. Health-wise, the risk in a Berkley bungalow is "
             "the short path upstairs: droplets on the treads, a furnace return that was left running, "
