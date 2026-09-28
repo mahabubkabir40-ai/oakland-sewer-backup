@@ -300,9 +300,9 @@ def faq_html(faqs, heading):
 
 def trust_row():
     cells = [
-        ("Referral line", "We connect you with independent local providers. We do not perform the work."),
+        ("Referral line", "We connect you with independent local providers. The company you hire does the work."),
         ("You check credentials", "Ask the provider for the license and insurance the job requires."),
-        ("No price from this site", "The provider you hire sets the scope and the price."),
+        ("Price from the company", "The provider you hire sets the scope and the price."),
     ]
     inner = []
     for title, text in cells:
@@ -342,7 +342,7 @@ def nearby_section(service_slug, label, current_city):
     name = city_name(current_city)
     return f"""<div class="border-t border-slate-800/60 pt-6 mt-6">
         <h2 class="text-lg font-outfit font-bold text-white mb-3">{esc(label)} in nearby cities</h2>
-        <p class="text-sm text-gray-300 leading-relaxed">The same referral line covers {nearby_links(service_slug, label, current_city)}. Each city page describes that place separately from {esc(name)}.</p>
+        <p class="text-sm text-gray-300 leading-relaxed">If the house is in a neighboring city, the same phone line covers {nearby_links(service_slug, label, current_city)}. Open the city where the house stands. The details there match that place, not {esc(name)}.</p>
     </div>"""
 
 
