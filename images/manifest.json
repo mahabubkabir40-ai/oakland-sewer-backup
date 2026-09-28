@@ -1,12 +1,12 @@
 {
   "pages": {
-    "royal-oak-sewer-cleanup": [
+    "index": [
       {
         "file": "floodwater-on-concrete-floor-by-stairs.webp",
         "alt": "Floodwater on a concrete floor beside a white staircase.",
         "width": 1200,
         "height": 1600,
-        "eager": false,
+        "eager": true,
         "source_url": "https://www.pexels.com/photo/flood-water-on-concrete-floor-and-a-white-concrete-staircase-7924140/",
         "photographer": "David Yu",
         "license": "Pexels License",
@@ -26,31 +26,19 @@
         "title": "Chemist in Protective Clothing Kneeling on Floor"
       },
       {
-        "file": "close-up-of-storm-drain-grate.webp",
-        "alt": "Close-up of a metal storm drain grate.",
-        "width": 972,
-        "height": 1458,
+        "file": "white-pedestal-fan-against-wall.webp",
+        "alt": "White pedestal fan standing against a wall.",
+        "width": 1200,
+        "height": 1437,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/",
-        "photographer": "João Vítor Heinrichs",
+        "source_url": "https://www.pexels.com/photo/a-stand-fan-beside-a-white-wall-13983948/",
+        "photographer": "Obsolete Lense",
         "license": "Pexels License",
-        "pexels_id": "7807058",
-        "title": "A Close-Up Shot of a Storm Drain"
+        "pexels_id": "13983948",
+        "title": "A Stand Fan beside a White Wall"
       }
     ],
-    "troy-sewer-cleanup": [
-      {
-        "file": "water-covering-indoor-corridor-floor.webp",
-        "alt": "Water covering the floor of an empty indoor corridor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/empty-corridor-interior-with-floor-flooded-with-water-15043329/",
-        "photographer": "Berra",
-        "license": "Pexels License",
-        "pexels_id": "15043329",
-        "title": "Empty Corridor Interior with Floor Flooded with Water "
-      },
+    "royal-oak-sewer-cleanup": [
       {
         "file": "worker-disinfecting-floor-in-protective-suit.webp",
         "alt": "Worker in a white protective suit disinfecting a floor.",
@@ -64,31 +52,31 @@
         "title": "Person In A Protective Suit Disinfecting Inside The House"
       },
       {
-        "file": "storm-drain-grate-with-leaves.webp",
-        "alt": "Storm drain grate with leaves and debris.",
-        "width": 1200,
-        "height": 800,
+        "file": "close-up-of-storm-drain-grate.webp",
+        "alt": "Close-up of a metal storm drain grate.",
+        "width": 972,
+        "height": 1458,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/storm-drain-with-leaves-and-debris-accumulation-38239813/",
-        "photographer": "Plato Terentev",
+        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/",
+        "photographer": "João Vítor Heinrichs",
         "license": "Pexels License",
-        "pexels_id": "38239813",
-        "title": "Storm Drain With Leaves and Debris Accumulation"
+        "pexels_id": "7807058",
+        "title": "A Close-Up Shot of a Storm Drain"
+      },
+      {
+        "file": "floodwater-on-concrete-floor-by-stairs.webp",
+        "alt": "Floodwater on a concrete floor beside a white staircase.",
+        "width": 1200,
+        "height": 1600,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/flood-water-on-concrete-floor-and-a-white-concrete-staircase-7924140/",
+        "photographer": "David Yu",
+        "license": "Pexels License",
+        "pexels_id": "7924140",
+        "title": "Flood Water on Concrete Floor and a White Concrete Staircase"
       }
     ],
-    "birmingham-sewer-cleanup": [
-      {
-        "file": "wet-tile-floor-reflection.webp",
-        "alt": "Wet tile floor reflecting the room.",
-        "width": 1200,
-        "height": 705,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/wet-floor-with-water-reflection-6187783/",
-        "photographer": "Jenna Hamra",
-        "license": "Pexels License",
-        "pexels_id": "6187783",
-        "title": "Wet Floor with Water Reflection"
-      },
+    "troy-sewer-cleanup": [
       {
         "file": "worker-in-protective-suit-holding-spray-bottle.webp",
         "alt": "Worker in a white protective suit holding a spray bottle.",
@@ -112,9 +100,7 @@
         "license": "Pexels License",
         "pexels_id": "6573773",
         "title": "A Rusty Metal Street Drainage"
-      }
-    ],
-    "berkley-sewer-cleanup": [
+      },
       {
         "file": "floodwater-on-concrete-floor-by-stairs.webp",
         "alt": "Floodwater on a concrete floor beside a white staircase.",
@@ -126,7 +112,9 @@
         "license": "Pexels License",
         "pexels_id": "7924140",
         "title": "Flood Water on Concrete Floor and a White Concrete Staircase"
-      },
+      }
+    ],
+    "birmingham-sewer-cleanup": [
       {
         "file": "worker-in-protective-suit-cleaning-table.webp",
         "alt": "Worker in a white protective suit cleaning a table.",
@@ -150,21 +138,21 @@
         "license": "Pexels License",
         "pexels_id": "17592363",
         "title": "Manholes in Street"
+      },
+      {
+        "file": "floodwater-on-concrete-floor-by-stairs.webp",
+        "alt": "Floodwater on a concrete floor beside a white staircase.",
+        "width": 1200,
+        "height": 1600,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/flood-water-on-concrete-floor-and-a-white-concrete-staircase-7924140/",
+        "photographer": "David Yu",
+        "license": "Pexels License",
+        "pexels_id": "7924140",
+        "title": "Flood Water on Concrete Floor and a White Concrete Staircase"
       }
     ],
-    "clawson-sewer-cleanup": [
-      {
-        "file": "water-covering-indoor-corridor-floor.webp",
-        "alt": "Water covering the floor of an empty indoor corridor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/empty-corridor-interior-with-floor-flooded-with-water-15043329/",
-        "photographer": "Berra",
-        "license": "Pexels License",
-        "pexels_id": "15043329",
-        "title": "Empty Corridor Interior with Floor Flooded with Water "
-      },
+    "berkley-sewer-cleanup": [
       {
         "file": "worker-in-protective-suit-wiping-cabinet.webp",
         "alt": "Worker in a white protective suit wiping a cabinet.",
@@ -178,30 +166,270 @@
         "title": "Cleaner in Protection Suit Wiping Cabinet in Kitchen"
       },
       {
-        "file": "metal-manhole-cover-in-street.webp",
-        "alt": "Round metal manhole cover in the street.",
-        "width": 786,
-        "height": 552,
+        "file": "white-downspout-on-concrete-wall.webp",
+        "alt": "White downspout running down a concrete wall.",
+        "width": 1080,
+        "height": 1616,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/city-sewer-manhole-cover-8200451/",
-        "photographer": "Simon Hurry",
+        "source_url": "https://www.pexels.com/photo/house-drain-pipe-on-concrete-wall-3964564/",
+        "photographer": "ready made",
         "license": "Pexels License",
-        "pexels_id": "8200451",
-        "title": "City Sewer Manhole Cover"
+        "pexels_id": "3964564",
+        "title": "House Drain Pipe on Concrete Wall"
+      },
+      {
+        "file": "empty-unfinished-basement.webp",
+        "alt": "Empty unfinished basement with a concrete floor.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/an-empty-basement-4092030/",
+        "photographer": "Curtis Adams",
+        "license": "Pexels License",
+        "pexels_id": "4092030",
+        "title": "An Empty Basement"
+      }
+    ],
+    "clawson-sewer-cleanup": [
+      {
+        "file": "worker-in-protective-suit-cleaning-couch.webp",
+        "alt": "Worker in a white protective suit cleaning a couch.",
+        "width": 1200,
+        "height": 1798,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/person-wearing-white-ppe-while-cleaning-the-couch-4098781/",
+        "photographer": "Matilda Wormwood",
+        "license": "Pexels License",
+        "pexels_id": "4098781",
+        "title": "Person Wearing White PPE while Cleaning the Couch"
+      },
+      {
+        "file": "white-downspout-on-exterior-wall.webp",
+        "alt": "White downspout on an exterior wall.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/white-downspout-on-concrete-wall-9809765/",
+        "photographer": "Plato Terentev",
+        "license": "Pexels License",
+        "pexels_id": "9809765",
+        "title": "White Downspout on Concrete Wall"
+      },
+      {
+        "file": "unfinished-concrete-basement.webp",
+        "alt": "Unfinished concrete basement room.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/concrete-room-in-basement-20589810/",
+        "photographer": "Jakub Zerdzicki",
+        "license": "Pexels License",
+        "pexels_id": "20589810",
+        "title": "Concrete Room in Basement"
+      }
+    ],
+    "royal-oak-flooded-basement": [
+      {
+        "file": "ladder-in-empty-basement.webp",
+        "alt": "Ladder standing in an empty basement.",
+        "width": 1200,
+        "height": 2134,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/ladder-in-empty-basement-17182110/",
+        "photographer": "Masi",
+        "license": "Pexels License",
+        "pexels_id": "17182110",
+        "title": "Ladder in Empty Basement"
+      },
+      {
+        "file": "blue-fan-on-a-rug.webp",
+        "alt": "Blue fan sitting on a rug.",
+        "width": 972,
+        "height": 1458,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-blue-fan-on-a-rug-in-a-room-28054343/",
+        "photographer": "Erfan Amiri",
+        "license": "Pexels License",
+        "pexels_id": "28054343",
+        "title": "A blue fan on a rug in a room"
+      },
+      {
+        "file": "door-and-steps-at-basement-entrance.webp",
+        "alt": "Door and steps at a basement entrance.",
+        "width": 874,
+        "height": 1167,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/steps-and-the-door-to-the-basement-16639381/",
+        "photographer": "NITIN CHAUHAN",
+        "license": "Pexels License",
+        "pexels_id": "16639381",
+        "title": "Steps and the Door to the Basement "
+      }
+    ],
+    "troy-flooded-basement": [
+      {
+        "file": "carpeted-basement-room.webp",
+        "alt": "Carpeted basement room with a window.",
+        "width": 1200,
+        "height": 900,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/spacious-basement-room-with-carpet-flooring-35493899/",
+        "photographer": "Peter  Vang",
+        "license": "Pexels License",
+        "pexels_id": "35493899",
+        "title": "Spacious Basement Room with Carpet Flooring"
+      },
+      {
+        "file": "box-fan-beside-a-couch.webp",
+        "alt": "Box fan on the floor beside a couch.",
+        "width": 1200,
+        "height": 1794,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-couch-and-a-fan-standing-on-the-floor-in-a-living-room-11046405/",
+        "photographer": "Vika Kirillova",
+        "license": "Pexels License",
+        "pexels_id": "11046405",
+        "title": "A Couch and a Fan Standing on the Floor in a Living Room "
+      },
+      {
+        "file": "finished-basement-with-couch.webp",
+        "alt": "Finished basement with a couch and wall art.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/cozy-basement-room-with-modern-decor-and-couch-36777934/",
+        "photographer": "Curtis Adams",
+        "license": "Pexels License",
+        "pexels_id": "36777934",
+        "title": "Cozy Basement Room with Modern Decor and Couch"
+      }
+    ],
+    "birmingham-flooded-basement": [
+      {
+        "file": "home-gym-in-finished-basement.webp",
+        "alt": "Home gym set up in a finished basement.",
+        "width": 1200,
+        "height": 801,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/home-gym-with-equipment-in-basement-7174396/",
+        "photographer": "Max Vakhtbovych",
+        "license": "Pexels License",
+        "pexels_id": "7174396",
+        "title": "Home gym with equipment in basement"
+      },
+      {
+        "file": "floor-fan-on-concrete.webp",
+        "alt": "Large floor fan on a concrete floor.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/blow-fan-17301209/",
+        "photographer": "Jakub Zerdzicki",
+        "license": "Pexels License",
+        "pexels_id": "17301209",
+        "title": "blow fan"
+      },
+      {
+        "file": "empty-unfinished-basement.webp",
+        "alt": "Empty unfinished basement with a concrete floor.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/an-empty-basement-4092030/",
+        "photographer": "Curtis Adams",
+        "license": "Pexels License",
+        "pexels_id": "4092030",
+        "title": "An Empty Basement"
+      }
+    ],
+    "berkley-flooded-basement": [
+      {
+        "file": "unfinished-concrete-basement.webp",
+        "alt": "Unfinished concrete basement room.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/concrete-room-in-basement-20589810/",
+        "photographer": "Jakub Zerdzicki",
+        "license": "Pexels License",
+        "pexels_id": "20589810",
+        "title": "Concrete Room in Basement"
+      },
+      {
+        "file": "white-fan-on-hardwood-floor.webp",
+        "alt": "White fan on a hardwood floor.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/fan-in-a-minimalist-interior-12243531/",
+        "photographer": "EL The Explorer",
+        "license": "Pexels License",
+        "pexels_id": "12243531",
+        "title": "Fan in a minimalist interior"
+      },
+      {
+        "file": "ladder-in-empty-basement.webp",
+        "alt": "Ladder standing in an empty basement.",
+        "width": 1200,
+        "height": 2134,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/ladder-in-empty-basement-17182110/",
+        "photographer": "Masi",
+        "license": "Pexels License",
+        "pexels_id": "17182110",
+        "title": "Ladder in Empty Basement"
+      }
+    ],
+    "clawson-flooded-basement": [
+      {
+        "file": "door-and-steps-at-basement-entrance.webp",
+        "alt": "Door and steps at a basement entrance.",
+        "width": 874,
+        "height": 1167,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/steps-and-the-door-to-the-basement-16639381/",
+        "photographer": "NITIN CHAUHAN",
+        "license": "Pexels License",
+        "pexels_id": "16639381",
+        "title": "Steps and the Door to the Basement "
+      },
+      {
+        "file": "white-pedestal-fan-against-wall.webp",
+        "alt": "White pedestal fan standing against a wall.",
+        "width": 1200,
+        "height": 1437,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-stand-fan-beside-a-white-wall-13983948/",
+        "photographer": "Obsolete Lense",
+        "license": "Pexels License",
+        "pexels_id": "13983948",
+        "title": "A Stand Fan beside a White Wall"
+      },
+      {
+        "file": "carpeted-basement-room.webp",
+        "alt": "Carpeted basement room with a window.",
+        "width": 1200,
+        "height": 900,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/spacious-basement-room-with-carpet-flooring-35493899/",
+        "photographer": "Peter  Vang",
+        "license": "Pexels License",
+        "pexels_id": "35493899",
+        "title": "Spacious Basement Room with Carpet Flooring"
       }
     ],
     "royal-oak-sewage-extraction": [
       {
-        "file": "industrial-pump-and-hoses-outdoors.webp",
-        "alt": "Industrial water pump with hoses set up outdoors.",
+        "file": "technician-working-on-water-pump.webp",
+        "alt": "Technician working on a blue water pump and gauges.",
         "width": 1200,
-        "height": 1800,
+        "height": 2133,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
-        "photographer": "Adam Šumník",
+        "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
+        "photographer": "Bulat843 🌙",
         "license": "Pexels License",
-        "pexels_id": "32489252",
-        "title": "Industrial Pump and Hose Equipment Outdoor View"
+        "pexels_id": "35290675",
+        "title": "Focused Technician Working with Water Pump"
       },
       {
         "file": "plumber-using-pipe-wrench-indoors.webp",
@@ -216,42 +444,42 @@
         "title": "Plumber Repairing Pipe with Wrench Indoors"
       },
       {
-        "file": "person-in-full-protective-suit-indoors.webp",
-        "alt": "Person standing indoors in a full white protective suit.",
+        "file": "worker-pulling-on-gloves-in-protective-suit.webp",
+        "alt": "Worker in a protective suit pulling on blue gloves.",
         "width": 1200,
-        "height": 800,
+        "height": 1798,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-wearing-protective-suit-3985287/",
-        "photographer": "Gustavo Fring",
+        "source_url": "https://www.pexels.com/photo/a-woman-in-a-protective-suit-putting-on-gloves-4176039/",
+        "photographer": "Michelangelo Buonarroti",
         "license": "Pexels License",
-        "pexels_id": "3985287",
-        "title": "Person Wearing Protective Suit"
+        "pexels_id": "4176039",
+        "title": "A Woman in a Protective Suit Putting On Gloves "
       }
     ],
     "troy-sewage-extraction": [
       {
-        "file": "technician-working-on-water-pump.webp",
-        "alt": "Technician working on a blue water pump and gauges.",
-        "width": 1200,
-        "height": 2133,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
-        "photographer": "Bulat843 🌙",
-        "license": "Pexels License",
-        "pexels_id": "35290675",
-        "title": "Focused Technician Working with Water Pump"
-      },
-      {
-        "file": "leaking-pipe-wrapped-in-plastic.webp",
-        "alt": "Leaking pipe wrapped with plastic.",
+        "file": "industrial-pump-and-hoses-outdoors.webp",
+        "alt": "Industrial water pump with hoses set up outdoors.",
         "width": 1200,
         "height": 1800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/leaking-pipe-fixed-with-plastic-15206136/",
-        "photographer": "Swastik Arora",
+        "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
+        "photographer": "Adam Šumník",
         "license": "Pexels License",
-        "pexels_id": "15206136",
-        "title": "Leaking Pipe Fixed with Plastic"
+        "pexels_id": "32489252",
+        "title": "Industrial Pump and Hose Equipment Outdoor View"
+      },
+      {
+        "file": "plumber-fitting-a-pipe.webp",
+        "alt": "Plumber fitting a pipe with a wrench.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/professional-plumber-installing-a-radiator-pipe-29226620/",
+        "photographer": "Sergei Starostin",
+        "license": "Pexels License",
+        "pexels_id": "29226620",
+        "title": "Professional Plumber Installing a Radiator Pipe"
       },
       {
         "file": "person-pulling-on-protective-coveralls.webp",
@@ -268,18 +496,6 @@
     ],
     "birmingham-sewage-extraction": [
       {
-        "file": "industrial-pump-and-hoses-outdoors.webp",
-        "alt": "Industrial water pump with hoses set up outdoors.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
-        "photographer": "Adam Šumník",
-        "license": "Pexels License",
-        "pexels_id": "32489252",
-        "title": "Industrial Pump and Hose Equipment Outdoor View"
-      },
-      {
         "file": "steel-pipes-with-pressure-gauges.webp",
         "alt": "Steel pipes with pressure gauges.",
         "width": 1200,
@@ -292,42 +508,16 @@
         "title": "Steel Pipes with Pressure Gauge "
       },
       {
-        "file": "worker-pulling-on-gloves-in-protective-suit.webp",
-        "alt": "Worker in a protective suit pulling on blue gloves.",
+        "file": "leaking-pipe-wrapped-in-plastic.webp",
+        "alt": "Leaking pipe wrapped with plastic.",
         "width": 1200,
-        "height": 1798,
+        "height": 1800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-woman-in-a-protective-suit-putting-on-gloves-4176039/",
-        "photographer": "Michelangelo Buonarroti",
+        "source_url": "https://www.pexels.com/photo/leaking-pipe-fixed-with-plastic-15206136/",
+        "photographer": "Swastik Arora",
         "license": "Pexels License",
-        "pexels_id": "4176039",
-        "title": "A Woman in a Protective Suit Putting On Gloves "
-      }
-    ],
-    "berkley-sewage-extraction": [
-      {
-        "file": "technician-working-on-water-pump.webp",
-        "alt": "Technician working on a blue water pump and gauges.",
-        "width": 1200,
-        "height": 2133,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
-        "photographer": "Bulat843 🌙",
-        "license": "Pexels License",
-        "pexels_id": "35290675",
-        "title": "Focused Technician Working with Water Pump"
-      },
-      {
-        "file": "plumber-fitting-a-pipe.webp",
-        "alt": "Plumber fitting a pipe with a wrench.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/professional-plumber-installing-a-radiator-pipe-29226620/",
-        "photographer": "Sergei Starostin",
-        "license": "Pexels License",
-        "pexels_id": "29226620",
-        "title": "Professional Plumber Installing a Radiator Pipe"
+        "pexels_id": "15206136",
+        "title": "Leaking Pipe Fixed with Plastic"
       },
       {
         "file": "close-up-of-protective-suit-and-mask.webp",
@@ -342,30 +532,30 @@
         "title": "Close-up Photo of Person wearing Hazmat Suit "
       }
     ],
-    "clawson-sewage-extraction": [
+    "berkley-sewage-extraction": [
       {
-        "file": "industrial-pump-and-hoses-outdoors.webp",
-        "alt": "Industrial water pump with hoses set up outdoors.",
+        "file": "hand-holding-plumbers-wrench.webp",
+        "alt": "Hand holding a plumber's wrench.",
         "width": 1200,
-        "height": 1800,
+        "height": 1600,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
-        "photographer": "Adam Šumník",
+        "source_url": "https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486978/",
+        "photographer": "Kindel Media",
         "license": "Pexels License",
-        "pexels_id": "32489252",
-        "title": "Industrial Pump and Hose Equipment Outdoor View"
+        "pexels_id": "8486978",
+        "title": "Handywoman Holding a Plumbers Wrench "
       },
       {
-        "file": "close-up-of-water-meter.webp",
-        "alt": "Close-up of a water meter.",
+        "file": "plumbers-wrench-on-wood.webp",
+        "alt": "Plumber's wrench resting on a wood surface.",
         "width": 1200,
-        "height": 1800,
+        "height": 1600,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/close-up-of-water-meter-4494653/",
-        "photographer": "Nothing Ahead",
+        "source_url": "https://www.pexels.com/photo/close-up-photo-of-plumbers-wrench-on-wooden-surface-8488058/",
+        "photographer": "Kindel Media",
         "license": "Pexels License",
-        "pexels_id": "4494653",
-        "title": "Close Up of Water Meter"
+        "pexels_id": "8488058",
+        "title": "Close Up Photo of Plumbers Wrench on Wooden Surface"
       },
       {
         "file": "person-in-protective-suit-mask-and-goggles.webp",
@@ -380,194 +570,422 @@
         "title": "A Person Wearing Personal Protective Equipment"
       }
     ],
-    "royal-oak-flooded-basement": [
+    "clawson-sewage-extraction": [
       {
-        "file": "house-in-floodwater-during-rain.webp",
-        "alt": "Single-story house surrounded by floodwater in heavy rain.",
+        "file": "white-plastic-pipes-on-wall.webp",
+        "alt": "White plastic pipes mounted on a wall.",
+        "width": 1200,
+        "height": 1600,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/plastic-pipes-on-wall-12142829/",
+        "photographer": "Bùi Hoàng Long",
+        "license": "Pexels License",
+        "pexels_id": "12142829",
+        "title": "Plastic Pipes on Wall"
+      },
+      {
+        "file": "technician-working-on-water-pump.webp",
+        "alt": "Technician working on a blue water pump and gauges.",
+        "width": 1200,
+        "height": 2133,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
+        "photographer": "Bulat843 🌙",
+        "license": "Pexels License",
+        "pexels_id": "35290675",
+        "title": "Focused Technician Working with Water Pump"
+      },
+      {
+        "file": "worker-in-protective-suit-spraying-floor.webp",
+        "alt": "Worker in a white protective suit kneeling and spraying a floor.",
+        "width": 1200,
+        "height": 801,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/chemist-in-protective-clothing-kneeling-on-floor-4099090/",
+        "photographer": "Matilda Wormwood",
+        "license": "Pexels License",
+        "pexels_id": "4099090",
+        "title": "Chemist in Protective Clothing Kneeling on Floor"
+      }
+    ],
+    "royal-oak-sump-pump-repair": [
+      {
+        "file": "plumber-using-pipe-wrench-indoors.webp",
+        "alt": "Plumber using a pipe wrench on indoor plumbing.",
         "width": 1080,
-        "height": 720,
+        "height": 1920,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/flooded-suburban-house-during-heavy-rain-28447774/",
-        "photographer": "Helena Jankovičová Kováčová",
+        "source_url": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
+        "photographer": "Bulat843 🌙",
         "license": "Pexels License",
-        "pexels_id": "28447774",
-        "title": "Flooded suburban house during heavy rain"
+        "pexels_id": "32588548",
+        "title": "Plumber Repairing Pipe with Wrench Indoors"
       },
       {
-        "file": "car-on-a-flooded-road.webp",
-        "alt": "Car on a road covered with floodwater.",
+        "file": "laundry-room-with-utility-sink.webp",
+        "alt": "Laundry room with a washer, dryer, and utility sink.",
         "width": 1200,
-        "height": 800,
+        "height": 1800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/car-navigating-flooded-road-in-urban-area-28447757/",
-        "photographer": "Helena Jankovičová Kováčová",
+        "source_url": "https://www.pexels.com/photo/interior-of-a-modern-laundry-room-19846397/",
+        "photographer": "Lisa Anna",
         "license": "Pexels License",
-        "pexels_id": "28447757",
-        "title": "Car Navigating Flooded Road in Urban Area"
+        "pexels_id": "19846397",
+        "title": "Interior of a Modern Laundry Room"
       },
       {
-        "file": "empty-unfinished-basement.webp",
-        "alt": "Empty unfinished basement with a concrete floor.",
+        "file": "industrial-pump-and-hoses-outdoors.webp",
+        "alt": "Industrial water pump with hoses set up outdoors.",
         "width": 1200,
-        "height": 800,
+        "height": 1800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/an-empty-basement-4092030/",
-        "photographer": "Curtis Adams",
+        "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
+        "photographer": "Adam Šumník",
         "license": "Pexels License",
-        "pexels_id": "4092030",
-        "title": "An Empty Basement"
+        "pexels_id": "32489252",
+        "title": "Industrial Pump and Hose Equipment Outdoor View"
       }
     ],
-    "troy-flooded-basement": [
+    "troy-sump-pump-repair": [
       {
-        "file": "suburban-house-standing-in-floodwater.webp",
-        "alt": "Suburban house standing in floodwater during a rainstorm.",
-        "width": 640,
-        "height": 960,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/flooded-suburban-landscape-with-house-and-trees-28447764/",
-        "photographer": "Helena Jankovičová Kováčová",
-        "license": "Pexels License",
-        "pexels_id": "28447764",
-        "title": "Flooded suburban landscape with house and trees"
-      },
-      {
-        "file": "car-driving-through-floodwater.webp",
-        "alt": "Car driving through floodwater on a residential street.",
+        "file": "plumber-fitting-a-pipe.webp",
+        "alt": "Plumber fitting a pipe with a wrench.",
         "width": 1200,
         "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/car-navigating-flooded-street-after-heavy-rain-28447761/",
-        "photographer": "Helena Jankovičová Kováčová",
+        "source_url": "https://www.pexels.com/photo/professional-plumber-installing-a-radiator-pipe-29226620/",
+        "photographer": "Sergei Starostin",
         "license": "Pexels License",
-        "pexels_id": "28447761",
-        "title": "Car Navigating Flooded Street After Heavy Rain"
+        "pexels_id": "29226620",
+        "title": "Professional Plumber Installing a Radiator Pipe"
       },
       {
-        "file": "ladder-in-empty-basement.webp",
-        "alt": "Ladder standing in an empty basement.",
+        "file": "washer-and-dryer-in-laundry-room.webp",
+        "alt": "Washer and dryer in a laundry room.",
         "width": 1200,
-        "height": 2134,
+        "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/ladder-in-empty-basement-17182110/",
-        "photographer": "Masi",
+        "source_url": "https://www.pexels.com/photo/bright-laundry-room-with-washer-and-dryer-31602334/",
+        "photographer": "JAELEN KEMPSON",
         "license": "Pexels License",
-        "pexels_id": "17182110",
-        "title": "Ladder in Empty Basement"
+        "pexels_id": "31602334",
+        "title": "Bright Laundry Room with Washer and Dryer"
+      },
+      {
+        "file": "steel-pipes-with-pressure-gauges.webp",
+        "alt": "Steel pipes with pressure gauges.",
+        "width": 1200,
+        "height": 801,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/steel-pipes-with-pressure-gauge-7937300/",
+        "photographer": "Pavel Danilyuk",
+        "license": "Pexels License",
+        "pexels_id": "7937300",
+        "title": "Steel Pipes with Pressure Gauge "
       }
     ],
-    "birmingham-flooded-basement": [
+    "birmingham-sump-pump-repair": [
       {
-        "file": "house-in-floodwater-black-and-white.webp",
-        "alt": "Black-and-white photo of a house standing in floodwater.",
+        "file": "leaking-pipe-wrapped-in-plastic.webp",
+        "alt": "Leaking pipe wrapped with plastic.",
         "width": 1200,
-        "height": 800,
+        "height": 1800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/flooded-suburban-house-landscape-in-black-and-white-28447780/",
-        "photographer": "Helena Jankovičová Kováčová",
+        "source_url": "https://www.pexels.com/photo/leaking-pipe-fixed-with-plastic-15206136/",
+        "photographer": "Swastik Arora",
         "license": "Pexels License",
-        "pexels_id": "28447780",
-        "title": "Flooded suburban house landscape in black and white"
+        "pexels_id": "15206136",
+        "title": "Leaking Pipe Fixed with Plastic"
       },
       {
-        "file": "car-in-floodwater-in-a-yard.webp",
-        "alt": "Car sitting in floodwater in a residential yard.",
+        "file": "laundry-room-with-utility-sink.webp",
+        "alt": "Laundry room with a washer, dryer, and utility sink.",
         "width": 1200,
-        "height": 800,
+        "height": 1800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/car-partially-submerged-in-flooded-area-28447772/",
-        "photographer": "Helena Jankovičová Kováčová",
+        "source_url": "https://www.pexels.com/photo/interior-of-a-modern-laundry-room-19846397/",
+        "photographer": "Lisa Anna",
         "license": "Pexels License",
-        "pexels_id": "28447772",
-        "title": "Car Partially Submerged in Flooded Area"
+        "pexels_id": "19846397",
+        "title": "Interior of a Modern Laundry Room"
       },
       {
-        "file": "concrete-stairs-into-basement.webp",
-        "alt": "Concrete staircase leading into a basement.",
+        "file": "hand-holding-plumbers-wrench.webp",
+        "alt": "Hand holding a plumber's wrench.",
         "width": 1200,
-        "height": 766,
+        "height": 1600,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/underground-basement-staircase-20589916/",
-        "photographer": "Jakub Zerdzicki",
+        "source_url": "https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486978/",
+        "photographer": "Kindel Media",
         "license": "Pexels License",
-        "pexels_id": "20589916",
-        "title": "Underground Basement Staircase"
+        "pexels_id": "8486978",
+        "title": "Handywoman Holding a Plumbers Wrench "
       }
     ],
-    "berkley-flooded-basement": [
+    "berkley-sump-pump-repair": [
       {
-        "file": "floodwater-at-a-house-door.webp",
-        "alt": "Murky water covering the steps at a house door.",
+        "file": "plumbers-wrench-on-wood.webp",
+        "alt": "Plumber's wrench resting on a wood surface.",
         "width": 1200,
-        "height": 814,
+        "height": 1600,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/doorstep-of-flooded-house-18108043/",
-        "photographer": "Civan D.",
+        "source_url": "https://www.pexels.com/photo/close-up-photo-of-plumbers-wrench-on-wooden-surface-8488058/",
+        "photographer": "Kindel Media",
         "license": "Pexels License",
-        "pexels_id": "18108043",
-        "title": "Doorstep of Flooded House"
+        "pexels_id": "8488058",
+        "title": "Close Up Photo of Plumbers Wrench on Wooden Surface"
       },
       {
-        "file": "floodwater-covering-a-residential-street.webp",
-        "alt": "Floodwater covering a residential street.",
+        "file": "washer-and-dryer-in-laundry-room.webp",
+        "alt": "Washer and dryer in a laundry room.",
         "width": 1200,
         "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/flooded-residential-area-during-heavy-rain-28447775/",
-        "photographer": "Helena Jankovičová Kováčová",
+        "source_url": "https://www.pexels.com/photo/bright-laundry-room-with-washer-and-dryer-31602334/",
+        "photographer": "JAELEN KEMPSON",
         "license": "Pexels License",
-        "pexels_id": "28447775",
-        "title": "Flooded Residential Area During Heavy Rain"
+        "pexels_id": "31602334",
+        "title": "Bright Laundry Room with Washer and Dryer"
       },
       {
-        "file": "door-and-steps-at-basement-entrance.webp",
-        "alt": "Door and steps at a basement entrance.",
-        "width": 874,
-        "height": 1167,
+        "file": "white-plastic-pipes-on-wall.webp",
+        "alt": "White plastic pipes mounted on a wall.",
+        "width": 1200,
+        "height": 1600,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/steps-and-the-door-to-the-basement-16639381/",
-        "photographer": "NITIN CHAUHAN",
+        "source_url": "https://www.pexels.com/photo/plastic-pipes-on-wall-12142829/",
+        "photographer": "Bùi Hoàng Long",
         "license": "Pexels License",
-        "pexels_id": "16639381",
-        "title": "Steps and the Door to the Basement "
+        "pexels_id": "12142829",
+        "title": "Plastic Pipes on Wall"
       }
     ],
-    "clawson-flooded-basement": [
+    "clawson-sump-pump-repair": [
       {
-        "file": "aerial-view-of-flooded-house.webp",
-        "alt": "Aerial view of a house surrounded by floodwater.",
+        "file": "technician-working-on-water-pump.webp",
+        "alt": "Technician working on a blue water pump and gauges.",
         "width": 1200,
-        "height": 900,
+        "height": 2133,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/aerial-view-of-flooded-house-14823609/",
-        "photographer": "Pok Rie",
+        "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
+        "photographer": "Bulat843 🌙",
         "license": "Pexels License",
-        "pexels_id": "14823609",
-        "title": "Aerial View of Flooded House"
+        "pexels_id": "35290675",
+        "title": "Focused Technician Working with Water Pump"
       },
       {
-        "file": "people-filling-sandbags.webp",
-        "alt": "People filling sandbags beside floodwater.",
+        "file": "laundry-room-with-utility-sink.webp",
+        "alt": "Laundry room with a washer, dryer, and utility sink.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/interior-of-a-modern-laundry-room-19846397/",
+        "photographer": "Lisa Anna",
+        "license": "Pexels License",
+        "pexels_id": "19846397",
+        "title": "Interior of a Modern Laundry Room"
+      },
+      {
+        "file": "plumber-using-pipe-wrench-indoors.webp",
+        "alt": "Plumber using a pipe wrench on indoor plumbing.",
+        "width": 1080,
+        "height": 1920,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
+        "photographer": "Bulat843 🌙",
+        "license": "Pexels License",
+        "pexels_id": "32588548",
+        "title": "Plumber Repairing Pipe with Wrench Indoors"
+      }
+    ],
+    "royal-oak-basement-sanitization": [
+      {
+        "file": "worker-disinfecting-floor-in-protective-suit.webp",
+        "alt": "Worker in a white protective suit disinfecting a floor.",
+        "width": 1200,
+        "height": 801,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/person-in-a-protective-suit-disinfecting-inside-the-house-4099260/",
+        "photographer": "Matilda Wormwood",
+        "license": "Pexels License",
+        "pexels_id": "4099260",
+        "title": "Person In A Protective Suit Disinfecting Inside The House"
+      },
+      {
+        "file": "person-mopping-tile-floor.webp",
+        "alt": "Person mopping a light tile floor.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/person-in-gray-sweater-mopping-and-cleaning-the-floor-6196566/",
+        "photographer": "Tima Miroshnichenko",
+        "license": "Pexels License",
+        "pexels_id": "6196566",
+        "title": "Person in Gray Sweater Mopping and Cleaning the Floor"
+      },
+      {
+        "file": "worker-in-protective-suit-holding-spray-bottle.webp",
+        "alt": "Worker in a white protective suit holding a spray bottle.",
+        "width": 1200,
+        "height": 1798,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/person-in-white-ppe-holding-spray-bottle-4098782/",
+        "photographer": "Matilda Wormwood",
+        "license": "Pexels License",
+        "pexels_id": "4098782",
+        "title": "Person in White PPE Holding Spray Bottle"
+      }
+    ],
+    "troy-basement-sanitization": [
+      {
+        "file": "worker-in-protective-suit-cleaning-table.webp",
+        "alt": "Worker in a white protective suit cleaning a table.",
+        "width": 1200,
+        "height": 1798,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/person-in-white-ppe-cleaning-the-table-4098787/",
+        "photographer": "Matilda Wormwood",
+        "license": "Pexels License",
+        "pexels_id": "4098787",
+        "title": "Person in White PPE Cleaning the Table"
+      },
+      {
+        "file": "person-mopping-tile-floor-with-bucket.webp",
+        "alt": "Person mopping a tile floor beside a bucket.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/woman-mopping-a-tiled-floor-6196577/",
+        "photographer": "Tima Miroshnichenko",
+        "license": "Pexels License",
+        "pexels_id": "6196577",
+        "title": "Woman Mopping a Tiled Floor"
+      },
+      {
+        "file": "worker-in-protective-suit-wiping-cabinet.webp",
+        "alt": "Worker in a white protective suit wiping a cabinet.",
+        "width": 1200,
+        "height": 1798,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/cleaner-in-protection-suit-wiping-cabinet-in-kitchen-4099086/",
+        "photographer": "Matilda Wormwood",
+        "license": "Pexels License",
+        "pexels_id": "4099086",
+        "title": "Cleaner in Protection Suit Wiping Cabinet in Kitchen"
+      }
+    ],
+    "birmingham-basement-sanitization": [
+      {
+        "file": "worker-in-protective-suit-cleaning-couch.webp",
+        "alt": "Worker in a white protective suit cleaning a couch.",
+        "width": 1200,
+        "height": 1798,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/person-wearing-white-ppe-while-cleaning-the-couch-4098781/",
+        "photographer": "Matilda Wormwood",
+        "license": "Pexels License",
+        "pexels_id": "4098781",
+        "title": "Person Wearing White PPE while Cleaning the Couch"
+      },
+      {
+        "file": "person-mopping-wood-floor.webp",
+        "alt": "Person mopping a wood floor.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-person-cleaning-the-floor-with-a-mop-4440568/",
+        "photographer": "Polina Tankilevitch",
+        "license": "Pexels License",
+        "pexels_id": "4440568",
+        "title": "A Person Cleaning the Floor with a Mop"
+      },
+      {
+        "file": "worker-pulling-on-gloves-in-protective-suit.webp",
+        "alt": "Worker in a protective suit pulling on blue gloves.",
+        "width": 1200,
+        "height": 1798,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-woman-in-a-protective-suit-putting-on-gloves-4176039/",
+        "photographer": "Michelangelo Buonarroti",
+        "license": "Pexels License",
+        "pexels_id": "4176039",
+        "title": "A Woman in a Protective Suit Putting On Gloves "
+      }
+    ],
+    "berkley-basement-sanitization": [
+      {
+        "file": "person-pulling-on-protective-coveralls.webp",
+        "alt": "Person pulling on white protective coveralls.",
         "width": 1200,
         "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/emergency-response-team-filling-sandbags-during-flood-28447798/",
-        "photographer": "Helena Jankovičová Kováčová",
+        "source_url": "https://www.pexels.com/photo/man-putting-on-coveralls-3951417/",
+        "photographer": "cottonbro studio",
         "license": "Pexels License",
-        "pexels_id": "28447798",
-        "title": "Emergency Response Team Filling Sandbags During Flood"
+        "pexels_id": "3951417",
+        "title": "Man Putting on Coveralls"
       },
       {
-        "file": "unfinished-basement-with-exposed-joists.webp",
-        "alt": "Unfinished basement with exposed ceiling joists.",
+        "file": "yellow-mop-bucket-with-dirty-water.webp",
+        "alt": "Yellow mop bucket filled with dirty water.",
         "width": 1200,
-        "height": 803,
+        "height": 1800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/inside-of-an-old-basement-5369180/",
-        "photographer": "Enrico Hänel",
+        "source_url": "https://www.pexels.com/photo/a-yellow-mop-bucket-with-dirty-water-13840330/",
+        "photographer": "Jenkin Shen",
         "license": "Pexels License",
-        "pexels_id": "5369180",
-        "title": "Inside of an Old Basement"
+        "pexels_id": "13840330",
+        "title": "A Yellow Mop Bucket with Dirty Water"
+      },
+      {
+        "file": "close-up-of-protective-suit-and-mask.webp",
+        "alt": "Close-up of a person in a white protective suit and mask.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/close-up-photo-of-person-wearing-hazmat-suit-9545082/",
+        "photographer": "Ron Lach",
+        "license": "Pexels License",
+        "pexels_id": "9545082",
+        "title": "Close-up Photo of Person wearing Hazmat Suit "
+      }
+    ],
+    "clawson-basement-sanitization": [
+      {
+        "file": "person-in-protective-suit-mask-and-goggles.webp",
+        "alt": "Person indoors wearing a white protective suit, mask, and goggles.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-person-wearing-personal-protective-equipment-9894222/",
+        "photographer": "Ron Lach",
+        "license": "Pexels License",
+        "pexels_id": "9894222",
+        "title": "A Person Wearing Personal Protective Equipment"
+      },
+      {
+        "file": "person-mopping-tile-floor.webp",
+        "alt": "Person mopping a light tile floor.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/person-in-gray-sweater-mopping-and-cleaning-the-floor-6196566/",
+        "photographer": "Tima Miroshnichenko",
+        "license": "Pexels License",
+        "pexels_id": "6196566",
+        "title": "Person in Gray Sweater Mopping and Cleaning the Floor"
+      },
+      {
+        "file": "worker-in-protective-suit-spraying-floor.webp",
+        "alt": "Worker in a white protective suit kneeling and spraying a floor.",
+        "width": 1200,
+        "height": 801,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/chemist-in-protective-clothing-kneeling-on-floor-4099090/",
+        "photographer": "Matilda Wormwood",
+        "license": "Pexels License",
+        "pexels_id": "4099090",
+        "title": "Chemist in Protective Clothing Kneeling on Floor"
       }
     ],
     "royal-oak-water-damage-restoration": [
@@ -582,44 +1000,6 @@
         "license": "Pexels License",
         "pexels_id": "9617552",
         "title": "Hole Left after Fallen Plaster on Painted Wall"
-      },
-      {
-        "file": "white-pedestal-fan-against-wall.webp",
-        "alt": "White pedestal fan standing against a wall.",
-        "width": 1200,
-        "height": 1437,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-stand-fan-beside-a-white-wall-13983948/",
-        "photographer": "Obsolete Lense",
-        "license": "Pexels License",
-        "pexels_id": "13983948",
-        "title": "A Stand Fan beside a White Wall"
-      },
-      {
-        "file": "unfinished-concrete-basement.webp",
-        "alt": "Unfinished concrete basement room.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/concrete-room-in-basement-20589810/",
-        "photographer": "Jakub Zerdzicki",
-        "license": "Pexels License",
-        "pexels_id": "20589810",
-        "title": "Concrete Room in Basement"
-      }
-    ],
-    "troy-water-damage-restoration": [
-      {
-        "file": "crack-in-painted-wall.webp",
-        "alt": "Close-up of a crack in a painted wall.",
-        "width": 707,
-        "height": 943,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/close-up-of-cracked-wall-11627153/",
-        "photographer": "Zeki Okur",
-        "license": "Pexels License",
-        "pexels_id": "11627153",
-        "title": "Close up of Cracked Wall"
       },
       {
         "file": "blue-fan-on-a-rug.webp",
@@ -644,6 +1024,44 @@
         "license": "Pexels License",
         "pexels_id": "36777934",
         "title": "Cozy Basement Room with Modern Decor and Couch"
+      }
+    ],
+    "troy-water-damage-restoration": [
+      {
+        "file": "crack-in-painted-wall.webp",
+        "alt": "Close-up of a crack in a painted wall.",
+        "width": 707,
+        "height": 943,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/close-up-of-cracked-wall-11627153/",
+        "photographer": "Zeki Okur",
+        "license": "Pexels License",
+        "pexels_id": "11627153",
+        "title": "Close up of Cracked Wall"
+      },
+      {
+        "file": "box-fan-beside-a-couch.webp",
+        "alt": "Box fan on the floor beside a couch.",
+        "width": 1200,
+        "height": 1794,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-couch-and-a-fan-standing-on-the-floor-in-a-living-room-11046405/",
+        "photographer": "Vika Kirillova",
+        "license": "Pexels License",
+        "pexels_id": "11046405",
+        "title": "A Couch and a Fan Standing on the Floor in a Living Room "
+      },
+      {
+        "file": "home-gym-in-finished-basement.webp",
+        "alt": "Home gym set up in a finished basement.",
+        "width": 1200,
+        "height": 801,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/home-gym-with-equipment-in-basement-7174396/",
+        "photographer": "Max Vakhtbovych",
+        "license": "Pexels License",
+        "pexels_id": "7174396",
+        "title": "Home gym with equipment in basement"
       }
     ],
     "birmingham-water-damage-restoration": [
@@ -672,6 +1090,462 @@
         "title": "blow fan"
       },
       {
+        "file": "empty-unfinished-basement.webp",
+        "alt": "Empty unfinished basement with a concrete floor.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/an-empty-basement-4092030/",
+        "photographer": "Curtis Adams",
+        "license": "Pexels License",
+        "pexels_id": "4092030",
+        "title": "An Empty Basement"
+      }
+    ],
+    "berkley-water-damage-restoration": [
+      {
+        "file": "hole-in-plaster-wall.webp",
+        "alt": "Hole in the plaster of a painted interior wall.",
+        "width": 1200,
+        "height": 675,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/",
+        "photographer": "Diana ✨",
+        "license": "Pexels License",
+        "pexels_id": "9617552",
+        "title": "Hole Left after Fallen Plaster on Painted Wall"
+      },
+      {
+        "file": "white-fan-on-hardwood-floor.webp",
+        "alt": "White fan on a hardwood floor.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/fan-in-a-minimalist-interior-12243531/",
+        "photographer": "EL The Explorer",
+        "license": "Pexels License",
+        "pexels_id": "12243531",
+        "title": "Fan in a minimalist interior"
+      },
+      {
+        "file": "unfinished-concrete-basement.webp",
+        "alt": "Unfinished concrete basement room.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/concrete-room-in-basement-20589810/",
+        "photographer": "Jakub Zerdzicki",
+        "license": "Pexels License",
+        "pexels_id": "20589810",
+        "title": "Concrete Room in Basement"
+      }
+    ],
+    "clawson-water-damage-restoration": [
+      {
+        "file": "crack-in-painted-wall.webp",
+        "alt": "Close-up of a crack in a painted wall.",
+        "width": 707,
+        "height": 943,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/close-up-of-cracked-wall-11627153/",
+        "photographer": "Zeki Okur",
+        "license": "Pexels License",
+        "pexels_id": "11627153",
+        "title": "Close up of Cracked Wall"
+      },
+      {
+        "file": "white-pedestal-fan-against-wall.webp",
+        "alt": "White pedestal fan standing against a wall.",
+        "width": 1200,
+        "height": 1437,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-stand-fan-beside-a-white-wall-13983948/",
+        "photographer": "Obsolete Lense",
+        "license": "Pexels License",
+        "pexels_id": "13983948",
+        "title": "A Stand Fan beside a White Wall"
+      },
+      {
+        "file": "ladder-in-empty-basement.webp",
+        "alt": "Ladder standing in an empty basement.",
+        "width": 1200,
+        "height": 2134,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/ladder-in-empty-basement-17182110/",
+        "photographer": "Masi",
+        "license": "Pexels License",
+        "pexels_id": "17182110",
+        "title": "Ladder in Empty Basement"
+      }
+    ],
+    "royal-oak": [
+      {
+        "file": "door-and-steps-at-basement-entrance.webp",
+        "alt": "Door and steps at a basement entrance.",
+        "width": 874,
+        "height": 1167,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/steps-and-the-door-to-the-basement-16639381/",
+        "photographer": "NITIN CHAUHAN",
+        "license": "Pexels License",
+        "pexels_id": "16639381",
+        "title": "Steps and the Door to the Basement "
+      },
+      {
+        "file": "close-up-of-metal-downspout.webp",
+        "alt": "Close-up of a metal downspout.",
+        "width": 1080,
+        "height": 1620,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-downspout-5940870/",
+        "photographer": "Eva Bronzini",
+        "license": "Pexels License",
+        "pexels_id": "5940870",
+        "title": "A Close-Up Shot of a Downspout"
+      },
+      {
+        "file": "blue-fan-on-a-rug.webp",
+        "alt": "Blue fan sitting on a rug.",
+        "width": 972,
+        "height": 1458,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-blue-fan-on-a-rug-in-a-room-28054343/",
+        "photographer": "Erfan Amiri",
+        "license": "Pexels License",
+        "pexels_id": "28054343",
+        "title": "A blue fan on a rug in a room"
+      }
+    ],
+    "troy": [
+      {
+        "file": "carpeted-basement-room.webp",
+        "alt": "Carpeted basement room with a window.",
+        "width": 1200,
+        "height": 900,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/spacious-basement-room-with-carpet-flooring-35493899/",
+        "photographer": "Peter  Vang",
+        "license": "Pexels License",
+        "pexels_id": "35493899",
+        "title": "Spacious Basement Room with Carpet Flooring"
+      },
+      {
+        "file": "water-dripping-from-drain-spout.webp",
+        "alt": "Water dripping from a drain spout.",
+        "width": 1200,
+        "height": 802,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/water-dripping-from-drain-spout-3964796/",
+        "photographer": "ready made",
+        "license": "Pexels License",
+        "pexels_id": "3964796",
+        "title": "Water Dripping from Drain Spout "
+      },
+      {
+        "file": "box-fan-beside-a-couch.webp",
+        "alt": "Box fan on the floor beside a couch.",
+        "width": 1200,
+        "height": 1794,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-couch-and-a-fan-standing-on-the-floor-in-a-living-room-11046405/",
+        "photographer": "Vika Kirillova",
+        "license": "Pexels License",
+        "pexels_id": "11046405",
+        "title": "A Couch and a Fan Standing on the Floor in a Living Room "
+      }
+    ],
+    "birmingham": [
+      {
+        "file": "finished-basement-with-couch.webp",
+        "alt": "Finished basement with a couch and wall art.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/cozy-basement-room-with-modern-decor-and-couch-36777934/",
+        "photographer": "Curtis Adams",
+        "license": "Pexels License",
+        "pexels_id": "36777934",
+        "title": "Cozy Basement Room with Modern Decor and Couch"
+      },
+      {
+        "file": "metal-pipe-along-concrete-wall.webp",
+        "alt": "Metal pipe running along a concrete wall.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-silver-metal-pipe-on-brown-concrete-wall-10372434/",
+        "photographer": "Nikita Nikitin",
+        "license": "Pexels License",
+        "pexels_id": "10372434",
+        "title": "A Silver Metal Pipe on Brown Concrete Wall"
+      },
+      {
+        "file": "floor-fan-on-concrete.webp",
+        "alt": "Large floor fan on a concrete floor.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/blow-fan-17301209/",
+        "photographer": "Jakub Zerdzicki",
+        "license": "Pexels License",
+        "pexels_id": "17301209",
+        "title": "blow fan"
+      }
+    ],
+    "berkley": [
+      {
+        "file": "home-gym-in-finished-basement.webp",
+        "alt": "Home gym set up in a finished basement.",
+        "width": 1200,
+        "height": 801,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/home-gym-with-equipment-in-basement-7174396/",
+        "photographer": "Max Vakhtbovych",
+        "license": "Pexels License",
+        "pexels_id": "7174396",
+        "title": "Home gym with equipment in basement"
+      },
+      {
+        "file": "close-up-of-storm-drain-grate.webp",
+        "alt": "Close-up of a metal storm drain grate.",
+        "width": 972,
+        "height": 1458,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/",
+        "photographer": "João Vítor Heinrichs",
+        "license": "Pexels License",
+        "pexels_id": "7807058",
+        "title": "A Close-Up Shot of a Storm Drain"
+      },
+      {
+        "file": "white-fan-on-hardwood-floor.webp",
+        "alt": "White fan on a hardwood floor.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/fan-in-a-minimalist-interior-12243531/",
+        "photographer": "EL The Explorer",
+        "license": "Pexels License",
+        "pexels_id": "12243531",
+        "title": "Fan in a minimalist interior"
+      }
+    ],
+    "clawson": [
+      {
+        "file": "empty-unfinished-basement.webp",
+        "alt": "Empty unfinished basement with a concrete floor.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/an-empty-basement-4092030/",
+        "photographer": "Curtis Adams",
+        "license": "Pexels License",
+        "pexels_id": "4092030",
+        "title": "An Empty Basement"
+      },
+      {
+        "file": "rusty-street-drain.webp",
+        "alt": "Rusty metal street drain set in pavement.",
+        "width": 1080,
+        "height": 720,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-rusty-metal-street-drainage-6573773/",
+        "photographer": "Malcolm Garret",
+        "license": "Pexels License",
+        "pexels_id": "6573773",
+        "title": "A Rusty Metal Street Drainage"
+      },
+      {
+        "file": "white-pedestal-fan-against-wall.webp",
+        "alt": "White pedestal fan standing against a wall.",
+        "width": 1200,
+        "height": 1437,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-stand-fan-beside-a-white-wall-13983948/",
+        "photographer": "Obsolete Lense",
+        "license": "Pexels License",
+        "pexels_id": "13983948",
+        "title": "A Stand Fan beside a White Wall"
+      }
+    ],
+    "sewer-backup-cleanup": [
+      {
+        "file": "manhole-covers-in-asphalt.webp",
+        "alt": "Round manhole covers in an asphalt street.",
+        "width": 874,
+        "height": 1311,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/manholes-in-street-17592363/",
+        "photographer": "Wallace Chuck",
+        "license": "Pexels License",
+        "pexels_id": "17592363",
+        "title": "Manholes in Street"
+      },
+      {
+        "file": "worker-disinfecting-floor-in-protective-suit.webp",
+        "alt": "Worker in a white protective suit disinfecting a floor.",
+        "width": 1200,
+        "height": 801,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/person-in-a-protective-suit-disinfecting-inside-the-house-4099260/",
+        "photographer": "Matilda Wormwood",
+        "license": "Pexels License",
+        "pexels_id": "4099260",
+        "title": "Person In A Protective Suit Disinfecting Inside The House"
+      },
+      {
+        "file": "unfinished-concrete-basement.webp",
+        "alt": "Unfinished concrete basement room.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/concrete-room-in-basement-20589810/",
+        "photographer": "Jakub Zerdzicki",
+        "license": "Pexels License",
+        "pexels_id": "20589810",
+        "title": "Concrete Room in Basement"
+      }
+    ],
+    "flooded-basement-cleanup": [
+      {
+        "file": "ladder-in-empty-basement.webp",
+        "alt": "Ladder standing in an empty basement.",
+        "width": 1200,
+        "height": 2134,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/ladder-in-empty-basement-17182110/",
+        "photographer": "Masi",
+        "license": "Pexels License",
+        "pexels_id": "17182110",
+        "title": "Ladder in Empty Basement"
+      },
+      {
+        "file": "blue-fan-on-a-rug.webp",
+        "alt": "Blue fan sitting on a rug.",
+        "width": 972,
+        "height": 1458,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-blue-fan-on-a-rug-in-a-room-28054343/",
+        "photographer": "Erfan Amiri",
+        "license": "Pexels License",
+        "pexels_id": "28054343",
+        "title": "A blue fan on a rug in a room"
+      },
+      {
+        "file": "peeling-paint-on-damaged-wall.webp",
+        "alt": "Peeling paint on a damaged interior wall.",
+        "width": 972,
+        "height": 648,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/",
+        "photographer": "Kássia Melo",
+        "license": "Pexels License",
+        "pexels_id": "20537493",
+        "title": "Close-up of a Damaged Wall Surface"
+      }
+    ],
+    "sewage-extraction": [
+      {
+        "file": "industrial-pump-and-hoses-outdoors.webp",
+        "alt": "Industrial water pump with hoses set up outdoors.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
+        "photographer": "Adam Šumník",
+        "license": "Pexels License",
+        "pexels_id": "32489252",
+        "title": "Industrial Pump and Hose Equipment Outdoor View"
+      },
+      {
+        "file": "plumber-fitting-a-pipe.webp",
+        "alt": "Plumber fitting a pipe with a wrench.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/professional-plumber-installing-a-radiator-pipe-29226620/",
+        "photographer": "Sergei Starostin",
+        "license": "Pexels License",
+        "pexels_id": "29226620",
+        "title": "Professional Plumber Installing a Radiator Pipe"
+      },
+      {
+        "file": "worker-in-protective-suit-holding-spray-bottle.webp",
+        "alt": "Worker in a white protective suit holding a spray bottle.",
+        "width": 1200,
+        "height": 1798,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/person-in-white-ppe-holding-spray-bottle-4098782/",
+        "photographer": "Matilda Wormwood",
+        "license": "Pexels License",
+        "pexels_id": "4098782",
+        "title": "Person in White PPE Holding Spray Bottle"
+      }
+    ],
+    "sump-pump-repair": [
+      {
+        "file": "steel-pipes-with-pressure-gauges.webp",
+        "alt": "Steel pipes with pressure gauges.",
+        "width": 1200,
+        "height": 801,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/steel-pipes-with-pressure-gauge-7937300/",
+        "photographer": "Pavel Danilyuk",
+        "license": "Pexels License",
+        "pexels_id": "7937300",
+        "title": "Steel Pipes with Pressure Gauge "
+      },
+      {
+        "file": "washer-and-dryer-in-laundry-room.webp",
+        "alt": "Washer and dryer in a laundry room.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/bright-laundry-room-with-washer-and-dryer-31602334/",
+        "photographer": "JAELEN KEMPSON",
+        "license": "Pexels License",
+        "pexels_id": "31602334",
+        "title": "Bright Laundry Room with Washer and Dryer"
+      },
+      {
+        "file": "door-and-steps-at-basement-entrance.webp",
+        "alt": "Door and steps at a basement entrance.",
+        "width": 874,
+        "height": 1167,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/steps-and-the-door-to-the-basement-16639381/",
+        "photographer": "NITIN CHAUHAN",
+        "license": "Pexels License",
+        "pexels_id": "16639381",
+        "title": "Steps and the Door to the Basement "
+      }
+    ],
+    "basement-sanitization": [
+      {
+        "file": "person-mopping-tile-floor-with-bucket.webp",
+        "alt": "Person mopping a tile floor beside a bucket.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/woman-mopping-a-tiled-floor-6196577/",
+        "photographer": "Tima Miroshnichenko",
+        "license": "Pexels License",
+        "pexels_id": "6196577",
+        "title": "Woman Mopping a Tiled Floor"
+      },
+      {
+        "file": "worker-in-protective-suit-cleaning-table.webp",
+        "alt": "Worker in a white protective suit cleaning a table.",
+        "width": 1200,
+        "height": 1798,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/person-in-white-ppe-cleaning-the-table-4098787/",
+        "photographer": "Matilda Wormwood",
+        "license": "Pexels License",
+        "pexels_id": "4098787",
+        "title": "Person in White PPE Cleaning the Table"
+      },
+      {
         "file": "carpeted-basement-room.webp",
         "alt": "Carpeted basement room with a window.",
         "width": 1200,
@@ -684,7 +1558,7 @@
         "title": "Spacious Basement Room with Carpet Flooring"
       }
     ],
-    "berkley-water-damage-restoration": [
+    "water-damage-restoration": [
       {
         "file": "hole-in-plaster-wall.webp",
         "alt": "Hole in the plaster of a painted interior wall.",
@@ -710,399 +1584,19 @@
         "title": "A Couch and a Fan Standing on the Floor in a Living Room "
       },
       {
-        "file": "floodwater-on-concrete-floor-by-stairs.webp",
-        "alt": "Floodwater on a concrete floor beside a white staircase.",
-        "width": 1200,
-        "height": 1600,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/flood-water-on-concrete-floor-and-a-white-concrete-staircase-7924140/",
-        "photographer": "David Yu",
-        "license": "Pexels License",
-        "pexels_id": "7924140",
-        "title": "Flood Water on Concrete Floor and a White Concrete Staircase"
-      }
-    ],
-    "clawson-water-damage-restoration": [
-      {
-        "file": "crack-in-painted-wall.webp",
-        "alt": "Close-up of a crack in a painted wall.",
-        "width": 707,
-        "height": 943,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/close-up-of-cracked-wall-11627153/",
-        "photographer": "Zeki Okur",
-        "license": "Pexels License",
-        "pexels_id": "11627153",
-        "title": "Close up of Cracked Wall"
-      },
-      {
-        "file": "white-fan-on-hardwood-floor.webp",
-        "alt": "White fan on a hardwood floor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/fan-in-a-minimalist-interior-12243531/",
-        "photographer": "EL The Explorer",
-        "license": "Pexels License",
-        "pexels_id": "12243531",
-        "title": "Fan in a minimalist interior"
-      },
-      {
-        "file": "water-covering-indoor-corridor-floor.webp",
-        "alt": "Water covering the floor of an empty indoor corridor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/empty-corridor-interior-with-floor-flooded-with-water-15043329/",
-        "photographer": "Berra",
-        "license": "Pexels License",
-        "pexels_id": "15043329",
-        "title": "Empty Corridor Interior with Floor Flooded with Water "
-      }
-    ],
-    "royal-oak-sump-pump-repair": [
-      {
-        "file": "technician-working-on-water-pump.webp",
-        "alt": "Technician working on a blue water pump and gauges.",
-        "width": 1200,
-        "height": 2133,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
-        "photographer": "Bulat843 🌙",
-        "license": "Pexels License",
-        "pexels_id": "35290675",
-        "title": "Focused Technician Working with Water Pump"
-      },
-      {
-        "file": "hand-holding-plumbers-wrench.webp",
-        "alt": "Hand holding a plumber's wrench.",
-        "width": 1200,
-        "height": 1600,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486978/",
-        "photographer": "Kindel Media",
-        "license": "Pexels License",
-        "pexels_id": "8486978",
-        "title": "Handywoman Holding a Plumbers Wrench "
-      },
-      {
-        "file": "laundry-room-with-utility-sink.webp",
-        "alt": "Laundry room with a washer, dryer, and utility sink.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/interior-of-a-modern-laundry-room-19846397/",
-        "photographer": "Lisa Anna",
-        "license": "Pexels License",
-        "pexels_id": "19846397",
-        "title": "Interior of a Modern Laundry Room"
-      }
-    ],
-    "troy-sump-pump-repair": [
-      {
-        "file": "plumber-using-pipe-wrench-indoors.webp",
-        "alt": "Plumber using a pipe wrench on indoor plumbing.",
-        "width": 1080,
-        "height": 1920,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
-        "photographer": "Bulat843 🌙",
-        "license": "Pexels License",
-        "pexels_id": "32588548",
-        "title": "Plumber Repairing Pipe with Wrench Indoors"
-      },
-      {
-        "file": "plumbers-wrench-on-wood.webp",
-        "alt": "Plumber's wrench resting on a wood surface.",
-        "width": 1200,
-        "height": 1600,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/close-up-photo-of-plumbers-wrench-on-wooden-surface-8488058/",
-        "photographer": "Kindel Media",
-        "license": "Pexels License",
-        "pexels_id": "8488058",
-        "title": "Close Up Photo of Plumbers Wrench on Wooden Surface"
-      },
-      {
-        "file": "washer-and-dryer-in-laundry-room.webp",
-        "alt": "Washer and dryer in a laundry room.",
+        "file": "finished-basement-with-couch.webp",
+        "alt": "Finished basement with a couch and wall art.",
         "width": 1200,
         "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/bright-laundry-room-with-washer-and-dryer-31602334/",
-        "photographer": "JAELEN KEMPSON",
-        "license": "Pexels License",
-        "pexels_id": "31602334",
-        "title": "Bright Laundry Room with Washer and Dryer"
-      }
-    ],
-    "birmingham-sump-pump-repair": [
-      {
-        "file": "plumber-fitting-a-pipe.webp",
-        "alt": "Plumber fitting a pipe with a wrench.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/professional-plumber-installing-a-radiator-pipe-29226620/",
-        "photographer": "Sergei Starostin",
-        "license": "Pexels License",
-        "pexels_id": "29226620",
-        "title": "Professional Plumber Installing a Radiator Pipe"
-      },
-      {
-        "file": "white-plastic-pipes-on-wall.webp",
-        "alt": "White plastic pipes mounted on a wall.",
-        "width": 1200,
-        "height": 1600,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/plastic-pipes-on-wall-12142829/",
-        "photographer": "Bùi Hoàng Long",
-        "license": "Pexels License",
-        "pexels_id": "12142829",
-        "title": "Plastic Pipes on Wall"
-      },
-      {
-        "file": "concrete-stairs-into-basement.webp",
-        "alt": "Concrete staircase leading into a basement.",
-        "width": 1200,
-        "height": 766,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/underground-basement-staircase-20589916/",
-        "photographer": "Jakub Zerdzicki",
-        "license": "Pexels License",
-        "pexels_id": "20589916",
-        "title": "Underground Basement Staircase"
-      }
-    ],
-    "berkley-sump-pump-repair": [
-      {
-        "file": "steel-pipes-with-pressure-gauges.webp",
-        "alt": "Steel pipes with pressure gauges.",
-        "width": 1200,
-        "height": 801,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/steel-pipes-with-pressure-gauge-7937300/",
-        "photographer": "Pavel Danilyuk",
-        "license": "Pexels License",
-        "pexels_id": "7937300",
-        "title": "Steel Pipes with Pressure Gauge "
-      },
-      {
-        "file": "leaking-pipe-wrapped-in-plastic.webp",
-        "alt": "Leaking pipe wrapped with plastic.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/leaking-pipe-fixed-with-plastic-15206136/",
-        "photographer": "Swastik Arora",
-        "license": "Pexels License",
-        "pexels_id": "15206136",
-        "title": "Leaking Pipe Fixed with Plastic"
-      },
-      {
-        "file": "empty-unfinished-basement.webp",
-        "alt": "Empty unfinished basement with a concrete floor.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/an-empty-basement-4092030/",
+        "source_url": "https://www.pexels.com/photo/cozy-basement-room-with-modern-decor-and-couch-36777934/",
         "photographer": "Curtis Adams",
         "license": "Pexels License",
-        "pexels_id": "4092030",
-        "title": "An Empty Basement"
+        "pexels_id": "36777934",
+        "title": "Cozy Basement Room with Modern Decor and Couch"
       }
     ],
-    "clawson-sump-pump-repair": [
-      {
-        "file": "close-up-of-water-meter.webp",
-        "alt": "Close-up of a water meter.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/close-up-of-water-meter-4494653/",
-        "photographer": "Nothing Ahead",
-        "license": "Pexels License",
-        "pexels_id": "4494653",
-        "title": "Close Up of Water Meter"
-      },
-      {
-        "file": "hand-holding-plumbers-wrench.webp",
-        "alt": "Hand holding a plumber's wrench.",
-        "width": 1200,
-        "height": 1600,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486978/",
-        "photographer": "Kindel Media",
-        "license": "Pexels License",
-        "pexels_id": "8486978",
-        "title": "Handywoman Holding a Plumbers Wrench "
-      },
-      {
-        "file": "ladder-in-empty-basement.webp",
-        "alt": "Ladder standing in an empty basement.",
-        "width": 1200,
-        "height": 2134,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/ladder-in-empty-basement-17182110/",
-        "photographer": "Masi",
-        "license": "Pexels License",
-        "pexels_id": "17182110",
-        "title": "Ladder in Empty Basement"
-      }
-    ],
-    "royal-oak-basement-sanitization": [
-      {
-        "file": "worker-in-protective-suit-cleaning-couch.webp",
-        "alt": "Worker in a white protective suit cleaning a couch.",
-        "width": 1200,
-        "height": 1798,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-wearing-white-ppe-while-cleaning-the-couch-4098781/",
-        "photographer": "Matilda Wormwood",
-        "license": "Pexels License",
-        "pexels_id": "4098781",
-        "title": "Person Wearing White PPE while Cleaning the Couch"
-      },
-      {
-        "file": "person-mopping-tile-floor.webp",
-        "alt": "Person mopping a light tile floor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-in-gray-sweater-mopping-and-cleaning-the-floor-6196566/",
-        "photographer": "Tima Miroshnichenko",
-        "license": "Pexels License",
-        "pexels_id": "6196566",
-        "title": "Person in Gray Sweater Mopping and Cleaning the Floor"
-      },
-      {
-        "file": "unfinished-concrete-basement.webp",
-        "alt": "Unfinished concrete basement room.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/concrete-room-in-basement-20589810/",
-        "photographer": "Jakub Zerdzicki",
-        "license": "Pexels License",
-        "pexels_id": "20589810",
-        "title": "Concrete Room in Basement"
-      }
-    ],
-    "troy-basement-sanitization": [
-      {
-        "file": "worker-in-protective-suit-spraying-floor.webp",
-        "alt": "Worker in a white protective suit kneeling and spraying a floor.",
-        "width": 1200,
-        "height": 801,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/chemist-in-protective-clothing-kneeling-on-floor-4099090/",
-        "photographer": "Matilda Wormwood",
-        "license": "Pexels License",
-        "pexels_id": "4099090",
-        "title": "Chemist in Protective Clothing Kneeling on Floor"
-      },
-      {
-        "file": "person-mopping-tile-floor-with-bucket.webp",
-        "alt": "Person mopping a tile floor beside a bucket.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/woman-mopping-a-tiled-floor-6196577/",
-        "photographer": "Tima Miroshnichenko",
-        "license": "Pexels License",
-        "pexels_id": "6196577",
-        "title": "Woman Mopping a Tiled Floor"
-      },
-      {
-        "file": "unfinished-basement-with-exposed-joists.webp",
-        "alt": "Unfinished basement with exposed ceiling joists.",
-        "width": 1200,
-        "height": 803,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/inside-of-an-old-basement-5369180/",
-        "photographer": "Enrico Hänel",
-        "license": "Pexels License",
-        "pexels_id": "5369180",
-        "title": "Inside of an Old Basement"
-      }
-    ],
-    "birmingham-basement-sanitization": [
-      {
-        "file": "worker-disinfecting-floor-in-protective-suit.webp",
-        "alt": "Worker in a white protective suit disinfecting a floor.",
-        "width": 1200,
-        "height": 801,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-in-a-protective-suit-disinfecting-inside-the-house-4099260/",
-        "photographer": "Matilda Wormwood",
-        "license": "Pexels License",
-        "pexels_id": "4099260",
-        "title": "Person In A Protective Suit Disinfecting Inside The House"
-      },
-      {
-        "file": "person-mopping-wood-floor.webp",
-        "alt": "Person mopping a wood floor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-person-cleaning-the-floor-with-a-mop-4440568/",
-        "photographer": "Polina Tankilevitch",
-        "license": "Pexels License",
-        "pexels_id": "4440568",
-        "title": "A Person Cleaning the Floor with a Mop"
-      },
-      {
-        "file": "door-and-steps-at-basement-entrance.webp",
-        "alt": "Door and steps at a basement entrance.",
-        "width": 874,
-        "height": 1167,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/steps-and-the-door-to-the-basement-16639381/",
-        "photographer": "NITIN CHAUHAN",
-        "license": "Pexels License",
-        "pexels_id": "16639381",
-        "title": "Steps and the Door to the Basement "
-      }
-    ],
-    "berkley-basement-sanitization": [
-      {
-        "file": "worker-in-protective-suit-cleaning-table.webp",
-        "alt": "Worker in a white protective suit cleaning a table.",
-        "width": 1200,
-        "height": 1798,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-in-white-ppe-cleaning-the-table-4098787/",
-        "photographer": "Matilda Wormwood",
-        "license": "Pexels License",
-        "pexels_id": "4098787",
-        "title": "Person in White PPE Cleaning the Table"
-      },
-      {
-        "file": "yellow-mop-bucket-with-dirty-water.webp",
-        "alt": "Yellow mop bucket filled with dirty water.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-yellow-mop-bucket-with-dirty-water-13840330/",
-        "photographer": "Jenkin Shen",
-        "license": "Pexels License",
-        "pexels_id": "13840330",
-        "title": "A Yellow Mop Bucket with Dirty Water"
-      },
-      {
-        "file": "concrete-stairs-into-basement.webp",
-        "alt": "Concrete staircase leading into a basement.",
-        "width": 1200,
-        "height": 766,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/underground-basement-staircase-20589916/",
-        "photographer": "Jakub Zerdzicki",
-        "license": "Pexels License",
-        "pexels_id": "20589916",
-        "title": "Underground Basement Staircase"
-      }
-    ],
-    "clawson-basement-sanitization": [
+    "services": [
       {
         "file": "worker-in-protective-suit-wiping-cabinet.webp",
         "alt": "Worker in a white protective suit wiping a cabinet.",
@@ -1116,54 +1610,16 @@
         "title": "Cleaner in Protection Suit Wiping Cabinet in Kitchen"
       },
       {
-        "file": "person-mopping-tile-floor.webp",
-        "alt": "Person mopping a light tile floor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-in-gray-sweater-mopping-and-cleaning-the-floor-6196566/",
-        "photographer": "Tima Miroshnichenko",
-        "license": "Pexels License",
-        "pexels_id": "6196566",
-        "title": "Person in Gray Sweater Mopping and Cleaning the Floor"
-      },
-      {
-        "file": "finished-basement-with-couch.webp",
-        "alt": "Finished basement with a couch and wall art.",
+        "file": "floor-fan-on-concrete.webp",
+        "alt": "Large floor fan on a concrete floor.",
         "width": 1200,
         "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/cozy-basement-room-with-modern-decor-and-couch-36777934/",
-        "photographer": "Curtis Adams",
+        "source_url": "https://www.pexels.com/photo/blow-fan-17301209/",
+        "photographer": "Jakub Zerdzicki",
         "license": "Pexels License",
-        "pexels_id": "36777934",
-        "title": "Cozy Basement Room with Modern Decor and Couch"
-      }
-    ],
-    "royal-oak": [
-      {
-        "file": "carpeted-basement-room.webp",
-        "alt": "Carpeted basement room with a window.",
-        "width": 1200,
-        "height": 900,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/spacious-basement-room-with-carpet-flooring-35493899/",
-        "photographer": "Peter  Vang",
-        "license": "Pexels License",
-        "pexels_id": "35493899",
-        "title": "Spacious Basement Room with Carpet Flooring"
-      },
-      {
-        "file": "house-in-floodwater-during-rain.webp",
-        "alt": "Single-story house surrounded by floodwater in heavy rain.",
-        "width": 1080,
-        "height": 720,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/flooded-suburban-house-during-heavy-rain-28447774/",
-        "photographer": "Helena Jankovičová Kováčová",
-        "license": "Pexels License",
-        "pexels_id": "28447774",
-        "title": "Flooded suburban house during heavy rain"
+        "pexels_id": "17301209",
+        "title": "blow fan"
       },
       {
         "file": "white-downspout-on-concrete-wall.webp",
@@ -1178,31 +1634,7 @@
         "title": "House Drain Pipe on Concrete Wall"
       }
     ],
-    "troy": [
-      {
-        "file": "home-gym-in-finished-basement.webp",
-        "alt": "Home gym set up in a finished basement.",
-        "width": 1200,
-        "height": 801,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/home-gym-with-equipment-in-basement-7174396/",
-        "photographer": "Max Vakhtbovych",
-        "license": "Pexels License",
-        "pexels_id": "7174396",
-        "title": "Home gym with equipment in basement"
-      },
-      {
-        "file": "suburban-house-standing-in-floodwater.webp",
-        "alt": "Suburban house standing in floodwater during a rainstorm.",
-        "width": 640,
-        "height": 960,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/flooded-suburban-landscape-with-house-and-trees-28447764/",
-        "photographer": "Helena Jankovičová Kováčová",
-        "license": "Pexels License",
-        "pexels_id": "28447764",
-        "title": "Flooded suburban landscape with house and trees"
-      },
+    "george-w-kuhn-drainage-district": [
       {
         "file": "white-downspout-on-exterior-wall.webp",
         "alt": "White downspout on an exterior wall.",
@@ -1214,32 +1646,6 @@
         "license": "Pexels License",
         "pexels_id": "9809765",
         "title": "White Downspout on Concrete Wall"
-      }
-    ],
-    "birmingham": [
-      {
-        "file": "unfinished-concrete-basement.webp",
-        "alt": "Unfinished concrete basement room.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/concrete-room-in-basement-20589810/",
-        "photographer": "Jakub Zerdzicki",
-        "license": "Pexels License",
-        "pexels_id": "20589810",
-        "title": "Concrete Room in Basement"
-      },
-      {
-        "file": "floodwater-at-a-house-door.webp",
-        "alt": "Murky water covering the steps at a house door.",
-        "width": 1200,
-        "height": 814,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/doorstep-of-flooded-house-18108043/",
-        "photographer": "Civan D.",
-        "license": "Pexels License",
-        "pexels_id": "18108043",
-        "title": "Doorstep of Flooded House"
       },
       {
         "file": "close-up-of-metal-downspout.webp",
@@ -1252,32 +1658,6 @@
         "license": "Pexels License",
         "pexels_id": "5940870",
         "title": "A Close-Up Shot of a Downspout"
-      }
-    ],
-    "berkley": [
-      {
-        "file": "empty-unfinished-basement.webp",
-        "alt": "Empty unfinished basement with a concrete floor.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/an-empty-basement-4092030/",
-        "photographer": "Curtis Adams",
-        "license": "Pexels License",
-        "pexels_id": "4092030",
-        "title": "An Empty Basement"
-      },
-      {
-        "file": "houses-standing-in-floodwater.webp",
-        "alt": "Two houses standing in floodwater.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-red-and-green-house-surrounded-with-water-11537987/",
-        "photographer": "Serge Lavoie",
-        "license": "Pexels License",
-        "pexels_id": "11537987",
-        "title": "A Red and Green House Surrounded with Water"
       },
       {
         "file": "water-dripping-from-drain-spout.webp",
@@ -1290,348 +1670,6 @@
         "license": "Pexels License",
         "pexels_id": "3964796",
         "title": "Water Dripping from Drain Spout "
-      }
-    ],
-    "clawson": [
-      {
-        "file": "ladder-in-empty-basement.webp",
-        "alt": "Ladder standing in an empty basement.",
-        "width": 1200,
-        "height": 2134,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/ladder-in-empty-basement-17182110/",
-        "photographer": "Masi",
-        "license": "Pexels License",
-        "pexels_id": "17182110",
-        "title": "Ladder in Empty Basement"
-      },
-      {
-        "file": "aerial-view-of-flooded-house.webp",
-        "alt": "Aerial view of a house surrounded by floodwater.",
-        "width": 1200,
-        "height": 900,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/aerial-view-of-flooded-house-14823609/",
-        "photographer": "Pok Rie",
-        "license": "Pexels License",
-        "pexels_id": "14823609",
-        "title": "Aerial View of Flooded House"
-      },
-      {
-        "file": "metal-pipe-along-concrete-wall.webp",
-        "alt": "Metal pipe running along a concrete wall.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-silver-metal-pipe-on-brown-concrete-wall-10372434/",
-        "photographer": "Nikita Nikitin",
-        "license": "Pexels License",
-        "pexels_id": "10372434",
-        "title": "A Silver Metal Pipe on Brown Concrete Wall"
-      }
-    ],
-    "index": [
-      {
-        "file": "car-in-floodwater-in-a-yard.webp",
-        "alt": "Car sitting in floodwater in a residential yard.",
-        "width": 1200,
-        "height": 800,
-        "eager": true,
-        "source_url": "https://www.pexels.com/photo/car-partially-submerged-in-flooded-area-28447772/",
-        "photographer": "Helena Jankovičová Kováčová",
-        "license": "Pexels License",
-        "pexels_id": "28447772",
-        "title": "Car Partially Submerged in Flooded Area"
-      },
-      {
-        "file": "worker-in-protective-suit-holding-spray-bottle.webp",
-        "alt": "Worker in a white protective suit holding a spray bottle.",
-        "width": 1200,
-        "height": 1798,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-in-white-ppe-holding-spray-bottle-4098782/",
-        "photographer": "Matilda Wormwood",
-        "license": "Pexels License",
-        "pexels_id": "4098782",
-        "title": "Person in White PPE Holding Spray Bottle"
-      },
-      {
-        "file": "white-pedestal-fan-against-wall.webp",
-        "alt": "White pedestal fan standing against a wall.",
-        "width": 1200,
-        "height": 1437,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-stand-fan-beside-a-white-wall-13983948/",
-        "photographer": "Obsolete Lense",
-        "license": "Pexels License",
-        "pexels_id": "13983948",
-        "title": "A Stand Fan beside a White Wall"
-      }
-    ],
-    "services": [
-      {
-        "file": "person-in-full-protective-suit-indoors.webp",
-        "alt": "Person standing indoors in a full white protective suit.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-wearing-protective-suit-3985287/",
-        "photographer": "Gustavo Fring",
-        "license": "Pexels License",
-        "pexels_id": "3985287",
-        "title": "Person Wearing Protective Suit"
-      },
-      {
-        "file": "blue-fan-on-a-rug.webp",
-        "alt": "Blue fan sitting on a rug.",
-        "width": 972,
-        "height": 1458,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-blue-fan-on-a-rug-in-a-room-28054343/",
-        "photographer": "Erfan Amiri",
-        "license": "Pexels License",
-        "pexels_id": "28054343",
-        "title": "A blue fan on a rug in a room"
-      },
-      {
-        "file": "storm-drain-grate-with-leaves.webp",
-        "alt": "Storm drain grate with leaves and debris.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/storm-drain-with-leaves-and-debris-accumulation-38239813/",
-        "photographer": "Plato Terentev",
-        "license": "Pexels License",
-        "pexels_id": "38239813",
-        "title": "Storm Drain With Leaves and Debris Accumulation"
-      }
-    ],
-    "water-damage-restoration": [
-      {
-        "file": "peeling-paint-on-damaged-wall.webp",
-        "alt": "Peeling paint on a damaged interior wall.",
-        "width": 972,
-        "height": 648,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/",
-        "photographer": "Kássia Melo",
-        "license": "Pexels License",
-        "pexels_id": "20537493",
-        "title": "Close-up of a Damaged Wall Surface"
-      },
-      {
-        "file": "box-fan-beside-a-couch.webp",
-        "alt": "Box fan on the floor beside a couch.",
-        "width": 1200,
-        "height": 1794,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-couch-and-a-fan-standing-on-the-floor-in-a-living-room-11046405/",
-        "photographer": "Vika Kirillova",
-        "license": "Pexels License",
-        "pexels_id": "11046405",
-        "title": "A Couch and a Fan Standing on the Floor in a Living Room "
-      },
-      {
-        "file": "wet-tile-floor-reflection.webp",
-        "alt": "Wet tile floor reflecting the room.",
-        "width": 1200,
-        "height": 705,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/wet-floor-with-water-reflection-6187783/",
-        "photographer": "Jenna Hamra",
-        "license": "Pexels License",
-        "pexels_id": "6187783",
-        "title": "Wet Floor with Water Reflection"
-      }
-    ],
-    "sewer-backup-cleanup": [
-      {
-        "file": "rusty-street-drain.webp",
-        "alt": "Rusty metal street drain set in pavement.",
-        "width": 1080,
-        "height": 720,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-rusty-metal-street-drainage-6573773/",
-        "photographer": "Malcolm Garret",
-        "license": "Pexels License",
-        "pexels_id": "6573773",
-        "title": "A Rusty Metal Street Drainage"
-      },
-      {
-        "file": "worker-in-protective-suit-cleaning-couch.webp",
-        "alt": "Worker in a white protective suit cleaning a couch.",
-        "width": 1200,
-        "height": 1798,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-wearing-white-ppe-while-cleaning-the-couch-4098781/",
-        "photographer": "Matilda Wormwood",
-        "license": "Pexels License",
-        "pexels_id": "4098781",
-        "title": "Person Wearing White PPE while Cleaning the Couch"
-      },
-      {
-        "file": "manhole-covers-in-asphalt.webp",
-        "alt": "Round manhole covers in an asphalt street.",
-        "width": 874,
-        "height": 1311,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/manholes-in-street-17592363/",
-        "photographer": "Wallace Chuck",
-        "license": "Pexels License",
-        "pexels_id": "17592363",
-        "title": "Manholes in Street"
-      }
-    ],
-    "sewage-extraction": [
-      {
-        "file": "white-plastic-pipes-on-wall.webp",
-        "alt": "White plastic pipes mounted on a wall.",
-        "width": 1200,
-        "height": 1600,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/plastic-pipes-on-wall-12142829/",
-        "photographer": "Bùi Hoàng Long",
-        "license": "Pexels License",
-        "pexels_id": "12142829",
-        "title": "Plastic Pipes on Wall"
-      },
-      {
-        "file": "close-up-of-protective-suit-and-mask.webp",
-        "alt": "Close-up of a person in a white protective suit and mask.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/close-up-photo-of-person-wearing-hazmat-suit-9545082/",
-        "photographer": "Ron Lach",
-        "license": "Pexels License",
-        "pexels_id": "9545082",
-        "title": "Close-up Photo of Person wearing Hazmat Suit "
-      },
-      {
-        "file": "hand-holding-plumbers-wrench.webp",
-        "alt": "Hand holding a plumber's wrench.",
-        "width": 1200,
-        "height": 1600,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486978/",
-        "photographer": "Kindel Media",
-        "license": "Pexels License",
-        "pexels_id": "8486978",
-        "title": "Handywoman Holding a Plumbers Wrench "
-      }
-    ],
-    "flooded-basement-cleanup": [
-      {
-        "file": "house-in-floodwater-black-and-white.webp",
-        "alt": "Black-and-white photo of a house standing in floodwater.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/flooded-suburban-house-landscape-in-black-and-white-28447780/",
-        "photographer": "Helena Jankovičová Kováčová",
-        "license": "Pexels License",
-        "pexels_id": "28447780",
-        "title": "Flooded suburban house landscape in black and white"
-      },
-      {
-        "file": "people-filling-sandbags.webp",
-        "alt": "People filling sandbags beside floodwater.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/emergency-response-team-filling-sandbags-during-flood-28447798/",
-        "photographer": "Helena Jankovičová Kováčová",
-        "license": "Pexels License",
-        "pexels_id": "28447798",
-        "title": "Emergency Response Team Filling Sandbags During Flood"
-      },
-      {
-        "file": "houses-standing-in-floodwater.webp",
-        "alt": "Two houses standing in floodwater.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-red-and-green-house-surrounded-with-water-11537987/",
-        "photographer": "Serge Lavoie",
-        "license": "Pexels License",
-        "pexels_id": "11537987",
-        "title": "A Red and Green House Surrounded with Water"
-      }
-    ],
-    "sump-pump-repair": [
-      {
-        "file": "plumbers-wrench-on-wood.webp",
-        "alt": "Plumber's wrench resting on a wood surface.",
-        "width": 1200,
-        "height": 1600,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/close-up-photo-of-plumbers-wrench-on-wooden-surface-8488058/",
-        "photographer": "Kindel Media",
-        "license": "Pexels License",
-        "pexels_id": "8488058",
-        "title": "Close Up Photo of Plumbers Wrench on Wooden Surface"
-      },
-      {
-        "file": "washer-and-dryer-in-laundry-room.webp",
-        "alt": "Washer and dryer in a laundry room.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/bright-laundry-room-with-washer-and-dryer-31602334/",
-        "photographer": "JAELEN KEMPSON",
-        "license": "Pexels License",
-        "pexels_id": "31602334",
-        "title": "Bright Laundry Room with Washer and Dryer"
-      },
-      {
-        "file": "unfinished-basement-with-exposed-joists.webp",
-        "alt": "Unfinished basement with exposed ceiling joists.",
-        "width": 1200,
-        "height": 803,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/inside-of-an-old-basement-5369180/",
-        "photographer": "Enrico Hänel",
-        "license": "Pexels License",
-        "pexels_id": "5369180",
-        "title": "Inside of an Old Basement"
-      }
-    ],
-    "basement-sanitization": [
-      {
-        "file": "person-mopping-wood-floor.webp",
-        "alt": "Person mopping a wood floor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-person-cleaning-the-floor-with-a-mop-4440568/",
-        "photographer": "Polina Tankilevitch",
-        "license": "Pexels License",
-        "pexels_id": "4440568",
-        "title": "A Person Cleaning the Floor with a Mop"
-      },
-      {
-        "file": "spray-bottle-and-cleaning-cloth.webp",
-        "alt": "Spray bottle and cleaning cloth on a floor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/disinfecting-home-4008518/",
-        "photographer": "Polina Zimmerman",
-        "license": "Pexels License",
-        "pexels_id": "4008518",
-        "title": "Disinfecting Home"
-      },
-      {
-        "file": "person-in-protective-suit-mask-and-goggles.webp",
-        "alt": "Person indoors wearing a white protective suit, mask, and goggles.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-person-wearing-personal-protective-equipment-9894222/",
-        "photographer": "Ron Lach",
-        "license": "Pexels License",
-        "pexels_id": "9894222",
-        "title": "A Person Wearing Personal Protective Equipment"
       }
     ],
     "sewer-backup-claim-guide": [
@@ -1660,68 +1698,30 @@
         "title": "Person Dialing the Telephone"
       },
       {
-        "file": "hole-in-plaster-wall.webp",
-        "alt": "Hole in the plaster of a painted interior wall.",
-        "width": 1200,
-        "height": 675,
+        "file": "crack-in-painted-wall.webp",
+        "alt": "Close-up of a crack in a painted wall.",
+        "width": 707,
+        "height": 943,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/",
-        "photographer": "Diana ✨",
+        "source_url": "https://www.pexels.com/photo/close-up-of-cracked-wall-11627153/",
+        "photographer": "Zeki Okur",
         "license": "Pexels License",
-        "pexels_id": "9617552",
-        "title": "Hole Left after Fallen Plaster on Painted Wall"
-      }
-    ],
-    "george-w-kuhn-drainage-district": [
-      {
-        "file": "close-up-of-manhole-cover.webp",
-        "alt": "Close-up of a cast-iron manhole cover.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/close-up-of-a-cast-iron-manhole-cover-18502586/",
-        "photographer": "Connor Scott McManus",
-        "license": "Pexels License",
-        "pexels_id": "18502586",
-        "title": "Close-up of a Cast Iron Manhole Cover"
-      },
-      {
-        "file": "close-up-of-metal-downspout.webp",
-        "alt": "Close-up of a metal downspout.",
-        "width": 1080,
-        "height": 1620,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-downspout-5940870/",
-        "photographer": "Eva Bronzini",
-        "license": "Pexels License",
-        "pexels_id": "5940870",
-        "title": "A Close-Up Shot of a Downspout"
-      },
-      {
-        "file": "car-on-a-flooded-road.webp",
-        "alt": "Car on a road covered with floodwater.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/car-navigating-flooded-road-in-urban-area-28447757/",
-        "photographer": "Helena Jankovičová Kováčová",
-        "license": "Pexels License",
-        "pexels_id": "28447757",
-        "title": "Car Navigating Flooded Road in Urban Area"
+        "pexels_id": "11627153",
+        "title": "Close up of Cracked Wall"
       }
     ],
     "basement-flood-checklist": [
       {
-        "file": "door-and-steps-at-basement-entrance.webp",
-        "alt": "Door and steps at a basement entrance.",
-        "width": 874,
-        "height": 1167,
+        "file": "home-gym-in-finished-basement.webp",
+        "alt": "Home gym set up in a finished basement.",
+        "width": 1200,
+        "height": 801,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/steps-and-the-door-to-the-basement-16639381/",
-        "photographer": "NITIN CHAUHAN",
+        "source_url": "https://www.pexels.com/photo/home-gym-with-equipment-in-basement-7174396/",
+        "photographer": "Max Vakhtbovych",
         "license": "Pexels License",
-        "pexels_id": "16639381",
-        "title": "Steps and the Door to the Basement "
+        "pexels_id": "7174396",
+        "title": "Home gym with equipment in basement"
       },
       {
         "file": "notebooks-and-folders-on-a-desk.webp",
@@ -1736,30 +1736,30 @@
         "title": "Notebook and clipboard with papers placed on desk with folders and pens"
       },
       {
-        "file": "yellow-mop-bucket-with-dirty-water.webp",
-        "alt": "Yellow mop bucket filled with dirty water.",
+        "file": "person-mopping-wood-floor.webp",
+        "alt": "Person mopping a wood floor.",
         "width": 1200,
         "height": 1800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-yellow-mop-bucket-with-dirty-water-13840330/",
-        "photographer": "Jenkin Shen",
+        "source_url": "https://www.pexels.com/photo/a-person-cleaning-the-floor-with-a-mop-4440568/",
+        "photographer": "Polina Tankilevitch",
         "license": "Pexels License",
-        "pexels_id": "13840330",
-        "title": "A Yellow Mop Bucket with Dirty Water"
+        "pexels_id": "4440568",
+        "title": "A Person Cleaning the Floor with a Mop"
       }
     ],
     "about": [
       {
-        "file": "carpeted-basement-room.webp",
-        "alt": "Carpeted basement room with a window.",
+        "file": "worker-in-protective-suit-cleaning-couch.webp",
+        "alt": "Worker in a white protective suit cleaning a couch.",
         "width": 1200,
-        "height": 900,
+        "height": 1798,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/spacious-basement-room-with-carpet-flooring-35493899/",
-        "photographer": "Peter  Vang",
+        "source_url": "https://www.pexels.com/photo/person-wearing-white-ppe-while-cleaning-the-couch-4098781/",
+        "photographer": "Matilda Wormwood",
         "license": "Pexels License",
-        "pexels_id": "35493899",
-        "title": "Spacious Basement Room with Carpet Flooring"
+        "pexels_id": "4098781",
+        "title": "Person Wearing White PPE while Cleaning the Couch"
       },
       {
         "file": "man-talking-on-a-landline-phone.webp",
@@ -1812,20 +1812,6 @@
         "title": "Person Dialing the Telephone"
       },
       {
-        "file": "hand-pulling-document-from-folder.webp",
-        "alt": "Hand pulling a document from a folder.",
-        "width": 1200,
-        "height": 801,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-choosing-document-in-folder-4792285/",
-        "photographer": "Anete Lusina",
-        "license": "Pexels License",
-        "pexels_id": "4792285",
-        "title": "Person choosing document in folder"
-      }
-    ],
-    "privacy": [
-      {
         "file": "calculator-and-papers-on-desk.webp",
         "alt": "Calculator and papers on a desk.",
         "width": 1200,
@@ -1836,18 +1822,20 @@
         "license": "Pexels License",
         "pexels_id": "8296948",
         "title": "A Calculator and Documents on the Table "
-      },
+      }
+    ],
+    "privacy": [
       {
-        "file": "notebooks-and-folders-on-a-desk.webp",
-        "alt": "Notebooks, folders, and pens spread on a desk.",
+        "file": "hand-pulling-document-from-folder.webp",
+        "alt": "Hand pulling a document from a folder.",
         "width": 1200,
-        "height": 1800,
+        "height": 801,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/notebook-and-clipboard-with-papers-placed-on-desk-with-folders-and-pens-5668469/",
-        "photographer": "Sora Shimazaki",
+        "source_url": "https://www.pexels.com/photo/person-choosing-document-in-folder-4792285/",
+        "photographer": "Anete Lusina",
         "license": "Pexels License",
-        "pexels_id": "5668469",
-        "title": "Notebook and clipboard with papers placed on desk with folders and pens"
+        "pexels_id": "4792285",
+        "title": "Person choosing document in folder"
       },
       {
         "file": "hands-signing-a-document.webp",
@@ -1860,21 +1848,21 @@
         "license": "Pexels License",
         "pexels_id": "6814526",
         "title": "A Person Signing Contract Documents"
+      },
+      {
+        "file": "notebooks-and-folders-on-a-desk.webp",
+        "alt": "Notebooks, folders, and pens spread on a desk.",
+        "width": 1200,
+        "height": 1800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/notebook-and-clipboard-with-papers-placed-on-desk-with-folders-and-pens-5668469/",
+        "photographer": "Sora Shimazaki",
+        "license": "Pexels License",
+        "pexels_id": "5668469",
+        "title": "Notebook and clipboard with papers placed on desk with folders and pens"
       }
     ],
     "terms": [
-      {
-        "file": "hand-pulling-document-from-folder.webp",
-        "alt": "Hand pulling a document from a folder.",
-        "width": 1200,
-        "height": 801,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-choosing-document-in-folder-4792285/",
-        "photographer": "Anete Lusina",
-        "license": "Pexels License",
-        "pexels_id": "4792285",
-        "title": "Person choosing document in folder"
-      },
       {
         "file": "calculator-and-papers-on-desk.webp",
         "alt": "Calculator and papers on a desk.",
@@ -1898,6 +1886,18 @@
         "license": "Pexels License",
         "pexels_id": "7964502",
         "title": "Man Talking on the Telephone"
+      },
+      {
+        "file": "hand-pulling-document-from-folder.webp",
+        "alt": "Hand pulling a document from a folder.",
+        "width": 1200,
+        "height": 801,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/person-choosing-document-in-folder-4792285/",
+        "photographer": "Anete Lusina",
+        "license": "Pexels License",
+        "pexels_id": "4792285",
+        "title": "Person choosing document in folder"
       }
     ]
   }
