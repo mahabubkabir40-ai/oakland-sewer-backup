@@ -76,7 +76,7 @@ def services_article():
         h2("How a call is different from a city sewer report"),
         p(
             "City public works can look at the main in the street. A local cleanup crew can pump and dry the basement. "
-            f"{_HOME} only introduces the second of those. If you think the municipal main caused the backup, you still have "
+            "Call " + phone_link() + " for that crew. They'll tell you when they can be there. If you think the municipal main caused the backup, you still have "
             "a separate written-notice deadline under Michigan law. The steps are in the "
             + _GUIDE
             + ". Storm prep, including the city numbers to keep by the phone, is on the "
@@ -454,7 +454,7 @@ def sump_hub():
             + " as well. If the water smells like sewage or a basement toilet burped, the pump is the wrong "
             "first call. Start with " + a("/sewer-backup-cleanup", "sewer backup cleanup") + ". "
             "Call " + phone_link() + " and say whether the crock overflowed or a drain did. "
-            "You are connected when a participating provider is available."
+            "A local crew handles the visit, and they'll tell you when they can be there."
         ),
         h3("Power and discharge, without a parts list"),
         p(
@@ -678,7 +678,7 @@ def city_troy():
             "Troy tells residents to report an overflow or backup to the Water Division at 248-524-3370 during business "
             "hours. After hours, the city lists Troy Police at 248-524-3477. A written claim goes to the City Attorney's "
             "Office, and state law sets 45 days from discovery. The form, the photos, and the deadline are in the "
-            + _GUIDE + ". The claim goes to the city. " + _HOME + " introduces a cleanup company."
+            + _GUIDE + ". The claim goes to the city. A local cleanup crew handles the basement, and they'll tell you when they can be there."
         ),
         p(
             "Use " + phone_link()
@@ -824,7 +824,7 @@ def city_berkley():
         p(
             "The city says it spends up to 800,000 dollars a year on structural lining, and that about 35 percent of "
             "the system has been lined over more than 20 years. That is a maintenance fact from the city page, not a "
-            "price for cleaning a basement and not a promise about any particular street. Lining stays with the city. " + _HOME + " introduces a cleanup company for the basement."
+            "price for cleaning a basement and not a promise about any particular street. Lining stays with the city. A local cleanup crew handles the basement, and they'll tell you when they can be there."
         ),
         h2("Flow leaves toward the Clinton, not the Rouge"),
         p(
@@ -839,7 +839,7 @@ def city_berkley():
             "Berkley says to report basement flooding to Public Works at 248-658-3490, and it posts a Sewer Backup "
             "Claims Form. Written notice under state law is due within 45 days of discovery. The " + _GUIDE
             + " walks through that letter. It is not the same step as hiring a cleanup company. For the company, call "
-            + phone_link() + ". You are connected when a participating provider is available. How soon they can come depends on who is free."
+            + phone_link() + ". A local crew handles the visit, and they'll tell you when they can be there."
         ),
         h2("Bungalow basements, and the help that fits"),
         p(
@@ -908,7 +908,7 @@ def city_clawson():
         ),
         p(
             "For cleanup inside the house, call " + phone_link()
-            + ". You are connected when a participating local crew is available. The crew, the arrival, and the price come from that company."
+            + ". A local crew handles the visit, and they'll tell you when they can be there. The price comes from that company."
         ),
         h2("Small lots, one-room basements, and the matching help"),
         p(
@@ -992,7 +992,7 @@ CITY_FAQS = {
     "royal-oak": [
         (
             "Which Royal Oak number is the city, and which is this phone line?",
-            "City basement-water calls use (248) 246-3300 on weekdays, 7:30 a.m. to 4:00 p.m. After hours, Royal Oak police non-emergency (248) 246-3500 dispatches sewer personnel. (248) 825-8312 only introduces a local cleanup crew. It does not dispatch the Sewer Division.",
+            "City basement-water calls use (248) 246-3300 on weekdays, 7:30 a.m. to 4:00 p.m. After hours, Royal Oak police non-emergency (248) 246-3500 dispatches sewer personnel. (248) 825-8312 reaches a local cleanup crew for the house. It does not dispatch the Sewer Division. They'll tell you when they can be there.",
         ),
         (
             "Who owns the sewer lateral in Royal Oak?",
@@ -1117,7 +1117,7 @@ HUB_FAQS = {
         ),
         (
             "What happens when I call (248) 825-8312?",
-            "When a participating local crew is available for your city and the kind of water you have, the call is connected to them. Ask for a written scope, the price, and proof of license and insurance. How soon they can come depends on that company.",
+            "Say the city and whether the water came from a drain, a sump, or a storm. A local crew handles the visit, and they'll tell you when they can be there. Ask for a written scope, the price, and proof of license and insurance.",
         ),
         (
             "Is the George W. Kuhn district the same as my city's sewer?",

@@ -96,9 +96,8 @@ def troy():
         ),
         p(
             "Call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " and you are connected with a local crew when one is available. "
-            "The air movers, the price, and the arrival come from that company. "
-            "How soon they can come depends on the address and how busy they are."
+            + ". A local crew handles the drying, and they'll tell you when they can be there. "
+            "The air movers and the price come from that company."
         ),
         h2("Structural drying where the basement is living space"),
         p(
