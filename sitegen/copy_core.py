@@ -66,8 +66,8 @@ def privacy_article():
         h2("Who we share with"),
         p(
             "Because the forms are not stored, there is no form lead to sell or share. If you call, the "
-            "call can be connected to an independent provider. That provider is not our employee. Their "
-            "handling of your phone number is their responsibility once the call is connected."
+            "call can be connected to an independent provider. That provider is not our employee. They'll "
+            "tell you when they can be there. Their handling of your phone number is their responsibility once the call is connected."
         ),
         p("The referral disclaimer also appears in the footer of every page and on " + a("/terms", "the terms page") + "."),
     ])
@@ -80,7 +80,7 @@ def terms_article():
             f"{BRAND} is an independent referral service for homeowners in parts of Oakland County, "
             "Michigan. We are not a plumbing contractor and we are not a water damage restoration "
             "contractor. Calls to the number on this site may be routed to independent businesses. "
-            "Those businesses own the work. The contract and the result are between you and the company you hire."
+            "Those businesses own the work. They'll tell you when they can be there. The contract and the result are between you and the company you hire."
         ),
         h2("Your responsibility"),
         p(

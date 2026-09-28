@@ -187,7 +187,7 @@ def birmingham():
         ),
         p(
             "The referral line is " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". Your call connects you with an independent local company that can come out for the house. "
+            + ". Your call connects you with an independent local company for the house, and they'll tell you when they can be there. "
             "Ask them for license, insurance, and a written scope before they start."
         ),
         h2("Structural drying of plaster and masonry"),
@@ -485,11 +485,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "The basement in your Royal Oak house is wet, and sewage makes the cleanup stricter than a clean leak. Your call connects you with an independent local cleanup company that can come out for water damage restoration in Royal Oak.",
-    "troy": "A finished Troy lower level is wet through the carpet, the pad, and the drywall. Call and you are connected with an independent local cleanup company that can come out for water damage restoration in Troy.",
-    "birmingham": "Water has reached the plaster and older trim in a Birmingham lower level. When you call, you reach an independent local cleanup company that can come out for water damage restoration in Birmingham.",
-    "berkley": "Water in a Berkley bungalow basement is close to the first floor and a short stair. Your call puts you through to an independent local cleanup company that can come out for water damage restoration in Berkley.",
-    "clawson": "Water is in a small Clawson basement on a tight lot, and the finishes are soaked. Calling connects you with an independent local cleanup company that can come out for water damage restoration in Clawson.",
+    "royal-oak": "The basement in your Royal Oak house is wet, and sewage makes the cleanup stricter than a clean leak. Your call connects you with an independent local cleanup company for water damage restoration in Royal Oak, and they'll tell you when they can be there.",
+    "troy": "A finished Troy lower level is wet through the carpet, the pad, and the drywall. Call and you are connected with an independent local cleanup company for water damage restoration in Troy, and they'll tell you when they can be there.",
+    "birmingham": "Water has reached the plaster and older trim in a Birmingham lower level. When you call, you reach an independent local cleanup company for water damage restoration in Birmingham, and they'll tell you when they can be there.",
+    "berkley": "Water in a Berkley bungalow basement is close to the first floor and a short stair. Your call puts you through to an independent local cleanup company for water damage restoration in Berkley, and they'll tell you when they can be there.",
+    "clawson": "Water is in a small Clawson basement on a tight lot, and the finishes are soaked. Calling connects you with an independent local cleanup company for water damage restoration in Clawson, and they'll tell you when they can be there.",
 }
 
 ALT = {

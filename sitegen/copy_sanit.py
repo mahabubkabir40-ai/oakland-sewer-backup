@@ -321,11 +321,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "The standing sewage is gone from your Royal Oak basement, and the film it left is still on the floor. Your call connects you with an independent local cleanup company that can come out for basement sanitization in Royal Oak.",
-    "troy": "A Troy lower level had sewage in the carpet and pad, and a spray over the top will not clean it. Call and you are connected with an independent local cleanup company that can come out for basement sanitization in Troy.",
-    "birmingham": "Sewage wicked into the plaster and wood in a Birmingham basement, past what a wipe can reach. When you call, you reach an independent local cleanup company that can come out for basement sanitization in Birmingham.",
-    "berkley": "The water is out of a small Berkley bungalow, and the residue is still in that tight basement. Your call puts you through to an independent local cleanup company that can come out for basement sanitization in Berkley.",
-    "clawson": "A one-room Clawson basement still holds the furnace, the washer, and whatever the backup left on them. Calling connects you with an independent local cleanup company that can come out for basement sanitization in Clawson.",
+    "royal-oak": "The standing sewage is gone from your Royal Oak basement, and the film it left is still on the floor. Your call connects you with an independent local cleanup company for basement sanitization in Royal Oak, and they'll tell you when they can be there.",
+    "troy": "A Troy lower level had sewage in the carpet and pad, and a spray over the top will not clean it. Call and you are connected with an independent local cleanup company for basement sanitization in Troy, and they'll tell you when they can be there.",
+    "birmingham": "Sewage wicked into the plaster and wood in a Birmingham basement, past what a wipe can reach. When you call, you reach an independent local cleanup company for basement sanitization in Birmingham, and they'll tell you when they can be there.",
+    "berkley": "The water is out of a small Berkley bungalow, and the residue is still in that tight basement. Your call puts you through to an independent local cleanup company for basement sanitization in Berkley, and they'll tell you when they can be there.",
+    "clawson": "A one-room Clawson basement still holds the furnace, the washer, and whatever the backup left on them. Calling connects you with an independent local cleanup company for basement sanitization in Clawson, and they'll tell you when they can be there.",
 }
 
 ALT = {

@@ -419,11 +419,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "Sewage is on the basement floor of an older Royal Oak house and it has to be pumped out. Your call connects you with an independent local cleanup company that can come out for sewage extraction in Royal Oak.",
-    "troy": "A Troy split-level or lower level off Big Beaver has sewage in it, and that water has to leave. Call and you are connected with an independent local cleanup company that can come out for sewage extraction in Troy.",
-    "birmingham": "Sewage is against the plaster and trim in an older Birmingham lower level. When you call, you reach an independent local cleanup company that can come out for sewage extraction in Birmingham.",
-    "berkley": "Sewage is in a short Berkley bungalow basement, and a household vac will spread it. Your call puts you through to an independent local cleanup company that can come out for sewage extraction in Berkley.",
-    "clawson": "Sewage is in a one-room Clawson bungalow basement on a tight lot. Calling connects you with an independent local cleanup company that can come out for sewage extraction in Clawson.",
+    "royal-oak": "Sewage is on the basement floor of an older Royal Oak house and it has to be pumped out. Your call connects you with an independent local cleanup company for sewage extraction in Royal Oak, and they'll tell you when they can be there.",
+    "troy": "A Troy split-level or lower level off Big Beaver has sewage in it, and that water has to leave. Call and you are connected with an independent local cleanup company for sewage extraction in Troy, and they'll tell you when they can be there.",
+    "birmingham": "Sewage is against the plaster and trim in an older Birmingham lower level. When you call, you reach an independent local cleanup company for sewage extraction in Birmingham, and they'll tell you when they can be there.",
+    "berkley": "Sewage is in a short Berkley bungalow basement, and a household vac will spread it. Your call puts you through to an independent local cleanup company for sewage extraction in Berkley, and they'll tell you when they can be there.",
+    "clawson": "Sewage is in a one-room Clawson bungalow basement on a tight lot. Calling connects you with an independent local cleanup company for sewage extraction in Clawson, and they'll tell you when they can be there.",
 }
 
 ALT = {

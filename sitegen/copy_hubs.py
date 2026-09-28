@@ -974,11 +974,11 @@ CITY_H1 = {
 }
 
 CITY_HERO = {
-    "royal-oak": "Royal Oak's Sewer Division maintains about 300 miles of public sewer and publishes the basement-water phone line. For the cleanup inside the house, your call connects you with an independent local cleanup company that can come out.",
-    "troy": "Troy discharges wastewater through three districts, not one system you can label combined or separated. For basement water in a 1960s or 1970s house, your call connects you with an independent local cleanup company. Troy's Water Division is a different number, listed below.",
-    "birmingham": "Birmingham's sewers are gravity, and the city owns no pump or lift stations. Older areas are combined. If the lower level is wet, your call connects you with an independent local cleanup company that can come out.",
-    "berkley": "Berkley's sewer is a single combined pipe, entirely gravity, with no city pumps or valves. If the bungalow basement is wet, your call connects you with an independent local cleanup company that can come out.",
-    "clawson": "Clawson's sewer page points to the George W. Kuhn basin, and after-hours police calls go to Troy dispatch. For the basement itself, your call connects you with an independent local cleanup company that can come out.",
+    "royal-oak": "Royal Oak's Sewer Division maintains about 300 miles of public sewer and publishes the basement-water phone line. For the cleanup inside the house, your call connects you with an independent local cleanup company, and they'll tell you when they can be there.",
+    "troy": "Troy discharges wastewater through three districts, not one system you can label combined or separated. For basement water in a 1960s or 1970s house, your call connects you with an independent local cleanup company, and they'll tell you when they can be there. Troy's Water Division is a different number, listed below.",
+    "birmingham": "Birmingham's sewers are gravity, and the city owns no pump or lift stations. Older areas are combined. If the lower level is wet, your call connects you with an independent local cleanup company, and they'll tell you when they can be there.",
+    "berkley": "Berkley's sewer is a single combined pipe, entirely gravity, with no city pumps or valves. If the bungalow basement is wet, your call connects you with an independent local cleanup company, and they'll tell you when they can be there.",
+    "clawson": "Clawson's sewer page points to the George W. Kuhn basin, and after-hours police calls go to Troy dispatch. For the basement itself, your call connects you with an independent local cleanup company, and they'll tell you when they can be there.",
 }
 
 CITY_DESC = {

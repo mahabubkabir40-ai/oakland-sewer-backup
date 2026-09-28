@@ -271,7 +271,7 @@ def claim_article():
         h2("Where this site fits"),
         p(
             f"{esc(BRAND)} connects Oakland County homeowners with independent cleanup providers. If sewage is in the basement now, "
-            f"call {phone_link()} to be connected when a participating provider is available. The provider sets the scope and price. "
+            f"call {phone_link()} to be connected when a participating provider is available. They'll tell you when they can be there. The provider sets the scope and price. "
             "For the steps before, during and after a storm, use the printable "
             + a("/basement-flood-checklist", "basement flood checklist") + ". City cleanup pages: "
             + a("/royal-oak-sewer-cleanup", "Royal Oak") + ", " + a("/troy-sewer-cleanup", "Troy") + ", "
@@ -412,7 +412,7 @@ def gwk_article():
             + a("/sewer-backup-claim-guide", "sewer backup claim guide") + ", and the "
             + a("/basement-flood-checklist", "printable basement flood checklist") + " covers before, during and after. For "
             "contaminated water that has to be removed, see " + a("/sewer-backup-cleanup", "sewer backup cleanup in Oakland County")
-            + " or call " + phone_link() + " to be connected with an independent provider when one is available."
+            + " or call " + phone_link() + " to be connected with an independent provider when one is available. They'll tell you when they can be there."
         ),
         p(
             "City overviews on this site: " + a("/royal-oak", "Royal Oak") + ", " + a("/berkley", "Berkley") + ", "
@@ -637,7 +637,7 @@ RESOURCE_FAQS = {
     "basement-flood-checklist": [
         (
             "Which city number do I call while water is coming in?",
-            "Royal Oak: (248) 246-3300 on weekdays, after hours police non-emergency (248) 246-3500. Troy: Water Division 248-524-3370, after hours Troy Police 248-524-3477. Birmingham's water event line (248) 530-1703 collects flooding data and is not a claim; claims questions are 248.530.1808. Berkley Public Works is 248-658-3490. Clawson DPW is (248) 288-3222 Monday through Thursday; after hours is (248) 524-3477, extension 1. For a power outage, DTE lists (800) 477-4747.",
+            "Royal Oak: (248) 246-3300 on weekdays, after hours police non-emergency (248) 246-3500. Troy: Water Division 248-524-3370, after hours Troy Police 248-524-3477. Birmingham's water event line (248) 530-1703 collects flooding data and is not a claim; claims questions are 248.530.1808. Berkley Public Works is 248-658-3490. Clawson DPW office is (248) 288-3222 Monday through Thursday. The city line on the sewer page is (248) 435-4500. After hours, Clawson's non-emergency dispatch line is (248) 524-3477, extension 1. Emergencies are 911. For a power outage, DTE lists (800) 477-4747.",
         ),
         (
             "What should an Oakland County homeowner do before the next storm?",

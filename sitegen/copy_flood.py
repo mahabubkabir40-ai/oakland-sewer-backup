@@ -142,7 +142,7 @@ def birmingham():
             "Shain Park is the downtown green, not a flood gauge. It is a landmark so you know which "
             "Birmingham we mean. The work is in the houses. Oakland Sewer Pros refers you to an independent "
             "provider at " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". Your call connects you with an independent company that can come out. How soon they arrive depends on who is free. If sewage is in the water, switch "
+            + ". Your call connects you with an independent company, and they'll tell you when they can be there. If sewage is in the water, switch "
             "to " + a("/birmingham-sewage-extraction", "sewage extraction in Birmingham") + " before you hire anyone for a 'clean flood.'"
         ),
         h3("Water damage in houses that were not built with drywall"),
@@ -366,11 +366,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "The basement in your Royal Oak house is full of water, from a storm, a sump, or a drain. Your call connects you with an independent local cleanup company that can come out for flooded basement cleanup in Royal Oak.",
-    "troy": "A finished Troy lower level or split-level is under water and the carpet is holding it. Call and you are connected with an independent local cleanup company that can come out for flooded basement cleanup in Troy.",
-    "birmingham": "Water is in an older Birmingham lower level, around the plaster and trim. When you call, you reach an independent local cleanup company that can come out for basement water removal in Birmingham.",
-    "berkley": "Water is in a short Berkley bungalow basement, and the stair runs straight up to the first floor. Your call puts you through to an independent local cleanup company that can come out for flooded basement cleanup in Berkley.",
-    "clawson": "Water is in a small Clawson bungalow basement, close to the furnace, and you need flooded basement cleanup in Clawson. Calling connects you with an independent local cleanup company that can come out. If a drain caused it, say so.",
+    "royal-oak": "The basement in your Royal Oak house is full of water, from a storm, a sump, or a drain. Your call connects you with an independent local cleanup company for flooded basement cleanup in Royal Oak, and they'll tell you when they can be there.",
+    "troy": "A finished Troy lower level or split-level is under water and the carpet is holding it. Call and you are connected with an independent local cleanup company for flooded basement cleanup in Troy, and they'll tell you when they can be there.",
+    "birmingham": "Water is in an older Birmingham lower level, around the plaster and trim. When you call, you reach an independent local cleanup company for basement water removal in Birmingham, and they'll tell you when they can be there.",
+    "berkley": "Water is in a short Berkley bungalow basement, and the stair runs straight up to the first floor. Your call puts you through to an independent local cleanup company for flooded basement cleanup in Berkley, and they'll tell you when they can be there.",
+    "clawson": "Water is in a small Clawson bungalow basement, close to the furnace, and you need flooded basement cleanup in Clawson. Calling connects you with an independent local cleanup company, and they'll tell you when they can be there. If a drain caused it, say so.",
 }
 
 ALT = {

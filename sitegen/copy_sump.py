@@ -305,17 +305,17 @@ FAQS = {
         ("What if the Clawson driveway cannot hold a work truck?", "Say so before the appointment. The provider should agree to a street setup or decline. We do not scout the lot."),
         ("The pump sits next to the furnace and both are wet. Who do I call?", "Call for water removal and for a pump repair, and do not turn the furnace on. They may be different companies. Stay out of the room if power and water have mixed."),
         ("Who quotes a Clawson pump replacement?", "The company that sees the pit. Earlier dollar ranges were removed. Call (248) 825-8312 to reach an independent provider when one is available, and describe the short driveway before they roll a truck."),
-        ("If the Clawson pump failed on a Friday, who is the city after-hours line?", "DPW is closed on Fridays. After hours, Clawson uses 248-524-3477, extension 1. That dispatch line is for city emergencies, not for repairing the pump next to your furnace. The city sewer page also points to the George W. Kuhn basin, which is the regional system, not your crock."),
+        ("If the Clawson pump failed on a Friday, who is the city after-hours line?", "DPW is closed on Fridays. Clawson's non-emergency dispatch line is 248-524-3477, extension 1. Emergencies go to 911. That dispatch line does not repair the pump next to your furnace. The city sewer page also points to the George W. Kuhn basin, which is the regional system, not your crock."),
         ("Does a dead Clawson sump mean the George W. Kuhn basin failed?", "The basin is the regional system listed on the city sewer page, along with the Oakland County Water Resources Commissioner. Your crock is a private pump. If the floor drain also backed up, treat that water as sewage and ask the city in writing who receives the 45-day notice. The basin does not restart the pump next to the furnace."),
     ],
 }
 
 HERO = {
-    "royal-oak": "The sump in your Royal Oak basement is stuck, dead, or overflowing. Your call connects you with an independent local company that can come out for sump pump repair in Royal Oak. If the floor is wet, say so.",
-    "troy": "The sump quit under a finished Troy lower level near Big Beaver, and the carpet is next. Call and you are connected with an independent local company that can come out for sump pump repair in Troy.",
-    "birmingham": "The sump failed in an older Birmingham, Michigan house and the lower level is getting wet. When you call, you reach an independent local company that can come out for sump pump repair in Birmingham. This is Michigan, not Alabama.",
-    "berkley": "The pump stopped in a short Berkley bungalow basement, and the water can rise fast. Your call puts you through to an independent local company that can come out for sump pump repair in Berkley.",
-    "clawson": "The pump stopped in a small Clawson basement with a short driveway. Calling connects you with an independent local company that can come out for sump pump repair in Clawson.",
+    "royal-oak": "The sump in your Royal Oak basement is stuck, dead, or overflowing. Your call connects you with an independent local company for sump pump repair in Royal Oak, and they'll tell you when they can be there. If the floor is wet, say so.",
+    "troy": "The sump quit under a finished Troy lower level near Big Beaver, and the carpet is next. Call and you are connected with an independent local company for sump pump repair in Troy, and they'll tell you when they can be there.",
+    "birmingham": "The sump failed in an older Birmingham, Michigan house and the lower level is getting wet. When you call, you reach an independent local company for sump pump repair in Birmingham, and they'll tell you when they can be there. This is Michigan, not Alabama.",
+    "berkley": "The pump stopped in a short Berkley bungalow basement, and the water can rise fast. Your call puts you through to an independent local company for sump pump repair in Berkley, and they'll tell you when they can be there.",
+    "clawson": "The pump stopped in a small Clawson basement with a short driveway. Calling connects you with an independent local company for sump pump repair in Clawson, and they'll tell you when they can be there.",
 }
 
 ALT = {

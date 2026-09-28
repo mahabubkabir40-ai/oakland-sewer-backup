@@ -171,7 +171,7 @@ def first_ten(city):
             "<strong>Keep people and pets out</strong> of the water. Sewage carries bacteria and other pathogens.",
             "<strong>Do not plunge or snake</strong> the drain. A household snake can push dirty water into the subfloor.",
             "<strong>Leave the basement if water is near outlets,</strong> the panel, or the furnace. Shut power off only from a dry location.",
-            "<strong>Call " + city + " help at the number above</strong> and you are connected with an independent provider who can come out. How soon they arrive depends on who is available.",
+            "<strong>Call " + city + " help at the number above</strong> and you are connected with an independent provider, and they'll tell you when they can be there.",
         ]),
     )
 
@@ -257,10 +257,10 @@ def article(slug, city):
         ),
         h2(f"Sewer backup cleanup in {city}, MI"),
         p(
-            f"In {city}, this usually starts when sewage comes up a basement drain, a laundry "
+            f"Sewage cleanup in {city} usually starts when sewage comes up a basement drain, a laundry "
             "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
             "and do not run a household vac. The steps below are the first minutes. After you call, an "
-            "independent cleanup company does the work."
+            "independent cleanup company does the work, and they'll tell you when they can be there."
         ),
         h3(f"Why {city} homes are at higher risk"),
         p(WHY[slug]),
@@ -388,11 +388,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "If sewage came up a floor drain in your older Royal Oak house, you are looking at sewer backup cleanup in Royal Oak. Your call connects you with an independent local cleanup company that can come out and take it from here.",
-    "troy": "Sewage in a Troy lower level or split-level near Big Beaver is sewer backup cleanup in Troy, not a leak at the mall. Call and you are connected with an independent local cleanup company that can come to the house and deal with it.",
-    "birmingham": "Sewage is in the plaster and trim of an older Birmingham lower level, and that is sewer backup cleanup in Birmingham. When you call, you reach an independent local cleanup company that can come out for that lower level.",
-    "berkley": "Sewage is sitting by the laundry in your short Berkley bungalow basement, and you need sewer backup cleanup in Berkley. Your call puts you through to an independent local cleanup company that can come out.",
-    "clawson": "Sewage is in a brick Clawson bungalow on a tight lot, and that is sewer backup cleanup in Clawson. Calling connects you with an independent local cleanup company that can come out and work in that small basement.",
+    "royal-oak": "If sewage came up a floor drain in your older Royal Oak house, sewage cleanup in Royal Oak is that water, and sewer backup cleanup in Royal Oak is the work of getting it out. Your call connects you with an independent local cleanup company, and they'll tell you when they can be there.",
+    "troy": "Sewage in a Troy lower level or split-level near Big Beaver is sewage cleanup in Troy, the same job as sewer backup cleanup in Troy, not a leak at the mall. Call and you are connected with an independent local cleanup company, and they'll tell you when they can be there.",
+    "birmingham": "Sewage is in the plaster and trim of an older Birmingham lower level. That is sewage cleanup in Birmingham, and it is sewer backup cleanup in Birmingham. When you call, you reach an independent local cleanup company, and they'll tell you when they can be there.",
+    "berkley": "Sewage is sitting by the laundry in your short Berkley bungalow basement. You need sewage cleanup in Berkley, which is sewer backup cleanup in Berkley. Your call puts you through to an independent local cleanup company, and they'll tell you when they can be there.",
+    "clawson": "Sewage is in a brick Clawson bungalow on a tight lot. Sewage cleanup in Clawson is that water, and sewer backup cleanup in Clawson is how it gets handled in a small basement. Calling connects you with an independent local cleanup company, and they'll tell you when they can be there.",
 }
 
 ALT = {
