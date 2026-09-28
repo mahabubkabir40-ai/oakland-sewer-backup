@@ -19,7 +19,7 @@ WHY = {
     ),
     "troy": (
         "Most Troy houses were built in the 1960s and 1970s, and many have split-levels or finished lower "
-        "levels where carpet, pad, and drywall sit close to the floor drain. Wastewater leaves through three "
+        "levels where carpet, pad, and drywall sit close to the floor drain. The city's wastewater leaves through three "
         "districts, so the pipe behind one street is not the pipe behind the next. Ask the Water Division which district serves your address."
     ),
     "birmingham": (
@@ -104,7 +104,7 @@ OWNER = {
     ),
     "troy": (
         "Pumping the water out of a split-level or a subdivision basement is "
-        f"{a('/troy-sewage-extraction', 'sewage extraction here')}. Ask for a written scope before anyone starts."
+        f"its own job: {a('/troy-sewage-extraction', 'sewage extraction')}. Ask for a written scope before anyone starts."
     ),
     "birmingham": (
         "If the lower level is already wet and you only need the water removed, use "
@@ -132,8 +132,8 @@ SEWAGE_H2 = {
     "troy": (
         "Sewage cleanup in Troy deals with water that left the sanitary line, not a clean rain leak. Split-level "
         "lower floors near Big Beaver often hold carpet and storage right where a backup surfaces. Ask the crew "
-        f"how they will separate that water from the rest of the house. Related pages: {a('/troy-water-damage-restoration', 'water damage restoration here')} "
-        f"and {a('/troy-flooded-basement', 'flooded basement cleanup here')}."
+        f"how they will separate that water from the rest of the house. Related pages: {a('/troy-water-damage-restoration', 'water damage restoration')} "
+        f"and {a('/troy-flooded-basement', 'flooded basement cleanup')}."
     ),
     "birmingham": (
         "Sewage cleanup in Birmingham is hard on older houses, because plaster, wood trim, and finished lower "
@@ -258,12 +258,7 @@ def article(slug, city):
         ),
         h2(f"Sewer backup cleanup in {city}, MI"),
         p(
-            "Sewage cleanup usually starts here when sewage comes up a basement drain, a laundry "
-            "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
-            "and do not run a household vac. The steps below are the first minutes. Then call, and a local "
-            "cleanup crew takes it from there."
-            if slug == "troy"
-            else f"Sewage cleanup in {city} usually starts when sewage comes up a basement drain, a laundry "
+            f"Sewage cleanup in {city} usually starts when sewage comes up a basement drain, a laundry "
             "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
             "and do not run a household vac. The steps below are the first minutes. Then call, and a local "
             "cleanup crew takes it from there."
@@ -281,8 +276,8 @@ def article(slug, city):
         p(
             "A November 14, 2022 City Council agenda says the Oakland County Water Resources Commissioner "
             "is responsible for the district facilities the city discharges into: Evergreen-Farmington, Oakland-Troy, "
-            "and George W. Kuhn. Do not treat one street as the pattern for the whole city, and do not call the city "
-            "fully combined or fully separated. Ask the Water Division which district serves the house."
+            "and George W. Kuhn. Do not treat one street as the pattern for the whole city, and do not describe the system as "
+            "fully combined or fully separated."
         ) if slug == "troy" else "",
         p(resources[slug]),
         nearby_section("sewer-cleanup", "Sewer backup cleanup", slug),
@@ -290,8 +285,9 @@ def article(slug, city):
     if slug == "troy":
         block = p(SEWAGE_H2[slug])
         extra = p(
-            "Sewage and water cleanup here means a drain backup or soaked carpet in a finished lower level. "
-            "Sewer backup cleanup in Troy is that drain backup."
+            "Sewage and water cleanup in a finished lower level can mean two different jobs: sewage from a drain "
+            "that backed up, or carpet soaked by a storm or a failed sump. The first is contaminated from the start, "
+            "so say which one you have when you call."
         )
         html_out = html_out.replace(block, block + "\n" + extra, 1)
         return html_out
@@ -328,7 +324,7 @@ FAQS = {
         ),
         (
             "Is Troy on one combined sewer?",
-            "No single label fits. A November 14, 2022 City Council agenda item says the city discharges wastewater through three districts, named in the note above. The Oakland County Water Resources Commissioner is responsible for those district facilities. Ask which district serves your address before you assume the pipe in the street.",
+            "No single label fits. A November 14, 2022 City Council agenda item says the city discharges wastewater through the Evergreen-Farmington, Oakland-Troy, and George W. Kuhn districts. The Oakland County Water Resources Commissioner is responsible for those district facilities. Ask which district serves your address before you assume the pipe in the street.",
         ),
         ("Where does a written sewer claim go?", "To the City Attorney's Office. State law sets 45 days from discovery. The sewer backup claim guide lists what to include."),
         (
