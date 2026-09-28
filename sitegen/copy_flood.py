@@ -347,6 +347,7 @@ FAQS = {
         ("Are Quarton-area floods usually sewage?", "Not always. Low ground and yard drainage are common explanations there. Sewage is indicated by drain activity and odor. Do not guess if you are unsure; keep people out and describe both possibilities on the call."),
         ("What happens when I call for Birmingham water removal?", "Call (248) 825-8312 and you are connected with an independent company when one is available. They set the schedule and the price. The city water-event line, (248) 530-1703, only collects flooding data."),
         ("Were Birmingham sewers built for a heavy one-hour rain?", "The city says combined and storm sewers were historically designed for about 2 inches of rain in one hour. The system is gravity, with no city pump stations. Downspouts extended about 6 feet and a backflow preventer are prevention. They do not pump out a lower level that is already wet."),
+        ("Is Birmingham's water-event form the 45-day claim?", "The water-event form and (248) 530-1703 collect flooding data. They are not the claim. Use the city's sewer backup claim form. Claims questions are 248.530.1808, and the city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. Written notice is due within 45 days of discovery. A late-1990s bond financed relief sewers in part of the city, not on every street."),
     ],
     "berkley": [
         ("How does Berkley's flat layout affect a flooded basement?", "Storm water has little slope to leave. Window wells and stairwells fill, and a sump may be the only thing keeping the short basement dry. That is a site condition, not a promise about your house."),
@@ -360,6 +361,7 @@ FAQS = {
         ("Is a disconnected downspout really enough to flood a bungalow basement?", "It can be. Roof water dumped at the foundation on a small lot has nowhere to go but down the wall and in at a low opening. Check that from outside."),
         ("Who sets the price for Clawson basement water removal?", "The independent company you hire, in writing, before you agree. Call (248) 825-8312 to reach that company when one is available. Tell them the driveway is short and whether the furnace is in the water."),
         ("Who do I call in Clawson if the flood might be the city sewer?", "The city line is (248) 435-4500, Monday through Thursday, 7:00 a.m. to 3:30 p.m. The department is closed on Fridays. After hours, dispatch is 248-524-3477, extension 1. The sewer page points to the George W. Kuhn basin. Confirm your street with the city."),
+        ("How do I give Clawson written notice if the water was sewage?", "State law requires written notice within 45 days of discovering the damage, with your name, address, and phone, the property address, the discovery date, and a brief description. When this site was checked, Clawson had no posted claim form. Ask the city in writing who receives sewer backup notices. A quiet drain and rain at a downspout is a different description. The sewer page links Public Act 222."),
     ],
 }
 

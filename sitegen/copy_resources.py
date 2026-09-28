@@ -601,11 +601,7 @@ RESOURCE_FAQS = {
         ),
         (
             "Is the letter to the city the same as an insurance claim?",
-            "No. A notice to the city is not an insurance claim. Many homeowner policies cover sewer backup only with an added endorsement, and the Water Resources Commissioner suggests asking about one. Call your insurer when you notify the city. Keep the declaration page and any payment or denial letter.",
-        ),
-        (
-            "What should I photograph before cleanup starts?",
-            "Photograph and film the water, the floor drain or fixture it came from, and every damaged item before anything is thrown out. Write down the date and time you found the water. The statute asks for reasonable proof of ownership and value of damaged personal property. Keep invoices and a log of each city call.",
+            "No. A notice to the city is not an insurance claim. Many homeowner policies cover sewer backup only with an added endorsement, and the Water Resources Commissioner suggests asking about one. Call your insurer when you notify the city. Photograph the water and damaged items before anything is thrown out, and keep the declaration page and any payment or denial letter.",
         ),
         (
             "Does calling (248) 825-8312 file the 45-day notice?",

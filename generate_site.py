@@ -275,7 +275,7 @@ def home_body():
     home_faqs = [
         (
             "What happens when I call (248) 825-8312?",
-            "When a participating independent cleanup company is available for your Oakland County address, the call is connected to them. They do the work. Ask for a written scope, the price, and proof of license and insurance. How soon they can come depends on that company.",
+            "When a participating independent cleanup company is available for your Oakland County address, the call is connected to them. They do the work. The line can be used at any hour. Ask for a written scope, the price, and proof of license and insurance. How soon they can come depends on that company.",
         ),
         (
             "Which Oakland County cities have their own sewer pages?",
@@ -292,10 +292,6 @@ def home_body():
         (
             "Will homeowners insurance pay for an Oakland County sewer backup?",
             "Not automatically. Sewer backup is often excluded unless the policy has an endorsement, and groundwater is often limited. Ask your insurer. Photograph the water before anything is thrown away.",
-        ),
-        (
-            "Can I call this line at night?",
-            "Yes. The phone line can be used at any hour. A visit happens when a participating provider is available for your city. How soon they can come depends on that company, the address, and who is free.",
         ),
     ]
     lead = f"""<p>If sewage or floodwater is in your basement in Oakland County, it needs to be handled now. Call {esc(PHONE_DISPLAY)}. Your call connects you with an independent local cleanup company that can come out.</p>"""

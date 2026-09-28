@@ -294,11 +294,7 @@ FAQS = {
         ),
         (
             "What happens when I call (248) 825-8312 about a Royal Oak backup?",
-            "When a participating independent cleanup company is available, the call is connected to them. They do the work in the house. Ask for a written scope and for the license and insurance the job requires. How soon they can come depends on that company. After the water is out, drying often takes several days. Ask them how they will check moisture.",
-        ),
-        (
-            "Will insurance pay for a Royal Oak sewer backup?",
-            "Not automatically. Many policies cover sewer backup only with an added endorsement. Ask your insurer, and photograph the drain and the water line before anything is thrown away. The city letter and the insurance claim are two different tracks.",
+            "When a participating independent cleanup company is available, the call is connected to them. They do the work in the house. Ask for a written scope and for the license and insurance the job requires. How soon they can come depends on that company. After the water is out, drying often takes several days. Ask them how they will check moisture. A sewer-backup endorsement, if you need one, is a question for your insurer, separate from the city letter.",
         ),
     ],
     "troy": [
