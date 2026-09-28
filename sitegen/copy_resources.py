@@ -413,6 +413,23 @@ def gwk_article():
             + " or call " + phone_link() + " for a local cleanup crew."
         ),
         p(
+            "For a backup inside the house, start with "
+            + a("/royal-oak-sewer-cleanup", "sewage cleanup in Royal Oak")
+            + ", "
+            + a("/troy-sewer-cleanup", "sewage cleanup in Troy")
+            + ", "
+            + a("/birmingham-sewer-cleanup", "sewage cleanup in Birmingham")
+            + ", "
+            + a("/berkley-sewer-cleanup", "sewage cleanup in Berkley")
+            + ", or "
+            + a("/clawson-sewer-cleanup", "sewage cleanup in Clawson")
+            + ". If the water is a flood rather than a drain backup, see "
+            + a("/clawson-flooded-basement", "flooded basement cleanup in Clawson")
+            + " and "
+            + a("/berkley-flooded-basement", "flooded basement cleanup in Berkley")
+            + "."
+        ),
+        p(
             "City overviews: " + a("/royal-oak", "Royal Oak") + ", " + a("/berkley", "Berkley") + ", "
             + a("/clawson", "Clawson") + ", " + a("/birmingham", "Birmingham") + " and " + a("/troy", "Troy") + "."
         ),
@@ -553,6 +570,23 @@ def checklist_article():
             + a("/sewer-backup-cleanup", "sewer backup cleanup") + ", "
             + a("/water-damage-restoration", "water damage restoration") + ", and the "
             + a("/george-w-kuhn-drainage-district", "George W. Kuhn Drainage District explainer") + "."
+        ),
+        p(
+            "City pages for a drain backup: "
+            + a("/royal-oak-sewer-cleanup", "sewage cleanup in Royal Oak")
+            + ", "
+            + a("/troy-sewer-cleanup", "sewage cleanup in Troy")
+            + ", "
+            + a("/birmingham-sewer-cleanup", "sewage cleanup in Birmingham")
+            + ", "
+            + a("/berkley-sewer-cleanup", "sewage cleanup in Berkley")
+            + ", and "
+            + a("/clawson-sewer-cleanup", "sewage cleanup in Clawson")
+            + ". For standing floodwater, see "
+            + a("/clawson-flooded-basement", "flooded basement cleanup in Clawson")
+            + " and "
+            + a("/berkley-flooded-basement", "flooded basement cleanup in Berkley")
+            + "."
         ),
         note("This checklist is general safety and preparation information, not legal, electrical or plumbing advice. Last verified " + VERIFIED + "."),
         sources_block([

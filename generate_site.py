@@ -371,7 +371,7 @@ def emit_city_service(city_slug, service_slug, title, h1, description, hero, art
         esc(hero),
         article_html,
         images_for(f"{city_slug}-{service_slug}"),
-        f"{city} questions",
+        "Questions" if city_slug == "troy" and service_slug == "sewer-cleanup" else f"{city} questions",
         faqs,
     )
     remember(
@@ -632,6 +632,8 @@ def main():
                 title = "Sewage Extraction in Berkley, MI | Bungalow Basements"
             if city_slug == "berkley" and service_slug == "basement-sanitization":
                 title = "Basement Sanitization Berkley, MI | After Sewage"
+            if city_slug == "troy" and service_slug == "sewer-cleanup":
+                title = "Sewage Cleanup Troy, MI | Sewer Backup Cleanup"
             emit_city_service(
                 city_slug,
                 service_slug,

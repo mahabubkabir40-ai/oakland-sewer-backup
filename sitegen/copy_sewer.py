@@ -19,9 +19,8 @@ WHY = {
     ),
     "troy": (
         "Most Troy houses were built in the 1960s and 1970s, and many have split-levels or finished lower "
-        "levels where carpet, pad, and drywall sit close to the floor drain. Troy discharges wastewater "
-        "through three districts, Evergreen-Farmington, Oakland-Troy, and George W. Kuhn, so the pipe "
-        "behind one street is not the pipe behind the next. Ask the Water Division which district serves your address."
+        "levels where carpet, pad, and drywall sit close to the floor drain. Wastewater leaves through three "
+        "districts, so the pipe behind one street is not the pipe behind the next. Ask the Water Division which district serves your address."
     ),
     "birmingham": (
         "Much of Birmingham was built in the early and middle 1900s. The city's own FAQ says older "
@@ -52,7 +51,7 @@ TRIGGERS = {
     ],
     "troy": [
         "A floor drain that gurgles before sewage appears",
-        "Rain that loads one of Troy's three wastewater districts",
+        "Rain that loads one of the three wastewater districts",
         "A blockage in the private lateral under the yard",
         "A sump that quits in the same storm that backs up a drain",
     ],
@@ -82,7 +81,7 @@ AREA_LINE = {
         f"near the Royal Oak Music Theatre, and toward the {a('https://en.wikipedia.org/wiki/Detroit_Zoo', 'Detroit Zoo')}. "
     ),
     "troy": (
-        "The same phone number covers Troy neighborhoods along Big Beaver Road, near Somerset Collection, "
+        "The same phone number covers neighborhoods along Big Beaver Road, near Somerset Collection, "
         "and out toward Troy Historic Village."
     ),
     "birmingham": (
@@ -105,7 +104,7 @@ OWNER = {
     ),
     "troy": (
         "Pumping the water out of a split-level or a subdivision basement is "
-        f"{a('/troy-sewage-extraction', 'sewage extraction in Troy')}. Ask for a written scope before anyone starts."
+        f"{a('/troy-sewage-extraction', 'sewage extraction here')}. Ask for a written scope before anyone starts."
     ),
     "birmingham": (
         "If the lower level is already wet and you only need the water removed, use "
@@ -133,8 +132,8 @@ SEWAGE_H2 = {
     "troy": (
         "Sewage cleanup in Troy deals with water that left the sanitary line, not a clean rain leak. Split-level "
         "lower floors near Big Beaver often hold carpet and storage right where a backup surfaces. Ask the crew "
-        f"how they will separate that water from the rest of the house. Related pages: {a('/troy-water-damage-restoration', 'water damage restoration in Troy')} "
-        f"and {a('/troy-flooded-basement', 'flooded basement cleanup in Troy')}."
+        f"how they will separate that water from the rest of the house. Related pages: {a('/troy-water-damage-restoration', 'water damage restoration here')} "
+        f"and {a('/troy-flooded-basement', 'flooded basement cleanup here')}."
     ),
     "birmingham": (
         "Sewage cleanup in Birmingham is hard on older houses, because plaster, wood trim, and finished lower "
@@ -157,9 +156,9 @@ SEWAGE_H2 = {
 }
 
 
-def first_ten(city):
+def first_ten(city, heading=None):
     return callout(
-        f"What to do in the first 10 minutes of a sewer backup in {city}",
+        heading or f"What to do in the first 10 minutes of a sewer backup in {city}",
         ol([
             "<strong>Stop using water.</strong> Do not run faucets, flush toilets, or run the washer or dishwasher.",
             "<strong>Keep people and pets out</strong> of the water. Sewage carries bacteria and other pathogens.",
@@ -181,7 +180,7 @@ CLAIM_LINE = {
         f"the {_GUIDE} explains the content and timeline. Keep the {_CHECK} for the next storm."
     ),
     "troy": (
-        "Troy takes written sewer backup claims through the City Attorney's Office, and state law sets a 45-day deadline "
+        "The city takes written sewer backup claims through the City Attorney's Office, and state law sets a 45-day deadline "
         f"from discovery. The form, the contact, and what to photograph are in the {_GUIDE}. The {_CHECK} "
         "covers the steps before and during a storm."
     ),
@@ -203,7 +202,7 @@ CLAIM_LINE = {
 
 CITY_SEWER_CALL = {
     "royal-oak": "the city at (248) 246-3300 (weekdays 7:30 a.m. to 4:00 p.m.) or (248) 246-3500 after hours",
-    "troy": "Troy's Water Division at 248-524-3370, or Troy Police at 248-524-3477 after hours",
+    "troy": "Troy's Water Division at 248-524-3370, or the police at 248-524-3477 after hours",
     "birmingham": "the city's water event line, (248) 530-1703, so the city has a record of the flooding",
     "berkley": "Berkley Public Works at 248-658-3490",
     "clawson": "the city at (248) 435-4500 (public works Monday to Thursday, 7:00 a.m. to 3:30 p.m.), or Troy Police dispatch at 248-524-3477, extension 1, after hours",
@@ -220,11 +219,11 @@ def article(slug, city):
             f"{a('/royal-oak', 'the Royal Oak overview')}."
         ),
         "troy": (
-            f"More Troy pages: {a('/troy-sewage-extraction', 'sewage extraction')}, "
+            f"More local pages: {a('/troy-sewage-extraction', 'sewage extraction')}, "
             f"{a('/troy-flooded-basement', 'flooded basement cleanup')}, "
             f"{a('/troy-basement-sanitization', 'sanitizing after a backup')}, "
             f"{a('/troy-sump-pump-repair', 'sump pump repair')}, and "
-            f"{a('/troy', 'the Troy overview')}."
+            f"{a('/troy', 'the city overview')}."
         ),
         "birmingham": (
             f"More Birmingham pages: {a('/birmingham-sewage-extraction', 'sewage extraction')}, "
@@ -248,7 +247,7 @@ def article(slug, city):
             f"{a('/clawson', 'the Clawson overview')}."
         ),
     }
-    return "\n".join([
+    html_out = "\n".join([
         h2(f"Sewage Cleanup {city}, MI"),
         p(SEWAGE_H2[slug]),
         p(OWNER[slug]),
@@ -259,27 +258,44 @@ def article(slug, city):
         ),
         h2(f"Sewer backup cleanup in {city}, MI"),
         p(
-            f"Sewage cleanup in {city} usually starts when sewage comes up a basement drain, a laundry "
+            "Sewage cleanup usually starts here when sewage comes up a basement drain, a laundry "
+            "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
+            "and do not run a household vac. The steps below are the first minutes. Then call, and a local "
+            "cleanup crew takes it from there."
+            if slug == "troy"
+            else f"Sewage cleanup in {city} usually starts when sewage comes up a basement drain, a laundry "
             "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
             "and do not run a household vac. The steps below are the first minutes. Then call, and a local "
             "cleanup crew takes it from there."
         ),
         h3(f"Why {city} homes are at higher risk"),
         p(WHY[slug]),
-        h3(f"Common backup triggers in {city}"),
+        h3("Common backup triggers" if slug == "troy" else f"Common backup triggers in {city}"),
         ul(TRIGGERS[slug]),
-        first_ten(city),
+        first_ten(
+            city,
+            "What to do in the first 10 minutes of a sewer backup" if slug == "troy" else None,
+        ),
         note(AREA_LINE[slug]),
         p(CLAIM_LINE[slug]),
         p(
             "A November 14, 2022 City Council agenda says the Oakland County Water Resources Commissioner "
-            "is responsible for the district facilities Troy discharges into: Evergreen-Farmington, Oakland-Troy, "
-            "and George W. Kuhn. Do not treat one street as the pattern for the whole city, and do not call Troy "
+            "is responsible for the district facilities the city discharges into: Evergreen-Farmington, Oakland-Troy, "
+            "and George W. Kuhn. Do not treat one street as the pattern for the whole city, and do not call the city "
             "fully combined or fully separated. Ask the Water Division which district serves the house."
         ) if slug == "troy" else "",
         p(resources[slug]),
         nearby_section("sewer-cleanup", "Sewer backup cleanup", slug),
     ])
+    if slug == "troy":
+        block = p(SEWAGE_H2[slug])
+        extra = p(
+            "Sewage and water cleanup here means a drain backup or soaked carpet in a finished lower level. "
+            "Sewer backup cleanup in Troy is that drain backup."
+        )
+        html_out = html_out.replace(block, block + "\n" + extra, 1)
+        return html_out
+    return html_out
 
 
 FAQS = {
@@ -307,21 +323,21 @@ FAQS = {
     ],
     "troy": [
         (
-            "Who does Troy tell residents to call for a sewer backup?",
-            "Troy lists the Water Division at 248-524-3370 during business hours and Troy Police at 248-524-3477 after hours. A written claim goes to the City Attorney's Office within 45 days of discovery. For sewage cleanup inside the house, call (248) 825-8312.",
+            "Who should residents call for a sewer backup?",
+            "The city lists the Water Division at 248-524-3370 during business hours and the police at 248-524-3477 after hours. A written claim goes to the City Attorney's Office within 45 days of discovery. For sewage cleanup inside the house, call (248) 825-8312.",
         ),
         (
             "Is Troy on one combined sewer?",
-            "No single label fits. A November 14, 2022 City Council agenda item says Troy discharges wastewater through the Evergreen-Farmington, Oakland-Troy, and George W. Kuhn districts. The Oakland County Water Resources Commissioner is responsible for those district facilities. Ask the city which district serves your address before you assume the pipe in the street.",
+            "No single label fits. A November 14, 2022 City Council agenda item says the city discharges wastewater through three districts, named in the note above. The Oakland County Water Resources Commissioner is responsible for those district facilities. Ask which district serves your address before you assume the pipe in the street.",
         ),
-        ("Where does a written Troy sewer claim go?", "To the City Attorney's Office. State law sets 45 days from discovery. The sewer backup claim guide lists what to include."),
+        ("Where does a written sewer claim go?", "To the City Attorney's Office. State law sets 45 days from discovery. The sewer backup claim guide lists what to include."),
         (
-            "Who is responsible for a Troy sewer lateral?",
+            "Who is responsible for the sewer lateral?",
             "The main in the street is a city question. The lateral under the yard is usually the homeowner's pipe. Confirm the split for your address with the city. A camera answers the private lateral. The cleanup company removes what already entered the lower level.",
         ),
         (
-            "What should I do about a gurgling floor drain in a Troy basement?",
-            "Stop running water. In a 1960s or 1970s Troy house, treat a gurgling basement drain as a warning, and do not snake it if you smell sewage. If you think the main is backing up, call the Water Division (248-524-3370, or Troy Police 248-524-3477 after hours).",
+            "What should I do about a gurgling floor drain in the basement?",
+            "Stop running water. In a 1960s or 1970s house, treat a gurgling basement drain as a warning, and do not snake it if you smell sewage. If you think the main is backing up, call the Water Division (248-524-3370, or the police at 248-524-3477 after hours).",
         ),
     ],
     "birmingham": [
