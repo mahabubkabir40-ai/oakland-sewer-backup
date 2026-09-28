@@ -17,10 +17,10 @@ def royal_oak():
             "A Royal Oak basement from before the 1960s often has a thin slab, a cove that was poured "
             "against clay-tile or cast-iron plumbing, and storage pushed against the walls. Extraction "
             "that stops at the open floor leaves the bottom of every box and the lower drywall wet. Ask "
-            "the independent provider, before they start, how far up they will open walls. Oakland Sewer "
-            "Pros does not extract water. Call "
+            "the independent provider, before they start, how far up they will open walls. The company you "
+            "hire does the extraction. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " to be connected if a participating company can take the call."
+            + " to be connected when a participating company can take the call."
         ),
         h2("Structural drying after the pump-out"),
         p(
@@ -28,7 +28,7 @@ def royal_oak():
             "wet masonry and any wood that took on water, and someone has to recheck it on later days. "
             "Royal Oak owners sometimes expect a single afternoon because the floor looks dry by evening. "
             "The slab edge and the sill can still be wet. The provider should explain how they will "
-            "measure that. This website will not tell you the job takes a fixed number of days."
+            "measure that. Ask them for a drying plan in writing. The schedule comes from what they find in the walls."
         ),
         p(
             "If the loss is mostly a flooded basement from storm water or a sump, read "
@@ -44,8 +44,7 @@ def royal_oak():
             "dried and kept. Royal Oak backups through floor drains fall in that group. A clean supply-line "
             "break does not, unless the water sat long enough to become foul. "
             + a("/royal-oak-basement-sanitization", "Sanitizing after the backup")
-            + " is the residue step, done by the company you hire. We do not claim those companies hold "
-            "any particular certificate. You ask them."
+            + " is the residue step, done by the company you hire. Ask that company what training and insurance they carry."
         ),
         h3("Basement flooding causes that show up in Royal Oak"),
         ul([
@@ -54,16 +53,15 @@ def royal_oak():
             "Sump failure. See " + a("/royal-oak-sump-pump-repair", "sump pump repair in Royal Oak") + ".",
             "Sections of the city built before storm and sanitary sewers were separated. "
             + a("https://www.romi.gov/384/Sewer-Division", "Royal Oak's Sewer Division")
-            + " can speak to the public main. We cannot.",
+            + " can speak to the public main. Ask them which pipe serves your street.",
         ]),
-        h2("Insurance conversations we will not have for you"),
+        h2("Insurance questions for your insurer"),
         p(
             "Water damage and sewer backup are often treated differently on a homeowners policy. A sudden "
             "pipe break and a sewer backup are not the same endorsement. Groundwater is frequently limited "
-            "or excluded. Oakland Sewer Pros does not read your policy, file a claim, or bill an insurer. "
+            "or excluded. Your claim stays with you and your carrier. "
             "The provider you hire may photograph and record moisture. Ask them whether documentation is "
-            "included. Ask your insurer what your form actually says. Do not rely on a contractor, or on "
-            "a website, for a coverage opinion."
+            "included. Ask your insurer what your form actually says. A contractor's guess is not a coverage decision."
         ),
         p(
             "Parts of Royal Oak lie in the southern Oakland County drainage area associated with the "
@@ -98,9 +96,9 @@ def troy():
         ),
         p(
             "Call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " and Oakland Sewer Pros may connect you with an independent restoration provider. We do "
-            "not bring air movers, we do not quote a Troy price, and we do not promise a crew the same day. "
-            "Availability depends on the companies, the address, and how busy they are."
+            + " and you are connected with an independent restoration provider when one is available. "
+            "The air movers, the price, and the arrival come from that company. "
+            "How soon they can come depends on the address and how busy they are."
         ),
         h2("Structural drying where the basement is living space"),
         p(
@@ -136,9 +134,9 @@ def troy():
         ]),
         h2("Insurance, without a coverage promise"),
         p(
-            "Troy water losses get denied or reduced when the policy excludes sewer backup, excludes "
-            "groundwater, or requires the water to be sudden. We will not predict your outcome. The "
-            "provider can document moisture if you ask them to. You call the insurer. Parts of Troy are "
+            "A Troy water loss can be reduced when the policy excludes sewer backup, excludes "
+            "groundwater, or requires the water to be sudden. Ask your insurer what your form says. The "
+            "provider can document moisture if you ask them to. Parts of Troy are "
             "in the regional drainage area of the George W. Kuhn facility and the Oakland County Water "
             "Resources Commissioner. Cite that only after you confirm it applies to your question, and "
             "not as the cause of a private lateral failure."
@@ -164,9 +162,8 @@ def troy():
         ),
         p(
             "Ask the independent provider to separate extraction, drying, and any rebuild in writing. "
-            "Oakland Sewer Pros will not schedule the rebuild, choose materials, or tell you the "
-            "Somerset-area houses are a different risk class from Northfield Hills. Those are place "
-            "names so you can describe the house. The company's written scope is what you hire. If the "
+            "The company you hire schedules the rebuild and chooses materials. Somerset and Northfield Hills "
+            "are place names so you can describe the house. The company's written scope is what you hire. If the "
             "drains never backed up and the water came from a window well or a supply line, say so. "
             "Calling it a sewer backup when it was a burst hose changes both the cleanup and the "
             "conversation with your insurer. Start at "
@@ -190,9 +187,8 @@ def birmingham():
         ),
         p(
             "The referral line is " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". Oakland Sewer Pros is not a Birmingham restoration company. We do not station anyone "
-            "downtown. A participating independent provider may take the call. You still compare their "
-            "license, insurance, and written scope."
+            + ". Your call connects you with an independent local company that can come out for the house. "
+            "Ask them for license, insurance, and a written scope before they start."
         ),
         h2("Structural drying of plaster and masonry"),
         p(
@@ -210,9 +206,9 @@ def birmingham():
             + " and " + a("/birmingham-sewage-extraction", "sewage extraction")
             + ". Pumps are " + a("/birmingham-sump-pump-repair", "sump pump repair") + "."
         ),
-        h2("Category 3 sewage in a finished Birmingham lower level"),
+        h2("Sewage in a finished Birmingham lower level"),
         p(
-            "Sewage in a guest room or a lower-level office is Category 3 water. Upholstery, rugs, and "
+            "Sewage in a guest room or a lower-level office is heavily contaminated. Upholstery, rugs, and "
             "the back of built-in shelving that wicked it up are not a cleaning problem. "
             + a("/birmingham-basement-sanitization", "Sanitization")
             + " after removal is part of the same hire, not a separate maid appointment. Low ground near "
@@ -227,12 +223,11 @@ def birmingham():
             "Yard drainage toward Quarton-area low spots during a multi-day rain.",
             "Failed sumps during outages. The electric utility is DTE. Restoring power does not repair a burned pump.",
         ]),
-        h2("What we will not say about your insurance"),
+        h2("What to ask about your insurance"),
         p(
-            "We will not say that Birmingham water damage is covered. Many policies handle a sudden "
-            "plumbing discharge differently from sewer backup and from groundwater seepage. Ask your "
-            "insurer. Ask the provider whether their documentation is itemized. Do not expect this "
-            "website to talk to the carrier. Portions of Birmingham are discussed in connection with "
+            "Coverage for Birmingham water damage is a question for your insurer. Many policies handle a sudden "
+            "plumbing discharge differently from sewer backup and from groundwater seepage. "
+            "Ask the provider whether their documentation is itemized. Your claim stays with you and your carrier. Portions of Birmingham are discussed in connection with "
             "southern Oakland County drainage and the George W. Kuhn district. Verify that with the "
             "Oakland County Water Resources Commissioner before you treat it as true for your street."
         ),
@@ -258,8 +253,7 @@ def birmingham():
             "A newer finished room in the same city, with standard drywall and replaceable carpet, can "
             "follow a faster demolition plan. Do not let a provider use one plan for both houses. "
             "Photograph the water line before anything is moved, especially on plaster, because the stain "
-            "line is the record. Oakland Sewer Pros does not inspect Birmingham houses and does not "
-            "recommend a contractor by name. The city index is "
+            "line is the record. The company on site makes that call. The city index is "
             + a("/birmingham", "Birmingham services")
             + "."
         ),
@@ -280,8 +274,8 @@ def berkley():
         ),
         p(
             "Use " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " to reach an independent provider through Oakland Sewer Pros. We are not the company with "
-            "the truck. If nobody is available, the line cannot invent a crew."
+            + " and you are connected with an independent provider when one is available. "
+            "If nobody is free, the line cannot invent a crew."
         ),
         h2("Structural drying in a low basement"),
         p(
@@ -303,7 +297,7 @@ def berkley():
         ),
         h2("Sewage in a house this small"),
         p(
-            "Category 3 sewage in a Berkley basement does not stay downstairs. The stair, the door, and "
+            "Sewage in a Berkley basement does not stay downstairs. The stair, the door, and "
             "any return-air opening connect the rooms. Porous material comes out. Then someone sanitizes "
             "what remains. That sequence is "
             + a("/berkley-basement-sanitization", "basement sanitization after the backup")
@@ -318,10 +312,10 @@ def berkley():
             "Clay laterals from the original build, rooted at the joints.",
             "Downspouts that discharge at the foundation because the side yard is only a few feet wide.",
         ]),
-        h2("Insurance is your policy, not our script"),
+        h2("Insurance on a Berkley policy"),
         p(
-            "We do not know whether a Berkley bungalow's policy includes sewer backup, sudden discharge, "
-            "or groundwater. Homeowners should ask the insurer directly. A provider's photos are not a "
+            "Whether a Berkley bungalow's policy includes sewer backup, sudden discharge, "
+            "or groundwater is a question for your insurer. A provider's photos help that conversation. They are not the "
             "claim. The George W. Kuhn drainage district and the Oakland County Water Resources "
             "Commissioner are part of the regional system for this part of the county. They are not a "
             "substitute for reading your declaration page."
@@ -368,16 +362,16 @@ def clawson():
             "up with a plan that does not fit. Tell them on the call."
         ),
         p(
-            "Oakland Sewer Pros connects the call at "
+            "Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " when an independent provider is participating. We do not extract water, dry buildings, "
-            "or publish a Clawson price."
+            + " and you are connected with an independent provider when one is participating. "
+            "The extraction, the drying, and the price come from that company."
         ),
         h2("Structural drying next to the furnace"),
         p(
             "In a one-room basement the furnace and water heater are in the drying zone. Structural "
             "drying cannot ignore them. If water reached the burners or the controls, the provider and "
-            "a heating contractor, not this website, decide whether the unit runs. Water damage repair "
+            "a heating contractor decide whether the unit runs. Water damage repair "
             "of finishes comes after the structure is actually dry. Painting a stained brick-bungalow "
             "stair while the stringer is wet just seals the damage in."
         ),
@@ -389,10 +383,10 @@ def clawson():
             + " and " + a("/clawson-sewage-extraction", "sewage extraction")
             + ". The pump is " + a("/clawson-sump-pump-repair", "sump pump repair") + "."
         ),
-        h2("Sewage, Category 3, and a shared basement room"),
+        h2("Sewage in a shared basement room"),
         p(
             "A floor-drain backup in that single room contaminates the mechanical equipment and the "
-            "storage together. Restorers treat sewage as Category 3 water. Soft goods come out. Metal "
+            "storage together. Treat that water as heavily contaminated. Soft goods come out. Metal "
             "cabinets may be cleaned. The crock, if sewage entered it, is not clean because the floor "
             "was mopped. "
             + a("/clawson-basement-sanitization", "Sanitizing after the Clawson backup")
@@ -406,12 +400,12 @@ def clawson():
             "Sump or power failure during a storm, with the pit in the same room as the furnace.",
             "Load on older sanitary lines in heavy regional rain. The city can discuss the main. The George W. Kuhn district is the regional drainage context for Clawson; confirm details with Oakland County before you rely on them.",
         ]),
-        h2("No coverage opinion from this site"),
+        h2("Coverage questions for your insurer"),
         p(
             "Ask your insurer whether sewer backup, sudden discharge, or groundwater is on your Clawson "
-            "policy. We will not estimate what they will pay, and we will not bill them. A written scope "
+            "policy. The payment decision is theirs. A written scope "
             "from the provider is what you compare to that conversation. License and insurance for the "
-            "work are documents you get from the provider, not from Oakland Sewer Pros."
+            "work come from the provider you hire."
         ),
         callout(
             "Say this when you call about Clawson water damage",
@@ -428,8 +422,8 @@ def clawson():
             "typical loss is one room under a brick bungalow, with the furnace, the water heater, stored "
             "boxes, and sometimes the only sump all sharing the floor. Water damage repair means deciding "
             "what among those contents is porous and done, and whether the mechanical equipment can be "
-            "put back in service. That decision is the heating contractor's and the restoration "
-            "provider's. This website will not clear a furnace to run."
+            "put back in service. That decision belongs to the heating contractor and the restoration "
+            "provider on site."
         ),
         p(
             "Staging is the other Clawson constraint. Downtown 14 Mile is a short commercial strip; the "

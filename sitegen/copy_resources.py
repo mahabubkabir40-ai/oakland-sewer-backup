@@ -266,7 +266,7 @@ def claim_article():
         p(
             "A notice to the city is not an insurance claim. Many homeowner policies cover sewer backup only with an added endorsement; "
             "the WRC suggests adding one (" + ext("wrc_brochure", "WRC sewer backup infographic") + "). Call your insurer or agent at the same "
-            "time you notify the city. We do not file claims or bill insurance companies."
+            "time you notify the city. Your insurance claim stays with you and your carrier."
         ),
         h2("Where this site fits"),
         p(
@@ -552,7 +552,7 @@ def checklist_article():
         h2("Getting sewage or floodwater removed"),
         p(
             f"{esc(BRAND)} is a referral line. Call {phone_link()} to be connected with an independent provider when one is available "
-            "for your address. We do not guarantee arrival times or prices. Related pages: "
+            "for your address. How soon they can come, and what they charge, come from that company. Related pages: "
             + a("/flooded-basement-cleanup", "flooded basement cleanup") + ", "
             + a("/sewer-backup-cleanup", "sewer backup cleanup") + ", "
             + a("/water-damage-restoration", "water damage restoration") + ", and the "

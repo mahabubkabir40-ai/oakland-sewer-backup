@@ -35,7 +35,7 @@ def royal_oak():
             "but the materials are the same. "
             + a("/royal-oak-water-damage-restoration", "Water damage restoration in Royal Oak")
             + " is the longer process: drying, deciding what to discard, and watching for mold growth "
-            "if the wetting lasted more than a day or two. Oakland Sewer Pros does not dry the building. "
+            "if the wetting lasted more than a day or two. The company you hire does the drying. "
             "Call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " to reach an independent provider when one is available."
         ),
@@ -90,7 +90,7 @@ def troy():
             "moisture behind baseboard. A provider should use a moisture check on the walls, not a palm "
             "on the carpet. The broader process is "
             + a("/troy-water-damage-restoration", "water damage restoration in Troy")
-            + ". Oakland Sewer Pros does not own dryers or meters. "
+            + ". The meters and the dryers come with the company you hire. "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " connects you with an independent company if one is taking work."
         ),
@@ -98,7 +98,7 @@ def troy():
             "Berber and pad in a family room usually come out if they were under standing water. Ask before you assume they can be dried in place.",
             "A basement bedroom needs the furniture moved before air can reach the walls. That labor is part of the scope you agree to.",
             "Storm-drain questions on the street go to Troy's Streets and Drains Division, not to a restoration crew.",
-            "Insurance for sudden water is policy-specific. We do not know your form and we do not invoice carriers.",
+            "Insurance for sudden water depends on your policy. Ask your insurer. The claim stays with you and your carrier.",
         ]),
         h2("Basement flooding causes Troy homeowners can actually check"),
         p(
@@ -142,7 +142,7 @@ def birmingham():
             "Shain Park is the downtown green, not a flood gauge. It is a landmark so you know which "
             "Birmingham we mean. The work is in the houses. Oakland Sewer Pros refers you to an independent "
             "provider at " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". We do not pump, and we do not promise same-day arrival. If sewage is in the water, switch "
+            + ". Your call connects you with an independent company that can come out. How soon they arrive depends on who is free. If sewage is in the water, switch "
             "to " + a("/birmingham-sewage-extraction", "sewage extraction in Birmingham") + " before you hire anyone for a 'clean flood.'"
         ),
         h3("Water damage in houses that were not built with drywall"),
@@ -158,13 +158,13 @@ def birmingham():
             "Do not chip soft plaster before the provider has seen how high the water went.",
             "A finished lower level used as a guest room has contents that hold water. List them. Do not haul them through the main floor while they drip.",
             "Quarton-area yard flooding and a sanitary backup can happen together. Say if the drains gurgled.",
-            "The city, not this website, knows the storm connection in the street.",
+            "Ask the city which storm connection serves your street.",
         ]),
         h2("How long Birmingham materials stay wet"),
         p(
             "Plaster and masonry release water slowly. A floor that looks dry on day one can still be damp "
             "in the wall on day three. Ask the provider how they will recheck, and what happens if readings "
-            "stay high. This site will not give you a day-count guarantee. Contaminated residue, if the "
+            "stay high. Ask the provider how they will recheck moisture on later days. Contaminated residue, if the "
             "flood was not clean, is "
             + a("/birmingham-basement-sanitization", "sanitization after a Birmingham flood or backup")
             + ". Southern Oakland County drainage context, including portions of Birmingham and the George "
@@ -197,8 +197,8 @@ def berkley():
         p(
             "The stair is the risk. Water carried up on boots, or a hose coupling that lets go, marks the "
             "oak floors owners are trying to keep. Tell the provider that the first floor is original wood "
-            "if that is true, and ask them to protect the landing. Oakland Sewer Pros will not be there to "
-            "lay the protection. We only connect the call at "
+            "if that is true, and ask them to protect the landing. The company on site lays that protection. "
+            "Your call connects you at "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY) + " when a provider participates."
         ),
         h3("Flooded basement cleanup versus a Berkley sewer backup"),
@@ -259,7 +259,7 @@ def clawson():
             + a("/clawson-sump-pump-repair", "sump pump repair")
             + " in the call. The referral number is "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". Oakland Sewer Pros does not haul the water."
+            + ". The company you hire hauls the water."
         ),
         h3("Water damage in a one-room Clawson basement"),
         p(
@@ -267,13 +267,13 @@ def clawson():
             "boxes, tools, and the bottom of the furnace cabinet. Flooded basement cleanup includes sorting "
             "what is porous and wet from what is metal and can be wiped. Drying the structure is "
             + a("/clawson-water-damage-restoration", "water damage restoration in Clawson")
-            + ". A provider should explain whether the furnace can run. That is their judgment on site, not a decision a website can make for you."
+            + ". A provider should explain whether the furnace can run. That judgment is made on site."
         ),
         ul([
             "Short driveways mean the pump discharge should be planned so it does not ice the sidewalk or run to a neighbor's window well.",
             "Street flooding on 14 Mile is a city drainage question. Your basement is a separate hire.",
             "Contaminated floods need " + a("/clawson-basement-sanitization", "sanitizing after the Clawson flood") + ", not a mop and bleach from the grocery store as the whole plan.",
-            "Ask your insurer what is covered. Sudden discharge and groundwater are often treated differently, and we do not interpret the policy.",
+            "Ask your insurer what is covered. Sudden discharge and groundwater are often treated differently. The claim stays with you and your carrier.",
         ]),
         h2("Flooded basement cleanup in Clawson, from the first hour"),
         p(
@@ -283,7 +283,7 @@ def clawson():
             + a("/clawson-sewage-extraction", "sewage extraction")
             + " and "
             + a("/clawson-sewer-cleanup", "sewage cleanup in Clawson")
-            + ". Category 3 water is a health problem in a room that also holds the furnace: do not "
+            + ". Sewage in a room that also holds the furnace is a health problem: do not "
             "wade in, do not mop it up the stair, and do not restart equipment that was submerged."
         ),
         p(
@@ -291,8 +291,8 @@ def clawson():
             "water, discard porous material that cannot be saved, then dry what remains. Drying is "
             + a("/clawson-water-damage-restoration", "water damage restoration in Clawson")
             + ". Insurance for a sudden pipe break, a sewer backup, and groundwater are often different "
-            "parts of a policy. Ask your insurer which one matches what you saw. This site will not "
-            "file a claim or name a deadline. Call "
+            "parts of a policy. Ask your insurer which one matches what you saw. Your claim stays with you "
+            "and your carrier. The city's 45-day notice is a separate letter. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " when you want an independent provider for the water that is already inside."
         ),

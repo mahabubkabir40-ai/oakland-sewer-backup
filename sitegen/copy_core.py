@@ -10,27 +10,26 @@ def about_article():
             f"{BRAND} helps homeowners in Royal Oak, Troy, Birmingham, Berkley, and Clawson reach "
             "independent local companies for sewer backup cleanup, sewage extraction, flooded basement "
             "cleanup, water damage restoration, sump pump repair, and sanitizing after a flood or sewage "
-            "backup. We do not employ those companies. We do not own their trucks. We do not supervise "
-            "their jobs, and we do not warrant or guarantee the work."
+            "backup. The company you reach is independent. They bring their own crew and their own trucks, "
+            "and the work is theirs."
         ),
         h2("What happens when you call"),
         p(
             f"You dial {PHONE_DISPLAY}. When a participating provider is available for your type of job "
-            "and your location, the call can be connected to them. If no provider is participating, "
-            "availability is not something this site can create. Same-day and 24/7 coverage depends on "
-            "that provider, the address, technician availability, and demand. It is not a promise."
+            "and your location, the call is connected to them. How soon they can come depends on that "
+            "company, the address, and who is free. If nobody is available, the line cannot invent a crew."
         ),
         h2("What you still have to verify"),
         p(
             "Before work starts, ask the company you hire for the license and insurance the job requires, "
-            "and for a written scope. Prices are theirs. Insurance coverage for sewer backup or water "
-            "damage is a question for your insurer, not for us. We do not file claims and we do not bill carriers."
+            "and for a written scope. The price comes from that company. Insurance coverage for sewer backup or water "
+            "damage is a question for your insurer. Your claim stays between you and your carrier."
         ),
-        h2("What we do not have"),
+        h2("No public office"),
         p(
-            f"{BRAND} does not publish a street address because we do not operate a public office or a "
-            "dispatch hub in Oakland County. Photos on the site are not pictures of a staff or of "
-            "contractors we employ. The cities we describe are the five listed above. Start at "
+            f"{BRAND} has no public office and no dispatch hub in Oakland County, so there is no street "
+            "address to publish. Photos on the site show wet basements, not a crew we employ. "
+            "The cities described here are the five listed above. Start at "
             + a("/services", "services")
             + " or a city overview such as "
             + a("/royal-oak", "Royal Oak")
@@ -81,13 +80,12 @@ def terms_article():
             f"{BRAND} is an independent referral service for homeowners in parts of Oakland County, "
             "Michigan. We are not a plumbing contractor and we are not a water damage restoration "
             "contractor. Calls to the number on this site may be routed to independent businesses. "
-            "We do not own, manage, or guarantee their work."
+            "Those businesses own the work. The contract and the result are between you and the company you hire."
         ),
         h2("Your responsibility"),
         p(
-            "You are responsible for verifying that any company you hire holds the license and insurance "
-            "required for the work. You are responsible for the contract, the price, and any insurance "
-            "claim. We do not warrant results, arrival times, or prices."
+            "You verify that any company you hire holds the license and insurance required for the work. "
+            "The contract, the price, the arrival, and any insurance claim stay with you and that company."
         ),
         h2("Information on these pages"),
         p(
@@ -99,7 +97,7 @@ def terms_article():
         h2("Sewage is hazardous"),
         p(
             "Water that came from a sewer can carry pathogens. Keep people and pets away from it. This "
-            "website cannot make a basement safe by being read."
+            "website is not a substitute for staying out of the water."
         ),
         p("See also " + a("/privacy", "privacy") + " and " + a("/about", "about") + "."),
     ])
@@ -111,8 +109,8 @@ def contact_article():
         p(
             f"The working contact is {a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)}. Use it for sewer backup cleanup, "
             "sewage extraction, flooded basement water removal, water damage restoration, sump pump "
-            "problems, and sanitizing after a backup. 24/7 coverage exists only when a participating "
-            "provider is available. This site does not promise that someone will answer or arrive."
+            "problems, and sanitizing after a backup. A live connection happens when a participating "
+            "provider is available. How soon anyone can come is up to that company."
         ),
         h3("Cities"),
         p(
@@ -120,7 +118,7 @@ def contact_article():
             "County addresses may or may not be accepted by a provider. The provider decides."
         ),
         p(
-            "The form on this page does not create a ticket. It does not store your name, phone, or email. "
+            "The form on this page only opens a confirmation screen. It does not store your name, phone, or email. "
             "Submitting it shows a confirmation screen and leaves those details out of the page address. "
             "Read " + a("/privacy", "the privacy page") + " before you type anything you would not want left only on your own screen."
         ),

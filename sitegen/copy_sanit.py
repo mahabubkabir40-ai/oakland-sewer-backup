@@ -17,8 +17,7 @@ def royal_oak():
         p(
             "The company that did "
             + a("/royal-oak-sewage-extraction", "sewage extraction")
-            + " should be the one that sanitizes, because they already know what got wet. Oakland Sewer "
-            "Pros does not sell disinfectant and does not send a technician. "
+            + " should be the one that sanitizes, because they already know what got wet. The product and the technician come from that company. "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " connects you with an independent provider when one is available. Ask what product they "
             "will use and whether the label allows it on sewage residue. You should not have to take "
@@ -73,8 +72,7 @@ def troy():
             "has to remove the ruined layers before any disinfectant has a surface it can actually treat."
         ),
         p(
-            "Oakland Sewer Pros does not certify cleaners and does not claim the providers we may reach "
-            "hold any particular credential. Ask the company you hire what training and insurance they "
+            "Ask the company you hire what training and insurance they "
             "carry for sewage cleanup. The phone "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " is only the introduction. If the event was a clean sump overflow with no drain backup, "
@@ -97,7 +95,7 @@ def troy():
             + a("/troy-sewer-cleanup", "Sewer backup cleanup")
             + " is the overview of the backup itself. A failed pump that started the overflow is "
             + a("/troy-sump-pump-repair", "sump pump repair")
-            + ". None of those pages is a price list. The provider quotes the work. We do not."
+            + ". The provider quotes the work. Ask for that number in writing."
         ),
         callout(
             "Troy questions worth asking",
@@ -131,23 +129,22 @@ def birmingham():
             + ". If the water was a flood without sewage, drying and selective cleaning sit under "
             + a("/birmingham-water-damage-restoration", "water damage restoration")
             + " and " + a("/birmingham-flooded-basement", "basement water removal")
-            + ". Oakland Sewer Pros refers the call at "
+            + ". Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " and does not apply chemicals."
+            + " and you are connected with an independent company that does the cleaning, when one is available."
         ),
         h3("Wood trim and what sanitizing cannot promise"),
         ul([
             "Unfinished end grain on baseboard that sat in sewage is a poor candidate for saving. Painted face grain may look fine and still be fouled at the cut ends.",
             "A closed-cell finish on a floor is different from a bare softwood stair. Ask for a specific answer, not a blanket 'we can save the wood.'",
             "Plaster keys that are already soft will not hold because someone sprayed them.",
-            "No one on this website can promise the house will be odor-free on a date.",
+            "Ask the company on site when they will recheck the odor. A date is their call after they see what stayed.",
         ]),
         h2("Who should do the work"),
         p(
             "Hire a restoration company that will put the scope in writing, including what is discarded. "
             "A janitorial service with a mop is the wrong trade once sewage is involved. Verify license "
-            "and insurance for the work. We do not hold those documents for the companies who may answer "
-            "the referral. If a sump pit was part of the contamination, include "
+            "and insurance for the work. Those documents come from the company you hire. If a sump pit was part of the contamination, include "
             + a("/birmingham-sump-pump-repair", "the pump")
             + " in the discussion so the crock is not the piece left dirty."
         ),
@@ -157,7 +154,7 @@ def birmingham():
                 "Odor treatments that do not remove the wet material only cover the smell until the next humid day.",
                 "Keep children out of a lower level that had sewage, even after it looks dry, until the company says the demolition is done.",
                 "Do not mix random household chemicals in the same bucket.",
-                "Photograph discarded materials if you plan to talk to your insurer. We do not submit the claim.",
+                "Photograph discarded materials if you plan to talk to your insurer. The claim stays with you and your carrier.",
             ]),
         ),
         p("See " + a("/birmingham", "Birmingham's overview") + " for the full local list."),
@@ -182,7 +179,7 @@ def berkley():
             + a("/berkley-sewer-cleanup", "sewer backup cleanup in Berkley")
             + ". Pumping the water out is "
             + a("/berkley-sewage-extraction", "sewage extraction in Berkley")
-            + ". Sanitizing starts after that water is out. Oakland Sewer Pros does not clean the house. Call "
+            + ". Sanitizing starts after that water is out. The company you hire does the cleaning. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " for a referral to an independent provider."
         ),
@@ -199,15 +196,14 @@ def berkley():
             "A sensible order is: stop "
             "water use, keep the stair closed, have contaminated water removed, throw out porous items "
             "that soaked it up, then clean what is left and dry the structure. Spraying a still-wet "
-            "pad does none of those things. Category 3 water can carry bacteria up a short bungalow "
+            "pad does none of those things. Sewage can carry bacteria up a short bungalow "
             "stair, so the living room is part of the safety plan even when the flood stayed downstairs."
         ),
         p(
             "Call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " when you need an independent provider for that cleaning. Ask what they will remove, "
             "what they will apply, and how they will keep the first floor from being the next dirty "
-            "surface. Insurance questions go to your insurer. We do not say a policy will pay, and we "
-            "do not quote a cleaning price."
+            "surface. Insurance questions go to your insurer. The cleaning price comes from the company you hire."
         ),
         h2("Not a substitute for fixing the drain"),
         p(
@@ -223,7 +219,7 @@ def berkley():
                 "Do not pour bleach into a basement drain that just backed up. You can splash yourself and you have not cleaned the room.",
                 "Do not run the clothes dryer if the laundry sink overflowed into the machine area.",
                 "Ask the provider whether belongings on shelves above the water line were splashed. Height matters in a low basement.",
-                "We will not tell you a specific chemical brand to buy. The person doing the work should name what they are using and why.",
+                "Ask the person doing the work which product they are using and why. The label has to fit sewage residue.",
             ]),
         ),
         p("All Berkley services start at " + a("/berkley", "the city page") + "."),
@@ -244,10 +240,9 @@ def clawson():
         p(
             "Cross-contamination is the bungalow problem. There is no long hallway to isolate. The "
             "basement door opens into the house you live in. Bags, boots, and hoses have to be planned "
-            "so sewage does not move upstairs. The company you hire should describe that plan. Oakland "
-            "Sewer Pros will not be on the stair to enforce it. Reach a provider through "
+            "so sewage does not move upstairs. The company you hire should describe that plan and follow it. Reach a provider through "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " if someone is participating. We do not warrant their work."
+            + " when someone is participating. The work is theirs."
         ),
         h3("Sequence that fits a small Clawson basement"),
         ul([
@@ -271,7 +266,7 @@ def clawson():
                 "Nothing wet and soft goes up the stairs unpacked.",
                 "Do not restart the furnace to 'dry the room' if the bottom of the unit was under water.",
                 "Ask what will be hauled the same day. A sanitized floor next to a pile of wet drywall is not done.",
-                "Insurance paperwork is your conversation with your insurer. This site does not write it.",
+                "Insurance paperwork is your conversation with your insurer. Keep the photos and the written scope for that call.",
             ]),
         ),
         p("See " + a("/clawson", "Clawson's service overview") + " if you still need the sewer or flood page."),

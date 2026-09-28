@@ -309,7 +309,7 @@ def home_body():
                 </a>
                 <a href="/sump-pump-repair" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Sump pump repair</h3>
-                    <p class="text-sm text-gray-700 leading-relaxed">A stuck, dead, or overflowing pump. This site does not quote parts or labor.</p>
+                    <p class="text-sm text-gray-700 leading-relaxed">A stuck, dead, or overflowing pump. The company you hire quotes the parts and the labor.</p>
                 </a>
                 <a href="/basement-sanitization" class="bg-white border border-gray-200 p-6 rounded-2xl block hover:border-gray-300">
                     <h3 class="text-lg font-outfit font-extrabold mb-3">Basement sanitization</h3>
@@ -327,12 +327,12 @@ def home_body():
                     <p class="text-sm text-gray-300 leading-relaxed">Call the number above and say your city and whether the water came from a drain, a sump, or a storm.</p>
                 </div>
                 <div class="bg-slate-950 border border-slate-800 p-6 rounded-2xl">
-                    <h3 class="text-white font-bold font-outfit mb-2">2. A provider may take it</h3>
-                    <p class="text-sm text-gray-300 leading-relaxed">If a participating independent company is available, the call can be connected. If not, there is no visit. We do not promise a response time.</p>
+                    <h3 class="text-white font-bold font-outfit mb-2">2. You are connected</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">If a participating independent company is available, the call is connected to them. How soon they can come depends on that company.</p>
                 </div>
                 <div class="bg-slate-950 border border-slate-800 p-6 rounded-2xl">
-                    <h3 class="text-white font-outfit font-bold mb-2">3. You hire them, or you don't</h3>
-                    <p class="text-sm text-gray-300 leading-relaxed">Ask for a written scope, the price, and proof of license and insurance. They do the work. We do not.</p>
+                    <h3 class="text-white font-outfit font-bold mb-2">3. You hire the company</h3>
+                    <p class="text-sm text-gray-300 leading-relaxed">Ask for a written scope, the price, and proof of license and insurance. The company you hire does the work.</p>
                 </div>
             </div>
         </div>
@@ -340,7 +340,7 @@ def home_body():
     cities = f"""<section class="py-16 bg-slate-950 px-4 border-t border-slate-800">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-3xl font-outfit font-extrabold text-white text-center mb-4">Oakland County cities</h2>
-            <p class="text-sm text-gray-300 text-center max-w-3xl mx-auto mb-10">Every city page is linked here, including sewer backup, sewage extraction, flooded basement cleanup, water damage restoration, sump pump repair, and basement sanitization.</p>
+            <p class="text-sm text-gray-300 text-center max-w-3xl mx-auto mb-10">Royal Oak, Troy, Birmingham, Berkley, and Clawson each have pages for sewer backup, sewage extraction, flooded basement cleanup, water damage restoration, sump pump repair, and basement sanitization.</p>
             {city_directory()}
             <h2 class="text-2xl font-outfit font-extrabold text-white text-center mt-14 mb-4">Pages that match a specific job</h2>
             <p class="text-sm text-gray-300 text-center max-w-3xl mx-auto mb-6">Each link is one job in one city. If sewage came up a drain, use that city's sewer backup link. Extraction is only the pumping step.</p>
@@ -389,7 +389,7 @@ def home_body():
     form = f"""<section id="contact" class="py-16 bg-slate-900 px-4">
         <div class="max-w-xl mx-auto bg-slate-950 border border-slate-800 p-8 rounded-2xl">
             <h2 class="text-2xl font-outfit font-bold text-white mb-2">Call first</h2>
-            <p class="text-sm text-gray-300 mb-6">The form does not dispatch anyone. Calling {esc(PHONE_DISPLAY)} is how you reach a provider.</p>
+            <p class="text-sm text-gray-300 mb-6">Calling {esc(PHONE_DISPLAY)} is how you reach a provider. This form only opens a confirmation screen.</p>
             {form_fields(id_prefix="home")}
         </div>
     </section>"""
@@ -401,12 +401,12 @@ def home_body():
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-7">
                     <h1 class="text-3xl md:text-5xl font-outfit font-extrabold text-white leading-tight">24/7 Emergency Sewer Backup Cleanup &amp; Sewage Extraction in Oakland County, MI</h1>
-                    <p class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed">Oakland Sewer Pros connects Oakland County homeowners with independent local providers for sewer backup, sewage cleanup, basement flood cleanup, and water damage restoration. Arrival depends on the provider. We do not guarantee a response time.</p>
+                    <p class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed">Sewage or floodwater in an Oakland County basement needs a cleanup company now. Oakland Sewer Pros connects you with an independent local provider for sewer backup, sewage cleanup, basement flood cleanup, and water damage restoration. How soon they can come is up to that company.</p>
                     <p class="text-sm text-gray-300 mt-4 leading-relaxed">County pages: <a class="text-red-400 underline" href="/sewer-backup-cleanup">sewage cleanup and sewer backup in Oakland County</a>, <a class="text-red-400 underline" href="/flooded-basement-cleanup">basement flood cleanup in Oakland County</a>, and <a class="text-red-400 underline" href="/water-damage-restoration">water damage restoration</a>. If a drain backed up, that is sewage, not a rain flood.</p>
                     <div class="mt-8">{call_button()}</div>
                 </div>
                 <div class="lg:col-span-5">
-                    {picture("/images/homepage_hero.jpg", "Wet basement floor after a sewer backup or flood, the kind of Oakland County loss this referral line is for", 800, 800, eager=True, css="w-full h-64 md:h-80 object-cover rounded-2xl border border-slate-800")}
+                    {picture("/images/homepage_hero.jpg", "Wet basement floor after a sewer backup or flood in an Oakland County house", 800, 800, eager=True, css="w-full h-64 md:h-80 object-cover rounded-2xl border border-slate-800")}
                 </div>
             </div>
         </div>

@@ -9,44 +9,36 @@ from sitegen.render import a, callout, h2, h3, nearby_section, note, ol, p, ul
 
 WHY = {
     "royal-oak": (
-        "Royal Oak's housing stock is largely pre-1960s, concentrated in established neighborhoods "
-        "like Vinsetta Park, Northwood, and the areas surrounding downtown near Woodward Avenue. "
-        "Homes of this era were commonly built with clay tile or cast-iron sewer laterals — materials "
-        "that are far more prone to root intrusion, joint separation, and collapse over decades than "
-        "modern PVC piping. Combined with Royal Oak's aging municipal storm and sanitary infrastructure, "
-        "heavy spring rainfall or rapid summer storm surges can push more wastewater into the system "
-        "than it can handle, forcing sewage back up through basement floor drains."
+        "If the house is pre-1960s, in Vinsetta Park, Northwood, or near downtown along Woodward Avenue, "
+        "the sewer lateral is often clay tile or cast iron. Those pipes take roots, open at the joints, "
+        "and collapse over decades more readily than modern PVC. Royal Oak's older storm and sanitary "
+        "mains can also fill in a heavy spring rain or a fast summer storm and push sewage back up the "
+        "basement floor drain."
     ),
     "troy": (
-        "Troy's neighborhoods span a wide range of housing ages, from 1960s–70s split-levels near "
-        "Big Beaver Road to established subdivisions in areas like Northfield Hills. Many homes from "
-        "this era still run on original clay tile or cast-iron sewer laterals — materials that develop "
-        "interior scale and brittle joints over decades, giving tree roots an easy entry point. Troy's "
-        "mature, tree-lined subdivisions compound this, while high water table conditions near the Big "
-        "Beaver corridor increase flood risk during spring thaw and heavy summer storms."
+        "A 1960s or 1970s split-level near Big Beaver Road, or a house in a subdivision such as "
+        "Northfield Hills, often still has its original clay or cast-iron lateral. Scale builds up "
+        "inside those pipes, the joints get brittle, and tree roots on a mature street find the opening. "
+        "Residents also describe a high water table near the Big Beaver corridor, so spring thaw and a "
+        "hard summer storm both raise the chance that the lower level takes water."
     ),
     "birmingham": (
-        "Birmingham's housing stock includes a significant share of homes from the 1920s through the "
-        "1950s, in neighborhoods like Poppleton Park and the "
-        "areas around Quarton Lake. These older homes commonly carry original cast-iron plumbing and sit "
-        "on clay sewer laterals installed decades before modern PVC became standard. Birmingham's mature "
-        "tree canopy means root intrusion is a frequent contributor to backups, especially in low-lying "
-        "sections near Quarton Lake."
+        "Houses from the 1920s through the 1950s, in Poppleton Park and around Quarton Lake, commonly "
+        "still have cast-iron plumbing and clay sewer laterals from before PVC. The mature trees that "
+        "make those streets look the way they do also send roots into the joints. Low ground near "
+        "Quarton Lake is where that shows up most often as a backup."
     ),
     "berkley": (
-        "Berkley's housing stock is largely bungalow-style construction from the 1940s and 1950s, built "
-        "with original clay or cast-iron sewer laterals that are reaching the end of their service life. "
-        "Berkley's relatively flat topography means heavy "
-        "rain has limited places to drain quickly. Combined with older municipal combined sewer lines, "
-        "heavy rain events push extra wastewater volume back up through basement floor drains in older homes."
+        "Most Berkley houses are 1940s and 1950s bungalows on original clay or cast-iron laterals that "
+        "are near the end of a long service life. The city is flat, so a hard rain has few places to go. "
+        "Older municipal lines have been described as combined, and in a storm that shared pipe can push "
+        "wastewater back up the basement floor drain. Confirm the pipe on your block with the city."
     ),
     "clawson": (
-        "Clawson's housing stock is predominantly mid-century brick bungalows and ranches built between the 1940s and 1960s on "
-        "compact city lots. Homes of this era commonly run on original clay or cast-iron sewer laterals, "
-        "which after decades of use are prone to root intrusion at pipe joints and internal corrosion "
-        "that narrows usable pipe diameter. Heavy regional storm events in southeast Oakland County put "
-        "extra strain on older sanitary infrastructure, contributing to Category 3 sewer-backup exposure "
-        "during rainstorms."
+        "Clawson is mostly mid-century brick bungalows and ranches from the 1940s to the 1960s, on "
+        "compact lots. The lateral is often original clay or cast iron. After decades, roots enter at "
+        "the joints and corrosion narrows the pipe. A heavy regional storm then loads those older sanitary "
+        "lines, and sewage can come up inside the house."
     ),
 }
 
@@ -85,25 +77,25 @@ TRIGGERS = {
 
 AREA_LINE = {
     "royal-oak": (
-        f"This referral line covers Royal Oak neighborhoods along the {a('https://en.wikipedia.org/wiki/Woodward_Avenue', 'Woodward Avenue corridor')}, "
+        f"The same phone number covers Royal Oak neighborhoods along the {a('https://en.wikipedia.org/wiki/Woodward_Avenue', 'Woodward Avenue corridor')}, "
         f"near the Royal Oak Music Theatre, and toward the {a('https://en.wikipedia.org/wiki/Detroit_Zoo', 'Detroit Zoo')}. "
-        "It is not a staffed office at those landmarks."
+        "Your call is a referral for the house."
     ),
     "troy": (
-        "This referral line covers Troy neighborhoods along Big Beaver Road, near Somerset Collection, "
-        "and out toward Troy Historic Village. It is not a staffed office at those places."
+        "The same phone number covers Troy neighborhoods along Big Beaver Road, near Somerset Collection, "
+        "and out toward Troy Historic Village. Your call is a referral for the house."
     ),
     "birmingham": (
-        "This referral line covers Birmingham homes around downtown, Shain Park, Poppleton Park, and the Quarton area. "
-        "It is not a staffed office in the city."
+        "The same phone number covers Birmingham homes around downtown, Shain Park, Poppleton Park, and the Quarton area. "
+        "Your call is a referral for the house."
     ),
     "berkley": (
-        "This referral line covers Berkley bungalow blocks and the 12 Mile Road corridor. "
-        "It is not a staffed office in the city."
+        "The same phone number covers Berkley bungalow blocks and the 12 Mile Road corridor. "
+        "Your call is a referral for the house."
     ),
     "clawson": (
-        "This referral line covers Clawson's brick-bungalow blocks and the 14 Mile Road downtown strip. "
-        "It is not a staffed office in the city."
+        "The same phone number covers Clawson's brick-bungalow blocks and the 14 Mile Road downtown strip. "
+        "Your call is a referral for the house."
     ),
 }
 
@@ -111,19 +103,18 @@ OWNER = {
     "royal-oak": (
         "Once wastewater is on the floor, the pumping step is "
         f"{a('/royal-oak-sewage-extraction', 'sewage extraction in Royal Oak')}. Keep people and pets "
-        "out of that water until it is gone. Oakland Sewer Pros "
-        "does not send a truck. Ask the company you reach for a written scope and for the license and "
-        "insurance the job requires."
+        "out of that water until it is gone. The company you reach is independent, and this line makes "
+        "the introduction. Ask them for a written scope and for the license and insurance the job requires."
     ),
     "troy": (
         "Pumping the water out of a split-level or a subdivision basement is "
-        f"{a('/troy-sewage-extraction', 'sewage extraction in Troy')}. We do not quote a Troy price or "
-        "promise a crew. Ask that company for a written scope before anyone starts."
+        f"{a('/troy-sewage-extraction', 'sewage extraction in Troy')}. The price and the crew come from "
+        "that company. Ask them for a written scope before anyone starts."
     ),
     "birmingham": (
         "If the lower level is already wet and you only need the water removed, use "
         f"{a('/birmingham-sewage-extraction', 'sewage extraction in Birmingham')}. "
-        "The company you hire sets the methods. This site does not. Ask them how they will protect "
+        "The company you hire sets the methods and does the work. Ask them how they will protect "
         "plaster and trim before they cut anything."
     ),
     "berkley": (
@@ -134,25 +125,25 @@ OWNER = {
     "clawson": (
         "The pump-out, once sewage is on the floor of a brick bungalow, is "
         f"{a('/clawson-sewage-extraction', 'sewage extraction in Clawson')}. Hoses and access are part of "
-        "that visit. We do not stage equipment on 14 Mile."
+        "that visit. The crew that comes is independent. This line makes the introduction."
     ),
 }
 
 SEWAGE_H2 = {
     "royal-oak": (
-        "Sewage cleanup in Royal Oak is the contaminated-water part of a sewer backup: water that came out of a floor drain, "
-        "a laundry standpipe, or a basement toilet and should be treated as heavily soiled. A provider who only pumps the "
+        "Sewage cleanup in Royal Oak is the water that came out of a floor drain, "
+        "a laundry standpipe, or a basement toilet. Treat it as heavily soiled. A provider who only pumps the "
         f"visible puddle can leave residue in the pad and the wall base. If the backup also soaked finishes, see {a('/royal-oak-water-damage-restoration', 'water damage restoration in Royal Oak')} "
         f"and {a('/royal-oak-flooded-basement', 'flooded basement cleanup and water removal in Royal Oak')}."
     ),
     "troy": (
-        "Sewage cleanup in Troy means dealing with water that left the sanitary line, not a clean rain leak. Split-level "
+        "Sewage cleanup in Troy is water that left the sanitary line, not a clean rain leak. Split-level "
         "lower floors near Big Beaver often hold carpet and storage right where a backup surfaces. Ask the company you hire "
         f"how they will separate that water from the rest of the house. Related pages: {a('/troy-water-damage-restoration', 'water damage restoration in Troy')} "
         f"and {a('/troy-flooded-basement', 'flooded basement cleanup in Troy')}."
     ),
     "birmingham": (
-        "Sewage cleanup in Birmingham is especially unforgiving in older houses where plaster, wood trim, and finished lower "
+        "Sewage cleanup in Birmingham is hard on older houses, because plaster, wood trim, and finished lower "
         "levels sit close to the floor drain. Pumping is only the start. The company on site should say what has to be discarded "
         f"because it soaked up sewage. Continue with {a('/birmingham-water-damage-restoration', 'water damage restoration in Birmingham')} "
         f"or {a('/birmingham-flooded-basement', 'basement water removal in Birmingham')}."
@@ -180,7 +171,7 @@ def first_ten(city):
             "<strong>Keep people and pets out</strong> of the water. Sewage carries bacteria and other pathogens.",
             "<strong>Do not plunge or snake</strong> the drain. A household snake can push dirty water into the subfloor.",
             "<strong>Leave the basement if water is near outlets,</strong> the panel, or the furnace. Shut power off only from a dry location.",
-            "<strong>Call " + city + " help at the number above</strong> to be connected with an independent provider. How fast someone arrives depends on who is available. This site does not promise a response time.",
+            "<strong>Call " + city + " help at the number above</strong> and you are connected with an independent provider who can come out. How soon they arrive depends on who is available.",
         ]),
     )
 
@@ -259,18 +250,17 @@ def article(slug, city):
         p(SEWAGE_H2[slug]),
         p(OWNER[slug]),
         p(
-            "City public works can tell you whether a street has separate storm and sanitary sewers and how "
-            f"to report a backup that looks like it is coming from the municipal main. For {city}, start with "
-            "the city's own website rather than a third-party listing. A private lateral under the yard is "
-            "usually the homeowner's pipe; the city main in the street is a different asset. The company you "
-            "hire should not guess which one failed."
+            f"If the backup looks like the city main, call {city} public works while the water is still coming in "
+            "and ask whether your street has separate storm and sanitary sewers. Use the city's own website "
+            "for that number. The lateral under the yard is usually your pipe. The main in the street is the city's. "
+            "Ask the cleanup company not to guess which one failed."
         ),
         h2(f"Sewer backup cleanup in {city}, MI"),
         p(
-            f"{city} homeowners call after sewage comes up through a basement drain, a laundry "
-            "standpipe, or a basement toilet. Treat that water as Category 3: keep people and pets out, "
-            "do not mop it through the house, and do not run a household vac. The steps below are the "
-            "first minutes. The cleanup itself is the independent provider's work."
+            f"In {city}, this usually starts when sewage comes up a basement drain, a laundry "
+            "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
+            "and do not run a household vac. The steps below are the first minutes. After you call, an "
+            "independent cleanup company does the work."
         ),
         h3(f"Why {city} homes are at higher risk"),
         p(WHY[slug]),

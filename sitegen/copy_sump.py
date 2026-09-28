@@ -14,9 +14,9 @@ def royal_oak():
             "your yard. What you can see is whether the pit is overflowing."
         ),
         p(
-            "Oakland Sewer Pros does not repair pumps and does not sell replacements. "
+            "The repair and any replacement come from an independent company. "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " can connect you with an independent provider when one is participating. If the floor "
+            + " connects you with that provider when one is participating. If the floor "
             "is already under water, also tell them you may need "
             + a("/royal-oak-flooded-basement", "basement water removal")
             + ". If the water smells like a drain, it is "
@@ -28,7 +28,7 @@ def royal_oak():
             "Is the float pinned against the crock wall? A broom handle can free a stuck float. Do not climb into the pit.",
             "Is the pump humming and not moving water? Unplug it if you can do that from a dry spot so the motor does not cook.",
             "Is the discharge line frozen or disconnected outside? Michigan freeze-thaw will ice a line that runs across the yard.",
-            "Did the power drop? DTE outages and sump floods travel together. A battery unit is a conversation with the company you hire, not a product we install.",
+            "Did the power drop? DTE outages and sump floods travel together. A battery unit is a conversation with the company you hire.",
         ]),
         h2("What an independent tech is actually diagnosing"),
         p(
@@ -36,7 +36,7 @@ def royal_oak():
             "or a seized motor are the ordinary findings. In Royal Oak crocks that have been in place for "
             "decades, the pit itself may be small for the storm. Replacing the pump without looking at "
             "the discharge line just burns the next motor. Ask the provider to say which of those they "
-            "found. We will not quote a price for any of them. The company you hire writes the number."
+            "found. The price for each of those repairs comes from the company you hire."
         ),
         p(
             "A sump that took sewage needs cleaning as well as a mechanical repair. That residue work is "
@@ -72,8 +72,7 @@ def troy():
         p(
             "Lower lots along the Big Beaver corridor are where homeowners talk about pumps that run "
             "constantly and then fail. Treat 'high water table' as a pattern to mention to the provider, "
-            "not as a measured fact about your lot. Oakland Sewer Pros does not install battery backups "
-            "or cast-iron pumps. Call "
+            "not as a measured fact about your lot. A battery backup or a new pump comes from the company you hire. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " for a referral. If the carpet is already wet, add "
             + a("/troy-flooded-basement", "Troy basement water removal")
@@ -97,9 +96,8 @@ def troy():
             + ". Troy storm drains in the street are the Streets and Drains Division, not the pump in your floor."
         ),
         p(
-            "We do not publish a Troy price range. Any figure you remember from an old version of this "
-            "site is withdrawn. The provider's written estimate is the only price that counts, and you "
-            "should have it before they replace a pump."
+            "The price is the provider's written estimate. Any dollar range that used to appear here is gone. "
+            "Get that estimate before they replace a pump."
         ),
         callout(
             "Troy: keep the finished room in mind",
@@ -125,11 +123,9 @@ def birmingham():
             "The water left behind is a separate restoration problem."
         ),
         p(
-            "We do not sell a particular pump brand and do not claim a technician is standing by in "
-            "downtown Birmingham near Shain Park. Call "
+            "The brand and the technician come from the company you hire, not from a desk near Shain Park. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " to reach an independent provider if one is available. Oakland Sewer Pros does not turn "
-            "wrenches."
+            + " to reach an independent provider when one is available. That company does the repair."
         ),
         h3("What fails in these installations"),
         ul([
@@ -152,8 +148,7 @@ def birmingham():
         p(
             "Low ground near Quarton can keep a healthy pump running for hours. That is a load problem, "
             "not automatically a failed motor. A technician should measure or at least observe a cycle, "
-            "not only swap the unit. You should see a written reason for a replacement. We will not give "
-            "you a price band for that replacement."
+            "not only swap the unit. You should see a written reason for a replacement. The price comes from that company."
         ),
         callout(
             "Birmingham questions for the pump company",
@@ -180,8 +175,8 @@ def berkley():
         ),
         p(
             "Call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". Oakland Sewer Pros refers independent providers. We do not stock pumps for Berkley and "
-            "we do not guarantee a visit. If water is already across the floor, say whether it is clear "
+            + ". Your call connects you with an independent provider when one is available. "
+            "How soon they can come depends on who is free. If water is already across the floor, say whether it is clear "
             "or whether the floor drain was involved. Clear overflow is "
             + a("/berkley-flooded-basement", "a flood")
             + ". Drain water is " + a("/berkley-sewage-extraction", "sewage") + "."
@@ -211,7 +206,7 @@ def berkley():
                 "Do not step in if you cannot see the floor around the panel.",
                 "Listen: rapid clicking is often a check valve, not a 'strong' pump.",
                 "Look outside at the discharge point if you can do it without going through the basement.",
-                "Ask for a written quote. This site has no Berkley price list.",
+                "Ask for a written quote. The price comes from the company you hire.",
             ]),
         ),
         nearby_section("sump-pump-repair", "Sump pump repair", "berkley"),
@@ -229,9 +224,9 @@ def clawson():
             "a surprise."
         ),
         p(
-            "We do not repair the pump. "
+            "Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " is a referral to independent providers, subject to availability. Water already on the "
+            + " and you are connected with an independent provider when one is available. Water already on the "
             "floor belongs on " + a("/clawson-flooded-basement", "the flooded basement page")
             + " as well. Sewage in the pit belongs on "
             + a("/clawson-sewage-extraction", "sewage extraction") + "."
@@ -243,7 +238,7 @@ def clawson():
             "Ice at the outlet after a thaw, which stalls the impeller and overheats the motor when power remains.",
             "A float rod bent because storage was stacked on the lid. Common when the basement is the only storage.",
         ]),
-        h2("Replacement is not a price on this page"),
+        h2("A replacement price comes from the company"),
         p(
             "Any dollar table that used to sit on Clawson sump pages has been removed. The provider quotes "
             "the pump, the valve, and the labor after seeing the pit. Ask whether water removal is included. "

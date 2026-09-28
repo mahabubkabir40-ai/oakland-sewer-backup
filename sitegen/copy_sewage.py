@@ -24,7 +24,7 @@ def royal_oak():
             "A lot of those houses went up before the 1960s. Vinsetta and Northwood are the names residents "
             "use for two of the established areas. Laterals from that era were often clay tile or cast iron. "
             "Roots at a joint, or a belly in the pipe under the yard, are ordinary explanations. Whether that "
-            "is your lateral or the city main is not something this website can know. "
+            "is your lateral or the city main is a question for the city, not a guess. "
             + a("https://www.romi.gov/384/Sewer-Division", "Royal Oak's Sewer Division")
             + " publishes city sewer information and is the right place to ask about the public main."
         ),
@@ -36,9 +36,9 @@ def royal_oak():
             "remove material and how they will keep the stair and the first floor from getting splashed."
         ),
         p(
-            "Oakland Sewer Pros does not own vacuum trucks and does not employ the people who run them. Call "
+            "The vacuum truck and the crew belong to the company you hire. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " to be connected with an independent company when one is participating. Ask that company what "
+            + " and you are connected with an independent company when one is participating. Ask what "
             "equipment they will bring to a typical Royal Oak side-street driveway. Some lots near downtown are short."
         ),
         h3("Sewage versus a clean-water leak"),
@@ -53,8 +53,8 @@ def royal_oak():
         h2("What to ask before anyone extracts sewage in Royal Oak"),
         p(
             "Ask who is licensed for the work, whether they carry liability insurance, and whether the price "
-            "covers haul-away of porous material or only pumping. This site does not quote those prices and "
-            "does not bill your insurer. Southern Oakland County drainage, including parts of Royal Oak, is "
+            "covers haul-away of porous material or only pumping. The price comes from that company, and "
+            "your insurance claim stays with your carrier. Southern Oakland County drainage, including parts of Royal Oak, is "
             "tied to county facilities associated with the Oakland County Water Resources Commissioner and the "
             "George W. Kuhn district, the former Twelve Towns Drain. That is a county system, not a promise "
             "that your street is inside a particular basin. Confirm the street with the city."
@@ -113,10 +113,9 @@ def troy():
             "what they will not touch."
         ),
         p(
-            "Oakland Sewer Pros is the phone introduction, not the contractor. We do not station a truck at "
-            "Somerset or anywhere else in Troy. "
+            "Your call is the introduction. The contractor is the independent company that comes to the house. "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " connects you when a participating company can take the call. Availability is not promised."
+            + " connects you when a participating company can take the call. How soon they can come depends on who is free."
         ),
         h2("Extraction choices that matter in Troy"),
         ul([
@@ -134,7 +133,7 @@ def troy():
             "George W. Kuhn facility and the Oakland County Water Resources Commissioner. That regional system "
             "does not tell you whether the clog is under your yard. A camera in the lateral answers the private-pipe "
             "question. The city answers the main-in-the-street question. The restoration company answers how "
-            "to remove what already entered the house. Those are three different jobs, and this website only helps you reach the third."
+            "to remove what already entered the house. Those are three different jobs. This line helps you reach the cleanup company."
         ),
         callout(
             "Troy: keep the lower level closed off",
@@ -142,7 +141,7 @@ def troy():
                 "Shut the door at the top of the split-level stair if you have one, and stop the furnace if the return is in the wet room.",
                 "Do not carry wet bins up into the hallway. They drip on treads.",
                 "Write down what you smelled and which fixture backed up. That helps the provider and, later, your insurer if you choose to call them.",
-                "We do not file the insurance claim and we do not know if your policy has a sewer-backup endorsement.",
+                "Ask your insurer whether the policy has a sewer-backup endorsement. The claim stays with you and your carrier.",
             ]),
         ),
         p(
@@ -181,10 +180,10 @@ def birmingham():
         p(
             "Ask the company to explain containment: how they will keep sewage off the stair, whether they "
             "will protect remaining wood floors above, and which porous items they expect to throw away. "
-            "Oakland Sewer Pros will not be on site to supervise that conversation. We are a referral line. "
+            "That conversation is with the company on site. This line makes the introduction. "
             "Dial " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " and you may be connected with an independent provider. You still have to check their license "
-            "and insurance for the work you want done."
+            + " and you are connected with an independent provider when one is available. Ask them for license "
+            "and insurance before they start."
         ),
         ul([
             "Plaster that is soft at the base usually has to be opened. Wiping the paint is not extraction.",
@@ -197,8 +196,8 @@ def birmingham():
         h2("Public main, private lateral, restoration crew"),
         p(
             "The City of Birmingham can speak to the public system. A plumber with a camera can speak to the "
-            "lateral under the yard. A restoration company removes what entered the house. Calling this site "
-            "only starts the third conversation, and only when a provider is taking calls. Parts of Birmingham "
+            "lateral under the yard. A restoration company removes what entered the house. Your call starts "
+            "that third conversation when a provider is taking calls. Parts of Birmingham "
             "sit in the southern Oakland County drainage area served in conjunction with the Oakland County "
             "Water Resources Commissioner, including the George W. Kuhn district. Do not assume a particular "
             "block is inside that district without checking."
@@ -244,16 +243,15 @@ def berkley():
             "city is relatively flat, so a hard rain does not run off "
             "quickly. Older sections have been described as combined storm and sanitary sewers. If that "
             "description matches your street, a storm can push wastewater up the floor drain even when you "
-            "did not run a faucet. Confirm the pipe with Berkley's city offices. A website cannot tell you which pipe is in your street."
+            "did not run a faucet. Confirm the pipe on your block with Berkley's city offices."
         ),
         h3("Why a household vac makes a Berkley backup worse"),
         p(
             "A shop vac in a low bungalow basement exhausts into a small volume of air and then up a short "
             "stair. Sewage droplets end up on the treads and the door trim. Extraction by a company set up "
-            "for contaminated water is the point of the call. Oakland Sewer Pros does not arrive with that "
-            "equipment. "
+            "for contaminated water is the point of the call. The equipment comes with the company you hire. "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " is a matching number for independent providers, subject to who is actually available."
+            + " connects you with an independent provider when one is available."
         ),
         ul([
             "Measure the stair width before you agree to a large machine. Say it on the phone.",
@@ -273,8 +271,7 @@ def berkley():
         ),
         p(
             "Insurance is a separate conversation. Many homeowners policies do not cover a sewer backup "
-            "unless an endorsement is on the form. Ask your insurer. Oakland Sewer Pros does not read "
-            "the policy or bill a carrier. Call "
+            "unless an endorsement is on the form. Ask your insurer. The claim stays with you and your carrier. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " when the water is inside and you want an independent provider. Call the city as well "
             "if several houses on the block are backing up at once, because that can be the main rather "
@@ -336,9 +333,9 @@ def clawson():
         p(
             "Tell the provider the truth about access: alley or no alley, street parking, gate width, and "
             "whether the basement stair turns. A company that cannot stage on your lot should say so before "
-            "you hire them. Oakland Sewer Pros does not inspect the lot and does not send a crew. The call "
+            "you hire them. The crew that comes is independent. The call "
             "at " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " is a referral. If no participating provider can take the call, you will need another way to reach a company."
+            + " is the introduction. If no participating provider can take the call, ask the city for another local company."
         ),
         ul([
             "Brick bungalow basements often have the furnace and the water heater in the same room as the floor drain. Keep power off if water is close.",
@@ -367,7 +364,7 @@ def clawson():
                 "Bag nothing upstairs. Wet cardboard and clothing drip on the stair.",
                 "Leave the washer door shut. The machine may have filled from the standpipe.",
                 "Call the city as well as a cleanup company if several houses on the block are surcharging at once.",
-                "Ask your insurer about a sewer-backup endorsement. This site will not call them for you.",
+                "Ask your insurer about a sewer-backup endorsement. That call is yours.",
             ]),
         ),
         p("See every Clawson service from " + a("/clawson", "the Clawson overview") + "."),
