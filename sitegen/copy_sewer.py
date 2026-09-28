@@ -383,11 +383,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "Sewage cleanup in Royal Oak, MI is for wastewater that came up a floor drain in an older house. This same page is the sewer backup cleanup page. We connect you with an independent provider and do not send a truck.",
-    "troy": "Sewage cleanup in Troy, MI usually means a lower level or split-level near Big Beaver, not a store at Somerset. This page also covers sewer backup cleanup. Oakland Sewer Pros does not run the crew or promise how quickly anyone rolls.",
-    "birmingham": "Sewage cleanup in Birmingham, MI has to deal with plaster, trim, and finished lower levels in older houses. Sewer backup cleanup is the same job on this page. This site does not do the work.",
-    "berkley": "Sewage cleanup in Berkley, MI is a bungalow-basement job: short stairs, older laterals, and a floor drain by the laundry. Sewer backup cleanup lives on this page too. We do not send our own technicians.",
-    "clawson": "Sewage cleanup in Clawson, MI starts in brick bungalows on tight lots with older laterals. This page is also sewer backup cleanup for those houses. The line connects you with an independent provider when one is participating.",
+    "royal-oak": "Sewage came up a floor drain in an older house. Stay out of it. Sewage cleanup in Royal Oak and sewer backup cleanup in Royal Oak are the next step, not a mop and a household vac. Your call connects you with an independent local cleanup company, and they'll tell you when they can be there.",
+    "troy": "The lower level near Big Beaver filled from a drain. This is not a store at Somerset. Sewage cleanup in Troy and sewer backup cleanup in Troy can start as soon as you describe what came up. Your call connects you with an independent local cleanup company, and they'll tell you when they can be there.",
+    "birmingham": "Plaster and trim are already wet. Leave them alone until sewage cleanup in Birmingham and sewer backup cleanup in Birmingham have pulled the water out. Your call connects you with an independent local cleanup company, and they'll tell you when they can be there.",
+    "berkley": "The laundry drain in a bungalow backed up, and the stairs down are short. Sewage cleanup in Berkley and sewer backup cleanup in Berkley get that water out before anyone uses those stairs. Your call connects you with an independent local cleanup company, and they'll tell you when they can be there.",
+    "clawson": "A brick bungalow on a tight lot took a backup from an older lateral. Sewage cleanup in Clawson and sewer backup cleanup in Clawson follow once you are out of the water. Your call connects you with an independent local cleanup company, and they'll tell you when they can be there.",
 }
 
 ALT = {
