@@ -333,7 +333,7 @@ def clawson():
     return "\n".join([
         h2("Water extraction on Clawson's compact lots"),
         p(
-            "Water damage restoration in Clawson starts with access. Mid-century brick "
+            "Water damage restoration in Clawson starts with access. Brick "
             "bungalows and ranches sit on small lots along 14 Mile Road and the blocks between Royal Oak and Troy. "
             "The basement is often one room. Extraction equipment, wet debris, and the family's cars "
             "are competing for a short driveway. A crew that has not heard that description may show "

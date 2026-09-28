@@ -313,7 +313,7 @@ FAQS = {
     "royal-oak": [
         ("What is basement water removal in Royal Oak?", "It is pumping and removing standing water from a basement, then dealing with the materials that stayed wet. If the water came from a sewer drain, it is sewage extraction, not a clean flood."),
         ("Does flooded basement cleanup include drying the walls?", "It should, or hire that step explicitly. Pumping alone leaves water in drywall and the slab edge. Ask for pumping and drying as separate lines with separate prices."),
-        ("Can I pump a Royal Oak basement into the street?", "Do not pump sewage or heavily soiled water into the street or storm inlet. A crew should handle disposal. Clean rainwater is still worth asking the city about before you discharge it."),
+        ("Can I pump a Royal Oak basement into the street?", "Do not pump sewage or heavily soiled water into the street or storm inlet. Clean rainwater is still worth asking the city about before you discharge it."),
         ("Who does Royal Oak list for basement water, if this might be the city main?", "Weekdays 7:30 a.m. to 4:00 p.m., call (248) 246-3300. After hours, (248) 246-3500 dispatches sewer personnel. Royal Oak is in the former Twelve Towns program, now the George W. Kuhn basin. Call (248) 825-8312 when you need a local crew to remove water from the house."),
         ("Does a window-well flood in Royal Oak start a 45-day sewer claim?", "Only a sewage disposal event is in that statute. A quiet drain and rain in a window well is storm water. If the floor drain discharged, treat it as sewage and look at the 45-day written notice. The city is responsible for the main, and you are responsible for the lateral through the connection."),
     ],

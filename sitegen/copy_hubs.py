@@ -1083,7 +1083,7 @@ HUB_FAQS = {
         ("What does water damage restoration include?", "Removing standing water, discarding porous materials that cannot be saved, and drying what remains. If the water came from a sewer drain, the cleanup is stricter: carpet pad, insulation, and swollen drywall usually come out."),
         (
             "Is sewage handled the same way as a supply-line leak?",
-            "No. Sewage is heavily contaminated water. Carpet pad and wet drywall usually come out. A clean supply-line break can be a smaller scope. Say which water you have when you call.",
+            "No. Sewage is heavily contaminated water. Carpet pad and wet drywall usually come out. A clean supply-line break can be a smaller scope.",
         ),
         (
             "Will insurance pay for the drying?",

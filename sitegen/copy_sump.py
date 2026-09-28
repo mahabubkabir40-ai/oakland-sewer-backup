@@ -210,7 +210,7 @@ def clawson():
     return "\n".join([
         h2("Sump pump repair on Clawson's small bungalow lots"),
         p(
-            "Clawson sump pump repair has an access problem before it has a parts problem. Mid-century brick "
+            "Clawson sump pump repair has an access problem before it has a parts problem. Brick "
             "bungalows and ranches stand on compact lots near 14 Mile, between Royal Oak and Troy. "
             "The pit, the furnace, and the water heater share a small basement. A technician's cart and "
             "a homeowner's car share a short driveway. If you do not mention that, the visit starts with "
@@ -283,7 +283,7 @@ FAQS = {
     "birmingham": [
         ("Is sump pump repair in Birmingham a plumbing visit or a restoration visit?", "The pump is a mechanical repair. Wet plaster is restoration. You may need both. Ask each company what they actually cover."),
         ("Should I replace a Birmingham pump that runs constantly?", "Not from a guess. Constant running can be groundwater load, a stuck switch, or a bad valve. Someone has to watch a cycle before they sell you a pump."),
-        ("Will a repaired Birmingham pump hold back the next storm by itself?", "A repair fixes the pump. It does not change the city's gravity sewers, which have no municipal lift stations. A long rain can keep a healthy pump running for hours. Ask for a written reason before anyone replaces the unit."),
+        ("Will a repaired Birmingham pump hold back the next storm by itself?", "A repair fixes the pump. It does not change the city's gravity sewers, which have no municipal lift stations. Ask for a written reason before anyone replaces the unit."),
         ("Is a backflow preventer the same as sump pump repair in Birmingham?", "No. The city lists a backflow preventer, downspouts extended about 6 feet, and grading away from the foundation as prevention at the house. The sump in the basement is a different device. Call (248) 825-8312 for the pump."),
         ("If a Birmingham drain backed up while the sump failed, which form is the claim?", "The house sump and the sewer lateral are different devices. If sewage came up a drain, use the city's sewer backup claim form, not the water-event tracking form. Claims questions are 248.530.1808. Written notice is due within 45 days of discovery. Birmingham's sewers are gravity, and the city owns no pump or lift stations."),
     ],
