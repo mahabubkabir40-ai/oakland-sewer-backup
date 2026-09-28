@@ -4,7 +4,7 @@ Every photo below is a free-license stock image from Pexels. None of them are ph
 
 License: [Pexels License](https://www.pexels.com/license/) (free to use). Attribution is not required by the license; photographer names are recorded here.
 
-A relevant photo may appear on up to three pages. Sump-pit photographs were not available in the free libraries used here. Sump pump pages show a technician with a water pump, pipes, gauges, wrenches, laundry utility rooms, or basement rooms, and the alt text describes those scenes.
+A relevant photo may appear on up to three pages. Sump-pit photographs were not available in the free libraries used here. Sump pump pages show a technician with a water pump, pipes, gauges, a plumber's wrench, laundry utility rooms, or basement rooms, and the alt text describes those scenes.
 
 | File | Page | Photographer | Source |
 | --- | --- | --- | --- |
@@ -127,7 +127,7 @@ A relevant photo may appear on up to three pages. Sump-pit photographs were not 
 | `manhole-covers-in-asphalt.webp` | sewer-backup-cleanup | Wallace Chuck | https://www.pexels.com/photo/manholes-in-street-17592363/ |
 | `white-plastic-pipes-on-wall.webp` | sewage-extraction | Bùi Hoàng Long | https://www.pexels.com/photo/plastic-pipes-on-wall-12142829/ |
 | `close-up-of-protective-suit-and-mask.webp` | sewage-extraction | Ron Lach | https://www.pexels.com/photo/close-up-photo-of-person-wearing-hazmat-suit-9545082/ |
-| `white-fan-on-hardwood-floor.webp` | sewage-extraction | EL The Explorer | https://www.pexels.com/photo/fan-in-a-minimalist-interior-12243531/ |
+| `hand-holding-plumbers-wrench.webp` | sewage-extraction | Kindel Media | https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486978/ |
 | `house-in-floodwater-black-and-white.webp` | flooded-basement-cleanup | Helena Jankovičová Kováčová | https://www.pexels.com/photo/flooded-suburban-house-landscape-in-black-and-white-28447780/ |
 | `people-filling-sandbags.webp` | flooded-basement-cleanup | Helena Jankovičová Kováčová | https://www.pexels.com/photo/emergency-response-team-filling-sandbags-during-flood-28447798/ |
 | `houses-standing-in-floodwater.webp` | flooded-basement-cleanup | Serge Lavoie | https://www.pexels.com/photo/a-red-and-green-house-surrounded-with-water-11537987/ |
@@ -163,33 +163,37 @@ Distinct source photos: 77.
 
 Reused photos:
 
+- `carpeted-basement-room.webp` (3): birmingham-water-damage-restoration, royal-oak, about
+- `concrete-stairs-into-basement.webp` (3): birmingham-flooded-basement, birmingham-sump-pump-repair, berkley-basement-sanitization
+- `door-and-steps-at-basement-entrance.webp` (3): berkley-flooded-basement, birmingham-basement-sanitization, basement-flood-checklist
+- `empty-unfinished-basement.webp` (3): royal-oak-flooded-basement, berkley-sump-pump-repair, berkley
+- `floodwater-on-concrete-floor-by-stairs.webp` (3): royal-oak-sewer-cleanup, berkley-sewer-cleanup, berkley-water-damage-restoration
+- `hand-holding-plumbers-wrench.webp` (3): royal-oak-sump-pump-repair, clawson-sump-pump-repair, sewage-extraction
+- `hole-in-plaster-wall.webp` (3): royal-oak-water-damage-restoration, berkley-water-damage-restoration, sewer-backup-claim-guide
+- `industrial-pump-and-hoses-outdoors.webp` (3): royal-oak-sewage-extraction, birmingham-sewage-extraction, clawson-sewage-extraction
+- `ladder-in-empty-basement.webp` (3): troy-flooded-basement, clawson-sump-pump-repair, clawson
+- `technician-working-on-water-pump.webp` (3): troy-sewage-extraction, berkley-sewage-extraction, royal-oak-sump-pump-repair
+- `unfinished-basement-with-exposed-joists.webp` (3): clawson-flooded-basement, troy-basement-sanitization, sump-pump-repair
+- `unfinished-concrete-basement.webp` (3): royal-oak-water-damage-restoration, royal-oak-basement-sanitization, birmingham
+- `water-covering-indoor-corridor-floor.webp` (3): troy-sewer-cleanup, clawson-sewer-cleanup, clawson-water-damage-restoration
 - `aerial-view-of-flooded-house.webp` (2): clawson-flooded-basement, clawson
 - `blue-fan-on-a-rug.webp` (2): troy-water-damage-restoration, services
 - `box-fan-beside-a-couch.webp` (2): berkley-water-damage-restoration, water-damage-restoration
 - `calculator-and-papers-on-desk.webp` (2): privacy, terms
 - `car-in-floodwater-in-a-yard.webp` (2): birmingham-flooded-basement, index
 - `car-on-a-flooded-road.webp` (2): royal-oak-flooded-basement, george-w-kuhn-drainage-district
-- `carpeted-basement-room.webp` (3): birmingham-water-damage-restoration, royal-oak, about
 - `close-up-of-metal-downspout.webp` (2): birmingham, george-w-kuhn-drainage-district
 - `close-up-of-protective-suit-and-mask.webp` (2): berkley-sewage-extraction, sewage-extraction
 - `close-up-of-water-meter.webp` (2): clawson-sewage-extraction, clawson-sump-pump-repair
-- `concrete-stairs-into-basement.webp` (3): birmingham-flooded-basement, birmingham-sump-pump-repair, berkley-basement-sanitization
 - `crack-in-painted-wall.webp` (2): troy-water-damage-restoration, clawson-water-damage-restoration
-- `door-and-steps-at-basement-entrance.webp` (3): berkley-flooded-basement, birmingham-basement-sanitization, basement-flood-checklist
-- `empty-unfinished-basement.webp` (3): royal-oak-flooded-basement, berkley-sump-pump-repair, berkley
 - `finished-basement-with-couch.webp` (2): troy-water-damage-restoration, clawson-basement-sanitization
 - `floodwater-at-a-house-door.webp` (2): berkley-flooded-basement, birmingham
-- `floodwater-on-concrete-floor-by-stairs.webp` (3): royal-oak-sewer-cleanup, berkley-sewer-cleanup, berkley-water-damage-restoration
 - `hand-dialing-a-landline-phone.webp` (2): sewer-backup-claim-guide, contact
-- `hand-holding-plumbers-wrench.webp` (2): royal-oak-sump-pump-repair, clawson-sump-pump-repair
 - `hand-pulling-document-from-folder.webp` (2): contact, terms
 - `hands-signing-a-document.webp` (2): sewer-backup-claim-guide, privacy
-- `hole-in-plaster-wall.webp` (3): royal-oak-water-damage-restoration, berkley-water-damage-restoration, sewer-backup-claim-guide
 - `house-in-floodwater-black-and-white.webp` (2): birmingham-flooded-basement, flooded-basement-cleanup
 - `house-in-floodwater-during-rain.webp` (2): royal-oak-flooded-basement, royal-oak
 - `houses-standing-in-floodwater.webp` (2): berkley, flooded-basement-cleanup
-- `industrial-pump-and-hoses-outdoors.webp` (3): royal-oak-sewage-extraction, birmingham-sewage-extraction, clawson-sewage-extraction
-- `ladder-in-empty-basement.webp` (3): troy-flooded-basement, clawson-sump-pump-repair, clawson
 - `leaking-pipe-wrapped-in-plastic.webp` (2): troy-sewage-extraction, berkley-sump-pump-repair
 - `man-talking-on-a-landline-phone.webp` (2): about, terms
 - `manhole-covers-in-asphalt.webp` (2): berkley-sewer-cleanup, sewer-backup-cleanup
@@ -207,13 +211,8 @@ Reused photos:
 - `steel-pipes-with-pressure-gauges.webp` (2): birmingham-sewage-extraction, berkley-sump-pump-repair
 - `storm-drain-grate-with-leaves.webp` (2): troy-sewer-cleanup, services
 - `suburban-house-standing-in-floodwater.webp` (2): troy-flooded-basement, troy
-- `technician-working-on-water-pump.webp` (3): troy-sewage-extraction, berkley-sewage-extraction, royal-oak-sump-pump-repair
-- `unfinished-basement-with-exposed-joists.webp` (3): clawson-flooded-basement, troy-basement-sanitization, sump-pump-repair
-- `unfinished-concrete-basement.webp` (3): royal-oak-water-damage-restoration, royal-oak-basement-sanitization, birmingham
 - `washer-and-dryer-in-laundry-room.webp` (2): troy-sump-pump-repair, sump-pump-repair
-- `water-covering-indoor-corridor-floor.webp` (3): troy-sewer-cleanup, clawson-sewer-cleanup, clawson-water-damage-restoration
 - `wet-tile-floor-reflection.webp` (2): birmingham-sewer-cleanup, water-damage-restoration
-- `white-fan-on-hardwood-floor.webp` (2): clawson-water-damage-restoration, sewage-extraction
 - `white-pedestal-fan-against-wall.webp` (2): royal-oak-water-damage-restoration, index
 - `white-plastic-pipes-on-wall.webp` (2): birmingham-sump-pump-repair, sewage-extraction
 - `worker-disinfecting-floor-in-protective-suit.webp` (2): troy-sewer-cleanup, birmingham-basement-sanitization
@@ -226,3 +225,4 @@ Reused photos:
 - `yellow-mop-bucket-with-dirty-water.webp` (2): berkley-basement-sanitization, basement-flood-checklist
 
 GPS is stored only on generic indoor or equipment photos that are not shared across different cities. Outdoor photos have no GPS.
+
