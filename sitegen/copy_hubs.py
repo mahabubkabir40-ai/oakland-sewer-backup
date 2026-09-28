@@ -1007,6 +1007,10 @@ CITY_FAQS = {
             "Which Royal Oak page should I open if the floor drain never moved?",
             "Open flooded basement cleanup when the water is from a storm, a window well, or a sump. Open water damage restoration if finishes are already soaked. Open sewer backup cleanup only when sewage came up through a drain, a basement toilet, or a laundry standpipe.",
         ),
+        (
+            "What happens when a Royal Oak homeowner calls (248) 825-8312?",
+            "The call connects you with an independent local cleanup company when one is participating. They work inside the house. The Sewer Division is a different call. Ask the company for a written scope and for license and insurance. If you are notifying the city about a sewage event, written notice is due within 45 days of discovery.",
+        ),
     ],
     "troy": [
         (
@@ -1025,6 +1029,10 @@ CITY_FAQS = {
             "Which page fits a wet Troy lower level if the drains stayed quiet?",
             "Flooded basement cleanup for the water removal, water damage restoration if carpet and finishes have to be dried, and sump pump repair if the pit is what failed. Sewer backup cleanup is for sewage that came out of a drain.",
         ),
+        (
+            "What happens when I call (248) 825-8312 from a Troy house?",
+            "You are connected with an independent cleanup or pump company when one is participating. The price comes from that company. It is not the Water Division and it is not the City Attorney's Office. Most of the wet basements are in 1960s and 1970s houses, including split-levels near Big Beaver, not the stores at Somerset.",
+        ),
     ],
     "birmingham": [
         (
@@ -1041,7 +1049,11 @@ CITY_FAQS = {
         ),
         (
             "What does the city suggest homeowners do at the house?",
-            "The FAQ lists a backflow preventer, downspouts disconnected and extended about 6 feet, and grading away from the foundation. Those are prevention steps. They are not a cleanup of water that is already inside, and this site does not install them.",
+            "The FAQ lists a backflow preventer, downspouts disconnected and extended about 6 feet, and grading away from the foundation. Those are prevention steps. They are not a cleanup of water that is already inside. Call (248) 825-8312 to reach an independent cleanup company for the house when one is available.",
+        ),
+        (
+            "Do early Birmingham houses show up in backups more often?",
+            "The housing on these pages is early- to mid-1900s, with plaster, trim, and older laterals around Shain Park, Old Woodward, Maple, Poppleton Park, and Quarton. A camera, not a guess, confirms a lateral. Written notice for a sewage event is still due within 45 days of discovery, separate from any sewer-backup endorsement on your policy.",
         ),
     ],
     "berkley": [
@@ -1061,6 +1073,10 @@ CITY_FAQS = {
             "How much of Berkley's sewer has been lined?",
             "The city says about 35 percent of the system has been lined over more than 20 years, and that it spends up to 800,000 dollars a year on structural lining. That figure is the city's maintenance spending, not a cleanup price.",
         ),
+        (
+            "What happens when I call (248) 825-8312 from a Berkley bungalow?",
+            "You are connected with an independent cleanup company when one is available. Tell them the basement is short. The city's claims form and the 45-day written notice stay with you. A sewer-backup endorsement, if you have one, is a question for your insurer, not for Public Works.",
+        ),
     ],
     "clawson": [
         (
@@ -1079,6 +1095,10 @@ CITY_FAQS = {
             "Which Clawson page should a one-room basement open first?",
             "If sewage came up the floor drain, open sewer backup cleanup. If the furnace room is wet from a storm or a sump and the drain stayed quiet, open flooded basement cleanup. If you only need the pump looked at, open sump pump repair, and add water damage restoration if finishes are soaked.",
         ),
+        (
+            "What happens when a Clawson homeowner calls (248) 825-8312?",
+            "You are connected with an independent cleanup company when one is participating. Describe the tight lot. Written notice, if you believe the public sewer caused the damage, is due within 45 days of discovery. Ask the city in writing who receives that notice. Your insurance rider is a separate call.",
+        ),
     ],
 }
 
@@ -1092,6 +1112,18 @@ HUB_FAQS = {
             "Which page should I open first?",
             "If sewage came up a drain, open sewer backup cleanup. If the water is storm or sump water and the drains stayed quiet, open flooded basement cleanup. If materials are already soaked, open water damage restoration. Then open the city page for the house.",
         ),
+        (
+            "Which Oakland County cities does this line cover?",
+            "Royal Oak, Troy, Birmingham, Berkley, and Clawson. Each has its own sewer description. Berkley's pipe is combined and gravity. Troy discharges through three districts. Birmingham's system is gravity with no city pump stations. Use the city where the house stands.",
+        ),
+        (
+            "What happens when I call (248) 825-8312?",
+            "When a participating independent company is available for your city and the kind of water you have, the call is connected to them. Ask for a written scope, the price, and proof of license and insurance. How soon they can come depends on that company.",
+        ),
+        (
+            "Is the George W. Kuhn district the same as my city's sewer?",
+            "It is the regional district upstream of the Red Run Drain. It serves all or part of 14 communities, including Berkley, Birmingham, Clawson, Royal Oak, and Troy, about 24,500 acres. It does not tell you whether the street main or your lateral failed today. Ask your city.",
+        ),
     ],
     "water-damage-restoration": [
         (
@@ -1104,7 +1136,15 @@ HUB_FAQS = {
         ),
         (
             "Will insurance pay for the drying?",
-            "Not automatically. Sewer backup is often an endorsement, and groundwater is often limited. Ask your insurer. This referral line does not file the claim.",
+            "Not automatically. Sewer backup is often an endorsement, and groundwater is often limited. Ask your insurer. The city letter, if you believe a public sewer caused the loss, is a separate 45-day written notice.",
+        ),
+        (
+            "Which Oakland County storm is the documented regional example?",
+            "FEMA-4195-DR was declared September 25, 2014, for Macomb, Oakland, and Wayne counties, after storms on August 11 through 13. A National Weather Service paper describes about 4 to 6.5 inches in parts of those counties, mostly in about four hours. That is a county storm record, not a count of damaged houses.",
+        ),
+        (
+            "What happens when I call about water damage in Oakland County?",
+            "Call (248) 825-8312 and say the city and whether the water came from a drain, a sump, or a storm. You are connected with an independent provider when one is participating. They set the drying plan and the price.",
         ),
     ],
     "sewer-backup-cleanup": [
@@ -1118,7 +1158,15 @@ HUB_FAQS = {
         ),
         (
             "How long do I have to notify a city?",
-            "Michigan law requires written notice within 45 days of discovering the damage before compensation for a sewage disposal event is possible. The claim guide lists what the notice has to contain. This site does not file it.",
+            "Michigan law requires written notice within 45 days of discovering the damage before compensation for a sewage disposal event is possible. Include your name, address, and phone, the property address, the discovery date, and a brief description. You send that letter. The claim guide lists each city's contact.",
+        ),
+        (
+            "Why does heavy rain show up in these Oakland County basements?",
+            "In a combined system, sanitary sewage and stormwater share pipes. The George W. Kuhn district's wet-weather flow is typically more than 93 percent stormwater. The retention basin under the I-75 overpass at 12 Mile Road in Madison Heights can hold and treat 150 million gallons. Those figures describe the district, not a single house.",
+        ),
+        (
+            "What happens when I call (248) 825-8312 for a sewer backup?",
+            "You are connected with an independent local cleanup company when one is available. Keep people and pets out of the water while you wait. Also call the city number for your city if the backup may be the main in the street.",
         ),
     ],
     "sewage-extraction": [
@@ -1134,6 +1182,14 @@ HUB_FAQS = {
             "Where should the wastewater go?",
             "The company you hire should say where they will take it. Do not pump sewage into a street gutter or a storm drain yourself.",
         ),
+        (
+            "Should I call the city and an extraction company?",
+            "Yes, if you suspect the public main. Royal Oak, for example, takes basement-water calls at (248) 246-3300 on weekdays. The extraction company removes water from the house. Call (248) 825-8312 to reach that company when one is available. They are not substitutes for each other.",
+        ),
+        (
+            "Does pumping the basement file the 45-day notice?",
+            "No. The clock starts when you discover the damage. The notice goes to the responsible government agency. Your insurer, and any sewer-backup endorsement, is a separate call.",
+        ),
     ],
     "flooded-basement-cleanup": [
         (
@@ -1146,7 +1202,15 @@ HUB_FAQS = {
         ),
         (
             "Who removes the water?",
-            "An independent provider, when one is available through this referral line. Oakland Sewer Pros does not own pumps and does not promise an arrival.",
+            "An independent provider, when one is available. Call (248) 825-8312 and say your city. How soon they can come depends on that company. They bring the pumps.",
+        ),
+        (
+            "Does a flooded Oakland County basement always mean the George W. Kuhn district?",
+            "No. The district serves all or part of Berkley, Birmingham, Clawson, Royal Oak, and Troy, among 14 communities, upstream of the Red Run Drain. A window well or a dead sump can flood a basement on a street that never surcharged. Describe what you saw.",
+        ),
+        (
+            "What should I photograph before the water is pumped?",
+            "The water line, the room, and whether a floor drain, a window well, or a sump was the source. That record helps your insurer. If the water was sewage from a public system, it also supports the 45-day written notice.",
         ),
     ],
     "sump-pump-repair": [
@@ -1162,6 +1226,14 @@ HUB_FAQS = {
             "The pump ran but the floor is still wet. Which page is that?",
             "Sump pump repair for the machine, and flooded basement cleanup or water damage restoration for the water and the finishes. If a drain produced sewage, use the sewer backup page instead.",
         ),
+        (
+            "Does Berkley's city sewer include my sump pump?",
+            "No. Berkley describes its municipal sewer as gravity, with no pumps and no valves. A household sump is a private machine in the basement. If the floor drain also backed up, that combined pipe is a city call to Public Works at 248-658-3490.",
+        ),
+        (
+            "What happens when I call (248) 825-8312 about a dead pump?",
+            "You are connected with an independent company when one is available. Say whether the floor is already wet and whether the water is clear. The price for the pump comes from that company.",
+        ),
     ],
     "basement-sanitization": [
         (
@@ -1175,6 +1247,14 @@ HUB_FAQS = {
         (
             "Does cleaning the basement extend the 45-day notice deadline?",
             "No. The written notice to the responsible agency runs from discovery of the damage. The claim guide explains the contents. Sanitizing is a separate hire.",
+        ),
+        (
+            "Should sewage residue in a combined-sewer city be cleaned like rainwater?",
+            "No. Berkley, for example, describes a single pipe for stormwater and sewage. If that pipe pushed wastewater into the basement, treat the residue as sewage. Birmingham's older areas are also described as combined. Confirm the street with the city.",
+        ),
+        (
+            "What happens when I call (248) 825-8312 for basement sanitizing?",
+            "You are connected with an independent company when one is available. Ask what they will throw away and what product they will use. If standing sewage is still on the floor, extraction comes first.",
         ),
     ],
 }

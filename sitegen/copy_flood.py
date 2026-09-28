@@ -332,26 +332,34 @@ FAQS = {
         ("What is basement water removal in Royal Oak?", "It is pumping and removing standing water from a basement, then dealing with the materials that stayed wet. If the water came from a sewer drain, it is sewage extraction, not a clean flood."),
         ("Does flooded basement cleanup include drying the walls?", "It should, or you should hire that scope explicitly. Pumping alone leaves water in drywall and the slab edge. Ask the provider to separate those steps and their prices. This site does not price them."),
         ("Can I pump a Royal Oak basement into the street?", "Do not pump sewage or heavily soiled water into the street or storm inlet. A provider should handle disposal. Clean rainwater is still worth asking the city about before you discharge it."),
+        ("Who does Royal Oak list for basement water, if this might be the city main?", "Weekdays 7:30 a.m. to 4:00 p.m., call (248) 246-3300. After hours, (248) 246-3500 dispatches sewer personnel. Royal Oak is in the former Twelve Towns program, now the George W. Kuhn basin. Call (248) 825-8312 when you need an independent company to remove water from the house."),
+        ("Does a window-well flood in Royal Oak start a 45-day sewer claim?", "Only a sewage disposal event is in that statute. A quiet drain and rain in a window well is storm water. If the floor drain discharged, treat it as sewage and look at the 45-day written notice. The city is responsible for the main, and you are responsible for the lateral through the connection."),
     ],
     "troy": [
         ("Why are Troy finished basements a bigger water-removal job?", "Carpet, pad, and drywall in a split-level or subdivision basement hold more water than a bare utility floor. The visible puddle is the small part."),
         ("Who removes basement water in Troy?", "An independent company you hire. Oakland Sewer Pros only refers the call. We do not guarantee a truck on Big Beaver or anywhere else."),
         ("Is basement flooding the same as water damage?", "Flooding is the water. Water damage is the harm to materials after it sits. The Troy water damage page covers drying and repair decisions."),
+        ("If the Troy lower level smells like a drain, which city number is that?", "Water Division 248-524-3370 during business hours, and Troy Police 248-524-3477 after hours. Street water and a sanitary backup are not automatically the same pipe. Troy uses three wastewater districts. Ask the city which one serves the house."),
+        ("What happens when I call (248) 825-8312 about a flooded Troy basement?", "You are connected with an independent company when one is available. Tell them whether the room is finished carpet. If sewage came up a drain, say that too. A written city claim, when the public system is involved, is due within 45 days of discovery."),
     ],
     "birmingham": [
         ("Should flooded basement cleanup in Birmingham rip out plaster the first day?", "Not by default. Plaster and trim in older houses may be salvageable depending on how high the water went. The provider should look before anyone chisels."),
         ("Are Quarton-area floods usually sewage?", "Not always. Low ground and yard drainage are common explanations there. Sewage is indicated by drain activity and odor. Do not guess if you are unsure; keep people out and describe both possibilities on the call."),
-        ("Does this page schedule water removal?", "No. Calling the number may connect you with a provider. Scheduling and price are between you and that company."),
+        ("What happens when I call for Birmingham water removal?", "Call (248) 825-8312 and you are connected with an independent company when one is available. They set the schedule and the price. The city water-event line, (248) 530-1703, only collects flooding data."),
+        ("Were Birmingham sewers built for a heavy one-hour rain?", "The city says combined and storm sewers were historically designed for about 2 inches of rain in one hour. The system is gravity, with no city pump stations. Downspouts extended about 6 feet and a backflow preventer are prevention. They do not pump out a lower level that is already wet."),
     ],
     "berkley": [
         ("How does Berkley's flat layout affect a flooded basement?", "Storm water has little slope to leave. Window wells and stairwells fill, and a sump may be the only thing keeping the short basement dry. That is a site condition, not a promise about your house."),
         ("Can basement water removal stain first-floor hardwood?", "Yes, if dirty water is tracked up the short bungalow stair or if joist insulation stays wet against the subfloor. Ask the provider to protect the landing and to check the joists."),
-        ("What if the Berkley flood smells like sewage?", "Stop treating it as rainwater. Use the sewage extraction page and keep the water in the basement until a qualified company handles it."),
+        ("What if the Berkley flood smells like sewage?", "Stop treating it as rainwater. Berkley's sewer is one combined gravity pipe, so a storm can put wastewater on the floor. Keep people off the short stair and call (248) 825-8312 for an independent company, plus Public Works at 248-658-3490."),
+        ("Why is the street ponding in Berkley during the same storm?", "The city says streets are designed to hold water so it enters the pipe more slowly, and catch basins use restrictor covers. Ponding at the curb is not, by itself, a forgotten pump. There is no city pump. Your basement sump is a separate machine."),
+        ("Does flooded-basement cleanup in Berkley replace the claims form?", "No. The city posts a Sewer Backup Claims Form, and written notice is due within 45 days of discovery when you believe a sewage event caused the damage. A clean window-well flood is a different description. Tell your insurer which one you saw."),
     ],
     "clawson": [
         ("What makes Clawson basement water removal different?", "Small basements, furnaces in the same room as the water, and short driveways. Access and electrical safety drive the first decisions."),
         ("Is a disconnected downspout really enough to flood a bungalow basement?", "It can be. Roof water dumped at the foundation on a small lot has nowhere to go but down the wall and in at a low opening. Check that from outside."),
-        ("Does Oakland Sewer Pros offer a flooded-basement price for Clawson?", "No. We do not quote, and we do not do the work. The provider you hire sets the price."),
+        ("Who sets the price for Clawson basement water removal?", "The independent company you hire, in writing, before you agree. Call (248) 825-8312 to reach that company when one is available. Tell them the driveway is short and whether the furnace is in the water."),
+        ("Who do I call in Clawson if the flood might be the city sewer?", "The city line is (248) 435-4500, Monday through Thursday, 7:00 a.m. to 3:30 p.m. The department is closed on Fridays. After hours, dispatch is 248-524-3477, extension 1. The sewer page points to the George W. Kuhn basin. Confirm your street with the city."),
     ],
 }
 

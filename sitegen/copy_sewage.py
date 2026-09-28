@@ -384,27 +384,36 @@ FAQS = {
     "royal-oak": [
         ("Where does Royal Oak sewage usually show up inside the house?", "Callers describe floor drains, basement toilets, and laundry standpipes in older houses near downtown, Woodward, Vinsetta, and Northwood. The page cannot see your fixture. If the drain is active, treat the water as sewage."),
         ("Does Oakland Sewer Pros pump out Royal Oak basements?", "No. The company you are connected with does the extraction if you hire them. We do not own trucks or employ technicians."),
-        ("Should I call Royal Oak's Sewer Division and a cleanup company?", "Yes, if you suspect the city main. The Sewer Division is the public-system contact. A cleanup company removes water from the house. They are not substitutes for each other."),
+        ("Should I call Royal Oak's Sewer Division and a cleanup company?", "Yes, if you suspect the city main. Basement-water calls use (248) 246-3300 on weekdays, 7:30 a.m. to 4:00 p.m. After hours, (248) 246-3500 dispatches sewer personnel. A cleanup company removes water from the house. Call (248) 825-8312 to reach that company when one is available."),
+        ("Does pumping a Royal Oak basement pause the 45-day notice?", "No. Written notice runs from the day you discover the damage, not from the day the floor looks dry. The city is responsible for the main, and you are responsible for the lateral up to and including the connection. Your insurer is a third conversation, about whether a sewer-backup endorsement is on the policy."),
     ],
     "troy": [
         ("Is sewage extraction in Troy the same as draining a flooded window well?", "No. Window-well rain can be clean storm water. Water from a floor drain or basement bath is sewage. Tell the provider which one you have, especially in split-levels near Big Beaver."),
         ("Can this site send a crew to Northfield Hills or Somerset tonight?", "We cannot send a crew anywhere. A participating independent provider may be available. That is not a promise for a specific subdivision or a specific hour."),
-        ("Who decides what carpet comes out of a Troy basement?", "The company you hire, based on what touched sewage. This website does not write that scope and does not set the price."),
+        ("Who decides what carpet comes out of a Troy basement?", "The company you hire, based on what touched sewage. Ask for that scope in writing, and for the price, before they start."),
+        ("Which Troy number is the city while sewage is being pumped?", "Water Division 248-524-3370 during business hours, and Troy Police 248-524-3477 after hours. (248) 825-8312 connects you with the extraction company when one is available. Troy discharges through three districts, so ask the city which one serves the house. Do not label the whole city combined or separated."),
+        ("Does sewage extraction in Troy include the 45-day claim?", "No. Extraction removes the water. Written notice to the City Attorney's Office is your letter, due within 45 days of discovery. Insurance, if a sewer-backup endorsement is on the policy, is a separate call."),
     ],
     "birmingham": [
         ("Will sewage extraction save original Birmingham plaster?", "Sometimes the base is already ruined and has to be opened. Sometimes the wetting stopped below the trim. Only someone on site can say. Do not chip the plaster out before they look."),
         ("Are Poppleton Park and Quarton covered by this referral line?", "The line is for Birmingham homeowners, including those neighborhoods. Coverage by a provider still depends on who is participating when you call."),
-        ("Does extraction include repairing the old cast-iron lateral?", "No. Removing water from the house does not dig up or replace the lateral. That is a separate plumbing hire."),
+        ("Does extraction include repairing the old cast-iron lateral?", "No. Removing water from the house does not dig up or replace the lateral. That is a separate plumbing hire. The city's system is gravity and Birmingham owns no sewage pump or lift stations, so a backup is not a failed municipal lift station."),
+        ("Is (248) 530-1703 the number that sends an extraction crew?", "No. That line collects water-event data. Claims questions are 248.530.1808. Call (248) 825-8312 to reach an independent company that can pump the lower level when one is available. Leave plaster in place until they have seen how high the water went."),
+        ("What should I know about Birmingham's 45-day notice before debris leaves?", "Photograph rooms before pad and trim are removed. Written notice is due within 45 days of discovery, and the water-event form is not the claim. A backflow preventer and downspouts extended about 6 feet are prevention for the next storm, not a substitute for pumping what is already inside."),
     ],
     "berkley": [
         ("Why mention combined sewers on a Berkley extraction page?", "Because older Berkley sections have been described as carrying storm and sanitary flow together, which can push sewage up floor drains in a storm. Confirm your street with the city before you treat it as fact for your house."),
         ("Is a bungalow stair a problem for extraction equipment?", "It can be. Say how narrow and how steep the stair is when you call so the provider can say whether they can work there."),
-        ("Does this site sanitize the Berkley basement after pumping?", "No. Sanitizing is part of the restoration company's work. See the Berkley sanitization page for what to ask them. We do not do the cleaning."),
+        ("Who sanitizes a Berkley basement after the water is pumped?", "The restoration company you hire. Ask them what they will remove and what they will clean. The short stair is part of that plan, because droplets walk upstairs."),
+        ("Who is the city contact while a Berkley bungalow is being pumped?", "Public Works, 248-658-3490. The sewer is one combined gravity pipe with no city pumps or valves, so a storm can be the reason sewage is on the floor. The city also posts a Sewer Backup Claims Form."),
+        ("When does the 45-day Berkley clock start if extraction takes all day?", "It starts when you discover the damage, not when the pump-out ends. Flow from Berkley goes toward the Clinton through the George W. Kuhn district, not to the Rouge. Your insurance endorsement is a separate question."),
     ],
     "clawson": [
         ("Can extraction equipment fit a typical Clawson lot?", "Sometimes, from the street or a short drive. Ask the provider after you describe the lot. We do not visit the property first."),
         ("Is 14 Mile Road the only Clawson area you refer?", "No. 14 Mile is the downtown reference. The referral is for Clawson houses, including the bungalow blocks off that road."),
-        ("What if several Clawson houses back up at once?", "Call the city about the main and call a cleanup company about the water in your basement. A neighborhood-wide surcharge and a single lateral failure are different problems."),
+        ("What if several Clawson houses back up at once?", "Call the city about the main and call a cleanup company about the water in your basement. A neighborhood-wide surcharge and a single lateral failure are different problems. The city line is (248) 435-4500, Monday through Thursday, 7:00 a.m. to 3:30 p.m. On Friday, DPW is closed and after-hours dispatch is 248-524-3477, extension 1."),
+        ("Does Clawson's sewer page tell me the basin, or my lateral?", "The page lists the George W. Kuhn basin and the Oakland County Water Resources Commissioner, and it links a combined-sewer explainer. Confirm your street with the city. Extraction only removes what is already in the one-room basement."),
+        ("What happens when I call (248) 825-8312 for a Clawson pump-out?", "You are connected with an independent company when one is available. Tell them the driveway is short. Written notice to the city, if you believe the main was involved, is still due within 45 days of discovery."),
     ],
 }
 

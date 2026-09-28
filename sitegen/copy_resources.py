@@ -587,3 +587,77 @@ RESOURCE_PAGES = [
     ("george-w-kuhn-drainage-district", GWK_TITLE, GWK_H1, GWK_DESC, GWK_LEAD, gwk_article, RESOURCE_CSS, "George W. Kuhn Drainage District"),
     ("basement-flood-checklist", CHECK_TITLE, CHECK_H1, CHECK_DESC, CHECK_LEAD, checklist_article, CHECK_CSS, "Basement flood checklist"),
 ]
+
+
+RESOURCE_FAQS = {
+    "sewer-backup-claim-guide": [
+        (
+            "What has to be in the 45-day written notice?",
+            "Michigan law limits the required content to your name, address, and phone number, the address of the affected property, the date you discovered the damage, and a brief description. The 45 days run from discovery, or from the day you should have discovered it, not from the day cleanup finishes. Keep a copy and write down how you sent it.",
+        ),
+        (
+            "Do Royal Oak, Troy, Birmingham, Berkley, and Clawson file this with Oakland County?",
+            "Start with the sewer bill. The Water Resources Commissioner lists communities where the county operates the local system, and these five cities are not on that list. Call the city while it is happening: Royal Oak (248) 246-3300 weekdays, after hours (248) 246-3500; Troy Water Division 248-524-3370, after hours 248-524-3477; Birmingham claims questions 248.530.1808; Berkley Public Works 248-658-3490; Clawson DPW (248) 288-3222, Monday through Thursday. Whether the George W. Kuhn system should also receive a notice is a question for an attorney.",
+        ),
+        (
+            "Is the letter to the city the same as an insurance claim?",
+            "No. A notice to the city is not an insurance claim. Many homeowner policies cover sewer backup only with an added endorsement, and the Water Resources Commissioner suggests asking about one. Call your insurer when you notify the city. Keep the declaration page and any payment or denial letter.",
+        ),
+        (
+            "What should I photograph before cleanup starts?",
+            "Photograph and film the water, the floor drain or fixture it came from, and every damaged item before anything is thrown out. Write down the date and time you found the water. The statute asks for reasonable proof of ownership and value of damaged personal property. Keep invoices and a log of each city call.",
+        ),
+        (
+            "Does calling (248) 825-8312 file the 45-day notice?",
+            "The call connects you with an independent cleanup company when one is participating for your address. The written notice is still a letter you send to the city or other responsible agency. The company sets the cleanup scope and the price. This page is general information, not legal advice.",
+        ),
+        (
+            "What if the city has not told me who receives the letter?",
+            "If you contact the city about the backup first, the statute says the city must give you, in writing, the notice rules, the name and address of the person who receives notices, and the required content. Ask in writing early. When this guide was checked, Royal Oak had no dedicated claim form posted, and Clawson's Public Act 222 document link returned an error. Troy, Berkley, and Birmingham each publish a claim form.",
+        ),
+    ],
+    "george-w-kuhn-drainage-district": [
+        (
+            "What is the George W. Kuhn Drainage District?",
+            "It is the regional drainage district formerly called Twelve Towns. It serves all or part of 14 communities and covers about 24,500 acres upstream of the Red Run Drain, a tributary of the Clinton River. The Oakland County Water Resources Commissioner operates the retention treatment basin.",
+        ),
+        (
+            "Are Royal Oak, Troy, Birmingham, Berkley, and Clawson in it?",
+            "All five appear on the county list of communities the district serves, in whole or in part. A city on the list does not mean every street drains to the system. The boundary follows sewers, not city limits. The county's RainSmart eligibility tool can check a specific address.",
+        ),
+        (
+            "Why can a hard rain push sewage into a basement here?",
+            "The district system is combined: stormwater and sanitary flow share pipes. In dry weather the flow goes to the Great Lakes Water Authority plant in Detroit. In heavy rain the combined flow, typically more than 93 percent stormwater, can exceed the outlet to Detroit. Water that cannot move downstream looks for a low opening, often a basement floor drain. A blocked private lateral can cause a backup on its own.",
+        ),
+        (
+            "How much can the retention treatment basin hold?",
+            "The basin is under the I-75 overpass at 12 Mile Road in Madison Heights. The Water Resources Commissioner says it can hold and treat 150 million gallons and serves 14 municipalities. An older fact sheet posted by Birmingham gives 124 million gallons after the 2006 expansion. The sources differ, so both figures are reported here. The basin does not make the local sewer on your street larger.",
+        ),
+        (
+            "What should I do if the basement floods anyway?",
+            "Call your city's sewer line while it is happening, photograph the damage, and send written notice within 45 days if you believe a public sewage system caused the loss. A backflow preventer, downspouts extended about 6 feet, and a sewer-backup endorsement are prevention steps. They do not remove water already on the floor. Call (248) 825-8312 to be connected with an independent cleanup company when one is available.",
+        ),
+    ],
+    "basement-flood-checklist": [
+        (
+            "Which city number do I call while water is coming in?",
+            "Royal Oak: (248) 246-3300 on weekdays, after hours police non-emergency (248) 246-3500. Troy: Water Division 248-524-3370, after hours Troy Police 248-524-3477. Birmingham's water event line (248) 530-1703 collects flooding data and is not a claim; claims questions are 248.530.1808. Berkley Public Works is 248-658-3490. Clawson DPW is (248) 288-3222 Monday through Thursday; after hours is (248) 524-3477, extension 1. For a power outage, DTE lists (800) 477-4747.",
+        ),
+        (
+            "What should an Oakland County homeowner do before the next storm?",
+            "Check the sewer bill to see who maintains the line. Ask a plumber about the lateral and a backflow valve. Berkley reimburses the permit fee after inspection, not the valve. Extend downspouts at least six feet, which Birmingham lists, and keep valuables off the floor. Ask your insurer whether a sewer-backup endorsement is on the policy. Test the sump pump.",
+        ),
+        (
+            "What should I avoid while sewage is on the basement floor?",
+            "Keep people and pets out of the water. Do not step in if it may be touching outlets, the furnace, or appliances. Turn off power only if you can reach the breaker without wading. Never run a portable generator in the basement, garage, or house. Hold off on laundry and extra flushing until the drains move again.",
+        ),
+        (
+            "When does the 45-day written notice start?",
+            "Write down the date you discovered the damage and count 45 days from that day. If you think a public sewer caused it, the notice needs your name, address, and phone, the property address, the discovery date, and a brief description. Birmingham's water-event form is not that claim. The city letter and the call to your insurer are separate.",
+        ),
+        (
+            "When should I call (248) 825-8312?",
+            "Call when sewage or floodwater in the house needs to be removed. The line connects you with an independent provider when one is available for your address. How soon they can come, and what they charge, come from that company. Ask for a written scope and for proof of license and insurance before work starts.",
+        ),
+    ],
+}

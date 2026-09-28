@@ -450,27 +450,33 @@ FAQS = {
     "royal-oak": [
         ("What does water damage restoration include in Royal Oak?", "Extraction of standing water, removal of materials that cannot be saved, drying of what remains, and, if the water was sewage, sanitizing. The provider writes the actual scope. This site does not."),
         ("Is water damage repair the same phrase?", "People use water damage repair for the same loss, especially once finishes have to be replaced. Drying comes before rebuild. We do not perform either one."),
-        ("Does Royal Oak water damage restoration cover sewage backups?", "The referral line can connect you with a provider for sewage water damage as well as cleaner floods. Say which one you have. Sewage is a stricter cleanup."),
+        ("Does Royal Oak water damage restoration cover sewage backups?", "The referral line can connect you with a provider for sewage water damage as well as cleaner floods. Say which one you have. Sewage is a stricter cleanup. Call (248) 825-8312. You are connected when a participating company is available."),
+        ("If the Royal Oak loss started at a floor drain, who owns the pipe?", "The city is responsible for the main. You are responsible for the lateral up to and including the connection. Weekday basement-water calls are (248) 246-3300. After hours, (248) 246-3500 dispatches sewer personnel. Drying the basement does not decide which pipe failed."),
+        ("Does drying the house replace the 45-day Royal Oak notice?", "No. If you believe a sewage disposal event caused the damage, written notice is due within 45 days of discovery. Ask your insurer whether a sewer-backup endorsement is on the policy. Photograph the water line before walls are opened."),
     ],
     "troy": [
         ("Why is Troy water damage restoration often a finished-basement job?", "Many Troy lower levels are carpeted living space in split-levels and subdivisions. The pad and drywall hold more water than an empty utility cellar."),
         ("Will you send a dryer to a house near Somerset or Northfield Hills?", "No. We do not send equipment. An independent provider may be available. Neighborhood names do not create a guaranteed response."),
-        ("How is basement flooding different from water damage?", "Flooding is water in the room. Water damage is the lasting effect on materials. Both pages exist so you can start with the one that matches what you see."),
+        ("How is basement flooding different from water damage in Troy?", "Flooding is water in the room. Water damage is the lasting effect on carpet, pad, and drywall in a finished lower level. Call (248) 825-8312 to reach an independent company for that drying when one is available."),
+        ("Does Troy's three-district sewer map change a water-damage scope?", "It tells you to ask the city which district serves the address: Evergreen-Farmington, Oakland-Troy, or George W. Kuhn. It does not dry the basement. If a drain overflowed, also call the Water Division at 248-524-3370, or Troy Police at 248-524-3477 after hours."),
     ],
     "birmingham": [
         ("Can water damage restoration save Birmingham plaster?", "Sometimes, if the wetting is shallow and someone monitors drying. Deeply soaked plaster and sewage-soaked trim often have to come out. The provider decides on site."),
         ("Do you restore the finishes yourselves?", "No. Oakland Sewer Pros is a referral service. Rebuild work, if you want it, is a separate agreement with a company you hire."),
-        ("Are Quarton floods covered by this page?", "The page is for Birmingham water damage, including that area. Whether a provider accepts the job depends on availability, not on this sentence."),
+        ("Are Quarton floods part of Birmingham water damage help?", "Yes. Low ground near Quarton and older plaster houses are both Birmingham. Call (248) 825-8312 and you are connected with an independent company when one is available. Describe plaster versus drywall, and whether a drain gurgled."),
+        ("What rain were Birmingham's older sewers designed around?", "The city says combined and storm sewers were historically designed for about 2 inches in one hour. The system is gravity, with no city pump stations. A backflow preventer and downspouts extended about 6 feet are prevention. Water already in the plaster is a drying and removal job. Claims questions are 248.530.1808, not the water-event line (248) 530-1703."),
     ],
     "berkley": [
         ("Can basement water reach Berkley hardwood floors?", "Yes, through a short stair and through wet joists under the subfloor. Mention original floors when you call so protection and joist checks are in the scope."),
         ("Is water damage restoration appropriate for a sewage backup?", "Yes, as the overall process, with extraction and sanitizing included because sewage is heavily contaminated water. Do not hire a dry-only visit for a backup."),
-        ("Who dries the bungalow?", "The independent company you hire. We do not own drying equipment in Berkley or anywhere else."),
+        ("Who dries a Berkley bungalow?", "The independent company you hire. Call (248) 825-8312 to reach one when a provider is available. Mention the short stair and any original hardwood above the joists."),
+        ("Can Berkley's combined sewer turn a rain flood into a sewage drying job?", "Yes, if wastewater came up the floor drain. The city describes one gravity pipe with no pumps or valves, and flow toward the Clinton through the George W. Kuhn district. Confirm the block with Public Works at 248-658-3490. Written notice for a sewage event is due within 45 days of discovery."),
     ],
     "clawson": [
         ("What should a Clawson water damage company know about the lot?", "That driveways are short and the basement may be a single room containing the furnace. Access changes how they stage the job."),
         ("Does restoration include the sewer repair?", "No. Removing and drying water does not dig up a lateral or repair a city main. Those are separate."),
-        ("Can Oakland Sewer Pros quote water damage repair in Clawson?", "No. We do not quote prices. The provider does, in writing, before you agree."),
+        ("Who quotes water damage repair in a Clawson bungalow?", "The provider you hire, in writing, before you agree. Call (248) 825-8312 to reach an independent company when one is available. Tell them the basement is one room and the driveway is short."),
+        ("Who is the Clawson city contact if the water came from a drain?", "The sewer line is (248) 435-4500, Monday through Thursday, 7:00 a.m. to 3:30 p.m. Fridays the department is closed. After hours, dispatch is 248-524-3477, extension 1. The city page lists the George W. Kuhn basin. Drying the room does not identify the lateral. A camera does. The 45-day written notice is separate from the drying invoice."),
     ],
 }
 

@@ -286,27 +286,32 @@ FAQS = {
     "royal-oak": [
         ("Is Royal Oak basement sanitization a regular cleaning service?", "No. This page is about cleaning after sewage or a contaminated flood. A dry basement that just needs dusting is not the job."),
         ("Can I sanitize sewage residue myself with bleach?", "A household mop does not reach contamination inside drywall and pad, and mixing cleaners is unsafe. Have a restoration company remove ruined material and tell you what they are applying to what remains."),
-        ("Does Oakland Sewer Pros guarantee the odor will be gone?", "No. We do not do the work and we do not guarantee results. Odor usually means a porous material was left behind. The company on site has to find it."),
+        ("Why does a Royal Oak basement still smell after it looks clean?", "Odor usually means a porous material was left behind, often the pad, the bottom of the drywall, or the pit. The company on site has to find it. Call (248) 825-8312 to reach an independent company when one is available."),
+        ("Does sanitizing a Royal Oak basement replace calling the Sewer Division?", "No. Cleaning the slab does not check the main. Weekday basement-water calls are (248) 246-3300, and after hours (248) 246-3500 dispatches sewer personnel. The city owns the main. You own the lateral through the connection. Written notice, if you are pursuing a sewage event, is due within 45 days of discovery."),
     ],
     "troy": [
         ("Should a Troy playroom that had sewage be sprayed and kept?", "Soft contents that soaked up sewage are generally thrown away. Spraying the room without removing the pad and the ruined furnishings does not sanitize the lower level."),
         ("Who sanitizes the basement?", "The independent restoration company you hire. This website only refers the call."),
-        ("Does sanitizing include drying the Troy basement?", "No. Drying is a different part of water damage restoration. Ask for both scopes if the materials are still wet."),
+        ("Does sanitizing include drying the Troy basement?", "No. Drying is a different part of water damage restoration. Ask for both scopes if the materials are still wet. In a finished lower level near Big Beaver, the pad and the sofa bottom usually have to come out before a cleaner has a surface it can treat."),
+        ("Which Troy number is for the city, if the backup is still the question?", "Water Division 248-524-3370 in business hours, and Troy Police 248-524-3477 after hours. Troy's wastewater leaves through three districts. Ask which one serves the house. Call (248) 825-8312 for the cleaning company inside the lower level."),
     ],
     "birmingham": [
         ("Can original Birmingham plaster be sanitized in place?", "Only if sewage did not soak through it. Soft or deeply stained plaster usually has to be removed. The provider should decide after looking, not from this page."),
         ("Is a deodorant fog enough after a Birmingham backup?", "No. Fog does not replace removing the contaminated material. The smell returns when humidity rises."),
-        ("Do you certify the companies as specialists?", "No. We do not certify anyone. You verify license and insurance with the company you hire."),
+        ("How do I check the company that will clean a Birmingham basement?", "Ask that company for the license and insurance the job requires, and for a written list of what they will discard. Call (248) 825-8312 to reach an independent company when one is available."),
+        ("Will Birmingham's backflow advice clean sewage that is already in the plaster?", "No. A backflow preventer, downspouts extended about 6 feet, and grading away from the foundation are prevention steps from the city FAQ. Soft plaster that soaked up sewage usually has to come out. The water-event line (248) 530-1703 is not the cleaning crew."),
     ],
     "berkley": [
         ("Why is sanitizing riskier in a Berkley bungalow?", "The basement air volume is small and the stair opens near living space, so residue and strong cleaners move upstairs quickly. Removal of ruined material matters more than a heavy spray."),
         ("Does a combined sewer change the cleaning?", "If the city confirms your block can surcharge sewage in a storm, treat the floodwater as sewage. Confirm the block. Do not skip extraction."),
-        ("Will this site tell me which disinfectant to buy?", "No. The company performing the work should name the product and confirm the label fits sewage cleanup."),
+        ("Who names the product for a Berkley bungalow?", "The company doing the work. The label has to fit sewage residue, and the stair opens near living space, so ventilation matters. Call (248) 658-3490 if you still need Public Works, and (248) 825-8312 to reach a cleanup company."),
+        ("If Berkley's combined sewer caused the flood, does sanitizing change the claim?", "No. Treat the water as sewage if the city confirms your block can surcharge, but the written notice is still due within 45 days of discovery. Cleaning the basement does not pause that clock. Flow from Berkley goes toward the Clinton through the George W. Kuhn district, not to the Rouge."),
     ],
     "clawson": [
         ("What gets missed in a one-room Clawson basement?", "The backs and bottoms of the furnace, water heater, and washer, plus the stair stringer. A floor-only mop leaves those."),
         ("Can I run the washer to clean it after a standpipe backup?", "Do not assume a cycle cleans a machine that filled with sewage. Ask the provider whether it should be discarded."),
-        ("Does sanitizing fix the Clawson lateral?", "No. Cleaning the basement does not open the pipe. Expect a separate step if the line is still blocked."),
+        ("Does sanitizing fix the Clawson lateral?", "No. Cleaning the one-room basement does not open the pipe. The main is a city question at (248) 435-4500, Monday through Thursday. On Friday the department is closed, and after-hours dispatch is 248-524-3477, extension 1."),
+        ("What happens when I call (248) 825-8312 to sanitize a Clawson backup?", "You are connected with an independent company when one is available. Tell them the furnace, the washer, and the floor drain share one room. If you believe the public system was involved, written notice is still due within 45 days of discovery. The city sewer page points to the George W. Kuhn basin for the regional system."),
     ],
 }
 

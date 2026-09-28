@@ -277,92 +277,116 @@ def article(slug, city):
 FAQS = {
     "royal-oak": [
         (
-            "Does Royal Oak have a combined sewer system that increases backup risk?",
-            "Many older sections of Royal Oak were built before separated storm and sanitary sewers were standard. Where sewers are combined or simply old, a heavy summer storm can load the pipes and push sewage toward basement floor drains. Royal Oak's public works department can confirm what serves a specific street. Oakland Sewer Pros does not map the city system.",
+            "Who do I call at the City of Royal Oak during a sewer backup?",
+            "For basement water, the city lists (248) 246-3300 on weekdays from 7:30 a.m. to 4:00 p.m. After hours, police non-emergency (248) 246-3500 dispatches sewer personnel. Call (248) 825-8312 when you need an independent cleanup company inside the house. That call connects you when a participating provider is available.",
         ),
         (
-            "Who performs sewer backup cleanup in Royal Oak?",
-            "An independent restoration or cleanup company does the work. Oakland Sewer Pros is a referral service. We do not employ technicians, own trucks, or guarantee the job. Confirm the company's license and insurance yourself.",
+            "Who owns the sewer lateral in Royal Oak?",
+            "The city says it is responsible for the main, and the homeowner for the lateral up to and including the connection. The Sewer Division maintains about 300 miles of sanitary and storm sewers. Ask them about the main. A camera inspection is how a plumber or the city checks a specific lateral.",
         ),
         (
-            "How should a Royal Oak homeowner think about drying time?",
-            "After sewage is removed, drying building materials often takes several days. The provider should explain how they will check moisture. This site does not set or promise that schedule.",
+            "How long do I have to send Royal Oak written notice?",
+            "Michigan law requires written notice within 45 days of discovering the damage before compensation for a sewage disposal event is possible. Include your name, address, and phone, the property address, the date you discovered the damage, and a brief description. Confirm with the city who receives that letter. A sewer-backup endorsement on your homeowners policy is a separate question for your insurer.",
         ),
         (
-            "Does homeowners insurance pay for a Royal Oak sewer backup?",
-            "Not automatically. Many policies exclude sewer backup unless a separate endorsement is on the policy. Ask your insurer what your form covers. Oakland Sewer Pros does not file claims or bill insurance companies.",
+            "Are Royal Oak sewers combined?",
+            "Many older sections were built before separated storm and sanitary sewers were standard. Where pipes are combined or simply old, a heavy summer storm can push sewage toward a basement floor drain. Royal Oak is a member of the former Twelve Towns program, now the George W. Kuhn Retention Treatment Basin, which was expanded in 2006. The Sewer Division can confirm the pipe on your street.",
+        ),
+        (
+            "What happens when I call (248) 825-8312 about a Royal Oak backup?",
+            "When a participating independent cleanup company is available, the call is connected to them. They do the work in the house. Ask for a written scope and for the license and insurance the job requires. How soon they can come depends on that company. After the water is out, drying often takes several days. Ask them how they will check moisture.",
+        ),
+        (
+            "Will insurance pay for a Royal Oak sewer backup?",
+            "Not automatically. Many policies cover sewer backup only with an added endorsement. Ask your insurer, and photograph the drain and the water line before anything is thrown away. The city letter and the insurance claim are two different tracks.",
         ),
     ],
     "troy": [
         (
-            "Does Troy's storm drainage add to sewer backup risk?",
-            "Troy's Streets and Drains Division maintains a large storm-drainage network. Older blocks can still load up faster in a hard rain than newer subdivisions built to later standards. Confirm your street with the city. This page is not a city record.",
+            "Who does Troy tell residents to call for a sewer backup?",
+            "The Water Division number is 248-524-3370 during business hours. After hours, Troy Police is 248-524-3477. Call (248) 825-8312 to reach an independent cleanup company for the house when one is available. That line is not the Water Division.",
         ),
         (
-            "Who does the sewage cleanup work in Troy?",
-            "A separate local company does the cleanup. Calling the number here connects you when a participating provider is available. Oakland Sewer Pros does not perform the cleanup and does not quote a price for it.",
+            "Is Troy on one combined sewer?",
+            "No single label fits. A November 14, 2022 City Council agenda item says Troy discharges wastewater through the Evergreen-Farmington, Oakland-Troy, and George W. Kuhn districts. The Oakland County Water Resources Commissioner is responsible for those district facilities. Ask the city which district serves your address before you assume the pipe in the street.",
         ),
         (
-            "What should Troy homeowners do about a gurgling floor drain?",
-            "Stop running water and treat a gurgling basement drain as a warning, especially in older split-levels near Big Beaver. Do not snake it yourself if you smell sewage. Call to be matched with a provider, and call the city if you believe the main in the street is surcharging.",
+            "Where does a written Troy sewer claim go?",
+            "Troy directs written claims to the City Attorney's Office. State law sets 45 days from the day you discover the damage. The notice needs your name, address, and phone, the property address, the discovery date, and a brief description. A sewer-backup rider, if you have one, is a separate call to your insurer.",
         ),
         (
-            "Will insurance cover a Troy sewer backup?",
-            "Coverage depends on your policy. Sewer backup is often excluded unless you bought an endorsement. Read your form or ask your agent. The provider you hire may document the loss; this website does not.",
+            "Who is responsible for a Troy sewer lateral?",
+            "The main in the street is a city question. The lateral under the yard is usually the homeowner's pipe. Confirm the split for your address with the city. A camera answers the private lateral. The cleanup company removes what already entered the lower level.",
+        ),
+        (
+            "What should I do about a gurgling floor drain near Big Beaver?",
+            "Stop running water. Treat a gurgling basement drain as a warning, especially in a 1960s or 1970s split-level. Do not snake it if you smell sewage. Call the city if you think the main is surcharging, and call (248) 825-8312 to reach an independent cleanup company. The price and the crew come from that company.",
         ),
     ],
     "birmingham": [
         (
-            "Are older Birmingham houses more prone to sewer backups?",
-            "Houses in Birmingham's older sections often still have clay or cast-iron laterals. Those materials crack, separate, and invite roots, which is why backups show up more often there than in newer construction. A camera inspection by a plumber or the city is how you confirm a specific lateral, not a page on this site.",
+            "Who do I call in Birmingham if sewage is in the lower level?",
+            "The water event line, (248) 530-1703, collects flooding data. It is not a claim. Claims questions are 248.530.1808, and the city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. For cleanup inside the house, call (248) 825-8312. You are connected with an independent company when one is available.",
         ),
         (
-            "Who cleans up sewage in a Birmingham home?",
-            "An independent provider you hire. Oakland Sewer Pros only makes the connection. Ask that company how they will protect plaster and finished floors, and ask for license and insurance before they start.",
+            "Can a hard rain overload Birmingham's older sewers?",
+            "The city's Risk Management FAQ says older communities have combined sewer and storm systems. Those sewers were historically designed for about 2 inches of rain in one hour, which the city calls a 10-year storm. The system is gravity, and Birmingham owns no sewage pump or lift stations. A late-1990s bond financed relief sewers in part of the city, not on every street.",
         ),
         (
-            "Should I cut out wet drywall in Birmingham before anyone arrives?",
-            "No. Sewage-soaked material is contaminated, and opening walls can spread it. Keep people out and let the company you hire decide what comes out, based on what got wet.",
+            "What is the 45-day notice for a Birmingham sewer backup?",
+            "Written notice is due within 45 days of discovering the damage. Include your name, address, and phone, the property address, the discovery date, and a brief description. Use the city's sewer backup claim form. The water-event tracking form is not that claim. Ask your insurer separately about a sewer-backup endorsement.",
         ),
         (
-            "Does a standard Birmingham homeowners policy cover sewage backup?",
-            "Many do not, unless a sewer-backup endorsement is listed. Check with your insurer. This site does not interpret policies or submit claims.",
+            "What does Birmingham suggest before the next storm?",
+            "The city FAQ lists a backflow preventer, downspouts disconnected and extended about 6 feet from the foundation, and soil graded away from the house. Those steps do not remove sewage that is already on the floor. The company you hire does that cleanup. Leave plaster and trim in place until they have seen it.",
+        ),
+        (
+            "Who owns the pipe under a Birmingham yard?",
+            "The public system is the city's to explain. The private lateral under the yard is a homeowner pipe unless the city tells you otherwise for that address. A camera inspection confirms a lateral. Early- and mid-1900s houses often still have clay or cast iron, and roots at the joints are a common reason for a backup.",
         ),
     ],
     "berkley": [
         (
-            "Does Berkley still have combined sewer sections?",
-            "Berkley's own master plan describes the city's sewers as a combined system that carries storm and sanitary flow together to the regional George W. Kuhn Drain. During hard rain that shared capacity can push water back through basement drains. Confirm the pipe in front of your house with the city. Treat this as a reason to ask, not as a map.",
+            "Is Berkley's sewer combined?",
+            "Yes, as the city describes it: one pipe for stormwater and sewage, entirely gravity, with no pumps and no valves. Streets are designed to hold water so flow enters more slowly, and catch basins use restrictor covers. In a hard rain that shared pipe can push wastewater up a basement floor drain. Confirm your block with Public Works.",
         ),
         (
-            "Who does sewage cleanup in a Berkley bungalow?",
-            "An independent company matched through this line, if a provider is participating. This page is that sewage cleanup. The pumping-only step is the Berkley sewage extraction page. Oakland Sewer Pros does not own equipment and does not station a crew in Berkley.",
+            "Who do I call in Berkley while the basement is wet?",
+            "Public Works is 248-658-3490 for the city system, and the city posts a Sewer Backup Claims Form. Call (248) 825-8312 to reach an independent cleanup company for the bungalow when one is available. Say the stair is short so they know the equipment has to fit.",
         ),
         (
-            "Why is a shop vac a poor idea for Berkley sewage water?",
-            "A household vac aerosolizes contaminated water in a small basement and on a short stair. That is a health problem in a bungalow where the stairs open near living space. Wait for a company equipped for sewage.",
+            "Where does Berkley's sewage go when it rains hard?",
+            "Flow leaves toward the Clinton River side: the George W. Kuhn district, then the Red Run Drain, then the Clinton. It does not go to the Rouge. Berkley is one of 14 communities in that district. In wet weather the combined flow there is typically more than 93 percent stormwater, which is why a fast storm can fill the shared pipes.",
         ),
         (
-            "Is sewer-backup damage covered on a Berkley homeowners policy?",
-            "Only if your policy says so. Endorsements are common add-ons, not the default. Ask your insurer. We do not bill carriers.",
+            "How long do I have to send Berkley written notice?",
+            "Written notice is due within 45 days of discovery. Include your name, address, and phone, the property address, the discovery date, and a brief description. The city's claims form is the city process. Whether your homeowners policy has a sewer-backup endorsement is a question for your insurer.",
+        ),
+        (
+            "Why is a shop vac a poor idea in a Berkley bungalow?",
+            "A household vac blows contaminated droplets through a small basement and up a short stair that opens near living space. Keep people and pets off that stair. Wait for a company equipped for sewage. Pumping is the extraction step. Cleaning what remains comes after the water is gone.",
         ),
     ],
     "clawson": [
         (
-            "Why do Clawson bungalows see sewer backups?",
-            "A large share of Clawson is mid-century brick bungalows and ranches on small lots, often still on clay or cast-iron laterals. Roots and corrosion narrow those pipes. Heavy rain adds load. Whether your lateral or the city main failed is a fact for the city or a camera inspection, not a guess from this website.",
+            "Who answers a Clawson sewer call?",
+            "The city main line on the sewer page is (248) 435-4500. Public works is open Monday through Thursday, 7:00 a.m. to 3:30 p.m., and closed on Fridays. After hours, Clawson uses Troy Police dispatch at 248-524-3477, extension 1. That dispatch line is the city's path, not a cleanup crew. Call (248) 825-8312 to reach an independent company for the house when one is available.",
         ),
         (
-            "Who shows up for sewer backup cleanup in Clawson?",
-            "An independent provider, when one is available through this referral line. We do not guarantee arrival, price, or the outcome of the work.",
+            "Is every Clawson street a combined sewer?",
+            "The city sewer page lists the George W. Kuhn Retention Treatment Basin and the Oakland County Water Resources Commissioner, and it links a combined-sewer explainer and Public Act 222. Confirm the pipe on your street with the city. Heavy rain can still load older lines and push sewage up a floor drain in a mid-century brick bungalow.",
+        ),
+        (
+            "How do I give Clawson written notice within 45 days?",
+            "State law requires written notice within 45 days of discovering the damage, with your name, address, and phone, the property address, the discovery date, and a brief description. Ask the city in writing who receives sewer backup notices. Your insurer is a separate call. A sewer-backup endorsement is not on every policy.",
+        ),
+        (
+            "Who owns the lateral on a small Clawson lot?",
+            "The main in the street is a question for the city. The lateral under the yard is usually the homeowner's pipe. A camera inspection tells them apart. The cleanup crew removes what is already in the one-room basement. They do not reline the city main.",
         ),
         (
             "What if the cleanup truck cannot fit a Clawson driveway?",
-            "Say so when you call. Compact lots and short drives are common. A provider should tell you whether they can stage from the street before you agree to the job.",
-        ),
-        (
-            "Does insurance automatically cover a Clawson sewage backup?",
-            "No. Ask your insurer whether a sewer-backup endorsement is on the policy. Oakland Sewer Pros does not file the claim.",
+            "Say so when you call. Brick bungalows on tight lots often have to stage from the street. The provider should tell you whether they can work there before you agree. The crew, the arrival, and the price come from that company.",
         ),
     ],
 }

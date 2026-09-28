@@ -8,7 +8,11 @@ from pathlib import Path
 
 from site_config import BRAND, LASTMOD, PHONE_DISPLAY, PHONE_TEL
 from sitegen.copy_core import (
+    ABOUT_FAQS,
+    CONTACT_FAQS,
     NOT_FOUND_LINKS_INTRO,
+    PRIVACY_FAQS,
+    TERMS_FAQS,
     THANK_YOU,
     about_article,
     contact_article,
@@ -35,7 +39,7 @@ from sitegen.copy_hubs import (
     sump_hub,
     water_hub,
 )
-from sitegen.copy_resources import RESOURCE_PAGES
+from sitegen.copy_resources import RESOURCE_FAQS, RESOURCE_PAGES
 from sitegen.copy_sanit import ALT as SANIT_ALT
 from sitegen.copy_sanit import ARTICLES as SANIT_ARTICLES
 from sitegen.copy_sanit import DESCRIPTIONS as SANIT_DESC
@@ -270,20 +274,28 @@ def city_directory():
 def home_body():
     home_faqs = [
         (
-            "Is Oakland Sewer Pros the company that cleans up the basement?",
-            "No. Oakland Sewer Pros is a referral service. Independent providers do the work. We do not own trucks, employ technicians, or guarantee the job. You verify license and insurance with the company you hire.",
+            "What happens when I call (248) 825-8312?",
+            "When a participating independent cleanup company is available for your Oakland County address, the call is connected to them. They do the work. Ask for a written scope, the price, and proof of license and insurance. How soon they can come depends on that company.",
         ),
         (
-            "Do you guarantee a 24/7 arrival in Oakland County?",
-            "No. The phone line can be used at any hour, but a visit happens only when a participating provider is available for your location. Availability is not guaranteed.",
+            "Which Oakland County cities have their own sewer pages?",
+            "Royal Oak, Troy, Birmingham, Berkley, and Clawson. Berkley's sewer is a combined gravity pipe. Troy discharges through three districts. Birmingham's system is gravity and the city owns no pump stations. Open the city where the house stands.",
         ),
         (
-            "Which Oakland County cities have pages?",
-            "Royal Oak, Troy, Birmingham, Berkley, and Clawson. Each city has its own pages for sewer backup cleanup, sewage extraction, flooded basements, water damage restoration, sump pumps, and sanitizing after a backup.",
+            "What is the George W. Kuhn district?",
+            "It is the regional drainage district, formerly Twelve Towns, upstream of the Red Run Drain. It serves all or part of 14 communities, including those five cities, about 24,500 acres. Dry-weather flow goes to the Detroit plant. Wet-weather flow is typically more than 93 percent stormwater. It does not name the pipe in front of one house.",
         ),
         (
-            "Will homeowners insurance pay for a sewer backup or water damage?",
-            "Not automatically. Sewer backup is often excluded unless the policy has an endorsement, and groundwater is often limited. Ask your insurer. Oakland Sewer Pros does not file claims or bill insurance companies.",
+            "How long do I have to notify a city after a sewer backup?",
+            "Michigan law requires written notice within 45 days of discovering the damage before compensation for a sewage disposal event is possible. The notice needs your name, address, and phone, the property address, the discovery date, and a brief description. Each city has its own contact. That letter is not your insurance claim.",
+        ),
+        (
+            "Will homeowners insurance pay for an Oakland County sewer backup?",
+            "Not automatically. Sewer backup is often excluded unless the policy has an endorsement, and groundwater is often limited. Ask your insurer. Photograph the water before anything is thrown away.",
+        ),
+        (
+            "Can I call this line at night?",
+            "Yes. The phone line can be used at any hour. A visit happens when a participating provider is available for your city. How soon they can come depends on that company, the address, and who is free.",
         ),
     ]
     lead = f"""<p>If sewage or floodwater is in your basement in Oakland County, it needs to be handled now. Call {esc(PHONE_DISPLAY)}. Your call connects you with an independent local cleanup company that can come out.</p>"""
@@ -519,31 +531,27 @@ def main():
         remember(path, title, fill(description), body, crumbs, faqs=faqs, service=service, priority=priority)
 
     for slug, title, h1, description, lead, article_fn, css, label in RESOURCE_PAGES:
-        body = prose_body(esc(h1), lead, article_fn())
+        faqs = RESOURCE_FAQS[slug]
+        body = prose_body(esc(h1), lead, article_fn(), faqs=faqs)
         remember(
             slug,
             title,
             fill(description),
             body,
             [("Home", "/"), (label, None)],
+            faqs=faqs,
             priority="0.7",
             article={"headline": h1, "published": "2026-09-28", "modified": LASTMOD},
             extra_css=css,
         )
 
-    about_faqs = [
-        (
-            "Are you a contractor?",
-            "No. Oakland Sewer Pros is a referral service. Independent companies do the work. We do not guarantee their prices, licenses, insurance, or results.",
-        ),
-    ]
     remember(
         "about",
         "About Oakland Sewer Pros | Referral Service",
         fill("Oakland Sewer Pros is a referral line to independent sewer and water damage providers in Oakland County, MI. Call {PHONE_DISPLAY}."),
-        prose_body("About Oakland Sewer Pros", f"<p>Honest description of what {esc(BRAND)} is, and what it is not.</p>", about_article(), faqs=about_faqs),
+        prose_body("About Oakland Sewer Pros", f"<p>Honest description of what {esc(BRAND)} is, and what it is not.</p>", about_article(), faqs=ABOUT_FAQS),
         [("Home", "/"), ("About", None)],
-        faqs=about_faqs,
+        faqs=ABOUT_FAQS,
         priority="0.5",
     )
     remember(
@@ -554,24 +562,28 @@ def main():
             "Contact Oakland Sewer Pros",
             f"<p>Phone is the real contact. The form does not save what you type.</p>",
             contact_article() + form_fields(include_email=True, include_priority=True, id_prefix="contact"),
+            faqs=CONTACT_FAQS,
         ),
         [("Home", "/"), ("Contact", None)],
+        faqs=CONTACT_FAQS,
         priority="0.6",
     )
     remember(
         "privacy",
         "Privacy Policy | Oakland Sewer Pros",
         fill("How Oakland Sewer Pros handles calls and website forms. Form entries are not stored or put in the URL. Call {PHONE_DISPLAY}."),
-        prose_body("Privacy", "<p>What this static site does with the details you might type or the number you call.</p>", privacy_article()),
+        prose_body("Privacy", "<p>What this static site does with the details you might type or the number you call.</p>", privacy_article(), faqs=PRIVACY_FAQS),
         [("Home", "/"), ("Privacy", None)],
+        faqs=PRIVACY_FAQS,
         priority="0.4",
     )
     remember(
         "terms",
         "Terms of Service | Oakland Sewer Pros",
         fill("Terms for the Oakland Sewer Pros referral site in Oakland County, MI. We do not guarantee contractor work. Call {PHONE_DISPLAY}."),
-        prose_body("Terms of Service", "<p>Last updated September 27, 2026.</p>", terms_article()),
+        prose_body("Terms of Service", "<p>Last updated September 27, 2026.</p>", terms_article(), faqs=TERMS_FAQS),
         [("Home", "/"), ("Terms", None)],
+        faqs=TERMS_FAQS,
         priority="0.4",
     )
 

@@ -276,27 +276,32 @@ FAQS = {
     "royal-oak": [
         ("Does Oakland Sewer Pros repair sump pumps in Royal Oak?", "No. An independent provider may. We connect the call and do not set the price or the parts."),
         ("What should I do if the Royal Oak pit is overflowing and the power is on?", "From a dry place, you can unplug a humming pump and free a stuck float with a broom handle. Do not step into the water. Then call for a provider and, if the floor is wet, for water removal."),
-        ("Will a new pump stop sewer backups?", "No. A sump handles groundwater at the pit. A floor-drain backup is a different pipe. Repairing one does not fix the other."),
+        ("Will a new pump stop sewer backups?", "No. A sump handles groundwater at the pit. A floor-drain backup is a different pipe. Repairing one does not fix the other. Royal Oak says the city is responsible for the main and the homeowner for the lateral through the connection."),
+        ("Who do I call if the Royal Oak pit overflowed and the floor drain also moved?", "Treat drain water as sewage. City basement-water calls are (248) 246-3300 on weekdays and (248) 246-3500 after hours. Call (248) 825-8312 to reach an independent company for the pump and, if the floor is wet, for water removal."),
     ],
     "troy": [
         ("Why do Troy finished basements make pump failures expensive to ignore?", "Carpet and drywall start at the pit. Minutes of overflow become a water-damage scope, which is separate from the pump repair."),
         ("Can you install a battery backup in Troy?", "We do not install anything. Ask the provider you hire whether they offer a second power source and what it costs. We will not quote it."),
-        ("Who maintains Troy's street drains?", "The city's Streets and Drains Division handles public storm drainage. Your sump is private."),
+        ("Who maintains Troy's street drains?", "The city's Streets and Drains Division handles public storm drainage. Your sump is private. Wastewater leaves Troy through three districts, Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. That map does not tell you why the pit failed."),
+        ("Can a battery backup be part of a Troy pump visit?", "Ask the company you hire. Call (248) 825-8312 to reach an independent provider when one is available. They quote the second power source after they see the pit. If carpet is already wet, say so, because drying is a separate scope."),
     ],
     "birmingham": [
         ("Is sump pump repair in Birmingham a plumbing visit or a restoration visit?", "The pump is a mechanical repair. Wet plaster is restoration. You may need both. Ask each company what they actually cover."),
         ("Should I replace a Birmingham pump that runs constantly near Quarton?", "Not on this page's advice. Constant running can be groundwater load, a stuck switch, or a bad valve. Someone has to watch a cycle before they sell you a pump."),
-        ("Do you guarantee the next storm will stay out?", "No. We do not guarantee pump performance or a dry basement."),
+        ("Will a repaired Birmingham pump hold back the next storm by itself?", "A repair fixes the machine someone finds on site. It does not change the city's gravity sewers, which have no municipal lift stations. Low ground near Quarton can keep a healthy pump running for hours. Ask for a written reason before anyone replaces the unit."),
+        ("Is a backflow preventer the same as sump pump repair in Birmingham?", "No. The city lists a backflow preventer, downspouts extended about 6 feet, and grading away from the foundation as prevention at the house. The sump in the basement is a different device. Call (248) 825-8312 to reach an independent company for the pump when one is available."),
     ],
     "berkley": [
         ("Can a Berkley stair fit a battery-backup system?", "Sometimes. Describe the stair when you call. The provider decides if the equipment fits. We do not."),
         ("Why does my Berkley pump short-cycle?", "A failed check valve is a common reason: water falls back and the float rises again immediately. It can also be a stuck switch. Let the provider distinguish them."),
-        ("Does the city repair my sump?", "No. The pit in your basement is not the city main. The city is the contact if a public sewer is surcharging."),
+        ("Does Berkley repair the sump in my bungalow?", "No. The city's sewer is gravity with no pumps and no valves. The pit in your basement is yours. Call Public Works at 248-658-3490 if a floor drain is also surcharging, because that combined pipe is a different problem from a dead pump."),
+        ("What should I say when I call (248) 825-8312 about a Berkley pump?", "Describe the short stair, whether the floor is already wet, and whether the water is clear or smells like a drain. You are connected with an independent company when one is available. They decide whether a battery unit fits that stair."),
     ],
     "clawson": [
         ("What if the Clawson driveway cannot hold a work truck?", "Say so before the appointment. The provider should agree to a street setup or decline. We do not scout the lot."),
         ("The pump sits next to the furnace and both are wet. Who do I call?", "Call for water removal and for a pump repair, and do not turn the furnace on. They may be different companies. Stay out of the room if power and water have mixed."),
-        ("Are the old prices on this page still valid?", "There is no price list. Earlier dollar ranges were removed because this site does not control what providers charge."),
+        ("Who quotes a Clawson pump replacement?", "The company that sees the pit. Earlier dollar ranges were removed. Call (248) 825-8312 to reach an independent provider when one is available, and describe the short driveway before they roll a truck."),
+        ("If the Clawson pump failed on a Friday, who is the city after-hours line?", "DPW is closed on Fridays. After hours, Clawson uses 248-524-3477, extension 1. That dispatch line is for city emergencies, not for repairing the pump next to your furnace. The city sewer page also points to the George W. Kuhn basin, which is the regional system, not your crock."),
     ],
 }
 
