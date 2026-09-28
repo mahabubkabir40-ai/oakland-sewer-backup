@@ -25,8 +25,7 @@ def about_article():
         h2("No public office"),
         p(
             f"{BRAND} has no public office and no dispatch hub in Oakland County, so there is no street "
-            "address to publish. Photos on the site show wet basements and cleanup work. "
-            "The cities described here are the five listed above. Start at "
+            "address to publish. Start at "
             + a("/services", "services")
             + " or a city overview such as "
             + a("/royal-oak", "Royal Oak")
@@ -38,7 +37,7 @@ def about_article():
 
 def privacy_article():
     return "\n".join([
-        h2("What these pages collect"),
+        h2("What the pages collect"),
         p(
             f"{BRAND} is a static website. The pages do not run an account system. The phone number is "
             "how you reach a local cleanup crew. A call is handled by the telephone routing attached to that "
@@ -55,7 +54,7 @@ def privacy_article():
         ),
         h2("Cookies and analytics"),
         p(
-            "These pages do not include a third-party analytics script and do not set advertising cookies. "
+            "The pages do not include a third-party analytics script and do not set advertising cookies. "
             "Your browser may still keep its own history of pages you visited. The host, Cloudflare, may "
             "process connection data such as IP address as part of delivering the site. That processing "
             "is the host's, described in Cloudflare's own privacy materials."
@@ -81,7 +80,7 @@ def terms_article():
             "You verify that the crew holds the license and insurance required for the work. "
             "The contract, the price, the arrival, and any insurance claim stay with you and that crew."
         ),
-        h2("Information on these pages"),
+        h2("Information on the pages"),
         p(
             "City descriptions mention real streets, neighborhoods, and public agencies so you can tell "
             "the pages apart. They are not a survey, a soil report, or a statement of what is wrong at "
@@ -138,15 +137,15 @@ NOT_FOUND_LINKS_INTRO = (
 ABOUT_FAQS = [
     ("What should I do in the first minutes of a backup?", "Stop using water. Keep people and pets out of the water. Do not plunge or snake the drain, and leave the basement if water is near outlets, the panel, or the furnace. Then call (248) 825-8312."),
     (
-        "What is the George W. Kuhn district?",
-        "It is the regional drainage district, formerly Twelve Towns, upstream of the Red Run Drain. It serves all or part of 14 communities, including Royal Oak, Troy, Birmingham, Berkley, and Clawson. Wet-weather flow is typically more than 93 percent stormwater. It does not name the pipe in front of one house.",
+        "Is Oakland Sewer Pros part of a city or the county?",
+        "No. Oakland Sewer Pros is not affiliated with any city or with the Oakland County Water Resources Commissioner. City sewer numbers are separate from (248) 825-8312, and each city page lists its own.",
     ),
     ("Which Oakland County cities are covered?", "Royal Oak, Troy, Birmingham, Berkley, and Clawson. Berkley's sewer is a combined gravity pipe. Troy discharges through the Evergreen-Farmington, Oakland-Troy, and George W. Kuhn districts. Birmingham's system is gravity and the city owns no pump stations. Open the city where the house stands."),
     (
-        "Does this line send the 45-day notice to my city?",
+        "Will my call notify the city about the backup?",
         "The call is for cleanup. Written notice of a sewage disposal event is a letter you send to the responsible agency within 45 days of discovering the damage. Each of the five cities publishes its own contact. That letter is not your insurance claim.",
     ),
-    ("Do you have a public office in Oakland County?", "There is no public office and no street address to publish. Photos show wet basements. Questions about the website go through the contact page. The crew is the one that comes to the house."),
+    ("Do you have a public office in Oakland County?", "There is no public office and no street address to publish. Call (248) 825-8312; the crew is the one that comes to the house."),
 ]
 
 
@@ -172,8 +171,8 @@ PRIVACY_FAQS = [
     ),
     ("If I call, who receives my number?", "The local crew that answers your call. Once you are talking with them, they handle your number."),
     (
-        "Do these pages set advertising cookies?",
-        "These pages do not include a third-party analytics script and do not set advertising cookies. Your browser may still keep its own history. The host, Cloudflare, may process connection data such as an IP address while delivering the site.",
+        "Do the pages set advertising cookies?",
+        "The pages do not include a third-party analytics script and do not set advertising cookies. Your browser may still keep its own history. The host, Cloudflare, may process connection data such as an IP address while delivering the site.",
     ),
     (
         "Should I type a sewer claim into the form?",
@@ -184,7 +183,7 @@ PRIVACY_FAQS = [
 
 
 TERMS_FAQS = [
-    ("Where do the city phone numbers on these pages come from?", "From each city's own website: Royal Oak's Sewer Division pages, Troy's legal claims page, Birmingham's Risk Management page, Berkley's flood tips, and Clawson's sewer and dispatch pages. Numbers can change, so confirm them with the city."),
+    ("Where do the city phone numbers on the pages come from?", "From each city's own website: Royal Oak's Sewer Division pages, Troy's legal claims page, Birmingham's Risk Management page, Berkley's flood tips, and Clawson's sewer and dispatch pages. Numbers can change, so confirm them with the city."),
     (
         "Who checks the license and insurance?",
         "You do, before work starts. Ask the company for the license and insurance the job requires, and for a written scope. The price and the arrival come from that company.",

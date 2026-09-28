@@ -7,20 +7,16 @@ def royal_oak():
     return "\n".join([
         h2("Water extraction in Royal Oak houses"),
         p(
-            "Water damage restoration in Royal Oak begins with where the water entered. On the Woodward "
-            "corridor, in Northwood, in Vinsetta, and in the blocks between downtown Main Street and the "
-            "Detroit Zoo on West Ten Mile, the usual paths are a basement floor drain, a window well, a "
+            "Water damage restoration in Royal Oak begins with where the water entered. In most Royal Oak basements the usual paths are a basement floor drain, a window well, a "
             "failed sump, or a supply line at the laundry. Extraction is the removal of standing water "
             "and the soaked layers you can already see. It is not the whole restoration."
         ),
         p(
-            "A Royal Oak basement from before the 1960s often has a thin slab, a cove that was poured "
-            "against clay-tile or cast-iron plumbing, and storage pushed against the walls. Extraction "
+            "Many Royal Oak basements hold storage pushed against the walls. Extraction "
             "that stops at the open floor leaves the bottom of every box and the lower drywall wet. Ask "
-            "the local crew, before they start, how far up they will open walls. The crew "
-            "does the extraction. Call "
+            "the local crew, before they start, how far up they will open walls. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". A local crew handles the visit."
+            + " for the extraction."
         ),
         h2("Structural drying after the pump-out"),
         p(
@@ -48,12 +44,10 @@ def royal_oak():
         ),
         h3("Basement flooding causes that show up in Royal Oak"),
         ul([
-            "Older laterals under tree-lined streets near downtown, which root up and then surcharge into the basement in a storm.",
-            "Window wells below grade on Woodward-side lots when the well cover is gone and the soil is already saturated.",
+            "Roots in the private lateral, which the homeowner owns up to and including the connection.",
+            "Window wells without a cover when the soil is already saturated.",
             "Sump failure. See " + a("/royal-oak-sump-pump-repair", "sump pump repair in Royal Oak") + ".",
-            "Sections of the city built before storm and sanitary sewers were separated. "
-            + a("https://www.romi.gov/384/Sewer-Division", "Royal Oak's Sewer Division")
-            + " can speak to the public main. Ask them which pipe serves your street.",
+            "A surcharged city main in a hard storm. Royal Oak's Sewer Division, (248) 246-3300, can speak to the public main.",
         ]),
         h2("Insurance questions for your insurer"),
         p(
@@ -64,10 +58,7 @@ def royal_oak():
             "included. Ask your insurer what your form actually says. A contractor's guess is not a coverage decision."
         ),
         p(
-            "Parts of Royal Oak lie in the southern Oakland County drainage area associated with the "
-            "Oakland County Water Resources Commissioner and the George W. Kuhn district, formerly the "
-            "Twelve Towns Drain. That is background for how regional storm water is handled. It is not "
-            "a finding about your lateral. Confirm anything you intend to put in a complaint or a claim."
+            "Royal Oak is a member of the former Twelve Towns program, now the George W. Kuhn Retention Treatment Basin. That is background for how regional storm water is handled, not a finding about your lateral."
         ),
         callout(
             "What to tell the crew on a Royal Oak water-damage call",
@@ -127,18 +118,15 @@ def troy():
         h3("Basement flooding causes in Troy"),
         ul([
             "Sump pumps that lose power in a storm. DTE serves these neighborhoods. The outage and the flood are linked, and the pump may still need service after the lights return.",
-            "Older clay or cast-iron laterals in 1960s and 1970s houses, especially where mature trees line the subdivision streets.",
-            "Storm drainage along Big Beaver that the city's Streets and Drains Division maintains. Street water and a basement backup are not automatically the same pipe.",
-            "High water around lower lots. People describe a high water table near parts of the Big Beaver corridor. Treat that as a local pattern to ask about, not as a survey of your parcel.",
+            "Roots or a cracked joint in the private lateral under the yard.",
+            "The city handles street storm drains. Street water and a basement backup are not automatically the same pipe.",
+            "Window wells and lower-level doors that let in surface water during a long rain.",
         ]),
         h2("Insurance, without a coverage promise"),
         p(
             "A Troy water loss can be reduced when the policy excludes sewer backup, excludes "
             "groundwater, or requires the water to be sudden. Ask your insurer what your form says. The "
-            "crew can document moisture if you ask them to. Parts of Troy are "
-            "in the regional drainage area of the George W. Kuhn facility and the Oakland County Water "
-            "Resources Commissioner. Cite that only after you confirm it applies to your question, and "
-            "not as the cause of a private lateral failure."
+            "crew can document moisture if you ask them to. Troy discharges through three districts, and George W. Kuhn is one of them. Ask the Water Division, 248-524-3370, which one serves the house. A regional district does not explain a private lateral failure."
         ),
         callout(
             "Troy call details that change the scope",
@@ -161,8 +149,7 @@ def troy():
         ),
         p(
             "Ask the local crew to separate extraction, drying, and any rebuild in writing. "
-            "The crew schedules the rebuild and chooses materials. Somerset and Northfield Hills "
-            "are place names so you can describe the house. Ask for that written scope before work starts. If the "
+            "The crew schedules the rebuild and chooses materials. Ask for that written scope before work starts. If the "
             "drains never backed up and the water came from a window well or a supply line, say so. "
             "Calling it a sewer backup when it was a burst hose changes both the cleanup and the "
             "conversation with your insurer. Start at "
@@ -186,7 +173,7 @@ def birmingham():
         ),
         p(
             "The number is " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". A local crew handles the visit for the house. "
+            + ". "
             "Ask them for license, insurance, and a written scope before they start."
         ),
         h2("Structural drying of plaster and masonry"),
@@ -210,25 +197,22 @@ def birmingham():
             "Sewage in a guest room or a lower-level office is heavily contaminated. Upholstery, rugs, and "
             "the back of built-in shelving that wicked it up are not a cleaning problem. "
             + a("/birmingham-basement-sanitization", "Sanitization")
-            + " after removal is part of the same hire, not a separate maid appointment. Low ground near "
-            "Quarton can also push clear water in through the foundation. If you did not see a drain "
+            + " after removal is part of the same hire, not a separate maid appointment. A long rain can also push clear water in through the foundation. If you did not see a drain "
             "overflow and there is no sewage odor, say that. Mislabeling a seepage flood as sewage, or "
             "the reverse, sends the job down the wrong path."
         ),
         h3("Basement flooding causes in Birmingham"),
         ul([
-            "Clay and cast-iron laterals under mature trees in the older sections.",
+            "Roots or a cracked joint in the private lateral.",
             "Window wells and stairwells on houses that sit slightly below the sidewalk grade.",
-            "Yard drainage toward Quarton-area low spots during a multi-day rain.",
+            "Downspouts that discharge at the foundation instead of about 6 feet out, as the city FAQ advises.",
             "Failed sumps during outages. The electric utility is DTE. Restoring power does not repair a burned pump.",
         ]),
         h2("What to ask about your insurance"),
         p(
             "Coverage for Birmingham water damage is a question for your insurer. Many policies handle a sudden "
             "plumbing discharge differently from sewer backup and from groundwater seepage. "
-            "Ask the crew whether their documentation is itemized. Your claim stays with you and your carrier. Portions of Birmingham are discussed in connection with "
-            "southern Oakland County drainage and the George W. Kuhn district. Verify that with the "
-            "Oakland County Water Resources Commissioner before you treat it as true for your street."
+            "Ask the crew whether their documentation is itemized. Your claim stays with you and your carrier."
         ),
         callout(
             "Birmingham details to have ready",
@@ -272,9 +256,8 @@ def berkley():
             "house you live in, not only to the cellar."
         ),
         p(
-            "Use " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " and a local crew handles the visit. "
-            "If nobody is free, the line cannot invent a crew."
+            "Call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
+            + " and say the stair is short and the first floor is original wood."
         ),
         h2("Structural drying in a low basement"),
         p(
@@ -300,15 +283,14 @@ def berkley():
             "any return-air opening connect the rooms. Porous material comes out. Then someone sanitizes "
             "what remains. That sequence is "
             + a("/berkley-basement-sanitization", "basement sanitization after the backup")
-            + ". Older sections of Berkley have been described as combined storm and sanitary sewers, "
-            "which can put sewage in the basement during rain. The city can confirm your street. Until "
+            + ". Berkley's sewer is one combined pipe for stormwater and sewage, which can put sewage in the basement during rain. Until "
             "you know, do not treat a storm flood that smells like a drain as clean rainwater."
         ),
         h3("Basement flooding causes in Berkley"),
         ul([
             "Window wells and side-door stairwells on a flat lot with nowhere for rain to sheet away.",
             "Sump overload or a dead pump when the power drops.",
-            "Clay laterals from the original build, rooted at the joints.",
+            "Roots or a cracked joint in the private lateral.",
             "Downspouts that discharge at the foundation because the side yard is only a few feet wide.",
         ]),
         h2("Insurance on a Berkley policy"),
@@ -394,9 +376,9 @@ def clawson():
         h3("Basement flooding causes in Clawson"),
         ul([
             "Downspouts discharging against the foundation on a lot with almost no side yard.",
-            "Original clay or cast-iron laterals narrowed by roots and corrosion.",
+            "Roots or a cracked joint in the private lateral.",
             "Sump or power failure during a storm, with the pit in the same room as the furnace.",
-            "Load on older sanitary lines in heavy regional rain. The city can discuss the main. The George W. Kuhn district is the regional drainage context for Clawson; confirm details with Oakland County before you rely on them.",
+            "Load on older sanitary lines in heavy regional rain. The city can discuss the main. Clawson's sewer page lists the George W. Kuhn basin for the regional system.",
         ]),
         h2("Coverage questions for your insurer"),
         p(
@@ -477,7 +459,7 @@ FAQS = {
         ("What should a Clawson water damage company know about the lot?", "That driveways are short and the basement may be a single room containing the furnace. Access changes how they stage the job."),
         ("Does restoration include the sewer repair?", "No. Removing and drying water does not dig up a lateral or repair a city main. Those are separate."),
         ("Who quotes water damage repair in a Clawson bungalow?", "The cleanup company, in writing, before you agree. Tell them the basement is one room and the driveway is short."),
-        ("Who is the Clawson city contact if the water came from a drain?", "The sewer line is (248) 435-4500, Monday through Thursday, 7:00 a.m. to 3:30 p.m. Fridays the department is closed. After hours, dispatch is 248-524-3477, extension 1. The city page lists the George W. Kuhn basin. Drying the room does not identify the lateral. A camera does. The 45-day written notice is separate from the drying invoice."),
+        ("Who is the Clawson city contact if the water came from a drain?", "The city line on the sewer page is (248) 435-4500; public works is open Monday through Thursday, 7:00 a.m. to 3:30 p.m. Fridays the department is closed. After hours, dispatch is 248-524-3477, extension 1. The city page lists the George W. Kuhn basin. Drying the room does not identify the lateral. A camera does. The 45-day written notice is separate from the drying invoice."),
         ("Will insurance pay the drying bill on a Clawson bungalow?", "Not automatically. Sewer backup is often an added endorsement. Ask your insurer, and photograph damaged items before they leave the one-room basement. The 45-day letter to the city is a separate track. The crew sets the drying price."),
     ],
 }
@@ -502,6 +484,6 @@ DESCRIPTIONS = {
     "royal-oak": "Water damage restoration in Royal Oak, MI. A local crew handles the work. Call {PHONE_DISPLAY}.",
     "troy": "Water damage restoration in Troy, MI for basement floods and backups. Local crews. Call {PHONE_DISPLAY}.",
     "birmingham": "Water damage restoration in Birmingham, MI for older plaster houses. Call {PHONE_DISPLAY}.",
-    "berkley": "Water damage restoration in Berkley, MI bungalows. Connect with local crews. Call {PHONE_DISPLAY}.",
+    "berkley": "Water damage restoration in Berkley, MI bungalows. A local crew does the work. Call {PHONE_DISPLAY}.",
     "clawson": "Water damage restoration in Clawson, MI for a one-room bungalow. Call {PHONE_DISPLAY}.",
 }

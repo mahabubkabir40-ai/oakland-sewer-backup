@@ -3,6 +3,7 @@
 Run this, or run build.py, after changing the phone number in site_config.py.
 """
 
+import re
 import subprocess
 from pathlib import Path
 
@@ -131,47 +132,283 @@ def git_lastmod(path):
 
 # Extra clauses used only to land unique descriptions in the 140–155 character window.
 _META_TAILS = [
+    " Keep people and pets out of the water.",
+    " Get the scope and price in writing.",
     " Ask the crew for license and insurance.",
-    " Ask the cleanup company for license and insurance.",
-    " Verify license and insurance before hiring.",
-    " You check license and insurance yourself.",
-    " The crew sets the price.",
-    " A local crew does the cleanup.",
-    " No arrival time is promised.",
-    " The crew quotes the price.",
-    " Call to reach a local crew.",
-    " The form is not stored.",
-    " A local crew does the work.",
-    " The crew handles the restoration work.",
-    " The crew sets the scope and the price.",
-    " Scope and price come from the crew.",
-    " No office address is listed.",
+    " Say where the water came from.",
+    " Photograph the water before cleanup.",
+    " Stop using water and call.",
+    " A local crew handles the cleanup.",
 ]
+
+_BANNED_META_SENTENCES = {
+    "the form is not stored",
+    "a number",
+}
+
+
+def _meta_sentences(text):
+    # Keep initials such as "George W. Kuhn"; still split after "MI." and "URL."
+    chunks = re.split(r"(?<!\b[A-Z])\.\s+", text.strip())
+    return [chunk.strip().rstrip(".") for chunk in chunks if chunk.strip()]
+
+
+def _tail_body(tail):
+    return tail.strip().rstrip(".").lower()
+
+
+def _tail_already_in(tail, base):
+    return _tail_body(tail) in base.lower()
+
+
+def _pair_ok(first, second):
+    first_l = first.lower()
+    second_l = second.lower()
+    if "crew" in first_l and "crew" in second_l:
+        return False
+    if "price" in first_l and "price" in second_l:
+        return False
+    return True
+
+
+def _has_dup_sentences(text):
+    parts = [part.lower() for part in _meta_sentences(text)]
+    return len(parts) != len(set(parts))
+
+
+def _clean_meta_base(text):
+    kept = []
+    for sentence in _meta_sentences(text):
+        lowered = sentence.lower()
+        if lowered in _BANNED_META_SENTENCES:
+            continue
+        if lowered.startswith("we refer") or lowered.startswith("connect with"):
+            continue
+        if lowered in [item.lower() for item in kept]:
+            continue
+        kept.append(sentence)
+    if not kept:
+        return text
+    return ". ".join(kept) + "."
+
+
+# Clause text is taken from _META_TAILS. A second clause is used only when one
+# clause cannot land the description in the 140–155 window.
+_META_CLAUSES = [
+    ("keep people and pets out of the water", ""),
+    ("get the scope and price in writing", "price"),
+    ("ask the crew for license and insurance", "crew"),
+    ("say where the water came from", ""),
+    ("photograph the water before cleanup", ""),
+    ("stop using water", ""),
+]
+
+USED_METAS = set()
+
+
+def _clause_ok(clause, tag, base):
+    lowered = base.lower()
+    if clause in lowered:
+        return False
+    if tag and tag in lowered:
+        return False
+    return True
+
+
+def _michigan(sentence):
+    return sentence.replace(", MI", ", Michigan").replace(" MI", " Michigan")
+
+
+def _valid_pair(item, source_had_phone):
+    parts = _meta_sentences(item)
+    lowered = item.lower()
+    if not (140 <= len(item) <= 155 and len(parts) == 2):
+        return False
+    if _has_dup_sentences(item):
+        return False
+    if "we refer" in lowered or "connect with" in lowered or "the form is not stored" in lowered:
+        return False
+    if source_had_phone and "825-8312" not in item:
+        return False
+    if item in USED_METAS:
+        return False
+    return True
+
+
+def _call_sentences(base, doubles):
+    singles = []
+    paired = []
+    usable = [(clause, tag) for clause, tag in _META_CLAUSES if _clause_ok(clause, tag, base)]
+    for clause, _tag in usable:
+        singles.append(f"Call (248) 825-8312 and {clause}.")
+    if doubles:
+        for index, (first, first_tag) in enumerate(usable):
+            for second, second_tag in usable[index + 1 :]:
+                if first_tag and second_tag and first_tag == second_tag:
+                    continue
+                paired.append(f"Call (248) 825-8312, {first}, and {second}.")
+    return singles, paired
+
+
+def _topic_variants(parts):
+    topic = parts[0]
+    variants = [topic]
+    expanded = _michigan(topic)
+    if expanded != topic:
+        variants.append(expanded)
+    clarifiers = []
+    for part in parts[1:]:
+        lowered = part.lower()
+        if "825-8312" in part:
+            continue
+        if lowered.startswith("not "):
+            clarifiers.append("not " + part[4:])
+        elif "means michigan" in lowered:
+            clarifiers.append(part)
+    widened = []
+    for base in variants:
+        for clarifier in clarifiers:
+            if clarifier[:1].isupper():
+                widened.append(f"{base}, and {clarifier}")
+            else:
+                widened.append(f"{base}, {clarifier}")
+    return variants + widened
+
+
+def _extend_phone_sentence(phone_sentence):
+    base = _michigan(phone_sentence).rstrip(".")
+    extended = []
+    for clause, tag in _META_CLAUSES:
+        if _clause_ok(clause, tag, base):
+            extended.append(f"{base} and {clause}.")
+    usable = [(clause, tag) for clause, tag in _META_CLAUSES if _clause_ok(clause, tag, base)]
+    for index, (first, first_tag) in enumerate(usable):
+        for second, second_tag in usable[index + 1 :]:
+            if first_tag and second_tag and first_tag == second_tag:
+                continue
+            extended.append(f"{base}, {first}, and {second}.")
+    return extended
+
+
+def _content_extras(parts):
+    clause_text = {clause for clause, _tag in _META_CLAUSES}
+    extras = []
+    for part in parts[1:]:
+        lowered = part.lower()
+        if "825-8312" in part or lowered.startswith("not ") or "means michigan" in lowered:
+            continue
+        if lowered in clause_text or any(lowered.startswith(clause) for clause in clause_text):
+            continue
+        if len(part.split()) < 4:
+            continue
+        first = part.split()[0].strip(",")
+        if first in {"Royal", "Troy", "Birmingham", "Berkley", "Clawson", "Oakland", "Michigan", "George"}:
+            piece = part
+        else:
+            piece = part[0].lower() + part[1:]
+        extras.append(piece)
+    return extras
+
+
+def _openings(parts):
+    bases = _topic_variants(parts)
+    openings = list(bases)
+    for base in bases:
+        if ", not " in base or "means Michigan" in base:
+            continue
+        for extra in _content_extras(parts):
+            openings.append(f"{base}, and {extra}")
+    return openings
+
+
+def _pair_score(item, source):
+    parts = _meta_sentences(item)
+    second = parts[1].lower() if len(parts) > 1 else ""
+    source_l = source.lower()
+    item_l = item.lower()
+    dropped = 0
+    for marker in ("not alabama", "extraction page", "means michigan", "form was not saved", "find a city", "keep people and pets out of the water"):
+        if marker in source_l and marker not in item_l:
+            dropped += 1
+    stacked = 1 if "keep people and pets out of the water" in item_l and "stop using water" in item_l else 0
+    return (dropped, stacked, second.count(","), len(item))
 
 
 def fit_meta(text):
-    text = fill(text).strip()
-    if 140 <= len(text) <= 155:
-        return text
-    base = text[:-1] if text.endswith(".") else text
+    source = _clean_meta_base(fill(text).strip())
+    source_had_phone = "825-8312" in source
+    parts = _meta_sentences(source)
+    if _valid_pair(source, source_had_phone):
+        USED_METAS.add(source)
+        return source
+    if (
+        not source_had_phone
+        and 140 <= len(source) <= 155
+        and len(parts) == 1
+        and "we refer" not in source.lower()
+        and "connect with" not in source.lower()
+    ):
+        USED_METAS.add(source)
+        return source
+    if not parts:
+        return source
     candidates = []
-    for tail in _META_TAILS:
-        candidates.append(base + "." + tail)
-    for first in _META_TAILS:
-        for second in _META_TAILS:
-            if first == second:
+    if len(parts) == 1 and source_had_phone:
+        opening = " ".join(_michigan(parts[0]).split()).rstrip(".")
+        for tail in _META_TAILS:
+            if not _pair_ok(opening, tail) or _tail_already_in(tail, opening):
                 continue
-            candidates.append(base + "." + first + second)
-    hits = [item for item in candidates if 140 <= len(item) <= 155]
-    if not hits:
-        return text
-    # Prefer the shortest addition that fits so the original sentence stays intact.
-    hits.sort(key=len)
-    return hits[0]
+            item = f"{opening}.{tail}"
+            if _valid_pair(item, source_had_phone):
+                candidates.append(item)
+    phone_parts = [part for part in parts[1:] if "825-8312" in part]
+    if phone_parts and len(phone_parts[0].split()) > 5:
+        for opening in _openings(parts):
+            opening = " ".join(opening.split())
+            for second in _extend_phone_sentence(phone_parts[0]):
+                if second.count(",") > 0:
+                    continue
+                item = f"{opening}. {second}"
+                if _valid_pair(item, source_had_phone):
+                    candidates.append(item)
+    for opening in _openings(parts):
+        opening = " ".join(opening.split())
+        if "825-8312" in opening:
+            continue
+        singles, _paired = _call_sentences(opening, doubles=False)
+        for second in singles:
+            item = f"{opening}. {second}"
+            if _valid_pair(item, source_had_phone):
+                candidates.append(item)
+    if not candidates and phone_parts and len(phone_parts[0].split()) > 5:
+        for opening in _topic_variants(parts):
+            opening = " ".join(opening.split())
+            for second in _extend_phone_sentence(phone_parts[0]):
+                if second.count(",") == 0:
+                    continue
+                item = f"{opening}. {second}"
+                if _valid_pair(item, source_had_phone):
+                    candidates.append(item)
+    if not candidates:
+        for opening in _topic_variants(parts):
+            opening = " ".join(opening.split())
+            if "825-8312" in opening:
+                continue
+            _singles, paired = _call_sentences(opening, doubles=True)
+            for second in paired:
+                item = f"{opening}. {second}"
+                if _valid_pair(item, source_had_phone):
+                    candidates.append(item)
+    if not candidates:
+        return source
+    candidates.sort(key=lambda item: _pair_score(item, source))
+    chosen = candidates[0]
+    USED_METAS.add(chosen)
+    return chosen
 
 
 def remember(path, title, description, body, crumbs, faqs=None, service=None, robots="index, follow", priority="0.8", index=True, article=None, extra_css=""):
-    description = fit_meta(description) if "{PHONE_DISPLAY}" in description or len(description) < 140 or len(description) > 155 else description
+    description = fit_meta(description)
     length = len(description)
     if length < 140 or length > 155 or "...." in description:
         META_ERRORS.append((path or "/", length, description))
@@ -423,6 +660,7 @@ def home_body():
 def main():
     META_ERRORS.clear()
     SITEMAP.clear()
+    USED_METAS.clear()
 
     home_html, home_faqs = home_body()
     remember(
@@ -508,7 +746,7 @@ def main():
         ("sewer-backup-cleanup", "Sewage Cleanup & Sewer Backup in Oakland County", "Sewage cleanup and sewer backup in Oakland County, MI, including a backup drain. Call {PHONE_DISPLAY}.", "Sewage cleanup and sewer backup in Oakland County, MI", "Sewage is in the basement and it needs to come out. A local cleanup crew handles the visit, and they'll tell you when they can be there. Open your city's page for the local steps.", sewer_hub(), "0.8"),
         ("sewage-extraction", "Sewage Extraction Oakland County MI | Oakland Sewer Pros", "Sewage extraction help in Oakland County, MI. A local crew handles the work. Call {PHONE_DISPLAY}.", "Sewage extraction in Oakland County, MI", "Contaminated water is in the basement and it has to be pumped out. A local cleanup crew handles the visit, and they'll tell you when they can be there.", sewage_hub(), "0.8"),
         ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup and flooded basement water removal in Oakland County, MI. Call {PHONE_DISPLAY}.", "Basement flood cleanup in Oakland County, MI", "Standing water from a storm or a sump is in the basement. A local cleanup crew handles the visit, and they'll tell you when they can be there. If a drain backed up, tell them it is sewage.", flood_hub(), "0.8"),
-        ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, Michigan. Birmingham means Michigan, not Alabama. Call {PHONE_DISPLAY}.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump has left the basement wet. A local crew handles the visit, and they'll tell you when they can be there. Birmingham on these pages is in Michigan.", sump_hub(), "0.8"),
+        ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, Michigan. Birmingham means Michigan, not Alabama. Call {PHONE_DISPLAY}.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump has left the basement wet. A local crew handles the visit, and they'll tell you when they can be there. Birmingham here means Birmingham, Michigan.", sump_hub(), "0.8"),
         ("basement-sanitization", "Basement Sanitization Oakland County | Oakland Sewer Pros", "Basement sanitizing after sewage or a flood in Oakland County, MI. Local crews. Call {PHONE_DISPLAY}.", "Basement sanitization after sewage or flooding", "The water is out and the basement still needs cleaning after sewage or a flood. A local cleanup crew handles the visit, and they'll tell you when they can be there. Extraction comes first if the water is still there.", sanit_hub(), "0.8"),
     ]
     for path, title, description, h1, lead, article, priority in hub_pages:
@@ -544,7 +782,7 @@ def main():
         "about",
         "About Oakland Sewer Pros | Oakland County Sewage Cleanup",
         fill("Oakland Sewer Pros helps Oakland County, MI homeowners reach a local cleanup crew. Call {PHONE_DISPLAY}."),
-        prose_body("About Oakland Sewer Pros", f"<p>Honest description of what {esc(BRAND)} is, and what it is not.</p>", about_article(), faqs=ABOUT_FAQS, images=images_for("about")),
+        prose_body("About Oakland Sewer Pros", f"<p>Who handles the cleanup when you call {esc(PHONE_DISPLAY)}, and what to check first.</p>", about_article(), faqs=ABOUT_FAQS, images=images_for("about")),
         [("Home", "/"), ("About", None)],
         faqs=ABOUT_FAQS,
         priority="0.5",
@@ -552,7 +790,7 @@ def main():
     remember(
         "contact",
         "Contact Oakland Sewer Pros | Oakland County MI",
-        fill("Call Oakland Sewer Pros at {PHONE_DISPLAY} for sewer or water damage help in Oakland County, MI. The form is not stored."),
+        fill("Call Oakland Sewer Pros at {PHONE_DISPLAY} for sewer or water damage help in Oakland County, MI."),
         prose_body(
             "Contact Oakland Sewer Pros",
             f"<p>Phone is the real contact. The form does not save what you type.</p>",

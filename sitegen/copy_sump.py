@@ -69,11 +69,9 @@ def troy():
             "a spring thaw or a summer storm, the water does not stay in a utility nook. It is in the room."
         ),
         p(
-            "Lower lots along the Big Beaver corridor are where homeowners talk about pumps that run "
-            "constantly and then fail. Treat 'high water table' as a pattern to mention to the crew, "
-            "not as a measured fact about your lot. A battery backup or a new pump comes from the crew. Call "
+            "If the pump runs constantly before it fails, tell the crew; that pattern changes the repair. A battery backup or a new pump comes from the crew. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " for a call. If the carpet is already wet, add "
+            + ". If the carpet is already wet, add "
             + a("/troy-flooded-basement", "Troy basement water removal")
             + " to the request."
         ),
@@ -92,11 +90,10 @@ def troy():
             + " describes the drying side. If sewage entered the pit, stop calling it a clean overflow and "
             "read " + a("/troy-sewage-extraction", "sewage extraction")
             + " and " + a("/troy-basement-sanitization", "sanitizing")
-            + ". Troy storm drains in the street are the Streets and Drains Division, not the pump in your floor."
+            + ". The city handles street storm drains, not the pump in your floor."
         ),
         p(
-            "The price is the crew's written estimate. Any dollar range that used to appear here is gone. "
-            "Get that estimate before they replace a pump."
+            "The price is the crew's written estimate. Get it before they replace a pump."
         ),
         callout(
             "Troy: keep the finished room in mind",
@@ -122,9 +119,9 @@ def birmingham():
             "The water left behind is a separate restoration problem."
         ),
         p(
-            "The brand and the technician come from the crew, not from a desk near Shain Park. Call "
+            "Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " to reach a local crew. That company does the repair."
+            + " to reach a local crew for the repair."
         ),
         h3("What fails in these installations"),
         ul([
@@ -145,7 +142,7 @@ def birmingham():
             + ". Ask the crew which of those they actually do. Many pump companies do not dry plaster."
         ),
         p(
-            "Low ground near Quarton can keep a healthy pump running for hours. That is a load problem, "
+            "A long rain can keep a healthy pump running for hours. That is a load problem, "
             "not automatically a failed motor. A technician should measure or at least observe a cycle, "
             "not only swap the unit. You should see a written reason for a replacement. The price comes from that company."
         ),
@@ -196,8 +193,7 @@ def berkley():
             + " because the first floor is right there. Sanitizing a pit that took sewage is "
             + a("/berkley-basement-sanitization", "a different page")
             + ". Berkley's sewer is combined, so a storm can also push the "
-            "floor drain. The pump did not cause that, and repairing the pump will not stop it. Confirm "
-            "the street with the city."
+            "floor drain. The pump did not cause that, and repairing the pump will not stop it."
         ),
         callout(
             "From the Berkley stair, before anyone arrives",
@@ -239,9 +235,8 @@ def clawson():
         ]),
         h2("A replacement price comes from the company"),
         p(
-            "Any dollar table that used to sit on Clawson sump pages has been removed. The crew quotes "
-            "the pump, the valve, and the labor after seeing the pit. Ask whether water removal is included. "
-            "Many are not the same invoice as "
+            "The crew quotes "
+            "the pump, the valve, and the labor after seeing the pit. Ask whether water removal is included; it is often a separate invoice from "
             + a("/clawson-water-damage-restoration", "water damage restoration")
             + ". A dirty crock after a backup is "
             + a("/clawson-basement-sanitization", "sanitizing")
@@ -282,7 +277,7 @@ FAQS = {
     "troy": [
         ("Why do Troy finished basements make pump failures expensive to ignore?", "Carpet and drywall start at the pit. Minutes of overflow become a water-damage scope, which is separate from the pump repair."),
 
-        ("Who maintains Troy's street drains?", "The city's Streets and Drains Division handles public storm drainage. Your sump is private. Wastewater leaves Troy through three districts, Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. That map does not tell you why the pit failed."),
+        ("Who maintains Troy's street drains?", "The city handles street storm drains. Your sump is private. Wastewater leaves Troy through three districts, Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. That map does not tell you why the pit failed."),
         ("Should I call Troy's Water Division about a dead sump pump?", "The Water Division at 248-524-3370, or Troy Police at 248-524-3477 after hours, is the city's sewer backup desk. A sump in the basement is a house repair. Call (248) 825-8312 for the pump."),
         ("Can a battery backup be part of a Troy pump visit?", "Ask the crew. They quote a second power source after they see the pit. If carpet is already wet, drying is a separate job."),
         ("If a Troy floor drain gurgled while the pump failed, where does the letter go?", "The pit and the sanitary drain are different pipes. If sewage came up the drain and you believe the public system was involved, Troy directs written claims to the City Attorney's Office within 45 days of discovery. Include your name, address, and phone, the property address, the discovery date, and a brief description. A sewer-backup endorsement is a separate question for your insurer."),
@@ -290,7 +285,7 @@ FAQS = {
     "birmingham": [
         ("Is sump pump repair in Birmingham a plumbing visit or a restoration visit?", "The pump is a mechanical repair. Wet plaster is restoration. You may need both. Ask each company what they actually cover."),
         ("Should I replace a Birmingham pump that runs constantly near Quarton?", "Not from a guess. Constant running can be groundwater load, a stuck switch, or a bad valve. Someone has to watch a cycle before they sell you a pump."),
-        ("Will a repaired Birmingham pump hold back the next storm by itself?", "A repair fixes the machine someone finds on site. It does not change the city's gravity sewers, which have no municipal lift stations. Low ground near Quarton can keep a healthy pump running for hours. Ask for a written reason before anyone replaces the unit."),
+        ("Will a repaired Birmingham pump hold back the next storm by itself?", "A repair fixes the machine someone finds on site. It does not change the city's gravity sewers, which have no municipal lift stations. A long rain can keep a healthy pump running for hours. Ask for a written reason before anyone replaces the unit."),
         ("Is a backflow preventer the same as sump pump repair in Birmingham?", "No. The city lists a backflow preventer, downspouts extended about 6 feet, and grading away from the foundation as prevention at the house. The sump in the basement is a different device. Call (248) 825-8312 for the pump."),
         ("If a Birmingham drain backed up while the sump failed, which form is the claim?", "The house sump and the sewer lateral are different devices. If sewage came up a drain, use the city's sewer backup claim form, not the water-event tracking form. Claims questions are 248.530.1808. Written notice is due within 45 days of discovery. Birmingham's sewers are gravity, and the city owns no pump or lift stations."),
     ],
@@ -327,9 +322,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Sump pump repair in Royal Oak, Michigan. We refer local crews and do not quote prices. Call {PHONE_DISPLAY}.",
+    "royal-oak": "Sump pump repair in Royal Oak, Michigan. A local crew quotes the job. Call {PHONE_DISPLAY}.",
     "troy": "Sump pump repair in Troy, Michigan for overflowing pits and dead pumps. Local crews. Call {PHONE_DISPLAY}.",
     "birmingham": "Sump pump repair in Birmingham, Michigan, Oakland County. Not Alabama. Local crews. Call {PHONE_DISPLAY}.",
-    "berkley": "Sump pump repair in Berkley, Michigan bungalows. Connect with a local crew. Call {PHONE_DISPLAY}.",
+    "berkley": "Sump pump repair in Berkley, Michigan bungalows. Call for a local crew. Call {PHONE_DISPLAY}.",
     "clawson": "Sump pump repair in Clawson, Michigan. Local crews, no price list here. Call {PHONE_DISPLAY}.",
 }

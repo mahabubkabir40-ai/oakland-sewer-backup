@@ -112,12 +112,11 @@ OWNER = {
     "berkley": (
         "If the bungalow floor drain already overflowed, pumping the water out is "
         f"{a('/berkley-sewage-extraction', 'sewage extraction in Berkley')}. A local crew handles the pump-out. "
-        "Keep people off the short stair until that water is gone."
+        "Keep people off the short stair until that water is gone. Tell the crew whether the laundry tub or the floor drain overflowed first."
     ),
     "clawson": (
         "The pump-out, once sewage is on the floor of a brick bungalow, is "
-        f"{a('/clawson-sewage-extraction', 'sewage extraction in Clawson')}. Hoses and access are part of "
-        "that visit. A local crew handles that visit."
+        f"{a('/clawson-sewage-extraction', 'sewage extraction in Clawson')}. A local crew handles that visit, including where the hoses go."
     ),
 }
 
@@ -193,7 +192,7 @@ CLAIM_LINE = {
         "is worth printing before spring storms."
     ),
     "clawson": (
-        "Clawson's DPW handles sewer calls at (248) 435-4500. Ask the city in writing who should receive a claim notice. "
+        "The city line on Clawson's sewer page is (248) 435-4500. Ask the city in writing who should receive a claim notice. "
         f"The 45-day written notice rule is explained in the {_GUIDE}, and the {_CHECK} lists what to do during a storm."
     ),
 }
@@ -296,7 +295,7 @@ FAQS = {
         ),
         (
             "Are Royal Oak sewers combined?",
-            "Many older sections were built before separated storm and sanitary sewers were standard. Where pipes are combined or simply old, a heavy summer storm can push sewage toward a basement floor drain. Royal Oak is a member of the former Twelve Towns program, now the George W. Kuhn Retention Treatment Basin, which was expanded in 2006. The Sewer Division can confirm the pipe on your street.",
+            "Royal Oak's Sewer Division maintains about 300 miles of sanitary and storm sewers. Where pipes are combined or simply old, a heavy summer storm can push sewage toward a basement floor drain. Royal Oak is a member of the former Twelve Towns program, now the George W. Kuhn Retention Treatment Basin, which was expanded in 2006. The Sewer Division can confirm the pipe on your street.",
         ),
         (
             "Who owns the sewer pipe under my Royal Oak yard?",
@@ -341,7 +340,7 @@ FAQS = {
         ),
         (
             "Who owns the pipe under a Birmingham yard?",
-            "The public system is the city's to explain. The private lateral under the yard is a homeowner pipe unless the city tells you otherwise for that address. A camera inspection confirms a lateral. Early- and mid-1900s houses often still have clay or cast iron, and roots at the joints are a common reason for a backup.",
+            "The public system is the city's to explain. The private lateral under the yard is a homeowner pipe unless the city tells you otherwise for that address. A camera inspection confirms a lateral. Roots at a joint are a common reason for a backup.",
         ),
     ],
     "berkley": [
@@ -407,9 +406,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Sewage cleanup in Royal Oak, MI, and sewer backup cleanup for the same houses. Local crews. Call {PHONE_DISPLAY}.",
+    "royal-oak": "Sewage cleanup in Royal Oak, MI, and sewer backup cleanup for the same houses. Call {PHONE_DISPLAY} and keep people and pets out of the water.",
     "troy": "Sewage cleanup in Troy, MI for lower levels and split-levels, plus sewer backup cleanup. Call {PHONE_DISPLAY}.",
     "birmingham": "Sewage cleanup in Birmingham, MI for older homes, and sewer backup cleanup. Local crews. Call {PHONE_DISPLAY}.",
-    "berkley": "Sewage cleanup in Berkley, MI bungalows, and sewer backup cleanup for the same houses. Call {PHONE_DISPLAY} for a crew.",
+    "berkley": "Sewage cleanup in Berkley, MI bungalows, and sewer backup cleanup for the same houses. Call {PHONE_DISPLAY}. Keep people and pets out of the water.",
     "clawson": "Sewage cleanup in Clawson, MI and sewer backup cleanup for brick bungalows. Local crews. Call {PHONE_DISPLAY}.",
 }

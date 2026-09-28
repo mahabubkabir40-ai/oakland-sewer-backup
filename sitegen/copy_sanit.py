@@ -9,17 +9,16 @@ def royal_oak():
         p(
             "Basement sanitization in Royal Oak is the step after the water is gone, and only when that "
             "water was sewage or sat long enough to foul. It is not a recurring cleaning service for a "
-            "dry storage room. Houses near Woodward, in Northwood, in Vinsetta, and on the blocks toward "
-            "the Detroit Zoo get sewer backups through floor drains. Once the standing sewage is extracted, "
+            "dry storage room. In Royal Oak the usual path is a basement floor drain. Once the standing sewage is extracted, "
             "the film on the slab, the cove joint, and the bottom of the studs is still there. Wiping it "
             "with a kitchen sponge spreads it."
         ),
         p(
             "The company that did "
             + a("/royal-oak-sewage-extraction", "sewage extraction")
-            + " should be the one that sanitizes, because they already know what got wet. The product and the technician come from that company. "
+            + " should be the one that sanitizes, because they already know what got wet. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". A local crew handles the visit. Ask what product they "
+            + " for a local crew. Ask what product they "
             "will use and whether the label allows it on sewage residue. You should not have to take "
             "their word that a bottle is appropriate."
         ),
@@ -73,9 +72,9 @@ def troy():
         ),
         p(
             "Ask the crew what training and insurance they "
-            "carry for sewage cleanup. The phone "
+            "carry for sewage cleanup. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". A local crew handles the cleaning. If the event was a clean sump overflow with no drain backup, "
+            + " and a local crew handles the cleaning. If the event was a clean sump overflow with no drain backup, "
             "say that. The scope is smaller than a sewage loss and may be handled under "
             + a("/troy-flooded-basement", "flooded basement cleanup")
             + " and " + a("/troy-water-damage-restoration", "water damage restoration") + "."
@@ -173,15 +172,14 @@ def berkley():
             "a wide commercial basement. It is also why sewage residue should be removed, not perfumed."
         ),
         p(
-            "Older Berkley sections have been described as combined sewers. A storm can put wastewater "
-            "on the floor even in a house that did not have a plumbing break. Confirm that with the city "
-            "for your block. If it happened, treat the water as sewage. Sewage cleanup in Berkley, MI is "
+            "Berkley's sewer is a single combined pipe for stormwater and sewage, so a storm can put wastewater "
+            "on the floor even in a house that did not have a plumbing break. Treat that water as sewage. Start with "
             + a("/berkley-sewer-cleanup", "sewer backup cleanup in Berkley")
             + ". Pumping the water out is "
             + a("/berkley-sewage-extraction", "sewage extraction in Berkley")
             + ". Sanitizing starts after that water is out. The crew does the cleaning. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + " for a call to a local crew."
+            + " for a local crew."
         ),
         h3("The stair and the first floor"),
         ul([
@@ -288,17 +286,17 @@ FAQS = {
         ("Can I sanitize sewage residue myself with bleach?", "A household mop does not reach contamination inside drywall and pad, and mixing cleaners is unsafe. Have a restoration company remove ruined material and tell you what they are applying to what remains."),
         ("Why does a Royal Oak basement still smell after it looks clean?", "Odor usually means a porous material was left behind, often the pad, the bottom of the drywall, or the pit. Ask the crew to find it before they call the job done."),
         ("Does sanitizing a Royal Oak basement replace calling the Sewer Division?", "No. Cleaning the slab does not check the main. Weekday basement-water calls are (248) 246-3300, and after hours (248) 246-3500 dispatches sewer personnel. The city owns the main. You own the lateral through the connection. Written notice, if you are pursuing a sewage event, is due within 45 days of discovery."),
-        ("Does the George W. Kuhn basin clean a Royal Oak basement?", "The basin, formerly Twelve Towns, stores and treats regional combined flow. Royal Oak is a member, and the basin was expanded in 2006. It does not wipe the slab. Sanitizing is the crew after the water is out. The Sewer Division can confirm whether your street is an older section built before separated sewers were standard."),
+        ("Does the George W. Kuhn basin clean a Royal Oak basement?", "The basin, formerly Twelve Towns, stores and treats regional combined flow. Royal Oak is a member, and the basin was expanded in 2006. It does not wipe the slab. Sanitizing is the crew after the water is out. The Sewer Division, (248) 246-3300 on weekdays, answers questions about the main."),
     ],
     "troy": [
         ("Should a Troy playroom that had sewage be sprayed and kept?", "Soft contents that soaked up sewage are generally thrown away. Spraying the room without removing the pad and the ruined furnishings does not sanitize the lower level."),
         ("What has to come out before a Troy lower level is sanitized?", "Porous material that soaked up sewage, such as carpet, pad, and the bottom of the drywall in a finished lower level. Ask what will be thrown away before anyone sprays."),
         ("Does sanitizing include drying the Troy basement?", "No. Drying is a different part of water damage restoration. Ask for both scopes if the materials are still wet. In a finished lower level near Big Beaver, the pad and the sofa bottom usually have to come out before a cleaner has a surface it can treat."),
         ("Which Troy number is for the city, if the backup is still the question?", "Water Division 248-524-3370 in business hours, and Troy Police 248-524-3477 after hours. Troy's wastewater leaves through three districts. Ask which one serves the house. Call (248) 825-8312 for the cleaning company inside the lower level."),
-        ("Does sanitizing a Troy playroom send the 45-day notice?", "Cleaning the room leaves the letter unsent. Written notice goes to the City Attorney's Office within 45 days of discovering the damage. Troy discharges through Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. Ask the city which district serves the house. That map does not choose which pad comes out."),
+        ("Does sanitizing a Troy playroom send the 45-day notice?", "Cleaning the room leaves the letter unsent. Written notice goes to the City Attorney's Office within 45 days of discovering the damage. Troy discharges through Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. Ask the city which district serves the house."),
     ],
     "birmingham": [
-        ("Can original Birmingham plaster be sanitized in place?", "Only if sewage did not soak through it. Soft or deeply stained plaster usually has to be removed. The crew should decide after looking, after a look at the room."),
+        ("Can original Birmingham plaster be sanitized in place?", "Only if sewage did not soak through it. Soft or deeply stained plaster usually has to be removed. The crew should decide after looking at the room."),
         ("Is a deodorant fog enough after a Birmingham backup?", "No. Fog does not replace removing the contaminated material. The smell returns when humidity rises."),
         ("How do I check the company that will clean a Birmingham basement?", "Ask for the license and insurance the job requires, and for a written list of what they will discard, before anyone starts."),
         ("Will Birmingham's backflow advice clean sewage that is already in the plaster?", "No. A backflow preventer, downspouts extended about 6 feet, and grading away from the foundation are prevention steps from the city FAQ. Soft plaster that soaked up sewage usually has to come out. The water-event line (248) 530-1703 is not the cleaning crew."),
@@ -338,7 +336,7 @@ ALT = {
 
 DESCRIPTIONS = {
     "royal-oak": "Basement sanitization after sewage or flood in Royal Oak, MI. Local crews. Call {PHONE_DISPLAY}.",
-    "troy": "Basement sanitization after a Troy, MI backup or flood. We refer local crews. Call {PHONE_DISPLAY}.",
+    "troy": "Basement sanitization after a Troy, MI backup or flood. A local crew handles it. Call {PHONE_DISPLAY}.",
     "birmingham": "Sanitize a Birmingham, MI basement after sewage or flood. A local crew does it. Call {PHONE_DISPLAY}.",
     "berkley": "Basement sanitization in Berkley, MI after sewage or a flood. Not the extraction page. Call {PHONE_DISPLAY}.",
     "clawson": "Basement sanitization after a Clawson, MI backup or flood. Local crews. Call {PHONE_DISPLAY}.",

@@ -8,9 +8,7 @@ def royal_oak():
         h2("Basement water removal in Royal Oak"),
         p(
             "Flooded basement cleanup in Royal Oak starts with a simple split: did the water come from the "
-            "sky and the soil, or did it come from a drain? Houses along Woodward, around the Detroit Zoo "
-            "on West Ten Mile, and in Vinsetta and Northwood all have basements. Window wells on those "
-            "blocks fill when a summer storm dumps on the avenue and the soil cannot take it. That is "
+            "sky and the soil, or did it come from a drain? A window well fills when a summer storm dumps more water than the soil can take. That is "
             "basement water removal. If the floor drain surged at the same time, stop and read "
             + a("/royal-oak-sewage-extraction", "sewage extraction in Royal Oak")
             + " because the water is no longer a clean flood."
@@ -23,7 +21,7 @@ def royal_oak():
         ),
         h3("What floods Royal Oak basements besides a sewer"),
         ul([
-            "Window wells that sit below the grade along older Woodward-side lots, especially where the well cover is missing.",
+            "Window wells without a cover, or with soil sloping toward them.",
             "Stairwell drains at side doors that clog with leaves and then pour down the steps.",
             "Sump failure during a storm. The pump page is " + a("/royal-oak-sump-pump-repair", "sump pump repair in Royal Oak") + ".",
             "A supply-line break at a basement laundry. That is clean water until it sits long enough to foul, and it is still water damage.",
@@ -40,10 +38,7 @@ def royal_oak():
             + "."
         ),
         p(
-            "City storm drainage and the sanitary sewer are different systems in many newer separations, "
-            "and older Royal Oak sections were built before that split was standard. "
-            + a("https://www.romi.gov/384/Sewer-Division", "Royal Oak's Sewer Division")
-            + " is the public contact for the city pipes. A flooded window well is not automatically their emergency, "
+            "Royal Oak's Sewer Division maintains about 300 miles of sanitary and storm sewers and is the public contact for the city pipes: (248) 246-3300 on weekdays, (248) 246-3500 after hours. A flooded window well is not automatically their emergency, "
             "and a surcharging floor drain might be. Describe what you see."
         ),
         callout(
@@ -71,8 +66,7 @@ def troy():
             "A flooded basement in Troy is often a finished room. Split-levels near Big Beaver and larger "
             "basements in subdivisions such as Northfield Hills hold carpet, drywall, and furniture a few "
             "inches above the slab. Basement water removal has to deal with that carpet and the pad, not "
-            "only with a bare floor around a floor drain. Somerset Collection and the I-75 corridor tell "
-            "you where the commercial traffic is. The water is in the houses behind those roads."
+            "only with a bare floor around a floor drain."
         ),
         p(
             "In a quick thaw or a summer downpour, a sump in a Troy lower level can run for hours and then quit. "
@@ -96,15 +90,14 @@ def troy():
         ul([
             "Berber and pad in a family room usually come out if they were under standing water. Ask before you assume they can be dried in place.",
             "A basement bedroom needs the furniture moved before air can reach the walls. That labor is part of the scope you agree to.",
-            "Storm-drain questions on the street go to Troy's Streets and Drains Division, not to a restoration crew.",
+            "The city handles street storm drains, not a restoration crew.",
             "Insurance for sudden water depends on your policy. Ask your insurer. The claim stays with you and your carrier.",
         ]),
         h2("Basement flooding causes Troy homeowners can actually check"),
         p(
             "Look, from the stairs, at three things: is the sump pit overflowing, is water coming over the "
             "window-well rim, and is the floor drain the source? Those three have different fixes. Pumping "
-            "without answering them just refills the room. Parts of Troy are associated with southern Oakland County's George W. Kuhn "
-            "drainage district. That is a regional storm system, not the cause of every wet basement."
+            "without answering them just refills the room. George W. Kuhn is one of Troy's three wastewater districts. It is a regional system, not the cause of every wet basement."
         ),
         callout(
             "Before a Troy crew arrives",
@@ -128,18 +121,16 @@ def birmingham():
     return "\n".join([
         h2("Basement water removal around Quarton, Poppleton, and downtown Birmingham"),
         p(
-            "Birmingham flooded-basement calls split by neighborhood. Near Quarton Lake, residents talk "
-            "about low yards and water that finds the lower level in a long rain. In Poppleton Park and "
+            "Birmingham flooded-basement calls split by neighborhood. Near Quarton Lake, in Poppleton Park, and "
             "on the older streets off Old Woodward and Maple, the issue is often an original foundation, "
             "a window well, or a drain in a house that has plaster instead of modern drywall. Basement "
             "water removal in that second group is slow, because plaster and wood trim should not be torn "
             "out on a hunch."
         ),
         p(
-            "Shain Park is the downtown green, not a flood gauge. It is a landmark so you know which "
-            "Birmingham we mean. The work is in the houses. Call "
+            "Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". A local crew handles the visit. If sewage is in the water, switch "
+            + " and a local crew handles the visit. If sewage is in the water, switch "
             "to " + a("/birmingham-sewage-extraction", "sewage extraction in Birmingham") + " before you hire anyone for a 'clean flood.'"
         ),
         h3("Water damage in houses that were not built with drywall"),
@@ -154,18 +145,16 @@ def birmingham():
         ul([
             "Do not chip soft plaster before the crew has seen how high the water went.",
             "A finished lower level used as a guest room has contents that hold water. List them. Do not haul them through the main floor while they drip.",
-            "Quarton-area yard flooding and a sanitary backup can happen together. Say if the drains gurgled.",
+            "Yard flooding and a sanitary backup can happen in the same storm. Say if the drains gurgled.",
             "Ask the city which storm connection serves your street.",
         ]),
         h2("How long Birmingham materials stay wet"),
         p(
             "Plaster and masonry release water slowly. A floor that looks dry on day one can still be damp "
-            "in the wall on day three. Ask the crew how they will recheck, and what happens if readings "
-            "stay high. Ask the crew how they will recheck moisture on later days. Contaminated residue, if the "
+            "in the wall on day three. Ask the crew how they will recheck moisture on later days, and what happens if readings stay high. Contaminated residue, if the "
             "flood was not clean, is "
             + a("/birmingham-basement-sanitization", "sanitization after a Birmingham flood or backup")
-            + ". Southern Oakland County drainage context, including portions of Birmingham and the George "
-            "W. Kuhn district, is a county matter. Confirm it before you cite it to anyone."
+            + ". Birmingham is one of the 14 communities the George W. Kuhn district serves; the city's own FAQ covers the local pipes."
         ),
         callout(
             "Birmingham: protect the stairs and the trim",
@@ -194,9 +183,8 @@ def berkley():
         p(
             "The stair is the risk. Water carried up on boots, or a hose coupling that lets go, marks the "
             "oak floors owners are trying to keep. Tell the crew that the first floor is original wood "
-            "if that is true, and ask them to protect the landing. The company on site lays that protection. "
-            "Call "
-            + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY) + ". A local crew handles the visit."
+            "if that is true, and ask them to protect the landing. Call "
+            + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY) + " and ask the crew to protect the landing."
         ),
         h3("Flooded basement cleanup versus a Berkley sewer backup"),
         ul([
@@ -206,7 +194,7 @@ def berkley():
             + a("/berkley-sewage-extraction", "Berkley sewage extraction") + " instead of a rain-flood plan.",
             "A dead sump during a power cut is both a flood and a "
             + a("/berkley-sump-pump-repair", "sump pump") + " problem. DTE is the electric utility; the outage and the pump are related but not the same repair.",
-            "Older combined-sewer sections, if the city confirms them for your block, can make a rainstorm behave like a backup.",
+            "Berkley's combined sewer can make a rainstorm behave like a backup.",
         ]),
         h2("What water damage looks like under a Berkley bungalow"),
         p(
@@ -249,14 +237,14 @@ def clawson():
         ),
         p(
             "A flood from a stairwell or a low window is not the same event as a sewer backup, even though "
-            "both leave a wet floor. Clawson laterals are old enough that a storm and a backup can coincide. "
+            "both leave a wet floor. A storm and a backup can happen at the same time. "
             "If the drain was the source, go to "
             + a("/clawson-sewage-extraction", "sewage extraction in Clawson")
             + " and do not pump that water into the alley. If the sump quit, include "
             + a("/clawson-sump-pump-repair", "sump pump repair")
-            + " in the call. The call number is "
+            + " in the call. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
-            + ". The crew hauls the water."
+            + " and a local crew removes the water."
         ),
         h3("Water damage in a one-room Clawson basement"),
         p(
@@ -296,8 +284,7 @@ def clawson():
         h2("Causes that fit Clawson's lots"),
         p(
             "Compact lots put the downspout discharge close to the wall. A disconnected downspout dumps "
-            "the roof onto the foundation and in through a low window. That is a maintenance fact you can "
-            "see from outside without entering the water. Roots in an old lateral are not visible from the "
+            "the roof onto the foundation and in through a low window. You can check that from outside without entering the water. Roots in an old lateral are not visible from the "
             "sidewalk; they need a camera. The George W. Kuhn drainage district is part of the regional "
             "story for Clawson and nearby southern Oakland County cities. It does not replace looking at "
             "your downspout and your pit."
@@ -341,13 +328,13 @@ FAQS = {
     ],
     "birmingham": [
         ("Should flooded basement cleanup in Birmingham rip out plaster the first day?", "Not by default. Plaster and trim in older houses may be salvageable depending on how high the water went. The crew should look before anyone chisels."),
-        ("Are Quarton-area floods usually sewage?", "Not always. Low ground and yard drainage are common explanations there. Sewage is indicated by drain activity and odor. Do not guess if you are unsure; keep people out and describe both possibilities on the call."),
+        ("Are Quarton-area floods usually sewage?", "Not always. Sewage is indicated by drain activity and odor. Do not guess if you are unsure; keep people out and describe both possibilities on the call."),
         ("What did Birmingham publish about the August 24, 2023 storm?", "The city posted an engineer's presentation on the August 24, 2023 rain event on its Risk Management page. The city FAQ also says its older combined and storm sewers were designed for about 2 inches of rain in one hour."),
         ("Were Birmingham sewers built for a heavy one-hour rain?", "The city says combined and storm sewers were historically designed for about 2 inches of rain in one hour. The system is gravity, with no city pump stations. Downspouts extended about 6 feet and a backflow preventer are prevention. They do not pump out a lower level that is already wet."),
         ("Is Birmingham's water-event form the 45-day claim?", "The water-event form and (248) 530-1703 collect flooding data. They are not the claim. Use the city's sewer backup claim form. Claims questions are 248.530.1808, and the city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. Written notice is due within 45 days of discovery. A late-1990s bond financed relief sewers in part of the city, not on every street."),
     ],
     "berkley": [
-        ("How does Berkley's flat layout affect a flooded basement?", "Storm water has little slope to leave. Window wells and stairwells fill, and a sump may be the only thing keeping the short basement dry. That is a site condition, not a promise about your house."),
+        ("How does Berkley's flat layout affect a flooded basement?", "Storm water has little slope to leave. Window wells and stairwells fill, and a sump may be the only thing keeping the short basement dry."),
         ("Can basement water removal stain first-floor hardwood?", "Yes, if dirty water is tracked up the short bungalow stair or if joist insulation stays wet against the subfloor. Ask the crew to protect the landing and to check the joists."),
         ("What if the Berkley flood smells like sewage?", "Stop treating it as rainwater. Berkley's sewer is one combined gravity pipe, so a storm can put wastewater on the floor. Keep people off the short stair and call (248) 825-8312 for a local crew, plus Public Works at 248-658-3490."),
         ("Why is the street ponding in Berkley during the same storm?", "The city says streets are designed to hold water so it enters the pipe more slowly, and catch basins use restrictor covers. Ponding at the curb is not, by itself, a forgotten pump. There is no city pump. Your basement sump is a separate machine."),
@@ -358,7 +345,7 @@ FAQS = {
         ("Is a disconnected downspout really enough to flood a bungalow basement?", "It can be. Roof water dumped at the foundation on a small lot has nowhere to go but down the wall and in at a low opening. Check that from outside."),
         ("Who sets the price for Clawson basement water removal?", "The cleanup company, in writing, before you agree. Tell them the driveway is short and whether the furnace is in the water."),
         ("Who do I call in Clawson if the flood might be the city sewer?", "The city line is (248) 435-4500, Monday through Thursday, 7:00 a.m. to 3:30 p.m. The department is closed on Fridays. After hours, dispatch is 248-524-3477, extension 1. The sewer page points to the George W. Kuhn basin. Confirm your street with the city."),
-        ("How do I give Clawson written notice if the water was sewage?", "State law requires written notice within 45 days of discovering the damage, with your name, address, and phone, the property address, the discovery date, and a brief description. Ask the city in writing who receives sewer backup notices. Clawson's sewer calls go to (248) 435-4500. A quiet drain and rain at a downspout is a different description. The sewer page links Public Act 222."),
+        ("How do I give Clawson written notice if the water was sewage?", "State law requires written notice within 45 days of discovering the damage, with your name, address, and phone, the property address, the discovery date, and a brief description. Ask the city in writing who receives sewer backup notices. The city line on Clawson's sewer page is (248) 435-4500. A quiet drain and rain at a downspout is a different description. The sewer page links Public Act 222."),
     ],
 }
 
@@ -367,7 +354,7 @@ HERO = {
     "troy": "A finished Troy lower level or split-level is under water and the carpet is holding it. Call and a local cleanup crew handles the visit for flooded basement cleanup in Troy, and they'll tell you when they can be there.",
     "birmingham": "Water is in an older Birmingham lower level, around the plaster and trim. When you call, you reach a local cleanup crew for basement water removal in Birmingham, and they'll tell you when they can be there.",
     "berkley": "Water is in a short Berkley bungalow basement, and the stair runs straight up to the first floor. Your call puts you through to a local cleanup crew for flooded basement cleanup in Berkley, and they'll tell you when they can be there.",
-    "clawson": "Water is in a small Clawson bungalow basement, close to the furnace, and you need flooded basement cleanup in Clawson. Call, and a local cleanup crew handles flooded basement cleanup in Clawson. They'll tell you when they can be there. If a drain caused it, say so.",
+    "clawson": "Water is in a small Clawson bungalow basement, close to the furnace, and you need flooded basement cleanup in Clawson. Call, and a local cleanup crew handles it. They'll tell you when they can be there. If a drain caused it, say so.",
 }
 
 ALT = {
@@ -382,6 +369,6 @@ DESCRIPTIONS = {
     "royal-oak": "Flooded basement cleanup and water removal in Royal Oak, MI. A local crew handles it. Call {PHONE_DISPLAY}.",
     "troy": "Flooded basement cleanup and basement water removal in Troy, MI. Call a local crew at {PHONE_DISPLAY}.",
     "birmingham": "Basement water removal and flooded basement cleanup in Birmingham, MI. Call {PHONE_DISPLAY} for a crew.",
-    "berkley": "Flooded basement cleanup and water removal in Berkley, MI. We refer local crews. Call {PHONE_DISPLAY}.",
+    "berkley": "Flooded basement cleanup and water removal in Berkley, MI. A local crew handles it. Call {PHONE_DISPLAY}.",
     "clawson": "Flooded basement cleanup and water removal in Clawson, MI bungalows. Local crews. Call {PHONE_DISPLAY}.",
 }
