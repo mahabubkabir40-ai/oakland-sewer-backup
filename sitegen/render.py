@@ -2,6 +2,7 @@
 
 import html
 import json
+import re
 from xml.sax.saxutils import escape as xml_escape
 
 from site_config import (
@@ -116,13 +117,70 @@ def note(inner):
 
 
 def picture(src, alt, width, height, eager=False, css="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg"):
-    webp = src.rsplit(".", 1)[0] + ".webp"
+    webp = src if src.endswith(".webp") else src.rsplit(".", 1)[0] + ".webp"
     loading = "eager" if eager else "lazy"
     priority = ' fetchpriority="high"' if eager else ""
     return f"""<picture>
         <source srcset="{esc(webp)}" type="image/webp">
         <img src="{esc(src)}" alt="{esc(alt)}" width="{width}" height="{height}" class="{css}" loading="{loading}" decoding="async"{priority}>
     </picture>"""
+
+
+def content_figure(image, eager=False):
+    """In-content photo. image keys: src, alt, width, height, optional eager."""
+    return (
+        '<figure class="my-8">'
+        + picture(
+            image["src"],
+            image["alt"],
+            image["width"],
+            image["height"],
+            eager=image.get("eager", eager),
+        )
+        + "</figure>"
+    )
+
+
+def spread_article(article_html, images):
+    """Place two figures inside article copy and return the third for the FAQ area.
+
+    The first sits after the opening paragraph. The second sits before a middle
+    heading. Article text is not rewritten.
+    """
+    if len(images) != 3:
+        raise ValueError(f"expected 3 images, got {len(images)}")
+    first, second, third = (content_figure(image) for image in images)
+    first_p = article_html.find("</p>")
+    if first_p == -1:
+        insert_at = 0
+    else:
+        insert_at = first_p + len("</p>")
+    h2s = [match.start() for match in re.finditer(r"<h2\b", article_html)]
+    later = [pos for pos in h2s if pos > insert_at]
+    if len(later) >= 2:
+        mid_at = later[(len(later) - 1) // 2]
+    elif later:
+        mid_at = later[0]
+    else:
+        ends = [match.end() for match in re.finditer(r"</p>", article_html)]
+        rest = [end for end in ends if end > insert_at]
+        if len(rest) >= 2:
+            mid_at = rest[len(rest) // 2]
+        elif rest:
+            mid_at = rest[0]
+        else:
+            mid_at = None
+    if mid_at is None:
+        body = article_html[:insert_at] + first + article_html[insert_at:] + second
+    else:
+        body = (
+            article_html[:insert_at]
+            + first
+            + article_html[insert_at:mid_at]
+            + second
+            + article_html[mid_at:]
+        )
+    return body, third
 
 
 def phone_link(label=None, css="text-red-400 font-bold underline"):
@@ -599,9 +657,9 @@ def render_document(path, title, description, body, crumbs, faqs=None, service=N
 """
 
 
-def service_body(city_slug, service_slug, h1, hero_lead, article_html, image_src, alt, width, height, faq_heading, faqs):
+def service_body(city_slug, service_slug, h1, hero_lead, article_html, images, faq_heading, faqs):
     name = city_name(city_slug)
-    crumb_slot = ""  # crumbs are rendered above body; hero follows
+    article_html, near_faq = spread_article(article_html, images)
     return f"""<section class="relative bg-slate-950/40 py-12 md:py-20 px-4 border-b border-slate-800">
         <div class="max-w-4xl mx-auto text-center">
             <p class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-red-950/60 border border-red-500/30 text-red-300 rounded-full text-xs font-extrabold uppercase tracking-widest mb-6">{esc(name)}, Michigan</p>
@@ -613,13 +671,13 @@ def service_body(city_slug, service_slug, h1, hero_lead, article_html, image_src
     <section class="py-16 bg-slate-900 px-4">
         <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <article class="lg:col-span-8 space-y-6 bg-slate-950/40 border border-slate-800/80 p-6 md:p-8 rounded-2xl">
-                <div class="my-2">{picture(image_src, alt, width, height)}</div>
                 {article_html}
             </article>
             {sidebar(city_slug, service_slug)}
         </div>
     </section>
     {trust_row()}
+    <div class="max-w-3xl mx-auto px-4 pt-12">{near_faq}</div>
     {faq_html(faqs, faq_heading)}
     """
 

@@ -388,11 +388,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "If sewage came up a floor drain in your older Royal Oak house, sewage cleanup in Royal Oak is that water, and sewer backup cleanup in Royal Oak is the work of getting it out. Your call connects you with an independent local cleanup company, and they'll tell you when they can be there.",
-    "troy": "Sewage in a Troy lower level or split-level near Big Beaver is sewage cleanup in Troy, the same job as sewer backup cleanup in Troy, not a leak at the mall. Call and you are connected with an independent local cleanup company, and they'll tell you when they can be there.",
-    "birmingham": "Sewage is in the plaster and trim of an older Birmingham lower level. That is sewage cleanup in Birmingham, and it is sewer backup cleanup in Birmingham. When you call, you reach an independent local cleanup company, and they'll tell you when they can be there.",
-    "berkley": "Sewage is sitting by the laundry in your short Berkley bungalow basement. You need sewage cleanup in Berkley, which is sewer backup cleanup in Berkley. Your call puts you through to an independent local cleanup company, and they'll tell you when they can be there.",
-    "clawson": "Sewage is in a brick Clawson bungalow on a tight lot. Sewage cleanup in Clawson is that water, and sewer backup cleanup in Clawson is how it gets handled in a small basement. Calling connects you with an independent local cleanup company, and they'll tell you when they can be there.",
+    "royal-oak": "Sewage coming up a floor drain in your Royal Oak basement is a health hazard, so keep people and pets out of the water. Call now for sewage cleanup in Royal Oak. We connect you with an independent local company that handles sewer backup cleanup in Royal Oak, and they'll tell you when they can be there.",
+    "troy": "Sewage backed up into your Troy basement or lower level? Don't try to mop it up yourself. One call gets you started on sewage cleanup in Troy. We connect you with an independent local company for sewer backup cleanup in Troy, and they'll tell you when they can be there.",
+    "birmingham": "Sewage in the basement of an older Birmingham home can soak into plaster, trim and finished floors quickly. Call for sewage cleanup in Birmingham and we'll connect you with an independent local company that does sewer backup cleanup in Birmingham. They'll tell you when they can be there.",
+    "berkley": "When the floor drain by the laundry backs up in a Berkley bungalow, the sewage needs to come out before it spreads. Call for sewage cleanup in Berkley. We connect you with an independent local company for sewer backup cleanup in Berkley, and they'll tell you when they can be there.",
+    "clawson": "Sewage in your Clawson basement after a backup? Stay out of the water and call. We connect you with an independent local company for sewage cleanup in Clawson and sewer backup cleanup in Clawson, and they'll tell you when they can be there.",
 }
 
 ALT = {

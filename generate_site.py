@@ -65,6 +65,7 @@ from sitegen.copy_water import ARTICLES as WATER_ARTICLES
 from sitegen.copy_water import DESCRIPTIONS as WATER_DESC
 from sitegen.copy_water import FAQS as WATER_FAQS
 from sitegen.copy_water import HERO as WATER_HERO
+from sitegen.page_images import images_for
 from sitegen.render import (
     CITIES,
     CITY_SERVICES,
@@ -72,6 +73,7 @@ from sitegen.render import (
     SERVICE_HUBS,
     call_button,
     city_name,
+    content_figure,
     esc,
     faq_html,
     form_fields,
@@ -82,6 +84,7 @@ from sitegen.render import (
     render_document,
     require_meta,
     service_body,
+    spread_article,
     trust_row,
     ul,
     write_sitemap,
@@ -191,16 +194,9 @@ def remember(path, title, description, body, crumbs, faqs=None, service=None, ro
         SITEMAP.append((path, priority))
 
 
-def image_for(city_slug, service_slug):
-    for slug, _label, stem, width, height in CITY_SERVICES:
-        if slug == service_slug:
-            return f"/images/{city_slug}-{stem}.jpg", width, height
-    raise KeyError(service_slug)
-
-
 def emit_city_service(city_slug, service_slug, title, h1, description, hero, article_html, faqs, alt, priority):
     city = city_name(city_slug)
-    src, width, height = image_for(city_slug, service_slug)
+    del alt  # per-photo alt text lives in the image manifest
     label = next(label for slug, label, *_rest in CITY_SERVICES if slug == service_slug)
     body = service_body(
         city_slug,
@@ -208,10 +204,7 @@ def emit_city_service(city_slug, service_slug, title, h1, description, hero, art
         h1,
         esc(hero),
         article_html,
-        src,
-        alt,
-        width,
-        height,
+        images_for(f"{city_slug}-{service_slug}"),
         f"{city} questions",
         faqs,
     )
@@ -234,10 +227,11 @@ def emit_city_service(city_slug, service_slug, title, h1, description, hero, art
     )
 
 
-def prose_body(h1, lead, article, faqs=None, faq_heading="Questions", image=None, alt="", width=800, height=800):
-    img = ""
-    if image:
-        img = f'<div class="my-6">{picture(image, alt, width, height)}</div>'
+def prose_body(h1, lead, article, faqs=None, faq_heading="Questions", images=None):
+    near = ""
+    if images:
+        article, near_fig = spread_article(article, images)
+        near = f'<div class="max-w-3xl mx-auto px-4 pt-4">{near_fig}</div>'
     faq = faq_html(faqs, faq_heading) if faqs else ""
     return f"""<section class="bg-slate-950/40 py-12 md:py-16 px-4 border-b border-slate-800">
         <div class="max-w-4xl mx-auto">
@@ -247,9 +241,10 @@ def prose_body(h1, lead, article, faqs=None, faq_heading="Questions", image=None
         </div>
     </section>
     <section class="py-12 px-4">
-        <div class="max-w-4xl mx-auto space-y-6">{img}{article}</div>
+        <div class="max-w-4xl mx-auto space-y-6">{article}</div>
     </section>
     {trust_row()}
+    {near}
     {faq}
     """
 
@@ -272,6 +267,7 @@ def city_directory():
 
 
 def home_body():
+    photos = images_for("index")
     home_faqs = [
         (
             "What happens when I call (248) 825-8312?",
@@ -414,12 +410,14 @@ def home_body():
                     <div class="mt-8">{call_button()}</div>
                 </div>
                 <div class="lg:col-span-5">
-                    {picture("/images/homepage_hero.jpg", "Wet basement floor after a sewer backup or flood in an Oakland County house", 800, 800, eager=True, css="w-full h-64 md:h-80 object-cover rounded-2xl border border-slate-800")}
+                    {picture(photos[0]["src"], photos[0]["alt"], photos[0]["width"], photos[0]["height"], eager=True, css="w-full h-64 md:h-80 object-cover rounded-2xl border border-slate-800")}
                 </div>
             </div>
         </div>
     </section>"""
-    return intro + services + steps + resources + cities + form + faq_html(home_faqs, "Questions about this referral line"), home_faqs
+    mid = f'<div class="bg-slate-900 px-4 pb-8"><div class="max-w-3xl mx-auto">{content_figure(photos[1])}</div></div>'
+    near_faq = f'<div class="max-w-3xl mx-auto px-4 pt-12">{content_figure(photos[2])}</div>'
+    return intro + services + steps + mid + resources + cities + form + near_faq + faq_html(home_faqs, "Questions about this referral line"), home_faqs
 
 
 def main():
@@ -487,6 +485,7 @@ def main():
             CITY_ARTICLES[city_slug](),
             faqs=faqs,
             faq_heading=f"{city} questions",
+            images=images_for(city_slug),
         )
         remember(
             city_slug,
@@ -515,7 +514,7 @@ def main():
     for path, title, description, h1, lead, article, priority in hub_pages:
         faqs = HUB_FAQS[path]
         article_html = article() if callable(article) else article
-        body = prose_body(esc(h1), f"<p>{esc(lead)}</p>", article_html, faqs=faqs, faq_heading="Questions")
+        body = prose_body(esc(h1), f"<p>{esc(lead)}</p>", article_html, faqs=faqs, faq_heading="Questions", images=images_for(path))
         service = None
         if path != "services":
             service = {
@@ -528,7 +527,7 @@ def main():
 
     for slug, title, h1, description, lead, article_fn, css, label in RESOURCE_PAGES:
         faqs = RESOURCE_FAQS[slug]
-        body = prose_body(esc(h1), lead, article_fn(), faqs=faqs)
+        body = prose_body(esc(h1), lead, article_fn(), faqs=faqs, images=images_for(slug))
         remember(
             slug,
             title,
@@ -545,7 +544,7 @@ def main():
         "about",
         "About Oakland Sewer Pros | Referral Service",
         fill("Oakland Sewer Pros is a referral line to independent sewer and water damage providers in Oakland County, MI. Call {PHONE_DISPLAY}."),
-        prose_body("About Oakland Sewer Pros", f"<p>Honest description of what {esc(BRAND)} is, and what it is not.</p>", about_article(), faqs=ABOUT_FAQS),
+        prose_body("About Oakland Sewer Pros", f"<p>Honest description of what {esc(BRAND)} is, and what it is not.</p>", about_article(), faqs=ABOUT_FAQS, images=images_for("about")),
         [("Home", "/"), ("About", None)],
         faqs=ABOUT_FAQS,
         priority="0.5",
@@ -559,6 +558,7 @@ def main():
             f"<p>Phone is the real contact. The form does not save what you type.</p>",
             contact_article() + form_fields(include_email=True, include_priority=True, id_prefix="contact"),
             faqs=CONTACT_FAQS,
+            images=images_for("contact"),
         ),
         [("Home", "/"), ("Contact", None)],
         faqs=CONTACT_FAQS,
@@ -568,7 +568,7 @@ def main():
         "privacy",
         "Privacy Policy | Oakland Sewer Pros",
         fill("How Oakland Sewer Pros handles calls and website forms. Form entries are not stored or put in the URL. Call {PHONE_DISPLAY}."),
-        prose_body("Privacy", "<p>What this static site does with the details you might type or the number you call.</p>", privacy_article(), faqs=PRIVACY_FAQS),
+        prose_body("Privacy", "<p>What this static site does with the details you might type or the number you call.</p>", privacy_article(), faqs=PRIVACY_FAQS, images=images_for("privacy")),
         [("Home", "/"), ("Privacy", None)],
         faqs=PRIVACY_FAQS,
         priority="0.4",
@@ -577,7 +577,7 @@ def main():
         "terms",
         "Terms of Service | Oakland Sewer Pros",
         fill("Terms for the Oakland Sewer Pros referral site in Oakland County, MI. We do not guarantee contractor work. Call {PHONE_DISPLAY}."),
-        prose_body("Terms of Service", "<p>Last updated September 27, 2026.</p>", terms_article(), faqs=TERMS_FAQS),
+        prose_body("Terms of Service", "<p>Last updated September 27, 2026.</p>", terms_article(), faqs=TERMS_FAQS, images=images_for("terms")),
         [("Home", "/"), ("Terms", None)],
         faqs=TERMS_FAQS,
         priority="0.4",
@@ -623,6 +623,21 @@ def main():
         print("META LENGTH ERRORS:")
         for path, length, text in META_ERRORS:
             print(f"  {length:3} {path}: {text}")
+        raise SystemExit(1)
+    image_errors = []
+    for path, _priority in SITEMAP:
+        filename = "index.html" if path in ("", "/") else f"{path}.html"
+        count = (ROOT / filename).read_text(encoding="utf-8").count("<img ")
+        if count != 3:
+            image_errors.append(f"{filename}: {count} img tags")
+    for filename in ("thank-you.html", "404.html"):
+        count = (ROOT / filename).read_text(encoding="utf-8").count("<img ")
+        if count:
+            image_errors.append(f"{filename}: unexpected {count} img tags")
+    if image_errors:
+        print("IMAGE COUNT ERRORS:")
+        for item in image_errors:
+            print(" ", item)
         raise SystemExit(1)
     print(f"Generated {len(SITEMAP)} indexable URLs plus noindex pages. lastmod {LASTMOD}.")
 
