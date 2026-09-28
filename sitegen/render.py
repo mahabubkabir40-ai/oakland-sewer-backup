@@ -142,14 +142,17 @@ def content_figure(image, eager=False):
 
 
 def spread_article(article_html, images):
-    """Place two figures inside article copy and return the third for the FAQ area.
+    """Place figures inside article copy and return one for the FAQ area when a third exists.
 
     The first sits after the opening paragraph. The second sits before a middle
-    heading. Article text is not rewritten.
+    heading. A third, when present, is returned for the area above the FAQ.
+    Article text is not rewritten.
     """
-    if len(images) != 3:
-        raise ValueError(f"expected 3 images, got {len(images)}")
-    first, second, third = (content_figure(image) for image in images)
+    if len(images) not in (2, 3):
+        raise ValueError(f"expected 2 or 3 images, got {len(images)}")
+    figures = [content_figure(image) for image in images]
+    first, second = figures[0], figures[1]
+    third = figures[2] if len(figures) == 3 else ""
     first_p = article_html.find("</p>")
     if first_p == -1:
         insert_at = 0
@@ -677,7 +680,7 @@ def service_body(city_slug, service_slug, h1, hero_lead, article_html, images, f
         </div>
     </section>
     {trust_row()}
-    <div class="max-w-3xl mx-auto px-4 pt-12">{near_faq}</div>
+    {f'<div class="max-w-3xl mx-auto px-4 pt-12">{near_faq}</div>' if near_faq else ""}
     {faq_html(faqs, faq_heading)}
     """
 

@@ -10,7 +10,6 @@ A relevant photo may appear on up to four pages. Sump-pit photographs were not a
 | --- | --- | --- | --- |
 | `floodwater-on-concrete-floor-by-stairs.webp` | index | David Yu | https://www.pexels.com/photo/flood-water-on-concrete-floor-and-a-white-concrete-staircase-7924140/ |
 | `worker-in-protective-suit-spraying-floor.webp` | index | Matilda Wormwood | https://www.pexels.com/photo/chemist-in-protective-clothing-kneeling-on-floor-4099090/ |
-| `white-pedestal-fan-against-wall.webp` | index | Obsolete Lense | https://www.pexels.com/photo/a-stand-fan-beside-a-white-wall-13983948/ |
 | `yellow-mop-bucket-with-dirty-water.webp` | royal-oak-sewer-cleanup | Jenkin Shen | https://www.pexels.com/photo/a-yellow-mop-bucket-with-dirty-water-13840330/ |
 | `person-mopping-tile-floor-with-bucket.webp` | royal-oak-sewer-cleanup | Tima Miroshnichenko | https://www.pexels.com/photo/woman-mopping-a-tiled-floor-6196577/ |
 | `floodwater-on-concrete-floor-by-stairs.webp` | royal-oak-sewer-cleanup | David Yu | https://www.pexels.com/photo/flood-water-on-concrete-floor-and-a-white-concrete-staircase-7924140/ |
@@ -27,19 +26,18 @@ A relevant photo may appear on up to four pages. Sump-pit photographs were not a
 | `yellow-mop-bucket-with-dirty-water.webp` | clawson-sewer-cleanup | Jenkin Shen | https://www.pexels.com/photo/a-yellow-mop-bucket-with-dirty-water-13840330/ |
 | `unfinished-concrete-basement.webp` | clawson-sewer-cleanup | Jakub Zerdzicki | https://www.pexels.com/photo/concrete-room-in-basement-20589810/ |
 | `ladder-in-empty-basement.webp` | royal-oak-flooded-basement | Masi | https://www.pexels.com/photo/ladder-in-empty-basement-17182110/ |
-| `blue-fan-on-a-rug.webp` | royal-oak-flooded-basement | Erfan Amiri | https://www.pexels.com/photo/a-blue-fan-on-a-rug-in-a-room-28054343/ |
+| `person-mopping-tile-floor.webp` | royal-oak-flooded-basement | Tima Miroshnichenko | https://www.pexels.com/photo/person-in-gray-sweater-mopping-and-cleaning-the-floor-6196566/ |
 | `door-and-steps-at-basement-entrance.webp` | royal-oak-flooded-basement | NITIN CHAUHAN | https://www.pexels.com/photo/steps-and-the-door-to-the-basement-16639381/ |
 | `person-mopping-tile-floor.webp` | troy-flooded-basement | Tima Miroshnichenko | https://www.pexels.com/photo/person-in-gray-sweater-mopping-and-cleaning-the-floor-6196566/ |
-| `box-fan-beside-a-couch.webp` | troy-flooded-basement | Vika Kirillova | https://www.pexels.com/photo/a-couch-and-a-fan-standing-on-the-floor-in-a-living-room-11046405/ |
+| `worker-in-protective-suit-cleaning-couch.webp` | troy-flooded-basement | Matilda Wormwood | https://www.pexels.com/photo/person-wearing-white-ppe-while-cleaning-the-couch-4098781/ |
 | `peeling-paint-on-damaged-wall.webp` | troy-flooded-basement | Kássia Melo | https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/ |
 | `person-mopping-tile-floor-with-bucket.webp` | birmingham-flooded-basement | Tima Miroshnichenko | https://www.pexels.com/photo/woman-mopping-a-tiled-floor-6196577/ |
-| `floor-fan-on-wood-floor.webp` | birmingham-flooded-basement | Jakub Zerdzicki | https://www.pexels.com/photo/blow-fan-17301209/ |
+| `worker-in-protective-suit-wiping-cabinet.webp` | birmingham-flooded-basement | Matilda Wormwood | https://www.pexels.com/photo/cleaner-in-protection-suit-wiping-cabinet-in-kitchen-4099086/ |
 | `empty-unfinished-basement.webp` | birmingham-flooded-basement | Curtis Adams | https://www.pexels.com/photo/an-empty-basement-4092030/ |
 | `unfinished-concrete-basement.webp` | berkley-flooded-basement | Jakub Zerdzicki | https://www.pexels.com/photo/concrete-room-in-basement-20589810/ |
-| `white-fan-on-hardwood-floor.webp` | berkley-flooded-basement | EL The Explorer | https://www.pexels.com/photo/fan-in-a-minimalist-interior-12243531/ |
+| `worker-in-protective-suit-cleaning-table.webp` | berkley-flooded-basement | Matilda Wormwood | https://www.pexels.com/photo/person-in-white-ppe-cleaning-the-table-4098787/ |
 | `ladder-in-empty-basement.webp` | berkley-flooded-basement | Masi | https://www.pexels.com/photo/ladder-in-empty-basement-17182110/ |
 | `door-and-steps-at-basement-entrance.webp` | clawson-flooded-basement | NITIN CHAUHAN | https://www.pexels.com/photo/steps-and-the-door-to-the-basement-16639381/ |
-| `white-pedestal-fan-against-wall.webp` | clawson-flooded-basement | Obsolete Lense | https://www.pexels.com/photo/a-stand-fan-beside-a-white-wall-13983948/ |
 | `worker-in-protective-suit-holding-spray-bottle.webp` | clawson-flooded-basement | Matilda Wormwood | https://www.pexels.com/photo/person-in-white-ppe-holding-spray-bottle-4098782/ |
 | `technician-working-on-water-pump.webp` | royal-oak-sewage-extraction | Bulat843 🌙 | https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/ |
 | `plumber-using-pipe-wrench-indoors.webp` | royal-oak-sewage-extraction | Bulat843 🌙 | https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/ |
@@ -87,40 +85,37 @@ A relevant photo may appear on up to four pages. Sump-pit photographs were not a
 | `person-mopping-tile-floor.webp` | clawson-basement-sanitization | Tima Miroshnichenko | https://www.pexels.com/photo/person-in-gray-sweater-mopping-and-cleaning-the-floor-6196566/ |
 | `worker-in-protective-suit-spraying-floor.webp` | clawson-basement-sanitization | Matilda Wormwood | https://www.pexels.com/photo/chemist-in-protective-clothing-kneeling-on-floor-4099090/ |
 | `hole-in-plaster-wall.webp` | royal-oak-water-damage-restoration | Diana ✨ | https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/ |
-| `blue-fan-on-a-rug.webp` | royal-oak-water-damage-restoration | Erfan Amiri | https://www.pexels.com/photo/a-blue-fan-on-a-rug-in-a-room-28054343/ |
 | `peeling-paint-on-damaged-wall.webp` | royal-oak-water-damage-restoration | Kássia Melo | https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/ |
 | `crumbling-plaster-over-brick.webp` | troy-water-damage-restoration | Zeki Okur | https://www.pexels.com/photo/close-up-of-cracked-wall-11627153/ |
-| `box-fan-beside-a-couch.webp` | troy-water-damage-restoration | Vika Kirillova | https://www.pexels.com/photo/a-couch-and-a-fan-standing-on-the-floor-in-a-living-room-11046405/ |
 | `leaking-pipe-wrapped-in-plastic.webp` | troy-water-damage-restoration | Swastik Arora | https://www.pexels.com/photo/leaking-pipe-fixed-with-plastic-15206136/ |
 | `peeling-paint-on-damaged-wall.webp` | birmingham-water-damage-restoration | Kássia Melo | https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/ |
-| `floor-fan-on-wood-floor.webp` | birmingham-water-damage-restoration | Jakub Zerdzicki | https://www.pexels.com/photo/blow-fan-17301209/ |
+| `hand-holding-plumbers-wrench.webp` | birmingham-water-damage-restoration | Kindel Media | https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486978/ |
 | `empty-unfinished-basement.webp` | birmingham-water-damage-restoration | Curtis Adams | https://www.pexels.com/photo/an-empty-basement-4092030/ |
 | `hole-in-plaster-wall.webp` | berkley-water-damage-restoration | Diana ✨ | https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/ |
-| `white-fan-on-hardwood-floor.webp` | berkley-water-damage-restoration | EL The Explorer | https://www.pexels.com/photo/fan-in-a-minimalist-interior-12243531/ |
+| `plumbers-wrench-on-wood.webp` | berkley-water-damage-restoration | Kindel Media | https://www.pexels.com/photo/close-up-photo-of-plumbers-wrench-on-wooden-surface-8488058/ |
 | `unfinished-concrete-basement.webp` | berkley-water-damage-restoration | Jakub Zerdzicki | https://www.pexels.com/photo/concrete-room-in-basement-20589810/ |
 | `crumbling-plaster-over-brick.webp` | clawson-water-damage-restoration | Zeki Okur | https://www.pexels.com/photo/close-up-of-cracked-wall-11627153/ |
-| `white-pedestal-fan-against-wall.webp` | clawson-water-damage-restoration | Obsolete Lense | https://www.pexels.com/photo/a-stand-fan-beside-a-white-wall-13983948/ |
+| `hand-holding-plumbers-wrench.webp` | clawson-water-damage-restoration | Kindel Media | https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486978/ |
 | `ladder-in-empty-basement.webp` | clawson-water-damage-restoration | Masi | https://www.pexels.com/photo/ladder-in-empty-basement-17182110/ |
 | `door-and-steps-at-basement-entrance.webp` | royal-oak | NITIN CHAUHAN | https://www.pexels.com/photo/steps-and-the-door-to-the-basement-16639381/ |
 | `close-up-of-metal-downspout.webp` | royal-oak | Eva Bronzini | https://www.pexels.com/photo/a-close-up-shot-of-a-downspout-5940870/ |
-| `blue-fan-on-a-rug.webp` | royal-oak | Erfan Amiri | https://www.pexels.com/photo/a-blue-fan-on-a-rug-in-a-room-28054343/ |
+| `water-dripping-from-drain-spout.webp` | royal-oak | ready made | https://www.pexels.com/photo/water-dripping-from-drain-spout-3964796/ |
 | `hole-in-plaster-wall.webp` | troy | Diana ✨ | https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/ |
 | `water-dripping-from-drain-spout.webp` | troy | ready made | https://www.pexels.com/photo/water-dripping-from-drain-spout-3964796/ |
-| `box-fan-beside-a-couch.webp` | troy | Vika Kirillova | https://www.pexels.com/photo/a-couch-and-a-fan-standing-on-the-floor-in-a-living-room-11046405/ |
+| `close-up-of-storm-drain-grate.webp` | troy | João Vítor Heinrichs | https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/ |
 | `person-mopping-wood-floor.webp` | birmingham | Polina Tankilevitch | https://www.pexels.com/photo/a-person-cleaning-the-floor-with-a-mop-4440568/ |
 | `metal-downspout-on-exterior-wall.webp` | birmingham | Nikita Nikitin | https://www.pexels.com/photo/a-silver-metal-pipe-on-brown-concrete-wall-10372434/ |
-| `floor-fan-on-wood-floor.webp` | birmingham | Jakub Zerdzicki | https://www.pexels.com/photo/blow-fan-17301209/ |
+| `water-dripping-from-drain-spout.webp` | birmingham | ready made | https://www.pexels.com/photo/water-dripping-from-drain-spout-3964796/ |
 | `white-downspout-on-exterior-wall.webp` | berkley | Plato Terentev | https://www.pexels.com/photo/white-downspout-on-concrete-wall-9809765/ |
 | `close-up-of-storm-drain-grate.webp` | berkley | João Vítor Heinrichs | https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/ |
-| `white-fan-on-hardwood-floor.webp` | berkley | EL The Explorer | https://www.pexels.com/photo/fan-in-a-minimalist-interior-12243531/ |
+| `metal-downspout-on-exterior-wall.webp` | berkley | Nikita Nikitin | https://www.pexels.com/photo/a-silver-metal-pipe-on-brown-concrete-wall-10372434/ |
 | `empty-unfinished-basement.webp` | clawson | Curtis Adams | https://www.pexels.com/photo/an-empty-basement-4092030/ |
 | `rusty-street-drain.webp` | clawson | Malcolm Garret | https://www.pexels.com/photo/a-rusty-metal-street-drainage-6573773/ |
-| `white-pedestal-fan-against-wall.webp` | clawson | Obsolete Lense | https://www.pexels.com/photo/a-stand-fan-beside-a-white-wall-13983948/ |
+| `white-downspout-on-exterior-wall.webp` | clawson | Plato Terentev | https://www.pexels.com/photo/white-downspout-on-concrete-wall-9809765/ |
 | `person-in-protective-suit-mask-and-goggles.webp` | sewer-backup-cleanup | Ron Lach | https://www.pexels.com/photo/a-person-wearing-personal-protective-equipment-9894222/ |
 | `worker-in-protective-suit-spraying-floor.webp` | sewer-backup-cleanup | Matilda Wormwood | https://www.pexels.com/photo/chemist-in-protective-clothing-kneeling-on-floor-4099090/ |
 | `unfinished-concrete-basement.webp` | sewer-backup-cleanup | Jakub Zerdzicki | https://www.pexels.com/photo/concrete-room-in-basement-20589810/ |
 | `ladder-in-empty-basement.webp` | flooded-basement-cleanup | Masi | https://www.pexels.com/photo/ladder-in-empty-basement-17182110/ |
-| `blue-fan-on-a-rug.webp` | flooded-basement-cleanup | Erfan Amiri | https://www.pexels.com/photo/a-blue-fan-on-a-rug-in-a-room-28054343/ |
 | `peeling-paint-on-damaged-wall.webp` | flooded-basement-cleanup | Kássia Melo | https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/ |
 | `industrial-pump-and-hoses-outdoors.webp` | sewage-extraction | Adam Šumník | https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/ |
 | `plumber-fitting-a-pipe.webp` | sewage-extraction | Sergei Starostin | https://www.pexels.com/photo/professional-plumber-installing-a-radiator-pipe-29226620/ |
@@ -132,10 +127,8 @@ A relevant photo may appear on up to four pages. Sump-pit photographs were not a
 | `worker-in-protective-suit-cleaning-table.webp` | basement-sanitization | Matilda Wormwood | https://www.pexels.com/photo/person-in-white-ppe-cleaning-the-table-4098787/ |
 | `close-up-of-protective-suit-and-mask.webp` | basement-sanitization | Ron Lach | https://www.pexels.com/photo/close-up-photo-of-person-wearing-hazmat-suit-9545082/ |
 | `hole-in-plaster-wall.webp` | water-damage-restoration | Diana ✨ | https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/ |
-| `box-fan-beside-a-couch.webp` | water-damage-restoration | Vika Kirillova | https://www.pexels.com/photo/a-couch-and-a-fan-standing-on-the-floor-in-a-living-room-11046405/ |
 | `crumbling-plaster-over-brick.webp` | water-damage-restoration | Zeki Okur | https://www.pexels.com/photo/close-up-of-cracked-wall-11627153/ |
 | `worker-in-protective-suit-wiping-cabinet.webp` | services | Matilda Wormwood | https://www.pexels.com/photo/cleaner-in-protection-suit-wiping-cabinet-in-kitchen-4099086/ |
-| `floor-fan-on-wood-floor.webp` | services | Jakub Zerdzicki | https://www.pexels.com/photo/blow-fan-17301209/ |
 | `close-up-of-metal-downspout.webp` | services | Eva Bronzini | https://www.pexels.com/photo/a-close-up-shot-of-a-downspout-5940870/ |
 | `white-downspout-on-exterior-wall.webp` | george-w-kuhn-drainage-district | Plato Terentev | https://www.pexels.com/photo/white-downspout-on-concrete-wall-9809765/ |
 | `close-up-of-metal-downspout.webp` | george-w-kuhn-drainage-district | Eva Bronzini | https://www.pexels.com/photo/a-close-up-shot-of-a-downspout-5940870/ |
@@ -159,17 +152,15 @@ A relevant photo may appear on up to four pages. Sump-pit photographs were not a
 | `man-talking-on-a-landline-phone.webp` | terms | Felicity Tai | https://www.pexels.com/photo/man-talking-on-the-telephone-7964502/ |
 | `hand-pulling-document-from-folder.webp` | terms | Anete Lusina | https://www.pexels.com/photo/person-choosing-document-in-folder-4792285/ |
 
-Distinct source photos: 49.
+Distinct source photos: 44.
 
 Reused photos:
 
-- `blue-fan-on-a-rug.webp` (4): royal-oak-flooded-basement, royal-oak-water-damage-restoration, royal-oak, flooded-basement-cleanup
-- `box-fan-beside-a-couch.webp` (4): troy-flooded-basement, troy-water-damage-restoration, troy, water-damage-restoration
 - `close-up-of-protective-suit-and-mask.webp` (4): troy-sewer-cleanup, birmingham-sewage-extraction, berkley-basement-sanitization, basement-sanitization
 - `crumbling-plaster-over-brick.webp` (4): troy-water-damage-restoration, clawson-water-damage-restoration, water-damage-restoration, sewer-backup-claim-guide
 - `empty-unfinished-basement.webp` (4): berkley-sewer-cleanup, birmingham-flooded-basement, birmingham-water-damage-restoration, clawson
 - `floodwater-on-concrete-floor-by-stairs.webp` (4): index, royal-oak-sewer-cleanup, troy-sewer-cleanup, birmingham-sewer-cleanup
-- `floor-fan-on-wood-floor.webp` (4): birmingham-flooded-basement, birmingham-water-damage-restoration, birmingham, services
+- `hand-holding-plumbers-wrench.webp` (4): berkley-sewage-extraction, birmingham-sump-pump-repair, birmingham-water-damage-restoration, clawson-water-damage-restoration
 - `hole-in-plaster-wall.webp` (4): royal-oak-water-damage-restoration, berkley-water-damage-restoration, troy, water-damage-restoration
 - `industrial-pump-and-hoses-outdoors.webp` (4): troy-sewage-extraction, birmingham-sewage-extraction, clawson-sewage-extraction, sewage-extraction
 - `ladder-in-empty-basement.webp` (4): royal-oak-flooded-basement, berkley-flooded-basement, clawson-water-damage-restoration, flooded-basement-cleanup
@@ -177,35 +168,34 @@ Reused photos:
 - `peeling-paint-on-damaged-wall.webp` (4): troy-flooded-basement, royal-oak-water-damage-restoration, birmingham-water-damage-restoration, flooded-basement-cleanup
 - `person-in-protective-suit-mask-and-goggles.webp` (4): berkley-sewage-extraction, berkley-basement-sanitization, clawson-basement-sanitization, sewer-backup-cleanup
 - `person-mopping-tile-floor-with-bucket.webp` (4): royal-oak-sewer-cleanup, birmingham-flooded-basement, troy-basement-sanitization, basement-sanitization
+- `person-mopping-tile-floor.webp` (4): royal-oak-flooded-basement, troy-flooded-basement, royal-oak-basement-sanitization, clawson-basement-sanitization
 - `person-mopping-wood-floor.webp` (4): berkley-sewer-cleanup, birmingham-basement-sanitization, birmingham, basement-flood-checklist
 - `plumber-fitting-a-pipe.webp` (4): troy-sewage-extraction, troy-sump-pump-repair, sewage-extraction, sump-pump-repair
 - `plumber-using-pipe-wrench-indoors.webp` (4): royal-oak-sewage-extraction, royal-oak-sump-pump-repair, troy-sump-pump-repair, clawson-sump-pump-repair
 - `technician-working-on-water-pump.webp` (4): royal-oak-sewage-extraction, royal-oak-sump-pump-repair, clawson-sump-pump-repair, sump-pump-repair
 - `unfinished-concrete-basement.webp` (4): clawson-sewer-cleanup, berkley-flooded-basement, berkley-water-damage-restoration, sewer-backup-cleanup
-- `white-pedestal-fan-against-wall.webp` (4): index, clawson-flooded-basement, clawson-water-damage-restoration, clawson
+- `water-dripping-from-drain-spout.webp` (4): royal-oak, troy, birmingham, george-w-kuhn-drainage-district
+- `worker-in-protective-suit-cleaning-couch.webp` (4): clawson-sewer-cleanup, troy-flooded-basement, birmingham-basement-sanitization, about
+- `worker-in-protective-suit-cleaning-table.webp` (4): birmingham-sewer-cleanup, berkley-flooded-basement, troy-basement-sanitization, basement-sanitization
 - `worker-in-protective-suit-holding-spray-bottle.webp` (4): troy-sewer-cleanup, clawson-flooded-basement, royal-oak-basement-sanitization, sewage-extraction
 - `worker-in-protective-suit-spraying-floor.webp` (4): index, clawson-sewage-extraction, clawson-basement-sanitization, sewer-backup-cleanup
+- `worker-in-protective-suit-wiping-cabinet.webp` (4): berkley-sewer-cleanup, birmingham-flooded-basement, troy-basement-sanitization, services
 - `worker-pulling-on-gloves-in-protective-suit.webp` (4): royal-oak-sewage-extraction, troy-sewage-extraction, birmingham-basement-sanitization, about
 - `yellow-mop-bucket-with-dirty-water.webp` (4): royal-oak-sewer-cleanup, birmingham-sewer-cleanup, clawson-sewer-cleanup, berkley-basement-sanitization
 - `close-up-of-metal-downspout.webp` (3): royal-oak, services, george-w-kuhn-drainage-district
 - `door-and-steps-at-basement-entrance.webp` (3): royal-oak-flooded-basement, clawson-flooded-basement, royal-oak
 - `laundry-room-with-utility-sink.webp` (3): royal-oak-sump-pump-repair, birmingham-sump-pump-repair, clawson-sump-pump-repair
-- `person-mopping-tile-floor.webp` (3): troy-flooded-basement, royal-oak-basement-sanitization, clawson-basement-sanitization
+- `plumbers-wrench-on-wood.webp` (3): berkley-sewage-extraction, berkley-sump-pump-repair, berkley-water-damage-restoration
 - `washer-and-dryer-in-laundry-room.webp` (3): troy-sump-pump-repair, berkley-sump-pump-repair, sump-pump-repair
-- `white-fan-on-hardwood-floor.webp` (3): berkley-flooded-basement, berkley-water-damage-restoration, berkley
-- `worker-in-protective-suit-cleaning-couch.webp` (3): clawson-sewer-cleanup, birmingham-basement-sanitization, about
-- `worker-in-protective-suit-cleaning-table.webp` (3): birmingham-sewer-cleanup, troy-basement-sanitization, basement-sanitization
-- `worker-in-protective-suit-wiping-cabinet.webp` (3): berkley-sewer-cleanup, troy-basement-sanitization, services
+- `white-downspout-on-exterior-wall.webp` (3): berkley, clawson, george-w-kuhn-drainage-district
 - `calculator-and-papers-on-desk.webp` (2): contact, terms
+- `close-up-of-storm-drain-grate.webp` (2): troy, berkley
 - `hand-dialing-a-landline-phone.webp` (2): sewer-backup-claim-guide, contact
-- `hand-holding-plumbers-wrench.webp` (2): berkley-sewage-extraction, birmingham-sump-pump-repair
 - `hand-pulling-document-from-folder.webp` (2): privacy, terms
 - `hands-signing-a-document.webp` (2): sewer-backup-claim-guide, privacy
 - `man-talking-on-a-landline-phone.webp` (2): about, terms
+- `metal-downspout-on-exterior-wall.webp` (2): birmingham, berkley
 - `notebooks-and-folders-on-a-desk.webp` (2): basement-flood-checklist, privacy
-- `plumbers-wrench-on-wood.webp` (2): berkley-sewage-extraction, berkley-sump-pump-repair
-- `water-dripping-from-drain-spout.webp` (2): troy, george-w-kuhn-drainage-district
-- `white-downspout-on-exterior-wall.webp` (2): berkley, george-w-kuhn-drainage-district
 - `white-plastic-pipes-on-wall.webp` (2): clawson-sewage-extraction, berkley-sump-pump-repair
 
 GPS is stored only on generic indoor photos that are not shared across different cities. Outdoor photos have no GPS.
