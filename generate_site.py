@@ -5,9 +5,10 @@ Run this, or run build.py, after changing the phone number in site_config.py.
 
 import re
 import subprocess
+from datetime import datetime, timezone
 from pathlib import Path
 
-from site_config import BRAND, LASTMOD, PHONE_DISPLAY, PHONE_TEL
+from site_config import BRAND, DOMAIN, LASTMOD, PHONE_DISPLAY, PHONE_TEL
 from sitegen.copy_core import (
     ABOUT_FAQS,
     CONTACT_FAQS,
@@ -67,6 +68,7 @@ from sitegen.copy_water import DESCRIPTIONS as WATER_DESC
 from sitegen.copy_water import FAQS as WATER_FAQS
 from sitegen.copy_water import HERO as WATER_HERO
 from sitegen.page_images import images_for
+from sitegen.responsive_images import ensure_variants
 from sitegen.render import (
     CITIES,
     CITY_SERVICES,
@@ -100,34 +102,94 @@ def fill(text):
     return text.format(PHONE_DISPLAY=PHONE_DISPLAY)
 
 
-def git_lastmod(path):
-    """Date the built HTML last changed in git, or LASTMOD when this build rewrote it.
+# Page path -> content modules. Dates come from git, not from the build clock.
+_SERVICE_SOURCES = {
+    "sewer-cleanup": "sitegen/copy_sewer.py",
+    "sewage-extraction": "sitegen/copy_sewage.py",
+    "flooded-basement": "sitegen/copy_flood.py",
+    "sump-pump-repair": "sitegen/copy_sump.py",
+    "basement-sanitization": "sitegen/copy_sanit.py",
+    "water-damage-restoration": "sitegen/copy_water.py",
+}
+_HUBS = {
+    "services",
+    "water-damage-restoration",
+    "sewer-backup-cleanup",
+    "sewage-extraction",
+    "flooded-basement-cleanup",
+    "sump-pump-repair",
+    "basement-sanitization",
+}
+_GUIDES = {
+    "sewer-backup-claim-guide",
+    "george-w-kuhn-drainage-district",
+    "basement-flood-checklist",
+}
+_CORE = {"about", "contact", "privacy", "terms", "thank-you", "404"}
+_CITIES = {"royal-oak", "troy", "birmingham", "berkley", "clawson"}
 
-    Unchanged pages keep the commit date of their HTML file instead of the build date.
-    Every current page was last committed on 2026-09-28, so a no-op rebuild stays on that day.
-    """
-    filename = "index.html" if path in ("", "/") else f"{path}.html"
-    current = (ROOT / filename).read_bytes()
-    try:
-        head = subprocess.check_output(
-            ["git", "show", f"HEAD:{filename}"],
-            cwd=ROOT,
-            stderr=subprocess.DEVNULL,
-        )
-    except (subprocess.CalledProcessError, FileNotFoundError):
-        return LASTMOD
-    if current != head:
-        return LASTMOD
+
+def content_sources(path):
+    if path in ("", "/"):
+        return []
+    if path in _CORE:
+        return ["sitegen/copy_core.py"]
+    if path in _GUIDES:
+        return ["sitegen/copy_resources.py"]
+    if path == "sewer-backup-cleanup":
+        return ["sitegen/copy_hubs.py", "generate_site.py"]
+    if path in _HUBS or path in _CITIES:
+        return ["sitegen/copy_hubs.py"]
+    for suffix, source in _SERVICE_SOURCES.items():
+        if path.endswith("-" + suffix):
+            return [source]
+    return []
+
+
+def _git_date(relpath):
     try:
         logged = subprocess.check_output(
-            ["git", "log", "-1", "--format=%cs", "--", filename],
+            ["git", "log", "-1", "--format=%cs", "--", relpath],
             cwd=ROOT,
             text=True,
             stderr=subprocess.DEVNULL,
         ).strip()
     except (subprocess.CalledProcessError, FileNotFoundError):
-        return LASTMOD
-    return logged or LASTMOD
+        return ""
+    return logged
+
+
+def _source_dirty(relpath):
+    try:
+        diff = subprocess.check_output(
+            ["git", "diff", "--name-only", "HEAD", "--", relpath],
+            cwd=ROOT,
+            text=True,
+            stderr=subprocess.DEVNULL,
+        ).strip()
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return False
+    return bool(diff)
+
+
+def page_lastmod(path):
+    """Latest YYYY-MM-DD among the page HTML and its content source files.
+
+    A dirty content module uses today's UTC date for that page only.
+    Rebuilding shared chrome does not stamp every URL with the build date.
+    """
+    filename = "index.html" if path in ("", "/") else f"{path}.html"
+    dates = []
+    html_date = _git_date(filename)
+    if html_date:
+        dates.append(html_date)
+    for source in content_sources(path):
+        logged = _git_date(source)
+        if logged:
+            dates.append(logged)
+        if _source_dirty(source):
+            dates.append(datetime.now(timezone.utc).date().isoformat())
+    return max(dates) if dates else LASTMOD
 
 
 # Extra clauses used only to land unique descriptions in the 140–155 character window.
@@ -591,6 +653,7 @@ def main():
     META_ERRORS.clear()
     SITEMAP.clear()
     USED_METAS.clear()
+    ensure_variants()
 
     home_html, home_faqs = home_body()
     remember(
@@ -675,7 +738,7 @@ def main():
     hub_pages = [
         ("services", "Oakland County Sewer & Water Services | Oakland Sewer Pros", "Sewer backup, sewage extraction, flooded basement, water damage and sump pump services in Oakland County, MI. Find your city or call (248) 825-8312.", "Services for Oakland County homeowners", "If sewage or floodwater is in the basement, match the job to the water, then open your city. A local cleanup crew handles the visit, and they'll tell you when they can be there.", services_article(), "0.8"),
         ("water-damage-restoration", "Water Damage Restoration Oakland County | Oakland Sewer Pros", "Water damage restoration in Oakland County, MI. A local crew removes water, dries your basement and handles sewage-soaked materials. Call (248) 825-8312.", "Water damage restoration in Oakland County, MI", "The basement is wet, and sewage makes water damage restoration in Oakland County a stricter cleanup than a clean leak. A local cleanup crew handles the visit, and they'll tell you when they can be there.", water_hub(), "0.9"),
-        ("sewer-backup-cleanup", "Sewage Cleanup & Sewer Backup in Oakland County", "Sewer backup cleanup in Oakland County, MI. A local crew pumps out sewage, removes ruined materials and disinfects your basement. Call (248) 825-8312.", "Sewage cleanup and sewer backup in Oakland County, MI", "Sewage is in the basement and it needs to come out. A local cleanup crew handles the visit, and they'll tell you when they can be there. Open your city's page for the local steps.", sewer_hub(), "0.8"),
+        ("sewer-backup-cleanup", "Sewer Backup Cleanup Oakland County, MI | Basement Help", "Sewer backup cleanup in Oakland County, MI. A local crew pumps out sewage, removes ruined materials and disinfects your basement. Call (248) 825-8312.", "Sewage cleanup and sewer backup in Oakland County, MI", "Sewage is in the basement and it needs to come out. A local cleanup crew handles the visit, and they'll tell you when they can be there. Open your city's page for the local steps.", sewer_hub(), "0.8"),
         ("sewage-extraction", "Sewage Extraction Oakland County MI | Oakland Sewer Pros", "Sewage extraction in Oakland County, MI. A local crew pumps sewage out of your basement and hauls away soaked materials safely. Call (248) 825-8312.", "Sewage extraction in Oakland County, MI", "Contaminated water is in the basement and it has to be pumped out. A local cleanup crew handles the visit, and they'll tell you when they can be there.", sewage_hub(), "0.8"),
         ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup in Oakland County, MI. A local crew pumps out storm or sump water and dries the walls and floors. Call (248) 825-8312 now.", "Basement flood cleanup in Oakland County, MI", "Standing water from a storm or a sump is in the basement. A local cleanup crew handles the visit, and they'll tell you when they can be there. If a drain backed up, tell them it is sewage.", flood_hub(), "0.8"),
         ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, MI. A local crew fixes stuck, dead or overflowing pumps and removes the water if the floor is wet. Call (248) 825-8312.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump has left the basement wet. A local crew handles the visit, and they'll tell you when they can be there. Birmingham here means Birmingham, Michigan.", sump_hub(), "0.8"),
@@ -697,7 +760,9 @@ def main():
 
     for slug, title, h1, description, lead, article_fn, css, label in RESOURCE_PAGES:
         faqs = RESOURCE_FAQS[slug]
-        body = prose_body(esc(h1), lead, article_fn(), faqs=faqs, images=images_for(slug))
+        photos = images_for(slug)
+        modified = page_lastmod(slug)
+        body = prose_body(esc(h1), lead, article_fn(), faqs=faqs, images=photos)
         remember(
             slug,
             title,
@@ -706,7 +771,12 @@ def main():
             [("Home", "/"), (label, None)],
             faqs=faqs,
             priority="0.7",
-            article={"headline": h1, "published": "2026-09-28", "modified": LASTMOD},
+            article={
+                "headline": h1,
+                "published": "2026-09-28",
+                "modified": modified,
+                "image": f"{DOMAIN}{photos[0]['src']}",
+            },
             extra_css=css,
         )
 
@@ -787,7 +857,7 @@ def main():
         index=False,
     )
 
-    lastmods = {path: git_lastmod(path) for path, _priority in SITEMAP}
+    lastmods = {path: page_lastmod(path) for path, _priority in SITEMAP}
     (ROOT / "sitemap.xml").write_text(write_sitemap(SITEMAP, lastmods), encoding="utf-8")
     if META_ERRORS:
         print("META LENGTH ERRORS:")

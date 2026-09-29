@@ -21,7 +21,66 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="preload" href="/fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/css/fonts.css">
+    <style>
+/* Self-hosted Latin subsets. Family names match the Tailwind theme. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/outfit-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/outfit-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/outfit-800.woff2") format("woff2");
+}
+
+    </style>
     <link rel="stylesheet" href="/css/main.css">
     <style>
         .pulse-btn { animation: pulse-danger 2.2s infinite; }
@@ -44,6 +103,7 @@
       "url": "https://oaklandsewerpros.com/",
       "telephone": "+12488258312",
       "description": "Oakland Sewer Pros helps Oakland County, Michigan homeowners reach a local cleanup crew for sewer backup cleanup, sewage extraction, flooded basement cleanup, water damage restoration, sump pump repair, and basement sanitization after a flood or sewage backup.",
+      "logo": "https://oaklandsewerpros.com/apple-touch-icon.png",
       "areaServed": {
         "@type": "AdministrativeArea",
         "name": "Oakland County, Michigan"
@@ -154,12 +214,12 @@
 </script>
 </head>
 <body class="font-sans text-gray-200 bg-slate-900 min-h-screen flex flex-col justify-between pb-16 md:pb-0">
-    <a href="tel:2488258312" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="Call Oakland Sewer Pros 24/7 at (248) 825-8312">
+    <a href="tel:2488258312" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="CALL 24/7: (248) 825-8312, call Oakland Sewer Pros">
         <span class="flex items-center justify-center gap-2">Call 24/7: (248) 825-8312</span>
     </a>
     <header class="bg-slate-950/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between gap-3">
-            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="Oakland Sewer Pros home">
+            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="OAKLAND SEWER PROS home">
                 <div class="p-2 bg-emergency-600 rounded-lg text-white font-bold text-lg font-outfit">OS</div>
                 <div class="leading-tight">
                     <span class="block text-white font-extrabold text-base sm:text-lg tracking-tight font-outfit">OAKLAND SEWER</span>
@@ -223,7 +283,7 @@
             <article class="lg:col-span-8 space-y-6 bg-slate-950/40 border border-slate-800/80 p-6 md:p-8 rounded-2xl">
                 <h2 class="text-2xl font-outfit font-extrabold text-white">Water extraction under Berkley bungalows</h2>
 <p class="text-sm text-gray-300 leading-relaxed">Water damage restoration in Berkley is shaped by a short basement and a first floor of original flooring. Berkley is a city of bungalows, with shops along 12 Mile and traffic on Coolidge. Extraction has to remove water from the basement without tracking it onto the oak or maple at the top of a steep stair. Joist bays are close to that floor. Wet insulation in those bays is water damage to the house you live in, not only to the cellar.</p><figure class="my-8"><picture>
-        <source srcset="/images/hole-in-plaster-wall.webp" type="image/webp">
+        <source srcset="/images/hole-in-plaster-wall-480.webp 480w, /images/hole-in-plaster-wall-800.webp 800w, /images/hole-in-plaster-wall.webp 1200w" sizes="(max-width: 768px) 100vw, 640px" type="image/webp">
         <img src="/images/hole-in-plaster-wall.webp" alt="Hole in the plaster of a painted interior wall." width="1200" height="675" class="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg" loading="lazy" decoding="async">
     </picture></figure>
 <p class="text-sm text-gray-300 leading-relaxed">Call <a href="tel:2488258312" class="text-red-400 hover:text-red-300 underline font-medium">(248) 825-8312</a> and say the stair is short and the first floor is original wood.</p>
@@ -235,7 +295,7 @@
 <h3 class="text-lg font-outfit font-bold text-white">Basement flooding causes in Berkley</h3>
 <ul class="list-disc list-inside text-sm text-gray-300 space-y-1.5 pl-2"><li>Window wells and side-door stairwells that fill during a hard rain.</li><li>Sump overload or a dead pump when the power drops.</li><li>Roots or a cracked joint in the private lateral.</li><li>Downspouts that discharge at the foundation because the side yard is only a few feet wide.</li></ul>
 <figure class="my-8"><picture>
-        <source srcset="/images/leaking-pipe-wrapped-in-plastic.webp" type="image/webp">
+        <source srcset="/images/leaking-pipe-wrapped-in-plastic-480.webp 480w, /images/leaking-pipe-wrapped-in-plastic-800.webp 800w, /images/leaking-pipe-wrapped-in-plastic.webp 1200w" sizes="(max-width: 768px) 100vw, 640px" type="image/webp">
         <img src="/images/leaking-pipe-wrapped-in-plastic.webp" alt="Leaking pipe wrapped with plastic." width="1200" height="1800" class="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg" loading="lazy" decoding="async">
     </picture></figure><h2 class="text-2xl font-outfit font-extrabold text-white">Insurance on a Berkley policy</h2>
 <p class="text-sm text-gray-300 leading-relaxed">Whether a Berkley bungalow's policy includes sewer backup, sudden discharge, or groundwater is a question for your insurer. A crew's photos help that conversation. They are not the claim. The George W. Kuhn drainage district and the Oakland County Water Resources Commissioner are part of the regional system for this part of the county. They are not a substitute for reading your declaration page.</p>

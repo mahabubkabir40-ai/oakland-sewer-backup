@@ -21,7 +21,66 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="preload" href="/fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/css/fonts.css">
+    <style>
+/* Self-hosted Latin subsets. Family names match the Tailwind theme. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/outfit-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/outfit-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/outfit-800.woff2") format("woff2");
+}
+
+    </style>
     <link rel="stylesheet" href="/css/main.css">
     <style>
         .pulse-btn { animation: pulse-danger 2.2s infinite; }
@@ -44,6 +103,7 @@
       "url": "https://oaklandsewerpros.com/",
       "telephone": "+12488258312",
       "description": "Oakland Sewer Pros helps Oakland County, Michigan homeowners reach a local cleanup crew for sewer backup cleanup, sewage extraction, flooded basement cleanup, water damage restoration, sump pump repair, and basement sanitization after a flood or sewage backup.",
+      "logo": "https://oaklandsewerpros.com/apple-touch-icon.png",
       "areaServed": {
         "@type": "AdministrativeArea",
         "name": "Oakland County, Michigan"
@@ -154,12 +214,12 @@
 </script>
 </head>
 <body class="font-sans text-gray-200 bg-slate-900 min-h-screen flex flex-col justify-between pb-16 md:pb-0">
-    <a href="tel:2488258312" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="Call Oakland Sewer Pros 24/7 at (248) 825-8312">
+    <a href="tel:2488258312" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="CALL 24/7: (248) 825-8312, call Oakland Sewer Pros">
         <span class="flex items-center justify-center gap-2">Call 24/7: (248) 825-8312</span>
     </a>
     <header class="bg-slate-950/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between gap-3">
-            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="Oakland Sewer Pros home">
+            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="OAKLAND SEWER PROS home">
                 <div class="p-2 bg-emergency-600 rounded-lg text-white font-bold text-lg font-outfit">OS</div>
                 <div class="leading-tight">
                     <span class="block text-white font-extrabold text-base sm:text-lg tracking-tight font-outfit">OAKLAND SEWER</span>
@@ -222,7 +282,7 @@
         <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
             <article class="lg:col-span-8 space-y-6 bg-slate-950/40 border border-slate-800/80 p-6 md:p-8 rounded-2xl">
                 <p class="text-sm text-gray-300 leading-relaxed">Sewage extraction in Royal Oak is the removal step: pumping contaminated water out and taking the soaked material with it. If you still need the first minutes and why older laterals back up, read <a href="/royal-oak-sewer-cleanup" class="text-red-400 hover:text-red-300 underline font-medium">the sewer backup cleanup page</a>. Call when the water is already on the floor and you need it pumped out.</p><figure class="my-8"><picture>
-        <source srcset="/images/technician-working-on-water-pump.webp" type="image/webp">
+        <source srcset="/images/technician-working-on-water-pump-480.webp 480w, /images/technician-working-on-water-pump-800.webp 800w, /images/technician-working-on-water-pump.webp 1200w" sizes="(max-width: 768px) 100vw, 640px" type="image/webp">
         <img src="/images/technician-working-on-water-pump.webp" alt="Technician working on a water pump in front of a blue wall." width="1200" height="2133" class="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg" loading="lazy" decoding="async">
     </picture></figure>
 <h2 class="text-2xl font-outfit font-extrabold text-white">Sewage extraction on Royal Oak's older residential blocks</h2>
@@ -234,7 +294,7 @@
 <h3 class="text-lg font-outfit font-bold text-white">Sewage versus a clean-water leak</h3>
 <ul class="list-disc list-inside text-sm text-gray-300 space-y-1.5 pl-2"><li>Toilet, floor drain, or laundry standpipe overflowing points to the sanitary line.</li><li>A window well full of rain, with no smell from the drains, is a different problem. See <a href="/royal-oak-flooded-basement" class="text-red-400 hover:text-red-300 underline font-medium">flooded basement cleanup in Royal Oak</a>.</li><li>If both happen in the same storm, say so. Mixed water is still treated as sewage once the drain has discharged.</li><li>Groundwater through a cracked cove joint can look clear and still need <a href="/royal-oak-water-damage-restoration" class="text-red-400 hover:text-red-300 underline font-medium">water damage restoration</a> if it soaked finishes.</li></ul>
 <figure class="my-8"><picture>
-        <source srcset="/images/worker-pulling-on-gloves-in-protective-suit.webp" type="image/webp">
+        <source srcset="/images/worker-pulling-on-gloves-in-protective-suit-480.webp 480w, /images/worker-pulling-on-gloves-in-protective-suit-800.webp 800w, /images/worker-pulling-on-gloves-in-protective-suit.webp 1200w" sizes="(max-width: 768px) 100vw, 640px" type="image/webp">
         <img src="/images/worker-pulling-on-gloves-in-protective-suit.webp" alt="Worker in a protective suit pulling on blue gloves." width="1200" height="1798" class="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg" loading="lazy" decoding="async">
     </picture></figure><h2 class="text-2xl font-outfit font-extrabold text-white">What to ask before anyone extracts sewage in Royal Oak</h2>
 <p class="text-sm text-gray-300 leading-relaxed">Ask who is licensed for the work, whether they carry liability insurance, and whether the price covers haul-away of porous material or only pumping. The price comes from that company, and your insurance claim stays with your carrier. Southern Oakland County drainage, including parts of Royal Oak, is tied to county facilities associated with the Oakland County Water Resources Commissioner and the George W. Kuhn district, the former Twelve Towns Drain. Royal Oak is a member of that program.</p>

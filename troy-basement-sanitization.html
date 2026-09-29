@@ -21,7 +21,66 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="preload" href="/fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/css/fonts.css">
+    <style>
+/* Self-hosted Latin subsets. Family names match the Tailwind theme. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/outfit-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/outfit-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/outfit-800.woff2") format("woff2");
+}
+
+    </style>
     <link rel="stylesheet" href="/css/main.css">
     <style>
         .pulse-btn { animation: pulse-danger 2.2s infinite; }
@@ -44,6 +103,7 @@
       "url": "https://oaklandsewerpros.com/",
       "telephone": "+12488258312",
       "description": "Oakland Sewer Pros helps Oakland County, Michigan homeowners reach a local cleanup crew for sewer backup cleanup, sewage extraction, flooded basement cleanup, water damage restoration, sump pump repair, and basement sanitization after a flood or sewage backup.",
+      "logo": "https://oaklandsewerpros.com/apple-touch-icon.png",
       "areaServed": {
         "@type": "AdministrativeArea",
         "name": "Oakland County, Michigan"
@@ -154,12 +214,12 @@
 </script>
 </head>
 <body class="font-sans text-gray-200 bg-slate-900 min-h-screen flex flex-col justify-between pb-16 md:pb-0">
-    <a href="tel:2488258312" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="Call Oakland Sewer Pros 24/7 at (248) 825-8312">
+    <a href="tel:2488258312" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="CALL 24/7: (248) 825-8312, call Oakland Sewer Pros">
         <span class="flex items-center justify-center gap-2">Call 24/7: (248) 825-8312</span>
     </a>
     <header class="bg-slate-950/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between gap-3">
-            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="Oakland Sewer Pros home">
+            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="OAKLAND SEWER PROS home">
                 <div class="p-2 bg-emergency-600 rounded-lg text-white font-bold text-lg font-outfit">OS</div>
                 <div class="leading-tight">
                     <span class="block text-white font-extrabold text-base sm:text-lg tracking-tight font-outfit">OAKLAND SEWER</span>
@@ -223,14 +283,14 @@
             <article class="lg:col-span-8 space-y-6 bg-slate-950/40 border border-slate-800/80 p-6 md:p-8 rounded-2xl">
                 <h2 class="text-2xl font-outfit font-extrabold text-white">Sanitizing Troy finished basements after a backup or flood</h2>
 <p class="text-sm text-gray-300 leading-relaxed">Troy basement sanitization comes up after a lower level has already been used as living space. Split-levels near Big Beaver and finished rooms in places like Northfield Hills often have carpet, a sofa, a kids' corner, and a bath. If sewage touched those, sanitizing is not a spray over the top. The pad, the sofa bottom, and the bath base are reservoirs. A company has to remove the ruined layers before any disinfectant has a surface it can actually treat.</p><figure class="my-8"><picture>
-        <source srcset="/images/worker-in-protective-suit-cleaning-table.webp" type="image/webp">
+        <source srcset="/images/worker-in-protective-suit-cleaning-table-480.webp 480w, /images/worker-in-protective-suit-cleaning-table-800.webp 800w, /images/worker-in-protective-suit-cleaning-table.webp 1200w" sizes="(max-width: 768px) 100vw, 640px" type="image/webp">
         <img src="/images/worker-in-protective-suit-cleaning-table.webp" alt="Worker in a white protective suit cleaning a table." width="1200" height="1798" class="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg" loading="lazy" decoding="async">
     </picture></figure>
 <p class="text-sm text-gray-300 leading-relaxed">Ask the crew what training and insurance they carry for sewage cleanup. Call <a href="tel:2488258312" class="text-red-400 hover:text-red-300 underline font-medium">(248) 825-8312</a> and a local crew handles the cleaning. If the event was a clean sump overflow with no drain backup, say that. The scope is smaller than a sewage loss and may be handled under <a href="/troy-flooded-basement" class="text-red-400 hover:text-red-300 underline font-medium">flooded basement cleanup</a> and <a href="/troy-water-damage-restoration" class="text-red-400 hover:text-red-300 underline font-medium">water damage restoration</a>.</p>
 <h3 class="text-lg font-outfit font-bold text-white">Contents versus structure in a Troy lower level</h3>
 <ul class="list-disc list-inside text-sm text-gray-300 space-y-1.5 pl-2"><li>Structure: studs, sill, drywall, and the slab. The crew decides what is cut out.</li><li>Contents: toys, bins, and upholstered furniture. Soft items that soaked up sewage are generally discarded, not cleaned.</li><li>The bathroom vanity and the hollow base of a built-in can hold water after the floor is dry.</li><li>HVAC returns in the lower level can pull odor upstairs. Ask whether the system should stay off.</li></ul>
 <figure class="my-8"><picture>
-        <source srcset="/images/person-mopping-tile-floor-with-bucket.webp" type="image/webp">
+        <source srcset="/images/person-mopping-tile-floor-with-bucket-480.webp 480w, /images/person-mopping-tile-floor-with-bucket-800.webp 800w, /images/person-mopping-tile-floor-with-bucket.webp 1200w" sizes="(max-width: 768px) 100vw, 640px" type="image/webp">
         <img src="/images/person-mopping-tile-floor-with-bucket.webp" alt="Person mopping a tile floor beside a bucket." width="1200" height="1800" class="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg" loading="lazy" decoding="async">
     </picture></figure><h2 class="text-2xl font-outfit font-extrabold text-white">After sewage extraction, not instead of it</h2>
 <p class="text-sm text-gray-300 leading-relaxed">Sanitizing a room that still has standing sewage does nothing useful. <a href="/troy-sewage-extraction" class="text-red-400 hover:text-red-300 underline font-medium">Sewage extraction in Troy</a> comes first. <a href="/troy-sewer-cleanup" class="text-red-400 hover:text-red-300 underline font-medium">Sewer backup cleanup</a> is the overview of the backup itself. A failed pump that started the overflow is <a href="/troy-sump-pump-repair" class="text-red-400 hover:text-red-300 underline font-medium">sump pump repair</a>. The crew quotes the work. Ask for that number in writing.</p>
@@ -270,7 +330,7 @@
         </div></div>
     </section>
     <div class="max-w-3xl mx-auto px-4 pt-12"><figure class="my-8"><picture>
-        <source srcset="/images/worker-in-protective-suit-wiping-cabinet.webp" type="image/webp">
+        <source srcset="/images/worker-in-protective-suit-wiping-cabinet-480.webp 480w, /images/worker-in-protective-suit-wiping-cabinet-800.webp 800w, /images/worker-in-protective-suit-wiping-cabinet.webp 1200w" sizes="(max-width: 768px) 100vw, 640px" type="image/webp">
         <img src="/images/worker-in-protective-suit-wiping-cabinet.webp" alt="Worker in a white protective suit wiping a cabinet." width="1200" height="1798" class="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg" loading="lazy" decoding="async">
     </picture></figure></div>
     <section id="faq" class="py-16 bg-slate-900 px-4">

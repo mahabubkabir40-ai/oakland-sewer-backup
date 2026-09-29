@@ -76,9 +76,12 @@ for path in pages:
         if "...." in desc["content"]:
             err(f"{path.name}: truncated meta")
     canon = soup.find("link", rel="canonical")
-    if not canon:
+    if path.name == "404.html":
+        if canon:
+            err(f"{path.name}: 404 should not have a canonical")
+    elif not canon:
         err(f"{path.name}: no canonical")
-    elif path.name not in ("404.html",):
+    else:
         href = canon["href"]
         slug = "" if path.name == "index.html" else path.stem
         expected = "https://oaklandsewerpros.com/" if slug == "" else f"https://oaklandsewerpros.com/{slug}"
