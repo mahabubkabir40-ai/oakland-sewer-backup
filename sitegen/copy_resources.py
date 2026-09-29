@@ -722,7 +722,7 @@ RESOURCE_FAQS = {
         ),
         (
             "What should an Oakland County homeowner do before the next storm?",
-            "Check the sewer bill to see who maintains the line. Ask a plumber about the lateral and a backflow valve. Berkley reimburses the permit fee after inspection, not the valve (Source: [City of Berkley, Backwater Valve Permit Fee Reimbursement](https://www.berkleymi.gov/Community%20Development/Backwater%20Reimbursement%20Request.pdf)). Extend downspouts at least six feet, which Birmingham lists, and keep valuables off the floor. Ask your insurer whether a sewer-backup endorsement is on the policy. Test the sump pump." + cite("City of Birmingham Risk Management", SRC["bham_risk"]),
+            "Check the sewer bill to see who maintains the line. Ask a plumber about the lateral and a backflow valve. Berkley reimburses the permit fee after inspection, not the valve or its installation (Source: [City of Berkley, Backwater Valve Permit Fee Reimbursement](https://www.berkleymi.gov/Community%20Development/Backwater%20Reimbursement%20Request.pdf)). Extend downspouts at least six feet, which Birmingham lists, and keep valuables off the floor. Ask your insurer whether a sewer-backup endorsement is on the policy. Test the sump pump." + cite("City of Birmingham Risk Management", SRC["bham_risk"]),
         ),
         (
             "What should I avoid while sewage is on the basement floor?",

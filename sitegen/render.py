@@ -452,7 +452,7 @@ def nearby_section(service_slug, label, current_city):
         )
     else:
         others = [slug for slug, _city in CITIES if slug != current_city]
-        links = [a(city_service_href(slug, service_slug), f"{label} in {city_name(slug)}") for slug in others]
+        links = [a(city_service_href(slug, service_slug), f"{label[:1].lower() + label[1:]} in {city_name(slug)}") for slug in others]
         joined = ", ".join(links[:-1]) + " or " + links[-1]
         sentence = f"Same problem, different city? See {joined}."
     return f"""<div class="border-t border-slate-800/60 pt-6 mt-6">

@@ -156,7 +156,7 @@ def troy():
             "what gets rebuilt. In Troy that often means a carpeted family room in a split-level, a "
             "bedroom in the basement of a 1960s or 1970s house, or a utility corner that shares a wall "
             "with living space. Along the I-75 side of the city and near the Troy Historic Village, the "
-            "lower level may still be the original unfinished room. Other houses on the same street are finished. The repair path is not the same. "
+            "lower level may still be the original unfinished room. Other houses nearby have finished lower levels. The repair path is not the same. "
             "Unfinished concrete can be cleaned and dried. Carpet pad that sat in water usually cannot."
         ),
         p(
@@ -345,8 +345,8 @@ def clawson():
     return "\n".join([
         h2("Water extraction on Clawson's compact lots"),
         p(
-            "Water damage restoration in Clawson starts with access. Older homes "
-            "sit on small lots along 14 Mile Road and the blocks between Royal Oak and Troy. "
+            "Water damage restoration in Clawson starts with access. Many houses "
+            "sit on small lots with short driveways. "
             "The basement is often one room. Extraction equipment, wet debris, and the family's cars "
             "are competing for a short driveway. A crew that has not heard that description may show "
             "up with a plan that does not fit. Tell them on the call."
@@ -415,8 +415,7 @@ def clawson():
             "crew on site."
         ),
         p(
-            "Staging is the other Clawson constraint. Downtown 14 Mile is a short commercial strip; the "
-            "houses behind it have short drives. Wet carpet and drywall cannot sit in the street. Ask "
+            "Staging is the other Clawson constraint. Wet carpet and drywall cannot sit in the street. Ask "
             "where debris will go before work starts. If the water came up the floor drain, treat it as "
             "sewage until someone who is on site says otherwise. If it came through a low window during "
             "rain and the drains stayed quiet, say that too. The hub for this city is "

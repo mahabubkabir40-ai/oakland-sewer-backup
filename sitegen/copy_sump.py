@@ -6,6 +6,7 @@ from sitegen.citations import (
     BHAM,
     CLAW_DPW,
     CLAW_CCTV,
+    MCL1416,
     MCL1419,
     RO_FLOOD,
     RO_SEWER,
@@ -132,7 +133,7 @@ def birmingham():
         p(
             "Birmingham sump pump repair often means an older pit in an older home. "
             "Birmingham's FAQ says its older combined and storm sewers were designed for about 2 inches of rain in one hour; "
-            "a longer or heavier storm is when a pit and a floor drain can both be working at once. "
+            "in a longer or heavier storm, a pit and a floor drain can both be running at once. "
             "The city posted an engineer's presentation on the August 24, 2023 rain event. "
             "A pump failure during a long rain is how those lower levels flood. The repair is mechanical. "
             "The water left behind is a separate restoration problem."
@@ -236,8 +237,8 @@ def clawson():
     return "\n".join([
         h2("Sump pump repair on Clawson's small lots"),
         p(
-            "Clawson sump pump repair has an access problem before it has a parts problem. Older homes "
-            "stand on compact lots near 14 Mile, between Royal Oak and Troy. "
+            "Clawson sump pump repair has an access problem before it has a parts problem. Many houses "
+            "sit on compact lots, and the pit is often in a small, crowded basement. "
             "Clawson describes its combined sewer as strictly gravity fed: flow runs from smaller pipes to larger pipes, "
             "typically on major roads, before it enters the county system, with no pumps. "
             "The city has been cleaning and camera-inspecting its whole sanitary sewer system since December 2024, in 18 sections. "
@@ -297,7 +298,7 @@ ARTICLES = {
 
 FAQS = {
     "royal-oak": [
-        ("Is a sump overflow covered by Michigan's 45-day sewer claim rule?", "Usually not. Michigan's statute says it is not a sewage disposal system event if the main cause was a connection on your own property, such as a sump system, building drain, or downspout (MCL 691.1416). A floor drain backup from the city main can be different."),
+        ("Is a sump overflow covered by Michigan's 45-day sewer claim rule?", "Usually not. Michigan's statute says it is not a sewage disposal system event if a substantial proximate cause (50% or more) was a connection on the affected property, such as a sump system, building drain, surface drain, gutter, or downspout (MCL 691.1416). A floor drain backup from the city main can be different." + cite("Michigan Legislature, MCL 691.1416", MCL1416)),
         ("What should I do if the Royal Oak pit is overflowing and the power is on?", "From a dry place, you can unplug a humming pump and free a stuck float with a broom handle. Do not step into the water. Then call for a crew and, if the floor is wet, for water removal."),
         ("Will a new pump stop sewer backups?", "No. A sump handles groundwater at the pit. A floor-drain backup is a different pipe. Repairing one does not fix the other. Royal Oak says the city is responsible for the main and the homeowner for the lateral through the connection." + cite("City of Royal Oak Sewer Division", RO_SEWER)),
         ("Who do I call if the Royal Oak pit overflowed and the floor drain also moved?", "Treat drain water as sewage. City basement-water calls are (248) 246-3300 on weekdays and (248) 246-3500 after hours. Call (248) 825-8312 to reach a local crew for the pump and, if the floor is wet, for water removal." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),

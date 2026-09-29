@@ -638,8 +638,8 @@ def city_royal_oak():
         p(
             "FEMA-4195-DR, declared September 25, 2014, covered Macomb, Oakland, and Wayne counties for individual and "
             "public assistance. A National Weather Service paper describes about 4 to 6.5 inches in parts of those "
-            "counties, most of it in about four hours on August 11. A report the next day said Royal Oak's DPS rain "
-            "gauge recorded 4.98 inches that day, 1.12 inches of it in 30 minutes, as reported by Oakland County 115 the next day. "
+            "counties, most of it in about four hours on August 11. Oakland County 115 reported the next day that Royal Oak's DPS rain "
+            "gauge recorded 4.98 inches that day, 1.12 inches of it in 30 minutes. "
             "No count of damaged houses is stated here."
         ),
         h2("Older blocks, and which problem you have"),
@@ -717,7 +717,7 @@ def city_troy():
         ),
         h2("Houses from the 1960s and 1970s"),
         p(
-            "Troy's housing is largely from the 1960s and 1970s. The wet basements are in those houses. A finished "
+            "Troy's housing is largely from the 1960s and 1970s. Many of them have finished lower levels. A finished "
             "lower level holds carpet even when the water looks shallow."
         ),
         h2("Match the water to the right Troy help"),
@@ -745,7 +745,7 @@ def city_troy():
         ),
         h2("If the house is not actually in Troy"),
         p(
-            "A mile road or a freeway is easy to use as shorthand and easy to get wrong at the city limit. Birmingham's "
+            "A nearby road name can be misleading near a city line, so check which city the house is in. Birmingham's "
             "sewers are a gravity system with no city pump stations, and the city posts a separate water-event line that "
             "is not a claim. Clawson contracts Troy Police for dispatch, so the non-emergency number looks familiar, but "
             "Clawson adds extension 1 and its weekday DPW hours are not Troy's Water Division. Royal Oak's after-hours "
@@ -867,7 +867,7 @@ def city_berkley():
         ),
         h2("Older homes, and the help that fits"),
         p(
-            "Berkley is a small city of older homes. Downtown runs along 12 Mile Road. Coolidge "
+            "Berkley is a small city, and many of its houses are older. Downtown runs along 12 Mile Road. Coolidge "
             "is the main north-south road. The city designs its streets to hold water during a hard rain. Basements are short, "
             "and the stair lands close to first-floor living space. A household vac on sewage water on that stair is "
             "how contamination reaches the room upstairs. Wait for a company equipped for it."
@@ -934,8 +934,7 @@ def city_clawson():
         ),
         h2("Small lots, one-room basements, and the matching help"),
         p(
-            "Clawson is largely older homes on compact "
-            "lots. 14 Mile Road is the downtown street. The city sits between Royal Oak and Troy. Basements are often a "
+            "Clawson sits between Royal Oak and Troy, and many lots are compact. Basements are often a "
             "single room that holds the furnace, the water heater, and the floor drain. A backup in that room is also an "
             "electrical and heating problem. Stay out if water is near the furnace or the panel."
         ),
@@ -1019,7 +1018,7 @@ CITY_FAQS = {
         ),
         (
             "Did the August 2014 federal disaster declaration include Oakland County?",
-            "Yes. FEMA-4195-DR was declared September 25, 2014, for Macomb, Oakland, and Wayne counties. A next-day report said Royal Oak's DPS gauge recorded 4.98 inches on August 11, with 1.12 inches in 30 minutes, as reported by Oakland County 115. The reports do not give a count of damaged homes." + cite("Oakland County 115, August 12, 2014", RO_115) + cite("Federal Register, FEMA-4195-DR", FEMA_2014),
+            "Yes. FEMA-4195-DR was declared September 25, 2014, for Macomb, Oakland, and Wayne counties. Oakland County 115 reported the next day that Royal Oak's DPS gauge recorded 4.98 inches on August 11, with 1.12 inches in 30 minutes. The reports do not give a count of damaged homes." + cite("Oakland County 115, August 12, 2014", RO_115) + cite("Federal Register, FEMA-4195-DR", FEMA_2014),
         ),
         (
             "What cleanup do I need if the Royal Oak floor drain never moved?",

@@ -268,7 +268,7 @@ def clawson():
         ),
         ul([
             "Short driveways mean the pump discharge should be planned so it does not ice the sidewalk or run to a neighbor's window well.",
-            "Street flooding on 14 Mile is a city drainage question. Your basement is a separate hire.",
+            "Street flooding is a city drainage question. Your basement is a separate hire.",
             "Contaminated floods need " + a("/clawson-basement-sanitization", "sanitizing after the Clawson flood") + ", not a mop and bleach from the grocery store as the whole plan.",
             "Ask your insurer what is covered. Sudden discharge and groundwater are often treated differently.",
         ]),
@@ -281,7 +281,7 @@ def clawson():
             + " and "
             + a("/clawson-sewer-cleanup", "sewage cleanup in Clawson")
             + ". Sewage in a room that also holds the furnace is a health problem: do not "
-            "wade in, do not mop it up the stair, and do not restart equipment that was submerged."
+            "wade in, do not track it up the stairs, and do not restart equipment that was submerged."
         ),
         p(
             "A reasonable sequence, done by the crew, is: make the room safe, remove standing "

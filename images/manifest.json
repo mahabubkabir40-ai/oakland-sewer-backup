@@ -192,33 +192,8 @@
         "title": "A Yellow Mop Bucket with Dirty Water"
       }
     ],
-    "royal-oak-flooded-basement": [
-      {
-        "file": "close-up-of-storm-drain-grate.webp",
-        "alt": "Close-up of a metal storm drain grate.",
-        "width": 972,
-        "height": 1458,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/",
-        "photographer": "Jo\u00e3o V\u00edtor Heinrichs",
-        "license": "Pexels License",
-        "pexels_id": "7807058",
-        "title": "A Close-Up Shot of a Storm Drain"
-      }
-    ],
+    "royal-oak-flooded-basement": [],
     "troy-flooded-basement": [
-      {
-        "file": "rusty-street-drain.webp",
-        "alt": "Rusty metal street drain set in pavement.",
-        "width": 1080,
-        "height": 720,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-rusty-metal-street-drainage-6573773/",
-        "photographer": "Malcolm Garret",
-        "license": "Pexels License",
-        "pexels_id": "6573773",
-        "title": "A Rusty Metal Street Drainage"
-      },
       {
         "file": "peeling-paint-on-damaged-wall.webp",
         "alt": "Peeling paint on a damaged interior wall.",
@@ -232,48 +207,9 @@
         "title": "Close-up of a Damaged Wall Surface"
       }
     ],
-    "birmingham-flooded-basement": [
-      {
-        "file": "white-downspout-on-exterior-wall.webp",
-        "alt": "White downspout on an exterior wall.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/white-downspout-on-concrete-wall-9809765/",
-        "photographer": "Plato Terentev",
-        "license": "Pexels License",
-        "pexels_id": "9809765",
-        "title": "White Downspout on Concrete Wall"
-      }
-    ],
-    "berkley-flooded-basement": [
-      {
-        "file": "close-up-of-metal-downspout.webp",
-        "alt": "Close-up of a metal downspout.",
-        "width": 1080,
-        "height": 1620,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-downspout-5940870/",
-        "photographer": "Eva Bronzini",
-        "license": "Pexels License",
-        "pexels_id": "5940870",
-        "title": "A Close-Up Shot of a Downspout"
-      }
-    ],
-    "clawson-flooded-basement": [
-      {
-        "file": "metal-downspout-on-exterior-wall.webp",
-        "alt": "Metal downspout on an exterior wall.",
-        "width": 1200,
-        "height": 800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-silver-metal-pipe-on-brown-concrete-wall-10372434/",
-        "photographer": "Nikita Nikitin",
-        "license": "Pexels License",
-        "pexels_id": "10372434",
-        "title": "A Silver Metal Pipe on Brown Concrete Wall"
-      }
-    ],
+    "birmingham-flooded-basement": [],
+    "berkley-flooded-basement": [],
+    "clawson-flooded-basement": [],
     "royal-oak-sewage-extraction": [
       {
         "file": "industrial-pump-and-hoses-outdoors.webp",
@@ -1207,18 +1143,6 @@
       }
     ],
     "basement-flood-checklist": [
-      {
-        "file": "close-up-of-storm-drain-grate.webp",
-        "alt": "Close-up of a metal storm drain grate.",
-        "width": 972,
-        "height": 1458,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/",
-        "photographer": "Jo\u00e3o V\u00edtor Heinrichs",
-        "license": "Pexels License",
-        "pexels_id": "7807058",
-        "title": "A Close-Up Shot of a Storm Drain"
-      },
       {
         "file": "notebooks-and-folders-on-a-desk.webp",
         "alt": "Notebooks, folders, and pens spread on a desk.",

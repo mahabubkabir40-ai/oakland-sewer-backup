@@ -116,9 +116,9 @@ def troy():
         ),
         h2("Sewage extraction in Troy split-levels and subdivision basements"),
         p(
-            "The Troy backups that need extraction are usually in a lower level: a 1960s or 1970s house, "
-            "or a basement bath that started gurgling while the storm was still on I-75. Sewage extraction there "
-            "means getting contaminated water out of carpet, tack strip, and the pad underneath, then deciding "
+            "The Troy backups that need extraction are often in the lower level of a 1960s or 1970s house, "
+            "or in a basement bath that started gurgling during the storm. The job is "
+            "getting contaminated water out of carpet, tack strip, and the pad underneath, then deciding "
             "what building material has to leave with it."
         ),
         p(
@@ -191,7 +191,6 @@ def birmingham():
         ),
         p(
             "Birmingham's FAQ says its older combined and storm sewers were designed for about 2 inches of rain in one hour. "
-            "A longer or heavier storm is when a floor drain can be working at the same time as the pump-out. "
             "The city posted an engineer's presentation on the August 24, 2023 rain event."
         ),
         p(
@@ -202,7 +201,6 @@ def birmingham():
         p(
             "Ask the company to explain containment: how they will keep sewage off the stair, whether they "
             "will protect remaining wood floors above, and which porous items they expect to throw away. "
-            "Ask the crew on site. "
             "Call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
             + " and a local crew comes to pump it out. Ask them for license "
             "and insurance before they start."
@@ -251,7 +249,7 @@ def berkley():
         ),
         h2("Sewage extraction in Berkley basements"),
         p(
-            "Berkley is a small city of older homes. Downtown is the 12 Mile Road row "
+            "Berkley is a small city, and many of its houses are older. Downtown is the 12 Mile Road row "
             "of storefronts; the backups are on the residential blocks off that row and off Coolidge. Basements "
             "are short, stairs are steep, and the floor drain is often next to the laundry tub. Sewage extraction "
             "in that footprint is awkward. Hoses, bags of wet drywall, and drying equipment all compete for the "
@@ -327,8 +325,8 @@ def clawson():
         pump_out_list("clawson", "Clawson"),
         h2("Sewage extraction on Clawson's small lots"),
         p(
-            "Clawson extraction jobs are often in a small basement, not a big rec room. Older homes on compact lots "
-            "sit between Royal Oak and Troy. A floor drain or a basement toilet in a small utility room can be where "
+            "Clawson extraction jobs are often in a small basement, not a big rec room. Many lots are "
+            "compact. A floor drain or a basement toilet in a small utility room can be where "
             "the water shows up, with a short driveway and little side yard to lay hose."
         ),
         p(
@@ -397,13 +395,13 @@ FAQS = {
     ],
     "troy": [
         ("Is sewage extraction in Troy the same as draining a flooded window well?", "No. Window-well rain can be clean storm water. Water from a floor drain or basement bath is sewage. Tell the crew which one you have."),
-        ("How can a Troy sewer backup claim be sent?", "Troy says a claim may be emailed, mailed, faxed to 248-524-3259, or dropped off at the City Attorney's Office at 500 W. Big Beaver." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
+        ("How can a Troy sewer backup claim be sent?", "Troy says a claim may be emailed, mailed, faxed to 248-524-3259, or dropped off at the City Attorney's Office." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
         ("What happens if Troy's 45-day written notice is missed?", "Troy says failure to give written notice within 45 days prevents recovery." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
         ("Can a finished Troy basement bath hide sewage?", "Yes. Water can sit inside the vanity and behind the base after the floor looks dry. Ask the crew to open and check it as part of extraction."),
         ("Does sewage extraction in Troy include the 45-day claim?", "No. Extraction removes the water. Written notice to the City Attorney's Office is your letter, due within 45 days of discovery. Insurance, if a sewer-backup endorsement is on the policy, is a separate call." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
     ],
     "birmingham": [
-        ("What rain were Birmingham's older sewers designed for?", "Birmingham's FAQ says its older combined and storm sewers were designed for about 2 inches of rain in one hour. A longer or heavier storm is more than that design." + cite("City of Birmingham Risk Management", BHAM)),
+        ("What rain were Birmingham's older sewers designed for?", "About 2 inches of rain in one hour, according to the city's FAQ, for its older combined and storm sewers. A longer or heavier storm can exceed that, so treat anything that came up a floor drain as sewage." + cite("City of Birmingham Risk Management", BHAM)),
         ("Does Birmingham have sewer pump stations?", "No. Birmingham's FAQ says the system is gravity and the city owns no pump or lift stations. Pumping a basement is done with the cleanup crew's own equipment. Call (248) 825-8312." + cite("City of Birmingham Risk Management", BHAM)),
         ("Does extraction include repairing the private lateral?", "No. Removing water from the house does not dig up or replace the lateral. That is a separate plumbing hire. The city's system is gravity and Birmingham owns no sewage pump or lift stations, so a backup is not a failed municipal lift station." + cite("City of Birmingham Risk Management", BHAM)),
         ("Is (248) 530-1703 the number that sends an extraction crew?", "No. That line collects flooding information for the city. Claims questions go to 248.530.1808. The city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. For pumping the lower level, call (248) 825-8312, and leave plaster in place until the crew has seen how high the water went." + cite("City of Birmingham Risk Management", BHAM)),
@@ -418,7 +416,7 @@ FAQS = {
     ],
     "clawson": [
         ("Does the City of Clawson inspect my sewer lateral after a backup?", "No. Clawson says it cleans and inspects the public main and checks each tap where a house connects, but it cannot clean or inspect individual laterals, and it points residents to a licensed plumber. Property owners are responsible for their service line up to and including the tap." + cite("City of Clawson, Cleaning and Televising Sewers", CLAW_CCTV)),
-        ("What if a Clawson backup happens on a Friday?", "Clawson public works is closed on Fridays. Use the after-hours DPW line for a city sewer emergency. Cleanup inside the house is a separate call to (248) 825-8312." + cite("City of Clawson DPW page", CLAW_DPW)),
+        ("What if a Clawson backup happens on a Friday?", "Clawson public works is closed on Fridays. Use the after-hours DPW line, 248-524-3477, for a city sewer emergency. For the basement itself, call (248) 825-8312." + cite("City of Clawson DPW page", CLAW_DPW)),
         ("What if several Clawson houses back up at once?", "Call the city about the main and call a cleanup company about the water in your basement. A neighborhood-wide surcharge and a single lateral failure are different problems."),
         ("Does Clawson's sewer page tell me the basin, or my lateral?", "The page lists the George W. Kuhn basin and the Oakland County Water Resources Commissioner, and it links a combined-sewer explainer. Confirm your street with the city. Extraction only removes what is already in the basement." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER)),
         ("What is the Clawson DPW number?", "The DPW office is (248) 288-3222, Monday through Thursday, 7:00 a.m. to 3:30 p.m., closed Fridays. The city lists 248-524-3477 for after-hours DPW emergencies. Cleanup inside the house is a separate call to (248) 825-8312." + cite("City of Clawson DPW page", CLAW_DPW)),

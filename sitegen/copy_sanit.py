@@ -37,8 +37,7 @@ def royal_oak():
         throw_or_clean(),
         p(
             "Royal Oak's flood page links cleanup and sanitizing procedures, 'Cleaning Up the Mess After Basement Flooding', "
-            "drafted by the Michigan Municipal Risk Management Authority's Public Works advisory committee. "
-            "The city says tree roots, disposable diapers and grease are key causes of blockages in a house's sewer line."
+            "drafted by the Michigan Municipal Risk Management Authority's Public Works advisory committee."
         ),
         h2("Sanitizing a Royal Oak basement after sewage or a flood"),
         p(
@@ -330,23 +329,23 @@ ARTICLES = {
 
 FAQS = {
     "royal-oak": [
-        ("If the Royal Oak main is blocked, does the city send a crew?", "Royal Oak says that if the main sewer is blocked, a crew is dispatched immediately. If the problem is in the owner's line, the city advises calling a plumber or a sewer cleaning company. Sanitizing the basement does not do either job." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),
-        ("Where does Royal Oak publish cleanup steps?", "Royal Oak's flood page links 'Cleaning Up the Mess After Basement Flooding', drafted by the Michigan Municipal Risk Management Authority's Public Works advisory committee." + cite("City of Royal Oak, Cleaning Up the Mess After Basement Flooding", RO_CLEAN)),
+        ("What causes blockages in a Royal Oak house sewer line?", "Royal Oak names tree roots, disposable diapers and grease as key causes. Clearing the house line is a job for a plumber or a sewer cleaning company. Sanitizing the basement does not clear it." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),
+        ("Where does Royal Oak publish cleanup steps?", "On the city's flood-response page, as a linked guide. It is worth a read before anyone starts spraying." + cite("City of Royal Oak, Cleaning Up the Mess After Basement Flooding", RO_CLEAN)),
         ("Why does a Royal Oak basement still smell after it looks clean?", "Odor usually means a porous material was left behind, often the pad, the bottom of the drywall, or the pit. Ask the crew to find it before they call the job done."),
         ("Does sanitizing a Royal Oak basement replace calling the Sewer Division?", "No. Cleaning the slab does not check the main. Weekday basement-water calls are (248) 246-3300, and after hours (248) 246-3500 dispatches sewer personnel. The city owns the main. You own the lateral through the connection. Written notice, if you are pursuing a sewage event, is due within 45 days of discovery." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
         ("Does the George W. Kuhn basin clean a Royal Oak basement?", "The basin, formerly Twelve Towns, stores and treats regional combined flow. Royal Oak is a member, and the basin was expanded in 2006. It does not wipe the slab. Sanitizing is the crew after the water is out. The Sewer Division, (248) 246-3300 on weekdays, answers questions about the main." + cite("Oakland County Water Resources Commissioner, George W. Kuhn Retention Treatment Basin", WRC_GWK)),
     ],
     "troy": [
         ("Should a Troy playroom that had sewage be sprayed and kept?", "Soft contents that soaked up sewage are generally thrown away. Spraying the room without removing the pad and the ruined furnishings does not sanitize the lower level."),
-        ("How can a Troy sewer backup claim be sent?", "Troy says a claim may be emailed, mailed, faxed to 248-524-3259, or dropped off at the City Attorney's Office. Cleaning the basement does not send that notice." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
+        ("Who do I call in Troy if the backup is still coming in?", "Troy asks residents to call the Water Division at 248-524-3370 as soon as a backup is found. Outside business hours, the city lists the Troy Police Department at 248-524-3477. Hold off on sanitizing until the water has stopped." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
         ("Does sanitizing include drying the Troy basement?", "No. Drying is a different part of water damage restoration. Ask for both scopes if the materials are still wet. The pad and the sofa bottom usually have to come out before a cleaner has a surface it can treat."),
-        ("What happens if Troy's 45-day written notice is missed?", "Troy says failure to give written notice within 45 days prevents recovery. Sanitizing the room does not extend that deadline." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
+        ("Should I photograph what the crew throws out in a Troy basement?", "Yes. Photos of the water line and of each item before it leaves the house help your insurer. They also support a written claim if you believe a city sewer was involved. Troy says missing its 45-day written notice prevents recovery." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
         ("Does sanitizing a Troy playroom send the 45-day notice?", "Cleaning the room leaves the letter unsent. Written notice goes to the City Attorney's Office within 45 days of discovering the damage. Troy discharges through Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. Ask the city which district serves the house." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
     ],
     "birmingham": [
         ("Can original Birmingham plaster be sanitized in place?", "Only if sewage did not soak through it. Soft or deeply stained plaster usually has to be removed. The crew should decide after looking at the room."),
         ("Is a deodorant fog enough after a Birmingham backup?", "No. Fog does not replace removing the contaminated material. The smell returns when humidity rises."),
-        ("What rain were Birmingham's older sewers designed for?", "Birmingham's FAQ says its older combined and storm sewers were designed for about 2 inches of rain in one hour. What comes up a floor drain in a heavier storm should be treated as sewage when you clean." + cite("City of Birmingham Risk Management", BHAM)),
+        ("Is floor-drain water in a heavy Birmingham storm sewage?", "Treat it that way. Birmingham's FAQ says its older combined and storm sewers were designed for about 2 inches of rain in one hour, so a heavier storm can push dirty water up a floor drain. Clean anything it touched as sewage." + cite("City of Birmingham Risk Management", BHAM)),
         ("Will Birmingham's backflow advice clean sewage that is already in the plaster?", "No. A backflow preventer, downspouts extended about 6 feet, and grading away from the foundation are prevention steps from the city FAQ. Soft plaster that soaked up sewage usually has to come out. The water-event line (248) 530-1703 is not the cleaning crew." + cite("City of Birmingham Risk Management", BHAM)),
         ("Does cleaning Birmingham plaster file the sewer backup claim?", "Removing soft plaster does not send the letter. Written notice is due within 45 days of discovery, on the city's sewer backup claim form. The water-event form is not that claim. Claims questions are 248.530.1808. The city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service." + cite("City of Birmingham Risk Management", BHAM)),
     ],
@@ -362,7 +361,7 @@ FAQS = {
         ("Does Clawson's sewer have pumps that could have failed?", "No. The city describes its combined sewer system as strictly gravity fed, without pumps. Treat anything that came up the floor drain as sewage when you clean." + cite("City of Clawson, Cleaning and Televising Sewers", CLAW_CCTV)),
         ("Does sanitizing fix the Clawson lateral?", "No. Cleaning the basement does not open the pipe. The city says it cannot clean or inspect private laterals and points residents to a licensed plumber." + cite("City of Clawson, Cleaning and Televising Sewers", CLAW_CCTV)),
         ("What should I tell a crew sanitizing a Clawson basement?", "That the furnace, the washer, and the floor drain share one room. If you believe the public sewer was involved, written notice is due within 45 days of discovery. Clawson's sewer page points to the George W. Kuhn basin for the regional system." + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
-        ("Should I assume every Clawson street is a combined sewer when I clean?", "The city's CCTV page describes Clawson's combined sewer system as strictly gravity fed. If a floor drain discharged, treat the film as sewage. Cleaning the basement does not open the city main." + cite("City of Clawson, Cleaning and Televising Sewers", CLAW_CCTV)),
+        ("Is Clawson still inspecting its sewers?", "Yes. The city began cleaning, televising and inspecting its sanitary sewer in December 2024, in 18 sections, and says the work is winding down, with mostly the largest pipes left. That work is on the public main. Cleaning your basement is a separate job you arrange." + cite("City of Clawson, Cleaning and Televising Sewers", CLAW_CCTV)),
     ],
 }
 
