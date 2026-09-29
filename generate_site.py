@@ -172,6 +172,33 @@ def _source_dirty(relpath):
     return bool(diff)
 
 
+_COMMITTED_LASTMODS = None
+
+
+def _is_shallow():
+    try:
+        out = subprocess.check_output(
+            ["git", "rev-parse", "--is-shallow-repository"], cwd=ROOT, text=True, stderr=subprocess.DEVNULL
+        ).strip()
+    except (subprocess.CalledProcessError, FileNotFoundError):
+        return True
+    return out != "false"
+
+
+def _committed_lastmod(path):
+    """Lastmod already in sitemap.xml. Cloudflare builds from a shallow clone, where git log
+    would give every file the newest commit date, so it reuses the dates committed from a full clone."""
+    global _COMMITTED_LASTMODS
+    if _COMMITTED_LASTMODS is None:
+        _COMMITTED_LASTMODS = {}
+        sitemap = ROOT / "sitemap.xml"
+        if sitemap.exists():
+            for loc, day in re.findall(r"<loc>([^<]+)</loc>\s*<lastmod>([^<]+)</lastmod>", sitemap.read_text(encoding="utf-8")):
+                key = loc.rstrip("/").rsplit("/", 1)[-1] if loc.rstrip("/") != DOMAIN.rstrip("/") else ""
+                _COMMITTED_LASTMODS[key] = day
+    return _COMMITTED_LASTMODS.get("" if path in ("", "/") else path)
+
+
 def page_lastmod(path):
     """Latest YYYY-MM-DD among the page's content source files.
 
@@ -180,6 +207,8 @@ def page_lastmod(path):
     """
     # The built HTML is not used: a chrome-only rebuild commits every page and would
     # stamp all 50 URLs with the same day. Pages without a mapped module use LASTMOD.
+    if _is_shallow():
+        return _committed_lastmod(path) or LASTMOD
     dates = []
     for source in content_sources(path):
         logged = _git_date(source)
