@@ -20,7 +20,7 @@ def build():
             shutil.copytree(d, os.path.join(dest, d))
             print(f"Copied directory: {d}")
 
-    file_patterns = ["*.html", "*.png", "*.ico", "sitemap.xml", "robots.txt", "_headers"]
+    file_patterns = ["*.html", "*.png", "*.ico", "sitemap.xml", "robots.txt", "*.txt", "_headers"]
     for pattern in file_patterns:
         for filepath in glob.glob(pattern):
             if os.path.isfile(filepath):
