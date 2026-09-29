@@ -3,6 +3,7 @@
 import html
 import json
 import re
+from pathlib import Path
 from xml.sax.saxutils import escape as xml_escape
 
 from site_config import (
@@ -15,6 +16,9 @@ from site_config import (
     PHONE_E164,
     PHONE_TEL,
 )
+from sitegen.responsive_images import SIZES, srcset_for
+
+_FONTS_CSS = (Path(__file__).resolve().parents[1] / "css" / "fonts.css").read_text(encoding="utf-8")
 
 CITIES = [
     ("royal-oak", "Royal Oak"),
@@ -121,7 +125,7 @@ def picture(src, alt, width, height, eager=False, css="w-full h-auto max-h-[350p
     loading = "eager" if eager else "lazy"
     priority = ' fetchpriority="high"' if eager else ""
     return f"""<picture>
-        <source srcset="{esc(webp)}" type="image/webp">
+        <source srcset="{esc(srcset_for(webp))}" sizes="{esc(SIZES)}" type="image/webp">
         <img src="{esc(src)}" alt="{esc(alt)}" width="{width}" height="{height}" class="{css}" loading="{loading}" decoding="async"{priority}>
     </picture>"""
 
@@ -268,6 +272,7 @@ def organization_graph():
                 "backup cleanup, sewage extraction, flooded basement cleanup, water damage restoration, "
                 "sump pump repair, and basement sanitization after a flood or sewage backup."
             ),
+            "logo": f"{DOMAIN}/apple-touch-icon.png",
             "areaServed": {
                 "@type": "AdministrativeArea",
                 "name": "Oakland County, Michigan",
@@ -325,8 +330,8 @@ def service_schema(name, description, url_path, area_name):
     }
 
 
-def article_schema(headline, description, url_path, date_published, date_modified):
-    return {
+def article_schema(headline, description, url_path, date_published, date_modified, image=None):
+    data = {
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": headline,
@@ -339,6 +344,9 @@ def article_schema(headline, description, url_path, date_published, date_modifie
         "author": {"@type": "Organization", "@id": f"{DOMAIN}/#organization", "name": BRAND, "url": f"{DOMAIN}/"},
         "publisher": {"@type": "Organization", "@id": f"{DOMAIN}/#organization", "name": BRAND, "url": f"{DOMAIN}/"},
     }
+    if image:
+        data["image"] = image
+    return data
 
 
 def faq_html(faqs, heading):
@@ -470,12 +478,12 @@ def _menu_links():
 
 def header():
     desktop, mobile = _menu_links()
-    return f"""<a href="tel:{PHONE_TEL}" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="Call {BRAND} 24/7 at {PHONE_DISPLAY}">
+    return f"""<a href="tel:{PHONE_TEL}" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="CALL 24/7: {PHONE_DISPLAY}, call {BRAND}">
         <span class="flex items-center justify-center gap-2">Call 24/7: {PHONE_DISPLAY}</span>
     </a>
     <header class="bg-slate-950/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between gap-3">
-            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="{BRAND} home">
+            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="OAKLAND SEWER PROS home">
                 <div class="p-2 bg-emergency-600 rounded-lg text-white font-bold text-lg font-outfit">OS</div>
                 <div class="leading-tight">
                     <span class="block text-white font-extrabold text-base sm:text-lg tracking-tight font-outfit">OAKLAND SEWER</span>
@@ -624,9 +632,11 @@ def render_document(path, title, description, body, crumbs, faqs=None, service=N
             url_path,
             article["published"],
             article["modified"],
+            article.get("image"),
         )))
     og_type = "article" if article else "website"
     robots_tag = f'<meta name="robots" content="{esc(robots)}">'
+    canonical_line = "" if path == "404" else f'    <link rel="canonical" href="{esc(canonical)}">\n'
     return f"""<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -635,8 +645,7 @@ def render_document(path, title, description, body, crumbs, faqs=None, service=N
     <title>{esc(title)}</title>
     <meta name="description" content="{esc(description)}">
     {robots_tag}
-    <link rel="canonical" href="{esc(canonical)}">
-    <meta property="og:title" content="{esc(title)}">
+{canonical_line}    <meta property="og:title" content="{esc(title)}">
     <meta property="og:description" content="{esc(description)}">
     <meta property="og:url" content="{esc(canonical)}">
     <meta property="og:type" content="{og_type}">
@@ -650,7 +659,9 @@ def render_document(path, title, description, body, crumbs, faqs=None, service=N
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="preload" href="/fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/css/fonts.css">
+    <style>
+{_FONTS_CSS}
+    </style>
     <link rel="stylesheet" href="/css/main.css">
     <style>{PULSE_CSS}{extra_css}</style>
     {''.join(scripts)}

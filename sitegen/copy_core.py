@@ -54,7 +54,8 @@ def privacy_article():
         ),
         h2("Cookies and analytics"),
         p(
-            "The pages do not include a third-party analytics script and do not set advertising cookies. "
+            "Our hosting provider, Cloudflare, adds its Web Analytics script, which records anonymous page views and page-speed data without using cookies. "
+            "The pages do not set advertising cookies. "
             "Your browser may still keep its own history of pages you visited. The host, Cloudflare, may "
             "process connection data such as IP address as part of delivering the site. That processing "
             "is the host's, described in Cloudflare's own privacy materials."
@@ -172,7 +173,7 @@ PRIVACY_FAQS = [
     ("If I call, who receives my number?", "The local crew that answers your call. Once you are talking with them, they handle your number."),
     (
         "Do the pages set advertising cookies?",
-        "The pages do not include a third-party analytics script and do not set advertising cookies. Your browser may still keep its own history. The host, Cloudflare, may process connection data such as an IP address while delivering the site.",
+        "Our hosting provider, Cloudflare, adds its Web Analytics script, which records anonymous page views and page-speed data without using cookies. The pages do not set advertising cookies. Your browser may still keep its own history. The host, Cloudflare, may process connection data such as an IP address while delivering the site.",
     ),
     (
         "Should I type a sewer claim into the form?",

@@ -21,7 +21,66 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="preload" href="/fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/css/fonts.css">
+    <style>
+/* Self-hosted Latin subsets. Family names match the Tailwind theme. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/outfit-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/outfit-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/outfit-800.woff2") format("woff2");
+}
+
+    </style>
     <link rel="stylesheet" href="/css/main.css">
     <style>
         .pulse-btn { animation: pulse-danger 2.2s infinite; }
@@ -44,6 +103,7 @@
       "url": "https://oaklandsewerpros.com/",
       "telephone": "+12488258312",
       "description": "Oakland Sewer Pros helps Oakland County, Michigan homeowners reach a local cleanup crew for sewer backup cleanup, sewage extraction, flooded basement cleanup, water damage restoration, sump pump repair, and basement sanitization after a flood or sewage backup.",
+      "logo": "https://oaklandsewerpros.com/apple-touch-icon.png",
       "areaServed": {
         "@type": "AdministrativeArea",
         "name": "Oakland County, Michigan"
@@ -154,12 +214,12 @@
 </script>
 </head>
 <body class="font-sans text-gray-200 bg-slate-900 min-h-screen flex flex-col justify-between pb-16 md:pb-0">
-    <a href="tel:2488258312" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="Call Oakland Sewer Pros 24/7 at (248) 825-8312">
+    <a href="tel:2488258312" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="CALL 24/7: (248) 825-8312, call Oakland Sewer Pros">
         <span class="flex items-center justify-center gap-2">Call 24/7: (248) 825-8312</span>
     </a>
     <header class="bg-slate-950/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between gap-3">
-            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="Oakland Sewer Pros home">
+            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="OAKLAND SEWER PROS home">
                 <div class="p-2 bg-emergency-600 rounded-lg text-white font-bold text-lg font-outfit">OS</div>
                 <div class="leading-tight">
                     <span class="block text-white font-extrabold text-base sm:text-lg tracking-tight font-outfit">OAKLAND SEWER</span>
@@ -223,7 +283,7 @@
             <article class="lg:col-span-8 space-y-6 bg-slate-950/40 border border-slate-800/80 p-6 md:p-8 rounded-2xl">
                 <h2 class="text-2xl font-outfit font-extrabold text-white">Basement water removal in Troy's finished lower levels</h2>
 <p class="text-sm text-gray-300 leading-relaxed">A flooded basement in Troy is often a finished room. Split-levels near Big Beaver and larger basements in subdivisions such as Northfield Hills hold carpet, drywall, and furniture a few inches above the slab. Basement water removal has to deal with that carpet and the pad, not only with a bare floor around a floor drain.</p><figure class="my-8"><picture>
-        <source srcset="/images/person-mopping-tile-floor.webp" type="image/webp">
+        <source srcset="/images/person-mopping-tile-floor-480.webp 480w, /images/person-mopping-tile-floor-800.webp 800w, /images/person-mopping-tile-floor.webp 1200w" sizes="(max-width: 768px) 100vw, 640px" type="image/webp">
         <img src="/images/person-mopping-tile-floor.webp" alt="Person mopping a light tile floor." width="1200" height="1800" class="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg" loading="lazy" decoding="async">
     </picture></figure>
 <p class="text-sm text-gray-300 leading-relaxed">In a quick thaw or a summer downpour, a sump in a Troy lower level can run for hours and then quit. When the pump quits, the pit overflows and the lower level floods. That sequence is water removal first and <a href="/troy-sump-pump-repair" class="text-red-400 hover:text-red-300 underline font-medium">sump pump repair in Troy</a> second. If the floor drain also backed up, the water is sewage and the extraction page is <a href="/troy-sewage-extraction" class="text-red-400 hover:text-red-300 underline font-medium">sewage extraction in Troy</a>.</p>
@@ -231,7 +291,7 @@
 <p class="text-sm text-gray-300 leading-relaxed">Flooded basement cleanup is the removal and the wash-down. Water damage is what remains in the gypsum and the sill plates after the floor looks dry. Troy finished basements hide that moisture behind baseboard. A crew should use a moisture check on the walls, not a palm on the carpet. The broader process is <a href="/troy-water-damage-restoration" class="text-red-400 hover:text-red-300 underline font-medium">water damage restoration in Troy</a>. For water removal and drying, call <a href="tel:2488258312" class="text-red-400 hover:text-red-300 underline font-medium">(248) 825-8312</a>.</p>
 <ul class="list-disc list-inside text-sm text-gray-300 space-y-1.5 pl-2"><li>Berber and pad in a family room usually come out if they were under standing water. Ask before you assume they can be dried in place.</li><li>A basement bedroom needs the furniture moved before air can reach the walls. That labor is part of the scope you agree to.</li><li>The city handles street storm drains, not a restoration crew.</li><li>Insurance for sudden water depends on your policy. Ask your insurer.</li></ul>
 <figure class="my-8"><picture>
-        <source srcset="/images/peeling-paint-on-damaged-wall.webp" type="image/webp">
+        <source srcset="/images/peeling-paint-on-damaged-wall-480.webp 480w, /images/peeling-paint-on-damaged-wall-800.webp 800w, /images/peeling-paint-on-damaged-wall.webp 972w" sizes="(max-width: 768px) 100vw, 640px" type="image/webp">
         <img src="/images/peeling-paint-on-damaged-wall.webp" alt="Peeling paint on a damaged interior wall." width="972" height="648" class="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg" loading="lazy" decoding="async">
     </picture></figure><h2 class="text-2xl font-outfit font-extrabold text-white">Basement flooding causes Troy homeowners can actually check</h2>
 <p class="text-sm text-gray-300 leading-relaxed">Look, from the stairs, at three things: is the sump pit overflowing, is water coming over the window-well rim, and is the floor drain the source? Those three have different fixes. Pumping without answering them just refills the room. George W. Kuhn is one of Troy's three wastewater districts. It is a regional system, not the cause of every wet basement.</p>

@@ -21,7 +21,66 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="preload" href="/fonts/outfit-800.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="/css/fonts.css">
+    <style>
+/* Self-hosted Latin subsets. Family names match the Tailwind theme. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/inter-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/inter-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/inter-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/outfit-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/outfit-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("/fonts/outfit-800.woff2") format("woff2");
+}
+
+    </style>
     <link rel="stylesheet" href="/css/main.css">
     <style>
         .pulse-btn { animation: pulse-danger 2.2s infinite; }
@@ -44,6 +103,7 @@
       "url": "https://oaklandsewerpros.com/",
       "telephone": "+12488258312",
       "description": "Oakland Sewer Pros helps Oakland County, Michigan homeowners reach a local cleanup crew for sewer backup cleanup, sewage extraction, flooded basement cleanup, water damage restoration, sump pump repair, and basement sanitization after a flood or sewage backup.",
+      "logo": "https://oaklandsewerpros.com/apple-touch-icon.png",
       "areaServed": {
         "@type": "AdministrativeArea",
         "name": "Oakland County, Michigan"
@@ -154,12 +214,12 @@
 </script>
 </head>
 <body class="font-sans text-gray-200 bg-slate-900 min-h-screen flex flex-col justify-between pb-16 md:pb-0">
-    <a href="tel:2488258312" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="Call Oakland Sewer Pros 24/7 at (248) 825-8312">
+    <a href="tel:2488258312" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="CALL 24/7: (248) 825-8312, call Oakland Sewer Pros">
         <span class="flex items-center justify-center gap-2">Call 24/7: (248) 825-8312</span>
     </a>
     <header class="bg-slate-950/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between gap-3">
-            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="Oakland Sewer Pros home">
+            <a href="/" class="flex items-center gap-2 shrink-0" aria-label="OAKLAND SEWER PROS home">
                 <div class="p-2 bg-emergency-600 rounded-lg text-white font-bold text-lg font-outfit">OS</div>
                 <div class="leading-tight">
                     <span class="block text-white font-extrabold text-base sm:text-lg tracking-tight font-outfit">OAKLAND SEWER</span>
@@ -223,14 +283,14 @@
             <article class="lg:col-span-8 space-y-6 bg-slate-950/40 border border-slate-800/80 p-6 md:p-8 rounded-2xl">
                 <h2 class="text-2xl font-outfit font-extrabold text-white">Sump pump repair on Clawson's small bungalow lots</h2>
 <p class="text-sm text-gray-300 leading-relaxed">Clawson sump pump repair has an access problem before it has a parts problem. Brick bungalows and ranches stand on compact lots near 14 Mile, between Royal Oak and Troy. The pit, the furnace, and the water heater share a small basement. A technician's cart and a homeowner's car share a short driveway. If you do not mention that, the visit starts with a surprise.</p><figure class="my-8"><picture>
-        <source srcset="/images/technician-working-on-water-pump.webp" type="image/webp">
+        <source srcset="/images/technician-working-on-water-pump-480.webp 480w, /images/technician-working-on-water-pump-800.webp 800w, /images/technician-working-on-water-pump.webp 1200w" sizes="(max-width: 768px) 100vw, 640px" type="image/webp">
         <img src="/images/technician-working-on-water-pump.webp" alt="Technician working on a water pump in front of a blue wall." width="1200" height="2133" class="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg" loading="lazy" decoding="async">
     </picture></figure>
 <p class="text-sm text-gray-300 leading-relaxed">Call <a href="tel:2488258312" class="text-red-400 hover:text-red-300 underline font-medium">(248) 825-8312</a> and a local crew comes to look at the pump. Water already on the floor belongs on <a href="/clawson-flooded-basement" class="text-red-400 hover:text-red-300 underline font-medium">the flooded basement page</a> as well. Sewage in the pit belongs on <a href="/clawson-sewage-extraction" class="text-red-400 hover:text-red-300 underline font-medium">sewage extraction</a>.</p>
 <h3 class="text-lg font-outfit font-bold text-white">What to look for without entering a flooded mechanical room</h3>
 <ul class="list-disc list-inside text-sm text-gray-300 space-y-1.5 pl-2"><li>A pump cord under water. Leave it. Power off from a dry location if you know how and can stay dry.</li><li>A discharge line that pops apart outside and dumps against the same foundation, refilling the pit.</li><li>Ice at the outlet after a thaw, which stalls the impeller and overheats the motor when power remains.</li><li>A float rod bent because storage was stacked on the lid. Common when the basement is the only storage.</li></ul>
 <figure class="my-8"><picture>
-        <source srcset="/images/plumber-using-pipe-wrench-indoors.webp" type="image/webp">
+        <source srcset="/images/plumber-using-pipe-wrench-indoors-480.webp 480w, /images/plumber-using-pipe-wrench-indoors-800.webp 800w, /images/plumber-using-pipe-wrench-indoors.webp 1080w" sizes="(max-width: 768px) 100vw, 640px" type="image/webp">
         <img src="/images/plumber-using-pipe-wrench-indoors.webp" alt="Plumber using a pipe wrench on indoor plumbing." width="1080" height="1920" class="w-full h-auto max-h-[350px] object-cover rounded-xl border border-slate-800 shadow-lg" loading="lazy" decoding="async">
     </picture></figure><h2 class="text-2xl font-outfit font-extrabold text-white">A replacement price comes from the company</h2>
 <p class="text-sm text-gray-300 leading-relaxed">The crew quotes the pump, the valve, and the labor after seeing the pit. Ask whether water removal is included; it is often a separate invoice from <a href="/clawson-water-damage-restoration" class="text-red-400 hover:text-red-300 underline font-medium">water damage restoration</a>. A dirty crock after a backup is <a href="/clawson-basement-sanitization" class="text-red-400 hover:text-red-300 underline font-medium">sanitizing</a>, not a favor added silently. Downspouts on these tight lots often discharge at the wall and keep a good pump from ever resting. A repair that ignores the downspout will be back. The regional drainage district associated with Clawson is the George W. Kuhn system under the Oakland County Water Resources Commissioner. Your pit is still yours.</p>
