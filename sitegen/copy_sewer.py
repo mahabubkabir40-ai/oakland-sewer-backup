@@ -32,13 +32,13 @@ WHY = {
         "the connection. A camera inspection shows whether yours is the problem. The city is responsible for the main; the lateral up to and including the connection is yours."
     ),
     "troy": (
-        "Most Troy houses were built in the 1960s and 1970s, and many have split-levels or finished lower "
-        "levels where carpet, pad, and drywall sit close to the floor drain. The city's wastewater leaves through three "
+        "Census estimates for 2019 to 2023 date about 49 percent of Troy's housing units to the 1960s and 1970s; "
+        "in a finished lower level, carpet, pad, and drywall sit close to the floor drain. The city's wastewater leaves through three "
         "districts, so the pipe behind one street is not the pipe behind the next. Ask the Water Division which district serves your address."
     ),
     "birmingham": (
         "Much of Birmingham was built in the early and middle 1900s. The city's own FAQ says older "
-        "neighborhoods have combined sewer and storm systems, historically designed for about 2 inches of "
+        "communities have combined sewer and storm systems, historically designed for about 2 inches of "
         "rain in one hour, and that the system is all gravity with no city pump or lift stations. A heavier "
         "storm can push sewage back up a basement floor drain, and plaster, trim, and finished floors soak it up first."
     ),
