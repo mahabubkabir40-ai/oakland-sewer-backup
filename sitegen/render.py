@@ -295,6 +295,29 @@ def json_ld(obj):
     return f'<script type="application/ld+json">\n{payload}\n</script>'
 
 
+_MD_LINK = re.compile(r"\[([^\]]+)\]\((https://[^)\s]+)\)")
+
+
+def cite(label, url):
+    """Markdown source citation. Rendered the same way in visible FAQs and FAQPage JSON-LD."""
+    return f" (Source: [{label}]({url}))"
+
+
+def render_faq_text(text):
+    """Turn [label](https://...) into the same anchor HTML used in the answer text."""
+    parts = []
+    last = 0
+    for match in _MD_LINK.finditer(text):
+        parts.append(esc(text[last : match.start()]))
+        label, url = match.group(1), match.group(2)
+        parts.append(
+            f'<a href="{esc(url)}" rel="noopener" class="text-red-400 hover:text-red-300 underline font-medium">{esc(label)}</a>'
+        )
+        last = match.end()
+    parts.append(esc(text[last:]))
+    return "".join(parts)
+
+
 def faq_schema(faqs):
     return {
         "@context": "https://schema.org",
@@ -303,7 +326,12 @@ def faq_schema(faqs):
             {
                 "@type": "Question",
                 "name": question,
-                "acceptedAnswer": {"@type": "Answer", "text": answer},
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    # Plain answers stay unescaped, matching the previous JSON-LD.
+                    # Answers with a source link use the same HTML as the visible FAQ.
+                    "text": render_faq_text(answer) if _MD_LINK.search(answer) else answer,
+                },
             }
             for question, answer in faqs
         ],
@@ -359,7 +387,7 @@ def faq_html(faqs, heading):
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                 </span>
             </summary>
-            <div class="p-5 border-t border-slate-800/60 text-sm text-gray-300 leading-relaxed bg-slate-950/20">{esc(answer)}</div>
+            <div class="p-5 border-t border-slate-800/60 text-sm text-gray-300 leading-relaxed bg-slate-950/20">{render_faq_text(answer)}</div>
         </details>""")
     return f"""<section id="faq" class="py-16 bg-slate-900 px-4">
         <div class="max-w-3xl mx-auto">
@@ -416,9 +444,20 @@ def sidebar(city_slug, active_slug):
 
 def nearby_section(service_slug, label, current_city):
     name = city_name(current_city)
+    # The five sewer-cleanup pages keep the existing sentence. Other city pages use the shorter line.
+    if service_slug == "sewer-cleanup":
+        sentence = (
+            f"If the house is in a neighboring city, the same number covers {nearby_links(service_slug, label, current_city)}. "
+            f"Open the city where the house stands. The details there match that place, not {esc(name)}."
+        )
+    else:
+        others = [slug for slug, _city in CITIES if slug != current_city]
+        links = [a(city_service_href(slug, service_slug), f"{label[:1].lower() + label[1:]} in {city_name(slug)}") for slug in others]
+        joined = ", ".join(links[:-1]) + " or " + links[-1]
+        sentence = f"Same problem, different city? See {joined}."
     return f"""<div class="border-t border-slate-800/60 pt-6 mt-6">
         <h2 class="text-lg font-outfit font-bold text-white mb-3">{esc(label)} in nearby cities</h2>
-        <p class="text-sm text-gray-300 leading-relaxed">If the house is in a neighboring city, the same number covers {nearby_links(service_slug, label, current_city)}. Open the city where the house stands. The details there match that place, not {esc(name)}.</p>
+        <p class="text-sm text-gray-300 leading-relaxed">{sentence}</p>
     </div>"""
 
 

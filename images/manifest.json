@@ -192,33 +192,8 @@
         "title": "A Yellow Mop Bucket with Dirty Water"
       }
     ],
-    "royal-oak-flooded-basement": [
-      {
-        "file": "person-mopping-tile-floor.webp",
-        "alt": "Person mopping a light tile floor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-in-gray-sweater-mopping-and-cleaning-the-floor-6196566/",
-        "photographer": "Tima Miroshnichenko",
-        "license": "Pexels License",
-        "pexels_id": "6196566",
-        "title": "Person in Gray Sweater Mopping and Cleaning the Floor"
-      }
-    ],
+    "royal-oak-flooded-basement": [],
     "troy-flooded-basement": [
-      {
-        "file": "person-mopping-tile-floor.webp",
-        "alt": "Person mopping a light tile floor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/person-in-gray-sweater-mopping-and-cleaning-the-floor-6196566/",
-        "photographer": "Tima Miroshnichenko",
-        "license": "Pexels License",
-        "pexels_id": "6196566",
-        "title": "Person in Gray Sweater Mopping and Cleaning the Floor"
-      },
       {
         "file": "peeling-paint-on-damaged-wall.webp",
         "alt": "Peeling paint on a damaged interior wall.",
@@ -232,60 +207,21 @@
         "title": "Close-up of a Damaged Wall Surface"
       }
     ],
-    "birmingham-flooded-basement": [
-      {
-        "file": "person-mopping-tile-floor-with-bucket.webp",
-        "alt": "Person mopping a tile floor beside a bucket.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/woman-mopping-a-tiled-floor-6196577/",
-        "photographer": "Tima Miroshnichenko",
-        "license": "Pexels License",
-        "pexels_id": "6196577",
-        "title": "Woman Mopping a Tiled Floor"
-      }
-    ],
-    "berkley-flooded-basement": [
-      {
-        "file": "person-mopping-wood-floor.webp",
-        "alt": "Person mopping a wood floor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-person-cleaning-the-floor-with-a-mop-4440568/",
-        "photographer": "Polina Tankilevitch",
-        "license": "Pexels License",
-        "pexels_id": "4440568",
-        "title": "A Person Cleaning the Floor with a Mop"
-      }
-    ],
-    "clawson-flooded-basement": [
-      {
-        "file": "yellow-mop-bucket-with-dirty-water.webp",
-        "alt": "Yellow mop bucket filled with dirty water.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-yellow-mop-bucket-with-dirty-water-13840330/",
-        "photographer": "Jenkin Shen",
-        "license": "Pexels License",
-        "pexels_id": "13840330",
-        "title": "A Yellow Mop Bucket with Dirty Water"
-      }
-    ],
+    "birmingham-flooded-basement": [],
+    "berkley-flooded-basement": [],
+    "clawson-flooded-basement": [],
     "royal-oak-sewage-extraction": [
       {
-        "file": "technician-working-on-water-pump.webp",
-        "alt": "Technician working on a water pump in front of a blue wall.",
+        "file": "industrial-pump-and-hoses-outdoors.webp",
+        "alt": "Industrial water pump with hoses set up outdoors.",
         "width": 1200,
-        "height": 2133,
+        "height": 1800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
-        "photographer": "Bulat843 \ud83c\udf19",
+        "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
+        "photographer": "Adam \u0160umn\u00edk",
         "license": "Pexels License",
-        "pexels_id": "35290675",
-        "title": "Focused Technician Working with Water Pump"
+        "pexels_id": "32489252",
+        "title": "Industrial Pump and Hose Equipment Outdoor View"
       },
       {
         "file": "worker-pulling-on-gloves-in-protective-suit.webp",
@@ -1014,18 +950,6 @@
     ],
     "sewage-extraction": [
       {
-        "file": "industrial-pump-and-hoses-outdoors.webp",
-        "alt": "Industrial water pump with hoses set up outdoors.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
-        "photographer": "Adam \u0160umn\u00edk",
-        "license": "Pexels License",
-        "pexels_id": "32489252",
-        "title": "Industrial Pump and Hose Equipment Outdoor View"
-      },
-      {
         "file": "worker-in-protective-suit-holding-spray-bottle.webp",
         "alt": "Worker in a white protective suit holding a spray bottle.",
         "width": 1200,
@@ -1216,33 +1140,9 @@
         "license": "Pexels License",
         "pexels_id": "7580908",
         "title": "Person Dialing the Telephone"
-      },
-      {
-        "file": "crumbling-plaster-over-brick.webp",
-        "alt": "Crumbling plaster over exposed brick.",
-        "width": 707,
-        "height": 943,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/close-up-of-cracked-wall-11627153/",
-        "photographer": "Zeki Okur",
-        "license": "Pexels License",
-        "pexels_id": "11627153",
-        "title": "Close up of Cracked Wall"
       }
     ],
     "basement-flood-checklist": [
-      {
-        "file": "leaking-pipe-wrapped-in-plastic.webp",
-        "alt": "Leaking pipe wrapped with plastic.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/leaking-pipe-fixed-with-plastic-15206136/",
-        "photographer": "Swastik Arora",
-        "license": "Pexels License",
-        "pexels_id": "15206136",
-        "title": "Leaking Pipe Fixed with Plastic"
-      },
       {
         "file": "notebooks-and-folders-on-a-desk.webp",
         "alt": "Notebooks, folders, and pens spread on a desk.",
@@ -1254,18 +1154,6 @@
         "license": "Pexels License",
         "pexels_id": "5668469",
         "title": "Notebook and clipboard with papers placed on desk with folders and pens"
-      },
-      {
-        "file": "person-mopping-wood-floor.webp",
-        "alt": "Person mopping a wood floor.",
-        "width": 1200,
-        "height": 1800,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-person-cleaning-the-floor-with-a-mop-4440568/",
-        "photographer": "Polina Tankilevitch",
-        "license": "Pexels License",
-        "pexels_id": "4440568",
-        "title": "A Person Cleaning the Floor with a Mop"
       }
     ],
     "about": [

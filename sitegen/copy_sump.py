@@ -1,6 +1,20 @@
 """Sump pump pages: practical checks, no prices, unique per city."""
 from site_config import PHONE_DISPLAY, PHONE_TEL
 
+from sitegen.citations import (
+    BERK_TIPS,
+    BHAM,
+    CLAW_DPW,
+    CLAW_CCTV,
+    MCL1416,
+    MCL1419,
+    RO_FLOOD,
+    RO_SEWER,
+    TROY_AGENDA,
+    TROY_CLAIMS,
+    WRC_GWK,
+    cite,
+)
 from sitegen.render import a, callout, h2, h3, nearby_section, p, ul
 
 def royal_oak():
@@ -11,6 +25,13 @@ def royal_oak():
             "A sump lifts groundwater. A floor-drain backup is a different pipe, and Royal Oak says the city "
             "is responsible for the main while the homeowner owns the lateral up to and including the connection. "
             "What you can see from the stairs is whether the pit is overflowing."
+        ),
+        p(
+            "Royal Oak explains that when a house's sewer line is blocked by tree roots, disposable diapers or grease, "
+            "water from the weeping tile around the basement walls can't drain either, and it comes in through wall cracks, "
+            "the floor-wall seam, and most often the floor drain. "
+            "The regional storage for this system is the George W. Kuhn Retention Treatment Basin, under the I-75 overpass "
+            "at 12 Mile Road in Madison Heights, which can hold and treat 150 million gallons."
         ),
         p(
             "Call "
@@ -27,7 +48,7 @@ def royal_oak():
             "Is the float pinned against the crock wall? A broom handle can free a stuck float. Do not climb into the pit.",
             "Is the pump humming and not moving water? Unplug it if you can do that from a dry spot so the motor does not cook.",
             "Is the discharge line frozen or disconnected outside? Michigan freeze-thaw will ice a line that runs across the yard.",
-            "Did the power drop? DTE outages and sump floods travel together. A battery unit is a conversation with the crew.",
+            "Did the power drop? DTE outages and sump floods travel together. A battery unit is something to ask the crew about.",
         ]),
         h2("What a pump tech is actually diagnosing"),
         p(
@@ -63,8 +84,7 @@ def troy():
         h2("Sump pump repair in Troy, where the lower level is finished"),
         p(
             "Troy sump pump repair matters because the pit often sits in a finished lower level, not a "
-            "bare corner. Split-levels near Big Beaver and subdivision basements, including areas like "
-            "Northfield Hills, can have carpet within a few feet of the crock. When the pump stops during "
+            "bare corner. Finished lower levels can have carpet within a few feet of the crock. When the pump stops during "
             "a spring thaw or a summer storm, the water does not stay in a utility nook. It is in the room."
         ),
         p(
@@ -111,9 +131,10 @@ def birmingham():
     return "\n".join([
         h2("Sump pump repair in older Birmingham basements"),
         p(
-            "Birmingham sump pump repair often means an older pit in a house near Quarton, Poppleton Park, "
-            "or the side streets off Old Woodward and Maple. The foundations are older, the yards have "
-            "mature trees, and the lower level may be finished with materials you would rather not soak. "
+            "Birmingham sump pump repair often means an older pit in an older home. "
+            "Birmingham's FAQ says its older combined and storm sewers were designed for about 2 inches of rain in one hour; "
+            "in a longer or heavier storm, a pit and a floor drain can both be running at once. "
+            "The city posted an engineer's presentation on the August 24, 2023 rain event. "
             "A pump failure during a long rain is how those lower levels flood. The repair is mechanical. "
             "The water left behind is a separate restoration problem."
         ),
@@ -160,9 +181,9 @@ def birmingham():
 
 def berkley():
     return "\n".join([
-        h2("Sump pump repair in Berkley bungalows"),
+        h2("Sump pump repair in Berkley"),
         p(
-            "Berkley sump pump repair is a tight-space job. The pits are in short bungalow basements off 12 Mile and Coolidge. "
+            "Berkley sump pump repair is a tight-space job. The pits are in short basements off 12 Mile and Coolidge. "
             "The pump may be the entire drainage plan for the "
             "basement. When it stops, the water is at the furnace before anyone notices, because the "
             "basement is one low room."
@@ -175,7 +196,13 @@ def berkley():
             + a("/berkley-flooded-basement", "a flood")
             + ". Drain water is " + a("/berkley-sewage-extraction", "sewage") + "."
         ),
-        h3("Bungalow-specific pump problems"),
+        p(
+            "The regional storage for this system is the George W. Kuhn Retention Treatment Basin, under the I-75 overpass "
+            "at 12 Mile Road in Madison Heights, which can hold and treat 150 million gallons. "
+            "Berkley designs its streets to hold water during a hard rain and uses restrictor covers on catch basins, "
+            "so curb ponding is expected, while a sump that stops is a separate, private problem."
+        ),
+        h3("Pump problems in these basements"),
         ul([
             "Lids buried under laundry hampers, so the float cannot rise.",
             "Discharge piping strapped along a low joist, then out a rim joist, where it freezes closer to outside air.",
@@ -208,10 +235,15 @@ def berkley():
 
 def clawson():
     return "\n".join([
-        h2("Sump pump repair on Clawson's small bungalow lots"),
+        h2("Sump pump repair on Clawson's small lots"),
         p(
-            "Clawson sump pump repair has an access problem before it has a parts problem. Brick "
-            "bungalows and ranches stand on compact lots near 14 Mile, between Royal Oak and Troy. "
+            "Clawson sump pump repair has an access problem before it has a parts problem. Many houses "
+            "sit on compact lots, and the pit is often in a small, crowded basement. "
+            "Clawson describes its combined sewer as strictly gravity fed: flow runs from smaller pipes to larger pipes, "
+            "typically on major roads, before it enters the county system, with no pumps. "
+            "The city has been cleaning and camera-inspecting its whole sanitary sewer system since December 2024, in 18 sections. "
+            "The regional storage for this system is the George W. Kuhn Retention Treatment Basin, under the I-75 overpass "
+            "at 12 Mile Road in Madison Heights, which can hold and treat 150 million gallons. "
             "The pit, the furnace, and the water heater share a small basement. A technician's cart and "
             "a homeowner's car share a short driveway. If you do not mention that, the visit starts with "
             "a surprise."
@@ -266,48 +298,48 @@ ARTICLES = {
 
 FAQS = {
     "royal-oak": [
-        ("Is a sump overflow covered by Michigan's 45-day sewer claim rule?", "Usually not. Michigan's statute says it is not a sewage disposal system event if the main cause was a connection on your own property, such as a sump system, building drain, or downspout (MCL 691.1416). A floor drain backup from the city main can be different."),
+        ("Is a sump overflow covered by Michigan's 45-day sewer claim rule?", "Usually not. Michigan's statute says it is not a sewage disposal system event if a substantial proximate cause (50% or more) was a connection on the affected property, such as a sump system, building drain, surface drain, gutter, or downspout (MCL 691.1416). A floor drain backup from the city main can be different." + cite("Michigan Legislature, MCL 691.1416", MCL1416)),
         ("What should I do if the Royal Oak pit is overflowing and the power is on?", "From a dry place, you can unplug a humming pump and free a stuck float with a broom handle. Do not step into the water. Then call for a crew and, if the floor is wet, for water removal."),
-        ("Will a new pump stop sewer backups?", "No. A sump handles groundwater at the pit. A floor-drain backup is a different pipe. Repairing one does not fix the other. Royal Oak says the city is responsible for the main and the homeowner for the lateral through the connection."),
-        ("Who do I call if the Royal Oak pit overflowed and the floor drain also moved?", "Treat drain water as sewage. City basement-water calls are (248) 246-3300 on weekdays and (248) 246-3500 after hours. Call (248) 825-8312 to reach a local crew for the pump and, if the floor is wet, for water removal."),
-        ("Does a stuck Royal Oak sump start the 45-day city notice?", "A sump handles groundwater at the pit. That overflow is not automatically a sewage disposal event. If the floor drain also discharged, written notice is due within 45 days of discovery, with your name, address, and phone, the property address, the discovery date, and a brief description. Confirm with the city who receives the letter."),
+        ("Will a new pump stop sewer backups?", "No. A sump handles groundwater at the pit. A floor-drain backup is a different pipe. Repairing one does not fix the other. Royal Oak says the city is responsible for the main and the homeowner for the lateral through the connection." + cite("City of Royal Oak Sewer Division", RO_SEWER)),
+        ("Who do I call if the Royal Oak pit overflowed and the floor drain also moved?", "Treat drain water as sewage. City basement-water calls are (248) 246-3300 on weekdays and (248) 246-3500 after hours. Call (248) 825-8312 to reach a local crew for the pump and, if the floor is wet, for water removal." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),
+        ("Does a stuck Royal Oak sump start the 45-day city notice?", "A sump handles groundwater at the pit. That overflow is not automatically a sewage disposal event. If the floor drain also discharged, written notice is due within 45 days of discovery, with your name, address, and phone, the property address, the discovery date, and a brief description. Confirm with the city who receives the letter." + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
     ],
     "troy": [
         ("Why do Troy finished basements make pump failures expensive to ignore?", "Carpet and drywall start at the pit. Minutes of overflow become a water-damage scope, which is separate from the pump repair."),
 
-        ("Who maintains Troy's street drains?", "The city handles street storm drains. Your sump is private. Wastewater leaves Troy through three districts, Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. That map does not tell you why the pit failed."),
-        ("Should I call Troy's Water Division about a dead sump pump?", "The Water Division at 248-524-3370, or Troy Police at 248-524-3477 after hours, is the city's sewer backup desk. A sump in the basement is a house repair. Call (248) 825-8312 for the pump."),
+        ("Who maintains Troy's street drains?", "The city handles street storm drains. Your sump is private. Wastewater leaves Troy through three districts, Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. That map does not tell you why the pit failed." + cite("Troy City Council agenda, November 14, 2022", TROY_AGENDA)),
+        ("Should I call Troy's Water Division about a dead sump pump?", "The Water Division at 248-524-3370, or Troy Police at 248-524-3477 after hours, is the city's sewer backup desk. A sump in the basement is a house repair. Call (248) 825-8312 for the pump." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
         ("Can a battery backup be part of a Troy pump visit?", "Ask the crew. They quote a second power source after they see the pit. If carpet is already wet, drying is a separate job."),
-        ("If a Troy floor drain gurgled while the pump failed, where does the letter go?", "The pit and the sanitary drain are different pipes. If sewage came up the drain and you believe the public system was involved, Troy directs written claims to the City Attorney's Office within 45 days of discovery. Include your name, address, and phone, the property address, the discovery date, and a brief description. A sewer-backup endorsement is a separate question for your insurer."),
+        ("If a Troy floor drain gurgled while the pump failed, where does the letter go?", "The pit and the sanitary drain are different pipes. If sewage came up the drain and you believe the public system was involved, Troy directs written claims to the City Attorney's Office within 45 days of discovery. Include your name, address, and phone, the property address, the discovery date, and a brief description. A sewer-backup endorsement is a separate question for your insurer." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
     ],
     "birmingham": [
         ("Is sump pump repair in Birmingham a plumbing visit or a restoration visit?", "The pump is a mechanical repair. Wet plaster is restoration. You may need both. Ask each company what they actually cover."),
         ("Should I replace a Birmingham pump that runs constantly?", "Not from a guess. Constant running can be groundwater load, a stuck switch, or a bad valve. Someone has to watch a cycle before they sell you a pump."),
-        ("Will a repaired Birmingham pump hold back the next storm by itself?", "A repair fixes the pump. It does not change the city's gravity sewers, which have no municipal lift stations. Ask for a written reason before anyone replaces the unit."),
-        ("Is a backflow preventer the same as sump pump repair in Birmingham?", "No. The city lists a backflow preventer, downspouts extended about 6 feet, and grading away from the foundation as prevention at the house. The sump in the basement is a different device. Call (248) 825-8312 for the pump."),
-        ("If a Birmingham drain backed up while the sump failed, which form is the claim?", "The house sump and the sewer lateral are different devices. If sewage came up a drain, use the city's sewer backup claim form, not the water-event tracking form. Claims questions are 248.530.1808. Written notice is due within 45 days of discovery. Birmingham's sewers are gravity, and the city owns no pump or lift stations."),
+        ("Will a repaired Birmingham pump hold back the next storm by itself?", "A repair fixes the pump. It does not change the city's gravity sewers, which have no municipal lift stations. Ask for a written reason before anyone replaces the unit." + cite("City of Birmingham Risk Management", BHAM)),
+        ("Is a backflow preventer the same as sump pump repair in Birmingham?", "No. The city lists a backflow preventer, downspouts extended about 6 feet, and grading away from the foundation as prevention at the house. The sump in the basement is a different device. Call (248) 825-8312 for the pump." + cite("City of Birmingham Risk Management", BHAM)),
+        ("If a Birmingham drain backed up while the sump failed, which form is the claim?", "The house sump and the sewer lateral are different devices. If sewage came up a drain, use the city's sewer backup claim form, not the water-event tracking form. Claims questions are 248.530.1808. Written notice is due within 45 days of discovery. Birmingham's sewers are gravity, and the city owns no pump or lift stations." + cite("City of Birmingham Risk Management", BHAM) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
     ],
     "berkley": [
-        ("Can a battery backup pump fit in a Berkley bungalow basement?", "Sometimes. It depends on the pit and where the unit can sit above the floor. Describe the short stair when you call, and ask whether they install battery units."),
+        ("Can a battery backup pump fit in a short Berkley basement?", "Sometimes. It depends on the pit and where the unit can sit above the floor. Describe the short stair when you call, and ask whether they install battery units."),
         ("Why does my Berkley pump short-cycle?", "A failed check valve is a common reason: water falls back and the float rises again immediately. It can also be a stuck switch. Let the crew distinguish them."),
-        ("Does Berkley repair the sump in my bungalow?", "No. The city's sewer is gravity with no pumps and no valves. The pit in your basement is yours. Call Public Works at 248-658-3490 if a floor drain is also surcharging, because that combined pipe is a different problem from a dead pump."),
+        ("Does Berkley repair the sump in my basement?", "No. The city's sewer is gravity with no pumps and no valves. The pit in your basement is yours. Call Public Works at 248-658-3490 if a floor drain is also surcharging, because that combined pipe is a different problem from a dead pump." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)),
         ("What should I say when I call (248) 825-8312 about a Berkley pump?", "Describe the short stair, whether the floor is already wet, and whether the water is clear or smells like a drain. Clear overflow is a pump and water-removal job. Drain water is sewage."),
-        ("Does Berkley's sewer lining program fix my sump?", "The city has spent up to 800,000 dollars a year on structural lining, and about 35 percent of the system has been lined over more than 20 years. That work is the public combined pipe. The pit in the bungalow is yours. If sewage also came up the floor drain, the Sewer Backup Claims Form and the 45-day written notice still apply. Public Works is 248-658-3490."),
+        ("Does Berkley's sewer lining program fix my sump?", "The city has spent up to 800,000 dollars a year on structural lining, and about 35 percent of the system has been lined over more than 20 years. That work is the public combined pipe. The pit in the basement is yours. If sewage also came up the floor drain, the Sewer Backup Claims Form and the 45-day written notice still apply. Public Works is 248-658-3490." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
     ],
     "clawson": [
         ("Why does my Clawson pump keep running after it rains?", "On a tight lot, a downspout that discharges at the wall can refill the pit, and a discharge line that pops apart outside dumps water back at the foundation. Ask the crew to check both, not only the pump."),
         ("The pump sits next to the furnace and both are wet. Who do I call?", "Call for water removal and for a pump repair, and do not turn the furnace on. They may be different companies. Stay out of the room if power and water have mixed."),
         ("Who quotes a Clawson pump replacement?", "The company that sees the pit, in writing. Describe the short driveway when you call (248) 825-8312."),
-        ("If the Clawson pump failed on a Friday, who is the city after-hours line?", "DPW is closed on Fridays. Clawson's non-emergency dispatch line is 248-524-3477, extension 1. Emergencies go to 911. That dispatch line does not repair the pump next to your furnace. The city sewer page also points to the George W. Kuhn basin, which is the regional system, not your crock."),
-        ("Does a dead Clawson sump mean the George W. Kuhn basin failed?", "The basin is the regional system listed on the city sewer page, along with the Oakland County Water Resources Commissioner. Your crock is a private pump. If the floor drain also backed up, treat that water as sewage and ask the city in writing who receives the 45-day notice. The basin does not restart the pump next to the furnace."),
+        ("If the Clawson pump failed on a Friday, who is the city after-hours line?", "DPW is closed on Fridays. Clawson's non-emergency dispatch line is 248-524-3477, extension 1. Emergencies go to 911. That dispatch line does not repair the pump next to your furnace. The city sewer page also points to the George W. Kuhn basin, which is the regional system, not your crock." + cite("City of Clawson DPW page", CLAW_DPW)),
+        ("Does a dead Clawson sump mean the George W. Kuhn basin failed?", "The basin is the regional system listed on the city sewer page, along with the Oakland County Water Resources Commissioner. Your crock is a private pump. If the floor drain also backed up, treat that water as sewage and ask the city in writing who receives the 45-day notice. The basin does not restart the pump next to the furnace." + cite("Oakland County Water Resources Commissioner, George W. Kuhn Retention Treatment Basin", WRC_GWK) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
     ],
 }
 
 HERO = {
     "royal-oak": "The sump in your Royal Oak basement is stuck, dead, or overflowing. A local crew does the sump pump repair in Royal Oak, and they'll tell you when they can be there. If the floor is wet, say so.",
-    "troy": "The sump quit under a finished Troy lower level near Big Beaver, and the carpet is next. Call, and a local crew does the sump pump repair in Troy. They'll tell you when they can be there.",
-    "birmingham": "The sump failed in an older Birmingham, Michigan house and the lower level is getting wet. When you call, you reach a local crew for sump pump repair in Birmingham, and they'll tell you when they can be there. This is Michigan, not Alabama.",
-    "berkley": "The pump stopped in a short Berkley bungalow basement, and the water can rise fast. Your call puts you through to a local crew for sump pump repair in Berkley, and they'll tell you when they can be there.",
+    "troy": "The sump quit under a finished Troy lower level, and the carpet is next. Call, and a local crew does the sump pump repair in Troy. They'll tell you when they can be there.",
+    "birmingham": "The sump failed in an older Birmingham, Michigan house and the lower level is getting wet. When you call, you reach a local crew for sump pump repair in Birmingham, and they'll tell you when they can be there.",
+    "berkley": "The pump stopped in a short Berkley basement, and the water can rise fast. Your call puts you through to a local crew for sump pump repair in Berkley, and they'll tell you when they can be there.",
     "clawson": "The pump stopped in a small Clawson basement with a short driveway. Call, and a local cleanup crew handles sump pump repair in Clawson. They'll tell you when they can be there.",
 }
 
@@ -315,14 +347,14 @@ ALT = {
     "royal-oak": "A basement sump pit, the equipment Royal Oak homeowners call about when the pump stops",
     "troy": "A sump pump in a finished lower level, a Troy repair and overflow risk",
     "birmingham": "An older basement sump installation, relevant to Birmingham pump repairs",
-    "berkley": "A sump pump in a small bungalow basement, a Berkley repair setting",
+    "berkley": "A sump pump in a small basement, a Berkley repair setting",
     "clawson": "A sump pump beside other basement equipment, typical of tight Clawson mechanical rooms",
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Sump pump repair in Royal Oak, MI. A local crew fixes a stuck float, bad check valve or dead pump and removes any water. Call (248) 825-8312.",
-    "troy": "Sump pump repair in Troy, MI. A local crew fixes a failed pump under your finished lower level and removes water from the carpet. Call (248) 825-8312.",
-    "birmingham": "Sump pump repair in Birmingham, MI. A local crew finds why the pump failed and fixes it, with a written reason for any replacement. Call (248) 825-8312.",
-    "berkley": "Sump pump repair in Berkley, MI. A local crew fixes stuck, dead or overflowing pumps in bungalow basements. Get a written quote: (248) 825-8312.",
-    "clawson": "Sump pump repair in Clawson, MI. A local crew fixes a stuck, dead or overflowing pump next to the furnace. Get the quote in writing: (248) 825-8312.",
+    "royal-oak": "Sump pump repair in Royal Oak, MI. A local crew can check the pump and deal with the water if the basement floor is wet. Call (248) 825-8312.",
+    "troy": "Sump pump repair in Troy, MI. A local crew can check the pump and deal with the water under a finished lower level. Call (248) 825-8312 now.",
+    "birmingham": "Sump pump repair in Birmingham, MI. A local crew can check the pump and deal with the water. Ask before any replacement. Call (248) 825-8312.",
+    "berkley": "Sump pump repair in Berkley, MI. A local crew can check the pump and deal with the water in a small basement. Get a written quote: (248) 825-8312.",
+    "clawson": "Sump pump repair in Clawson, MI. A local crew can check the pump and deal with the water next to the furnace. Get the quote in writing: (248) 825-8312.",
 }
