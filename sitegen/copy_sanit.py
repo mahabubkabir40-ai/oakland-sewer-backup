@@ -1,10 +1,45 @@
 """Basement sanitization reframed as cleanup after flood or sewage, not a maid service."""
 from site_config import PHONE_DISPLAY, PHONE_TEL
 
+from sitegen.citations import (
+    BHAM,
+    BERK_TIPS,
+    CLAW_CCTV,
+    CLAW_DPW,
+    MCL1419,
+    RO_CLEAN,
+    RO_FLOOD,
+    TROY_CLAIMS,
+    WRC_GWK,
+    cite,
+)
 from sitegen.render import a, callout, h2, h3, nearby_section, p, ul
+
+
+def cleaning_intro():
+    return p(
+        "This page covers cleaning after the water is out: what has to be thrown away, what can be cleaned, "
+        "and how to keep contamination from moving upstairs."
+    )
+
+
+def throw_or_clean():
+    return h2("What gets thrown away and what gets cleaned") + ul([
+        "Carpet, pad, cardboard, and insulation that soaked up sewage are thrown away.",
+        "Hard surfaces that did not absorb the water, such as bare concrete and metal appliance shells, can be cleaned.",
+        "Soft furnishings that sat in the water are thrown away rather than sprayed and kept.",
+        "Ask for a written list of what left the basement. Cleaning does not repair the pipe.",
+    ])
 
 def royal_oak():
     return "\n".join([
+        cleaning_intro(),
+        throw_or_clean(),
+        p(
+            "Royal Oak's flood page links cleanup and sanitizing procedures, 'Cleaning Up the Mess After Basement Flooding', "
+            "drafted by the Michigan Municipal Risk Management Authority's Public Works advisory committee. "
+            "The city says tree roots, disposable diapers and grease are key causes of blockages in a house's sewer line."
+        ),
         h2("Sanitizing a Royal Oak basement after sewage or a flood"),
         p(
             "Basement sanitization in Royal Oak is the step after the water is gone, and only when that "
@@ -62,10 +97,12 @@ def royal_oak():
 
 def troy():
     return "\n".join([
+        cleaning_intro(),
+        throw_or_clean(),
         h2("Sanitizing Troy finished basements after a backup or flood"),
         p(
             "Troy basement sanitization comes up after a lower level has already been used as living space. "
-            "Split-levels near Big Beaver and finished rooms in places like Northfield Hills often have "
+            "Finished lower levels often have "
             "carpet, a sofa, a kids' corner, and a bath. If sewage touched those, sanitizing is not a "
             "spray over the top. The pad, the sofa bottom, and the bath base are reservoirs. A company "
             "has to remove the ruined layers before any disinfectant has a surface it can actually treat."
@@ -112,11 +149,17 @@ def troy():
 
 def birmingham():
     return "\n".join([
+        cleaning_intro(),
+        throw_or_clean(),
+        p(
+            "Part of Birmingham drains to the George W. Kuhn district, where wet-weather flow in the shared pipes "
+            "is typically more than 93 percent stormwater, so what comes up a floor drain in a storm is diluted but still sewage. "
+            "The city posted an engineer's presentation on the August 24, 2023 rain event."
+        ),
         h2("Sanitizing after a flood or sewage backup in an older Birmingham house"),
         p(
-            "Birmingham basement sanitization is mostly a materials problem. Plaster, wood base, and "
-            "built-ins in houses around Poppleton Park, Quarton, and the streets off Old Woodward and "
-            "Maple do not behave like modern painted drywall. Sewage that wicked into the bottom of "
+            "Birmingham basement sanitization is mostly a materials problem in older homes. Plaster, wood base, and "
+            "built-ins do not behave like modern painted drywall. Sewage that wicked into the bottom of "
             "plaster is inside the material. A surface wipe of the paint film leaves the contamination "
             "in place and can trap odor. The crew has to say whether that plaster comes off."
         ),
@@ -163,10 +206,10 @@ def birmingham():
 
 def berkley():
     return "\n".join([
-        h2("Sanitizing a Berkley bungalow after sewage or floodwater"),
+        h2("Sanitizing a Berkley basement after sewage or floodwater"),
         p(
             "Berkley sanitization happens in a small volume of air. The basement is short, the stair is "
-            "steep, and the door at the top often opens near the living room of a bungalow "
+            "steep, and the door at the top often opens near the living room of an older home "
             "off 12 Mile or Coolidge. Anything volatile you apply downstairs is in the main floor in "
             "minutes. That is why the product and the ventilation plan matter more here than they do in "
             "a wide commercial basement. It is also why sewage residue should be removed, not perfumed."
@@ -184,7 +227,7 @@ def berkley():
         h3("The stair and the first floor"),
         ul([
             "Dirty water on the treads will be walked into the room at the top. Clean the path only after the basement source is controlled, and bag the rags downstairs.",
-            "A furnace return in a bungalow basement will distribute odor. Leave the system off until the crew advises.",
+            "A furnace return in a short basement will distribute odor. Leave the system off until the crew advises.",
             "Panel doors and hollow closet bases on the first floor can wick if the humidity stayed high. Mention them.",
             "A clean flood still needs drying. That scope is " + a("/berkley-flooded-basement", "flooded basement cleanup") + " and " + a("/berkley-water-damage-restoration", "water damage restoration") + ".",
         ]),
@@ -194,7 +237,7 @@ def berkley():
             "A sensible order is: stop "
             "water use, keep the stair closed, have contaminated water removed, throw out porous items "
             "that soaked it up, then clean what is left and dry the structure. Spraying a still-wet "
-            "pad does none of those things. Sewage can carry bacteria up a short bungalow "
+            "pad does none of those things. Sewage can carry bacteria up a short "
             "stair, so the living room is part of the safety plan even when the flood stayed downstairs."
         ),
         p(
@@ -206,10 +249,10 @@ def berkley():
         h2("Not a substitute for fixing the drain"),
         p(
             "Sanitizing does not clear a root-filled lateral or a city main. You can have a clean-looking "
-            "slab and back up again on the next rain. The pit and the pump, if they were involved, are "
-            + a("/berkley-sump-pump-repair", "a sump conversation")
+            "slab and back up again on the next rain. The pit and the pump, if they were involved, are covered on "
+            + a("/berkley-sump-pump-repair", "sump pump repair in Berkley")
             + ". The lateral is a plumber or a city inspection. What remains is the residue left inside "
-            "the bungalow after the water left."
+            "the basement after the water left."
         ),
         callout(
             "Berkley limits on DIY disinfectant",
@@ -229,14 +272,13 @@ def clawson():
     return "\n".join([
         h2("Sanitizing after a Clawson backup or basement flood"),
         p(
-            "Clawson basement sanitization is cramped. Brick bungalows and ranches, on "
-            "small lots along and off 14 Mile, often have a single basement room. The floor drain, the "
-            "laundry, and the furnace share it. After a sewer backup, every surface in that room is in "
-            "play: the furnace cabinet bottom, the water-heater legs, the washer exterior, and the stair "
+            "In Clawson, sanitizing usually happens in a basement where contamination can spread quickly from one area to the next. "
+            "Older homes often have a single basement room. The floor drain, the "
+            "laundry, and the furnace share it. After a sewer backup, every surface in that room needs cleaning: the furnace cabinet bottom, the water-heater legs, the washer exterior, and the stair "
             "stringer. A spray that misses the backs of those appliances leaves the odor in the room."
         ),
         p(
-            "Cross-contamination is the bungalow problem. There is no long hallway to isolate. The "
+            "The hard part is keeping contamination from moving upstairs. There is no long hallway to isolate. The "
             "basement door opens into the house you live in. Bags, boots, and hoses have to be planned "
             "so sewage does not move upstairs. Ask the crew to describe that plan before they start. Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
@@ -244,7 +286,7 @@ def clawson():
         ),
         h3("Sequence that fits a small Clawson basement"),
         ul([
-            "Stop the water and deal with electrical safety first. Sanitizing a live puddle near a panel is not a step.",
+            "Stop the water and deal with electrical safety first. Don't start cleaning while water is still near the electrical panel.",
             "Extract sewage. That is " + a("/clawson-sewage-extraction", "sewage extraction in Clawson") + " and the backup context is " + a("/clawson-sewer-cleanup", "sewer backup cleanup") + ".",
             "Remove porous material that soaked it up. Then clean what remains.",
             "Dry the structure. Drying and repair decisions are " + a("/clawson-water-damage-restoration", "water damage restoration") + ". Pumping a clean flood is " + a("/clawson-flooded-basement", "basement water removal") + ".",
@@ -259,13 +301,19 @@ def clawson():
             "also mean disinfectant containers and bagged debris have to leave without blocking the sidewalk. Say that when you hire."
         ),
         callout(
-            "Clawson: one room, one rule",
+            "Keep contaminated items downstairs",
             ul([
                 "Nothing wet and soft goes up the stairs unpacked.",
                 "Do not restart the furnace to 'dry the room' if the bottom of the unit was under water.",
                 "Ask what will be hauled the same day. A sanitized floor next to a pile of wet drywall is not done.",
-                "Insurance paperwork is your conversation with your insurer. Keep the photos and the written scope for that call.",
+                "Insurance paperwork is between you and your insurer. Keep the photos and the written scope for that call.",
             ]),
+        ),
+        p(
+            "Clawson says roots at the tap, where a house line meets the city main, can cause drainage problems and backups. "
+            "When its sewer camera program finds roots or a separated tap, the city mails the homeowner a notice, and the repair "
+            "up to and including the tap is the owner's. If your backup came from your own line, get it repaired after the basement "
+            "is cleaned, or you may be cleaning the same room again."
         ),
         p("See " + a("/clawson", "Clawson's service overview") + " if you still need the sewer or flood page."),
         nearby_section("basement-sanitization", "Basement sanitization", "clawson"),
@@ -282,39 +330,39 @@ ARTICLES = {
 
 FAQS = {
     "royal-oak": [
-        ("Is Royal Oak basement sanitization a regular cleaning service?", "No. The work is cleaning after sewage or a contaminated flood. A dry basement that just needs dusting is not the job."),
-        ("Can I sanitize sewage residue myself with bleach?", "A household mop does not reach contamination inside drywall and pad, and mixing cleaners is unsafe. Have a restoration company remove ruined material and tell you what they are applying to what remains."),
+        ("If the Royal Oak main is blocked, does the city send a crew?", "Royal Oak says that if the main sewer is blocked, a crew is dispatched immediately. If the problem is in the owner's line, the city advises calling a plumber or a sewer cleaning company. Sanitizing the basement does not do either job." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),
+        ("Where does Royal Oak publish cleanup steps?", "Royal Oak's flood page links 'Cleaning Up the Mess After Basement Flooding', drafted by the Michigan Municipal Risk Management Authority's Public Works advisory committee." + cite("City of Royal Oak, Cleaning Up the Mess After Basement Flooding", RO_CLEAN)),
         ("Why does a Royal Oak basement still smell after it looks clean?", "Odor usually means a porous material was left behind, often the pad, the bottom of the drywall, or the pit. Ask the crew to find it before they call the job done."),
-        ("Does sanitizing a Royal Oak basement replace calling the Sewer Division?", "No. Cleaning the slab does not check the main. Weekday basement-water calls are (248) 246-3300, and after hours (248) 246-3500 dispatches sewer personnel. The city owns the main. You own the lateral through the connection. Written notice, if you are pursuing a sewage event, is due within 45 days of discovery."),
-        ("Does the George W. Kuhn basin clean a Royal Oak basement?", "The basin, formerly Twelve Towns, stores and treats regional combined flow. Royal Oak is a member, and the basin was expanded in 2006. It does not wipe the slab. Sanitizing is the crew after the water is out. The Sewer Division, (248) 246-3300 on weekdays, answers questions about the main."),
+        ("Does sanitizing a Royal Oak basement replace calling the Sewer Division?", "No. Cleaning the slab does not check the main. Weekday basement-water calls are (248) 246-3300, and after hours (248) 246-3500 dispatches sewer personnel. The city owns the main. You own the lateral through the connection. Written notice, if you are pursuing a sewage event, is due within 45 days of discovery." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
+        ("Does the George W. Kuhn basin clean a Royal Oak basement?", "The basin, formerly Twelve Towns, stores and treats regional combined flow. Royal Oak is a member, and the basin was expanded in 2006. It does not wipe the slab. Sanitizing is the crew after the water is out. The Sewer Division, (248) 246-3300 on weekdays, answers questions about the main." + cite("Oakland County Water Resources Commissioner, George W. Kuhn Retention Treatment Basin", WRC_GWK)),
     ],
     "troy": [
         ("Should a Troy playroom that had sewage be sprayed and kept?", "Soft contents that soaked up sewage are generally thrown away. Spraying the room without removing the pad and the ruined furnishings does not sanitize the lower level."),
-        ("What has to come out before a Troy lower level is sanitized?", "Porous material that soaked up sewage, such as carpet, pad, and the bottom of the drywall in a finished lower level. Ask what will be thrown away before anyone sprays."),
-        ("Does sanitizing include drying the Troy basement?", "No. Drying is a different part of water damage restoration. Ask for both scopes if the materials are still wet. In a finished lower level near Big Beaver, the pad and the sofa bottom usually have to come out before a cleaner has a surface it can treat."),
-        ("Should the lower-level HVAC run during Troy sanitizing?", "Ask the crew first. A return in the lower level can pull odor and residue upstairs, so it usually stays off until the ruined material is out."),
-        ("Does sanitizing a Troy playroom send the 45-day notice?", "Cleaning the room leaves the letter unsent. Written notice goes to the City Attorney's Office within 45 days of discovering the damage. Troy discharges through Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. Ask the city which district serves the house."),
+        ("How can a Troy sewer backup claim be sent?", "Troy says a claim may be emailed, mailed, faxed to 248-524-3259, or dropped off at the City Attorney's Office. Cleaning the basement does not send that notice." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
+        ("Does sanitizing include drying the Troy basement?", "No. Drying is a different part of water damage restoration. Ask for both scopes if the materials are still wet. The pad and the sofa bottom usually have to come out before a cleaner has a surface it can treat."),
+        ("What happens if Troy's 45-day written notice is missed?", "Troy says failure to give written notice within 45 days prevents recovery. Sanitizing the room does not extend that deadline." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
+        ("Does sanitizing a Troy playroom send the 45-day notice?", "Cleaning the room leaves the letter unsent. Written notice goes to the City Attorney's Office within 45 days of discovering the damage. Troy discharges through Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. Ask the city which district serves the house." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
     ],
     "birmingham": [
         ("Can original Birmingham plaster be sanitized in place?", "Only if sewage did not soak through it. Soft or deeply stained plaster usually has to be removed. The crew should decide after looking at the room."),
         ("Is a deodorant fog enough after a Birmingham backup?", "No. Fog does not replace removing the contaminated material. The smell returns when humidity rises."),
-        ("How do I check the company that will clean a Birmingham basement?", "Ask for the license and insurance the job requires, and for a written list of what they will discard, before anyone starts."),
-        ("Will Birmingham's backflow advice clean sewage that is already in the plaster?", "No. A backflow preventer, downspouts extended about 6 feet, and grading away from the foundation are prevention steps from the city FAQ. Soft plaster that soaked up sewage usually has to come out. The water-event line (248) 530-1703 is not the cleaning crew."),
-        ("Does cleaning Birmingham plaster file the sewer backup claim?", "Removing soft plaster does not send the letter. Written notice is due within 45 days of discovery, on the city's sewer backup claim form. The water-event form is not that claim. Claims questions are 248.530.1808. The city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service."),
+        ("What rain were Birmingham's older sewers designed for?", "Birmingham's FAQ says its older combined and storm sewers were designed for about 2 inches of rain in one hour. What comes up a floor drain in a heavier storm should be treated as sewage when you clean." + cite("City of Birmingham Risk Management", BHAM)),
+        ("Will Birmingham's backflow advice clean sewage that is already in the plaster?", "No. A backflow preventer, downspouts extended about 6 feet, and grading away from the foundation are prevention steps from the city FAQ. Soft plaster that soaked up sewage usually has to come out. The water-event line (248) 530-1703 is not the cleaning crew." + cite("City of Birmingham Risk Management", BHAM)),
+        ("Does cleaning Birmingham plaster file the sewer backup claim?", "Removing soft plaster does not send the letter. Written notice is due within 45 days of discovery, on the city's sewer backup claim form. The water-event form is not that claim. Claims questions are 248.530.1808. The city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service." + cite("City of Birmingham Risk Management", BHAM)),
     ],
     "berkley": [
-        ("Why is sanitizing riskier in a Berkley bungalow?", "The basement air volume is small and the stair opens near living space, so residue and strong cleaners move upstairs quickly. Removal of ruined material matters more than a heavy spray."),
-        ("Does a combined sewer change the cleaning?", "Yes. Berkley's sewer carries stormwater and sewage in one pipe, so floodwater that came up a floor drain is sewage, not rainwater. Remove it first; do not skip extraction."),
-        ("Who names the product for a Berkley bungalow?", "The company doing the work. The label has to fit sewage residue, and the stair opens near living space, so ventilation matters. Call (248) 658-3490 if you still need Public Works, and (248) 825-8312 to reach a cleanup company."),
-        ("If Berkley's combined sewer caused the flood, does sanitizing change the claim?", "No. Treat the water as sewage; the written notice is still due within 45 days of discovery. Cleaning the basement does not pause that clock. Flow from Berkley goes toward the Clinton through the George W. Kuhn district, not to the Rouge."),
-        ("What should I tell a crew sanitizing a Berkley bungalow basement?", "That the stair is short and opens near living space, and whether the water came up the floor drain. Ask what they will remove before anyone sprays."),
+        ("Why is sanitizing riskier in a small Berkley basement?", "The basement air volume is small and the stair opens near living space, so residue and strong cleaners move upstairs quickly. Removal of ruined material matters more than a heavy spray."),
+        ("Does a combined sewer change the cleaning?", "Yes. Berkley's sewer carries stormwater and sewage in one pipe, so floodwater that came up a floor drain is sewage, not rainwater. Remove it first; do not skip extraction." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)),
+        ("Who names the product for a Berkley basement?", "The company doing the work. The label has to fit sewage residue, and the stair opens near living space, so ventilation matters. Call (248) 658-3490 if you still need Public Works, and (248) 825-8312 to reach a cleanup company." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)),
+        ("If Berkley's combined sewer caused the flood, does sanitizing change the claim?", "No. Treat the water as sewage; the written notice is still due within 45 days of discovery. Cleaning the basement does not pause that clock. Flow from Berkley goes toward the Clinton through the George W. Kuhn district." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
+        ("What should I tell a crew sanitizing a Berkley basement?", "That the stair is short and opens near living space, and whether the water came up the floor drain. Ask what they will remove before anyone sprays."),
     ],
     "clawson": [
-        ("What gets missed in a one-room Clawson basement?", "The backs and bottoms of the furnace, water heater, and washer, plus the stair stringer. A floor-only mop leaves those."),
-        ("Can I run the washer to clean it after a standpipe backup?", "Do not assume a cycle cleans a machine that filled with sewage. Ask the crew whether it should be discarded."),
-        ("Does sanitizing fix the Clawson lateral?", "No. Cleaning the one-room basement does not open the pipe. The main is a city question at (248) 435-4500, Monday through Thursday. On Friday the department is closed, and after-hours dispatch is 248-524-3477, extension 1."),
-        ("What should I tell a crew sanitizing a Clawson basement?", "That the furnace, the washer, and the floor drain share one room. If you believe the public sewer was involved, written notice is due within 45 days of discovery. Clawson's sewer page points to the George W. Kuhn basin for the regional system."),
-        ("Should I assume every Clawson street is a combined sewer when I clean?", "The city sewer page lists the George W. Kuhn basin and links a combined-sewer explainer. Confirm the pipe on your street with the city. If a floor drain discharged, treat the film as sewage. Cleaning the one-room basement does not open the city main."),
+        ("Could my Clawson backup come from roots at the tap?", "It can. The city says roots at the tap can cause drainage issues and possible backups, and a separated tap can create a void under the street. When its inspection finds a problem, the city sends the homeowner a notice, and repairs up to and including the tap are the owner's responsibility. Sanitizing cleans the basement; it does not fix the tap." + cite("City of Clawson, Cleaning and Televising Sewers", CLAW_CCTV)),
+        ("Does Clawson's sewer have pumps that could have failed?", "No. The city describes its combined sewer system as strictly gravity fed, without pumps. Treat anything that came up the floor drain as sewage when you clean." + cite("City of Clawson, Cleaning and Televising Sewers", CLAW_CCTV)),
+        ("Does sanitizing fix the Clawson lateral?", "No. Cleaning the basement does not open the pipe. The city says it cannot clean or inspect private laterals and points residents to a licensed plumber." + cite("City of Clawson, Cleaning and Televising Sewers", CLAW_CCTV)),
+        ("What should I tell a crew sanitizing a Clawson basement?", "That the furnace, the washer, and the floor drain share one room. If you believe the public sewer was involved, written notice is due within 45 days of discovery. Clawson's sewer page points to the George W. Kuhn basin for the regional system." + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
+        ("Should I assume every Clawson street is a combined sewer when I clean?", "The city's CCTV page describes Clawson's combined sewer system as strictly gravity fed. If a floor drain discharged, treat the film as sewage. Cleaning the basement does not open the city main." + cite("City of Clawson, Cleaning and Televising Sewers", CLAW_CCTV)),
     ],
 }
 
@@ -322,7 +370,7 @@ HERO = {
     "royal-oak": "The standing sewage is gone from your Royal Oak basement, and the film it left is still on the floor. A local cleanup crew does the basement sanitization in Royal Oak, and they'll tell you when they can be there.",
     "troy": "A Troy lower level had sewage in the carpet and pad, and a spray over the top will not clean it. Call, and a local cleanup crew does the basement sanitization in Troy. They'll tell you when they can be there.",
     "birmingham": "Sewage wicked into the plaster and wood in a Birmingham basement, past what a wipe can reach. When you call, you reach a local cleanup crew for basement sanitization in Birmingham, and they'll tell you when they can be there.",
-    "berkley": "The water is out of a small Berkley bungalow, and the residue is still in that tight basement. Your call puts you through to a local cleanup crew for basement sanitization in Berkley, and they'll tell you when they can be there.",
+    "berkley": "The water is out of a small Berkley basement, and the residue is still in that tight room. Your call puts you through to a local cleanup crew for basement sanitization in Berkley, and they'll tell you when they can be there.",
     "clawson": "A one-room Clawson basement still holds the furnace, the washer, and whatever the backup left on them. Call, and a local cleanup crew handles basement sanitization in Clawson. They'll tell you when they can be there.",
 }
 
@@ -330,7 +378,7 @@ ALT = {
     "royal-oak": "A basement floor after sewage removal, before sanitizing residue in a Royal Oak house",
     "troy": "A finished lower level stripped after a backup, the sanitizing stage in a Troy basement",
     "birmingham": "Lower-level finishes after a sewage backup, a Birmingham sanitizing and removal question",
-    "berkley": "A small bungalow basement stair after a backup, where Berkley sanitizing has to contain mess",
+    "berkley": "A small basement stair after a backup, where Berkley sanitizing has to contain mess",
     "clawson": "Utility equipment in a small basement after a flood, a Clawson sanitizing access problem",
 }
 
@@ -338,6 +386,6 @@ DESCRIPTIONS = {
     "royal-oak": "Basement sanitization in Royal Oak, MI after sewage or a flood. A local crew removes ruined materials and disinfects your basement. Call (248) 825-8312.",
     "troy": "Basement sanitization in Troy, MI after sewage or a flood. A local crew removes soaked carpet and pad and disinfects your lower level. Call (248) 825-8312.",
     "birmingham": "Basement sanitization in Birmingham, MI after sewage or a flood. A local crew removes soaked plaster and trim and disinfects the rest. Call (248) 825-8312.",
-    "berkley": "Basement sanitization in Berkley, MI after a sewer backup or flood. A local crew cleans and disinfects your bungalow basement. Call (248) 825-8312.",
+    "berkley": "Basement sanitization in Berkley, MI after a sewer backup or flood. A local crew cleans and disinfects the basement. Call (248) 825-8312 now.",
     "clawson": "Basement sanitization in Clawson, MI after a backup or flood. A local crew cleans the floor, furnace area and appliances. Call (248) 825-8312.",
 }

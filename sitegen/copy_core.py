@@ -1,6 +1,8 @@
 """Home, contact, about, privacy, terms, thank-you, and 404 copy."""
 
 from site_config import BRAND, PHONE_DISPLAY, PHONE_TEL
+
+from sitegen.citations import BERK_TIPS, BHAM, CLAW_SEWER, MCL1419, RO_FLOOD, RO_SEWER, TROY_CLAIMS, WRC_GWK, cite
 from sitegen.render import a, h2, h3, p
 
 def about_article():
@@ -177,21 +179,31 @@ PRIVACY_FAQS = [
     ),
     (
         "Should I type a sewer claim into the form?",
-        "Call instead. The form is not read and is not stored. A 45-day written notice to Royal Oak, Troy, Birmingham, Berkley, or Clawson is a letter to that city, not a form field. Insurance questions stay with your insurer.",
+        "Call instead. The form is not read and is not stored. A 45-day written notice to Royal Oak, Troy, Birmingham, Berkley, or Clawson is a letter to that city, not a form field. Insurance questions stay with your insurer." + cite("Michigan Legislature, MCL 691.1419", MCL1419),
     ),
-    ("Is (248) 825-8312 a city number?", "No. City sewer numbers are separate: Royal Oak (248) 246-3300, Troy 248-524-3370, Berkley 248-658-3490, Clawson (248) 435-4500, and Birmingham claims questions 248.530.1808."),
+    ("Is (248) 825-8312 a city number?", "No. City sewer numbers are separate: Royal Oak (248) 246-3300, Troy 248-524-3370, Berkley 248-658-3490, Clawson (248) 435-4500, and Birmingham claims questions 248.530.1808."
+     + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)
+     + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)
+     + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)
+     + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER)
+     + cite("City of Birmingham Risk Management", BHAM)),
 ]
 
 
 TERMS_FAQS = [
-    ("Where do the city phone numbers on the pages come from?", "From each city's own website: Royal Oak's Sewer Division pages, Troy's legal claims page, Birmingham's Risk Management page, Berkley's flood tips, and Clawson's sewer and dispatch pages. Numbers can change, so confirm them with the city."),
+    ("Where do the city phone numbers on the pages come from?", "From each city's own website: Royal Oak's Sewer Division pages, Troy's legal claims page, Birmingham's Risk Management page, Berkley's flood tips, and Clawson's sewer and dispatch pages. Numbers can change, so confirm them with the city."
+     + cite("City of Royal Oak Sewer Division", RO_SEWER)
+     + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)
+     + cite("City of Birmingham Risk Management", BHAM)
+     + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)
+     + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER)),
     (
         "Who checks the license and insurance?",
         "You do, before work starts. Ask the company for the license and insurance the job requires, and for a written scope. The price and the arrival come from that company.",
     ),
     (
         "Are the city sewer descriptions a survey of my house?",
-        "They describe real public systems so the five city pages can be told apart. They are not a soil report or a statement of the pipe at your address. Confirm sewer maps with the city or the Oakland County Water Resources Commissioner.",
+        "They summarize what each city publishes about its own sewer system, so you know which city office to call. They are not a soil report or a statement of the pipe at your address. Confirm sewer maps with the city or the Oakland County Water Resources Commissioner." + cite("Oakland County Water Resources Commissioner, George W. Kuhn Retention Treatment Basin", WRC_GWK),
     ),
     (
         "Does a call file the 45-day notice?",

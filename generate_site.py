@@ -712,8 +712,12 @@ def main():
             h1 = h1_t.format(city=city)
             if city_slug == "clawson" and service_slug == "flooded-basement":
                 title = "Flooded Basement Cleanup Clawson, MI | Water Removal"
+            if city_slug == "clawson" and service_slug == "sewage-extraction":
+                title = "Sewage Extraction Clawson, MI | Pump-Out on Small Lots"
             if city_slug == "royal-oak" and service_slug == "flooded-basement":
-                title = "Royal Oak Flooded Basement Cleanup | Oakland Sewer Pros"
+                title = "Flooded Basement Cleanup Royal Oak, MI | Water Removal"
+            if city_slug == "troy" and service_slug == "flooded-basement":
+                title = "Flooded Basement Cleanup Troy, MI | Water Removal"
             if city_slug == "birmingham" and service_slug == "flooded-basement":
                 title = "Birmingham Flooded Basement Cleanup | Oakland Sewer Pros"
             if city_slug == "berkley" and service_slug == "flooded-basement":
@@ -768,7 +772,7 @@ def main():
         ("sewer-backup-cleanup", "Sewer Backup Cleanup Oakland County, MI | Basement Help", "Sewer backup cleanup in Oakland County, MI. A local crew pumps out sewage, removes ruined materials and disinfects your basement. Call (248) 825-8312.", "Sewage cleanup and sewer backup in Oakland County, MI", "Sewage is in the basement and it needs to come out. A local cleanup crew handles the visit, and they'll tell you when they can be there. Open your city's page for the local steps.", sewer_hub(), "0.8"),
         ("sewage-extraction", "Sewage Extraction Oakland County MI | Oakland Sewer Pros", "Sewage extraction in Oakland County, MI. A local crew pumps sewage out of your basement and hauls away soaked materials safely. Call (248) 825-8312.", "Sewage extraction in Oakland County, MI", "Contaminated water is in the basement and it has to be pumped out. A local cleanup crew handles the visit, and they'll tell you when they can be there.", sewage_hub(), "0.8"),
         ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup in Oakland County, MI. A local crew pumps out storm or sump water and dries the walls and floors. Call (248) 825-8312 now.", "Basement flood cleanup in Oakland County, MI", "Standing water from a storm or a sump is in the basement. A local cleanup crew handles the visit, and they'll tell you when they can be there. If a drain backed up, tell them it is sewage.", flood_hub(), "0.8"),
-        ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, MI. A local crew fixes stuck, dead or overflowing pumps and removes the water if the floor is wet. Call (248) 825-8312.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead pump has left the basement wet. A local crew handles the visit, and they'll tell you when they can be there. Birmingham here means Birmingham, Michigan.", sump_hub(), "0.8"),
+        ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, MI. A local crew can check the pump and deal with the water if the floor is wet. Call (248) 825-8312 now.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead sump pump has left the basement wet. Call (248) 825-8312, say whether the pit overflowed or a floor drain backed up, and a local crew for Royal Oak, Troy, Birmingham, Berkley or Clawson will tell you when they can be there.", sump_hub(), "0.8"),
         ("basement-sanitization", "Basement Sanitization Oakland County | Oakland Sewer Pros", "Basement sanitization in Oakland County, MI after sewage or a flood. A local crew removes ruined materials and disinfects the rest. Call (248) 825-8312.", "Basement sanitization after sewage or flooding", "The water is out and the basement still needs cleaning after sewage or a flood. A local cleanup crew handles the visit, and they'll tell you when they can be there. Extraction comes first if the water is still there.", sanit_hub(), "0.8"),
     ]
     for path, title, description, h1, lead, article, priority in hub_pages:
