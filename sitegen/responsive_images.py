@@ -1,8 +1,12 @@
 """480w and 800w WebP variants for content photos. Original files are not rewritten."""
 
+import struct
 from pathlib import Path
 
-from PIL import Image
+try:  # Pillow is only needed to (re)generate variants; the Cloudflare build has no Pillow.
+    from PIL import Image
+except ImportError:  # pragma: no cover
+    Image = None
 
 ROOT = Path(__file__).resolve().parents[1]
 IMAGES = ROOT / "images"
@@ -14,11 +18,30 @@ SIZES = "(max-width: 768px) 100vw, 640px"
 _widths = {}
 
 
+def _webp_width(path):
+    """Read the pixel width from a WebP header (VP8, VP8L or VP8X) without Pillow."""
+    data = path.read_bytes()[:30]
+    if data[:4] != b"RIFF" or data[8:12] != b"WEBP":
+        return None
+    chunk = data[12:16]
+    if chunk == b"VP8X":
+        return 1 + int.from_bytes(data[24:27], "little")
+    if chunk == b"VP8L":
+        bits = struct.unpack("<I", data[21:25])[0]
+        return (bits & 0x3FFF) + 1
+    if chunk == b"VP8 ":
+        return struct.unpack("<H", data[26:28])[0] & 0x3FFF
+    return None
+
+
 def ensure_variants():
     """Write smaller WebP files next to each content image that is wider than the target."""
     _widths.clear()
     for src in sorted(IMAGES.glob("*.webp")):
         if src.stem.endswith("-480") or src.stem.endswith("-800"):
+            continue
+        if Image is None:
+            _widths[src.name] = _webp_width(src)
             continue
         with Image.open(src) as im:
             width = im.width
@@ -40,9 +63,8 @@ def srcset_for(webp_url):
     width = _widths.get(name)
     original = IMAGES / name
     if width is None and original.exists():
-        with Image.open(original) as im:
-            width = im.width
-            _widths[name] = width
+        width = _webp_width(original)
+        _widths[name] = width
     if not width:
         return webp_url
     stem = Path(name).stem

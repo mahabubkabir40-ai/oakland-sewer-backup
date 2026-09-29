@@ -173,16 +173,14 @@ def _source_dirty(relpath):
 
 
 def page_lastmod(path):
-    """Latest YYYY-MM-DD among the page HTML and its content source files.
+    """Latest YYYY-MM-DD among the page's content source files.
 
     A dirty content module uses today's UTC date for that page only.
     Rebuilding shared chrome does not stamp every URL with the build date.
     """
-    filename = "index.html" if path in ("", "/") else f"{path}.html"
+    # The built HTML is not used: a chrome-only rebuild commits every page and would
+    # stamp all 50 URLs with the same day. Pages without a mapped module use LASTMOD.
     dates = []
-    html_date = _git_date(filename)
-    if html_date:
-        dates.append(html_date)
     for source in content_sources(path):
         logged = _git_date(source)
         if logged:
