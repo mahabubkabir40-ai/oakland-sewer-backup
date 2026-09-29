@@ -192,7 +192,31 @@
         "title": "A Yellow Mop Bucket with Dirty Water"
       }
     ],
-    "royal-oak-flooded-basement": [],
+    "royal-oak-flooded-basement": [
+      {
+        "file": "floodwater-in-basement-through-cellar-doorway.webp",
+        "alt": "Muddy floodwater covering a basement floor, seen through an open cellar door.",
+        "width": 1200,
+        "height": 795,
+        "eager": false,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Flash_flood_Canandaigua_NY_July_23,_2017_04_flooded_basement.jpg",
+        "photographer": "B137 (Wikimedia Commons)",
+        "license": "CC0 1.0 (public domain dedication)",
+        "title": "Flash flood Canandaigua NY July 23, 2017 04 flooded basement"
+      },
+      {
+        "file": "worker-in-protective-suit-using-wet-dry-vacuum.webp",
+        "alt": "Worker in a protective suit and orange gloves running a yellow wet-dry vacuum across a tile floor.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-person-using-a-vacuum-cleaner-6195949/",
+        "photographer": "Tima Miroshnichenko",
+        "license": "Pexels License",
+        "pexels_id": "6195949",
+        "title": "A Close-Up Shot of a Person Using a Vacuum Cleaner"
+      }
+    ],
     "troy-flooded-basement": [
       {
         "file": "peeling-paint-on-damaged-wall.webp",
@@ -201,15 +225,91 @@
         "height": 648,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/",
-        "photographer": "K\u00e1ssia Melo",
+        "photographer": "Kássia Melo",
         "license": "Pexels License",
         "pexels_id": "20537493",
         "title": "Close-up of a Damaged Wall Surface"
       }
     ],
-    "birmingham-flooded-basement": [],
-    "berkley-flooded-basement": [],
-    "clawson-flooded-basement": [],
+    "birmingham-flooded-basement": [
+      {
+        "file": "standing-water-on-floor-of-water-damaged-room.webp",
+        "alt": "Standing water across a tiled floor, with mold stains on the wall beside a doorway.",
+        "width": 1200,
+        "height": 900,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/water-in-abandoned-room-18302377/",
+        "photographer": "Emmanuel Codden",
+        "license": "Pexels License",
+        "pexels_id": "18302377",
+        "title": "Water in Abandoned Room",
+        "note": "Cropped to the lower part of the frame so the wet floor shows."
+      },
+      {
+        "file": "worker-in-protective-suit-using-wet-dry-vacuum.webp",
+        "alt": "Cleanup worker in white coveralls using a wet-dry shop vacuum on a floor.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-person-using-a-vacuum-cleaner-6195949/",
+        "photographer": "Tima Miroshnichenko",
+        "license": "Pexels License",
+        "pexels_id": "6195949",
+        "title": "A Close-Up Shot of a Person Using a Vacuum Cleaner"
+      }
+    ],
+    "berkley-flooded-basement": [
+      {
+        "file": "floodwater-in-basement-through-cellar-doorway.webp",
+        "alt": "Brown floodwater standing inside a basement behind a stone foundation wall and an open door.",
+        "width": 1200,
+        "height": 795,
+        "eager": false,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Flash_flood_Canandaigua_NY_July_23,_2017_04_flooded_basement.jpg",
+        "photographer": "B137 (Wikimedia Commons)",
+        "license": "CC0 1.0 (public domain dedication)",
+        "title": "Flash flood Canandaigua NY July 23, 2017 04 flooded basement"
+      },
+      {
+        "file": "standing-water-in-room-with-peeling-walls.webp",
+        "alt": "Dark standing water covering the floor of a room with peeling paint.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/flooded-abandoned-room-10631759/",
+        "photographer": "Estonian  Stalker",
+        "license": "Pexels License",
+        "pexels_id": "10631759",
+        "title": "Flooded Abandoned Room"
+      }
+    ],
+    "clawson-flooded-basement": [
+      {
+        "file": "standing-water-on-floor-of-water-damaged-room.webp",
+        "alt": "Water pooled on a tile floor reflecting a window, with mold growing low on the wall.",
+        "width": 1200,
+        "height": 900,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/water-in-abandoned-room-18302377/",
+        "photographer": "Emmanuel Codden",
+        "license": "Pexels License",
+        "pexels_id": "18302377",
+        "title": "Water in Abandoned Room",
+        "note": "Cropped to the lower part of the frame so the wet floor shows."
+      },
+      {
+        "file": "standing-water-in-room-with-peeling-walls.webp",
+        "alt": "Floodwater reflecting peeling green and white walls in a dim room.",
+        "width": 1200,
+        "height": 800,
+        "eager": false,
+        "source_url": "https://www.pexels.com/photo/flooded-abandoned-room-10631759/",
+        "photographer": "Estonian  Stalker",
+        "license": "Pexels License",
+        "pexels_id": "10631759",
+        "title": "Flooded Abandoned Room"
+      }
+    ],
     "royal-oak-sewage-extraction": [
       {
         "file": "industrial-pump-and-hoses-outdoors.webp",
@@ -218,7 +318,7 @@
         "height": 1800,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
-        "photographer": "Adam \u0160umn\u00edk",
+        "photographer": "Adam Šumník",
         "license": "Pexels License",
         "pexels_id": "32489252",
         "title": "Industrial Pump and Hose Equipment Outdoor View"
@@ -244,7 +344,7 @@
         "height": 1800,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
-        "photographer": "Adam \u0160umn\u00edk",
+        "photographer": "Adam Šumník",
         "license": "Pexels License",
         "pexels_id": "32489252",
         "title": "Industrial Pump and Hose Equipment Outdoor View"
@@ -270,7 +370,7 @@
         "height": 1800,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
-        "photographer": "Adam \u0160umn\u00edk",
+        "photographer": "Adam Šumník",
         "license": "Pexels License",
         "pexels_id": "32489252",
         "title": "Industrial Pump and Hose Equipment Outdoor View"
@@ -322,7 +422,7 @@
         "height": 1800,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/industrial-pump-and-hose-equipment-outdoor-view-32489252/",
-        "photographer": "Adam \u0160umn\u00edk",
+        "photographer": "Adam Šumník",
         "license": "Pexels License",
         "pexels_id": "32489252",
         "title": "Industrial Pump and Hose Equipment Outdoor View"
@@ -348,7 +448,7 @@
         "height": 1920,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
-        "photographer": "Bulat843 \ud83c\udf19",
+        "photographer": "Bulat843 🌙",
         "license": "Pexels License",
         "pexels_id": "32588548",
         "title": "Plumber Repairing Pipe with Wrench Indoors"
@@ -360,7 +460,7 @@
         "height": 2133,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
-        "photographer": "Bulat843 \ud83c\udf19",
+        "photographer": "Bulat843 🌙",
         "license": "Pexels License",
         "pexels_id": "35290675",
         "title": "Focused Technician Working with Water Pump"
@@ -386,7 +486,7 @@
         "height": 1920,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
-        "photographer": "Bulat843 \ud83c\udf19",
+        "photographer": "Bulat843 🌙",
         "license": "Pexels License",
         "pexels_id": "32588548",
         "title": "Plumber Repairing Pipe with Wrench Indoors"
@@ -400,7 +500,7 @@
         "height": 1920,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
-        "photographer": "Bulat843 \ud83c\udf19",
+        "photographer": "Bulat843 🌙",
         "license": "Pexels License",
         "pexels_id": "32588548",
         "title": "Plumber Repairing Pipe with Wrench Indoors"
@@ -440,7 +540,7 @@
         "height": 2133,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
-        "photographer": "Bulat843 \ud83c\udf19",
+        "photographer": "Bulat843 🌙",
         "license": "Pexels License",
         "pexels_id": "35290675",
         "title": "Focused Technician Working with Water Pump"
@@ -452,7 +552,7 @@
         "height": 1920,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/plumber-repairing-pipe-with-wrench-indoors-32588548/",
-        "photographer": "Bulat843 \ud83c\udf19",
+        "photographer": "Bulat843 🌙",
         "license": "Pexels License",
         "pexels_id": "32588548",
         "title": "Plumber Repairing Pipe with Wrench Indoors"
@@ -644,7 +744,7 @@
         "height": 675,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/",
-        "photographer": "Diana \u2728",
+        "photographer": "Diana ✨",
         "license": "Pexels License",
         "pexels_id": "9617552",
         "title": "Hole Left after Fallen Plaster on Painted Wall"
@@ -656,7 +756,7 @@
         "height": 648,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/",
-        "photographer": "K\u00e1ssia Melo",
+        "photographer": "Kássia Melo",
         "license": "Pexels License",
         "pexels_id": "20537493",
         "title": "Close-up of a Damaged Wall Surface"
@@ -696,7 +796,7 @@
         "height": 648,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/",
-        "photographer": "K\u00e1ssia Melo",
+        "photographer": "Kássia Melo",
         "license": "Pexels License",
         "pexels_id": "20537493",
         "title": "Close-up of a Damaged Wall Surface"
@@ -722,7 +822,7 @@
         "height": 675,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/",
-        "photographer": "Diana \u2728",
+        "photographer": "Diana ✨",
         "license": "Pexels License",
         "pexels_id": "9617552",
         "title": "Hole Left after Fallen Plaster on Painted Wall"
@@ -756,156 +856,132 @@
     ],
     "royal-oak": [
       {
-        "file": "close-up-of-metal-downspout.webp",
-        "alt": "Close-up of a metal downspout.",
-        "width": 1080,
-        "height": 1620,
+        "file": "worker-in-protective-suit-using-wet-dry-vacuum.webp",
+        "alt": "Person in a white protective suit vacuuming a floor with a yellow wet-dry vac.",
+        "width": 1200,
+        "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-downspout-5940870/",
-        "photographer": "Eva Bronzini",
+        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-person-using-a-vacuum-cleaner-6195949/",
+        "photographer": "Tima Miroshnichenko",
         "license": "Pexels License",
-        "pexels_id": "5940870",
-        "title": "A Close-Up Shot of a Downspout"
+        "pexels_id": "6195949",
+        "title": "A Close-Up Shot of a Person Using a Vacuum Cleaner"
       },
       {
-        "file": "water-dripping-from-drain-spout.webp",
-        "alt": "Water dripping from a drain spout.",
+        "file": "plumber-tightening-brass-pipe-fitting.webp",
+        "alt": "Plumber's hands tightening a brass fitting on a pipe run in front of foil insulation.",
         "width": 1200,
-        "height": 802,
+        "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/water-dripping-from-drain-spout-3964796/",
-        "photographer": "ready made",
+        "source_url": "https://www.pexels.com/photo/plumber-installs-pipe-fittings-6419128/",
+        "photographer": "Anıl Karakaya",
         "license": "Pexels License",
-        "pexels_id": "3964796",
-        "title": "Water Dripping from Drain Spout "
+        "pexels_id": "6419128",
+        "title": "Plumber Installs Pipe Fittings"
       }
     ],
     "troy": [
       {
-        "file": "hole-in-plaster-wall.webp",
-        "alt": "Hole in the plaster of a painted interior wall.",
+        "file": "worker-in-protective-suit-using-wet-dry-vacuum.webp",
+        "alt": "Cleaner in protective coveralls and gloves working a wet-dry vacuum over floor tile.",
         "width": 1200,
-        "height": 675,
+        "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/",
-        "photographer": "Diana \u2728",
+        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-person-using-a-vacuum-cleaner-6195949/",
+        "photographer": "Tima Miroshnichenko",
         "license": "Pexels License",
-        "pexels_id": "9617552",
-        "title": "Hole Left after Fallen Plaster on Painted Wall"
+        "pexels_id": "6195949",
+        "title": "A Close-Up Shot of a Person Using a Vacuum Cleaner"
       },
       {
-        "file": "water-dripping-from-drain-spout.webp",
-        "alt": "Water dripping from a drain spout.",
+        "file": "standing-water-in-room-with-peeling-walls.webp",
+        "alt": "Standing water spread across a dim room with chipped paint on the walls and pillars.",
         "width": 1200,
-        "height": 802,
+        "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/water-dripping-from-drain-spout-3964796/",
-        "photographer": "ready made",
+        "source_url": "https://www.pexels.com/photo/flooded-abandoned-room-10631759/",
+        "photographer": "Estonian  Stalker",
         "license": "Pexels License",
-        "pexels_id": "3964796",
-        "title": "Water Dripping from Drain Spout "
-      },
-      {
-        "file": "close-up-of-storm-drain-grate.webp",
-        "alt": "Close-up of a metal storm drain grate.",
-        "width": 972,
-        "height": 1458,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/",
-        "photographer": "Jo\u00e3o V\u00edtor Heinrichs",
-        "license": "Pexels License",
-        "pexels_id": "7807058",
-        "title": "A Close-Up Shot of a Storm Drain"
+        "pexels_id": "10631759",
+        "title": "Flooded Abandoned Room"
       }
     ],
     "birmingham": [
       {
-        "file": "metal-downspout-on-exterior-wall.webp",
-        "alt": "Metal downspout on an exterior wall.",
+        "file": "floodwater-in-basement-through-cellar-doorway.webp",
+        "alt": "Open cellar doorway with muddy water flooding the basement floor inside.",
+        "width": 1200,
+        "height": 795,
+        "eager": false,
+        "source_url": "https://commons.wikimedia.org/wiki/File:Flash_flood_Canandaigua_NY_July_23,_2017_04_flooded_basement.jpg",
+        "photographer": "B137 (Wikimedia Commons)",
+        "license": "CC0 1.0 (public domain dedication)",
+        "title": "Flash flood Canandaigua NY July 23, 2017 04 flooded basement"
+      },
+      {
+        "file": "plumber-tightening-brass-pipe-fitting.webp",
+        "alt": "Hands in a protective-suit sleeve fastening a brass pipe connection.",
         "width": 1200,
         "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-silver-metal-pipe-on-brown-concrete-wall-10372434/",
-        "photographer": "Nikita Nikitin",
+        "source_url": "https://www.pexels.com/photo/plumber-installs-pipe-fittings-6419128/",
+        "photographer": "Anıl Karakaya",
         "license": "Pexels License",
-        "pexels_id": "10372434",
-        "title": "A Silver Metal Pipe on Brown Concrete Wall"
-      },
-      {
-        "file": "water-dripping-from-drain-spout.webp",
-        "alt": "Water dripping from a drain spout.",
-        "width": 1200,
-        "height": 802,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/water-dripping-from-drain-spout-3964796/",
-        "photographer": "ready made",
-        "license": "Pexels License",
-        "pexels_id": "3964796",
-        "title": "Water Dripping from Drain Spout "
+        "pexels_id": "6419128",
+        "title": "Plumber Installs Pipe Fittings"
       }
     ],
     "berkley": [
       {
-        "file": "white-downspout-on-exterior-wall.webp",
-        "alt": "White downspout on an exterior wall.",
+        "file": "standing-water-on-floor-of-water-damaged-room.webp",
+        "alt": "Wet tile floor and moldy lower wall in a water-damaged room.",
         "width": 1200,
-        "height": 1800,
+        "height": 900,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/white-downspout-on-concrete-wall-9809765/",
-        "photographer": "Plato Terentev",
+        "source_url": "https://www.pexels.com/photo/water-in-abandoned-room-18302377/",
+        "photographer": "Emmanuel Codden",
         "license": "Pexels License",
-        "pexels_id": "9809765",
-        "title": "White Downspout on Concrete Wall"
+        "pexels_id": "18302377",
+        "title": "Water in Abandoned Room",
+        "note": "Cropped to the lower part of the frame so the wet floor shows."
       },
       {
-        "file": "close-up-of-storm-drain-grate.webp",
-        "alt": "Close-up of a metal storm drain grate.",
-        "width": 972,
-        "height": 1458,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-storm-drain-7807058/",
-        "photographer": "Jo\u00e3o V\u00edtor Heinrichs",
-        "license": "Pexels License",
-        "pexels_id": "7807058",
-        "title": "A Close-Up Shot of a Storm Drain"
-      },
-      {
-        "file": "metal-downspout-on-exterior-wall.webp",
-        "alt": "Metal downspout on an exterior wall.",
+        "file": "plumber-tightening-brass-pipe-fitting.webp",
+        "alt": "Plumber gripping a brass fitting while working on a metal pipe.",
         "width": 1200,
         "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-silver-metal-pipe-on-brown-concrete-wall-10372434/",
-        "photographer": "Nikita Nikitin",
+        "source_url": "https://www.pexels.com/photo/plumber-installs-pipe-fittings-6419128/",
+        "photographer": "Anıl Karakaya",
         "license": "Pexels License",
-        "pexels_id": "10372434",
-        "title": "A Silver Metal Pipe on Brown Concrete Wall"
+        "pexels_id": "6419128",
+        "title": "Plumber Installs Pipe Fittings"
       }
     ],
     "clawson": [
       {
-        "file": "rusty-street-drain.webp",
-        "alt": "Rusty metal street drain set in pavement.",
-        "width": 1080,
-        "height": 720,
+        "file": "standing-water-in-room-with-peeling-walls.webp",
+        "alt": "Still water covering a floor beneath walls with flaking paint.",
+        "width": 1200,
+        "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-rusty-metal-street-drainage-6573773/",
-        "photographer": "Malcolm Garret",
+        "source_url": "https://www.pexels.com/photo/flooded-abandoned-room-10631759/",
+        "photographer": "Estonian  Stalker",
         "license": "Pexels License",
-        "pexels_id": "6573773",
-        "title": "A Rusty Metal Street Drainage"
+        "pexels_id": "10631759",
+        "title": "Flooded Abandoned Room"
       },
       {
-        "file": "white-downspout-on-exterior-wall.webp",
-        "alt": "White downspout on an exterior wall.",
+        "file": "plumber-tightening-brass-pipe-fitting.webp",
+        "alt": "Close-up of a plumber working on a brass pipe joint against foil insulation.",
         "width": 1200,
-        "height": 1800,
+        "height": 800,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/white-downspout-on-concrete-wall-9809765/",
-        "photographer": "Plato Terentev",
+        "source_url": "https://www.pexels.com/photo/plumber-installs-pipe-fittings-6419128/",
+        "photographer": "Anıl Karakaya",
         "license": "Pexels License",
-        "pexels_id": "9809765",
-        "title": "White Downspout on Concrete Wall"
+        "pexels_id": "6419128",
+        "title": "Plumber Installs Pipe Fittings"
       }
     ],
     "sewer-backup-cleanup": [
@@ -942,7 +1018,7 @@
         "height": 648,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/close-up-of-a-damaged-wall-surface-20537493/",
-        "photographer": "K\u00e1ssia Melo",
+        "photographer": "Kássia Melo",
         "license": "Pexels License",
         "pexels_id": "20537493",
         "title": "Close-up of a Damaged Wall Surface"
@@ -970,7 +1046,7 @@
         "height": 2133,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/focused-technician-working-with-water-pump-35290675/",
-        "photographer": "Bulat843 \ud83c\udf19",
+        "photographer": "Bulat843 🌙",
         "license": "Pexels License",
         "pexels_id": "35290675",
         "title": "Focused Technician Working with Water Pump"
@@ -1034,7 +1110,7 @@
         "height": 675,
         "eager": false,
         "source_url": "https://www.pexels.com/photo/hole-left-after-fallen-plaster-on-painted-wall-9617552/",
-        "photographer": "Diana \u2728",
+        "photographer": "Diana ✨",
         "license": "Pexels License",
         "pexels_id": "9617552",
         "title": "Hole Left after Fallen Plaster on Painted Wall"
@@ -1080,40 +1156,28 @@
     ],
     "george-w-kuhn-drainage-district": [
       {
-        "file": "white-downspout-on-exterior-wall.webp",
-        "alt": "White downspout on an exterior wall.",
+        "file": "floodwater-in-basement-through-cellar-doorway.webp",
+        "alt": "Floodwater filling a basement, viewed from the outside cellar entrance.",
         "width": 1200,
-        "height": 1800,
+        "height": 795,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/white-downspout-on-concrete-wall-9809765/",
-        "photographer": "Plato Terentev",
-        "license": "Pexels License",
-        "pexels_id": "9809765",
-        "title": "White Downspout on Concrete Wall"
+        "source_url": "https://commons.wikimedia.org/wiki/File:Flash_flood_Canandaigua_NY_July_23,_2017_04_flooded_basement.jpg",
+        "photographer": "B137 (Wikimedia Commons)",
+        "license": "CC0 1.0 (public domain dedication)",
+        "title": "Flash flood Canandaigua NY July 23, 2017 04 flooded basement"
       },
       {
-        "file": "close-up-of-metal-downspout.webp",
-        "alt": "Close-up of a metal downspout.",
-        "width": 1080,
-        "height": 1620,
-        "eager": false,
-        "source_url": "https://www.pexels.com/photo/a-close-up-shot-of-a-downspout-5940870/",
-        "photographer": "Eva Bronzini",
-        "license": "Pexels License",
-        "pexels_id": "5940870",
-        "title": "A Close-Up Shot of a Downspout"
-      },
-      {
-        "file": "water-dripping-from-drain-spout.webp",
-        "alt": "Water dripping from a drain spout.",
+        "file": "standing-water-on-floor-of-water-damaged-room.webp",
+        "alt": "Tiled room with standing water on the floor and dark mold patches on the wall.",
         "width": 1200,
-        "height": 802,
+        "height": 900,
         "eager": false,
-        "source_url": "https://www.pexels.com/photo/water-dripping-from-drain-spout-3964796/",
-        "photographer": "ready made",
+        "source_url": "https://www.pexels.com/photo/water-in-abandoned-room-18302377/",
+        "photographer": "Emmanuel Codden",
         "license": "Pexels License",
-        "pexels_id": "3964796",
-        "title": "Water Dripping from Drain Spout "
+        "pexels_id": "18302377",
+        "title": "Water in Abandoned Room",
+        "note": "Cropped to the lower part of the frame so the wet floor shows."
       }
     ],
     "sewer-backup-claim-guide": [
