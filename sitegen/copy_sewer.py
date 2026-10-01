@@ -259,7 +259,7 @@ def article(slug, city):
         h2(f"Sewer backup cleanup in {city}, MI"),
         p(
             (
-                "A backup usually starts when sewage comes up a basement drain, a laundry "
+                "A backup in Troy usually starts when sewage comes up a basement drain, a laundry "
                 "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
                 "and do not run a household vac. The steps below are the first minutes. Then call, and a local "
                 "cleanup crew takes it from there."
@@ -295,8 +295,8 @@ def article(slug, city):
         block = p(SEWAGE_H2[slug])
         extra = p(
             "Sewage and water cleanup in a finished lower level can mean two different jobs: sewage from a drain "
-            "that backed up, or carpet soaked by a storm or a failed sump. Sewer backup cleanup in Troy is the drain backup. "
-            "The first is contaminated from the start, so say which one you have when you call."
+            "that backed up, or carpet soaked by a storm or a failed sump. The first is contaminated from the start, "
+            "so say which one you have when you call."
         )
         html_out = html_out.replace(block, block + "\n" + extra, 1)
         return html_out
