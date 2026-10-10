@@ -168,6 +168,16 @@ def troy():
             + a("/troy", "Troy services")
             + " if you need the sewer page instead."
         ),
+        h2("Water mitigation and water cleanup in Troy"),
+        p(
+            "Water mitigation is the first part of the job: stop the source, pump out standing water, and "
+            "get wet carpet and pad off the floor before the drywall wicks it up. Water cleanup is what "
+            "follows once the floor is dry enough to work on. If you are searching for a water damage "
+            "company in Troy, MI, or a basement water damage company in Troy, MI, the call to "
+            + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
+            + " connects you with a local company that does this work. Ask them what they will remove, "
+            "how they will measure drying, and what the visit costs before they start."
+        ),
         nearby_section("water-damage-restoration", "Water damage restoration", "troy"),
     ])
 

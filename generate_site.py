@@ -656,7 +656,7 @@ def home_body():
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-7">
-                    <h1 class="text-3xl md:text-5xl font-outfit font-extrabold text-white leading-tight">24/7 Emergency Sewer Backup Cleanup &amp; Sewage Extraction in Oakland County, MI</h1>
+                    <h1 class="text-3xl md:text-5xl font-outfit font-extrabold text-white leading-tight">24/7 Emergency Sewer Backup &amp; Sewage Cleanup in Oakland County, MI</h1>
                     <p class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed">Sewage or floodwater in an Oakland County basement needs a cleanup company now. A local crew handles the cleanup for sewer backup, sewage cleanup, basement flood cleanup, and water damage restoration. They'll tell you when they can be there.</p>
                     <p class="text-sm text-gray-300 mt-4 leading-relaxed">County pages: <a class="text-red-400 underline" href="/sewer-backup-cleanup">sewage cleanup and sewer backup in Oakland County</a>, <a class="text-red-400 underline" href="/flooded-basement-cleanup">basement flood cleanup in Oakland County</a>, and <a class="text-red-400 underline" href="/water-damage-restoration">water damage restoration</a>. If a drain backed up, that is sewage, not a rain flood.</p>
                     <div class="mt-8">{call_button()}</div>
@@ -719,7 +719,9 @@ def main():
             if city_slug == "troy" and service_slug == "flooded-basement":
                 title = "Flooded Basement Cleanup Troy, MI | Water Removal"
             if city_slug == "birmingham" and service_slug == "flooded-basement":
-                title = "Birmingham Flooded Basement Cleanup | Oakland Sewer Pros"
+                title = "Flooded Basement Cleanup Birmingham, MI | Water Removal"
+            if city_slug == "troy" and service_slug == "water-damage-restoration":
+                title = "Water Damage Restoration Troy, MI | Water Damage Repair"
             if city_slug == "berkley" and service_slug == "flooded-basement":
                 title = "Berkley Flooded Basement Cleanup | Oakland Sewer Pros"
             if city_slug == "berkley" and service_slug == "sewage-extraction":
