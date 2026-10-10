@@ -393,6 +393,16 @@ def flood_hub():
             "sure the water is clean, treat it as contaminated until someone who does this work says otherwise. "
             "Do not run a household vac through the stairwell."
         ),
+        h2("Basement water removal in Oakland County, Michigan"),
+        p(
+            "Basement water removal in Michigan starts with a pump or truck-mounted extractor, then wet "
+            "carpet, pad, and lower drywall come out if they held water too long. Basement flooding cleanup "
+            "is the rest of it: cleaning the floor, drying the walls, and checking the sump before the next "
+            "rain. The " + a("/troy-flooded-basement", "Troy")
+            + ", " + a("/royal-oak-flooded-basement", "Royal Oak")
+            + ", and " + a("/birmingham-flooded-basement", "Birmingham")
+            + " flooded basement pages cover the house types in each city."
+        ),
         h3("Power, and the pump that quit because the power quit"),
         p(
             "A storm that floods a basement often knocks out power at the same time. Do not stand in water "
