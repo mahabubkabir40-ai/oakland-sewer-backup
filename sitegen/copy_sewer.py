@@ -272,10 +272,19 @@ def article(slug, city):
         ),
         h2(f"Sewer backup cleanup in {city}, MI"),
         p(
-            f"Sewage cleanup in {city} usually starts when sewage comes up a basement drain, a laundry "
-            "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
-            "and do not run a household vac. The steps below are the first minutes. Then call, and a local "
-            "cleanup crew takes it from there."
+            (
+                "A backup in Troy usually starts when sewage comes up a basement drain, a laundry "
+                "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
+                "and do not run a household vac. The steps below are the first minutes. Then call, and a local "
+                "cleanup crew takes it from there."
+            )
+            if slug == "troy"
+            else (
+                f"Sewage cleanup in {city} usually starts when sewage comes up a basement drain, a laundry "
+                "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
+                "and do not run a household vac. The steps below are the first minutes. Then call, and a local "
+                "cleanup crew takes it from there."
+            )
         ),
         h3(f"Why {city} homes are at higher risk"),
         p(WHY[slug]),
