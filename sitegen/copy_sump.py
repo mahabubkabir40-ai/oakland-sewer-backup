@@ -33,6 +33,10 @@ def royal_oak():
             "The regional storage for this system is the George W. Kuhn Retention Treatment Basin, under the I-75 overpass "
             "at 12 Mile Road in Madison Heights, which can hold and treat 150 million gallons."
         ),
+        h2("Emergency Sump Pump Replacement & Pit Pumping in Royal Oak"),
+        p(
+            "When your basement sump pump fails during a torrential Michigan storm, immediate emergency sump pump replacement prevents catastrophic basement flooding. Our technicians diagnose faulty float switches, failed check valves, and burned-out motors on-site, providing rapid water extraction to keep your foundation dry."
+        ),
         p(
             "Call "
             + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY)
@@ -86,6 +90,10 @@ def troy():
             "Troy sump pump repair matters because the pit often sits in a finished lower level, not a "
             "bare corner. Finished lower levels can have carpet within a few feet of the crock. When the pump stops during "
             "a spring thaw or a summer storm, the water does not stay in a utility nook. It is in the room."
+        ),
+        h2("Troy Emergency Sump Pump Repair & Basement Flood Pumping"),
+        p(
+            "A failed sump pump in a finished Troy lower level threatens drywall, subfloors, and carpet. Our emergency sump pump repair technicians arrive equipped with commercial replacement pumps, check valves, and heavy-duty extraction units to eliminate rising water before structural damage spreads."
         ),
         p(
             "If the pump runs constantly before it fails, tell the crew; that pattern changes the repair. A battery backup or a new pump comes from the crew. Call "
@@ -336,11 +344,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "The sump in your Royal Oak basement is stuck, dead, or overflowing. A local crew does the sump pump repair in Royal Oak, and they'll tell you when they can be there. If the floor is wet, say so.",
-    "troy": "The sump quit under a finished Troy lower level, and the carpet is next. Call, and a local crew does the sump pump repair in Troy. They'll tell you when they can be there.",
-    "birmingham": "The sump failed in an older Birmingham, Michigan house and the lower level is getting wet. When you call, you reach a local crew for sump pump repair in Birmingham, and they'll tell you when they can be there.",
-    "berkley": "The pump stopped in a short Berkley basement, and the water can rise fast. Your call puts you through to a local crew for sump pump repair in Berkley, and they'll tell you when they can be there.",
-    "clawson": "The pump stopped in a small Clawson basement with a short driveway. Call, and a local cleanup crew handles sump pump repair in Clawson. They'll tell you when they can be there.",
+    "royal-oak": "Sump pump overflowing or stopped working in Royal Oak, MI? Our certified emergency response team provides 24/7 sump pump repair, replacement, and basement water removal, arriving on-site in 30–45 minutes.",
+    "troy": "Has your sump pump failed under your finished Troy lower level? Our emergency crews provide 24/7 sump pump repair, emergency pump replacement, and basement flood pumping across Troy, MI in 30–45 minutes.",
+    "birmingham": "Dealing with a failed sump pump in Birmingham, MI? Our emergency crews arrive within 30–45 minutes with submersible pumps, check valves, and battery backup systems to stop basement flooding immediately.",
+    "berkley": "Is your Berkley basement sump pump stuck, humming, or overflowing? Our local emergency technicians arrive in 30–45 minutes to diagnose switch failures, replace burnt motors, and pump out standing water.",
+    "clawson": "Need emergency sump pump repair in Clawson, MI? When tight mechanical basements flood from a dead crock pump, our crews arrive in 30–45 minutes to replace the unit and pump out standing water fast.",
 }
 
 ALT = {
@@ -352,9 +360,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Sump pump repair in Royal Oak, MI. A local crew can check the pump and deal with the water if the basement floor is wet. Call (248) 825-8312.",
-    "troy": "Sump pump repair in Troy, MI. A local crew can check the pump and deal with the water under a finished lower level. Call (248) 825-8312 now.",
-    "birmingham": "Sump pump repair in Birmingham, MI. A local crew can check the pump and deal with the water. Ask before any replacement. Call (248) 825-8312.",
-    "berkley": "Sump pump repair in Berkley, MI. A local crew can check the pump and deal with the water in a small basement. Get a written quote: (248) 825-8312.",
-    "clawson": "Sump pump repair in Clawson, MI. A local crew can check the pump and deal with the water next to the furnace. Get the quote in writing: (248) 825-8312.",
+    "royal-oak": "Call (248) 825-8312 for 24/7 sump pump repair in Royal Oak, MI. Rapid 30-min local dispatch, emergency pump replacement & basement water removal.",
+    "troy": "Call (248) 825-8312 for 24/7 sump pump repair in Troy, MI. Fast 30-min emergency response, basement pump replacement & direct insurance billing.",
+    "birmingham": "Call (248) 825-8312 for 24/7 sump pump repair in Birmingham, MI. 30-min dispatch, battery backup pump installation & basement water extraction.",
+    "berkley": "Call (248) 825-8312 for 24/7 sump pump repair in Berkley, MI. Rapid 30-min local dispatch, emergency pump replacement & standing water pumping.",
+    "clawson": "Call (248) 825-8312 for 24/7 sump pump repair in Clawson, MI. Fast 30-min emergency dispatch, sump crock replacement & basement flood pumping.",
 }

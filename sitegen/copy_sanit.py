@@ -382,9 +382,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Basement sanitization in Royal Oak, MI after sewage or a flood. A local crew removes ruined materials and disinfects your basement. Call (248) 825-8312.",
-    "troy": "Basement sanitization in Troy, MI after sewage or a flood. A local crew removes soaked carpet and pad and disinfects your lower level. Call (248) 825-8312.",
-    "birmingham": "Basement sanitization in Birmingham, MI after sewage or a flood. A local crew removes soaked plaster and trim and disinfects the rest. Call (248) 825-8312.",
-    "berkley": "Basement sanitization in Berkley, MI after a sewer backup or flood. A local crew cleans and disinfects the basement. Call (248) 825-8312 now.",
-    "clawson": "Basement sanitization in Clawson, MI after a backup or flood. A local crew cleans the floor, furnace area and appliances. Call (248) 825-8312.",
+    "royal-oak": "Call (248) 825-8312 for 24/7 basement sanitization in Royal Oak, MI. Hospital-grade disinfection, odor removal & antimicrobial sewage cleanup.",
+    "troy": "Call (248) 825-8312 for 24/7 basement sanitization in Troy, MI. Rapid antimicrobial disinfection, biohazard odor removal & direct insurance billing.",
+    "birmingham": "Call (248) 825-8312 for 24/7 basement sanitization in Birmingham, MI. Professional disinfection, biohazard cleanup & complete odor elimination.",
+    "berkley": "Call (248) 825-8312 for 24/7 basement sanitization in Berkley, MI. Hospital-grade disinfection, sewage residue cleanup & complete odor removal.",
+    "clawson": "Call (248) 825-8312 for 24/7 basement sanitization in Clawson, MI. Emergency microbial disinfection, sewage odor removal & direct insurance billing.",
 }
