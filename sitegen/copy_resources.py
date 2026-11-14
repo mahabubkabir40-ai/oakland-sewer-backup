@@ -4,7 +4,7 @@ Every factual statement here was checked against the linked official source on 2
 Re-check the city contacts every quarter; city websites change.
 """
 
-from site_config import BRAND, PHONE_DISPLAY
+from site_config import BRAND, PHONE_DISPLAY, PHONE_TEL
 
 from sitegen.citations import cite
 from sitegen.render import a, callout, esc, h2, h3, note, ol, p, phone_link, ul
@@ -46,10 +46,10 @@ SRC = {
 
 
 def ext(key_or_url, text):
-    """External citation link. Same look as internal links, opens in the same tab."""
+    """External citation link. Opens in new tab with security attributes."""
     href = SRC.get(key_or_url, key_or_url)
     return (
-        f'<a href="{esc(href)}" rel="noopener" class="text-red-400 hover:text-red-300 underline font-medium">'
+        f'<a href="{esc(href)}" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300 underline font-medium">'
         f"{text}</a>"
     )
 
@@ -219,6 +219,14 @@ def claim_article():
             "question for an attorney. Background on the regional system is in our "
             + a("/george-w-kuhn-drainage-district", "George W. Kuhn Drainage District explainer") + "."
         ),
+        callout(
+            "⚠️ Notice on City Contacts vs. Emergency Help",
+            p(
+                f"The municipal contacts below are for submitting your 45-day Act 222 notice to city hall. "
+                f"City departments do not pump private basements or dry damaged property. For immediate 24/7 "
+                f"emergency extraction, drying, and direct insurance billing, call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY) + "."
+            ),
+        ),
         h2("City-by-city contacts"),
         p(f"Checked on the cities' own websites on {VERIFIED}. Phone numbers and hours are quoted as the city lists them."),
         h3("Royal Oak"),
@@ -305,6 +313,19 @@ def claim_article():
             + a("/royal-oak-sewer-cleanup", "Royal Oak") + ", " + a("/troy-sewer-cleanup", "Troy") + ", "
             + a("/birmingham-sewer-cleanup", "Birmingham") + ", " + a("/berkley-sewer-cleanup", "Berkley") + " and "
             + a("/clawson-sewer-cleanup", "Clawson") + "."
+        ),
+        h2("Professional water extraction and structural drying"),
+        p(
+            "Filing a 45-day notice with the city does not dry a wet lower level or remove contaminated materials. "
+            "To prevent dangerous mold and structural decay, insurance carriers require immediate structural drying and water extraction. "
+            "For 24/7 emergency dispatch with direct insurance billing, connect with our dedicated local restoration teams: "
+            + a("/troy-water-damage-restoration", "Troy water damage restoration") + ", "
+            + a("/birmingham-water-damage-restoration", "Birmingham water damage restoration & structural drying") + ", "
+            + a("/royal-oak-water-damage-restoration", "Royal Oak water damage restoration") + ", "
+            + a("/berkley-water-damage-restoration", "Berkley emergency water damage cleanup") + ", and "
+            + a("/clawson-water-damage-restoration", "Clawson water damage restoration & repair") + ", "
+            "or explore county-wide services at "
+            + a("/water-damage-restoration", "Oakland County water damage restoration") + "."
         ),
         note(f"Last verified {VERIFIED}. If a city contact listed here is out of date, the city's own website is the authority."),
         sources_block([
@@ -466,6 +487,19 @@ def gwk_article():
             + a("/berkley-flooded-basement", "flooded basement cleanup in Berkley")
             + "."
         ),
+        h2("Structural drying and water damage restoration across the district"),
+        p(
+            "When the George W. Kuhn system surcharges and backs up into lower levels, immediate water extraction and commercial dehumidification are required before permanent damage sets in. "
+            "Our dispatched response teams arrive in 30–45 minutes with industrial truck-mounted extraction units and direct insurance billing. "
+            "Access local restoration specialists: "
+            + a("/troy-water-damage-restoration", "water damage restoration in Troy") + ", "
+            + a("/birmingham-water-damage-restoration", "Birmingham water damage restoration & structural drying") + ", "
+            + a("/royal-oak-water-damage-restoration", "Royal Oak water damage restoration") + ", "
+            + a("/berkley-water-damage-restoration", "Berkley water damage cleanup") + ", and "
+            + a("/clawson-water-damage-restoration", "Clawson water damage restoration") + ". "
+            "For full county coverage, visit our "
+            + a("/water-damage-restoration", "Oakland County water damage restoration hub") + "."
+        ),
         p(
             "City overviews: " + a("/royal-oak", "Royal Oak") + ", " + a("/berkley", "Berkley") + ", "
             + a("/clawson", "Clawson") + ", " + a("/birmingham", "Birmingham") + " and " + a("/troy", "Troy") + "."
@@ -544,6 +578,14 @@ def print_button():
 def checklist_article():
     return "\n".join([
         print_button(),
+        callout(
+            "🚨 Need Emergency Water Removal Right Now?",
+            p(
+                f"If water or sewage is actively entering your basement, call " + a(f"tel:{PHONE_TEL}", PHONE_DISPLAY) + " "
+                "for immediate 24/7 dispatched water extraction and structural drying. Municipal numbers listed below are strictly "
+                "for reporting public street main blockages and utility outages to city offices."
+            ),
+        ),
         h2("Numbers to write down now"),
         table(
             ["City", "Basement water or sewer backup", "After hours (as listed by the city)"],
@@ -616,6 +658,18 @@ def checklist_article():
             + a("/sewer-backup-cleanup", "sewer backup cleanup") + ", "
             + a("/water-damage-restoration", "water damage restoration") + ", and the "
             + a("/george-w-kuhn-drainage-district", "George W. Kuhn Drainage District explainer") + "."
+        ),
+        h2("Professional water damage restoration and structural drying"),
+        p(
+            "Once standing floodwater or sewage is pumped out, structural drying and moisture mapping must begin immediately to protect framing, drywall, and finishes. "
+            "For 24/7 emergency water extraction, moisture detection, and direct insurance billing, connect with our local city teams: "
+            + a("/troy-water-damage-restoration", "Troy water damage restoration") + ", "
+            + a("/birmingham-water-damage-restoration", "Birmingham water damage restoration & structural drying") + ", "
+            + a("/royal-oak-water-damage-restoration", "Royal Oak water damage restoration") + ", "
+            + a("/berkley-water-damage-restoration", "Berkley emergency water damage restoration") + ", and "
+            + a("/clawson-water-damage-restoration", "Clawson water damage repair & restoration") + ". "
+            "Learn more about regional mitigation at our "
+            + a("/water-damage-restoration", "Oakland County water damage restoration hub") + "."
         ),
         p("After a drain backup, open the page for your city. Each one has the city's sewer number and the 45-day notice steps:"),
         ul([

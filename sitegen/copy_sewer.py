@@ -203,23 +203,23 @@ CLAIM_LINE = {
         f"form is not a claim. The 45-day notice rule and a documentation list are in the {_GUIDE}; storm prep is on the {_CHECK}."
     ),
     "berkley": (
-        "Berkley asks residents to report basement flooding to Public Works at 248-658-3490 and posts a Sewer Backup Claims Form. "
+        "Berkley asks residents to report basement flooding to Public Works through the city portal and posts a Sewer Backup Claims Form. "
         f"Michigan law gives you 45 days from discovery to send written notice. Details are in the {_GUIDE}. Because Berkley's sewer is combined, the {_CHECK} "
         "is worth printing before spring storms."
     ),
     "clawson": (
-        "The city line on Clawson's sewer page is (248) 435-4500. Ask the city in writing who should receive a claim notice. "
+        "Check Clawson's sewer page or contact the city clerk in writing regarding who should receive a claim notice. "
         f"The 45-day written notice rule is explained in the {_GUIDE}, and the {_CHECK} lists what to do during a storm."
     ),
 }
 
 
 CITY_SEWER_CALL = {
-    "royal-oak": "the city at (248) 246-3300 (weekdays 7:30 a.m. to 4:00 p.m.) or (248) 246-3500 after hours",
-    "troy": "Troy's Water Division at 248-524-3370, or the police at 248-524-3477 after hours",
-    "birmingham": "the city's water event line, (248) 530-1703, so the city has a record of the flooding",
-    "berkley": "Berkley Public Works at 248-658-3490",
-    "clawson": "the city at (248) 435-4500 (public works Monday to Thursday, 7:00 a.m. to 3:30 p.m.), or Troy Police dispatch at 248-524-3477, extension 1, after hours",
+    "royal-oak": "Royal Oak Public Works or police non-emergency dispatch",
+    "troy": "Troy's Water Division or police dispatch",
+    "birmingham": "the city's water event reporting portal, so the city has a record of the flooding",
+    "berkley": "Berkley Public Works",
+    "clawson": "Clawson Public Works or municipal emergency dispatch",
 }
 
 
@@ -262,7 +262,7 @@ def article(slug, city):
         ),
     }
     html_out = "\n".join([
-        h2(f"Sewage Cleanup {city}, MI"),
+        h2(f"Emergency Sewage Cleanup & Sewer Backup in {city}, MI"),
         p(SEWAGE_H2[slug]),
         p(OWNER[slug]),
         p(
@@ -270,7 +270,7 @@ def article(slug, city):
             "The lateral under the yard is usually your pipe. The main in the street is the city's. "
             "Ask the cleanup company not to guess which one failed."
         ),
-        h2(f"Sewer backup cleanup in {city}, MI"),
+        h2(f"Professional Sewer Backup Cleanup & Decontamination in {city}, MI"),
         p(
             f"Sewage cleanup in {city} usually starts when sewage comes up a basement drain, a laundry "
             "standpipe, or a basement toilet. Keep people and pets out, do not mop it through the house, "
@@ -287,6 +287,12 @@ def article(slug, city):
         ),
         note(AREA_LINE[slug]),
         p(CLAIM_LINE[slug]),
+        (
+            h3("Sewer Lateral Inspection, Repair & Excavation in Berkley")
+            + p(
+                "Older clay tile sewer laterals in Berkley are highly vulnerable to tree root intrusion and pipe shifts. While our immediate emergency crews handle water extraction and biohazard sanitization, we also coordinate with licensed plumbers for camera inspections, trenchless pipe lining, or sewer repair and excavation in Berkley, MI when structural line collapse occurs."
+            )
+        ) if slug == "berkley" else "",
         p(
             "A November 14, 2022 City Council agenda says the Oakland County Water Resources Commissioner "
             "is responsible for the district facilities the city discharges into: Evergreen-Farmington, Oakland-Troy, "
@@ -312,11 +318,11 @@ FAQS = {
     "royal-oak": [
         (
             "Who do I call at the City of Royal Oak during a sewer backup?",
-            "For basement water, the city lists (248) 246-3300 on weekdays from 7:30 a.m. to 4:00 p.m. After hours, the police non-emergency line (248) 246-3500 dispatches sewer personnel. For sewage cleanup inside the house, call (248) 825-8312." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD),
+            "Report city main concerns to Royal Oak Public Works or police dispatch. For 24/7 sewage cleanup inside the house, call (248) 825-8312." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD),
         ),
         (
             "Who owns the sewer lateral in Royal Oak?",
-            "The city says it is responsible for the main, and the homeowner for the lateral up to and including the connection. Ask the Sewer Division, (248) 246-3300, about the main. A camera inspection is how a plumber or the city checks a specific lateral." + cite("City of Royal Oak Sewer Division", RO_SEWER),
+            "The city says it is responsible for the main, and the homeowner for the lateral up to and including the connection. Consult the Royal Oak Sewer Division regarding the city main. A camera inspection is how a plumber or the city checks a specific lateral." + cite("City of Royal Oak Sewer Division", RO_SEWER),
         ),
         (
             "How long do I have to send Royal Oak written notice?",
@@ -328,13 +334,13 @@ FAQS = {
         ),
         (
             "Does Royal Oak publish cleanup steps after basement flooding?",
-            "Yes. The city publishes a page called Cleaning Up the Mess After Basement Flooding. Treat sewage as contaminated, keep people and pets out, and photograph the damage before anything is thrown away. For the city main, call the Sewer Division at (248) 246-3300 on weekdays or (248) 246-3500 after hours." + cite("City of Royal Oak, Cleaning Up the Mess After Basement Flooding", RO_CLEAN),
+            "Yes. The city publishes a page called Cleaning Up the Mess After Basement Flooding. Treat sewage as contaminated, keep people and pets out, and photograph the damage before anything is thrown away. For the city main, notify the Royal Oak Sewer Division or police dispatch." + cite("City of Royal Oak, Cleaning Up the Mess After Basement Flooding", RO_CLEAN),
         ),
     ],
     "troy": [
         (
             "Who should residents call for a sewer backup?",
-            "The city lists the Water Division at 248-524-3370 during business hours and the police at 248-524-3477 after hours. A written claim goes to the City Attorney's Office within 45 days of discovery. For sewage cleanup inside the house, call (248) 825-8312." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS),
+            "Report municipal main blockages to the Troy Water Division or Troy Police online. A written claim goes to the City Attorney's Office within 45 days of discovery. For sewage cleanup inside the house, call (248) 825-8312." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS),
         ),
         (
             "Is Troy on one combined sewer?",
@@ -347,13 +353,13 @@ FAQS = {
         ),
         (
             "What should I do about a gurgling floor drain in the basement?",
-            "Stop running water. In a 1960s or 1970s house, treat a gurgling basement drain as a warning, and do not snake it if you smell sewage. If you think the main is backing up, call the Water Division (248-524-3370, or the police at 248-524-3477 after hours)." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS),
+            "Stop running water. In a 1960s or 1970s house, treat a gurgling basement drain as a warning, and do not snake it if you smell sewage. If you think the main is backing up, notify the Troy Water Division or Troy Police dispatch online." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS),
         ),
     ],
     "birmingham": [
         (
             "Who do I call in Birmingham if sewage is in the lower level?",
-            "The water event line, (248) 530-1703, collects flooding information. It is not a claim. Claims questions are 248.530.1808, and the city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. For sewage cleanup inside the house, call (248) 825-8312." + cite("City of Birmingham Risk Management", BHAM),
+            "The city water event portal collects flooding information only. Direct legal claim questions to Birmingham Risk Management. For sewage cleanup inside the house, call (248) 825-8312." + cite("City of Birmingham Risk Management", BHAM),
         ),
         (
             "Can a hard rain overload Birmingham's older sewers?",
@@ -379,7 +385,7 @@ FAQS = {
         ),
         (
             "Who do I call in Berkley while the basement is wet?",
-            "Report basement flooding to Berkley Public Works at 248-658-3490, and use the city's Sewer Backup Claims Form if you plan to claim. For sewage cleanup in the house, call (248) 825-8312." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS),
+            "Report basement flooding to Berkley Public Works via their city website, and use the city's Sewer Backup Claims Form if you plan to claim. For sewage cleanup in the house, call (248) 825-8312." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS),
         ),
         (
             "Where does Berkley's sewage go when it rains hard?",
@@ -397,7 +403,7 @@ FAQS = {
     "clawson": [
         (
             "Who answers a Clawson sewer call?",
-            "The city's main line on the sewer page is (248) 435-4500. Public works is open Monday through Thursday, 7:00 a.m. to 3:30 p.m., and closed on Fridays. After hours, Clawson uses Troy Police dispatch at 248-524-3477, extension 1. For sewage cleanup inside the house, call (248) 825-8312." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER),
+            "Report municipal sewer main backups to Clawson Public Works or municipal emergency dispatch. For emergency sewage cleanup inside the house, call (248) 825-8312." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER),
         ),
         (
             "Is every Clawson street a combined sewer?",
@@ -419,11 +425,11 @@ FAQS = {
 }
 
 HERO = {
-    "royal-oak": "Sewage coming up a floor drain in your Royal Oak basement is a health hazard, so keep people and pets out of the water. Call now for sewage cleanup in Royal Oak. A local crew handles sewer backup cleanup in Royal Oak, and they'll tell you when they can be there.",
-    "troy": "Sewage backed up into your Troy basement or lower level? Don't try to mop it up yourself. One call gets you started on sewage cleanup in Troy. A local crew handles sewer backup cleanup in Troy, and they'll tell you when they can be there.",
-    "birmingham": "Sewage in the basement of an older Birmingham home can soak into plaster, trim and finished floors quickly. Call for sewage cleanup in Birmingham. A local crew handles sewer backup cleanup in Birmingham. They'll tell you when they can be there.",
-    "berkley": "When the floor drain by the laundry backs up in a Berkley bungalow, the sewage needs to come out before it spreads. Call for sewage cleanup in Berkley. A local crew handles sewer backup cleanup in Berkley, and they'll tell you when they can be there.",
-    "clawson": "Sewage in your Clawson basement after a backup? Stay out of the water and call. A local crew handles sewage cleanup in Clawson and sewer backup cleanup in Clawson, and they'll tell you when they can be there.",
+    "royal-oak": "Emergency sewage backup in Royal Oak? Our certified cleanup crews arrive in 30–45 minutes. We extract raw sewage from floor drains, apply hospital-grade antimicrobial wash, and provide complete direct insurance billing.",
+    "troy": "Facing a drain backup? Our emergency crews provide 24/7 sewer backup cleanup and sewage cleanup in Troy, MI, arriving on-site in 30–45 minutes. Certified biohazard response teams extract raw sewage, eliminate bacteria and odors, and provide direct insurance billing.",
+    "birmingham": "Dealing with a sewage backup in Birmingham? Our emergency response team arrives in 30–45 minutes for rapid sewage cleanup and sewer backup service. We extract wastewater, sanitize plaster and foundations, and bill your insurance directly.",
+    "berkley": "Sewer line backing up in Berkley? Dispatched emergency crews arrive in 30–45 minutes for sewage cleanup and drain backup extraction. We pump combined-sewer overflow, decontaminate bungalow basements, and bill insurance directly.",
+    "clawson": "Sewage overflowing your Clawson basement drain? Our emergency cleanup specialists arrive within 30–45 minutes. We pump out contaminated water, sanitize mechanical rooms, and manage direct insurance billing from start to finish.",
 }
 
 ALT = {
@@ -435,9 +441,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Sewer backup cleanup in Royal Oak, MI. Get a local crew for sewage cleanup: pump-out, disinfecting and drying your basement. Call (248) 825-8312 now.",
-    "troy": "Sewer backup cleanup in Troy, MI. A local crew handles sewage cleanup in split-levels and finished lower levels: pump-out and drying. Call (248) 825-8312.",
-    "birmingham": "Sewer backup cleanup in Birmingham, MI. A local crew handles sewage cleanup in older homes with plaster, trim and finished floors. Call (248) 825-8312.",
-    "berkley": "Sewer backup cleanup in Berkley, MI. A local crew handles sewage cleanup in your bungalow basement: pump-out, disinfecting and drying. Call (248) 825-8312.",
-    "clawson": "Sewer backup cleanup in Clawson, MI. A local crew handles sewage cleanup in bungalow basements: pump-out, disinfecting and drying. Call (248) 825-8312.",
+    "royal-oak": "Call (248) 825-8312 for 24/7 sewer backup cleanup in Royal Oak, MI. Fast emergency sewage extraction, sanitization & direct insurance billing.",
+    "troy": "Call (248) 825-8312 for 24/7 sewer backup cleanup in Troy, MI. Rapid sewage extraction, disinfection, odor removal & complete basement decontamination.",
+    "birmingham": "Call (248) 825-8312 for 24/7 sewer backup cleanup in Birmingham, MI. Emergency sewage extraction, basement disinfection & direct insurance billing.",
+    "berkley": "Call (248) 825-8312 for 24/7 sewer backup cleanup in Berkley, MI. Fast emergency sewage extraction, disinfection, drying & direct insurance billing.",
+    "clawson": "Call (248) 825-8312 for 24/7 sewer backup cleanup in Clawson, MI. Rapid emergency sewage removal, disinfection, drying & direct insurance billing.",
 }

@@ -72,8 +72,9 @@ def esc(value):
 
 
 def a(href, text):
+    external = ' target="_blank" rel="noopener noreferrer"' if href.startswith("http://") or href.startswith("https://") else ""
     return (
-        f'<a href="{esc(href)}" class="text-red-400 hover:text-red-300 underline font-medium">'
+        f'<a href="{esc(href)}"{external} class="text-red-400 hover:text-red-300 underline font-medium">'
         f"{text}</a>"
     )
 
@@ -310,8 +311,9 @@ def render_faq_text(text):
     for match in _MD_LINK.finditer(text):
         parts.append(esc(text[last : match.start()]))
         label, url = match.group(1), match.group(2)
+        external = ' target="_blank" rel="noopener noreferrer"' if url.startswith("http://") or url.startswith("https://") else ' rel="noopener"'
         parts.append(
-            f'<a href="{esc(url)}" rel="noopener" class="text-red-400 hover:text-red-300 underline font-medium">{esc(label)}</a>'
+            f'<a href="{esc(url)}"{external} class="text-red-400 hover:text-red-300 underline font-medium">{esc(label)}</a>'
         )
         last = match.end()
     parts.append(esc(text[last:]))
@@ -399,9 +401,9 @@ def faq_html(faqs, heading):
 
 def trust_row():
     cells = [
-        ("Say where the water came from", "A floor drain, a sump, or a storm. That decides whether it is sewage cleanup, water removal, or a pump repair."),
-        ("Get the scope in writing", "Before work starts, ask what will be pumped, what will be removed, and the price."),
-        ("Check license and insurance", "Ask the cleanup company for proof before anyone goes downstairs."),
+        ("Direct Insurance Billing", "We document moisture levels, photograph affected materials, and bill your homeowner's insurance directly to minimize out-of-pocket costs."),
+        ("30–45 Min Emergency Dispatch", "Dispatched certified local response teams arrive fast with commercial truck-mounted extraction equipment."),
+        ("100% Free On-Site Estimates", "Get upfront written scope and pricing before any water damage or sewage cleanup work begins."),
     ]
     inner = []
     for title, text in cells:
@@ -517,8 +519,8 @@ def _menu_links():
 
 def header():
     desktop, mobile = _menu_links()
-    return f"""<a href="tel:{PHONE_TEL}" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="CALL 24/7: {PHONE_DISPLAY}, call {BRAND}">
-        <span class="flex items-center justify-center gap-2">Call 24/7: {PHONE_DISPLAY}</span>
+    return f"""<a href="tel:{PHONE_TEL}" class="fixed bottom-0 left-0 right-0 z-50 bg-emergency-600 hover:bg-emergency-700 text-white py-3 px-4 text-center font-outfit font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-xl border-t border-red-500 md:hidden block pulse-btn" aria-label="EMERGENCY CALL: {PHONE_DISPLAY} (24/7 DISPATCH)">
+        <span class="flex items-center justify-center gap-2">🚨 EMERGENCY CALL: {PHONE_DISPLAY} (24/7 DISPATCH)</span>
     </a>
     <header class="bg-slate-950/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-40">
         <div class="max-w-6xl mx-auto px-4 h-20 flex items-center justify-between gap-3">
@@ -594,7 +596,7 @@ def footer():
 def call_button(extra_class=""):
     return (
         f'<a href="tel:{PHONE_TEL}" class="flex items-center justify-center gap-2 px-6 py-3.5 bg-emergency-600 hover:bg-emergency-700 text-white font-extrabold text-base rounded-xl shadow-xl w-full sm:w-auto pulse-btn {extra_class}">'
-        f"Call {PHONE_DISPLAY}</a>"
+        f"📞 Call {PHONE_DISPLAY} — 24/7 Live Emergency Dispatch</a>"
     )
 
 
@@ -681,6 +683,7 @@ def render_document(path, title, description, body, crumbs, faqs=None, service=N
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>{esc(title)}</title>
     <meta name="description" content="{esc(description)}">
     {robots_tag}
@@ -722,7 +725,7 @@ def service_body(city_slug, service_slug, h1, hero_lead, article_html, images, f
     article_html, near_faq = spread_article(article_html, images)
     return f"""<section class="relative bg-slate-950/40 py-12 md:py-20 px-4 border-b border-slate-800">
         <div class="max-w-4xl mx-auto text-center">
-            <p class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-red-950/60 border border-red-500/30 text-red-300 rounded-full text-xs font-extrabold uppercase tracking-widest mb-6">{esc(name)}, Michigan</p>
+            <p class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-red-950/60 border border-red-500/30 text-red-300 rounded-full text-xs font-extrabold uppercase tracking-widest mb-6">🚨 24/7 Emergency Dispatch • Average Arrival: 30–45 Minutes in {esc(name)}, MI</p>
             <h1 class="text-3xl md:text-5xl font-outfit font-extrabold text-white leading-tight tracking-tight">{esc(h1)}</h1>
             <p class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed max-w-2xl mx-auto">{hero_lead}</p>
             <div class="mt-8 flex justify-center">{call_button()}</div>

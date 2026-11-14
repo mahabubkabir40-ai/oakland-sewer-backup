@@ -25,6 +25,10 @@ def royal_oak():
             + a("/royal-oak-sewage-extraction", "sewage extraction in Royal Oak")
             + " because the water is no longer a clean flood."
         ),
+        h2("Emergency Flooded Basement Cleanup & Water Removal in Royal Oak"),
+        p(
+            "When your Royal Oak basement is flooding from storm runoff, a failed sump pump, or saturated window wells, rapid water removal is vital. Our emergency response crews arrive within 30–45 minutes with commercial extraction pumps to pull standing water, remove wet carpet, and protect your foundation from structural moisture damage."
+        ),
         p(
             "This page is about getting the water out in the first hours. Drying walls and floors afterward is "
             + a("/royal-oak-water-damage-restoration", "water damage restoration in Royal Oak")
@@ -55,7 +59,7 @@ def royal_oak():
             + "."
         ),
         p(
-            "Royal Oak's Sewer Division maintains about 300 miles of sanitary and storm sewers and is the public contact for the city pipes: (248) 246-3300 on weekdays, (248) 246-3500 after hours. A flooded window well is not automatically their emergency, "
+            "Royal Oak's Sewer Division maintains about 300 miles of sanitary and storm sewers and is the public contact for the city pipes. A flooded window well is not automatically their emergency, "
             "and a surcharging floor drain might be. Describe what you see."
         ),
         callout(
@@ -89,6 +93,10 @@ def troy():
             + a("/troy-water-damage-restoration", "water damage restoration in Troy")
             + ". If the floor drain also backed up, the water is sewage and the extraction page is "
             + a("/troy-sewage-extraction", "sewage extraction in Troy") + "."
+        ),
+        h2("Emergency Basement Water Removal & Flood Clean Up in Troy"),
+        p(
+            "Searching for an experienced basement water damage company in Troy, MI? Rapid basement water removal is vital to stop water wicking up drywall and soaking beneath carpet pad. Our high-capacity extraction pumps remove standing water within hours, preparing your lower level for complete sanitization and structural restoration."
         ),
         h3("Cleanup versus drying in a Troy basement"),
         p(
@@ -146,6 +154,10 @@ def birmingham():
             + " to get a local crew to the house. If sewage is in the water, switch "
             "to " + a("/birmingham-sewage-extraction", "sewage extraction in Birmingham") + " before you hire anyone for a 'clean flood.'"
         ),
+        h2("Rapid Water Removal for Flooded Basements in Birmingham"),
+        p(
+            "If you need help getting rid of water in your basement in Birmingham, fast action prevents structural moisture absorption into older foundation walls. Our local crews handle complete basement flood clean up, extracting standing water, removing saturated carpet, and preparing your home for comprehensive drying."
+        ),
         h3("Water damage in houses that were not built with drywall"),
         p(
             "Water damage repair after basement flooding in Birmingham often means plaster that is stained "
@@ -191,6 +203,10 @@ def berkley():
             "north-south road. Basement flooding here is often a window well, a stairwell, or a sump that "
             "lost power, inside a short basement. Basement water removal has "
             "to happen without soaking the hardwood that sits just above that basement on the first floor."
+        ),
+        h2("Emergency Flooded Basement Cleanup & Water Removal in Berkley"),
+        p(
+            "Facing basement flooding in Berkley? Fast water removal protects low-clearance subfloors and first-floor hardwood. Our emergency crews arrive in 30–45 minutes with truck-mounted pumps to extract water, pull wet carpet, and dry foundation framing fast."
         ),
         p(
             "The stair is the risk. Water carried up on boots, or a hose coupling that lets go, marks the "
@@ -246,6 +262,10 @@ def clawson():
             "Royal Oak and Troy. There is often one basement room with the furnace, the water heater, and "
             "the floor drain together. Basement water removal starts by keeping that equipment from sitting "
             "in the water, which means staying out if the water is already at the burners or the panel."
+        ),
+        h2("Emergency Flooded Basement Cleanup & Water Removal in Clawson"),
+        p(
+            "When a storm or failed pump causes basement flooding in Clawson, rapid emergency pumping protects furnaces and mechanical systems in compact basement footprints. Our dispatched extraction teams arrive in 30–45 minutes with high-volume pump equipment."
         ),
         p(
             "A flood from a stairwell or a low window is not the same event as a sewer backup, even though "
@@ -327,14 +347,14 @@ FAQS = {
         ("What is basement water removal in Royal Oak?", "It is pumping and removing standing water from a basement, then dealing with the materials that stayed wet. If the water came from a sewer drain, it is sewage extraction, not a clean flood."),
         ("Does flooded basement cleanup include drying the walls?", "It should, or hire that step explicitly. Pumping alone leaves water in drywall and the slab edge. Ask for pumping and drying as separate lines with separate prices."),
         ("Can I pump a Royal Oak basement into the street?", "Do not pump sewage or heavily soiled water into the street or storm inlet. Clean rainwater is still worth asking the city about before you discharge it."),
-        ("Who does Royal Oak list for basement water, if this might be the city main?", "Weekdays 7:30 a.m. to 4:00 p.m., call (248) 246-3300. After hours, (248) 246-3500 dispatches sewer personnel. Royal Oak is in the former Twelve Towns program, now the George W. Kuhn basin. Call (248) 825-8312 when you need a local crew to remove water from the house." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),
+        ("Who does Royal Oak list for basement water, if this might be the city main?", "Contact Royal Oak Public Works or police non-emergency dispatch to report city main concerns. Royal Oak is in the former Twelve Towns program, now the George W. Kuhn basin. Call (248) 825-8312 when you need a local crew to remove water from the house." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),
         ("Does a window-well flood in Royal Oak start a 45-day sewer claim?", "Only a sewage disposal event is in that statute. A quiet drain and rain in a window well is storm water. If the floor drain discharged, treat it as sewage and look at the 45-day written notice. The city is responsible for the main, and you are responsible for the lateral through the connection." + cite("City of Royal Oak Sewer Division", RO_SEWER) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
     ],
     "troy": [
         ("Why are Troy finished basements a bigger water-removal job?", "Carpet, pad, and drywall in a split-level or subdivision basement hold more water than a bare utility floor. The visible puddle is the small part."),
-        ("Does Troy's sewer district matter after a basement flood?", "It can matter for a claim. Troy discharges through three districts: Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. Ask the Water Division (248-524-3370) which one serves your address before anyone blames the street." + cite("Troy City Council agenda, November 14, 2022", TROY_AGENDA)),
+        ("Does Troy's sewer district matter after a basement flood?", "It can matter for a claim. Troy discharges through three districts: Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. Check with the Troy Water Division via the city portal to determine which district serves your address before anyone blames the street." + cite("Troy City Council agenda, November 14, 2022", TROY_AGENDA)),
         ("Is basement flooding the same as water damage?", "Flooding is the water. Water damage is the harm to materials after it sits. The Troy water damage page covers drying and repair decisions."),
-        ("If the Troy lower level smells like a drain, which city number is that?", "Water Division 248-524-3370 during business hours, and Troy Police 248-524-3477 after hours. Street water and a sanitary backup are not automatically the same pipe. Troy uses three wastewater districts. Ask the city which one serves the house." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
+        ("If the Troy lower level smells like a drain, which city office handles that?", "Report city sewer main backups to the Troy Water Division or Troy Police dispatch online, and call (248) 825-8312 for immediate private basement flood pumping and water removal." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
         ("What should I tell a crew about a flooded Troy basement?", "Whether the room is finished with carpet, and whether sewage came up a drain. If the public system is involved, a written claim to the City Attorney's Office is due within 45 days of discovery." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
     ],
     "birmingham": [
@@ -342,12 +362,12 @@ FAQS = {
         ("How can I tell a Birmingham storm flood from a sewer backup?", "Watch the drains. Sewage comes up a floor drain, a basement toilet, or a laundry standpipe and smells like a drain. Water at a window well with quiet drains is usually storm water. If you are unsure, keep people out and describe both on the call."),
         ("What did Birmingham publish about the August 24, 2023 storm?", "The city posted an engineer's presentation on the August 24, 2023 rain event on its Risk Management page. The city FAQ also says its older combined and storm sewers were designed for about 2 inches of rain in one hour." + cite("City of Birmingham Risk Management", BHAM)),
         ("Were Birmingham sewers built for a heavy one-hour rain?", "The city says combined and storm sewers were historically designed for about 2 inches of rain in one hour. The system is gravity, with no city pump stations. Downspouts extended about 6 feet and a backflow preventer are prevention. They do not pump out a lower level that is already wet." + cite("City of Birmingham Risk Management", BHAM)),
-        ("Is Birmingham's water-event form the 45-day claim?", "The water-event form and (248) 530-1703 collect flooding data. They are not the claim. Use the city's sewer backup claim form. Claims questions are 248.530.1808, and the city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. Written notice is due within 45 days of discovery. A late-1990s bond financed relief sewers in part of the city, not on every street." + cite("City of Birmingham Risk Management", BHAM) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
+        ("Is Birmingham's water-event form the 45-day claim?", "The water-event form collects municipal flooding data only; it is not the claim. Use the city's sewer backup claim form. Direct legal claim inquiries to Birmingham Risk Management. Written notice is due within 45 days of discovery. For emergency basement water removal, call (248) 825-8312." + cite("City of Birmingham Risk Management", BHAM) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
     ],
     "berkley": [
         ("What should I do first when a Berkley basement floods?", "Keep people off the stairs and out of the water if it is near the panel or furnace. Check the floor drain: water that came up the drain is sewage on Berkley's combined sewer, while clear water from a window well is a flood. Then call (248) 825-8312." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)),
         ("Can basement water removal stain the floor above?", "Yes, if dirty water is tracked up the short stair or if joist insulation stays wet against the subfloor. Ask the crew to protect the landing and to check the joists."),
-        ("What if the Berkley flood smells like sewage?", "Stop treating it as rainwater. Berkley's sewer is one combined gravity pipe, so a storm can put wastewater on the floor. Keep people off the short stair and call (248) 825-8312 for a local crew, plus Public Works at 248-658-3490." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)),
+        ("What if the Berkley flood smells like sewage?", "Stop treating it as rainwater. Berkley's sewer is one combined gravity pipe, so a storm can put wastewater on the floor. Keep people off the short stair and call (248) 825-8312 for a local crew, and notify Berkley Public Works via their city website." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)),
         ("Why is the street ponding in Berkley during the same storm?", "The city says streets are designed to hold water so it enters the pipe more slowly, and catch basins use restrictor covers. Ponding at the curb is not, by itself, a forgotten pump. There is no city pump. Your basement sump is a separate machine." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)),
         ("Does flooded-basement cleanup in Berkley replace the claims form?", "No. The city posts a Sewer Backup Claims Form, and written notice is due within 45 days of discovery when you believe a sewage event caused the damage. A clean window-well flood is a different description. Tell your insurer which one you saw." + cite("City of Berkley, Report a Claim", BERK_CLAIM) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
     ],
@@ -355,17 +375,17 @@ FAQS = {
         ("What makes Clawson basement water removal different?", "Small basements, furnaces in the same room as the water, and short driveways. Access and electrical safety drive the first decisions."),
         ("Is a disconnected downspout really enough to flood a small basement?", "It can be. Roof water dumped at the foundation on a small lot has nowhere to go but down the wall and in at a low opening. Check that from outside."),
         ("Who sets the price for Clawson basement water removal?", "The cleanup company, in writing, before you agree. Tell them the driveway is short and whether the furnace is in the water."),
-        ("Who do I call in Clawson if the flood might be the city sewer?", "The city line is (248) 435-4500, Monday through Thursday, 7:00 a.m. to 3:30 p.m. The department is closed on Fridays. After hours, dispatch is 248-524-3477, extension 1. The sewer page points to the George W. Kuhn basin. Confirm your street with the city." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER)),
+        ("Who do I call in Clawson if the flood might be the city sewer?", "Contact Clawson Public Works or municipal emergency dispatch via the city website. The sewer page points to the George W. Kuhn basin. For private emergency flood water removal, call (248) 825-8312." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER)),
         ("How do I give Clawson written notice if the water was sewage?", "State law requires written notice within 45 days of discovering the damage, with your name, address, and phone, the property address, the discovery date, and a brief description. Ask the city in writing who receives sewer backup notices. A quiet drain and rain at a downspout is a different description. The sewer page links Public Act 222." + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
     ],
 }
 
 HERO = {
-    "royal-oak": "The basement in your Royal Oak house is full of water, from a storm, a sump, or a drain. A local cleanup crew does the flooded basement cleanup in Royal Oak, and they'll tell you when they can be there.",
-    "troy": "A finished Troy lower level or split-level is under water and the carpet is holding it. Call, and a local cleanup crew does the flooded basement cleanup in Troy. They'll tell you when they can be there.",
-    "birmingham": "Water is in an older Birmingham lower level, around the plaster and trim. When you call, you reach a local cleanup crew for basement water removal in Birmingham, and they'll tell you when they can be there.",
-    "berkley": "Water is in a short Berkley basement, and the stair runs straight up to the first floor. Your call puts you through to a local cleanup crew for flooded basement cleanup in Berkley, and they'll tell you when they can be there.",
-    "clawson": "Water is in a small Clawson basement, close to the furnace, and you need flooded basement cleanup in Clawson. Call, and a local cleanup crew handles it. They'll tell you when they can be there. If a drain caused it, say so.",
+    "royal-oak": "Is your Royal Oak basement flooding? Our emergency crews arrive in 30–45 minutes with high-volume pumps to provide rapid flooded basement cleanup and water removal. We extract standing water, pull ruined carpet, and bill insurance directly.",
+    "troy": "Standing water in your lower level? Our emergency crews provide fast flooded basement cleanup and water removal in Troy, MI, arriving on-site in 30–45 minutes. Whether your split-level flooded from heavy rainfall or a failed pump, Troy's dedicated basement flood clean up team extracts water, removes wet carpet, and dries walls fast.",
+    "birmingham": "Dealing with flooded basements in Birmingham? Our emergency response team arrives in 30–45 minutes with high-volume truck-mounted extractors. Whether stormwater overflowed your window wells or a drain backed up, we provide rapid basement flood repair and water pumping tailored to protect Birmingham homes.",
+    "berkley": "Dealing with a flooded basement in Berkley? Our local pumping crews arrive in 30–45 minutes. We remove standing water, protect original hardwood floors above, and provide direct insurance billing.",
+    "clawson": "Flooded basement in Clawson? Our emergency water removal crews arrive in 30–45 minutes. We pump out standing floodwater near mechanical equipment, dry foundation framing, and handle direct insurance billing.",
 }
 
 ALT = {
@@ -377,9 +397,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Flooded basement cleanup in Royal Oak, MI. A local crew pumps out storm, sump or window-well water and dries the walls. Call (248) 825-8312 now.",
-    "troy": "Flooded basement cleanup in Troy, MI. A local crew removes water from finished lower levels and split-levels and dries the walls. Call (248) 825-8312.",
-    "birmingham": "Flooded basement cleanup in Birmingham, MI. A local crew removes the water and dries older plaster lower levels with care. Call (248) 825-8312 now.",
-    "berkley": "Flooded basement cleanup in Berkley, MI. A local crew pumps out the water and dries the basement under your first floor. Call (248) 825-8312.",
-    "clawson": "Flooded basement cleanup in Clawson, MI. A local crew removes the water from the basement and dries the furnace room. Call (248) 825-8312 now.",
+    "royal-oak": "Call (248) 825-8312 for 24/7 flooded basement cleanup in Royal Oak, MI. Rapid standing water extraction, basement drying & direct insurance billing.",
+    "troy": "Call (248) 825-8312 for 24/7 flooded basement cleanup in Troy, MI. Fast emergency standing water extraction, carpet removal & direct insurance billing.",
+    "birmingham": "Call (248) 825-8312 for 24/7 flooded basement cleanup in Birmingham, MI. 30-min response, water extraction, plaster drying & direct insurance billing.",
+    "berkley": "Call (248) 825-8312 for 24/7 flooded basement cleanup in Berkley, MI. Rapid emergency water removal, basement drying & direct insurance billing.",
+    "clawson": "Call (248) 825-8312 for 24/7 flooded basement cleanup in Clawson, MI. 30-min response, standing water removal, drying & direct insurance billing.",
 }

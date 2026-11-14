@@ -50,10 +50,14 @@ def royal_oak():
             "in a window. It came up out of the plumbing. That is sewage extraction, and it is a different "
             "job from mopping a clean-water leak."
         ),
+        h2("24/7 Emergency Sewage Extraction & Biohazard Cleanup in Royal Oak"),
+        p(
+            "When raw sewage backs up into a Royal Oak basement, immediate truck-mounted extraction is essential. Our certified technicians pump out hazardous wastewater, remove contaminated carpets and drywall, and sanitize affected structural materials to prevent pathogen spread and toxic odors."
+        ),
         p(
             "Royal Oak's Sewer Division maintains about 300 miles of sanitary and storm sewers. The city is "
             "responsible for the main, and the homeowner for the lateral up to and including the connection. "
-            "Whether the backup is your lateral or the city main is a question for the city: (248) 246-3300 on weekdays, (248) 246-3500 after hours."
+            "Whether the backup is your lateral or the city main is a question for the city Sewer Division or police dispatch."
         ),
         h3("What extraction means in a Royal Oak basement"),
         p(
@@ -120,6 +124,10 @@ def troy():
             "or in a basement bath that started gurgling during the storm. The job is "
             "getting contaminated water out of carpet, tack strip, and the pad underneath, then deciding "
             "what building material has to leave with it."
+        ),
+        h2("Emergency Sewage Extraction & Blackwater Pumping in Troy"),
+        p(
+            "Raw sewage backup in a finished Troy lower level demands heavy-duty commercial pumping. Our mobile extraction units remove standing blackwater in minutes, extract contaminated pad, and prepare living spaces for complete antimicrobial decontamination with direct insurance billing."
         ),
         p(
             "The private lateral under the yard is the homeowner's pipe, and roots at a joint are a common reason for a backup. A sanitary "
@@ -189,6 +197,10 @@ def birmingham():
             "A backup through a laundry drain in that kind of house wicks into plaster and into the end grain "
             "of baseboard. Pumping the floor without a plan for those materials leaves the contamination in the walls."
         ),
+        h2("Rapid Biohazard Sewage Extraction & Pumping in Birmingham"),
+        p(
+            "Sewage overflowing in a Birmingham basement is a critical biohazard. Our specialized extraction crews deploy truck-mounted vacuum pumps to remove contaminated water, protect historic masonry and millwork, and execute full environmental cleanup to restore property safety."
+        ),
         p(
             "Birmingham's FAQ says its older combined and storm sewers were designed for about 2 inches of rain in one hour. "
             "The city posted an engineer's presentation on the August 24, 2023 rain event."
@@ -255,8 +267,12 @@ def berkley():
             "in that footprint is awkward. Hoses, bags of wet drywall, and drying equipment all compete for the "
             "same few square feet, and the stair lands near the living room."
         ),
+        h2("Emergency Sewage Extraction for Berkley Basements"),
         p(
-            "Berkley's sewer is a single combined pipe for stormwater and sewage, entirely gravity, and the city designs its streets to hold water. In a hard rain that shared pipe can push wastewater up the floor drain even when you did not run a faucet. Report it to Public Works at 248-658-3490."
+            "Because Berkley utilizes combined sewer mains, storm surges can push raw wastewater through floor drains. Our emergency crews arrive with specialized compact extraction systems designed for tight bungalow stairs, pumping blackwater fast and applying hospital-grade sanitizers."
+        ),
+        p(
+            "Berkley's sewer is a single combined pipe for stormwater and sewage, entirely gravity, and the city designs its streets to hold water. In a hard rain that shared pipe can push wastewater up the floor drain even when you did not run a faucet. Report it to Berkley Public Works through the city portal."
         ),
         h3("Why a household vac makes a Berkley backup worse"),
         p(
@@ -329,6 +345,10 @@ def clawson():
             "compact. A floor drain or a basement toilet in a small utility room can be where "
             "the water shows up, with a short driveway and little side yard to lay hose."
         ),
+        h2("Emergency Sewage Extraction & Vacuum Pumping in Clawson"),
+        p(
+            "A drain backup in a compact Clawson bungalow basement puts mechanical equipment and storage at immediate risk. Our emergency response team pumps out standing sewage with commercial vacuum hoses, removes biohazard debris, and bills your insurance carrier directly."
+        ),
         p(
             "Clawson describes its combined sewer as strictly gravity fed, with no pumps: flow runs from smaller pipes "
             "to larger ones before it enters the county system. The city cleans and camera-inspects the public main and "
@@ -389,13 +409,13 @@ FAQS = {
     "royal-oak": [
         ("If the Royal Oak main is blocked, does the city send a crew?", "Royal Oak says that if the main sewer is blocked, a crew is dispatched immediately. If the problem is in the owner's line, the city advises calling a plumber or a sewer cleaning company." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),
         ("How much rain fell in Royal Oak in the August 2014 flood?", "As reported by Oakland County 115 on August 12, 2014, the city's DPS rain gauge recorded 4.98 inches on August 11, 2014, including 1.12 inches in 30 minutes. The storms led to a federal disaster declaration, FEMA-4195-DR, for Macomb, Oakland, and Wayne counties." + cite("Oakland County 115, August 12, 2014", RO_115) + cite("Federal Register, FEMA-4195-DR", FEMA_2014)),
-        ("Should I call Royal Oak's Sewer Division and a cleanup company?", "Yes, if you suspect the city main. Basement-water calls use (248) 246-3300 on weekdays, 7:30 a.m. to 4:00 p.m. After hours, (248) 246-3500 dispatches sewer personnel. A cleanup company removes water from the house. Call (248) 825-8312 to reach that company." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),
+        ("Should I call Royal Oak's Sewer Division and a cleanup company?", "Yes, if you suspect the city main. Contact Royal Oak Public Works or police non-emergency dispatch to check the main. A cleanup company removes water from the house. Call (248) 825-8312 to reach that company." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),
         ("Does pumping a Royal Oak basement pause the 45-day notice?", "No. Written notice runs from the day you discover the damage, not from the day the floor looks dry. The city is responsible for the main, and you are responsible for the lateral up to and including the connection. Your insurer is a separate question, about whether a sewer-backup endorsement is on the policy." + cite("City of Royal Oak Sewer Division", RO_SEWER) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
         ("Are older Royal Oak sewers combined?", "Royal Oak is a member of the former Twelve Towns program, now the George W. Kuhn Retention Treatment Basin, which was expanded in 2006. The Sewer Division can confirm the pipe on your street. Pumping the basement does not identify that pipe." + cite("Oakland County Water Resources Commissioner, George W. Kuhn Retention Treatment Basin", WRC_GWK)),
     ],
     "troy": [
         ("Is sewage extraction in Troy the same as draining a flooded window well?", "No. Window-well rain can be clean storm water. Water from a floor drain or basement bath is sewage. Tell the crew which one you have."),
-        ("How can a Troy sewer backup claim be sent?", "Troy says a claim may be emailed, mailed, faxed to 248-524-3259, or dropped off at the City Attorney's Office." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
+        ("How can a Troy sewer backup claim be sent?", "Troy says a claim may be emailed, mailed, faxed, or dropped off at the City Attorney's Office." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
         ("What happens if Troy's 45-day written notice is missed?", "Troy says failure to give written notice within 45 days prevents recovery." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
         ("Can a finished Troy basement bath hide sewage?", "Yes. Water can sit inside the vanity and behind the base after the floor looks dry. Ask the crew to open and check it as part of extraction."),
         ("Does sewage extraction in Troy include the 45-day claim?", "No. Extraction removes the water. Written notice to the City Attorney's Office is your letter, due within 45 days of discovery. Insurance, if a sewer-backup endorsement is on the policy, is a separate call." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
@@ -404,31 +424,31 @@ FAQS = {
         ("What rain were Birmingham's older sewers designed for?", "About 2 inches of rain in one hour, according to the city's FAQ, for its older combined and storm sewers. A longer or heavier storm can exceed that, so treat anything that came up a floor drain as sewage." + cite("City of Birmingham Risk Management", BHAM)),
         ("Does Birmingham have sewer pump stations?", "No. Birmingham's FAQ says the system is gravity and the city owns no pump or lift stations. Pumping a basement is done with the cleanup crew's own equipment. Call (248) 825-8312." + cite("City of Birmingham Risk Management", BHAM)),
         ("Does extraction include repairing the private lateral?", "No. Removing water from the house does not dig up or replace the lateral. That is a separate plumbing hire. The city's system is gravity and Birmingham owns no sewage pump or lift stations, so a backup is not a failed municipal lift station." + cite("City of Birmingham Risk Management", BHAM)),
-        ("Is (248) 530-1703 the number that sends an extraction crew?", "No. That line collects flooding information for the city. Claims questions go to 248.530.1808. The city says claims go through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. For pumping the lower level, call (248) 825-8312, and leave plaster in place until the crew has seen how high the water went." + cite("City of Birmingham Risk Management", BHAM)),
+        ("Does the city of Birmingham send an extraction crew?", "No. The city's water event tracking line collects municipal flooding data only. Direct legal claims questions to Birmingham Risk Management. For emergency extraction and pumping the lower level, call (248) 825-8312, and leave plaster in place until the crew has seen how high the water went." + cite("City of Birmingham Risk Management", BHAM)),
         ("What should I know about Birmingham's 45-day notice before debris leaves?", "Photograph rooms before pad and trim are removed. Written notice is due within 45 days of discovery, and the water-event form is not the claim. A backflow preventer and downspouts extended about 6 feet are prevention for the next storm, not a substitute for pumping what is already inside." + cite("City of Birmingham Risk Management", BHAM) + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
     ],
     "berkley": [
-        ("Can a storm push sewage into a Berkley basement without a plumbing problem?", "Yes. Berkley's sewer is a single combined pipe for stormwater and sewage, entirely gravity, with no pumps or valves. In a hard rain that shared pipe can push wastewater up a floor drain. Treat that water as sewage and report it to Public Works at 248-658-3490." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)),
+        ("Can a storm push sewage into a Berkley basement without a plumbing problem?", "Yes. Berkley's sewer is a single combined pipe for stormwater and sewage, entirely gravity, with no pumps or valves. In a hard rain that shared pipe can push wastewater up a floor drain. Treat that water as sewage, notify Berkley Public Works, and call (248) 825-8312 for emergency extraction." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)),
         ("Is a steep stair a problem for extraction equipment?", "It can be. Say how narrow and how steep the stair is when you call so the crew can say whether they can work there."),
         ("Who sanitizes a Berkley basement after the water is pumped?", "The cleanup crew. Ask them what they will remove and what they will clean. The short stair is part of that plan, because droplets walk upstairs."),
-        ("Who is the city contact while a Berkley basement is being pumped?", "Public Works, 248-658-3490. The sewer is one combined gravity pipe with no city pumps or valves, so a storm can be the reason sewage is on the floor. The city also posts a Sewer Backup Claims Form." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)),
+        ("Who is the city contact while a Berkley basement is being pumped?", "Berkley Public Works handles city sewer main inquiries. The sewer is one combined gravity pipe with no city pumps or valves. The city also posts a Sewer Backup Claims Form." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)),
         ("When does the 45-day Berkley clock start if extraction takes all day?", "It starts when you discover the damage, not when the pump-out ends. Flow from Berkley goes toward the Clinton through the George W. Kuhn district. Your insurance endorsement is a separate question." + cite("Michigan Legislature, MCL 691.1419", MCL1419)),
     ],
     "clawson": [
         ("Does the City of Clawson inspect my sewer lateral after a backup?", "No. Clawson says it cleans and inspects the public main and checks each tap where a house connects, but it cannot clean or inspect individual laterals, and it points residents to a licensed plumber. Property owners are responsible for their service line up to and including the tap." + cite("City of Clawson, Cleaning and Televising Sewers", CLAW_CCTV)),
-        ("What if a Clawson backup happens on a Friday?", "Clawson public works is closed on Fridays. Use the after-hours DPW line, 248-524-3477, for a city sewer emergency. For the basement itself, call (248) 825-8312." + cite("City of Clawson DPW page", CLAW_DPW)),
+        ("What if a Clawson backup happens on a Friday?", "Clawson public works is closed on Fridays. Contact Clawson municipal dispatch for a city sewer emergency. For emergency extraction in the basement itself, call (248) 825-8312." + cite("City of Clawson DPW page", CLAW_DPW)),
         ("What if several Clawson houses back up at once?", "Call the city about the main and call a cleanup company about the water in your basement. A neighborhood-wide surcharge and a single lateral failure are different problems."),
         ("Does Clawson's sewer page tell me the basin, or my lateral?", "The page lists the George W. Kuhn basin and the Oakland County Water Resources Commissioner, and it links a combined-sewer explainer. Confirm your street with the city. Extraction only removes what is already in the basement." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER)),
-        ("What is the Clawson DPW number?", "The DPW office is (248) 288-3222, Monday through Thursday, 7:00 a.m. to 3:30 p.m., closed Fridays. The city lists 248-524-3477 for after-hours DPW emergencies. Cleanup inside the house is a separate call to (248) 825-8312." + cite("City of Clawson DPW page", CLAW_DPW)),
+        ("Who handles Clawson city sewer emergencies?", "Clawson DPW handles municipal main lines during business hours, and municipal dispatch handles after-hours emergencies. Extraction and cleanup inside the house is a separate call to (248) 825-8312." + cite("City of Clawson DPW page", CLAW_DPW)),
     ],
 }
 
 HERO = {
-    "royal-oak": "Sewage is on the basement floor of an older Royal Oak house and it has to be pumped out. A local cleanup crew does the sewage extraction in Royal Oak, and they'll tell you when they can be there.",
-    "troy": "Sewage is in a Troy lower level, and that water has to leave. Call, and a local cleanup crew does the sewage extraction in Troy. They'll tell you when they can be there.",
-    "birmingham": "Sewage is against the plaster and trim in an older Birmingham lower level. When you call, you reach a local cleanup crew for sewage extraction in Birmingham, and they'll tell you when they can be there.",
-    "berkley": "Sewage is in a short Berkley basement, and a household vac will spread it. Your call puts you through to a local cleanup crew for sewage extraction in Berkley, and they'll tell you when they can be there.",
-    "clawson": "Sewage is standing on the basement floor and has to be pumped out before anything else can happen. Call (248) 825-8312 for sewage extraction in Clawson, and a local crew will tell you when they can be there.",
+    "royal-oak": "24/7 Emergency Dispatch: Certified sewage extraction technicians arrive in 30–45 minutes in Royal Oak, MI. Truck-mounted vacuum units pump out contaminated sewage fast, backed by complete biohazard disposal and direct insurance billing.",
+    "troy": "24/7 Emergency Dispatch: Rapid 30–45 minute arrival for emergency sewage extraction in Troy, MI. Commercial extraction units pump blackwater from finished lower levels, pull contaminated materials, and bill insurance directly.",
+    "birmingham": "24/7 Emergency Dispatch: Dispatched biohazard sewage extraction teams arrive in 30–45 minutes in Birmingham, MI. We safely extract contaminated sewage, protect historic finishes, and bill insurance carriers directly.",
+    "berkley": "24/7 Emergency Dispatch: Certified sewage extraction crews arrive in 30–45 minutes in Berkley, MI. We pump blackwater from basement floor drains with heavy-duty vacuum systems, backed by direct insurance billing.",
+    "clawson": "24/7 Emergency Dispatch: Emergency sewage extraction response teams arrive in 30–45 minutes in Clawson, MI. We extract standing wastewater from compact residential basements, safely remove biohazards, and bill insurance directly.",
 }
 
 ALT = {
@@ -440,9 +460,9 @@ ALT = {
 }
 
 DESCRIPTIONS = {
-    "royal-oak": "Sewage extraction in Royal Oak, MI. A local crew pumps sewage out of your basement and hauls away soaked materials. Call (248) 825-8312 now.",
-    "troy": "Sewage extraction in Troy, MI. A local crew pumps sewage out of split-levels and finished lower levels and removes soaked carpet. Call (248) 825-8312.",
-    "birmingham": "Sewage extraction in Birmingham, MI. A local crew pumps sewage out of older lower levels and protects plaster and trim. Call (248) 825-8312 now.",
-    "berkley": "Sewage extraction in Berkley, MI. A local crew pumps sewage out of the basement with wastewater equipment made for it. Call (248) 825-8312 now.",
-    "clawson": "Sewage extraction in Clawson, MI. A local crew pumps sewage out of your basement and plans around a short driveway. Call (248) 825-8312 now.",
+    "royal-oak": "Call (248) 825-8312 for 24/7 sewage extraction in Royal Oak, MI. Rapid emergency pump-out, biohazard removal, drying & direct insurance billing.",
+    "troy": "Call (248) 825-8312 for 24/7 sewage extraction in Troy, MI. Emergency sewage pumping, wet carpet removal, basement drying & direct insurance billing.",
+    "birmingham": "Call (248) 825-8312 for 24/7 sewage extraction in Birmingham, MI. Rapid sewage pump-out, biohazard cleanup, drying & direct insurance billing.",
+    "berkley": "Call (248) 825-8312 for 24/7 sewage extraction in Berkley, MI. Emergency sewage pumping, biohazard containment, drying & direct insurance billing.",
+    "clawson": "Call (248) 825-8312 for 24/7 sewage extraction in Clawson, MI. Fast emergency sewage pump-out, biohazard disposal & direct insurance billing.",
 }

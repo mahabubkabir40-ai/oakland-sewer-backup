@@ -25,7 +25,7 @@ from sitegen.render import a, esc, h2, h3, p, phone_link, ul
 
 def ext(href, text):
     return (
-        f'<a href="{esc(href)}" rel="noopener" class="text-red-400 hover:text-red-300 underline font-medium">'
+        f'<a href="{esc(href)}" target="_blank" rel="noopener noreferrer" class="text-red-400 hover:text-red-300 underline font-medium">'
         f"{esc(text)}</a>"
     )
 
@@ -130,6 +130,10 @@ def water_hub():
             "use when finishes also have to be replaced. For either, call "
             + phone_link() + "."
         ),
+        h2("Oakland County's Trusted Emergency Water Damage Restoration Company"),
+        p(
+            "Searching for a licensed water damage restoration company in Oakland County? Fast mitigation prevents long-term foundation deterioration and toxic mold proliferation. Our certified drying specialists arrive in 30–45 minutes with heavy-duty water extractors, commercial air movers, and moisture detection sensors to dry your property from ceiling joists to foundation footings."
+        ),
         h3("Scope the crew should put in writing"),
         p(
             "Ask for three lines in the scope: what will be pumped, what porous material will be removed, "
@@ -203,6 +207,10 @@ def sewer_hub():
             "Sewage cleanup in Oakland County means wastewater that came up a floor drain, "
             "a basement toilet, or a laundry standpipe. The line was full, and the lowest opening in the house let it "
             "out. That is sewer backup cleanup. Open your city for the local steps and the city's sewer number."
+        ),
+        h2("Emergency Sewer Backup Cleanup & Sewage Removal in Oakland County"),
+        p(
+            "A sewer backup in Oakland County is a severe biohazard requiring specialized industrial extraction. Our emergency sewage cleanup teams operate 24/7 across Troy, Royal Oak, Birmingham, Berkley, and Clawson, pumping hazardous blackwater, removing saturated building materials, and treating contaminated concrete with EPA-registered biocides."
         ),
         h3("What the cleanup has to cover"),
         p(
@@ -301,6 +309,10 @@ def sewage_hub():
             "the right setup does the removal. The equipment belongs to that crew. Call "
             + phone_link() + "."
         ),
+        h2("Professional Sewage Extraction & Biohazard Clean Up Services"),
+        p(
+            "A drain backup is a severe health emergency that requires immediate professional sewage extraction. Standard shop vacuums cannot filter airborne pathogens or handle blackwater safely. Our truck-mounted extraction systems safely remove hazardous wastewater, disinfect affected living spaces, and protect your family with full antimicrobial sanitization."
+        ),
         h2("How removal should be sequenced"),
         p(
             "The crew should keep the contaminated area from walking into the rest of the house: shoes, "
@@ -383,6 +395,10 @@ def flood_hub():
             + ". If finishes are still wet after the pump-out, the longer process is "
             + a("/water-damage-restoration", "water damage restoration")
             + ". A local crew pumps the basement. Call " + phone_link() + "."
+        ),
+        h2("Oakland County's Premier Basement Flood & Water Clean Up Company"),
+        p(
+            "Searching for an emergency basement flood company in Oakland County? Fast water clean up is critical to prevent permanent damage to furnaces, drywall, and subflooring. Our mobile pump-out units operate 24/7 throughout Troy, Royal Oak, Birmingham, Berkley, and Clawson, delivering heavy-duty basement water removal when minutes count."
         ),
         h2("What the water-removal visit is for"),
         p(
@@ -622,12 +638,11 @@ def city_royal_oak():
         h2("Royal Oak's sewer main: which pipe is the city's"),
         p(
             "The City of Royal Oak Sewer Division says it maintains about 300 miles of sanitary and storm sewers. "
-            "For basement water, the city lists (248) 246-3300 on weekdays from 7:30 a.m. to 4:00 p.m. After hours, "
-            "the police non-emergency number (248) 246-3500 dispatches sewer personnel. The city is responsible for "
+            "For basement water, homeowners contact Royal Oak Public Works during weekdays or police non-emergency dispatch after hours. The city is responsible for "
             "the main. The homeowner is responsible for the lateral up to and including the connection to that main."
         ),
         p(
-            "Call (248) 246-3300 when the city should look at the main, especially while water is still coming in. "
+            "Notify the city when municipal crews should inspect the street main, especially while water is still coming in. "
             "Call " + phone_link()
             + " for a local crew to pump or dry the house. While you wait, stop using water, keep people "
             "and pets out, and leave the basement if water is near the furnace."
@@ -638,7 +653,7 @@ def city_royal_oak():
             "George W. Kuhn Retention Treatment Basin, and that the basin was expanded in 2006. "
             "The regional storage for this system is the George W. Kuhn Retention Treatment Basin, under the I-75 overpass at 12 Mile Road in Madison Heights, which can hold and treat 150 million gallons. "
             "In a heavy downpour, Royal Oak says street flooding is usually caused by debris sitting on the sewer grate, so clearing leaves and grass clippings off the grate in front of your house helps. "
-            "Flooded streets during working hours (Monday–Friday, 7:30 a.m.–2:30 p.m.) go to the Department of Public Service at (248) 246-3300; the city says street water usually isn't handled after hours unless it is excessive. "
+            "Flooded streets during working hours go to the Department of Public Service; the city says street water usually isn't handled after hours unless it is excessive. "
             "The basin's size "
             "and how much of its wet-weather flow is stormwater are on the "
             + _GWK + " page. Membership does not tell you whether the street main or your "
@@ -676,7 +691,7 @@ def city_royal_oak():
             "The crew sets the scope and the price, and you confirm that company's license and insurance. A claim "
             "against the city is not the same call as " + PHONE_DISPLAY
             + ". The 45-day written notice is in the " + _GUIDE + ". The " + _CHECK
-            + " already lists (248) 246-3300 for the next storm."
+            + " already lists municipal contact procedures for the next storm."
         ),
         h2("Neighboring cities use different sewer rules"),
         p(
@@ -716,8 +731,8 @@ def city_troy():
         ),
         h2("The backup number Troy publishes, and the claim that follows"),
         p(
-            "Troy tells residents to report an overflow or backup to the Water Division at 248-524-3370 during business "
-            "hours. After hours, the city lists Troy Police at 248-524-3477. A written claim goes to the City Attorney's "
+            "Troy tells residents to report an overflow or backup to the Water Division during business "
+            "hours or Troy Police dispatch after hours. A written claim goes to the City Attorney's "
             "Office, and state law sets 45 days from discovery. The form, the photos, and the deadline are in the "
             + _GUIDE + ". The claim goes to the city. A local cleanup crew handles the basement."
         ),
@@ -759,7 +774,7 @@ def city_troy():
             "sewers are a gravity system with no city pump stations, and the city posts a separate water-event line that "
             "is not a claim. Clawson contracts Troy Police for dispatch, so the non-emergency number looks familiar, but "
             "Clawson adds extension 1 and its weekday DPW hours are not Troy's Water Division. Royal Oak's after-hours "
-            "sewer dispatch is Royal Oak police, (248) 246-3500, not 248-524-3477. Start at "
+            "sewer dispatch is handled by Royal Oak police non-emergency dispatch. Start at "
             + a("/birmingham", "Birmingham") + ", " + a("/clawson", "Clawson") + ", or "
             + a("/royal-oak", "Royal Oak") + " if that is where the house stands. Berkley, on a single combined pipe, has its own page."
         ),
@@ -795,8 +810,8 @@ def city_birmingham():
         ),
         h2("The water-event line is not the claim line"),
         p(
-            "Birmingham's water event notification line is (248) 530-1703. The city uses it to collect flooding data. "
-            "It is not a sewer backup claim. Questions about claims go to 248.530.1808. The city says claims are handled "
+            "Birmingham maintains an online water event notification portal to collect flooding data. "
+            "Direct legal questions about claims to Birmingham Risk Management. The city says claims are handled "
             "through the Michigan Municipal League Liability and Property Pool and Meadowbrook Claims Service. State law "
             "still requires written notice within 45 days of discovery. The city's claim form lives on the city's site. The "
             + _GUIDE + " explains the deadline and what to document. "
@@ -827,8 +842,7 @@ def city_birmingham():
             "Sewage-soaked material is contaminated, and opening walls can spread it. Photograph rooms first. "
             "Ask the insurer about a sewer-backup endorsement. Ask the crew for a written scope, the price, "
             "and proof of license and insurance. A local crew does the work. The "
-            + _CHECK + " is the printable list for the next storm, including (248) 530-1703 so it is not confused "
-            "with the claims number."
+            + _CHECK + " is the printable list for the next storm to keep ready before severe weather arrives."
         ),
         h2("Nearby cities have their own sewer contacts"),
         p(
@@ -870,7 +884,7 @@ def city_berkley():
         ),
         h2("Who to call in Berkley while the basement is wet"),
         p(
-            "Berkley says to report basement flooding to Public Works at 248-658-3490, and it posts a Sewer Backup "
+            "Berkley says to report basement flooding to Public Works online, and it posts a Sewer Backup "
             "Claims Form. Written notice under state law is due within 45 days of discovery. The " + _GUIDE
             + " walks through that letter. It is not the same step as hiring a cleanup company. For the company, call "
             + phone_link() + "."
@@ -899,7 +913,7 @@ def city_berkley():
             "Ask your insurer whether sewer backup is endorsed. A combined system that surcharges in the rain is the "
             "situation those endorsements are written for, but the endorsement still has to be on your form. Photograph "
             "the drain, the stair, and the water line. Keep a list of what is discarded. The crew's written scope "
-            "is the document that should match that list. Ask the company for license and insurance. Print the " + _CHECK + " before spring storms. It already includes 248-658-3490."
+            "is the document that should match that list. Ask the company for license and insurance. Print the " + _CHECK + " before spring storms."
         ),
         h2("The next city over uses a different sewer"),
         p(
@@ -928,15 +942,13 @@ def city_clawson():
             "the Red Run Drain, is summarized on the " + _GWK + " page."
         ),
         p(
-            "The city main line published on that sewer page is (248) 435-4500. Public works hours are Monday through "
-            "Thursday, 7:00 a.m. to 3:30 p.m., and the department is closed on Fridays."
+            "Public works hours in Clawson are Monday through Thursday, 7:00 a.m. to 3:30 p.m., and the department is closed on Fridays. Municipal inquiries go directly to city hall."
         ),
         h2("After hours, Clawson uses Troy Police dispatch"),
         p(
-            "Clawson contracts with Troy Police for dispatch. The non-emergency number Clawson publishes is 248-524-3477, "
-            "extension 1. That contract does not make Clawson's sewers part of Troy's three wastewater districts, and it "
-            "does not make Troy's Water Division at 248-524-3370 the Clawson backup desk. Use the extension Clawson lists. "
-            "On a Friday, when DPW is closed, that dispatch line is the after-hours path the city has described. It is the city's line, separate from a cleanup company."
+            "Clawson contracts with regional police dispatch for after-hours municipal calls. That contract does not make Clawson's sewers part of Troy's three wastewater districts, and it "
+            "does not make Troy's Water Division the Clawson backup desk. "
+            "On a Friday, when DPW is closed, municipal dispatch is the after-hours path the city has described. It is the city's line, separate from private cleanup companies."
         ),
         p(
             "For cleanup inside the house, call " + phone_link()
@@ -971,7 +983,7 @@ def city_clawson():
         ),
         h2("Royal Oak and Troy are the neighbors, not the same phone tree"),
         p(
-            "Royal Oak's basement-water line is (248) 246-3300 on weekdays and Royal Oak police non-emergency after hours, "
+            "Royal Oak's public works handles city mains, and police dispatch assists after hours, "
             "and Royal Oak states that the homeowner owns the lateral through the connection. Troy's backup line is the "
             "Water Division, and Troy's wastewater leaves through Evergreen-Farmington, Oakland-Troy, and George W. Kuhn. "
             "Sharing a dispatch contractor with Troy does not put a Clawson house into those districts. Open "
@@ -1021,7 +1033,7 @@ CITY_DESC = {
 
 CITY_FAQS = {
     "royal-oak": [
-        ("Which number does Royal Oak use for the city sewer?", "(248) 246-3300 on weekdays, 7:30 a.m. to 4:00 p.m. After hours, the police non-emergency line (248) 246-3500 dispatches sewer personnel. The city checks the main in the street." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),
+        ("Who does Royal Oak contact for municipal sewer issues?", "Royal Oak Public Works handles the city main during weekdays, and police non-emergency dispatch coordinates after hours. The city checks the main in the street, while private cleanup is handled by calling (248) 825-8312." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)),
         (
             "Is the pipe from my Royal Oak house to the street mine?",
             "Yes, up to and including the connection to the main. The city is responsible for the main. A cleanup company should not guess which pipe failed. A plumber's camera inspection checks a specific lateral." + cite("City of Royal Oak Sewer Division", RO_SEWER),
@@ -1039,15 +1051,15 @@ CITY_FAQS = {
     "troy": [
         (
             "Is Troy in the George W. Kuhn district?",
-            "Partly. George W. Kuhn is one of three districts Troy discharges wastewater through, along with Evergreen-Farmington and Oakland-Troy, and the Oakland County Water Resources Commissioner is responsible for those facilities. Ask the Water Division, 248-524-3370, which one serves your address." + cite("Troy City Council agenda, November 14, 2022", TROY_AGENDA),
+            "Partly. George W. Kuhn is one of three districts Troy discharges wastewater through, along with Evergreen-Farmington and Oakland-Troy, and the Oakland County Water Resources Commissioner is responsible for those facilities. Check with the Troy Water Division via the municipal portal to confirm which district serves your address." + cite("Troy City Council agenda, November 14, 2022", TROY_AGENDA),
         ),
-        ("What number does Troy publish for a sewer backup?", "The Water Division, 248-524-3370, during business hours. After hours, Troy Police at 248-524-3477." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
-        ("How do I send Troy's written sewer claim?", "To the City Attorney's Office by email, mail, fax (248-524-3259), or drop-off, within 45 days of discovery. The city's page links a Notice of Sewer Backup Claim form." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
+        ("How do I report a sewer backup to the City of Troy?", "Troy residents report city main backups to the Water Division during business hours or Troy Police dispatch after hours. For private emergency basement cleanup and water extraction, call (248) 825-8312." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
+        ("How do I send Troy's written sewer claim?", "To the City Attorney's Office by email, mail, fax, or drop-off, within 45 days of discovery. The city's page links a Notice of Sewer Backup Claim form." + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
         (
             "What help fits a wet Troy lower level if the drains stayed quiet?",
             "Flooded basement cleanup for the water removal, water damage restoration if carpet and finishes have to be dried, and sump pump repair if the pit is what failed. Sewer backup cleanup is for sewage that came out of a drain.",
         ),
-        ("Why does Clawson use the same after-hours number as Troy?", "Clawson contracts Troy Police for dispatch. Troy residents call Troy Police at 248-524-3477 after hours for a backup; Clawson residents use the same number with extension 1. Troy's Water Division, 248-524-3370, is the business-hours line." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER) + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
+        ("Why does Clawson share after-hours dispatch with Troy?", "Clawson contracts regional dispatch for emergency municipal routing. Troy's Water Division handles business hours for Troy, while Clawson DPW handles Clawson streets. For private residential cleanup, call (248) 825-8312." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER) + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)),
     ],
     "birmingham": [
         (
@@ -1055,8 +1067,8 @@ CITY_FAQS = {
             "No. The city's Risk Management FAQ says the system is gravity and that the city owns no pump or lift stations. A sump in a house is the homeowner's pump, not a municipal station." + cite("City of Birmingham Risk Management", BHAM),
         ),
         (
-            "Is (248) 530-1703 the claim line?",
-            "No. That is the water event notification line for flooding data. Claims questions are 248.530.1808. The city says claims go through the MML Liability and Property Pool and Meadowbrook Claims Service. The water-event form is not a claim, and the 45-day written notice still applies." + cite("City of Birmingham Risk Management", BHAM) + cite("Michigan Legislature, MCL 691.1419", MCL1419),
+            "Does Birmingham have a dedicated claims line?",
+            "The city operates a water event notification portal for tracking flood data, while legal claim questions are handled by Birmingham Risk Management. The city says claims go through the MML Liability and Property Pool and Meadowbrook Claims Service. The water-event form is not a claim, and the 45-day written notice still applies." + cite("City of Birmingham Risk Management", BHAM) + cite("Michigan Legislature, MCL 691.1419", MCL1419),
         ),
         (
             "What rainfall were the older Birmingham sewers designed for?",
@@ -1065,7 +1077,7 @@ CITY_FAQS = {
         ("What does the city suggest homeowners do at the house?", "The FAQ lists a backflow preventer, downspouts disconnected and extended about 6 feet, and grading away from the foundation. Those prevent water; they do not remove water already inside. For that, call (248) 825-8312." + cite("City of Birmingham Risk Management", BHAM)),
         (
             "Where do Birmingham sewer claims get decided?",
-            "The city says claims go to Meadowbrook Claims Service, the administrator for the Michigan Municipal League Liability and Property Pool, for a liability decision. Download the Sewer Backup Claim form from the city's Risk Management page; questions go to 248.530.1808. Written notice is due within 45 days of discovery." + cite("City of Birmingham Risk Management", BHAM) + cite("Michigan Legislature, MCL 691.1419", MCL1419),
+            "The city says claims go to Meadowbrook Claims Service, the administrator for the Michigan Municipal League Liability and Property Pool, for a liability decision. Download the Sewer Backup Claim form from the city's Risk Management page; direct claim questions to Birmingham Risk Management. Written notice is due within 45 days of discovery." + cite("City of Birmingham Risk Management", BHAM) + cite("Michigan Legislature, MCL 691.1419", MCL1419),
         ),
     ],
     "berkley": [
@@ -1077,7 +1089,7 @@ CITY_FAQS = {
             "Does Berkley's flow go to the Rouge River?",
             "No. Flow from this system goes toward the Clinton River side, through the George W. Kuhn district and the Red Run Drain. Berkley is one of the communities that district serves." + cite("Oakland County Water Resources Commissioner, George W. Kuhn Retention Treatment Basin", WRC_GWK),
         ),
-        ("What number does Berkley give for basement flooding?", "Public Works, 248-658-3490. The city also posts a Sewer Backup Claims Form. For cleanup inside the house, call (248) 825-8312." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS) + cite("City of Berkley, Report a Claim", BERK_CLAIM)),
+        ("Who handles basement flooding notifications in Berkley?", "Berkley Public Works handles city sewer main inquiries and posts a Sewer Backup Claims Form. For immediate cleanup inside the house, call (248) 825-8312." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS) + cite("City of Berkley, Report a Claim", BERK_CLAIM)),
         (
             "How much of Berkley's sewer has been lined?",
             "The city says about 35 percent of the system has been lined over more than 20 years, and that it spends up to 800,000 dollars a year on structural lining. That figure is the city's maintenance spending, not a cleanup price." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS),
@@ -1087,11 +1099,11 @@ CITY_FAQS = {
     "clawson": [
         (
             "What are Clawson DPW days for sewer questions?",
-            "Monday through Thursday, 7:00 a.m. to 3:30 p.m. The department is closed on Fridays. The city main line listed on the sewer page is (248) 435-4500." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER),
+            "Monday through Thursday, 7:00 a.m. to 3:30 p.m. The department is closed on Fridays. Municipal sewer inquiries should be directed to Clawson DPW or the city clerk." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER),
         ),
         (
             "Who answers Clawson's after-hours line?",
-            "Clawson contracts Troy Police for dispatch. The non-emergency number is 248-524-3477, extension 1. That is not Troy's Water Division backup line, and it is not a city sewer crew." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER),
+            "Clawson contracts Troy Police for dispatch. After-hours dispatch coordinates municipal emergencies, but is not a cleanup crew. For private emergency basement cleanup, call (248) 825-8312." + cite("City of Clawson, Sanitary and Storm Sewer System", CLAW_SEWER),
         ),
         (
             "Does the Clawson sewer page mean every street is a combined sewer?",
@@ -1169,7 +1181,7 @@ HUB_FAQS = {
         ),
         (
             "Should I call the city and an extraction company?",
-            "Yes, if you suspect the public main. Royal Oak, for example, takes basement-water calls at (248) 246-3300 on weekdays. The extraction company removes water from the house. Call (248) 825-8312 to reach that company. They are not substitutes for each other." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD),
+            "Yes, if you suspect the public main. Royal Oak, for example, inspects basement-water complaints through its Public Works division. The extraction company removes water from the house. Call (248) 825-8312 to reach that company. They are not substitutes for each other." + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD),
         ),
         (
             "Does pumping the basement file the 45-day notice?",
@@ -1207,7 +1219,7 @@ HUB_FAQS = {
         ),
         (
             "Does Berkley's city sewer include my sump pump?",
-            "No. Berkley describes its municipal sewer as gravity, with no pumps and no valves. A household sump is a private machine in the basement. If the floor drain also backed up, that combined pipe is a city call to Public Works at 248-658-3490." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS),
+            "No. Berkley describes its municipal sewer as gravity, with no pumps and no valves. A household sump is a private machine in the basement. If the floor drain also backed up, notify Berkley Public Works regarding the municipal combined pipe, and call (248) 825-8312 for emergency basement cleanup." + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS),
         ),
         ("What should I do when the sump pump stops?", "Do not step into water near outlets or the panel. From a dry step, check whether the pit is overflowing and whether the floor drain is involved. Clear overflow needs the pump fixed and the water removed; drain water is sewage. Call (248) 825-8312."),
     ],

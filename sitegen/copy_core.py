@@ -181,7 +181,7 @@ PRIVACY_FAQS = [
         "Should I type a sewer claim into the form?",
         "Call instead. The form is not read and is not stored. A 45-day written notice to Royal Oak, Troy, Birmingham, Berkley, or Clawson is a letter to that city, not a form field. Insurance questions stay with your insurer." + cite("Michigan Legislature, MCL 691.1419", MCL1419),
     ),
-    ("Is (248) 825-8312 a city number?", "No. City sewer numbers are separate: Royal Oak (248) 246-3300, Troy 248-524-3370, Berkley 248-658-3490, Clawson (248) 435-4500, and Birmingham claims questions 248.530.1808."
+    ("Is (248) 825-8312 a city number?", "No. (248) 825-8312 connects you with independent emergency cleanup and water restoration crews. Municipal sewer departments and city halls operate separate offices for reporting public main blockages."
      + cite("City of Royal Oak, Responding to Street and Basement Flooding", RO_FLOOD)
      + cite("City of Troy, Legal Claims for Overflows and Backups", TROY_CLAIMS)
      + cite("City of Berkley, Flood Tips for Residents", BERK_TIPS)

@@ -488,6 +488,7 @@ def prose_body(h1, lead, article, faqs=None, faq_heading="Questions", images=Non
     faq = faq_html(faqs, faq_heading) if faqs else ""
     return f"""<section class="bg-slate-950/40 py-12 md:py-16 px-4 border-b border-slate-800">
         <div class="max-w-4xl mx-auto">
+            <p class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-red-950/60 border border-red-500/30 text-red-300 rounded-full text-xs font-extrabold uppercase tracking-widest mb-4">🚨 24/7 Emergency Dispatch • Average Arrival: 30–45 Minutes in Oakland County</p>
             <h1 class="text-3xl md:text-5xl font-outfit font-extrabold text-white leading-tight">{h1}</h1>
             <div class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed space-y-4">{lead}</div>
             <div class="mt-8">{call_button()}</div>
@@ -656,8 +657,9 @@ def home_body():
             </div>
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                 <div class="lg:col-span-7">
+                    <p class="inline-flex items-center gap-1.5 px-3.5 py-1.5 bg-red-950/60 border border-red-500/30 text-red-300 rounded-full text-xs font-extrabold uppercase tracking-widest mb-4">🚨 24/7 Emergency Dispatch • Average Arrival: 30–45 Minutes in Oakland County</p>
                     <h1 class="text-3xl md:text-5xl font-outfit font-extrabold text-white leading-tight">24/7 Emergency Sewer Backup &amp; Sewage Cleanup in Oakland County, MI</h1>
-                    <p class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed">Sewage or floodwater in an Oakland County basement needs a cleanup company now. A local crew handles the cleanup for sewer backup, sewage cleanup, basement flood cleanup, and water damage restoration. They'll tell you when they can be there.</p>
+                    <p class="text-base md:text-lg text-gray-300 mt-6 leading-relaxed">🚨 24/7 Live Emergency Dispatch: Average arrival time of 30–45 minutes across Oakland County. Dispatched certified response teams arrive equipped with commercial truck-mounted extraction units, industrial dehumidifiers, and thermal moisture sensors to stop damage fast. We provide direct insurance billing to all major carriers to minimize your out-of-pocket costs.</p>
                     <p class="text-sm text-gray-300 mt-4 leading-relaxed">County pages: <a class="text-red-400 underline" href="/sewer-backup-cleanup">sewage cleanup and sewer backup in Oakland County</a>, <a class="text-red-400 underline" href="/flooded-basement-cleanup">basement flood cleanup in Oakland County</a>, and <a class="text-red-400 underline" href="/water-damage-restoration">water damage restoration</a>. If a drain backed up, that is sewage, not a rain flood.</p>
                     <div class="mt-8">{call_button()}</div>
                 </div>
@@ -673,7 +675,7 @@ def home_body():
     near_faq = ""
     if len(photos) > 2:
         near_faq = f'<div class="max-w-3xl mx-auto px-4 pt-12">{content_figure(photos[2])}</div>'
-    return intro + services + steps + mid + resources + cities + form + near_faq + faq_html(home_faqs, "Questions about a sewer backup"), home_faqs
+    return intro + trust_row() + services + steps + mid + resources + cities + form + near_faq + faq_html(home_faqs, "Questions about a sewer backup"), home_faqs
 
 
 def main():
@@ -685,8 +687,8 @@ def main():
     home_html, home_faqs = home_body()
     remember(
         "",
-        "Sewage Cleanup & Sewer Backup in Oakland County, MI",
-        "Sewage cleanup, sewer backup and basement flood cleanup in Oakland County, MI. A local crew pumps, cleans and dries your basement. Call (248) 825-8312 now.",
+        "24/7 Emergency Sewage Cleanup & Sewer Backup Oakland County MI",
+        "Call (248) 825-8312 for 24/7 emergency sewage cleanup, sewer backup & flooded basement water removal in Oakland County, MI. Fast 30-min local dispatch.",
         home_html,
         [],
         faqs=home_faqs,
@@ -695,12 +697,12 @@ def main():
 
     # City services
     packs = [
-        ("sewer-cleanup", "Sewer Backup Cleanup {city} MI | Sewage Cleanup", "Sewer Backup Cleanup {city} MI", SEWER_HERO, SEWER_DESC, SEWER_FAQS, SEWER_ALT, "0.9", None),
-        ("sewage-extraction", "Sewage Extraction {city} MI | Oakland Sewer Pros", "Sewage Extraction in {city}, MI", SEWAGE_HERO, SEWAGE_DESC, SEWAGE_FAQS, SEWAGE_ALT, "0.8", SEWAGE_ARTICLES),
-        ("flooded-basement", "Flooded Basement Water Removal {city} MI | Oakland Sewer Pros", "Flooded Basement Cleanup & Water Removal in {city}, MI", FLOOD_HERO, FLOOD_DESC, FLOOD_FAQS, FLOOD_ALT, "0.8", FLOOD_ARTICLES),
+        ("sewer-cleanup", "24/7 Sewer Backup Cleanup {city} MI | Emergency Sewage Cleanup", "Sewer Backup Cleanup {city} MI", SEWER_HERO, SEWER_DESC, SEWER_FAQS, SEWER_ALT, "0.9", None),
+        ("sewage-extraction", "24/7 Sewage Extraction {city} MI | Emergency Water Removal", "Sewage Extraction in {city}, MI", SEWAGE_HERO, SEWAGE_DESC, SEWAGE_FAQS, SEWAGE_ALT, "0.8", SEWAGE_ARTICLES),
+        ("flooded-basement", "24/7 Flooded Basement Cleanup {city} MI | Emergency Water Removal", "Flooded Basement Cleanup & Water Removal in {city}, MI", FLOOD_HERO, FLOOD_DESC, FLOOD_FAQS, FLOOD_ALT, "0.8", FLOOD_ARTICLES),
         ("sump-pump-repair", "Sump Pump Repair in {city}, Michigan", "Sump Pump Repair in {city}, Michigan", SUMP_HERO, SUMP_DESC, SUMP_FAQS, SUMP_ALT, "0.8", SUMP_ARTICLES),
-        ("basement-sanitization", "Basement Sanitization {city} MI | Oakland Sewer Pros", "Basement Sanitization after Sewage or Flood in {city}, MI", SANIT_HERO, SANIT_DESC, SANIT_FAQS, SANIT_ALT, "0.8", SANIT_ARTICLES),
-        ("water-damage-restoration", "Water Damage Restoration {city}, MI | Oakland Sewer Pros", "Water Damage Restoration in {city}, MI", WATER_HERO, WATER_DESC, WATER_FAQS, WATER_ALT, "0.9", WATER_ARTICLES),
+        ("basement-sanitization", "Basement Sanitization {city} MI | Disinfection & Odor Removal", "Basement Sanitization after Sewage or Flood in {city}, MI", SANIT_HERO, SANIT_DESC, SANIT_FAQS, SANIT_ALT, "0.8", SANIT_ARTICLES),
+        ("water-damage-restoration", "24/7 Water Damage Restoration {city} MI | Emergency Drying", "Water Damage Restoration in {city}, MI", WATER_HERO, WATER_DESC, WATER_FAQS, WATER_ALT, "0.9", WATER_ARTICLES),
     ]
     for city_slug, city in CITIES:
         for service_slug, title_t, h1_t, heroes, descriptions, faqs, alts, priority, articles in packs:
@@ -711,25 +713,67 @@ def main():
             title = title_t.format(city=city)
             h1 = h1_t.format(city=city)
             if city_slug == "clawson" and service_slug == "flooded-basement":
-                title = "Flooded Basement Cleanup Clawson, MI | Water Removal"
+                title = "24/7 Flooded Basement Cleanup Clawson MI | Water Removal"
+                h1 = "Flooded Basement Cleanup & Water Removal in Clawson, MI"
             if city_slug == "clawson" and service_slug == "sewage-extraction":
-                title = "Sewage Extraction Clawson, MI | Pump-Out on Small Lots"
+                title = "24/7 Sewage Extraction Clawson MI | Emergency Water Removal"
+                h1 = "24/7 Emergency Sewage Extraction & Pumping in Clawson, MI"
+            if city_slug == "clawson" and service_slug == "water-damage-restoration":
+                title = "24/7 Water Damage Restoration Clawson MI | Emergency Repair"
+                h1 = "24/7 Water Damage Restoration & Repair in Clawson, MI"
+            if city_slug == "clawson" and service_slug == "sewer-cleanup":
+                title = "24/7 Sewer Backup Cleanup Clawson MI | Emergency Cleanup"
+                h1 = "24/7 Sewer Backup Cleanup & Sewage Removal in Clawson, MI"
             if city_slug == "royal-oak" and service_slug == "flooded-basement":
-                title = "Flooded Basement Cleanup Royal Oak, MI | Water Removal"
+                title = "24/7 Flooded Basement Cleanup Royal Oak MI | Water Removal"
+                h1 = "Flooded Basement Cleanup & Water Removal in Royal Oak, MI"
+            if city_slug == "royal-oak" and service_slug == "sewage-extraction":
+                title = "24/7 Sewage Extraction Royal Oak MI | Emergency Water Removal"
+                h1 = "24/7 Emergency Sewage Extraction & Pumping in Royal Oak, MI"
+            if city_slug == "royal-oak" and service_slug == "water-damage-restoration":
+                title = "24/7 Water Damage Restoration Royal Oak MI | Water Removal"
+                h1 = "24/7 Water Damage Restoration & Cleanup in Royal Oak, MI"
+            if city_slug == "royal-oak" and service_slug == "sewer-cleanup":
+                title = "24/7 Sewer Backup Cleanup Royal Oak MI | Emergency Cleanup"
+                h1 = "24/7 Sewer Backup Cleanup & Sewage Removal in Royal Oak, MI"
             if city_slug == "troy" and service_slug == "flooded-basement":
-                title = "Flooded Basement Cleanup Troy, MI | Water Removal"
-            if city_slug == "birmingham" and service_slug == "flooded-basement":
-                title = "Flooded Basement Cleanup Birmingham, MI | Water Removal"
+                title = "24/7 Flooded Basement Cleanup Troy MI | Emergency Water Removal"
+                h1 = "Flooded Basement Cleanup & Emergency Water Removal in Troy, MI"
             if city_slug == "troy" and service_slug == "water-damage-restoration":
-                title = "Water Damage Restoration Troy, MI | Water Damage Repair"
+                title = "24/7 Water Damage Restoration Troy MI | Water Damage Repair"
+                h1 = "24/7 Water Damage Restoration & Repair in Troy, MI"
+            if city_slug == "troy" and service_slug == "sewer-cleanup":
+                title = "24/7 Sewer Backup Cleanup Troy MI | Emergency Sewage Removal"
+                h1 = "24/7 Sewer Backup Cleanup & Sewage Removal in Troy, MI"
+            if city_slug == "troy" and service_slug == "sewage-extraction":
+                title = "24/7 Sewage Extraction Troy MI | Emergency Water Removal"
+                h1 = "24/7 Emergency Sewage Extraction & Pumping in Troy, MI"
+            if city_slug == "birmingham" and service_slug == "flooded-basement":
+                title = "24/7 Flooded Basement Cleanup Birmingham MI | Water Removal"
+                h1 = "24/7 Flooded Basement Cleanup & Water Removal in Birmingham, MI"
+            if city_slug == "birmingham" and service_slug == "water-damage-restoration":
+                title = "24/7 Water Damage Restoration Birmingham MI | Rapid Drying"
+                h1 = "24/7 Water Damage Restoration & Structural Drying in Birmingham, MI"
+            if city_slug == "birmingham" and service_slug == "sewer-cleanup":
+                title = "24/7 Sewer Backup Cleanup Birmingham MI | Emergency Cleanup"
+                h1 = "24/7 Sewer Backup Cleanup & Sewage Removal in Birmingham, MI"
+            if city_slug == "birmingham" and service_slug == "sewage-extraction":
+                title = "24/7 Sewage Extraction Birmingham MI | Emergency Water Removal"
+                h1 = "24/7 Emergency Sewage Extraction & Pumping in Birmingham, MI"
             if city_slug == "berkley" and service_slug == "flooded-basement":
-                title = "Berkley Flooded Basement Cleanup | Oakland Sewer Pros"
+                title = "24/7 Flooded Basement Cleanup Berkley MI | Water Removal"
+                h1 = "Flooded Basement Cleanup & Water Removal in Berkley, MI"
             if city_slug == "berkley" and service_slug == "sewage-extraction":
-                title = "Sewage Extraction in Berkley, MI | Bungalow Basements"
+                title = "24/7 Sewage Extraction Berkley MI | Emergency Water Removal"
+                h1 = "24/7 Emergency Sewage Extraction & Pumping in Berkley, MI"
+            if city_slug == "berkley" and service_slug == "water-damage-restoration":
+                title = "24/7 Water Damage Restoration Berkley MI | Emergency Cleanup"
+                h1 = "24/7 Water Damage Restoration & Cleanup in Berkley, MI"
+            if city_slug == "berkley" and service_slug == "sewer-cleanup":
+                title = "24/7 Sewer Backup Cleanup Berkley MI | Emergency Cleanup"
+                h1 = "24/7 Sewer Backup Cleanup & Sewage Removal in Berkley, MI"
             if city_slug == "berkley" and service_slug == "basement-sanitization":
                 title = "Basement Sanitization Berkley, MI | After Sewage"
-            if city_slug == "troy" and service_slug == "sewer-cleanup":
-                title = "Sewage Cleanup Troy, MI | Sewer Backup Cleanup"
             emit_city_service(
                 city_slug,
                 service_slug,
@@ -769,11 +813,11 @@ def main():
         )
 
     hub_pages = [
-        ("services", "Oakland County Sewer & Water Services | Oakland Sewer Pros", "Sewer backup, sewage extraction, flooded basement, water damage and sump pump services in Oakland County, MI. Find your city or call (248) 825-8312.", "Services for Oakland County homeowners", "If sewage or floodwater is in the basement, match the job to the water, then open your city. A local cleanup crew handles the visit, and they'll tell you when they can be there.", services_article(), "0.8"),
-        ("water-damage-restoration", "Water Damage Restoration Oakland County | Oakland Sewer Pros", "Water damage restoration in Oakland County, MI. A local crew removes water, dries your basement and handles sewage-soaked materials. Call (248) 825-8312.", "Water damage restoration in Oakland County, MI", "The basement is wet, and sewage makes water damage restoration in Oakland County a stricter cleanup than a clean leak. A local cleanup crew handles the visit, and they'll tell you when they can be there.", water_hub(), "0.9"),
-        ("sewer-backup-cleanup", "Sewer Backup Cleanup Oakland County, MI | Basement Help", "Sewer backup cleanup in Oakland County, MI. A local crew pumps out sewage, removes ruined materials and disinfects your basement. Call (248) 825-8312.", "Sewage cleanup and sewer backup in Oakland County, MI", "Sewage is in the basement and it needs to come out. A local cleanup crew handles the visit, and they'll tell you when they can be there. Open your city's page for the local steps.", sewer_hub(), "0.8"),
-        ("sewage-extraction", "Sewage Extraction Oakland County MI | Oakland Sewer Pros", "Sewage extraction in Oakland County, MI. A local crew pumps sewage out of your basement and hauls away soaked materials safely. Call (248) 825-8312.", "Sewage extraction in Oakland County, MI", "Contaminated water is in the basement and it has to be pumped out. A local cleanup crew handles the visit, and they'll tell you when they can be there.", sewage_hub(), "0.8"),
-        ("flooded-basement-cleanup", "Basement Flood Cleanup in Oakland County, MI", "Basement flood cleanup in Oakland County, MI. A local crew pumps out storm or sump water and dries the walls and floors. Call (248) 825-8312 now.", "Basement flood cleanup in Oakland County, MI", "Standing water from a storm or a sump is in the basement. A local cleanup crew handles the visit, and they'll tell you when they can be there. If a drain backed up, tell them it is sewage.", flood_hub(), "0.8"),
+        ("services", "24/7 Emergency Sewer & Water Cleanup Services Oakland County", "Call (248) 825-8312 for 24/7 sewer backup, sewage extraction, flooded basement & water damage services in Oakland County, MI. Direct insurance billing.", "Services for Oakland County homeowners", "24/7 emergency response for Oakland County homeowners. Dispatched certified crews arrive in 30–45 minutes for sewer backup cleanup, sewage extraction, flooded basement pumping, and water damage restoration with direct insurance billing.", services_article(), "0.8"),
+        ("water-damage-restoration", "24/7 Water Damage Restoration Oakland County | Rapid Drying", "Call (248) 825-8312 for 24/7 water damage restoration in Oakland County, MI. 30-min dispatch, structural drying, water removal & direct insurance billing.", "24/7 Water Damage Restoration & Structural Drying in Oakland County, MI", "Need emergency water damage restoration in Oakland County, MI? Dispatched certified crews arrive in 30–45 minutes equipped with truck-mounted water extractors and commercial desiccant dehumidifiers. We provide full structural drying, moisture detection, and direct insurance billing across all communities.", water_hub(), "0.9"),
+        ("sewer-backup-cleanup", "24/7 Sewer Backup Cleanup Oakland County | Emergency Response", "Call (248) 825-8312 for 24/7 sewer backup cleanup in Oakland County, MI. Fast emergency sewage extraction, sanitizing, drying & direct insurance billing.", "24/7 Emergency Sewer Backup Cleanup & Sewage Removal in Oakland County, MI", "Dealing with a sewage backup in your basement? Our emergency sewer backup cleanup crews dispatch across Oakland County, MI within 30–45 minutes. We immediately extract contaminated blackwater, apply hospital-grade antimicrobial disinfection, and bill your insurance directly.", sewer_hub(), "0.8"),
+        ("sewage-extraction", "24/7 Sewage Extraction Oakland County MI | Emergency Removal", "Call (248) 825-8312 for 24/7 sewage extraction in Oakland County, MI. Rapid biohazard pump-out, certified water removal & direct insurance billing.", "24/7 Emergency Sewage Extraction & Cleanup in Oakland County, MI", "Raw sewage in your basement? Our certified biohazard response teams deliver 24/7 emergency sewage extraction and cleanup throughout Oakland County, MI, arriving within 30–45 minutes. We immediately pump out blackwater, sanitize contaminated concrete, remove biohazardous debris, and bill your insurance directly.", sewage_hub(), "0.8"),
+        ("flooded-basement-cleanup", "24/7 Flooded Basement Cleanup Oakland County | Water Removal", "Call (248) 825-8312 for 24/7 flooded basement cleanup in Oakland County, MI. 30-min emergency response, standing water removal & direct insurance billing.", "24/7 Basement Flood Cleanup & Water Removal in Oakland County, MI", "When storm runoff or plumbing failures flood your lower level, our emergency basement flood clean up crews dispatch across Oakland County, MI in 30–45 minutes. As Oakland County's trusted basement water damage company, we provide immediate standing water extraction, wet carpet removal, and complete structural drying with direct insurance billing.", flood_hub(), "0.8"),
         ("sump-pump-repair", "Sump Pump Repair in Oakland County, Michigan", "Sump pump repair in Oakland County, MI. A local crew can check the pump and deal with the water if the floor is wet. Call (248) 825-8312 now.", "Sump pump repair in Oakland County, Michigan", "A stuck or dead sump pump has left the basement wet. Call (248) 825-8312, say whether the pit overflowed or a floor drain backed up, and a local crew for Royal Oak, Troy, Birmingham, Berkley or Clawson will tell you when they can be there.", sump_hub(), "0.8"),
         ("basement-sanitization", "Basement Sanitization Oakland County | Oakland Sewer Pros", "Basement sanitization in Oakland County, MI after sewage or a flood. A local crew removes ruined materials and disinfects the rest. Call (248) 825-8312.", "Basement sanitization after sewage or flooding", "The water is out and the basement still needs cleaning after sewage or a flood. A local cleanup crew handles the visit, and they'll tell you when they can be there. Extraction comes first if the water is still there.", sanit_hub(), "0.8"),
     ]
